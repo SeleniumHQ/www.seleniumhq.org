@@ -1,0 +1,14 @@
+/*-----------------------------------------------------
+ * about/contributors
+ */
+div.contributor {
+  margin-top: 10px;
+  min-height: 150px;
+}
+
+img.profile {
+  float: right;
+	margin-left: 2em;
+	width: 150px;
+	height: 150px;
+}

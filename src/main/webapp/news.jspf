@@ -1,0 +1,17 @@
+<%@ taglib prefix="oscache" uri="http://www.opensymphony.com/oscache" %>
+The following is the latest Selenium news posted in the <a href="http://seleniumhq.wordpress.com/">Selenium blog</a>. Please subscribe to the <a href="http://feeds.feedburner.com/Selenium">RSS feed</a> to to keep up-to-date with all Selenium development and community activity!   <em>Don't forget to <a href="http://twitter.com/SeleniumHQ">follow us</a> on Twitter too!</em>
+
+
+<ul>
+<oscache:cache>
+    <%
+        try {
+            out.println(org.seleniumhq.website.FeedParser.render());;
+        } catch (Exception e) {
+    %>
+    <oscache:usecached/>
+    <%
+        }
+    %>
+</oscache:cache>
+</ul>

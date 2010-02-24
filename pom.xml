@@ -1,0 +1,189 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>org.openqa.selenium</groupId>
+	<artifactId>selenium-website</artifactId>
+	<version>1.0-SNAPSHOT</version>
+	<name>Selenium Website</name>
+	<packaging>war</packaging>
+	<url>http://selenium.openqa.org</url>
+	<build>
+		<defaultGoal>install</defaultGoal>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<configuration>
+					<source>1.5</source>
+					<target>1.5</target>
+				</configuration>
+			</plugin>
+			<plugin>
+				<artifactId>maven-antrun-plugin</artifactId>
+				<groupId>org.apache.maven.plugins</groupId>
+				<executions>
+					<execution>
+						<id>create-output-dir</id>
+						<phase>validate</phase>
+						<goals>
+							<goal>run</goal>
+						</goals>
+						<configuration>
+							<tasks>
+							    <!-- You might be wondering why we're doing this. It's true that Maven will do this for you
+							         during the compile phase, but jetty:run (see below) needs this directory to exist and
+							         if you do a 'mvn clean' before doing a 'mvn jetty:run' without this, you'll get an error -->
+								<mkdir dir="target/target/selenium-website-1.0-SNAPSHOT"/>
+							</tasks>
+						</configuration>
+					</execution>
+				</executions>
+			</plugin>
+			<plugin>
+				<groupId>org.mortbay.jetty</groupId>
+				<artifactId>maven-jetty-plugin</artifactId>
+				<configuration>
+					<scanIntervalSeconds>5</scanIntervalSeconds>
+					<contextPath>/</contextPath>
+					<connectors>
+						<connector implementation="org.mortbay.jetty.nio.SelectChannelConnector">
+							<port>8080</port>
+							<maxIdleTime>60000</maxIdleTime>
+						</connector>
+					</connectors>
+                    <baseResource implementation="org.mortbay.resource.ResourceCollection">
+                        <resourcesAsCSV>src/main/webapp,target/selenium-website-1.0-SNAPSHOT</resourcesAsCSV> 
+                    </baseResource>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+	<profiles>
+		<profile>
+			<id>deploy</id>
+			<build>
+				<plugins>
+					<plugin>
+						<artifactId>maven-antrun-plugin</artifactId>
+						<groupId>org.apache.maven.plugins</groupId>
+						<executions>
+							<execution>
+								<id>run-local-files</id>
+								<phase>install</phase>
+								<goals>
+									<goal>run</goal>
+								</goals>
+								<configuration>
+									<tasks>
+										<copy file="target/selenium-website-1.0-SNAPSHOT.war"
+											tofile="/opt/j2ee/domains/openqa.org/projectwebsites/tomcat/webapps/selenium/ROOT.war" />
+									</tasks>
+								</configuration>
+							</execution>
+						</executions>
+					</plugin>
+				</plugins>
+			</build>
+		</profile>
+		<profile>
+			<id>docs</id>
+			<build>
+				<plugins>
+        			<plugin>
+        				<artifactId>maven-antrun-plugin</artifactId>
+        				<executions>
+        					<execution>
+        						<id>build-docs</id>
+        						<phase>generate-sources</phase>
+        						<goals>
+        							<goal>run</goal>
+        						</goals>
+        						<configuration>
+        							<tasks>
+        								<mkdir dir="target/selenium-website-1.0-SNAPSHOT/docs"/>
+        								<exec executable="sphinx-build">
+        									<arg value="-b"/>
+        									<arg value="html"/>
+        									<arg value="src/main/rst"/>
+        									<arg value="target/selenium-website-1.0-SNAPSHOT/docs/"/>
+        								</exec>
+        							</tasks>
+        						</configuration>
+        					</execution>
+        					<execution>
+        						<id>build-book-base</id>
+        						<phase>generate-sources</phase>
+        						<goals>
+        							<goal>run</goal>
+        						</goals>
+        						<configuration>
+        							<tasks>
+        								<mkdir dir="target/selenium-website-1.0-SNAPSHOT/docs/book/"/>
+        								<exec executable="sphinx-build">
+        									<arg value="-b"/>
+        									<arg value="latex"/>
+        									<arg value="src/main/rst"/>
+        									<arg value="target/selenium-website-1.0-SNAPSHOT/docs/book/"/>
+        								</exec>
+        							</tasks>
+        						</configuration>
+        					</execution>
+        					<execution>
+        						<id>build-book-pdf</id>
+        						<phase>process-sources</phase>
+        						<goals>
+        							<goal>run</goal>
+        						</goals>
+        						<configuration>
+        							<tasks>
+        								<exec executable="make">
+        									<arg value="-C"/>
+        									<arg value="target/selenium-website-1.0-SNAPSHOT/docs/book/"/>
+        									<arg value="all-pdf"/>
+        								</exec>
+        							</tasks>
+        						</configuration>
+        					</execution>
+        				</executions>
+        			</plugin>
+				</plugins>
+			</build>
+		</profile>
+	</profiles>
+	<dependencies>
+
+		<dependency>
+			<groupId>commons-logging</groupId>
+			<artifactId>commons-logging</artifactId>
+			<version>1.1.1</version>
+		</dependency>
+
+		<dependency>
+			<groupId>opensymphony</groupId>
+			<artifactId>oscache</artifactId>
+			<version>2.1.1</version>
+		</dependency>
+
+		<dependency>
+			<groupId>opensymphony</groupId>
+			<artifactId>sitemesh</artifactId>
+			<version>2.4.2</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.mortbay.jetty</groupId>
+			<artifactId>jsp-2.1</artifactId>
+			<version>6.1.8</version>
+			<scope>provided</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>org.mortbay.jetty</groupId>
+			<artifactId>jetty</artifactId>
+			<version>6.1.8</version>
+			<scope>provided</scope>
+		</dependency>
+
+	</dependencies>
+
+</project>

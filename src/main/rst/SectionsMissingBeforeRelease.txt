@@ -1,0 +1,32 @@
+4 Selenese Commands
+Alerts, Popups, and Multiple Windows
+AJAX and waitFor Commands
+
+5 Selenium RC
+Relationship between Client libs and Selenese - Santi
+Basic Test Structure
+    PHP - Santi
+    Perl
+    Ruby
+Error Handling
+Safari and multiWindow mode - Santi
+Specifying the Path to a Specific Browser - Santi
+Retrieving and Reporting Results - Tarun
+Executing JS from with in Selenium RC - Tarun
+
+6 Test Design Considerations
+Introducing Test Design Options
+Add Location Strategies
+Bitmap Comparison
+Recovery From Failure
+Interpreting Test Results
+Organizing Your Test Scripts
+Organizing Your Test Suites
+Example Test Suites
+
+7 Selenium Grid
+Empty
+
+9 Getting Help
+Selenium Reference
+Experimenting - Things to Try

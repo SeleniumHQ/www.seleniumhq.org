@@ -1,0 +1,8 @@
+/*-----------------------------------------------------
+ * about/contributors (ie6 hacks)
+ */
+div.contributor {
+  min-height: 120px;
+  height: auto !important;
+  height: 120px;
+}
