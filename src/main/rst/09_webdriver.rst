@@ -212,7 +212,7 @@ sometimes it's good to be able to test using a real browser, especially when
 you're showing a demo of your application (or running the tests) for an 
 audience. Often, this idea is referred to as "safety", and it falls into two 
 parts. Firstly, there's "actual safety", which refers to whether or not the 
-tests works as they should. This can be measured and quantified. Secondly, 
+tests work as they should. This can be measured and quantified. Secondly, 
 there's "perceived safety", which refers to whether or not an observer believes 
 the tests work as they should. This varies from person to person, and will 
 depend on their familiarity with the application under test, WebDriver, and your 
