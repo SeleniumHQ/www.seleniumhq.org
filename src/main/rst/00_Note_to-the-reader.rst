@@ -25,7 +25,12 @@ haven't written yet.  However, we have written the beginning chapters first
 so newcomers can get started more smoothly.  We have also already added some valuable 
 information that more experienced users will appreciate.  This document will be a 'live'
 document on the SeleniumHQ website where frequent updates will occur as we complete
-the additional planned documentation.
+the additional planned documentation. We really want to hear about any problems you have
+with the documentation, or suggestions you have for improving it.  For errors, please 
+file a `bug report`_.  Improvement suggestions should be filed as an 
+enhancement request.  
+
+.. _`bug report`:  http://jira.openqa.org/
 
                     Thanks very much for reading. 
 					
