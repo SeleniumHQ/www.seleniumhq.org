@@ -34,7 +34,7 @@ Selenium-Core also cannot switch between http and https protocols. Since the
 development of Selenium-IDE and Selenium-RC, more people are using these 
 tools rather than Selenium-Core. At the time of writing (April 09) it 
 is still available and may be convenient for some. However, the Selenium 
-community is encouraging the use Selenium-IDE and RC and discouraging the use 
+community is encouraging the use of Selenium-IDE and RC and discouraging the use 
 of Selenium-Core. Support for Selenium-Core is becoming less available and 
 it may even be deprecated in a future release. 
 
@@ -44,7 +44,7 @@ Introducing Selenium Commands
 Selenium Commands -- Selenese
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Selenium provides a rich set of commands for fully testing your web-app 
-in virtually any way you may imagine. The command set is often called 
+in virtually any way you can imagine. The command set is often called 
 *selenese*. These commands essentially create a testing language. 
 
 In selenese, one can test the existence of UI elements based 
@@ -52,8 +52,10 @@ on their HTML tags, test for specific content, test for broken links,
 input fields, selection list options, submitting forms, and table data among
 other things. In addition Selenium commands support testing of window size,
 mouse position, alerts, Ajax functionality, pop up windows, event handling,
-and many other web-application features. The Command Reference (available at 
-SeleniumHQ.org) lists all the available commands. 
+and many other web-application features. The `Command Reference`_ lists all 
+the available commands. 
+
+.. _`Command Reference`: http://release.seleniumhq.org/selenium-core/1.0.1/reference.html
 
 A *command* is what tells Selenium what to do. Selenium commands come in 
 three "flavors": **Actions**, **Accessors** and **Assertions**. 
@@ -115,7 +117,7 @@ type               id=address1   ${myVariableAddress}
  
 The command reference describes the parameter requirements for each command. 
   
-Parameters vary, however they are typically 
+Parameters vary, however they are typically:
   
 * a *locator* for identifying a UI element within a page. 
 * a *text pattern* for verifying or asserting expected page content 
