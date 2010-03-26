@@ -33,7 +33,7 @@ progress bar, and when the download is complete, displays the following.
 .. image:: images/chapt3_img02_IDE_Installation.png
    :class: align-center
   
-Restart Firefox.  After Firefox reboots you will find the Selnium-IDE listed under the Firefox Tools menu. 
+Restart Firefox.  After Firefox reboots you will find the Selenium-IDE listed under the Firefox Tools menu. 
 
 .. image:: images/chapt3_img03_IDE_Installation.png
    :class: align-center
@@ -43,8 +43,6 @@ Opening the IDE
 To run the Selenium-IDE, simply select it from the Firefox Tools menu.  It opens 
 as follows with an empty script-editing window and a menu for loading, or 
 creating new test cases. 
-  
-.. Darn!  I need to redo this.  No time now, gotta go!!!!
 
 .. image:: images/chapt3_img04_IDE_open.png
    :class: align-center
@@ -53,8 +51,8 @@ IDE Features
 ------------
 Menu Bar 
 ++++++++
-The File menu allows you to create, open and save test case and test suite 
-files.  The Edit menu allows copy, paste, delete, undo and select all 
+The File menu allows you to create, open, and save test case and test suite 
+files.  The Edit menu allows copy, paste, delete, undo, and select all 
 operations for editing the commands in your test case.  The Options menu allows 
 the changing of settings.  You can set the timeout value for 
 certain commands, add user-defined user extensions to the base set of Selenium 
@@ -82,7 +80,7 @@ button, the one with the red-dot, is the record button.
 |pause resume|
     Pause/Resume:  Allows stopping and re-starting of a running test case.
 |step|
-    Step:  Allows one to "step" through a test case by running it one command at a 
+    Step:  Allows you to "step" through a test case by running it one command at a 
     time.  Use for debugging test cases. 
 |testrunner|
     TestRunner Mode:  Allows you to run the test case in a browser loaded with 
@@ -116,7 +114,7 @@ displaying the command and their parameters in a readable "table" format.
 .. image:: images/chapt3_img15_Table_Format.png
    :class: align-center
   
-The Source tab displays the test case in the native format in which the file 
+The other tab - Source displays the test case in the native format in which the file 
 will be stored.  By default, this is HTML although it can be changed to a 
 programming language such as Java or C#, or a scripting language like Python.
 See the Options menu for details.  The Source view also allows one to edit 
@@ -149,7 +147,7 @@ and information messages showing the progress are displayed
 in this pane automatically, even if you do not first select the Log
 tab.  These messages are often useful for test case debugging.   Notice the Clear 
 button for clearing the Log.  Also notice the Info button is a drop-down 
-allowing selection of different levels of information to display.  
+allowing selection of different levels of information to log.  
   
 .. image:: images/chapt3_img17_Bottom_Box.png
    :class: align-center
@@ -163,7 +161,7 @@ mode.  In Table mode, the Reference pane will display documentation on the curre
 commands, whether from Table or Source mode, it is critically
 important to ensure that the parameters specified in the
 Target and Value fields match those specified in the parameter
-list specified in the Reference pane.  The number of parameters provided
+list in the Reference pane.  The number of parameters provided
 must match the number specified, the order of parameters provided must
 match the order specified, and the type of parameters provided must match
 the type specified.  
@@ -270,14 +268,18 @@ Insert Command
 Table View
 __________
 Select the point in your test case where you want to insert the command.  
-Right-click and select Insert Command.  Now use the command editing text fields to 
-enter your new command and its parameters. 
+To do this, in the Test Case Pane, left-click on the line where you want 
+to insert a new command.  Right-click and select Insert Command; the IDE 
+will add a blank line just ahead of the line you selected. Now use the 
+command editing text fields to enter your new command and its parameters. 
 
 Source View
 ___________
-Select the point in your test case where you want to insert the command, and
-enter the HTML tags needed to create a 3-column row containing the Command,
-first parameter (if one is required by the Command), and second parameter (again,
+Select the point in your test case where you want to insert the command.  
+To do this, in the Test Case Pane, left-click between the commands 
+where you want to insert a new command, and enter the HTML tags needed
+to create a 3-column row containing the Command, first parameter 
+(if one is required by the Command), and second parameter (again,
 if one is required).  Be sure to save your test before switching back to
 Table view.
   
@@ -286,12 +288,13 @@ Insert Comment
 Comments may be added to make your test case more readable.  These comments are 
 ignored when the test case is run. 
 
-In order to add vertical white space (one or more blank lines) in your tests, you must
-create empty comments.  An empty command will cause an error during execution.
+Comments may also be used to add vertical white space (one or more blank lines) 
+in your tests; just create empty comments.  An empty command will cause an error
+during execution; an empty comment won't.
 
 Table View
 __________
-Select the point in your test case where you 
+Select the line in your test case where you 
 want to insert the comment.  Right-click and select Insert Comment.  Now use 
 the Command field to enter the comment.  Your comment will appear in purple
 font.
@@ -318,7 +321,7 @@ Opening and Saving a Test Case
 ++++++++++++++++++++++++++++++
 The File=>Open, Save and Save As menu commands behave similarly to opening and 
 saving files in most other programs.  When you open an existing test case, Selenium-IDE 
-displays its Selenium commands in the test case pane.
+displays its Selenium commands in the Test Case Pane.
   
 Test suite files can also be opened and saved via the File menu.  However,
 such operations have their own menu entries near the bottom; the Open,
@@ -452,21 +455,20 @@ The Find button is used to see which UI element on the currently displayed
 webpage (in the browser) is used in the currently selected Selenium command.  
 This is useful when building a locator for a command's first parameter (see the
 section on :ref:`locators <locators-section>` in the Selenium Commands chapter).
-It can be used with any command that must identify a UI element on a webpage, 
+It can be used with any command that identifies a UI element on a webpage, 
 i.e. *click*, *clickAndWait*, *type*, and certain *assert* and *verify* commands, 
 among others. 
   
 From Table view, select any command that has a locator parameter.
 Click the Find button.  
-Now look on the webpage displayed in the Firefox browser.  
-There should be a bright green rectangle enclosing the element specified
-by the locator parameter. 
+Now look on the webpage: There should be a bright green rectangle
+enclosing the element specified by the locator parameter. 
 
 Page Source for Debugging 
 +++++++++++++++++++++++++
 Often, when debugging a test case, you simply must look at the page source (the 
 HTML for the webpage you're trying to test) to determine a problem.  Firefox 
-makes this easy.  Simply, right-click the webpage and select Page Source.  
+makes this easy.  Simply right-click the webpage and select 'View->Page Source.  
 The HTML opens in a separate window.  Use its Search feature (Edit=>Find)
 to search for a keyword to find the HTML for the UI element you're trying 
 to test. 
@@ -706,4 +708,4 @@ two or more spaces into a single space, which is confusing.  In the
 example above, note that the parameter for **verifyTitle** has two 
 spaces between the words "System" and "Division."  The page's actual 
 title has only one space between these words.  Thus, Selenium-IDE is 
-correct to generate an error.
+correct to generate an error, but is misleading in the nature of the error.
