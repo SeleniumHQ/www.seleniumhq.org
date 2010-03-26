@@ -122,7 +122,7 @@ Selenium-Grid
 Selenium-Grid allows the Selenium-RC solution to scale for large test suites 
 or test suites that must be run in multiple environments. With Selenium-Grid, 
 multiple instances of Selenium-RC are running on various operating system and 
-browser configurations.  Each of these when launching register with a hub. 
+browser configurations;  Each of these when launching register with a hub. 
 When tests are sent to the hub they are then redirected to an available 
 Selenium-RC, which will launch the browser and run the test. This allows for 
 running tests in parallel, with the entire test suite theoretically taking 
