@@ -71,10 +71,15 @@ lists, or any other browser-supported input.
 
 Testing Dynamic Elements
 ~~~~~~~~~~~~~~~~~~~~~~~~
-Dynamic content is a set of page elements whose identifiers, that is,
-characteristics used to locate the element, vary with each different instance
-of the page that contains them.  This is usually on a result page of some
-given function.  
+Every web page element has an identifier, a name that can be use to locate the
+element.  These names can be static - for example, when you enter a search term
+into Google, the text field in which you type your query is always named 'q'.  
+These names can also be dynamic - generated fresh, new, and unique for every 
+instance of a web page.  For example, some web servers might name a text entry 
+field 'q1' on the first instance of a page, and 'q2' on the next instance of the 
+same page, etc.  This means your test script could be looking at a different field
+name every time you run the script.  Dynamic names are usually on a result page 
+of some given function.  
 
 An example would be a result set of data returned to the user.  Suppose each
 data result, in, say for example a list of documents, had a unique identifier
