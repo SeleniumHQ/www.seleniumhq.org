@@ -32,7 +32,6 @@ enhancement request.
 
 .. _`bug report`:  http://jira.openqa.org/
 
-
                     Thanks very much for reading. 
 					
 							-- the Selenium Documentation Team
