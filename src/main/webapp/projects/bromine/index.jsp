@@ -58,7 +58,7 @@
                         <li>Add plugins easily</li>		                         
                     </ul>
                     <h3>Screencast</h3>
-                    <a href="http://bromine.seleniumhq.org/brscreencast/brscreencast.html"><img src="frame.png" /></a>
+                    <a href="http://bromine.seleniumhq.org/brscreencast/brscreencast.html"><img src="frame.png" style='width: 350px;'/></a>
                     <br />
                     <h3>Links:</h3>	                     
                     <ul>
