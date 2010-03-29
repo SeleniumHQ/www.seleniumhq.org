@@ -15,38 +15,7 @@
     	<script type="text/javascript" src="javascript/effects.js"></script>
     	<script type="text/javascript" src="javascript/lightwindow.js"></script>    
     </head>    
-    <body class="sectionProjects">        
-        <fieldset>               
-            <legend>    <b>News</b>               
-            </legend>               
-            <dl>                     
-                <%
-                    try {
-                        // date format: Mon, 12 Jan 2009 22:06:48 GMT
-                        SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss'Z'");
-                        sdf.setTimeZone(TimeZone.getTimeZone("UTC"));
-                        URL url = new URL("http://clearspace.openqa.org/blogs/feeds/users/Bromine");
-                        DocumentBuilder db = DocumentBuilderFactory.newInstance().newDocumentBuilder();
-                        Document doc = db.parse(url.openStream());
-                        NodeList items = doc.getElementsByTagName("item");
-                        for (int i = 0; i < items.getLength() && i<3; i++) {
-                            Element e = (Element) items.item(i);
-                            String link = e.getElementsByTagName("link").item(0).getFirstChild().getNodeValue();
-                            String title = e.getElementsByTagName("title").item(0).getFirstChild().getNodeValue();
-                            String desc = e.getElementsByTagName("description").item(0).getFirstChild().getNodeValue();
-                            String date = e.getElementsByTagName("pubDate").item(0).getFirstChild().getNodeValue();
-            
-                %>
-                    <li>
-                        <a href="<%= link %>"><%= title %></a> - <i><%= date%></i>
-                    </li>
-                <%
-                        }
-                    } catch (Exception e) {}
-                %>              
-            </dl>        
-        </fieldset>        
-        <br>        
+    <body class="sectionProjects">                
         <table border="0">            
             <tr>                
                 <td valign="top">
@@ -88,9 +57,11 @@
                         <li>Coded in CakePHP, MVC design, accessible API, easily extendable.</li>
                         <li>Add plugins easily</li>		                         
                     </ul>
+                    <h3>Screencast</h3>
+                    <a href="http://bromine.seleniumhq.org/brscreencast/brscreencast.html"><img src="frame.png" /></a>
+                    <br />
                     <h3>Links:</h3>	                     
                     <ul>
-                        <li><a href="http://bromine.seleniumhq.org/brscreencast/brscreencast.html">Screencast</a></li>
                         <li><a href="http://wiki.openqa.org/display/BR/Home">Documentation</a></li>
                         <li><a href="http://forum.brominefoundation.org/">Forums</a></li>		                         
                         <li><a href="http://jira.openqa.org/browse/BR">Bug tracker</a></li>		                         		                         
