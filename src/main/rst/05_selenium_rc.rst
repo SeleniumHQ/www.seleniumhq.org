@@ -8,8 +8,7 @@ Introduction
 Selenium-RC is the solution for tests that need more than  simple
 browser actions and linear execution. Selenium-RC uses the 
 full power of programming languages to create more complex tests like reading
-and writing files, querying a database, emailing test 
-results.
+and writing files, querying a database, and emailing test results.
 
 You'll want to use Selenium-RC whenever your test requires logic
 not supported by Selenium-IDE. What logic could 
@@ -92,8 +91,8 @@ for processing a specific action or test against the application under test
 (AUT).  The client library
 also receives the result of that command and passes it back to your program.
 Your program can receive the result and store it into a program variable and
-reporting it as a success or failure, 
-or possibly taking corrective action if it was an unexpected error. 
+report it as a success or failure, 
+or possibly take corrective action if it was an unexpected error. 
 
 So to create a test program, you simply write a program that runs 
 a set of Selenium commands using a client library API.  And, optionally, if 
@@ -176,7 +175,7 @@ Using the Java Client Driver
 * Create a new project.
 * Add the selenium-java-client-driver.jar files to your project as references.
 * Add to your project classpath the file *selenium-java-client-driver.jar*.
-* From Selenium-IDE, export a script to a Java file and include it in your Java.
+* From Selenium-IDE, export a script to a Java file and include it in your Java
   project, or write your Selenium test in Java using the selenium-java-client API.
   The API is presented later in this chapter.  You can either use JUnit, or TestNg
   to run your test, or you can write your own simple main() program.  These concepts are
@@ -839,7 +838,7 @@ Learning the API
 The Selenium-RC API uses naming conventions 
 that, assuming you understand Selenese, much of the interface  
 will be self-explanatory. Here, however, we explain the most critical and 
-possibly less obvious, aspects of the API.
+possibly less obvious aspects.
 
 Starting the Browser 
 ~~~~~~~~~~~~~~~~~~~~
@@ -902,7 +901,7 @@ Starting the Browser
 
 Each of these examples opens the browser and represents that browser 
 by assigning a "browser instance" to a program variable.  This 
-browser variable is then used to call methods from the browser. 
+program variable is then used to call methods from the browser. 
 These methods execute the Selenium commands, i.e. like *open* or *type* or the *verify* 
 commands.
 
@@ -947,8 +946,8 @@ Reporting Results
 Selenium-RC does not have its own mechanism for reporting results.  Rather, it allows
 you to build your reporting customized to your needs using features of your
 chosen programming language.  That's great, but what if you simply want something
-quick that's already done for you?  Often an existing library or test framework will
-exist that can meet your needs faster than developing your own test reporting code.
+quick that's already done for you?  Often an existing library or test framework can 
+meet your needs faster than developing your own test reporting code.
 
 Test Framework Reporting Tools 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -959,7 +958,7 @@ commonly used test frameworks, JUnit and TestNG.  .NET also has its own, NUnit.
 
 We won't teach the frameworks themselves here; that's beyond the scope of this
 user guide.  We will simply introduce the framework features that relate to Selenium
-along with some techniques you can apply.  Their are good books available on these
+along with some techniques you can apply.  There are good books available on these
 test frameworks however along with information on the internet.
 
 Test Report Libraries 
@@ -1018,8 +1017,8 @@ Test Reports in Java
 **Logging the Selenese Commands**
 
 - Logging Selenium can be used to generate a report of all the Selenese commands
-  in your test along with the success of failure of each. Logging Selenium extends
-  the Java client driver to add this Selenense logging ability. Please refer 
+  in your test along with the success or failure of each. Logging Selenium extends
+  the Java client driver to add this Selenese logging ability. Please refer 
   to `Logging Selenium`_.
     
 .. _`Logging Selenium`: http://loggingselenium.sourceforge.net/index.html
@@ -1036,7 +1035,7 @@ Test Reports for Ruby
 +++++++++++++++++++++
 
 - If RSpec framework is used for writing Selenium Test Cases in Ruby
-  then its HTML report can be used to generate test report.
+  then its HTML report can be used to generate a test report.
   Refer to `RSpec Report`_ for more.
 
 .. _`RSpec Report`: http://rspec.info/documentation/tools/rake.html
@@ -1059,13 +1058,13 @@ results.  Basically, the Selenium-IDE does not support iteration and
 standard condition statements.  You can do some conditions by embedding javascript
 in Selenese parameters, however 
 iteration is impossible, and most conditions will be much easier in a  
-programming language.  In addition, you may need exception-handling for
+programming language.  In addition, you may need exception handling for
 error recovery.  For these reasons and others, we have written this section
 to illustrate the use of common programming techniques to
 give you greater 'verification power' in your automated testing.
 
 The examples in this section are written
-in Java, although the code is simple and can be easily adapted to the other supported
+in C# and Java, although the code is simple and can be easily adapted to the other supported
 languages.  If you have some basic knowledge
 of an object-oriented programming language you shouldn't have difficulty understanding this section.
 
@@ -1076,7 +1075,7 @@ For example, you may want to to execute a search multiple times.  Or, perhaps fo
 verifying your test results you need to process a "result set" returned from a database.
 
 Using the same `Google search example`_ we used earlier, let's 
-check the Selenium the search results. This test could use the Selenese:
+check the Selenium search results. This test could use the Selenese:
 
 =================  ===========================  =============
 open               /
@@ -1155,8 +1154,8 @@ elements are not available on page.
 Executing JavaScript from Your Test
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-JavaScript comes very handy in exercising application which is not directly supported
-by selenium. **getEval** method of selenium API can be used to execute java script from
+JavaScript comes very handy in exercising an application which is not directly supported
+by selenium. The **getEval** method of selenium API can be used to execute java script from
 selenium RC. 
 
 Consider an application having check boxes with no static identifiers. 
@@ -1190,7 +1189,7 @@ To count number of images on a page:
    selenium.getEval("window.document.images.length;");
 	
 Remember to use window object in case of DOM expressions as by default selenium
-window is referred and not the test window.
+window is referred to, not the test window.
 
 
 Server Options
@@ -1218,7 +1217,7 @@ provided explanations for some of the more important options.
 Proxy Configuration
 ~~~~~~~~~~~~~~~~~~~
 If your AUT is behind an HTTP proxy which requires authentication then you should 
-you can configure http.proxyHost, http.proxyPort, http.proxyUser and http.proxyPassword
+configure http.proxyHost, http.proxyPort, http.proxyUser and http.proxyPassword
 using the following command. 
 
 .. code-block:: bash
@@ -1284,7 +1283,7 @@ following:
 
    firefox.exe -P 
 
-Create the new profile using the dialog. The when you run Selenium Server, 
+Create the new profile using the dialog. Then when you run Selenium Server, 
 tell it to use this new Firefox profile with the server command-line option 
 *\-firefoxProfileTemplate* and specify the path to the profile using it's filename 
 and directory path.
@@ -1390,7 +1389,7 @@ browserSideLogs (as well as all other DEBUG level logging messages) to a file.
 Specifying the Path to a Specific Browser 
 -----------------------------------------
 You can specify to Selenium-RC a path to a specific browser. This is useful if 
-you have different versions of the same browser, and you wish to use a specific
+you have different versions of the same browser and you wish to use a specific
 one. Also, this is used to allow your tests to run against a browser not 
 directly supported by Selenium-RC. When specifying the run mode, use the 
 \*custom specifier followed by the full path to the browser's executable::
@@ -1402,7 +1401,7 @@ Selenium-RC Architecture
 ------------------------
 .. note:: This topic tries to explain the technical implementation behind 
    Selenium-RC. It's not fundamental for a Selenium user to know this, but 
-   could be useful for understanding some of the problems you can find in the
+   could be useful for understanding some of the problems you might find in the
    future.
    
 To understand in detail how Selenium-RC Server works  and why it uses proxy injection
@@ -1410,15 +1409,15 @@ and heightened privilege modes you must first understand `the same origin policy
    
 The Same Origin Policy
 ~~~~~~~~~~~~~~~~~~~~~~
-The main restriction that Selenium's has faced is the 
+The main restriction that Selenium faces is the 
 Same Origin Policy. This security restriction is applied by every browser
 in the market and its objective is to ensure that a site's content will never
-be accessible by a script from other site.  The Same Origin Policy dictates that
+be accessible by a script from another site.  The Same Origin Policy dictates that
 any code loaded within the browser can only operate within that website's domain.
 It cannot perform functions on another website.  So for example, if the browser
 loads JavaScript code when it loads www.mysite.com, it cannot run that loaded code
 against www.mysite2.com--even if that's another of your sites. If this were possible, 
-a script placed on any website you open, would be able to read information on 
+a script placed on any website you open would be able to read information on 
 your bank account if you had the account page
 opened on other tab. This is called XSS (Cross-site Scripting).
 
@@ -1449,8 +1448,8 @@ from the same origin).
 
 .. [1] The proxy is a third person in the middle that passes the ball 
    between the two parts. It acts as a "web server" that 
-   delivers the AUT to the browser. Being a proxy, gives the capability
-   of "lying" about the AUT's real URL.  
+   delivers the AUT to the browser. Being a proxy gives Selenium 
+   Server the capability of "lying" about the AUT's real URL.  
    
 .. [2] The browser is launched with a 
    configuration profile that has set localhost:4444 as the HTTP proxy, this
@@ -1468,14 +1467,14 @@ Here is an architectural diagram.
 As a test suite starts in your favorite language, the following happens:
 
 1. The client/driver establishes a connection with the selenium-RC server.
-2. Selenium-RC server launches a browser (or reuses an old one) with an URL 
+2. Selenium-RC server launches a browser (or reuses an old one) with a URL 
    that injects Selenium-Core's JavaScript into the browser-loaded web page.
 3. The client-driver passes a Selenese command to the server.
 4. The Server interprets the command and then triggers the corresponding 
    JavaScript execution to execute that command within the browser.
 5. Selenium-Core instructs the browser to act on that first instruction, typically opening a page of the
    AUT.
-6. The browser receives the open request and asks for the website's content to
+6. The browser receives the open request and asks for the website's content from
    the Selenium-RC server (set as the HTTP proxy for the browser to use).
 7. Selenium-RC server communicates with the Web server asking for the page and once
    it receives it, it sends the page to the browser masking the origin to look
@@ -1486,7 +1485,7 @@ As a test suite starts in your favorite language, the following happens:
    
 Heightened Privileges Browsers
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-This workflow on this method is very similar to Proxy Injection but the main
+This workflow in this method is very similar to Proxy Injection but the main
 difference is that the browsers are launched in a special mode called *Heightened
 Privileges*, which allows websites to do things that are not commonly permitted
 (as doing XSS_, or filling file upload inputs and pretty useful stuff for 
@@ -1502,7 +1501,7 @@ Here is the architectural diagram.
 As a test suite starts in your favorite language, the following happens:
 
 1. The client/driver establishes a connection with the selenium-RC server.
-2. Selenium-RC server launches a browser (or reuses an old one) with an URL 
+2. Selenium-RC server launches a browser (or reuses an old one) with a URL 
    that will load Selenium-Core in the web page.
 3. Selenium-Core gets the first instruction from the client/driver (via another 
    HTTP request made to the Selenium-RC Server).
@@ -1534,22 +1533,22 @@ any special security certificates; Selenium-RC will handle it for you.
 
 In version 1.0 the run modes \*firefox or \*iexplore are 
 recommended. However, there are additional run modes of \*iexploreproxy and 
-\*firefoxproxy. These are provided only for backwards compatibility only, and 
+\*firefoxproxy. These are provided for backwards compatibility only, and 
 should not be used unless required by legacy test programs. Their use will 
 present limitations with security certificate handling and with the running 
 of multiple windows if your application opens additional browser windows. 
 
 In earlier versions of Selenium-RC, \*chrome or \*iehta were the run modes that 
 supported HTTPS and the handling of security popups. These were considered ‘experimental
-modes although they became quite stable and many used them.  If you are using
+modes although they became quite stable and many people used them.  If you are using
 Selenium 1.0 you do not need, and should not use, these older run modes.
 
 Security Certificates Explained
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Normally, your browser will trust the application you are testing
 by installing a security certificate which you already own. You can 
-check this in your browser's options or internet properties (if you don't 
-know your AUT's security certificate ask you system administrator). 
+check this in your browser's options or Internet properties (if you don't 
+know your AUT's security certificate ask your system administrator). 
 When Selenium loads your browser it injects code to intercept 
 messages between the browser and the server. The browser now thinks 
 untrusted software is trying to look like your application.  It responds by alerting you with popup messages. 
@@ -1561,7 +1560,7 @@ browser into thinking it's accessing a site different from your AUT and effectiv
 
 Another method used with earlier versions of Selenium was to 
 install the Cybervillians security certificate provided with your Selenium 
-installation. Most users should no longer need to do this however, if you are
+installation. Most users should no longer need to do this however; if you are
 running Selenium-RC in proxy injection mode, you may need to explicitly install this
 security certificate. 
 
@@ -1574,9 +1573,8 @@ supported browsers.  In addition, when a browser is not directly supported,
 you may still run your Selenium tests against a browser of your choosing by
 using the "\*custom" run-mode (i.e. in place of \*firefox or \*iexplore) when 
 your test application starts the browser.  With this, you pass in the path to
-the browsers executable within the API call as follows.
-	
-This can also be done from the Server in interactive mode.
+the browsers executable within the API call. This can also be done from the 
+Server in interactive mode.
 
 .. code-block:: bash
 
@@ -1670,7 +1668,7 @@ If your test program starts the browser successfully, but the browser doesn't
 display the website you're testing, the most likely cause is your test 
 program is not using the correct URL. 
 
-This can easily happen. When you use Selenium-IDE to export you script,
+This can easily happen. When you use Selenium-IDE to export your script,
 it inserts a dummy URL. You must manually change the URL to the correct one
 for your application to be tested. 
 
