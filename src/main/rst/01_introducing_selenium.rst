@@ -134,15 +134,19 @@ Supported Browsers
 
 =============  ==================================================  ===========================  =====================
 **Browser**    **Selenium-IDE**                                    **Selenium-RC**              **Operating Systems**
-Firefox 3      1.0 Beta-1 & 1.0 Beta-2: Record and playback tests  Start browser, run tests     Windows, Linux, Mac
-Firefox 2      1.0 Beta-1: Record and playback tests               Start browser, run tests     Windows, Linux, Mac
-IE 8                                                   			   Under development            Windows
+Firefox 3.x    Record and playback tests                           Start browser, run tests     Windows, Linux, Mac
+Firefox 3      Record and playback tests                           Start browser, run tests     Windows, Linux, Mac
+Firefox 2      Record and playback tests                           Start browser, run tests     Windows, Linux, Mac
+IE 8           Test execution only via Selenium-RC*                Start browser, run tests     Windows
 IE 7           Test execution only via Selenium-RC*                Start browser, run tests     Windows
+IE 6           Test execution only via Selenium-RC*                Start browser, run tests     Windows
+Safari 4       Test execution only via Selenium-RC                 Start browser, run tests     Mac
 Safari 3       Test execution only via Selenium-RC                 Start browser, run tests     Mac
 Safari 2       Test execution only via Selenium-RC                 Start browser, run tests     Mac
+Opera 10       Test execution only via Selenium-RC                 Start browser, run tests     Windows, Linux, Mac
 Opera 9        Test execution only via Selenium-RC                 Start browser, run tests     Windows, Linux, Mac
 Opera 8        Test execution only via Selenium-RC                 Start browser, run tests     Windows, Linux, Mac 
-Google Chrome  Test execution only via Selenium-RC(Windows)        Start browser, run tests     Windows
+Google Chrome  Test execution only via Selenium-RC (Windows)       Start browser, run tests     Windows
 Others         Test execution only via Selenium-RC                 Partial support possible**   As applicable 
 =============  ==================================================  ===========================  =====================
 
