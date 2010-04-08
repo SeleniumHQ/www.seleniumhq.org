@@ -182,7 +182,7 @@ pageTracker._trackPageview();
         <li><a href="/support/">Support</a>
             <ul>
                 <li><a href="http://groups.google.com/group/selenium-users">User Group</a></li>
-                <li><a href="http://jira.openqa.org/">Bug Tracker</a></li>
+                <li><a href="http://code.google.com/p/selenium/issues/list">Bug Tracker</a></li>
                 <li><a href="/support/index.html#CommercialSupport">Commercial Support</a></li>
                 <li><a href="/support/index.html#IRC">IRC</a></li>
             </ul>
