@@ -128,7 +128,7 @@ Locators, text patterns,
 selenium variables, and the commands themselves are described in considerable
 detail in the section on Selenium Commands. 
   
-Selenium scripts that will be run from Selenium-IDE may be stored in an HTML
+Selenium scripts that will be run from Selenium-IDE will be be stored in an HTML
 text file format. This consists of an HTML table with three columns. The first
 column identifies the Selenium command, the second is a target, and the
 final column contains a value. The second and third columns may not require
@@ -197,7 +197,7 @@ problem.
 Commonly Used Selenium Commands 
 --------------------------------
 To conclude our introduction of Selenium, we'll show you a few typical Selenium
-commands.  These are probably the most commonly used commands for building test.
+commands.  These are probably the most commonly used commands for building tests.
 
 open
    opens a page using a URL.
