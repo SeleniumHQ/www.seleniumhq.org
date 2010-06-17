@@ -7,13 +7,17 @@
 
   <title>Downloads</title>
   <style>
-  .plugin {
+    .plugin {
       border-top: 1px solid #ddd;
-  }
+    }
   
-  .plugin td {
+    .plugin td {
       padding: 5px 0;
-  }
+    }
+  
+    .pluginDesc td {
+      color: #444;
+    }
   </style>
 </head>
 
@@ -132,7 +136,7 @@
 <br />
 <br />
 <p><b>Plugins for Selenium IDE</b></p>
-  <table>
+  <table style="border-collapse: collapse;">
     <thead>
       <tr>
         <th>Name</th>
@@ -151,7 +155,7 @@
         <td>June 15, 2010</td>
         <td>1.0</td>
       </tr>
-      <tr>
+      <tr class="pluginDesc">
         <td colspan="5">
           Adds Grails Formatters. <a href="http://adhockery.blogspot.com/2010/06/export-selenium-ide-scripts-for-grails.html">More info</a>.
         </td>
@@ -164,7 +168,7 @@
         <td>March 11, 2010</td>
         <td>1.0-beta3</td>
       </tr>
-      <tr>
+      <tr class="pluginDesc">
         <td colspan="5">
           Run scripts with Sauce OnDemand cloud testing service.
         </td>
@@ -177,7 +181,7 @@
         <td>February 24, 2010</td>
         <td>1.0.1</td>
       </tr>
-      <tr>
+      <tr class="pluginDesc">
         <td colspan="5">
           Incorporates the flow control extension available <a href="http://wiki.openqa.org/display/SEL/flowControl">here</a> and <a href="http://51elliot.blogspot.com/2008/02/selenium-ide-goto.html">here</a>.
         </td>
@@ -190,7 +194,7 @@
         <td>February 24, 2010</td>
         <td>1.0.1</td>
       </tr>
-      <tr>
+      <tr class="pluginDesc">
         <td colspan="5">
           Adds WebDriver backed Selenium formatters, which allows users to take advantage of WebDriver without having to modify their tests to use the new API.
         </td>
