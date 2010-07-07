@@ -51,18 +51,23 @@
                         <li>Uses completely unmodified RC servers</li>		                         
                         <li>No RC server hassle, just plug in the IP and you're set</li>		                         
                         <li>Seemless loadbalancing. If you have multiple RC servers defined, they will be used (not GRID, our own solution)</li>		  
-                        <li>Full log of results. All commands executed and their status are stored.</li>
-                        <!--li>Create custom reports with drag 'n drop elements (pie charts, tables, graphs)</li-->                       
+                        <li>Full log of results. All commands executed and their status are stored.</li>                       
                         <li>Define your own user groups and their rights</li>
                         <li>Coded in CakePHP, MVC design, accessible API, easily extendable.</li>
                         <li>Add plugins easily</li>		                         
                     </ul>
                     <h3>Screencast</h3>
+                    <b>Sauce Labs and Hudson integration</b>
+                    <br>
+                    <a href="http://brominefoundation.org/cast/Bromine.html" onclick="javascript: pageTracker._trackPageview('/screencast/view2');"><img src="http://brominefoundation.org/img/thumpsc2.jpg" style='width: 350px;'/></a>
+                    <br>
+                    <b>Bromine 3 RC 1</b>
+                    <br>
                     <a href="http://bromine.seleniumhq.org/brscreencast/brscreencast.html" onclick="javascript: pageTracker._trackPageview('/screencast/view');"><img src="frame.png" style='width: 350px;'/></a>
                     <br />
                     <h3>Links:</h3>	                     
                     <ul>
-                        <li><a href="http://wiki.openqa.org/display/BR/Home">Documentation</a></li>
+                        <li><a href="http://wiki.brominefoundation.org">Documentation</a></li>
                         <li><a href="http://forum.brominefoundation.org/">Forums</a></li>		                         
                         <li><a href="http://jira.openqa.org/browse/BR">Bug tracker</a></li>		                         		                         
                     </ul>
