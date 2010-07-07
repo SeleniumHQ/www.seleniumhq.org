@@ -59,7 +59,7 @@
                     <h3>Screencast</h3>
                     <b>Sauce Labs and Hudson integration</b>
                     <br>
-                    <a href="http://brominefoundation.org/cast/Bromine.html" onclick="javascript: pageTracker._trackPageview('/screencast/view2');"><img src="http://brominefoundation.org/img/thumpsc2.jpg" style='width: 350px;'/></a>
+                    <a href="http://brominefoundation.org/cast/Bromine.html?utm_source=seleniumhq&utm_medium=image&utm_campaign=screencast" onclick="javascript: pageTracker._trackPageview('/screencast/view2');"><img src="http://brominefoundation.org/img/thumpsc2.jpg" style='width: 350px;'/></a>
                     <br>
                     <b>Bromine 3 RC 1</b>
                     <br>
