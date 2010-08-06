@@ -312,7 +312,7 @@ contents of a text field or textarea:
     element.clear();
 
 Filling In Forms
--~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~
 
 We've already seen how to enter text into a textarea or text field, but what 
 about the other elements? You can "toggle" the state of checkboxes, and you 
