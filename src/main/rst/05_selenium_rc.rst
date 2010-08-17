@@ -336,13 +336,16 @@ examples.  To see an example in a specific language, select one of these buttons
    **In Java**:
 
    .. code-block:: java
-
+      
+	  /** Add JUnit framework to your classpath if not already there 
+	   *  for this example to work
+	  */
       package com.example.tests;
 
       import com.thoughtworks.selenium.*;
       import java.util.regex.Pattern;
 
-      public class NewTest extends SeleneseTestCase {  // You will need to reference
+      public class NewTest extends SeleneseTestCase {
           public void setUp() throws Exception {
               setUp("http://www.google.com/", "*firefox");
           }
