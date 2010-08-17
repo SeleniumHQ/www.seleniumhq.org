@@ -326,7 +326,7 @@ examples.  To see an example in a specific language, select one of these buttons
                     selenium.Type("q", "selenium rc");
                     selenium.Click("btnG");
                     selenium.WaitForPageToLoad("30000");
-                    Assert.IsTrue(selenium.IsTextPresent("Results * for selenium rc"));
+                    Assert.AreEqual("selenium rc - Google Search", selenium.GetTitle());
                 }
             }
         }
@@ -342,7 +342,7 @@ examples.  To see an example in a specific language, select one of these buttons
       import com.thoughtworks.selenium.*;
       import java.util.regex.Pattern;
 
-      public class NewTest extends SeleneseTestCase {
+      public class NewTest extends SeleneseTestCase {  // You will need to reference
           public void setUp() throws Exception {
               setUp("http://www.google.com/", "*firefox");
           }
