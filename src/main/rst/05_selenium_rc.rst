@@ -212,8 +212,8 @@ Using the .NET Client Driver
 * Open your desired .Net IDE (Visual Studio, SharpDevelop, MonoDevelop)
 * Create a class library (.dll)
 * Add references to the following DLLs: nmock.dll, nunit.core.dll, nunit.
-  framework.dll, ThoughtWorks.Selenium.Core.dll, ThoughtWorks.Selenium.
-  IntegrationTests.dll and ThoughtWorks.Selenium.UnitTests.dll
+  framework.dll, ThoughtWorks.Selenium.Core.dll, ThoughtWorks.Selenium.IntegrationTests.dll
+  and ThoughtWorks.Selenium.UnitTests.dll
 * Write your Selenium test in a .Net language (C#, VB.Net), or export
   a script from Selenium-IDE to a C# file and copy this code into the class file 
   you just created.
@@ -1158,7 +1158,7 @@ Executing JavaScript from Your Test
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 JavaScript comes very handy in exercising an application which is not directly supported
-by selenium. The **getEval** method of selenium API can be used to execute java script from
+by selenium. The **getEval** method of selenium API can be used to execute JavaScript from
 selenium RC. 
 
 Consider an application having check boxes with no static identifiers. 
@@ -1252,7 +1252,7 @@ with the following option:
 
    -multiwindow 
 
-In Selenium-RC 1.0, if you want to run your test within a
+As of Selenium-RC 1.0, if you want to run your test within a
 single frame (i.e. using the standard for earlier Selenium versions) 
 you can state this to the Selenium Server using the option
 
@@ -1642,7 +1642,7 @@ on a remote machine, the connectivity should be fine assuming you have valid TCP
 connectivity between the two machines.    
 
 If you have difficulty connecting, you can use common networking tools like *ping*,
-*telnet*, *ipconfig(Unix)/ifconfig* (Windows), etc to ensure you have a valid 
+*telnet*, *ifconfig(Unix)/ipconfig* (Windows), etc to ensure you have a valid 
 network connection.  If unfamilar with these, your system administrator can assist you.
  
 Unable to Load the Browser 

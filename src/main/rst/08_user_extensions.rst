@@ -13,7 +13,7 @@ and locator-strategies. This is done with JavaScript by adding methods to the
 Selenium object prototype, and the PageBot object prototype. On startup, 
 Selenium will automatically look through methods on these prototypes, using 
 name patterns to recognize which ones are actions, assertions and locators.
-The following examples try to give an indication of how Selenium can be 
+The following examples give an indication of how Selenium can be 
 extended with JavaScript.
 
 Actions
@@ -41,7 +41,7 @@ into a text box.
         
 Accessors/Assertions
 --------------------
-All getFoo and isFoo methods on the Selenium prototype are added as accessors 
+All \ *get*\Foo and \ *is*\Foo methods on the Selenium prototype are added as accessors 
 (storeFoo). For each accessor there is an assertFoo, verifyFooa nd waitForFoo 
 registered. An assert method can take up to 2 parameters, which will be 
 passed the second and third column values in the test. You can also define 
@@ -69,7 +69,7 @@ available in tests would be assertValueRepeated and verifyValueRepeated.
 
 Automatic availability of storeFoo, assertFoo, assertNotFoo, waitForFoo and waitForNotFoo for every getFoo
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-All getFoo and isFoo methods on the Selenium prototype automatically result 
+All \ *get*\Foo and \ *is*\Foo methods on the Selenium prototype automatically result 
 in the availability of storeFoo, assertFoo, assertNotFoo, verifyFoo, 
 verifyNotFoo, waitForFoo, and waitForNotFoo commands.
 Example, if you add a ``getTextLength()`` method, the following commands will 
@@ -248,6 +248,3 @@ Example
 				}
 			}
 		}
-
-
-    End

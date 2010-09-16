@@ -155,16 +155,15 @@ are explained below with examples for each.
 Default Locators 
 ~~~~~~~~~~~~~~~~
 You can choose to omit the locator type in the following situations:
+
+ - Locators without an explicitly defined locator strategy will default
+   to using the identifier locator strategy. See `Locating by Identifier`_.
+   
+ - Locators starting with "//" will use the XPath locator strategy. 
+   See `Locating by XPath`_.   
  
  - Locators starting with "document" will use the DOM locator strategy. 
    See `Locating by DOM`_
-
- - Locators starting with "//" will use the XPath locator strategy. 
-   See `Locating by XPath`_.
-
- - Locators that start with anything other than the above or a valid locator 
-   type will default to using the identifier locator strategy. 
-   See `Locating by Identifier`_.
 
 Locating by Identifier
 ~~~~~~~~~~~~~~~~~~~~~~
@@ -667,7 +666,7 @@ c) Install the `goto_sel_ide.js <http://51elliot.blogspot.com/2008/02/selenium-i
 
 Most testers will export the test script into a programming language file that uses the
 Selenium-RC API (see the Selenium-IDE chapter).  However, some organizations prefer
-to run their scripts from Selenium-IDE whenever possible (such as when they have
+to run their scripts from Selenium-IDE whenever possible (for instance, when they have
 many junior-level people running tests for them, or when programming skills are
 lacking). If this is your case, consider a JavaScript snippet or the goto_sel_ide.js extension.  
 
@@ -740,7 +739,7 @@ StoreEval allows the test to store the result of running the script in a variabl
 
 JavaScript and Selenese Parameters
 ----------------------------------
-JavaScript can be used with two types of Selenese parameters--**script**
+JavaScript can be used with two types of Selenese parameters: script
 and non-script (usually expressions).  In most cases, you'll want to access 
 and/or manipulate a test case variable inside the JavaScript snippet used as 
 a Selenese parameter.  All variables created in your test case are stored in 

@@ -109,10 +109,8 @@ Ajax Tests
 ~~~~~~~~~~ 
 
 Ajax is a technology which supports dynamic real-time UI elements such as
-animation and RSS feeds.  In AJAX-driven web applications, data is
+animation and RSS feeds.  In Ajax-driven web applications, data is
 retrieved from the application server without refreshing the page. 
-
-*NOTE - INCLUDE A GOOD DEFINITION OF AJAX OFF THE INTERNET.*
 
 Verifying Results
 -----------------
@@ -182,9 +180,9 @@ we can locate an object using
 - an Xpath statement
 - document object model (DOM)
 
-Generally, using an ID locator is more efficient.  It also makes your test code
+Generally, using an ID locator is more efficient as it makes your test code
 more readable, assuming the ID used by the AUT's page source is a meaningful
-one.  Using the name attribute also has similar advantages.  Finally, these
+one.  Using the name attribute also has similar advantages.  These
 also give the best performance.  Xpath statements have been known to be slow
 in Internet Explorer due to limations of IE's Xpath processor.
   
@@ -262,11 +260,11 @@ Or, again in Selelenium-RC
     selenium.click("addForm:_ID74:_ID75:0:_ID79:0:checkBox);
 
 Given the dynamically generated Identifier, this approach would not work. 
-Next time when this page is loaded the Identifier will be a different value
+The next time this page is loaded the Identifier will be a different value
 from the one used in the Selenium command and therefore, will not be found.
 The click operation will fail with an "element not found" error.
 
-To begin, a simple solution would be to just use an XPath locator rather than 
+To correct this, a simple solution would be to just use an XPath locator rather than 
 trying to use an ID locator.  So, for the checkbox you can simply use
 
 .. code-block:: java
@@ -302,7 +300,7 @@ command. It can be done like this.
                    }
            }
 
-This approach will work if there is only one field whose ID has got the text 
+This approach will work if there is only one field whose ID has the text 
 'addForm' appended to it.
 
 Consider one more example of a Dynamic object; a page with two links having 
@@ -354,7 +352,7 @@ can be achieved as follows.
 
 How can I avoid using complex xpath expressions in my test?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-These element IDs should be explicitly created by the application designer, 
+Where possible, element IDs should be explicitly created by the application designer, 
 not automatically generated. Automatically generated (non-descriptive) 
 element IDs (i.e. id_147) tend to cause two problems: first, each time the 
 application is deployed, different element IDs could be generated. If the 
@@ -390,10 +388,10 @@ We introduced the special characteristics of AJAX technology earlier in this
 chapter.  Basically, a page element implemented with Ajax is an element that
 can be dynamically refreshed without having to refresh the entire page.
 
-Waiting for an AJAX Element
+Waiting for an Ajax Element
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
-For an AJAX element using Selenium's *waitForPageToLoad* wouldn't
-work since the page is not actually loaded to refresh the AJAX element. Pausing
+For an Ajax element using Selenium's *waitForPageToLoad* wouldn't
+work since the page is not actually loaded to refresh the Ajax element. Pausing
 the test execution for a specified period of time is also not good
 because the web element might appear later than expected leading to invalid
 test failures (reported failures that aren't actually failures). 
@@ -420,7 +418,7 @@ by Selenium using a *for* loop.
 	
    } 
 
-This certainly isn't the only solution.  AJAX is a common topic in the user group and we
+This certainly isn't the only solution.  Ajax is a common topic in the user group and we
 suggest searching previous discussions to see what others have done along with the questions
 they have posted.  
    
@@ -515,7 +513,7 @@ look like this.
    		selenium.waitForPageToLoad("30000");
    }
    
-The Idea is to have a centralized location for objects and using 
+The idea is to have a centralized location for objects and using 
 comprehensible names for those objects. To achieve this, properties files can 
 be used in java. A properties file contains key/value pairs, where each 
 key and value are strings.
@@ -644,8 +642,8 @@ Since you can also do database queries from your favorite programming
 language, assuming you have database support functions, why not use them
 for some data validations/retrieval on the Application Under Test?
 
-Consider example of registration process where a registered email address
-is to be retrieved from database. An example of establishing a DB connection
+Consider the example of a registration process where a registered email address
+is to be retrieved from the database. An example of establishing a DB connection
 and retrieving data from the DB would be:  
 
 **In Java:**
