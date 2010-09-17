@@ -152,19 +152,6 @@ are explained below with examples for each.
    we put A example HTML code before starting with each strategie and then use
    that one on all of them?
 
-Default Locators 
-~~~~~~~~~~~~~~~~
-You can choose to omit the locator type in the following situations:
-
- - Locators without an explicitly defined locator strategy will default
-   to using the identifier locator strategy. See `Locating by Identifier`_.
-   
- - Locators starting with "//" will use the XPath locator strategy. 
-   See `Locating by XPath`_.   
- 
- - Locators starting with "document" will use the DOM locator strategy. 
-   See `Locating by DOM`_
-
 Locating by Identifier
 ~~~~~~~~~~~~~~~~~~~~~~
 This is probably the most common method of locating elements and is the 
@@ -429,6 +416,19 @@ references there.
 .. note:: Most experienced Selenium users recommend CSS as their locating
    strategy of choice as it's considerably faster than XPath and can find the 
    most complicated objects in an intrinsic HTML document.
+
+Implicit Locators 
+~~~~~~~~~~~~~~~~~
+You can choose to omit the locator type in the following situations:
+
+ - Locators without an explicitly defined locator strategy will default
+   to using the identifier locator strategy. See `Locating by Identifier`_.
+   
+ - Locators starting with "//" will use the XPath locator strategy. 
+   See `Locating by XPath`_.   
+ 
+ - Locators starting with "document" will use the DOM locator strategy. 
+   See `Locating by DOM`_
 
 .. _patterns-section:
 
