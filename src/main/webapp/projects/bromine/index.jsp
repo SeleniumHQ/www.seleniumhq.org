@@ -19,7 +19,7 @@
         <table border="0">            
             <tr>                
                 <td valign="top">
-                    <a href="../../download/?ref=projects/bromine"><img src="download.gif" style='float: left; margin-right: 6px;'></a>	
+                    <a href="http://brominefoundation.org/download"><img src="download.gif" style='float: left; margin-right: 6px;'></a>	
                     <p>
                         <b>Bromine</b> is a web-based QA tool for Selenium, that enables you to easily run Selenium-RC tests and view the results. It scales beautifully from the single tester that just wants to run some tests without all the hassle to the corporate solution with multiple user-groups and hundreds of testcases. 
                     </p>
@@ -67,6 +67,7 @@
                     <br />
                     <h3>Links:</h3>	                     
                     <ul>
+                        <li><a href="http://brominefoundation.org/download">Download</a></li>
                         <li><a href="http://wiki.brominefoundation.org">Documentation</a></li>
                         <li><a href="http://forum.brominefoundation.org/">Forums</a></li>		                         
                         <li><a href="http://jira.openqa.org/browse/BR">Bug tracker</a></li>		                         		                         
