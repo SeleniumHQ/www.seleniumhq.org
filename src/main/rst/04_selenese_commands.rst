@@ -819,8 +819,133 @@ echo    	   Username is ${userName}
 
 Alerts, Popups, and Multiple Windows
 ------------------------------------
-*This section is not yet developed.*
+Suppose that you are testing a page that looks like this.
 
-.. Paul: This is an important area, people are constantly asking about this 
-   on the user group.
+.. code-block:: html
+  :linenos:
+  
+  <!DOCTYPE HTML>
+  <html>
+  <head>
+    <script type="text/javascript">
+      function output(resultText){
+        document.getElementById('output').childNodes[0].nodeValue=resultText;
+      }
 
+      function show_confirm(){
+        var confirmation=confirm("Chose an option.");
+        if (confirmation==true){
+          output("Confirmed.");
+        }
+        else{
+          output("Rejected!");
+        }
+      }
+      
+      function show_alert(){
+        alert("I'm blocking!");
+        output("Alert is gone.");
+      }
+      function show_prompt(){
+        var response = prompt("What's the best web QA tool?","Selenium");
+        output(response);
+      }
+      function open_window(windowName){
+        window.open("newWindow.html",windowName);
+      }
+      </script>
+  </head>
+  <body>
+
+    <input type="button" id="btnConfirm" onclick="show_confirm()" value="Show confirm box" />
+    <input type="button" id="btnAlert" onclick="show_alert()" value="Show alert" />
+    <input type="button" id="btnPrompt" onclick="show_prompt()" value="Show prompt" />
+    <a href="newWindow.html" id="lnkNewWindow" target="_blank">New Window Link</a>
+    <input type="button" id="btnNewNamelessWindow" onclick="open_window()" value="Open Nameless Window" />
+    <input type="button" id="btnNewNamedWindow" onclick="open_window('Mike')" value="Open Named Window" />
+
+    <br />
+    <span id="output">
+    </span>
+  </body>
+  </html>
+
+The user must respond to alert/confirm boxes, as well as moving focus to newly 
+opened popup windows. Fortunately, Selenium can cover JavaScript pop-ups.
+
+But before we begin covering alerts/confirms/prompts in individual detail, it is
+helpful to understand the commonality between them. Alerts, confirmation boxes 
+and prompts all have variations of the following 
+
+===========================     ================================================================
+**Command**                     **Description**
+===========================     ================================================================
+assertFoo(*pattern*)            throws error if *pattern* doesn't match the text of the pop-up
+assertFooPresent                throws error if pop-up is not available
+assertFooNotPresent             throws error if any pop-up is present
+storeFoo(*variable*)            stores the text of the pop-up in a variable
+storeFooPresent(*variable*)     stores the text of the pop-up in a variable and returns true or false
+===========================     ================================================================
+
+When running under Selenium, JavaScript pop-ups will not appear. This is because
+the function calls are actually being overridden at runtime by Selenium's own
+JavaScript. However, just because you cannot see the pop-up doesn't mean you don't
+have do deal with it. To handle a pop-up, you must call it's ``assertFoo(pattern)``
+function. If you fail to assert the presence of a pop-up your next command will be 
+blocked and you will get an error similar to the following ``[error] Error: There
+was an unexpected Confirmation! [Chose an option.]``
+
+Alerts
+~~~~~~
+Let's start with asserts because they are the simplest pop-up to handle. To begin,
+open the HTML sample above in a browser and click on the "Show alert" button. You'll
+notice that after you close the alert the text "Alert is gone." is displayed on the
+page. Now run through the same steps with Selenium IDE recording, and verify
+the text is added after you close the alert. Your test will look something like
+this:
+
+==================    ============================================   ===========
+ **Command**           **Target**                                     **Value**
+==================    ============================================   ===========
+open                   /                                             
+click                  btnAlert                                       
+assertAlert            I'm blocking
+verifyTextPresent      Alert is gone.
+==================    ============================================   ===========
+
+You may be thinking "Thats odd, I never tried to assert that alert." But this is
+Selenium-IDE handling and closing the alert for you. If you remove that step and replay
+the test you will get the following error ``[error] Error: There was an unexpected
+Alert! [I'm blocking!]``. You must include an assertion of the alert to acknowledge 
+it's presence.
+ 
+If you just want to assert that an alert is present but either don't know or don't care
+what text it contains, you can use ``assertAlertPresent``. This will return true or false,
+with false halting the test.
+
+Confirmations
+~~~~~~~~~~~~~
+Confirmations behave in much the same way as alerts, with ``assertConfirmation`` and
+``assertConfirmationPresent`` offering the same characteristics as their alert counterparts.
+However, by default Selenium will select OK when a confirmation pops up. Try recording
+clicking on the "Show confirm box" button in the sample page, but click on the "Cancel" button
+in the popup, then assert the output text. Your test may look something like this:
+
+===============================    ============================================   ===========
+ **Command**                        **Target**                                     **Value**
+===============================    ============================================   ===========
+open                                     /                                             
+click                                    btnConfirm                                       
+chooseCancelOnNextConfirmation
+assertConfirmation                       Choose and option.
+verifyTextPresent                        Rejected
+===============================    ============================================   ===========
+
+The ``chooseCancelOnNextConfirmation`` function tells Selenium that all following
+confirmation should return false. It can be reset by calling chooseOkOnNextConfirmation.
+
+You may notice that you cannot replay this test, because Selenium complains that there
+is an unhandled confirmation. This is because the order of events Selenium-IDE records
+causes the click and chooseCancelOnNextConfirmation to be put in the wrong order (it makes sense 
+if you think about it, Selenium can't know that you're cancelling before you open a confirmation)
+Simply switch these two commands and your test will run fine.
