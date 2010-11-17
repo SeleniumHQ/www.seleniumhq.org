@@ -22,20 +22,27 @@ Using Firefox, first, download the IDE from the SeleniumHQ `downloads page`_
   
 .. _`downloads page`: http://seleniumhq.org/download/
   
-When downloading from Firefox, you'll be presented with the following window. 
- 
+Firefox will protect you from installing addons from unfamiliar locations, so
+you will need to click 'Allow' to proceed with the installation, as shown in the
+following screenshot.
+
 .. image:: images/chapt3_img01_IDE_Installation.png
    :class: align-center
 
-Select Install Now.  The Firefox Add-ons window pops up, first showing a 
+When downloading from Firefox, you'll be presented with the following window. 
+ 
+.. image:: images/chapt3_img02_IDE_Installation.png
+   :class: align-center
+
+Select Install Now. The Firefox Add-ons window pops up, first showing a 
 progress bar, and when the download is complete, displays the following. 
   
-.. image:: images/chapt3_img02_IDE_Installation.png
+.. image:: images/chapt3_img03_IDE_Installation.png
    :class: align-center
   
 Restart Firefox.  After Firefox reboots you will find the Selenium-IDE listed under the Firefox Tools menu. 
 
-.. image:: images/chapt3_img03_IDE_Installation.png
+.. image:: images/chapt3_img04_IDE_Installation.png
    :class: align-center
 
 Opening the IDE 
@@ -44,7 +51,7 @@ To run the Selenium-IDE, simply select it from the Firefox Tools menu.  It opens
 as follows with an empty script-editing window and a menu for loading, or 
 creating new test cases. 
 
-.. image:: images/chapt3_img04_IDE_open.png
+.. image:: images/chapt3_img05_IDE_open.png
    :class: align-center
   
 IDE Features  
@@ -66,7 +73,7 @@ The toolbar contains buttons for controlling the execution of your test
 cases, including a step feature for debugging your test cases.  The right-most 
 button, the one with the red-dot, is the record button.  
   
-.. image:: images/chapt3_img05_IDE_features.png
+.. image:: images/chapt3_img06_IDE_features.png
    :class: align-center
   
 |speed control|
@@ -77,7 +84,7 @@ button, the one with the red-dot, is the record button.
 |run|
     Run:  Runs the currently selected test.  When only a single test is 
     loaded this button and the Run All button have the same effect.  
-|pause resume|
+|pause| |resume|
     Pause/Resume:  Allows stopping and re-starting of a running test case.
 |step|
     Step:  Allows you to "step" through a test case by running it one command at a 
@@ -97,21 +104,22 @@ button, the one with the red-dot, is the record button.
 |record|
     Record:  Records the user's browser actions.  
 
-.. |speed control| image:: images/chapt3_img06_Speed_Control.png
-.. |run all| image:: images/chapt3_img07_Run_All.png
-.. |run| image:: images/chapt3_img08_Run.png
-.. |pause resume| image:: images/chapt3_img09_Pause.png
-.. |step| image:: images/chapt3_img11_Step.png
-.. |testrunner| image:: images/chapt3_img12_TestRunner_Mode.png
-.. |rollup| image:: images/chapt3_img13_Apply_Rollup_Rules.png
-.. |record| image:: images/chapt3_img14_Record.png
+.. |speed control| image:: images/chapt3_img07_Speed_Control.png
+.. |run all| image:: images/chapt3_img08_Run_All.png
+.. |run| image:: images/chapt3_img09_Run.png
+.. |pause| image:: images/chapt3_img10_Pause.png
+.. |resume| image:: images/chapt3_img11_Resume.png
+.. |step| image:: images/chapt3_img12_Step.png
+.. |testrunner| image:: images/chapt3_img13_TestRunner_Mode.png
+.. |rollup| image:: images/chapt3_img14_Apply_Rollup_Rules.png
+.. |record| image:: images/chapt3_img15_Record.png
  
 Test Case Pane
 ++++++++++++++
 Your script is displayed in the test case pane.  It has two tabs, one for 
 displaying the command and their parameters in a readable "table" format.  
 
-.. image:: images/chapt3_img15_Table_Format.png
+.. image:: images/chapt3_img16_Table_Format.png
    :class: align-center
   
 The other tab - Source displays the test case in the native format in which the file 
@@ -127,7 +135,7 @@ a command in the Reference tab of the bottom pane always goes in the Target
 field.  If a second parameter is specified by the Reference tab, it always
 goes in the Value field.
   
-.. image:: images/chapt3_img16_Entry_Fields.png
+.. image:: images/chapt3_img17_Entry_Fields.png
    :class: align-center
   
 If you start typing in the Command field, a drop-down list will be populated 
@@ -149,7 +157,7 @@ tab.  These messages are often useful for test case debugging.   Notice the Clea
 button for clearing the Log.  Also notice the Info button is a drop-down 
 allowing selection of different levels of information to log.  
   
-.. image:: images/chapt3_img17_Bottom_Box.png
+.. image:: images/chapt3_img18_Bottom_Box.png
    :class: align-center
 
 Reference
@@ -168,7 +176,7 @@ the type specified.
 If there is a mismatch in any of these three areas, the command will not 
 run correctly.
 
-.. image:: images/chapt3_img18_Bottom_Box_Ref.png
+.. image:: images/chapt3_img19_Bottom_Box_Ref.png
    :class: align-center
 
 While the Reference tab is invaluable as a quick reference, it is still often
@@ -386,13 +394,13 @@ then create an absolute URL by appending the *open* command's
 argument onto the end of the value of Base URL.  For example, the 
 test case below would be run against \http://news.portal.com/about.html:
 
-.. image:: images/chapt3_img20_BaseURL_prod.png
+.. image:: images/chapt3_img21_BaseURL_prod.png
    :class: align-center
 
 This same test case with a modified Base URL setting would be run against
 \http://beta.news.portal.com/about.html:
 
-.. image:: images/chapt3_img21_BaseURL_beta.png
+.. image:: images/chapt3_img22_BaseURL_beta.png
    :class: align-center
 
 Debugging 
@@ -439,15 +447,15 @@ steps:
 
 1. Start the test case running with the Run button from the toolbar.
 
-.. image:: images/chapt3_img08_Run.png
+.. image:: images/chapt3_img09_Run.png
 
 2. Immediately pause the executing test case with the Pause button.
 
-.. image:: images/chapt3_img19_Pause-only.png
+.. image:: images/chapt3_img10_Pause.png
 
 3. Repeatedly select the Step button.
 
-.. image:: images/chapt3_img11_Step.png
+.. image:: images/chapt3_img12_Step.png
 
 Find Button 
 +++++++++++
@@ -495,7 +503,7 @@ contents of this drop-down for one command.  Note that the first column of
 the drop-down provides alternative locators, whereas the second column
 indicates the type of each alternative.
 
-.. image:: images/chapt3_img22_IDE_Locator_Assistance.png
+.. image:: images/chapt3_img23_IDE_Locator_Assistance.png
 
 Writing a Test Suite 
 --------------------
@@ -574,7 +582,7 @@ To install this extension, put the pathname to its location on your
 computer in the **Selenium Core extensions** field of Selenium-IDE's
 Options=>Options=>General tab.
 
-.. image:: images/chapt3_img31_Extensions_install.png
+.. image:: images/chapt3_img32_Extensions_install.png
    :class: align-center
 
 After selecting the **OK** button, you must close and reopen Selenium-IDE
@@ -628,33 +636,40 @@ Troubleshooting
 Below is a list of image/explanation pairs which describe frequent
 sources of problems with Selenium-IDE:
 
-.. image:: images/chapt3_img30_Trouble_startup.png
+*Table view is not available with this format.* 
 
-This problem occurs occasionally when Selenium IDE is first brought up.  The 
-solution is to close and reopen Selenium IDE.  The bug has been filed as `SIDE-230`_.
+This message can be occasionally displayed in the Table tab when Selenium IDE is
+launched. The workaround is to close and reopen Selenium IDE. See `issue 1008`_.
+for more information. If you are able to reproduce this reliably then please
+provide details so that we can work on a fix.
 
-.. _SIDE-230: http://jira.openqa.org/browse/SIDE-230
-
-------------------
-
-.. image:: images/chapt3_img24_Trouble_open.png
-
-You've used **File=>Open** to try to open a test suite file. Use **File=>Open Test Suite** instead.
+.. _issue 1008: http://code.google.com/p/selenium/issues/detail?id=1008
 
 ------------------
 
-.. image:: images/chapt3_img27_Trouble_timing.png
+*error loading test case: no command found*
+
+You've used **File=>Open** to try to open a test suite file. Use **File=>Open
+Test Suite** instead.
+
+An enhancement request has been raised to improve this error message. See
+`issue 1010`_.
+
+.. _issue 1010: http://code.google.com/p/selenium/issues/detail?id=1010
+
+------------------
+
+.. image:: images/chapt3_img28_Trouble_timing.png
 
 This type of **error** may indicate a timing problem, i.e., the element 
 specified by a locator in your command wasn't fully loaded when the command 
 was executed.  Try putting a **pause 5000** before the command to determine 
 whether the problem is indeed related to timing.  If so, investigate using an 
-appropriate **waitFor\*** or **\*AndWait** command immediately before the 
-failing command.
+appropriate **waitFor\*** or **\*AndWait** command before the failing command.
 
 ------------------
 
-.. image:: images/chapt3_img28_Trouble_param.png
+.. image:: images/chapt3_img29_Trouble_param.png
 
 Whenever your attempt to use variable substitution fails as is the
 case for the **open** command above, it indicates
@@ -670,24 +685,35 @@ must go in the **Value** field.
 
 ----------
 
-.. image:: images/chapt3_img23_Trouble_ts.png
+*error loading test case: [Exception... "Component returned failure code:
+0x80520012 (NS_ERROR_FILE_NOT_FOUND) [nsIFileInputStream.init]" nresult:
+"0x80520012 (NS_ERROR_FILE_NOT_FOUND)" location: "JS frame ::
+chrome://selenium-ide/content/file-utils.js :: anonymous :: line 48" data: no]*
 
-One of the test cases in your test suite cannot be found.  Make sure 
-that the test case is indeed located where the test suite indicates 
-it is located.  Also, 
-make sure that your actual test case files have the .html extension both 
-in their filenames, and in the test suite file where they are referenced.
+One of the test cases in your test suite cannot be found.  Make sure that the
+test case is indeed located where the test suite indicates it is located.  Also,
+make sure that your actual test case files have the .html extension both in
+their filenames, and in the test suite file where they are referenced.
+
+An enhancement request has been raised to improve this error message. See
+`issue 1011`_.
+
+.. _issue 1011: http://code.google.com/p/selenium/issues/detail?id=1011
 
 ----------
 
-.. image:: images/chapt3_img25_Trouble_space.png
+.. image:: images/chapt3_img26_Trouble_space.png
 
 Selenium-IDE is very *space-sensitive*!  An extra space before or after 
 a command will cause it to be unrecognizable.
 
+This defect has been raised. See `issue 1012`_.
+
+.. _issue 1012: http://code.google.com/p/selenium/issues/detail?id=1012
+
 ----------
 
-.. image:: images/chapt3_img26_Trouble_extension.png
+.. image:: images/chapt3_img27_Trouble_extension.png
 
 Your extension file's contents have not been read by Selenium-IDE.  Be 
 sure you have specified the proper pathname to the extensions file via 
@@ -698,7 +724,7 @@ field.
 
 ----------
 
-.. image:: images/chapt3_img29_Trouble_collapsed.png
+.. image:: images/chapt3_img30_Trouble_collapsed.png
 
 This type of error message makes it appear that Selenium-IDE has generated
 a failure where there is none.  However, Selenium-IDE is correct that
@@ -706,6 +732,10 @@ the actual value does not match the value specified in such test cases.
 The problem is that the log file error messages collapse a series of
 two or more spaces into a single space, which is confusing.  In the 
 example above, note that the parameter for **verifyTitle** has two 
-spaces between the words "System" and "Division."  The page's actual 
+spaces between the words "Selenium" and "web"  The page's actual 
 title has only one space between these words.  Thus, Selenium-IDE is 
 correct to generate an error, but is misleading in the nature of the error.
+
+This defect has been raised. See `issue 1013`_.
+
+.. _issue 1013: http://code.google.com/p/selenium/issues/detail?id=1013
