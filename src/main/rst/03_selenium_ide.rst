@@ -267,7 +267,7 @@ select an image and right-click.
 Again, these commands will be explained in detail in the chapter on Selenium 
 commands.  For now though, feel free to use the IDE to record and select 
 commands into a test case and then run it.  You can learn a lot about 
-the Selenium commands simply by experimenting though the IDE. 
+the Selenium commands simply by experimenting with the IDE. 
   
 Editing  
 +++++++
@@ -310,7 +310,7 @@ font.
 Source View
 ___________
 Select the point in your test case where you want to insert the comment.  Add
-an HTML-style comment, i.e., *<!-- your comment here -->*.
+an HTML-style comment, i.e., ``<!-- your comment here -->``.
   
 Edit a Command or Comment 
 ~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -327,19 +327,15 @@ which line you wish--command, parameter, or comment.
 
 Opening and Saving a Test Case
 ++++++++++++++++++++++++++++++
-The File=>Open, Save and Save As menu commands behave similarly to opening and 
-saving files in most other programs.  When you open an existing test case, Selenium-IDE 
+Like most programs, there are Save and Open commands under the File menu.
+However, Selenium distinguishes between test cases and test suites.
+To save your Selenium-IDE tests for later use you can either save the
+individual test cases, or save the test suite. If the test cases of your
+test suite have not been saved, you'll be prompted to save them before
+saving the test suite.
+
+When you open an existing test case or suite, Selenium-IDE
 displays its Selenium commands in the Test Case Pane.
-  
-Test suite files can also be opened and saved via the File menu.  However,
-such operations have their own menu entries near the bottom; the Open,
-Save, and Save As items are only for files.  
-  
-.. note:: 
-    At the time of this writing, there's a bug, where at times, when the IDE is 
-    first opened and then you select File=>Open, nothing happens.  If you see 
-    this, close down the IDE and restart it (you don't need to close the 
-    browser itself).  This will fix the problem. 
   
 Running Test Cases
 ------------------
