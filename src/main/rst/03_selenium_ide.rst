@@ -201,12 +201,9 @@ Recording
 +++++++++
 Many first-time users begin by recording a test case from their interactions 
 with a website.  When Selenium-IDE is first opened, the record button is ON by 
-default. 
-
-.. note::
-    This can be set to OFF as a default with an available user extension. 
-
-.. TODO: mam-p: We need a link to this user extension.  It doesn't appear to be on the extensions page to which we've already referred readers. 
+default. If you do not want Selenium-IDE to begin recording automatically you
+can turn this off by going under Options > Options... and deselecting
+"Start recording immediately on open."
 
 During recording, Selenium-IDE will automatically insert commands into your 
 test case based on 
