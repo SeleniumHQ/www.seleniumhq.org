@@ -732,9 +732,14 @@ It is used like so:
     selenium.type("name=q", "cheese");
     selenium.click("name=btnG");
 
-    // And get the underlying WebDriver implementation back. This will refer to the
+    // Get the underlying WebDriver implementation back. This will refer to the
     // same WebDriver instance as the "driver" variable above.
     WebDriver driverInstance = ((WebDriverBackedSelenium) selenium).getUnderlyingWebDriver();
+	
+	//Finally, close the browser. Call stop on the WebDriverBackedSelenium instance
+	//instead of calling driver.quit(). Otherwise, the JVM will continue running after
+	//the browser has been closed.
+	selenium.stop();
 
 Pros
 ~~~~
