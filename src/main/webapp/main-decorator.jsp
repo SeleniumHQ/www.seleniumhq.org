@@ -79,10 +79,10 @@ pageTracker._trackPageview();
         <ul id="nav">
             <li><a href="/download/">Selenium Downloads</a>
                 <ul>
-                    <li><a href="/download/previous.html">Previous Releases</a></li>
-                    <li><a href="/download/nightly.html">Nightly Releases</a></li>
+                    <li><a href="http://release.seleniumhq.org">Previous Releases</a></li>
+                    <li><a href="http://xserve.openqa.org:8085">Latest Builds</a></li>
                     <li><a href="/download/source.html">Source Code</a></li>
-                    <li><a href="/download/maven.html">Maven Repository Info</a></li>
+                    <li><a href="http://seleniumhq.wordpress.com/2010/07/30/how-to-use-selenium-2-with-maven/ ">Maven Information</a></li>
                 </ul>
             </li>
         </ul>
