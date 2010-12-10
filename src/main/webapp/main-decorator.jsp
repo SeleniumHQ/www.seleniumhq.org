@@ -193,7 +193,7 @@ pageTracker._trackPageview();
                 <li><a href="/about/platforms.html">Supported Platforms</a></li>
                 <li><a href="/about/contributors.html">Who made Selenium</a>
                 <li><a href="/about/news.jsp">News/Blogs</a></li>
-                <li><a href="/about/roadmap.html">Roadmap</a></li>
+                <li><a href="http://code.google.com/p/selenium/wiki/RoadMap">Roadmap</a></li>
                 <li><a href="/about/getting-involved.html">Getting Involved</a></li>
             </ul>
         </li>
