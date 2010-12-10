@@ -56,7 +56,7 @@ pageTracker._trackPageview();
                     <li><a href="/about/how.html">How it Works</a></li>
                     <li><a href="/about/platforms.html">Platform support</a></li>
                     <li><a href="/about/history.html">History</a></li>
-                    <li><a href="/about/roadmap.html">Roadmap</a></li>
+                    <li><a href="http://code.google.com/p/selenium/wiki/RoadMap">Roadmap</a></li>
                     <li><a href="/about/contributors.html">Contributors</a></li>
                     <li><a href="/about/getting-involved.html">Getting Involved</a></li>
                 </ul>
@@ -174,8 +174,8 @@ pageTracker._trackPageview();
         <li><a href="/docs/">Documentation</a>
             <ul>
                 <li><a href="/docs/">Online version</a></li>
-                <li><a href="/docs/book/Selenium_Documentation.pdf">Offline version (pdf)</a></li>
-                <li><a href="http://wiki.openqa.org/">Wiki</a></li>
+                <!-- Disabled for now <li><a href="/docs/book/Selenium_Documentation.pdf">Offline version (pdf)</a></li> -->
+                <li><a href="http://code.google.com/p/selenium/w/list">Wiki</a></li>
                 <li><a href="http://release.openqa.org/selenium-core/1.0/reference.html">Selenium API</a></li>
             </ul>
         </li>
