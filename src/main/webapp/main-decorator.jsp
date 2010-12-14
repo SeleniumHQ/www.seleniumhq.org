@@ -174,7 +174,7 @@ pageTracker._trackPageview();
         <li><a href="/docs/">Documentation</a>
             <ul>
                 <li><a href="/docs/">Online version</a></li>
-                <!-- Disabled for now <li><a href="/docs/book/Selenium_Documentation.pdf">Offline version (pdf)</a></li> -->
+                <li><a href="/docs/book/Selenium_Documentation.pdf">Offline version (pdf)</a></li>
                 <li><a href="http://code.google.com/p/selenium/w/list">Wiki</a></li>
                 <li><a href="http://release.openqa.org/selenium-core/1.0/reference.html">Selenium API</a></li>
             </ul>
