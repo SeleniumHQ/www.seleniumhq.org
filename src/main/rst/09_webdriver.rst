@@ -429,6 +429,21 @@ can specify the frame by its index too. That is:
 would go to the frame named "child" of the first subframe of the frame called 
 "frameName". **All frames are evaluated as if from *top*.**
 
+Popup Dialogs
+~~~~~~~~~~~~~~
+
+Starting with Selenium 2.0 beta 1, there is built in support for handling popup 
+dialog boxes. After you've triggerd and action that would open a 
+popup, you can access the alert with the following:
+
+.. code-block:: java
+
+    Alert alert = driver.switchTo().alert();
+	
+This will return the currently open alert object. With this object you can now accept,
+dismiss, read it's contents or even type into a prompt. This interface works equally 
+well on alerts, confirms, prompts. Refer to the JavaDocs for more information.
+
 Navigation: History and Location
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
