@@ -134,7 +134,7 @@ pageTracker._trackPageview();
             </li>
         </ul>
 
-        <div class="downloadBox"><a href="/download/">Download Selenium</a>1.0</div>
+        <div class="downloadBox"><a href="/download/">Download Selenium</a></div>
 
         <%--<script language="javascript" src="http://tipjoy.com/socnet/widget?username=patrick4&url=http%3A%2F%2Fseleniumhq.org&message=Love%20Selenium%3F%20Leave%20us%20a%20tip!&amount=0.99&showTipperMessage=True&tipperMessageTitle=What%20is%20your%20favorite%20Selenium%20project%3F"></script>--%>
 
