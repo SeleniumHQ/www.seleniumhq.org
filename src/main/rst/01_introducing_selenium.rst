@@ -258,7 +258,7 @@ The Original Authors
 The original authors who kickstarted this document are listed in alphabetical 
 order.  Each of us contributed significantly by taking a leadership role in 
 specific areas.  Each chapter originally had a primary author who kicked off 
-the intial writing, but in the end, each of us made significant contributions 
+the initial writing, but in the end, each of us made significant contributions 
 to each chapter throughout the project.
 
 Current Authors
