@@ -20,7 +20,7 @@ Also, we have aimed to write so that those completely new to test automation
 will be able to use this document as a stepping stone.  No doubt, 
 experienced users and "newbies" will benefit from our Selenium User's Guide. 
 
-Please realize that this document is a work in progress.  There are planned areas we
+This document is a work in progress.  There are planned areas we
 haven't written yet.  However, we have written the beginning chapters first 
 so newcomers can get started more smoothly.  We have also already added some valuable 
 information that more experienced users will appreciate.  This document will be a 'live'
