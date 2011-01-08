@@ -34,4 +34,4 @@ enhancement request.
 
                     Thanks very much for reading. 
 					
-							-- the Selenium Documentation Team.
+							-- the Selenium Documentation Team
