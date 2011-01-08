@@ -5,6 +5,8 @@ Note to the Reader
 Hello, and welcome to Selenium!  The Documentation Team would like to 
 welcome you, and to thank you for being interested in Selenium.
 
+
+
 We have worked very, very hard on this document.  Why?  We absolutely believe 
 this is the best tool for web-application testing.  We feel its extensibility 
 and flexibility, along with its tight integration with the browser, is 
