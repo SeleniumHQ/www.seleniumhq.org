@@ -73,8 +73,8 @@ refer to that as ``$WEBDRIVER_HOME``. Now, open your favourite IDE and:
  * Start a new Java project in your favourite IDE
  * Add all the JAR files under ``$WEBDRIVER_HOME`` to the ``CLASSPATH``
 
-You can see that WebDriver acts just as a normal Java library does: it's 
-entirely self-contained, and you don't need to remember to start any 
+You can see that WebDriver acts just as a normal library does: it's 
+entirely self-contained, and you usually don't need to remember to start any 
 additional processes or run any installers before using it. 
 
 You're now ready to write some code. An easy way to get started is this 
@@ -115,7 +115,39 @@ won't see a new browser window open.
             System.out.println("Page title is: " + driver.getTitle());
         }
     }
+	
+HtmlUnit isn't confined to just Java. Other languages can access it as well. Below
+is the same example in C#. Note that you'll need to run the remote WebDriver server
+to use HtmlUnit from C#
 
+.. code-block:: c#
+
+    using OpenQA.Selenium;
+    using OpenQA.Selenium.Remote;
+
+    class Example
+    {
+        static void Main(string[] args)
+        {
+            //to use HtmlUnit from .Net we must access it through the RemoteWebDriver
+            //Download and run the selenium-server-standalone-2.0b1.jar locally to run this example
+            ICapabilities desiredCapabilities = DesiredCapabilities.HtmlUnit();
+            IWebDriver driver = new RemoteWebDriver(desiredCapabilities);
+
+            //the .Net Webdriver relies on a slightly different API to navigate to
+            //web pages because 'get' is a keyword in .Net
+            driver.Navigate().GoToUrl("http://google.ca/");
+
+            //The rest of the code should look very similar to the Java library
+            IWebElement element = driver.FindElement(By.Name("q"));
+            element.SendKeys("Cheese!");
+            element.Submit();
+            System.Console.WriteLine("Page title is: " + driver.Title);
+            driver.Quit();
+            System.Console.ReadLine();
+        }
+    }
+    
 Compile and run this. You should see a line with the title of the Google search 
 results as output on the console. Congratulations, you've managed to get 
 started with WebDriver!
@@ -126,6 +158,9 @@ Make sure that :ref:`Firefox is installed on your machine and is in the normal
 location for your OS <FirefoxDefaultLocations>`.
 
 Once that's done, create a new class called GoogleSuggest, which looks like:
+
+Java
+~~~~
 
 .. code-block:: java
 
@@ -143,7 +178,7 @@ Once that's done, create a new class called GoogleSuggest, which looks like:
         public static void main(String[] args) throws Exception {
             // The Firefox driver supports javascript 
             WebDriver driver = new FirefoxDriver();
-            
+
             // Go to the Google Suggest home page
             driver.get("http://www.google.com/webhp?complete=1&hl=en");
             
@@ -174,6 +209,41 @@ Once that's done, create a new class called GoogleSuggest, which looks like:
          }
     }
 
+C#
+~~
+
+.. code-block:: c#
+
+    using OpenQA.Selenium.Firefox;
+    using OpenQA.Selenium;
+    using System.Collections.ObjectModel;
+     
+    class GoogleSuggest
+    {
+     
+        static void Main(string[] args)
+        {
+            IWebDriver driver = new FirefoxDriver();
+            driver.Navigate().GoToUrl("http://www.google.com/webhp?complete=1&hl=en");
+            IWebElement query = driver.FindElement(By.Name("q"));
+            query.SendKeys("Cheese");
+            
+            //This line is different than the Java version above. Instead of telling the
+            //executing thread to sleep we use an implicit wait. This means the driver won't instantly 
+            //throw an error if the suggestion box isn't there. Instead it will poll the web page until
+            //the element is present of the timeout expires, in this case 5 seconds.
+            driver.Manage().Timeouts().ImplicitlyWait(new TimeSpan(0, 0, 5));
+            ReadOnlyCollection<IWebElement> allSuggestions = driver.FindElements(By.XPath("//td[@class='gac_c']"));
+            foreach (IWebElement suggestion in allSuggestions)
+            {
+                System.Console.WriteLine(suggestion.Text);
+            }
+            System.Console.ReadLine();
+            driver.Quit();
+        }
+     
+    }
+    
 When you run this program, you'll see the list of suggestions being printed 
 to the console. That's all there is to using WebDriver! 
 
