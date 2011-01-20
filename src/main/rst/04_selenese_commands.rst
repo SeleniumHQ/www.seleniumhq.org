@@ -180,7 +180,7 @@ The following locator strategies would return the elements from the HTML
 snippet above indicated by line number:
 
 - ``identifier=loginForm`` (3)
-- ``identifier=username`` (4)
+- ``identifier=password`` (4)
 - ``identifier=continue`` (5)
 - ``continue`` (5)
 
