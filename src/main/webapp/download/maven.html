@@ -11,24 +11,47 @@
 <body class="sectionDownload">
   <h2>Maven Information</h2>
 
-  <p>If you're using Maven, you can load all of the Java-based
-  Selenium components directly from the OpenQA Maven repositories.
-  Many non-Java components are also stored in the Maven
-  repositories, so please browser around. The following URLs may be
-  helpful to you:</p>
+  <p>If you're using Maven, you will find all of the
+  Selenium modules directly in the central Maven repository
+  here: <a href="http://repo1.maven.org/maven2/org/seleniumhq/selenium/">http://repo1.maven.org/maven2/org/seleniumhq/selenium/</a></p>
+  
+  <p>If you just want to start using Selenium, just add the
+  following dependcy to your pom.xml:<pre>
+    &lt;dependency&gt;
+        &lt;groupId&gt;org.seleniumhq.selenium&lt;/groupId&gt;
+        &lt;artifactId&gt;selenium&lt;/artifactId&gt;
+        &ltversion&gt;...&lt;/version&gt;
+    &lt;/dependency&gt;  
+</pre></p>
+  
+  <p>If you know, that you will only use a certain <tt>WebDriver</tt>
+  implementation, e.g. the <tt>FirefoxDriver</tt>, you don’t need to
+  depend on the <tt>selenium</tt> artifact (which has dependencies
+  to all <tt>WebDriver</tt> implementations as well as the support
+  classes). Instead you can just add the dependency to the artifact
+  you need, e.g.<pre>
+    &lt;dependency&gt;
+        &lt;groupId&gt;org.seleniumhq.selenium&lt;/groupId&gt;
+        &lt;artifactId&gt;selenium-firefox-driver&lt;/artifactId&gt;
+        &ltversion&gt;...&lt;/version&gt;
+    &lt;/dependency&gt;  
+</pre></p>
 
-  <ul>
-    <li><a href="http://nexus.openqa.org">OpenQA Nexus Repository
-    Manager</a> - contains RSS feeds that can keep you update on
-    releases</li>
+  <p>If you are using <tt>DefaultSelenium</tt> (or the <tt>RemoteWebDriver</tt>
+  implementation), you still need to start a Selenium server. The best way is
+  to download the <tt>selenium-server-standalone.jar</tt> from the
+  <a href="http://code.google.com/p/selenium/downloads/list">Selenium Downloads
+  page</a> and just use it. Furthermore you can also embed the Selenium server
+  into your own project, if you add the following dependency to your pom.xml:<pre>  
+    &lt;dependency&gt;
+        &lt;groupId&gt;org.seleniumhq.selenium&lt;/groupId&gt;
+        &lt;artifactId&gt;selenium-server&lt;/artifactId&gt;
+        &ltversion&gt;...&lt;/version&gt;
+    &lt;/dependency&gt;  
+</pre> Now you can create a <tt>SeleniumServer</tt> instance yourself and start it.
+   Be aware, that the <tt>selenium-server</tt> artifact has a dependency to the
+   <tt>servlet-api-2.5</tt> artifact, which you need to exclude, if your project
+   will be run in a web application container.</p>
 
-    <li><a href=
-    "http://nexus.openqa.org/content/repositories/releases/">OpenQA
-    Release Repository</a></li>
-
-    <li><a href=
-    "http://nexus.openqa.org/content/repositories/snapshots/">OpenQA
-    Snapshot Repository</a></li>
-  </ul>
 </body>
 </html>
