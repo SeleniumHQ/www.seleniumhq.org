@@ -18,10 +18,6 @@ The best explanation for why WebDriver and Selenium are merging was detailed by 
 	range of browsers) and partly because the main selenium contributors and I felt that it was the
 	best way to offer users the best possible framework."
 
-*PLEASE NOTE:  Selenium 2.0 is currently under development.  The WebDriver integration is
-currently undergoing testing. We encourage advanced Selenium users to try it out.  Users new to Selenium, should wait until Selenium 2.0 is officially released.*
-
-
 What is WebDriver?
 ------------------
 
@@ -62,16 +58,16 @@ WebDriver is a tool for automating testing web applications, and in particular
 to verify that they work as expected. It aims to provide a friendly API that's
 easy to explore and understand, which will help make your tests easier to 
 read and maintain. It's not tied to any particular test framework, so it can 
-be used equally well with JUnit, TestNG or from a plain old "main" method. 
-This "Getting Started" guide introduces you to WebDriver's Java API and helps 
+be used equally well in a unit testing or from a plain old "main" method. 
+This "Getting Started" guide introduces you to WebDriver's API and helps 
 get you started becoming familiar with it.
 
 Start by `Downloading <http://code.google.com/p/selenium/downloads/list>`_ 
 the latest binaries and unpack them into a directory. From now on, we'll 
 refer to that as ``$WEBDRIVER_HOME``. Now, open your favourite IDE and:
 
- * Start a new Java project in your favourite IDE
- * Add all the JAR files under ``$WEBDRIVER_HOME`` to the ``CLASSPATH``
+ * Start a new project in your favourite IDE/editor
+ * Add a reference to all the libraries in ``$WEBDRIVER_HOME``
 
 You can see that WebDriver acts just as a normal library does: it's 
 entirely self-contained, and you usually don't need to remember to start any 
@@ -83,40 +79,12 @@ result page's title to the console. You'll start by using the `HtmlUnit Driver`_
 This is a pure Java driver that runs entirely in-memory. Because of this, you 
 won't see a new browser window open. 
 
-.. code-block:: java
+.. literalinclude:: /examples/HtmlUnitExample.java
+   :language: java
 
-    package org.openqa.selenium.example;
 
-    import org.openqa.selenium.By;
-    import org.openqa.selenium.WebDriver;
-    import org.openqa.selenium.WebElement;
-    import org.openqa.selenium.htmlunit.HtmlUnitDriver;
-
-    public class Example  {
-        public static void main(String[] args) {
-            // Create a new instance of the html unit driver
-            // Notice that the remainder of the code relies on the interface, 
-            // not the implementation.
-            WebDriver driver = new HtmlUnitDriver();
-
-            // And now use this to visit Google
-            driver.get("http://www.google.com");
-
-            // Find the text input element by its name
-            WebElement element = driver.findElement(By.name("q"));
-
-            // Enter something to search for
-            element.sendKeys("Cheese!");
-
-            // Now submit the form. WebDriver will find the form for us from the element
-            element.submit();
-
-            // Check the title of the page
-            System.out.println("Page title is: " + driver.getTitle());
-        }
-    }
 	
-HtmlUnit isn't confined to just Java. Other languages can access it as well. Below
+HtmlUnit isn't confined to just Java.  Selenium makes accessing HtmlUnit easy from any language. Below
 is the same example in C#. Note that you'll need to run the remote WebDriver server
 to use HtmlUnit from C#
 
