@@ -1,51 +1,18 @@
-Introducing Selenium 
-====================
+Introducing Selenium 2.0
+========================
 
 .. _chapter01-reference:
-
-To Automate or Not to Automate?  That is the Question!
-------------------------------------------------------
-Is automation always advantageous? When should one decide to automate
-test cases? 
-
-It is **not** always advantageous to automate test cases. There are 
-times when manual testing may be more appropriate. For instance, if the 
-application's user interface will change considerably in the near future, 
-then any automation would need to be rewritten. Also, sometimes there simply 
-is not enough time to build test automation. For the short term, manual testing 
-may be more effective. If an application has a very tight deadline, there is 
-currently no test automation available, and it's imperative that the testing 
-get done within that time frame, then manual testing is the best solution. 
-
-However, automation has specific advantages for 
-improving the long-term efficiency of a software team's testing processes. 
-Test automation supports:
-
-* Frequent regression testing 
-* Rapid feedback to developers during the development process
-* Virtually unlimited iterations of test case execution
-* Customized reporting of application defects 
-* Support for Agile and eXtreme development methodologies 
-* Disciplined documentation of test cases
-* Finding defects missed by manual testing
 
 Test Automation for Web Applications
 ------------------------------------
 Many, perhaps most, software applications today are written as web-based 
 applications to be run in an Internet browser. The  
 effectiveness of testing these applications varies widely among companies and 
-organizations. In an era of continuously improving software processes,  
-such as eXtreme programming (XP) and Agile,  
-it can be argued that disciplined testing and quality assurance practices are 
-still underdeveloped in many organizations. Software testing is often 
-conducted manually. At times, this is effective; however there are 
-alternatives to manual testing that many organizations are unaware of, or 
-lack the skills to perform.  Utilizing these alternatives would in most cases
-greatly improve the efficiency of their software development by adding 
-efficiencies to their testing. 
-
-Test automation is often the answer. Test automation means using a tool to 
-run repeatable tests against the target application whenever necessary.
+organizations. In an era of highly interative and responsive software processes
+where many organizations are using some form of Agile methodology, test automation
+is frequently becoming a requirement for software projects.  Test automation is often the answer. Test automation means using a software tool to 
+run repeatable tests against the application to be tested.  For regression testing
+this provides that responsiveness.
   
 There are many advantages to test automation. Most are related to 
 the repeatability of the tests and the speed at which the tests can be executed.
@@ -55,49 +22,58 @@ widely-used open source solution. This user's guide will assist both new and
 experienced Selenium users in learning effective techniques in building 
 test automation for web applications. 
 
-This guide introduces Selenium, teaches its most widely used features, and 
-provides useful advice in best practices accumulated from the Selenium 
+This user's guide introduces Selenium, teaches its features, and 
+presents commonly used best practices accumulated from the Selenium 
 community. Many examples are provided. Also, technical information on the 
-internal structure of Selenium and recommended uses of Selenium are provided as 
-contributed by a consortium of experienced Selenium users. It is our hope that 
-this guide will get additional new users excited about using Selenium for test 
-automation.  We hope this guide will assist in "getting the word out" that quality
-assurance and software testing have many options beyond what is currently 
-practiced. We hope this user's guide and Selenium itself provide a valuable aid
-to boosting the reader's efficiency in his or her software testing processes. 
+internal structure of Selenium and recommended uses of Selenium are provided.
+
+Test automation has specific advantages for 
+improving the long-term efficiency of a software team's testing processes. 
+Test automation supports:
+
+* Frequent regression testing 
+* Rapid feedback to developers
+* Virtually unlimited iterations of test case execution 
+* Support for Agile and eXtreme development methodologies 
+* Disciplined documentation of test cases
+* Customized defect reporting
+* Finding defects missed by manual testing
+
+To Automate or Not to Automate?
+------------------------------------------------------
+Is automation always advantageous? When should one decide to automate
+test cases? 
+
+It is **not** always advantageous to automate test cases. There are 
+times when manual testing may be more appropriate. For instance, if the 
+application's user interface will change considerably in the near future, 
+then any automation might need to be rewritten anyway. Also, sometimes there simply 
+is not enough time to build test automation. For the short term, manual testing 
+may be more effective. If an application has a very tight deadline, there is 
+currently no test automation available, and it's imperative that the testing 
+get done within that time frame, then manual testing is the best solution.  
 
 Introducing Selenium 
 --------------------
-Selenium is a robust set of tools that supports rapid development of test 
-automation for web-based applications. Selenium provides a rich set of 
-testing functions specifically geared to the needs of testing of a web 
-application. These operations are highly flexible, allowing many options for 
+Selenium is set of different software tools each with a different approach
+to supporting test automation. Most Selenium QA Engineers focus on the one 
+or two tools that most meet the needs of their project, however learning all
+the tools will give you many different options for approaching different 
+test automation problems.
+The entire suite of tools results in a rich set of 
+testing functions specifically geared to the needs of testing of web 
+applications of all types. These operations are highly flexible, allowing many options for 
 locating UI elements and comparing expected test results against actual 
-application behavior. 
-
-One of Selenium's key features is the support for executing one's tests on
+application behavior. One of Selenium's key features is the support for executing one's tests on
 multiple browser platforms.  
 
-Selenium Components
--------------------
-Selenium is composed of three major tools. Each one has a specific role in 
-aiding the development of web application test automation. 
+Selenium's Tool Suite
+---------------------
+Selenium is composed of multiple software tools. Each  has a specific role. 
 
-Selenium-IDE
-~~~~~~~~~~~~
-Selenium-IDE is the Integrated Development Environment for building Selenium 
-test cases. It operates as a Firefox add-on and provides an easy-to-use 
-interface for developing and running individual test cases or entire test 
-suites. Selenium-IDE has a recording feature, which will keep account of user 
-actions as they are performed and store them as a reusable script to play back. 
-It also has a context menu (right-click) integrated with the Firefox browser, 
-which allows the user to pick from a list of assertions and verifications for 
-the selected location. Selenium-IDE also offers full editing of test cases for 
-more precision and control. 
-
-Although Selenium-IDE is a Firefox only add-on, tests created in it can also be 
-run against other browsers by using Selenium-RC and specifying the name of the 
-test suite on the command line.
+Selenium-WebDriver
+~~~~~~~~~~~~~~~~~~
+*This section is under development. Stay tuned, it will be updated shortly.*
 
 Selenium-RC (Remote Control)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -114,8 +90,37 @@ and library for each of its supported languages:
 HTML, Java, C#, Perl, PHP, Python, and Ruby.
 This ability to use Selenium-RC with a high-level programming language
 to develop test cases also allows the 
-automated testing to be integrated with a project's automated build 
-environment. 
+automated testing to use *continuous integration*, that is, to be integrated with a project's automated build 
+environment so the test automatically run each time the project is rebuilt. 
+
+Selenium-IDE
+~~~~~~~~~~~~
+Selenium-IDE (Integrated Development Environment) is a prototyping tools 
+for building Selenium 
+test scripts. It is a Firefox plugin and provides an easy-to-use 
+interface for developing automated tests. Selenium-IDE has a recording feature, 
+which records user 
+actions as they are performed and then stores them as a reusable script that can be played back, 
+all the while watching the browser's behavior while the playback occurs. 
+It also has a context menu (right-click) integrated with the Firefox browser, 
+which allows the user to pick from a list of assertions and verifications for 
+the selected UI element. Selenium-IDE also offers full editing of test cases for 
+more precision and control. 
+
+Note that Sel-IDE *is not designed to run your test passes nor is it designed to build all 
+the automated tests you will need*. Specifically, Sel-IDE cannot add iteration or condition-statements 
+to a test script.  For that you will need a programming language
+combined with either Sel-WebDriver or Sel-RC. At the time of writing there is no plan to add
+iteration or conditions to Sel-IDE.  The reasons are partly technical and partly that the 
+Selenium developers wish to encourage best practices in test automation which always requires
+some amount of programming.  _Sel-IDE is simply intended as a rapid prototyping
+tool._  The Selenium developers recommend for serious, robust test automation eithe Sel-WebDriver or
+Sel-RC should be used with one of the many supported programming languages.
+
+In Addition, since Selenium-IDE is a Firefox plugin, it can only run it's test scripts
+against Firefox.  For running tests using additional browsers you must run Selenium using
+one of the other tools.
+
 
 Selenium-Grid 
 ~~~~~~~~~~~~~~
@@ -132,6 +137,7 @@ only as long to run as the longest individual test.
 Supported Browsers
 ------------------
 
+*IMPORTANT:  Note this list was for Sel 1.0, It requires updating for Sel2.0--we will do that very soon.*
 =============  ==================================================  ===========================  =====================
 **Browser**    **Selenium-IDE**                                    **Selenium-RC**              **Operating Systems**
 Firefox 3.x    Record and playback tests                           Start browser, run tests     Windows, Linux, Mac
@@ -181,8 +187,8 @@ This allows users to customize the generated code to fit in with their
 own test frameworks. Finally, Selenium is an Open Source project where 
 code can be modified and enhancements can be submitted for contribution.
 
-About this Book
----------------
+Chapters Described
+------------------
 This reference documentation targets both new users of Selenium and those who 
 have been using Selenium and are seeking additional knowledge. It introduces 
 the novice to Selenium test automation. We do not assume the reader has 
@@ -245,47 +251,35 @@ The remaining chapters of the reference present:
     exchanging advice. Specifically this section describes the user group as 
     an avenue for obtaining assistance. 
 
-The Documentation Team
-----------------------
+The Documentation Team--Authors Past and Present
+------------------------------------------------
 
-The Original Authors
-~~~~~~~~~~~~~~~~~~~~
+In alphabetical order, the following people have made significant contributions
+to the authoring of this user's guide or with out publishing infrastructure
+or both.
+
 * Dave Hunt
+* Mary Ann May-Pumphrey
 * Paul Grandjean
+* Peter Newhook
 * Santiago Suarez Ordonez
 * Tarun Kumar
 
-The original authors who kickstarted this document are listed in alphabetical 
-order.  Each of us contributed significantly by taking a leadership role in 
-specific areas.  Each chapter originally had a primary author who kicked off 
-the initial writing, but in the end, each of us made significant contributions 
-to each chapter throughout the project.
 
-Current Authors
-~~~~~~~~~~~~~~~
-* Mary Ann May-Pumphrey
-* Peter Newhook
-
-In addition to the original team members who are still involved (May '09), 
-Mary Ann, and Peter have recently made major contributions.  Their reviewing 
-and editorial contributions proved invaluable.  Mary Ann is actively writing 
-new subsections and has provided editorial assistance throughout the document.
-Peter has provided assistance with restructuring our most difficult chapter 
-and has provided valuable advice on topics to include. Their enthusiasm and 
-dedication has been incredibly helpful.  We hope they continue to be involved.  
 
 Acknowledgements
 ~~~~~~~~~~~~~~~~
 A huge special thanks goes to Patrick Lightbody.  As an administrator of the 
-SeleniumHQ website, his support has been invaluable.  Patrick has helped us 
-understand the Selenium community--our audience. He also set us up with 
-everything we needed on the SeleniumHQ website for developing and releasing 
-this user's guide.  His enthusiasm and encouragement definitely helped drive 
-this project.  Also thanks goes to Andras Hatvani for his advice on publishing
+SeleniumHQ website, creator of SEl-RC, and long term involvement in the Selenium
+community, his support was invaluable when writing the original user's
+guide.  Patrick helped us understand the our audience. 
+He also set us up with 
+everything we needed on the seleniumhq.org website for publishing the documents.
+Also thanks goes to Andras Hatvani for his advice on publishing
 solutions, and to Amit Kumar for participating in our discussions and for 
 assisting with reviewing the document.
 
 And of course, we must *recognize the Selenium Developers*.  They have truly 
 designed an amazing tool. Without the vision of the original designers, and 
 the continued efforts of the current developers, we would not have such a 
-great tool to pass on to you, the reader.
+great tool to pass on to you.
