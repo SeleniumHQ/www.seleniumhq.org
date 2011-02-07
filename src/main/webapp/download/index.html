@@ -23,16 +23,68 @@
 
 <body class="sectionDownload">
   <h2>Downloads</h2>
-
   <p>Below is where you can find the latest releases of all the
   Selenium components. You can also find a list <a href=
   "previous.html">previous releases</a>, <a href=
   "http://xserve.openqa.org:8085/">latest releases</a>, <a href="http://seleniumhq.org/download/source.html">source
   code</a>, and additional information for <a href=
-  "http://seleniumhq.org/download/maven.html">Maven users</a> (Maven is a popular Java build
+  "http://seleniumhq.wordpress.com/2010/07/30/how-to-use-selenium-2-with-maven/">Maven users</a> (Maven is a popular Java build
   tool).</p>
 
+  <h3>Selenium IDE</h3>
+  <p>Selenium IDE is the a Firefox plugin that does record-and-playback of interactions with the browser. Use this to either script simple scripts, or to speed up creation of Selenium RC or Selenium Webdriver scripts.</p>
+  <p>Download version <a href="http://release.seleniumhq.org/selenium-ide/1.0.10/selenium-ide-1.0.10.xpi">1.0.10</a> or view the <a href="http://code.google.com/p/selenium/wiki/SeIDEReleaseNotes">Release Notes</a></p>
+
+  <h3>Selenium Server</h3>
+  <p>The Selenium Server is needed in order to run either Selenium RC style scripts or Remote Selenium Webdriver ones. The 2.x server is a drop-in replacement for the old Selenium RC server and is designed to be backwards compatible with your existing infrastructure.</p>
+  <p>Download version <a href="http://code.google.com/p/selenium/downloads/detail?name=selenium-server-standalone-2.0b1.jar&can=2&q=">2.0b1</a> or read the <a href="http://seleniumhq.wordpress.com/2010/12/24/selenium-2-0-beta-1-release/">Release Announcement</a></p>
+
+  <h3>Selenium Client Drivers</h3>
+  <p>In order to create scripts that interact with the Selenium Server (Selenium RC, Selenium Remote Webdriver) or create local Selenium WebDriver script you need to make use of language-specific client drivers. Unless otherwise specified, drivers include both 1.x and 2.x style drivers.</p>
+  <p>While drivers for other languages exist, these are the core ones that are supported by the main project.</p>
+
   <table>
+    <thead>
+      <tr>
+        <th>Language</th>
+        <th>Client Version</th>
+        <th>&nbsp;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Java</td>
+        <td>2.0b1</td>
+        <td><a href="http://selenium.googlecode.com/files/selenium-java-2.0b1.zip">Download</a></td>
+      </tr>
+      <tr>
+        <td>C# (Selenium RC)</td>
+        <td>1.0.1</td>
+        <td><a href="http://selenium.googlecode.com/files/selenium-remote-control-1.0.3.zip">Download</a> Note: this includes the old Selenium Server as well; you only want what is in the <i>selenium-dotnet-client-driver-1.0.1</i> directory</td>
+      </tr>
+      <tr>
+        <td>C# (Selenium WebDriver)</td>
+        <td>2.0b1</td>
+        <td><a href="http://selenium.googlecode.com/files/selenium-dotnet-2.0b1.zip">Download</a></td>
+      </tr>
+      <tr>
+        <td>Ruby</td>
+        <td>0.1.2</td>
+        <td><a href="http://rubygems.org/gems/selenium-webdriver">Download</a></td>
+      </tr>
+      <tr>
+        <td>Python</td>
+        <td>2.0a5</td>
+        <td><a href="http://pypi.python.org/pypi/selenium">Download</a></td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h3>Selenium Grid</h3>
+  <p>Scripts running too slow or want to run them against multiple browser types and versions? <a href="http://selenium-grid.seleniumhq.org/">Selenium Grid</a> can help distribute script execution for either parallelization or browser variation.</p>
+    <p>Download version <a href="http://release.seleniumhq.org/selenium-grid/selenium-grid-1.0.8-bin.zip">1.0.8</a> or view the <a href="http://github.com/nirvdrum/selenium-grid/blob/master/ChangeLog">ChangeLog</a></p>
+
+  <!-- <table>
     <thead>
       <tr>
         <th>Project</th>
@@ -46,56 +98,7 @@
     </thead>
 
     <tbody>
-      <tr>
-        <td>Selenium Core</td>
 
-        <td>June 10, 2009</td>
-
-          <td>1.0.1</td>
-
-        <td><a href=
-        "http://release.seleniumhq.org/selenium-core/1.0.1/selenium-core-1.0.1.zip">
-        Download</a> | <a href=
-        "http://jira.openqa.org/browse/SEL/fixforversion/10552">
-        Changelog</a></td>
-      </tr>
-
-      <tr>
-        <td>Selenium IDE</td>
-
-          <td>Dec 6, 2010</td>
-
-            <td>1.0.10</td>
-
-        <td><a href=
-        "http://release.seleniumhq.org/selenium-ide/1.0.10/selenium-ide-1.0.10.xpi">
-        Download</a> | <a href=
-        "http://code.google.com/p/selenium/wiki/SeIDEReleaseNotes">
-        Release Notes</a></td>
-      </tr>
-
-      <tr>
-        <td>Selenium RC</td>
-
-          <td>February 23, 2010</td>
-
-            <td>1.0.3</td>
-
-        <td><a href="http://selenium.googlecode.com/files/selenium-remote-control-1.0.3.zip">Download</a></td>
-      </tr>
-
-      <tr>
-        <td>Selenium Grid</td>
-
-        <td>April 8, 2010</td>
-
-        <td>1.0.6</td>
-
-        <td><a href="http://release.seleniumhq.org/selenium-grid/selenium-grid-1.0.6-bin.zip">
-                Download (zip)</a> | 
-        <a href="http://github.com/nirvdrum/selenium-grid/blob/master/ChangeLog">
-        Changelog</a></td>
-      </tr>
 
       <tr>
         <td>CubicTest</td>
@@ -120,22 +123,12 @@
 
         <td><a href="http://brominefoundation.org/download">Download</a>
       </tr>
-      
-      <tr>
-        <td>Selenium 2</td>
 
-        <td>April 22, 2010</td>
-
-        <td>2.0 beta 1</td>
-
-        <td><a href="http://code.google.com/p/selenium/downloads/list">Download</a></td>
-      </tr>
     </tbody>
-  </table>
+  </table> -->
 
-<br />
-<br />
-<p><b>Plugins for Selenium IDE</b></p>
+<h3>Selenium IDE Plugins</h3>
+<p>Selenium IDE can be extended through its own plugin system. Here are a number of plugins that have been created using it. For more information on how to create your own plugin or have it listed, see the <a href="http://seleniumhq.org/projects/ide/plugins.html">plugin tutorial page</a>.</p>
   <table style="border-collapse: collapse;">
     <thead>
       <tr>
