@@ -74,6 +74,23 @@ Selenium is composed of multiple software tools. Each  has a specific role.
 Selenium-WebDriver
 ~~~~~~~~~~~~~~~~~~
 *This section is under development. Stay tuned, it will be updated shortly.*
+Selenium WebDriver is the future direction of Selenium and the newest addition
+to the Selenium tool suite.  WebDriver is an API (application programming
+interface) which supports web application test automation just as 
+does Selenium-RC (see next section).  However the WebDriver API addresses
+some limitations of the old Sel-RC API.  The integration of the WebDriver
+API is the primary improvement which defined Selenium 2.0.
+
+WebDriver originally was a separate project from Selenium.  It is relatively
+recent compared to Selenium's history and was specifically designed to address
+some Selenium 1.0 limitations.  Both the Selenium developers and WebDriver
+developers agreed that both tools have advantatges and that merging the two
+projects would make a much more robust automation tool.  Selenium 2.0 is the
+product of that effort.  It supports the WebDriver API and underlying
+technology, along with also supporting the Selenium 1.0 technology underneath
+the WebDriver API for maximum flexibility in developing web-app tests.  In
+addition, Selenium 2.0 still supports the Selenium 1.0 Sel-RC interface for
+backwards compatability.
 
 Selenium-RC (Remote Control)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -90,8 +107,9 @@ and library for each of its supported languages:
 HTML, Java, C#, Perl, PHP, Python, and Ruby.
 This ability to use Selenium-RC with a high-level programming language
 to develop test cases also allows the 
-automated testing to use *continuous integration*, that is, to be integrated with a project's automated build 
-environment so the test automatically run each time the project is rebuilt. 
+automated testing to use *continuous integration*, that is, to be integrated with
+a project's automated build  environment so the test automatically run each time
+the project is rebuilt. 
 
 Selenium-IDE
 ~~~~~~~~~~~~
@@ -100,22 +118,23 @@ for building Selenium
 test scripts. It is a Firefox plugin and provides an easy-to-use 
 interface for developing automated tests. Selenium-IDE has a recording feature, 
 which records user 
-actions as they are performed and then stores them as a reusable script that can be played back, 
-all the while watching the browser's behavior while the playback occurs. 
+actions as they are performed and then stores them as a reusable script that can be
+played back,  all the while watching the browser's behavior while the playback occurs. 
 It also has a context menu (right-click) integrated with the Firefox browser, 
 which allows the user to pick from a list of assertions and verifications for 
 the selected UI element. Selenium-IDE also offers full editing of test cases for 
 more precision and control. 
 
 Note that Sel-IDE *is not designed to run your test passes nor is it designed to build all 
-the automated tests you will need*. Specifically, Sel-IDE cannot add iteration or condition-statements 
-to a test script.  For that you will need a programming language
-combined with either Sel-WebDriver or Sel-RC. At the time of writing there is no plan to add
-iteration or conditions to Sel-IDE.  The reasons are partly technical and partly that the 
-Selenium developers wish to encourage best practices in test automation which always requires
-some amount of programming.  _Sel-IDE is simply intended as a rapid prototyping
-tool._  The Selenium developers recommend for serious, robust test automation eithe Sel-WebDriver or
-Sel-RC should be used with one of the many supported programming languages.
+the automated tests you will need*. Specifically, Sel-IDE cannot add iteration or
+condition-statements to a test script.  For that you will need a programming language
+combined with either Sel-WebDriver or Sel-RC. At the time of writing there is no plan
+to add iteration or conditions to Sel-IDE.  The reasons are partly technical and partly
+that the Selenium developers wish to encourage best practices in test automation which
+always requires some amount of programming.  _Sel-IDE is simply intended as a rapid
+prototyping tool._  The Selenium developers recommend for serious, robust test automation
+either Sel-WebDriver or Sel-RC should be used with one of the many supported programming
+languages.
 
 In Addition, since Selenium-IDE is a Firefox plugin, it can only run it's test scripts
 against Firefox.  For running tests using additional browsers you must run Selenium using
