@@ -30,11 +30,15 @@ Most of this is simply lifted from the Python documentation.
 3) JavaScript should be spelt with CamelCase, i.e. capital 'J' capital 'S.'
 4) URLs, file directories, file names, and selenium commands written inline should
    be monospaced using ``mono``
-4) Code Snippets should be prefaced with ".. code-block:: <language>"
+5) Sample code source files should be put in the examples directory and 
+   referenced using 
+   .. literalinclude:: /examples/HtmlUnitExample.java
+   :language: java
+6) Code Snippets (only a couple lines) should be prefaced with ".. code-block:: <language>"
    where <language> is the programming language
-5) Command line input and output should be a block, indented and prefaced with two
+7) Command line input and output should be a block, indented and prefaced with two
    colons. See the end of the Selenium-RC chapter for reference.
-6) Linux command line should be a code block prefaced with ".. code-block:: bash"
+8) Linux command line should be a code block prefaced with ".. code-block:: bash"
 
 
 Tips
