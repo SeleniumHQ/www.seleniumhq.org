@@ -1,5 +1,5 @@
 
-Test Design ConsIDerations 
+Test Design Considerations 
 ==========================
 
 .. _chapter06-reference:
@@ -66,7 +66,7 @@ These would be tests of a specific function within your application, requiring
 some type of user input, and returning some type of results.  Often a function
 test will involve multiple pages with a form-based input page containing a
 collection of input fields, Submit and Cancel operations, and one or more
-response pages.  User input can be via text-input fields, checkboxes, drop-down
+response pages.  User input can be via text-input fields, check boxes, drop-down
 lists, or any other browser-supported input.
 
 
@@ -85,7 +85,7 @@ of some given function.
 An example would be a result set of data returned to the user.  Suppose each
 data result, in, say for example a list of documents, had a unique Identifier
 for each specific document.  So, for a particular search, the search results
-page returns a data set with one set of documents and their correponding
+page returns a data set with one set of documents and their corresponding
 Identifiers.  Then, in a different search, the search results page returns
 a different data set where each document in the result set uses different
 Identifiers.
@@ -123,7 +123,7 @@ This is up to you.  The difference is in what you want to happen when the check
 fails.  Do you want your test to terminate or continue and record that the check
 failed?
 
-Here's the tradeoff. If you use an assert, the test will stop at that point and
+Here's the trade-off. If you use an assert, the test will stop at that point and
 not run any subsequent checks.  Sometimes, perhaps often, that is what you want.
 If the test fails you will immediately know the test did not pass.  Test engines
 such as TestNG and JUnit have plugins for commonly used development environments
@@ -135,11 +135,11 @@ which were never performed, so you have no information on their status.
 In contrast, verify commands will not terminate the test.  If your test uses
 only verify commands you are guaranteed (assuming no unexpected exceptions)
 the test will run to completion whether the checks find defects in the AUT
-or not.  The disavantage:  you have to do more work to examine your test
+or not.  The disadvantage:  you have to do more work to examine your test
 results.  That is, you won't get feedback from TestNG or JUnit.  Rather,
 you will need to look at the results of a console printout or a log output
 by your test application.  And you will need to take the time to look through
-this output everytime you run your test.  For Java, Logging Selenium (Chap 5)
+this output every time you run your test.  For Java, Logging Selenium (Chap 5)
 is a convenient logging utility for recording the results of verify commands,
 however you still need to open the logs and examine the results.  If you are
 running hundreds of tests, each with it's own log, this will be time-consuming. 
@@ -161,8 +161,8 @@ and can always change the test later.  Most of these are easily changed in eithe
 
 Realize that *verify/assertText* is the *most specific test*.  This can fail if either the HTML element (tag) OR the text is not what your test is expecting.
 Sometimes, for instance if HTML changes frequently by your programmers, *verifyTextPresent* makes more sense.  It can check for the content, but will pass
-the test when the programmers change the HTML used to present that text.  Alternatively,  perhaps your web-designers are frequently changing the page and you don't want your test to fail everytime they do this because the changes themeselves are expected periodically.  However, assume you still need to check that
-*something* is on the page, say a paragraph, or heading text, or an image.  In this case you can use *verify/assertElementPresent*.  It will ensure that a particular type of element exists (and if using Xpath can ensure it exists relative to other objects within the page).  But you don't care what the content is, that is, a specific image file, or specific text.  You only care that some type of image exists.
+the test when the programmers change the HTML used to present that text.  Alternatively,  perhaps your web-designers are frequently changing the page and you don't want your test to fail every time they do this because the changes themselves are expected periodically.  However, assume you still need to check that
+*something* is on the page, say a paragraph, or heading text, or an image.  In this case you can use *verify/assertElementPresent*.  It will ensure that a particular type of element exists (and if using XPath can ensure it exists relative to other objects within the page).  But you don't care what the content is, that is, a specific image file, or specific text.  You only care that some type of image exists.
 
 Getting a feel for these types of decisions will come with time and a little experience.  They are easy concepts, and easy to change in your test, but they do depend do depend on the requirements of your AUT.  For some projects the requirements are clear and therefore your tests will be clear.  For others, not so much, and you will have to give it your best guess.  The purpose of this subsection 
 is to help you anticipate your needs so you can make these decisions more efficiently.
@@ -172,34 +172,34 @@ Choosing a Location Strategy
 ----------------------------
 
 You know from the Selenese section there are multiple ways of selecting an object
-on a page.  But what are the tradeoffs of each of these locator types?  Recall
+on a page.  But what are the trade offs of each of these locator types?  Recall
 we can locate an object using
 
 - the element ID
 - the element name attribute
-- an Xpath statement
+- an XPath statement
 - document object model (DOM)
 
 Generally, using an ID locator is more efficient as it makes your test code
 more readable, assuming the ID used by the AUT's page source is a meaningful
 one.  Using the name attribute also has similar advantages.  These
-also give the best performance.  Xpath statements have been known to be slow
-in Internet Explorer due to limations of IE's Xpath processor.
+also give the best performance.  XPath statements have been known to be slow
+in Internet Explorer due to limitations of IE's XPath processor.
   
-Sometimes though, you must use an Xpath locator.  If the page source does not
-have an ID or name attribute you have no choice but to use an Xpath or DOM locator.
+Sometimes though, you must use an XPath locator.  If the page source does not
+have an ID or name attribute you have no choice but to use an XPath or DOM locator.
 It appears at the time of writing that DOM locators are not commonly used now,
-and Xpath appears to the preferred choice, possibly because Xpath provides a
+and XPath appears to the preferred choice, possibly because XPath provides a
 rich set of possibilities for Identifying an object--it is quite flexible.
 
-There is an advantage to using Xpath or DOM that locating via ID or name
-attributes do not have. With Xpath and DOM you can locate an object with
+There is an advantage to using XPath or DOM that locating via ID or name
+attributes do not have. With XPath and DOM you can locate an object with
 respect to another object on the page.  For example, if there is a link
-that must occur within the second paragragh within a <div> section,
-you can use Xpath or DOM to specify this.  With ID and name locators,
+that must occur within the second paragraph within a <div> section,
+you can use XPath or DOM to specify this.  With ID and name locators,
 you can only specify that they occur on the page--somewhere on the page.
 If you must test that an image displaying the company logo appears at 
-the top of the page within a header section Xpath may be the better locator. 
+the top of the page within a header section XPath may be the better locator. 
 
 
 Locating Dynamic Objects
@@ -253,7 +253,7 @@ In this case, using a standard locator would look something like the following.
 
     click 	addForm:_ID74:_ID75:0:_ID79:0:checkBox
 
-Or, again in Selelenium-RC
+Or, again in Selenium-RC
 	
 .. code-block:: java
 
@@ -272,7 +272,7 @@ trying to use an ID locator.  So, for the checkbox you can simply use
     click 	//input
 
 Or, if it is not the first input element on the page (which it likely is not)
-try a more detailed Xpath statement.
+try a more detailed XPath statement.
 
 .. code-block:: java
 
@@ -350,7 +350,7 @@ can be achieved as follows.
                    
 
 
-How can I avoid using complex xpath expressions in my test?
+How can I avoid using complex XPath expressions in my test?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Where possible, element IDs should be explicitly created by the application designer, 
 not automatically generated. Automatically generated (non-descriptive) 
@@ -436,13 +436,13 @@ that correspond to UI elements of the application being tested.
 What makes a UI map heplful?  Its primary purpose for making test script management
 much easier.  When a locator needs to be edited, there is a central location for easily
 finding that object, rather than having to search through test script code.  Also, it allows
-changing the Identifer in a single place, rather than having to make the change in multiple
+changing the Identifier in a single place, rather than having to make the change in multiple
 places within a test script, or for that matter, in multiple test scripts.
 
 To summarize, a UI map has two significant advantages.
 
 - Using a centralized location for UI objects instead of having them scattered 
-  throughout the script.  This makes script maintanence more efficient.
+  throughout the script.  This makes script maintenance more efficient.
 - Cryptic HTML Identifiers and names can be given more human-readable names improving the 
   readability of test scripts.
 
@@ -594,10 +594,10 @@ This is a very basic example of what you can do, but the Idea is to show you
 things that can easily be done with either a programming or scripting 
 language when they're difficult or even impossible to do using Selenium-IDE.
 
-Refer to the `Selnium RC wiki`_ for examples of reading data from spread sheet or using
+Refer to the `Selenium RC wiki`_ for examples of reading data from spread sheet or using
 data provider capabilities of TestNG with java client driver.
 
-.. _`Selnium RC wiki`: http://wiki.openqa.org/pages/viewpage.action?pageID=21430298
+.. _`Selenium RC wiki`: http://wiki.openqa.org/pages/viewpage.action?pageID=21430298
 
 
 Handling Errors
