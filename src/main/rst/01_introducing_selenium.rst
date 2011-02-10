@@ -73,7 +73,7 @@ Selenium is composed of multiple software tools. Each  has a specific role.
 
 Selenium-WebDriver
 ~~~~~~~~~~~~~~~~~~
-*This section is under development. Stay tuned, it will be updated shortly.*
+
 Selenium WebDriver is the future direction of Selenium and the newest addition
 to the Selenium tool suite.  WebDriver is an API (application programming
 interface) which supports web application test automation just as 
@@ -156,7 +156,8 @@ only as long to run as the longest individual test.
 Supported Browsers
 ------------------
 
-*IMPORTANT:  Note this list was for Sel 1.0, It requires updating for Sel2.0--we will do that very soon.*
+*IMPORTANT:  This list was for Sel 1.0, It requires updating for Sel2.0--we will do that very soon.*
+
 =============  ==================================================  ===========================  =====================
 **Browser**    **Selenium-IDE**                                    **Selenium-RC**              **Operating Systems**
 Firefox 3.x    Record and playback tests                           Start browser, run tests     Windows, Linux, Mac
@@ -190,21 +191,12 @@ certain features.
   
 Flexibility and Extensibility
 ------------------------------
-You'll find that Selenium is highly flexible.  There are multiple ways in which
-one can add functionality to Selenium's framework to customize test 
-automation for one's specific testing needs. This is, perhaps, Selenium's 
-strongest characteristic when compared with proprietary test automation tools
-and other open source solutions. Selenium-RC support for multiple programming
-and scripting languages allows the test writer to build any logic they need
-into their automated testing and to use a preferred programming or scripting
-language of one's choice. 
-  
-Selenium-IDE allows for the addition of user-defined "user-extensions" for 
-creating additional commands customized to the user's needs. Also, it is 
-possible to re-configure how the Selenium-IDE generates its Selenium-RC code.
-This allows users to customize the generated code to fit in with their
-own test frameworks. Finally, Selenium is an Open Source project where 
-code can be modified and enhancements can be submitted for contribution.
+You'll find that Selenium is highly flexible.  There are many ways you
+can add functionality to both Selenium test scripts and Selenium's framework
+to customize your test automation. This is perhaps Selenium's 
+greatest strenght when compared with other automation tools. These customizations
+are described in various places throughout this document.  In addition, since Selenium is Open Source, the sourcecode can always be 
+downloaded and modified.
 
 Chapters Described
 ------------------
