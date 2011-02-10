@@ -198,16 +198,16 @@ greatest strenght when compared with other automation tools. These customization
 are described in various places throughout this document.  In addition, since Selenium is Open Source, the sourcecode can always be 
 downloaded and modified.
 
-Chapters Described
-------------------
-This reference documentation targets both new users of Selenium and those who 
-have been using Selenium and are seeking additional knowledge. It introduces 
-the novice to Selenium test automation. We do not assume the reader has 
-experience in testing beyond the basics.  
-
-The experienced Selenium user will also find this reference valuable. It compiles
-in one place a set of useful Selenium techniques and best practices by drawing 
-from the knowledge of multiple experienced Selenium QA professionals. 
+What's in this Book?
+--------------------
+This user's guide targets both new users and those who 
+have already used Selenium but are seeking additional knowledge. We introduce 
+Selenium to new users and we do not assume prior Selenium experience.  We do
+assume, however, that the user has at least a basic understanding of test
+automation.  For the more experienced user, this guide can act as a reference.
+For the more experienced, we recommend browsing the chapter and subheadings.
+We've provided information on the Selenium architecture, examples of common usage,
+and a chapter on test design techniques. 
 
 The remaining chapters of the reference present:
 
