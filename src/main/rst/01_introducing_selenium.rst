@@ -208,54 +208,47 @@ and a chapter on test design techniques.
 
 The remaining chapters of the reference present:
 
-:ref:`Selenium Basics <chapter02-reference>`
-    Introduces Selenium by describing how to select the Selenium component 
-    most appropriate for your testing tasks. Also provides a general 
-    description of Selenium commands and syntax. This section allows you to 
-    get a general feel for how Selenium approaches test automation and
-    helps you decide where to begin. 
-
 :ref:`Selenium-IDE <chapter03-reference>`
-    Teaches how to build test cases using the Selenium Integrated Development 
-    Environment. This chapter also describes useful techniques for making your 
-    scripts more readable when interpreting defects caught by your Selenium tests. 
-    We explain how your test script can be 
-    "exported" to the programming language of your choice. Finally, this section 
-    describes some configurations available for extending and customizing how 
-    the Selenium-IDE supports test case development. 
+    Introduces Sel-IDE and describes how to use it to build test scripts. using the 
+    Selenium Integrated Development Environment.  If you are not experienced in programming,
+    but still hoping to learn test automation this is where you should start and you'll find
+    you can create quite a few automated tests with Sel-IDE.  Also, if you are experienced
+    in programming, this chapter may still interest you in that you can use the Sel-IDE
+    to do rapid prototyping of your tests.  This section also demonstrates how your test
+    script can be "exported" to a programming language for adding more advanced capabilities
+    not supported by Sel-IDE.
 
 :ref:`Selenium Commands <chapter04-reference>`
-    Describes a subset of the most useful Selenium commands in detail. This 
+    Explains the Selenium commands in detail. This 
     chapter shows what types of actions, verifications and 
     assertions can be made against a web application. 
 
 :ref:`Selenium-RC <chapter05-reference>`
     Explains how to develop an automated test program using the Selenium-RC API.
-    Many examples are presented in both a programming language and a scripting 
-    language. Also, the installation and setup of Selenium-RC is covered here. 
+    Many examples are presented in both programming languages and scripting 
+    languages. Also, the installation and setup of Selenium-RC is covered here. 
     The various modes, or configurations, that Selenium-RC supports are
-    described, along with their trade-offs and limitations. Architecture
-    diagrams are provided to help illustrate these points. 
-    A number of solutions to problems which are often difficult for the new user are
-    described in this chapter. This includes handling Security Certificates,
+    described, along with their trade-offs and limitations. An architecture
+    diagram is provided to help illustrate these points. 
+    Solutions to common problems frequently difficult for new Sel-R users are
+    described here, for instance, handling Security Certificates,
     https requests, pop-ups, and the opening of new windows. 
 
 :ref:`Test Design Considerations <chapter06-reference>`
-    Presents many useful techniques for using Selenium efficiently. This 
-    includes scripting techniques and programming techniques for use with 
-    Selenium-RC. We cover examples of source code showing how to report defects 
-    in the application under test. We also cover techniques commonly asked about 
-    in the user group such as how to implement data-driven tests (tests where
-    one can vary the data between different test passes).
+    This chapter presents programming techniques for use with Selenium-WebDriver and
+    Selenium-RC. We also demonstrate techniques commonly asked about 
+    in the user forum such as how to design setup and teardown functions, how to 
+    implement data-driven tests (tests where one can varies the data between test passes)
+    and other methods of programming common test automation tasks.
 
 :ref:`Selenium-Grid <chapter07-reference>`
     *This chapter is not yet developed.*
   
 :ref:`User extensions <chapter08-reference>`
-    Presents all the information required for easily extending Selenium. 
+    Describes ways that Selenium can be modified, extended and customized. 
   
 ..  :ref:`Getting Help <chapter09-reference>`
-    Describes how to be a part of the Selenium community for getting help and 
+    This section shows how can be a part of the Selenium community for getting help and 
     exchanging advice. Specifically this section describes the user group as 
     an avenue for obtaining assistance. 
 
