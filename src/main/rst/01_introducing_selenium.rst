@@ -94,17 +94,13 @@ backwards compatability.
 
 Selenium-RC (Remote Control)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Selenium-RC allows the test 
-automation developer to use a programming language for maximum flexibility and
-extensibility in developing test logic. For instance, if the application under
-test returns a result set, and if the automated test program needs to run tests
-on each element in the result set, the programming language's iteration support
-can be used to iterate through the result set, calling Selenium commands to run
-tests on each item. 
+In addition to Selenium-WebDriver, Selenium-RC also allows the QA engineer to use a programming language for developing test logic. For instance, if the application under
+tests. An advantaget to using Sel-RC though, is that the browser can be run on a remote
+machine from where the tests are running.  This allows the tests to run on 
+remote virtual machines that support different browsers and runtime environments.
 
 Selenium-RC provides an API (Application Programming Interface)
-and library for each of its supported languages:
-HTML, Java, C#, Perl, PHP, Python, and Ruby.
+and for several supported languages including Java, C#, Perl, Python, Ruby and PHP.
 This ability to use Selenium-RC with a high-level programming language
 to develop test cases also allows the 
 automated testing to use *continuous integration*, that is, to be integrated with
@@ -144,14 +140,15 @@ one of the other tools.
 Selenium-Grid 
 ~~~~~~~~~~~~~~
 Selenium-Grid allows the Selenium-RC solution to scale for large test suites 
-or test suites that must be run in multiple environments. With Selenium-Grid, 
-multiple instances of Selenium-RC are running on various operating system and 
-browser configurations;  Each of these when launching register with a hub. 
-When tests are sent to the hub they are then redirected to an available 
-Selenium-RC, which will launch the browser and run the test. This allows for 
-running tests in parallel, with the entire test suite theoretically taking 
-only as long to run as the longest individual test.
- 
+and for test suites that must be run in multiple environments. Selenium-Grid allows you
+to run your tests in parallel, that is, different tests can be run at the same time
+on different remote machines.  This has two advantages.  First, if you have a large
+test suite, or a slow-running test suite, you can boost it's performance substantially
+but using Selenium-Grid to divide your test suite to run different tests at the same
+time using those different machines.  Also, if you must run your test suite on multiple
+environments you can have different remote machines supporting those different environments 
+and run your tests on each environmet at the same time.  In each case Selenium-Grid greatly 
+improves the time it takes to run your suite by making use of parallel processing. 
   
 Supported Browsers
 ------------------
