@@ -1,10 +1,10 @@
-Selenium Basics 
-================
+Chapter 3 Placeholder 
+=====================
 
-.. _chapter02-reference:
+.. _chapter03-reference:
 
-*This chapter is being deprecated.  For the Sel 2.0 release we are updating these docs.
-As part of that effort we have merged Chap 2 information into other chapters to
-provide a more concise and focused document.  Please be patient with us.  We are
-doing this incrementally.*
+*This chapter is intentionally blank.  For the Sel 2.0 release we are updating these docs.
+No information has been deleted, it's simply been moved and consolodated.  This chapter will
+be the future location for the Selenium 2.0 WebDriver documention.  Please be patient with us.  
+We are doing this incrementally.  Thanks*
 
