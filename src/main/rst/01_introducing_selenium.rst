@@ -149,6 +149,29 @@ time using those different machines.  Also, if you must run your test suite on m
 environments you can have different remote machines supporting those different environments 
 and run your tests on each environmet at the same time.  In each case Selenium-Grid greatly 
 improves the time it takes to run your suite by making use of parallel processing. 
+
+Choosing Your Selenium Tool 
+---------------------------
+Many people get started with Selenium-IDE. If you are not already experienced
+with a programming or scripting language you can use 
+Selenium-IDE to get familiar with Selenium commands.  Using the IDE you 
+can create simple tests quickly, sometimes within seconds.  
+
+We don't, however,
+recommend you do all your test automation using Selenium-IDE.  To effectively use
+Selenium you will need to build and run your tests using either Selenium-WebDriver
+or Selenium-RC in conjunction with one of the supported programming languages.
+Which one you choose depends on you.  
+
+At the time of writing the Selenium developers
+are planning on the Selenium-WebDriver API being the future direction for Selenium.
+Selenium-RC is provided for backwards compatablity.  Still, both have strenghts and
+weaknesses which are discussed in the corresponding chapters of this document.  
+We recommend those who are completely new to Selenium to read through these sections.
+However, for those who are adopting Selenium for the first time, and therefore building a new
+test sutie from scratch, you will probably want to go with Selenium-WebDriver since
+this is the portion of Selenium that will continue to be supported in the future.
+
   
 Supported Browsers
 ------------------

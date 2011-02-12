@@ -3,40 +3,10 @@ Selenium Basics
 
 .. _chapter02-reference:
 
-Getting Started -- Choosing Your Selenium Tool 
------------------------------------------------
-Most people get started with Selenium-IDE. This is what we recommend. It's 
-an easy way to get familiar with Selenium commands quickly. You can develop
-your first script in just a few minutes. Selenium-IDE is also very easy
-to install. See the :ref:`chapter on Selenium-IDE <chapter03-reference>` for 
-specifics.
-  
-You may also run your scripts from the Selenium-IDE. It's  
-simple to use and is recommended for less-technical users. The IDE allows 
-developing and running tests without the need for programming skills as
-required by Selenium-RC. The Selenium-IDE can serve as an excellent way to 
-train junior-level employees in test automation. Anyone who understands how to
-conduct manual testing of a website can easily transition to 
-using the Selenium-IDE for running and developing tests. 
-
-Some testing tasks are too complex though for the Selenium-IDE. When 
-programming logic is required Selenium-RC must be used. For example, 
-any tests requiring iteration, such as testing each element of a variable 
-length list requires running the script from a programming 
-language. Selenium-IDE does not support iteration or condition statements.
-
-Finally, Selenium-Core is another way of running tests. One can run test 
-scripts from a web-browser using the HTML interface *TestRunner.html*. This is 
-the original method for running Selenium commands. It has limitations though; 
-similar to Selenium-IDE, it does not support iteration.
-
-Selenium-Core also cannot switch between http and https protocols. Since the 
-development of Selenium-IDE and Selenium-RC, more people are using these 
-tools rather than Selenium-Core. At the time of writing (April 09) it 
-is still available and may be convenient for some. However, the Selenium 
-community is encouraging the use of Selenium-IDE and RC and discouraging the use 
-of Selenium-Core. Support for Selenium-Core is becoming less available and 
-it may even be deprecated in a future release. 
+*This chapter is being deprecated.  For the Sel 2.0 release we are updating these docs.
+As part of that effort we are merging Chap 2 information into other chapters to
+provide a more concise and focused document.  Please be patient with us.  We are
+doing this incrementally.*
 
 Introducing Selenium Commands 
 ------------------------------
