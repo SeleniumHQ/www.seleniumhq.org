@@ -78,7 +78,7 @@ Selenium WebDriver is the future direction of Selenium and the newest addition
 to the Selenium tool suite.  WebDriver is an API (application programming
 interface) which supports web application test automation just as 
 does Selenium-RC (see next section).  However the WebDriver API addresses
-some limitations of the old Sel-RC API.  The integration of the WebDriver
+some limitations of the old Selenium-RC API.  The integration of the WebDriver
 API is the primary improvement which defined Selenium 2.0.
 
 WebDriver originally was a separate project from Selenium.  It is relatively
@@ -89,13 +89,13 @@ projects would make a much more robust automation tool.  Selenium 2.0 is the
 product of that effort.  It supports the WebDriver API and underlying
 technology, along with also supporting the Selenium 1.0 technology underneath
 the WebDriver API for maximum flexibility in developing web-app tests.  In
-addition, Selenium 2.0 still supports the Selenium 1.0 Sel-RC interface for
+addition, Selenium 2.0 still supports the Selenium 1.0 Selenium-RC interface for
 backwards compatability.
 
 Selenium-RC (Remote Control)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 In addition to Selenium-WebDriver, Selenium-RC also allows the QA engineer to use a programming language for developing test logic. For instance, if the application under
-tests. An advantaget to using Sel-RC though, is that the browser can be run on a remote
+tests. An advantaget to using Selenium-RC though, is that the browser can be run on a remote
 machine from where the tests are running.  This allows the tests to run on 
 remote virtual machines that support different browsers and runtime environments.
 
@@ -121,15 +121,15 @@ which allows the user to pick from a list of assertions and verifications for
 the selected UI element. Selenium-IDE also offers full editing of test cases for 
 more precision and control. 
 
-Note that Sel-IDE *is not designed to run your test passes nor is it designed to build all 
-the automated tests you will need*. Specifically, Sel-IDE cannot add iteration or
+Note that Selenium-IDE *is not designed to run your test passes nor is it designed to build all 
+the automated tests you will need*. Specifically, Selenium-IDE cannot add iteration or
 condition-statements to a test script.  For that you will need a programming language
-combined with either Sel-WebDriver or Sel-RC. At the time of writing there is no plan
-to add iteration or conditions to Sel-IDE.  The reasons are partly technical and partly
+combined with either Sel-WebDriver or Selenium-RC. At the time of writing there is no plan
+to add iteration or conditions to Selenium-IDE.  The reasons are partly technical and partly
 that the Selenium developers wish to encourage best practices in test automation which
-always requires some amount of programming.  _Sel-IDE is simply intended as a rapid
+always requires some amount of programming.  _Selenium-IDE is simply intended as a rapid
 prototyping tool._  The Selenium developers recommend for serious, robust test automation
-either Sel-WebDriver or Sel-RC should be used with one of the many supported programming
+either Sel-WebDriver or Selenium-RC should be used with one of the many supported programming
 languages.
 
 In Addition, since Selenium-IDE is a Firefox plugin, it can only run it's test scripts
@@ -209,14 +209,14 @@ and a chapter on test design techniques.
 The remaining chapters of the reference present:
 
 :ref:`Selenium-IDE <chapter03-reference>`
-    Introduces Sel-IDE and describes how to use it to build test scripts. using the 
+    Introduces Selenium-IDE and describes how to use it to build test scripts. using the 
     Selenium Integrated Development Environment.  If you are not experienced in programming,
     but still hoping to learn test automation this is where you should start and you'll find
-    you can create quite a few automated tests with Sel-IDE.  Also, if you are experienced
-    in programming, this chapter may still interest you in that you can use the Sel-IDE
+    you can create quite a few automated tests with Selenium-IDE.  Also, if you are experienced
+    in programming, this chapter may still interest you in that you can use the Selenium-IDE
     to do rapid prototyping of your tests.  This section also demonstrates how your test
     script can be "exported" to a programming language for adding more advanced capabilities
-    not supported by Sel-IDE.
+    not supported by Selenium-IDE.
 
 :ref:`Selenium Commands <chapter04-reference>`
     Explains the Selenium commands in detail. This 
@@ -271,7 +271,7 @@ or both.
 Acknowledgements
 ~~~~~~~~~~~~~~~~
 A huge special thanks goes to Patrick Lightbody.  As an administrator of the 
-SeleniumHQ website, creator of SEl-RC, and long term involvement in the Selenium
+SeleniumHQ website, creator of Selenium-RC, and long term involvement in the Selenium
 community, his support was invaluable when writing the original user's
 guide.  Patrick helped us understand the our audience. 
 He also set us up with 
