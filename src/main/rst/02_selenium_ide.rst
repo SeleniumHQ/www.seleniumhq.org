@@ -1,7 +1,7 @@
 Selenium-IDE 
 ============
 
-.. _chapter03-reference:
+.. _chapter02-reference:
 
 Introduction 
 ------------

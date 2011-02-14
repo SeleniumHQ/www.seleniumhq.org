@@ -1,7 +1,7 @@
 Selenium 2.0 and WebDriver
 ==========================
 
-.. _chapter09-reference:
+.. _chapter03-reference:
 
 The Selenium developers are working towards a Selenium 2.0 release.  The primary new feature
 will be the integration of the WebDriver API into Selenium-RC.  This will address
