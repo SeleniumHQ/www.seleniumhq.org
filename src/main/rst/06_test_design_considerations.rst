@@ -421,6 +421,69 @@ by Selenium using a *for* loop.
 This certainly isn't the only solution.  Ajax is a common topic in the user group and we
 suggest searching previous discussions to see what others have done along with the questions
 they have posted.  
+
+Wrapping Selenium Calls
+------------------------
+
+Interaction of selenium object with web application can be made very compact
+by delegating multiple selenium interactions to one single method. For example
+how many times you click on an object on web page and then wait for page to load 
+
+..code-block:: bash
+	selenium.click(elementLocator);
+	selenium.waitForPageToLoad(waitPeriod);
+
+Instead of using this all around your tests you	could write a wrapper method to 
+perform both click and waitForPageToLoad calls in one method it self, i.e.
+
+..code-block:: bash
+	/**
+	 * Clicks and Waits for page to load.
+	 * 
+	 * @param elementLocator
+	 * @param waitPeriod
+	 */
+	public void clickAndWait(String elementLocator, String waitPeriod) {
+		selenium.click(elementLocator);
+		selenium.waitForPageToLoad(waitPeriod);
+	}
+
+Now when ever you want to perform click and wait operation call to clickAndWait 
+method would suffice.
+
+Another common usage of wrapping selenium methods is to check for presence of 
+element on page before carrying out any operation, which results in abortion of
+test if element were not present on page. Hence instead of doing -
+
+..code-block::bash
+	selenium.click(elementLocator)
+	
+Following method could be used which carries out safe operation on element.
+
+..code-block::bash
+	/**
+	 * Clicks on element only if it is available on page.
+	 * 
+	 * @param elementLocator
+	 */
+	public void safeClick(String elementLocator) {
+		if(selenium.isElementPresent(elementLocator)) {
+			selenium.click(elementLocator);
+		} else {
+			// TestNG API for logging			
+			Reporter.log("Element: " +elementLocator+ ", is not available on page - "
+					+selenium.getLocation());
+		}
+		
+	}
+
+Using safe methods entirely boil down to discretion of test developer.
+Hence if test execution is to be continued even in the wake of missing elements 
+on page then safe methods could be used, while posting the log about
+missing element in test report. But if element must be available on page in order 
+to be able to carry out further operations (i.e. login button on home page 
+of a portal) then safe methods should not be used.
+	
    
 UI Mapping
 ----------
