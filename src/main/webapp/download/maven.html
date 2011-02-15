@@ -2,8 +2,7 @@
 
 <html>
 <head>
-  <meta name="generator" content=
-  "HTML Tidy (version num removed), see www.w3.org">
+    <link rel="stylesheet" type="text/css" href="../fancybox/jquery.fancybox-1.3.4.css" media="screen" />  
 
   <title>Maven Information</title>
 </head>
@@ -11,12 +10,12 @@
 <body class="sectionDownload">
   <h2>Maven Information</h2>
 
-  <p>If you're using Maven, you will find all of the
-  Selenium modules directly in the central Maven repository
-  here: <a href="http://repo1.maven.org/maven2/org/seleniumhq/selenium/">http://repo1.maven.org/maven2/org/seleniumhq/selenium/</a></p>
-  
-  <p>If you just want to start using Selenium, just add the
-  following dependcy to your pom.xml:<pre>
+  <p>If you're using Maven, you will find all Selenium Maven
+  artifacts directly in the central Maven repository here:
+  <a href="http://repo1.maven.org/maven2/org/seleniumhq/selenium/">http://repo1.maven.org/maven2/org/seleniumhq/selenium/</a></p>
+
+  <p>In order start using Selenium in your Maven project, just add the
+  following dependcy to your <tt>pom.xml</tt>:<pre>
     &lt;dependency&gt;
         &lt;groupId&gt;org.seleniumhq.selenium&lt;/groupId&gt;
         &lt;artifactId&gt;selenium&lt;/artifactId&gt;
@@ -24,12 +23,35 @@
     &lt;/dependency&gt;  
 </pre></p>
   
+  <p>To get an overview of the different Selenium Maven artifacts,
+  click on the thumbnail below to open a diagram, which shows
+  the dependencies between the Selenium Maven artifacts as well as
+  the most important classes/interfaces in those artifacts:
+  </p>
+
+  <p style="text-align:center">
+      <a id="maven" href="../images/maven.png">
+          <img src="../images/maven.png" width="200" height="150" alt="Selenium Maven artifacts">
+      </a>
+  </p>
+  <script type="text/javascript" src="../fancybox/jquery-1.4.3.min.js"></script>
+  <script type="text/javascript" src="../fancybox/jquery.mousewheel-3.0.4.pack.js"></script>
+  <script type="text/javascript" src="../fancybox/jquery.fancybox-1.3.4.pack.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function() {
+      $("a#maven").fancybox({
+        'overlayShow' : false,
+        'transitionIn' : 'elastic',
+        'transitionOut' : 'elastic'
+      });
+    });
+  </script>
+  
   <p>If you know, that you will only use a certain <tt>WebDriver</tt>
   implementation, e.g. the <tt>FirefoxDriver</tt>, you don’t need to
   depend on the <tt>selenium</tt> artifact (which has dependencies
-  to all <tt>WebDriver</tt> implementations as well as the support
-  classes). Instead you can just add the dependency to the artifact
-  you need, e.g.<pre>
+  to all Selenium Maven artifacts). Instead you can just add the
+  dependency to the artifact you need, e.g.<pre>
     &lt;dependency&gt;
         &lt;groupId&gt;org.seleniumhq.selenium&lt;/groupId&gt;
         &lt;artifactId&gt;selenium-firefox-driver&lt;/artifactId&gt;
@@ -42,7 +64,7 @@
   to download the <tt>selenium-server-standalone.jar</tt> from the
   <a href="http://code.google.com/p/selenium/downloads/list">Selenium Downloads
   page</a> and just use it. Furthermore you can also embed the Selenium server
-  into your own project, if you add the following dependency to your pom.xml:<pre>  
+  into your own project, if you add the following dependency to your <tt>pom.xml</tt>:<pre>  
     &lt;dependency&gt;
         &lt;groupId&gt;org.seleniumhq.selenium&lt;/groupId&gt;
         &lt;artifactId&gt;selenium-server&lt;/artifactId&gt;
