@@ -429,14 +429,16 @@ Interaction of selenium object with web application can be made very compact
 by delegating multiple selenium interactions to one single method. For example
 how many times you click on an object on web page and then wait for page to load 
 
-..code-block:: bash
+.. code-block:: java
+
 	selenium.click(elementLocator);
 	selenium.waitForPageToLoad(waitPeriod);
 
 Instead of using this all around your tests you	could write a wrapper method to 
 perform both click and waitForPageToLoad calls in one method it self, i.e.
 
-..code-block:: bash
+.. code-block:: java
+
 	/**
 	 * Clicks and Waits for page to load.
 	 * 
@@ -455,12 +457,12 @@ Another common usage of wrapping selenium methods is to check for presence of
 element on page before carrying out any operation, which results in abortion of
 test if element were not present on page. Hence instead of doing -
 
-..code-block::bash
+.. code-block::java
 	selenium.click(elementLocator)
 	
 Following method could be used which carries out safe operation on element.
 
-..code-block::bash
+.. code-block::java
 	/**
 	 * Clicks on element only if it is available on page.
 	 * 
@@ -474,7 +476,6 @@ Following method could be used which carries out safe operation on element.
 			Reporter.log("Element: " +elementLocator+ ", is not available on page - "
 					+selenium.getLocation());
 		}
-		
 	}
 
 Using safe methods entirely boil down to discretion of test developer.

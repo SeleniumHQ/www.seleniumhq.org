@@ -1237,7 +1237,7 @@ When flow control is needed, there are three options:
 a) Run the script using Selenium-RC and a client library such as Java or
    PHP to utilize the programming language's flow control features.
 b) Run a small JavaScript snippet from within the script using the storeEval command.
-c) Install the `goto_sel_ide.js <http://51elliot.blogspot.com/2008/02/selenium-ide-goto.html>`_ extension.
+c) Install the `goto_sel_ide.js extension`_.
 
 Most testers will export the test script into a programming language file that uses the
 Selenium-RC API (see the Selenium-IDE chapter).  However, some organizations prefer
@@ -1692,7 +1692,10 @@ additional commands.
 There are a number of useful extensions_ created by users.
 
 *IMPORTANT:  THIS SECTION IS OUT OF DATE--WE WILL BE REVISING THIS SOON.*
+
 .. _extensions: http://wiki.openqa.org/display/SEL/Contributed+User-Extensions
+
+.. _`goto_sel_ide.js extension`:
 
 Perhaps the most popular of all Selenium-IDE extensions
 is one which provides flow control in the form of while loops and primitive
