@@ -14,11 +14,12 @@
   artifacts directly in the central Maven repository here:
   <a href="http://repo1.maven.org/maven2/org/seleniumhq/selenium/">http://repo1.maven.org/maven2/org/seleniumhq/selenium/</a></p>
 
-  <p>In order start using Selenium in your Maven project, just add the
-  following dependcy to your <tt>pom.xml</tt>:<pre>
+  <p>In order start using Selenium Remote Control or one of
+  the new <tt>WebDriver</tt> implementations in your Maven project,
+  just add the following dependcy to your <tt>pom.xml</tt>:<pre>
     &lt;dependency&gt;
         &lt;groupId&gt;org.seleniumhq.selenium&lt;/groupId&gt;
-        &lt;artifactId&gt;selenium&lt;/artifactId&gt;
+        &lt;artifactId&gt;selenium-remote-control&lt;/artifactId&gt;
         &ltversion&gt;...&lt;/version&gt;
     &lt;/dependency&gt;  
 </pre></p>
@@ -49,8 +50,8 @@
   
   <p>If you know, that you will only use a certain <tt>WebDriver</tt>
   implementation, e.g. the <tt>FirefoxDriver</tt>, you don’t need to
-  depend on the <tt>selenium</tt> artifact (which has dependencies
-  to all Selenium Maven artifacts). Instead you can just add the
+  depend on the <tt>selenium-remote-control</tt> artifact (which has
+  a lot of transitive dependencies). Instead you can just add the
   dependency to the artifact you need, e.g.<pre>
     &lt;dependency&gt;
         &lt;groupId&gt;org.seleniumhq.selenium&lt;/groupId&gt;
