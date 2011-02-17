@@ -455,14 +455,16 @@ method would suffice.
 
 Another common usage of wrapping selenium methods is to check for presence of 
 element on page before carrying out any operation, which results in abortion of
-test if element were not present on page. Hence instead of doing -
+test if element were not present on page. Hence instead of doing
 
-.. code-block::java
+.. code-block:: java
+
 	selenium.click(elementLocator)
-	
-Following method could be used which carries out safe operation on element.
 
-.. code-block::java
+the following method could be used which carries out safe operation on element.
+
+.. code-block:: java
+
 	/**
 	 * Clicks on element only if it is available on page.
 	 * 
@@ -476,7 +478,7 @@ Following method could be used which carries out safe operation on element.
 			Reporter.log("Element: " +elementLocator+ ", is not available on page - "
 					+selenium.getLocation());
 		}
-	} 
+	}
 
 Using safe methods entirely boil down to discretion of test developer.
 Hence if test execution is to be continued even in the wake of missing elements 
