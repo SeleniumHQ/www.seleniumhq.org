@@ -6,11 +6,20 @@ Selenium 2.0 and WebDriver
 The Selenium developers are working towards a Selenium 2.0 release.  The primary new feature
 will be the integration of the WebDriver API into Selenium-RC.  This will address
 a number of Selenium 1.0 limitations along with providing an alternative programming
-interface.  The goal is to develop a standardized Selenium API that provides additional
+interface.  The goal is to develop an object-oriented API that provides additional
 support for a larger number of browsers along with improved support for 
-advanced web-app testing problems.
+modern advanced web-app testing problems.
 
-The best explanation for why WebDriver and Selenium are merging was detailed by Simon Stewart, the creator of WebDriver, in a joint email to the WebDriver and Selenium community on August 6, 2009.
+A Brief History of The Selenium Project
+---------------------------------------
+
+Selenium first came to life in 2004 when Jason Huggins was testing an internal application at ThoughtWorks. Being a smart guy, he realized there were better uses of his time than manually stepping through the same tests with every change he made. He developed a JavaScript library that could drive interactions with the page, allowing him to automatically rerun tests against multiple browsers. That library eventually became Selenium Core, which underlies all the functionality of Selenium Remote Control (RC) and Selenium-IDE. Selenium-RC was ground-breaking because no other product allowed you to control a browser from a language of your choosing.
+
+While Selenium 1 was a tremendous tool, it wasn't without it's drawbacks. Because of the cross-domain policy of browsers for JavaScript, navigating between multiple sites was very difficult. As modern web applications began to rely on iFrames from other sites, this restriction became increasingly painful. Selenium-RC also required an extra server process to act as a proxy between the browser and the web applications server. This was an extra step that made getting up and running more difficult than it needed to be. 
+
+In 2006 a plucky engineer at Google named Simon Stewart started work on a project he called WebDriver. Google had long been a heavy user of Selenium, but testers had to work around the limitations of the product. Simon wanted a testing tool that spoke directly to the browser using the 'native' method for the browser and operating system, thus avoiding the restrictions of a sandboxed JavaScript environment. The WebDriver project began with the aim to solve the pain-points of Selenium 1.
+Jump to 2008. The Beijing Olympics mark China's arrival as a global power, massive mortgage default in the United States triggers the worst international recession since the Great Depression, The Dark Knight is viewed by every human (twice), still reeling from the untimely loss of Heath Ledger. But the most important story of that year was the merging of Selenium and WebDriver. Selenium had massive community and commercial support, but WebDriver was clearly the tool of the future. The joining of the two tools provided a common set of features for all users and brought some of the brightest minds in test automation under one roof.
+Perhaps the best explanation for why WebDriver and Selenium are merging was detailed by Simon Stewart, the creator of WebDriver, in a joint email to the WebDriver and Selenium community on August 6, 2009.
 
 	"Why are the projects merging?  Partly because webdriver addresses some shortcomings in 
 	selenium (by being able to bypass the JS sandbox, for example. And we've got a gorgeous API),
@@ -18,37 +27,6 @@ The best explanation for why WebDriver and Selenium are merging was detailed by 
 	range of browsers) and partly because the main selenium contributors and I felt that it was the
 	best way to offer users the best possible framework."
 
-What is WebDriver?
-------------------
-
-WebDriver uses a different underlying framework from Selenium's javascript Selenium-Core.  
-It also provides an alternative API with functionality not
-supported in Selenium-RC.  WebDriver does not depend on a javascript core embedded
-within the browser, therefore it is able to avoid some long-running Selenium limitations. 
-
-WebDriver's goal is to provide an API that establishes 
-
-- A well-designed standard programming interface for web-app testing.
-- Improved consistency between browsers.
-- Additional functionality addressing testing problems not well-supported in Selenium 1.0.
-
-The Selenium developers strive to continuously improve Selenium.  Integrating
-WebDriver is another step in that process.  The developers of Selenium
-and of WebDriver felt they could make significant gains for the Open Source
-test automation community be combining forces and merging their ideas and technologies.
-Integrating WebDriver into Selenium is the current result of those efforts.
-
-
-When to Use WebDriver?
-----------------------
-
-One should use WebDriver when requiring improved support for  
-
-* Mult-browser testing including improved functionality for browsers not well-supported by Selenium-1.0.
-* Handling multiple frames, multiple browser windows, popups, and alerts.
-* Page navigation.
-* Drag-and-drop.
-* AJAX-based UI elements.
 
 
 The 5 Minute Getting Started Guide
@@ -71,111 +49,18 @@ refer to that as ``$WEBDRIVER_HOME``. Now, open your favourite IDE and:
 
 You can see that WebDriver acts just as a normal library does: it's 
 entirely self-contained, and you usually don't need to remember to start any 
-additional processes or run any installers before using it. 
+additional processes or run any installers before using it, as opposed to the proxy server 
+with Selenium-RC. 
 
 You're now ready to write some code. An easy way to get started is this 
 example, which searches for the term "Cheese" on Google and then outputs the 
-result page's title to the console. You'll start by using the `HtmlUnit Driver`_. 
-This is a pure Java driver that runs entirely in-memory. Because of this, you 
-won't see a new browser window open. 
-
-.. literalinclude:: /examples/HtmlUnitExample.java
-   :language: java
-
-
-	
-HtmlUnit isn't confined to just Java.  Selenium makes accessing HtmlUnit easy from any language. Below
-is the same example in C#. Note that you'll need to run the remote WebDriver server
-to use HtmlUnit from C#
-
-.. code-block:: c#
-
-    using OpenQA.Selenium;
-    using OpenQA.Selenium.Remote;
-
-    class Example
-    {
-        static void Main(string[] args)
-        {
-            //to use HtmlUnit from .Net we must access it through the RemoteWebDriver
-            //Download and run the selenium-server-standalone-2.0b1.jar locally to run this example
-            ICapabilities desiredCapabilities = DesiredCapabilities.HtmlUnit();
-            IWebDriver driver = new RemoteWebDriver(desiredCapabilities);
-
-            //the .Net Webdriver relies on a slightly different API to navigate to
-            //web pages because 'get' is a keyword in .Net
-            driver.Navigate().GoToUrl("http://google.ca/");
-
-            //The rest of the code should look very similar to the Java library
-            IWebElement element = driver.FindElement(By.Name("q"));
-            element.SendKeys("Cheese!");
-            element.Submit();
-            System.Console.WriteLine("Page title is: " + driver.Title);
-            driver.Quit();
-            System.Console.ReadLine();
-        }
-    }
-    
-Compile and run this. You should see a line with the title of the Google search 
-results as output on the console. Congratulations, you've managed to get 
-started with WebDriver!
-
-In this next example, you shall use a page that requires Javascript to work 
-properly, such as Google Suggest. You will also be using the `Firefox Driver`_. 
-Make sure that :ref:`Firefox is installed on your machine and is in the normal 
-location for your OS <FirefoxDefaultLocations>`.
-
-Once that's done, create a new class called GoogleSuggest, which looks like:
+result page's title to the console.
 
 Java
 ~~~~
 
-.. code-block:: java
-
-    package org.openqa.selenium.example;
-
-    import java.util.List;
-
-    import org.openqa.selenium.By;
-    import org.openqa.selenium.WebDriver;
-    import org.openqa.selenium.RenderedWebElement;
-    import org.openqa.selenium.WebElement;
-    import org.openqa.selenium.firefox.FirefoxDriver;
-
-    public class GoogleSuggest {
-        public static void main(String[] args) throws Exception {
-            // The Firefox driver supports javascript 
-            WebDriver driver = new FirefoxDriver();
-
-            // Go to the Google Suggest home page
-            driver.get("http://www.google.com/webhp?complete=1&hl=en");
-            
-            // Enter the query string "Cheese"
-            WebElement query = driver.findElement(By.name("q"));
-            query.sendKeys("Cheese");
-
-            // Sleep until the div we want is visible or 5 seconds is over
-            long end = System.currentTimeMillis() + 5000;
-            while (System.currentTimeMillis() < end) {
-                // Browsers which render content (such as Firefox and IE)
-                // return "RenderedWebElements"
-                RenderedWebElement resultsDiv = (RenderedWebElement) driver.findElement(By.className("gac_m"));
-
-                // If results have been returned,
-                // the results are displayed in a drop down.
-                if (resultsDiv.isDisplayed()) {
-                  break;
-                }
-            }
-
-            // And now list the suggestions
-            List<WebElement> allSuggestions = driver.findElements(By.xpath("//td[@class='gac_c']"));
-            
-            for (WebElement suggestion : allSuggestions) {
-                System.out.println(suggestion.getText());
-            }
-         }
-    }
+.. literalinclude:: /examples/Chapter3/Java/Selenium2Example.java
+   :language: java
 
 C#
 ~~
@@ -211,7 +96,12 @@ C#
         }
      
     }
-    
+
+In this next example, you shall use a page that requires Javascript to work 
+properly, such as Google Suggest. You will also be using the `Firefox Driver`_. 
+Make sure that :ref:`Firefox is installed on your machine and is in the normal 
+location for your OS <FirefoxDefaultLocations>`.
+
 When you run this program, you'll see the list of suggestions being printed 
 to the console. That's all there is to using WebDriver! 
 
