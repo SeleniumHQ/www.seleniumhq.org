@@ -486,8 +486,146 @@ on page then safe methods could be used, while posting the log about
 missing element in test report. But if element must be available on page in order 
 to be able to carry out further operations (i.e. login button on home page 
 of a portal) then safe methods should not be used.
+
+Power of Page Object
+---------------------
+
+So this is how you write your selenium tests today -
+
+.. code-block:: java
+
+	/***
+	 * Tests login feature
+	 */
+	public class Login extends SelTestCase {
+
+		public void testLogin() {
+			selenium.type("inputBox", "testUser");
+			selenium.type("password", "my supersecret password");
+			selenium.click("sign-in");
+			selenium.waitForPageToLoad("PageWaitPeriod");
+			Assert.assertTrue(selenium.isElementPresent("compose button"),
+					"Login was unsuccessful");
+		}
+	}
+
+There are two primary problems with this approach -
+
+1. There is no separation between test method and application internals as both of them 
+are intertwined in one method.
+
+
+2. Application internals would be spread in multiple tests, which induces 
+unwarranted redundancy and makes test maintenance difficult.
+
+Page Object tries to address both of these problems. Page Object models the page 
+specific behaviour in a corresponding class which represents services (public methods) 
+offered by page object. Selenium tests use page object to interact with application 
+and their own verification/assertion to validate page. Most explicit advantages 
+of this approach are -
+
+1. There is clean separation between automation code which knows about application 
+internal and the one which carries out actual tests.
+
+2. There is single repository of services offered by page, instead of application 
+html scattered through out the tests. Hence improved maintainability and reduction
+in code duplication.
+
+Page Object may represent an entirely new page or just part of page. If user 
+action causes control to be directed to new page then it is represented by 
+new page else same page object could be returned.
+
+For example login feature on sign-in page could be represented by HomePage class for 
+user as sign in operation directs user to home page of logged in user. While auto 
+suggest window of a search engine could be represented by same page as auto 
+suggest window appears on the same page on which user is types in search term.
+
+Applying the page object techniques, above mentioned example could be rewritten as 
+
+Page Object for Sign-in page -
+
+.. code-block:: java
+
+	/**
+	 * Models sign-in page for user
+	 */
+	public class SignInPage extends SelTestCase {
+		
+		private Selenium selenium;
+		
+		public SignInPage(Selenium selenium) {
+			this.selenium = selenium;
+			if(!selenium.getTitle().equals("Sign in page")) {
+				throw new IllegalStateException("This is not sign in page, current page is: "
+						+selenium.getLocation());
+			}
+		}
+		
+		/**
+		 * Login as valid user
+		 * 
+		 * @param userName
+		 * @param password
+		 * @return HomePage object
+		 */
+		public HomePage loginValidUser(String userName, String password) {
+			selenium.type("usernamefield", userName);
+			selenium.type("passwordfield", password);
+			selenium.click("sign-in");
+			selenium.waitForPageToLoad("waitPeriod");
+			
+			return new HomePage(selenium);
+		}	
+	}
 	
-   
+and page object for Home page would look as -
+
+.. code-block:: java
+
+	/**
+	 *Models features presented by Home page
+	 */
+	public class HomePage extends SelTestCase {
+
+		private Selenium selenium;
+
+		public HomePage(Selenium selenium) {
+			if (!selenium.getTitle().equals("Home Page of logged in user")) {
+				throw new IllegalStateException("This is not Home Page of logged in user, current page" +
+						"is: " +selenium.getLocation());
+			}
+		}
+		
+		/*More methods offering the services represented by Home Page
+		of Logged User. These methods in turn might return more Page Objects
+		for example click on Compose mail button could return ComposeMail class object*/
+		
+	}
+	
+and updated login test looks as -
+
+.. code-block:: java
+
+	/***
+	 * Tests login feature
+	 */
+	public class TestLogin extends SelTestCase {
+
+		public void testLogin() {
+			SignInPage signInPage = new SignInPage(selenium);
+			signInPage.loginValidUser("userName", "password");
+			Assert.assertTrue(selenium.isElementPresent("compose button"),
+					"Login was unsuccessful");
+		}
+	}
+	
+Page objects themselves should never be used to make verification/assertion and it 
+is responsibility of tests to validate application state. Though there is an 
+exception to it. While instantiating a page object it could be checked whether 
+control is really on expected page or not. Hence in the examples illustrates above
+both SignInPage and HomePage constructors check if control is on right page.
+
+	
 UI Mapping
 ----------
 
