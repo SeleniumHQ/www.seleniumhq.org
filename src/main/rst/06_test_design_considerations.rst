@@ -742,9 +742,9 @@ control is really on expected page or not. Hence in the examples illustrates abo
 both SignInPage and HomePage constructors check if control is on right page.
 
 
-Bitmap Comparison
-------------------
-*This section has not been developed yet.*
+.. Bitmap Comparison
+   ------------------
+   *This section has not been developed yet.*
 
 .. Tarun: Bitmap comparison is about comparison of two images. This feature 
    is available in commercial web automation tools and helps in UI testing (or
@@ -764,10 +764,12 @@ Bitmap Comparison
 .. Santi: Isn't the "Advanced Selenium" chapter better for this topic to be 
    placed on?
 
-
 Data Driven Testing
-~~~~~~~~~~~~~~~~~~~
-*This section needs an introduction and it has not been completed yet.*
+--------------------
+Data Driven Testing provides capabilities of testing application under tests using 
+varying data sets. These data sets can be read from external files i.e. csv file, data base
+or plane excel sheet etc. Data driven testing is a favourite of test automation as test
+data expansion does not require any code change.
 
 **In Python:**
 
