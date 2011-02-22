@@ -1,52 +1,31 @@
-Selenium-RC
-===========
+Selenium 1 (Selenium RC)
+========================
 
 .. _chapter05-reference:
 
 Introduction
 ------------
-Selenium-RC is the solution for tests that need more than  simple
-browser actions and linear execution. Selenium-RC uses the 
-full power of programming languages to create more complex tests like reading
-and writing files, querying a database, and emailing test results.
+As you can read in :ref:`Brief History of The Selenium Project <selenium-history>`,
+Selenium RC was the main Selenium project for a long time, before the
+WebDriver/Selenium merge brought up Selenium 2, the newest and more powerful
+tool. 
 
-You'll want to use Selenium-RC whenever your test requires logic
-not supported by Selenium-IDE. What logic could 
-this be? For example, Selenium-IDE does not directly support:
+Selenium 1 is still actively supported (mostly in maintenance mode) and
+provides some features that may not be available in Selenium 2 for a while,
+including support for several languages (Java, Javascript, PRuby, HP, Python,
+Perl and C#) and support for almost every browser out there.
 
-* condition statements 
-* iteration 
-* logging and reporting of test results
-* error handling, particularly unexpected errors
-* database testing
-* test case grouping
-* re-execution of failed tests
-* test case dependency
-* screenshot capture of test failures
-
-Although these tasks are not supported by Selenium directly, all of them can be achieved
-by using programming techniques with a language-specific Selenium-RC client library.
-
-.. Note: It may be possible to perform these testing tasks by adding user 
-   extensions to Selenium-IDE.  Most prefer to use Selenium-RC.  Selenium-RC
-   is considerably more flexible and extensible when it comes to complex testing
-   problems.
-
-In the `Adding Some Spice to Your Tests`_ section, you'll find examples that 
-demonstrate the advantages of using a programming language
-for your tests.
-
-How Selenium-RC Works
+How Selenium RC Works
 ---------------------
-First, we will describe how the components of Selenium-RC operate and the role each plays in running 
+First, we will describe how the components of Selenium RC operate and the role each plays in running 
 your test scripts.
 
 RC Components
 ~~~~~~~~~~~~~
-Selenium-RC components are:
+Selenium RC components are:
 
 * The Selenium Server which launches and kills browsers, interprets and runs the Selenese commands passed from the test program, and acts as an *HTTP proxy*, intercepting and verifying HTTP messages passed between the browser and the AUT.
-* Client libraries which provide the interface between each programming language and the Selenium-RC Server.
+* Client libraries which provide the interface between each programming language and the Selenium RC Server.
 
 Here is a simplified architecture diagram.... 
 
@@ -97,7 +76,7 @@ or possibly take corrective action if it was an unexpected error.
 So to create a test program, you simply write a program that runs 
 a set of Selenium commands using a client library API.  And, optionally, if 
 you already have a Selenese test script created in the Selenium-IDE, you can 
-*generate the Selenium-RC code*. The Selenium-IDE can translate (using its 
+*generate the Selenium RC code*. The Selenium-IDE can translate (using its 
 Export menu item) its Selenium commands into a client-driver's API function 
 calls.  See the Selenium-IDE chapter for specifics on exporting RC code from 
 Selenium-IDE.
@@ -127,25 +106,25 @@ Selenium-IDE.
 
 Installation
 -------------
-After downloading the Selenium-RC zip file from the `downloads page`_, you'll
+After downloading the Selenium RC zip file from the `downloads page`_, you'll
 notice it has several sub-folders. These folders have all the components you 
-need for using Selenium-RC with the programming language of your choice.
+need for using Selenium RC with the programming language of your choice.
 
 Once you've chosen a language to work with, you simply need to:
 
-* Install the Selenium-RC Server.
+* Install the Selenium RC Server.
 * Set up a programming project using a language specific client driver.
 
 Installing Selenium Server
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
-The Selenium-RC server is simply a Java *jar* file (*selenium-server.jar*), which doesn't
+The Selenium RC server is simply a Java *jar* file (*selenium-server.jar*), which doesn't
 require any special installation. Just downloading the zip file and extracting the 
 server in the desired directory is sufficient. 
 
 Running Selenium Server
 ~~~~~~~~~~~~~~~~~~~~~~~
 Before starting any tests you must start the server.  Go to the directory
-where Selenium-RC's server is located and run the following from a command-line 
+where Selenium RC's server is located and run the following from a command-line 
 console.
 
     java -jar selenium-server.jar
@@ -162,14 +141,14 @@ on a console::
 
        java -version
 
-If you get a version number (which needs to be 1.5 or later), you're ready to start using Selenium-RC.
+If you get a version number (which needs to be 1.5 or later), you're ready to start using Selenium RC.
 
 .. _`downloads page`: http://seleniumhq.org/download/
 .. _`NUnit`: http://www.nunit.org/index.php?p=download
 
 Using the Java Client Driver
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-* Download Selenium-RC from the SeleniumHQ `downloads page`_.
+* Download Selenium RC from the SeleniumHQ `downloads page`_.
 * Extract the file *selenium-java-client-driver.jar*.
 * Open your desired Java IDE (Eclipse, NetBeans, IntelliJ, Netweaver, etc.)
 * Create a new project.
@@ -184,13 +163,13 @@ Using the Java Client Driver
 * Execute your test from the Java IDE or from the command-line.
 
 For details on Java test project configuration, see the Appendix sections
-:ref:`Configuring Selenium-RC With Eclipse <configuring-selenium-RC-eclipse-reference>` 
+:ref:`Configuring Selenium RC With Eclipse <configuring-selenium-RC-eclipse-reference>` 
 and 
-:ref:`Configuring Selenium-RC With Intellij <configuring-selenium-RC-Intellij-reference>`.
+:ref:`Configuring Selenium RC With Intellij <configuring-selenium-RC-Intellij-reference>`.
 
 Using the Python Client Driver 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-* Download Selenium-RC from the SeleniumHQ `downloads page`_ 
+* Download Selenium RC from the SeleniumHQ `downloads page`_ 
 * Extract the file *selenium.py*
 * Either write your Selenium test in Python or export
   a script from Selenium-IDE to a python file.
@@ -203,7 +182,7 @@ For details on Python client driver configuration, see the appendix
 
 Using the .NET Client Driver
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-* Download Selenium-RC from the SeleniumHQ `downloads page`_
+* Download Selenium RC from the SeleniumHQ `downloads page`_
 * Extract the folder
 * Download and install `NUnit`_ (
   Note:  You can use NUnit as your test engine.  If you're not familiar yet with 
@@ -232,7 +211,7 @@ Using the Ruby Client Driver
 * At the top of your test script, add ``require "selenium/client"``
 * Write your test script using any Ruby test harness (eg Test::Unit,
   Mini::Test or RSpec).
-* Run Selenium-RC server from the console.
+* Run Selenium RC server from the console.
 * Execute your test in the same way you would run any other Ruby
   script.
 
@@ -248,7 +227,7 @@ For details on Ruby client driver configuration, see the `Selenium-Client docume
 
 From Selenese to a Program
 --------------------------
-The primary task for using Selenium-RC is to convert your Selenese into a programming 
+The primary task for using Selenium RC is to convert your Selenese into a programming 
 language.  In this section, we provide several different 
 language-specific examples.
 
@@ -831,14 +810,14 @@ by Selenium IDE, as described above.
 Perl, PHP
 ~~~~~~~~~~~~~~~
 The members of the documentation team
-have not used Selenium-RC with Perl or PHP.  If you are using Selenium-RC with either of
+have not used Selenium RC with Perl or PHP.  If you are using Selenium RC with either of
 these two languages please contact the Documentation Team (see the chapter on contributing).
 We would love to include some examples from you and your experiences, to support Perl and PHP users.
 
 
 Learning the API
 ----------------
-The Selenium-RC API uses naming conventions 
+The Selenium RC API uses naming conventions 
 that, assuming you understand Selenese, much of the interface  
 will be self-explanatory. Here, however, we explain the most critical and 
 possibly less obvious aspects.
@@ -946,7 +925,7 @@ using the locator and the string you specified during the method call.
 
 Reporting Results
 -----------------
-Selenium-RC does not have its own mechanism for reporting results.  Rather, it allows
+Selenium RC does not have its own mechanism for reporting results.  Rather, it allows
 you to build your reporting customized to your needs using features of your
 chosen programming language.  That's great, but what if you simply want something
 quick that's already done for you?  Often an existing library or test framework can 
@@ -1048,7 +1027,7 @@ Test Reports for Ruby
 
 Adding Some Spice to Your Tests
 -------------------------------
-Now we'll get to the whole reason for using Selenium-RC, adding programming logic to your tests.
+Now we'll get to the whole reason for using Selenium RC, adding programming logic to your tests.
 It's the same as for any program.  Program flow is controlled using condition statements
 and iteration.  In addition you can report progress information using I/O.  In this section
 we'll show some examples of how programming language constructs can be combined with 
@@ -1252,7 +1231,7 @@ with the following option:
 
    -multiwindow 
 
-As of Selenium-RC 1.0, if you want to run your test within a
+As of Selenium RC 1.0, if you want to run your test within a
 single frame (i.e. using the standard for earlier Selenium versions) 
 you can state this to the Selenium Server using the option
 
@@ -1267,7 +1246,7 @@ Specifying the Firefox Profile
    uses and then deletes sandbox profiles unless you specify special ones)
    
 Firefox will not run two instances simultaneously unless you specify a 
-separate profile for each instance. Selenium-RC 1.0 and later runs in a 
+separate profile for each instance. Selenium RC 1.0 and later runs in a 
 separate profile automatically, so if you are using Selenium 1.0, you can 
 probably skip this section.  However, if you're using an older version of 
 Selenium or if you need to use a specific profile for your tests
@@ -1374,7 +1353,7 @@ browserSideLogs (as well as all other DEBUG level logging messages) to a file.
    --------------------
    Specify the Host and Port::
    localhost:4444 
-   The Selenium-RC Program's Main() 
+   The Selenium RC Program's Main() 
    --------------------------------
    Using the Browser While Selenium is Running 
    -------------------------------------------
@@ -1385,29 +1364,29 @@ browserSideLogs (as well as all other DEBUG level logging messages) to a file.
    This isn't a problem. 
    
    With Internet Explorer, you can simply start another browser instance and run 
-   it in parallel to the IE instance used by Selenium-RC. With Firefox, you can do
+   it in parallel to the IE instance used by Selenium RC. With Firefox, you can do
    this also, but you must specify a separate profile. 
 
 
 Specifying the Path to a Specific Browser 
 -----------------------------------------
-You can specify to Selenium-RC a path to a specific browser. This is useful if 
+You can specify to Selenium RC a path to a specific browser. This is useful if 
 you have different versions of the same browser and you wish to use a specific
 one. Also, this is used to allow your tests to run against a browser not 
-directly supported by Selenium-RC. When specifying the run mode, use the 
+directly supported by Selenium RC. When specifying the run mode, use the 
 \*custom specifier followed by the full path to the browser's executable::
 
    *custom <path to browser> 
 
    
-Selenium-RC Architecture
+Selenium RC Architecture
 ------------------------
 .. note:: This topic tries to explain the technical implementation behind 
-   Selenium-RC. It's not fundamental for a Selenium user to know this, but 
+   Selenium RC. It's not fundamental for a Selenium user to know this, but 
    could be useful for understanding some of the problems you might find in the
    future.
    
-To understand in detail how Selenium-RC Server works  and why it uses proxy injection
+To understand in detail how Selenium RC Server works  and why it uses proxy injection
 and heightened privilege modes you must first understand `the same origin policy`_.
    
 The Same Origin Policy
@@ -1429,7 +1408,7 @@ make all the magic happen) must be placed in the same origin as the Application
 Under Test (same URL). 
 
 Historically, Selenium-Core was limited by this problem since it was implemented in
-JavaScript.  Selenium-RC is not, however, restricted by the Same Origin Policy.  Its 
+JavaScript.  Selenium RC is not, however, restricted by the Same Origin Policy.  Its 
 use of the Selenium Server as a proxy avoids this problem.  It, essentially, tells the 
 browser that the browser is working on a single "spoofed" website that the Server
 provides. 
@@ -1470,7 +1449,7 @@ Here is an architectural diagram.
 As a test suite starts in your favorite language, the following happens:
 
 1. The client/driver establishes a connection with the selenium-RC server.
-2. Selenium-RC server launches a browser (or reuses an old one) with a URL 
+2. Selenium RC server launches a browser (or reuses an old one) with a URL 
    that injects Selenium-Core's JavaScript into the browser-loaded web page.
 3. The client-driver passes a Selenese command to the server.
 4. The Server interprets the command and then triggers the corresponding 
@@ -1478,8 +1457,8 @@ As a test suite starts in your favorite language, the following happens:
 5. Selenium-Core instructs the browser to act on that first instruction, typically opening a page of the
    AUT.
 6. The browser receives the open request and asks for the website's content from
-   the Selenium-RC server (set as the HTTP proxy for the browser to use).
-7. Selenium-RC server communicates with the Web server asking for the page and once
+   the Selenium RC server (set as the HTTP proxy for the browser to use).
+7. Selenium RC server communicates with the Web server asking for the page and once
    it receives it, it sends the page to the browser masking the origin to look
    like the page comes from the same server as Selenium-Core (this allows 
    Selenium-Core to comply with the Same Origin Policy).
@@ -1494,7 +1473,7 @@ Privileges*, which allows websites to do things that are not commonly permitted
 (as doing XSS_, or filling file upload inputs and pretty useful stuff for 
 Selenium). By using these browser modes, Selenium Core is able to directly open
 the AUT and read/interact with its content without having to pass the whole AUT
-through the Selenium-RC server.
+through the Selenium RC server.
 
 Here is the architectural diagram. 
 
@@ -1504,10 +1483,10 @@ Here is the architectural diagram.
 As a test suite starts in your favorite language, the following happens:
 
 1. The client/driver establishes a connection with the selenium-RC server.
-2. Selenium-RC server launches a browser (or reuses an old one) with a URL 
+2. Selenium RC server launches a browser (or reuses an old one) with a URL 
    that will load Selenium-Core in the web page.
 3. Selenium-Core gets the first instruction from the client/driver (via another 
-   HTTP request made to the Selenium-RC Server).
+   HTTP request made to the Selenium RC Server).
 4. Selenium-Core acts on that first instruction, typically opening a page of the
    AUT.
 5. The browser receives the open request and asks the Web Server for the page.
@@ -1518,21 +1497,21 @@ Handling HTTPS and Security Popups
 ----------------------------------
 Many applications switch from using HTTP to HTTPS when they need to send 
 encrypted information such as passwords or credit card information. This is 
-common with many of today's web applications. Selenium-RC supports this. 
+common with many of today's web applications. Selenium RC supports this. 
 
 To ensure the HTTPS site is genuine, the browser will need a security 
 certificate. Otherwise, when the browser accesses the AUT using HTTPS, it will
 assume that application is not 'trusted'. When this occurs the browser
-displays security popups, and these popups cannot be closed using Selenium-RC. 
+displays security popups, and these popups cannot be closed using Selenium RC. 
 
-When dealing with HTTPS in a Selenium-RC test, you must use a run mode that supports this and handles
+When dealing with HTTPS in a Selenium RC test, you must use a run mode that supports this and handles
 the security certificate for you. You specify the run mode when your test program
 initializes Selenium. 
 
-In Selenium-RC 1.0 beta 2 and later use \*firefox or \*iexplore for the run 
-mode. In earlier versions, including Selenium-RC 1.0 beta 1, use \*chrome or 
+In Selenium RC 1.0 beta 2 and later use \*firefox or \*iexplore for the run 
+mode. In earlier versions, including Selenium RC 1.0 beta 1, use \*chrome or 
 \*iehta, for the run mode. Using these run modes, you will not need to install
-any special security certificates; Selenium-RC will handle it for you.
+any special security certificates; Selenium RC will handle it for you.
 
 In version 1.0 the run modes \*firefox or \*iexplore are 
 recommended. However, there are additional run modes of \*iexploreproxy and 
@@ -1541,7 +1520,7 @@ should not be used unless required by legacy test programs. Their use will
 present limitations with security certificate handling and with the running 
 of multiple windows if your application opens additional browser windows. 
 
-In earlier versions of Selenium-RC, \*chrome or \*iehta were the run modes that 
+In earlier versions of Selenium RC, \*chrome or \*iehta were the run modes that 
 supported HTTPS and the handling of security popups. These were considered ‘experimental
 modes although they became quite stable and many people used them.  If you are using
 Selenium 1.0 you do not need, and should not use, these older run modes.
@@ -1556,7 +1535,7 @@ When Selenium loads your browser it injects code to intercept
 messages between the browser and the server. The browser now thinks 
 untrusted software is trying to look like your application.  It responds by alerting you with popup messages. 
 
-To get around this, Selenium-RC, (again when using a run mode that support 
+To get around this, Selenium RC, (again when using a run mode that support 
 this) will install its own security certificate, temporarily, to your 
 client machine in a place where the browser can access it. This tricks the 
 browser into thinking it's accessing a site different from your AUT and effectively suppresses the popups.  
@@ -1564,7 +1543,7 @@ browser into thinking it's accessing a site different from your AUT and effectiv
 Another method used with earlier versions of Selenium was to 
 install the Cybervillians security certificate provided with your Selenium 
 installation. Most users should no longer need to do this however; if you are
-running Selenium-RC in proxy injection mode, you may need to explicitly install this
+running Selenium RC in proxy injection mode, you may need to explicitly install this
 security certificate. 
 
 
@@ -1586,7 +1565,7 @@ Server in interactive mode.
 
 Running Tests with Different Browser Configurations
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Normally Selenium-RC automatically configures the browser, but if you launch 
+Normally Selenium RC automatically configures the browser, but if you launch 
 the browser using the "\*custom" run mode, you can force Selenium RC
 to launch the browser as-is, without using an automatic configuration.
 
@@ -1610,7 +1589,7 @@ a shell script; it's generally better to use the binary executable (e.g. firefox
    
 Troubleshooting Common Problems
 -------------------------------
-When getting started with Selenium-RC there's a few potential problems
+When getting started with Selenium RC there's a few potential problems
 that are commonly encountered.  We present them along with their solutions here.
 
 Unable to Connect to Server 
@@ -1629,7 +1608,7 @@ If you see a message like this, be sure you started the Selenium Server. If
 so, then there is a problem with the connectivity between the Selenium Client 
 Library and the Selenium Server. 
 
-When starting with Selenium-RC, most people begin by running thier test program
+When starting with Selenium RC, most people begin by running thier test program
 (with a Selenium Client Library) and the Selenium Server on the same machine.  To
 do this use "localhost" as your connection parameter.
 We recommend beginning this way since it reduces the influence of potential networking problems
@@ -1677,7 +1656,7 @@ for your application to be tested.
 
 Firefox Refused Shutdown While Preparing a Profile 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-This most often occurs when your run your Selenium-RC test program against Firefox,
+This most often occurs when your run your Selenium RC test program against Firefox,
 but you already have a Firefox browser session running and, you didn't specify
 a separate profile when you started the Selenium Server. The error from the 
 test program looks like this::
@@ -1705,7 +1684,7 @@ To resolve this, see the section on `Specifying a Separate Firefox Profile
 Versioning Problems 
 ~~~~~~~~~~~~~~~~~~~
 Make sure your version of Selenium supports the version of your browser. For
-example, Selenium-RC 0.92 does not support Firefox 3. At times you may be lucky
+example, Selenium RC 0.92 does not support Firefox 3. At times you may be lucky
 (I was). But don't forget to check which
 browser versions are supported by the version of Selenium you are using. When in
 doubt, use the latest release version of Selenium with the most widely used version
@@ -1899,7 +1878,7 @@ to the user's path. you will have to add the following to your .bashrc file:
 
 .. This problem is caused because in linux, Firefox is executed through a shell
    script (the one located on /usr/bin/firefox), when it comes the time to kill
-   the browser Selenium-RC will kill the shell script, leaving the browser 
+   the browser Selenium RC will kill the shell script, leaving the browser 
    running.  Santi: not sure if we should put this here...
 
 If necessary, you can specify the path to firefox-bin directly in your test,

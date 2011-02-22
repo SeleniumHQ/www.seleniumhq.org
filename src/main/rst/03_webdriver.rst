@@ -3,35 +3,16 @@ Selenium 2.0 and WebDriver
 
 .. _chapter03-reference:
 
-The Selenium developers are working towards a Selenium 2.0 release.  The primary new feature
-will be the integration of the WebDriver API into Selenium-RC.  This will address
-a number of Selenium 1.0 limitations along with providing an alternative programming
-interface.  The goal is to develop an object-oriented API that provides additional
-support for a larger number of browsers along with improved support for 
-modern advanced web-app testing problems.
-
-A Brief History of The Selenium Project
----------------------------------------
-
-Selenium first came to life in 2004 when Jason Huggins was testing an internal application at ThoughtWorks. Being a smart guy, he realized there were better uses of his time than manually stepping through the same tests with every change he made. He developed a JavaScript library that could drive interactions with the page, allowing him to automatically rerun tests against multiple browsers. That library eventually became Selenium Core, which underlies all the functionality of Selenium Remote Control (RC) and Selenium-IDE. Selenium-RC was ground-breaking because no other product allowed you to control a browser from a language of your choosing.
-
-While Selenium 1 was a tremendous tool, it wasn't without it's drawbacks. Because of the cross-domain policy of browsers for JavaScript, navigating between multiple sites was very difficult. As modern web applications began to rely on iFrames from other sites, this restriction became increasingly painful. Selenium-RC also required an extra server process to act as a proxy between the browser and the web applications server. This was an extra step that made getting up and running more difficult than it needed to be. 
-
-In 2006 a plucky engineer at Google named Simon Stewart started work on a project he called WebDriver. Google had long been a heavy user of Selenium, but testers had to work around the limitations of the product. Simon wanted a testing tool that spoke directly to the browser using the 'native' method for the browser and operating system, thus avoiding the restrictions of a sandboxed JavaScript environment. The WebDriver project began with the aim to solve the pain-points of Selenium 1.
-Jump to 2008. The Beijing Olympics mark China's arrival as a global power, massive mortgage default in the United States triggers the worst international recession since the Great Depression, The Dark Knight is viewed by every human (twice), still reeling from the untimely loss of Heath Ledger. But the most important story of that year was the merging of Selenium and WebDriver. Selenium had massive community and commercial support, but WebDriver was clearly the tool of the future. The joining of the two tools provided a common set of features for all users and brought some of the brightest minds in test automation under one roof.
-Perhaps the best explanation for why WebDriver and Selenium are merging was detailed by Simon Stewart, the creator of WebDriver, in a joint email to the WebDriver and Selenium community on August 6, 2009.
-
-	"Why are the projects merging?  Partly because webdriver addresses some shortcomings in 
-	selenium (by being able to bypass the JS sandbox, for example. And we've got a gorgeous API),
-	partly because selenium addresses some shortcomings in webdriver (such as supporting a broader
-	range of browsers) and partly because the main selenium contributors and I felt that it was the
-	best way to offer users the best possible framework."
-
-
+As you can see in the :ref:`Brief History of The Selenium Project <selenium-history>`
+The Selenium developers are working towards a Selenium 2.0 release.  The
+primary new feature will be the integration of the WebDriver API into Selenium 1.
+This will address a number of limitations along with providing an alternative
+programming interface.  The goal is to develop an object-oriented API that
+provides additional support for a larger number of browsers along with improved
+support for modern advanced web-app testing problems.
 
 The 5 Minute Getting Started Guide
 ----------------------------------
- 
 WebDriver is a tool for automating testing web applications, and in particular 
 to verify that they work as expected. It aims to provide a friendly API that's
 easy to explore and understand, which will help make your tests easier to 
