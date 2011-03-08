@@ -1,7 +1,7 @@
 .. _chapter00-reference:
 
 Note to the Reader--*Docs Being Revised for Selenium 2.0*!
-========================================================
+===========================================================
 Hello, and welcome!  The Documentation Team would like to 
 welcome you, and to thank you for being interested in Selenium.
 

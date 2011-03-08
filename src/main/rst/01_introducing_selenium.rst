@@ -315,7 +315,9 @@ or both.
 * Paul Grandjean
 * Peter Newhook
 * Santiago Suarez Ordonez
-* Tarun Kumar
+* `Tarun Kumar`_
+
+.. _`Tarun Kumar`: http://tarunksblog.blogspot.com/
 
 
 
