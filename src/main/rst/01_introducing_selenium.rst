@@ -317,7 +317,7 @@ or both.
 * Santiago Suarez Ordonez
 * `Tarun Kumar`_
 
-.. _`Tarun Kumar`: http://tarunksblog.blogspot.com/
+.. _`Tarun Kumar`: http://seleniumsoftwaretesting.blogspot.com/
 
 
 
