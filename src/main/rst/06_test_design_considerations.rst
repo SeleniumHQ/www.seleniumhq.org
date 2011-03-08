@@ -4,36 +4,33 @@ Test Design Considerations
 
 .. _chapter06-reference:
 
-*NOTE: Some sections of this chapter are not yet complete.*
 
 Introducing Test Design
 -----------------------
 
-In this subsection we describe a few types of different tests you can do with
-Selenium.  This may not be new to you, but we provide this as a framework for
-relating Selenium test automation to the decisions a quality assurance
-professional will make when deciding what tests to perform, the priority for
-each of those tests, and whether to automate those tests or not.
+We've provided in this chapter information that will be useful to both, those new to test automation
+and for the experienced QA professional.  Here we describe the most common types of automated tests.  
+We also describe 'design patterns' commonly used in test automation for improving the maintenance
+and extensibily of your automation suite.  The more experienced reader will find these interesting
+if not already using these techniques.
 
 
-What to Test?
--------------
+Types of Tests
+--------------
 
 What parts of your application should you test?  That depends on aspects of
 your project:  user expectations, time allowed for the project, priorities
 set by the project manager and so on.  Once the project boundaries are defined
 though, you, the tester, will certainly make many decisions on what to test.
 
-We will define some terms here to help us categorize the types of testing typical
-for a web-application.  These terms are by no means standard, although the concepts
-we present here are typical for web-application testing.  We've created a few
-terms here of our own for the purposes of categorizing the types of test you may
-perform on your web application.
+We've created a few terms here for the purpose of categorizing the types of test you may
+perform on your web application.  These terms are by no means standard, although the concepts
+we present here are typical for web-application testing.
 
    
 
-Testing for Expected Content
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Testing Static Content
+~~~~~~~~~~~~~~~~~~~~~~
 The simplest type of test, a *content test*, is a simple test for the existence
 of a static, non-changing, UI element.  For instance
 
@@ -46,18 +43,16 @@ of a static, non-changing, UI element.  For instance
 
 
 You may or may not need content tests.  If your page content is not likely to be
-affected then it may be more efficient to test page content manually.  If, however,
-your application will be undergoing platform changes, or files will likely be
-moved to different locations, content tests may prove valuable.
+affected then it may be more efficient to test page content manually.  If, for example,
+your application involves files being moved to different locations, content tests may prove valuable.
 
 Testing Links
 ~~~~~~~~~~~~~
-A frequent source of errors for web-sites is broken links and missing pages
-behind those broken links.  Testing for these involves clicking each link
-and verifying the expected page behind that link loads correctly.
-
-*Need to include a description of how to design this test and a simple example.
-Should that go in this section or in a separate section?*  
+A frequent source of errors for web-sites is broken links or missing pages
+behind links.  Testing involves clicking each link
+and verifying the expected page.  If static links are infrequently changed then manual tseting 
+may be sufficient.  However if your web designers frequently alter links, or if files are occassionally
+relocated, link tests should be automated.
 
 
 Function Tests
@@ -69,48 +64,47 @@ collection of input fields, Submit and Cancel operations, and one or more
 response pages.  User input can be via text-input fields, check boxes, drop-down
 lists, or any other browser-supported input.
 
+Function tests are often the most complex tests you'll automate, but are usually the most 
+important.  Typical tests can be for login, registration to the site, user account operations,
+account settings changes, complex data retrieval operations, among others.  Function tests
+typically mirro the user-scenarios used to specify the features and design or your application.
 
 Testing Dynamic Elements
 ~~~~~~~~~~~~~~~~~~~~~~~~
-Every web page element has an Identifier, a name that can be use to locate the
-element.  These names can be static - for example, when you enter a search term
-into Google, the text field in which you type your query is always named 'q'.  
-These names can also be dynamic - generated fresh, new, and unique for every 
-instance of a web page.  For example, some web servers might name a text entry 
-field 'q1' on the first instance of a page, and 'q2' on the next instance of the 
-same page, etc.  This means your test script could be looking at a different field
-name every time you run the script.  Dynamic names are usually on a result page 
-of some given function.  
+Often a web page element has a unique identifier used to uniquely locate that
+element within the page.  Usually these are implemented using the html tag's 
+'id' attribute or it's 'name' attribute.  These names can be a static, i.e 
+unchanging, string constant.  They can also be dynamically generated values that
+vary each  instance of the page.  For example, some web servers might name a diplayed
+document doc3861 one instance of a page, and 'doc6148' on a different instance of the 
+page depending on what 'document' the user was retrieving.  This means your test script which
+is verify that a document exists may not have a consistent identifier to user for locating that
+document.  Often, dynamic elements with varying identifiers are on some type of result page 
+based on a user action.  Thing though certainly depends on the function of the web application.  
 
-An example would be a result set of data returned to the user.  Suppose each
-data result, in, say for example a list of documents, had a unique Identifier
-for each specific document.  So, for a particular search, the search results
-page returns a data set with one set of documents and their corresponding
-Identifiers.  Then, in a different search, the search results page returns
-a different data set where each document in the result set uses different
-Identifiers.
-
-An example will help.  Dynamic content involve UI elements who Identifying
-properties change each time you open the page displaying them.  For example,
-
-Dynamic HTML of an object might look as:
+Here's an example.  
            
 .. code-block:: html
 
     <input type="checkbox" value="true" id="addForm:_ID74:_ID75:0:_ID79:0:
-	checkBox" name="addForm:_ID74:_ID75:0:_ID79:0:checkBox"/>
+	checkBox"/>
 
-This is HTML snippet for a check box. Its ID and name 
-(addForm:_ID74:_ID75:0:_ID79:0:checkBox) are same and both are dynamic 
-(they will change the next time you open the application). In this case
+This shows an HTML tag for a check box. Its ID  
+(addForm:_ID74:_ID75:0:_ID79:0:checkBox) is a dynamically generated value. 
+The next time the same page is opened it will likely be a different value.
 
 
 Ajax Tests
 ~~~~~~~~~~ 
 
-Ajax is a technology which supports dynamic real-time UI elements such as
-animation and RSS feeds.  In Ajax-driven web applications, data is
-retrieved from the application server without refreshing the page. 
+Ajax is a technology which supports dynamically changing user interface
+elements which can dynamically change without the browser having to reload
+the page, such as animation, RSS feeds, and real-time data updates among others.
+There's a countless ways Ajax can be used to update elements on a web page.
+But, the easy way to think of this is that in Ajax-driven applications, data can
+retrieved from the application server and then displayed on the page without 
+reloading the entire page.  Only a portion of the page, or strictly the element
+itself is reloaded.
 
 Verifying Results
 -----------------
@@ -120,7 +114,7 @@ Assert vs. Verify
 
 When should you use an assert command and when should you use a verify command?
 This is up to you.  The difference is in what you want to happen when the check
-fails.  Do you want your test to terminate or continue and record that the check
+fails.  Do you want your test to terminate, or to continue and simply record that the check
 failed?
 
 Here's the trade-off. If you use an assert, the test will stop at that point and
@@ -128,21 +122,21 @@ not run any subsequent checks.  Sometimes, perhaps often, that is what you want.
 If the test fails you will immediately know the test did not pass.  Test engines
 such as TestNG and JUnit have plugins for commonly used development environments
 (Chap 5) which conveniently flag these tests as failed tests.  The advantage:
-you have an immediate visual of whether the checks (those using asserts anyway)
+you have an immediate visual of whether the checks
 passed.  The disadvantage:  when a check does fail, there are other checks
 which were never performed, so you have no information on their status.
 
 In contrast, verify commands will not terminate the test.  If your test uses
 only verify commands you are guaranteed (assuming no unexpected exceptions)
-the test will run to completion whether the checks find defects in the AUT
+the test will run to completion whether the checks find defects
 or not.  The disadvantage:  you have to do more work to examine your test
-results.  That is, you won't get feedback from TestNG or JUnit.  Rather,
-you will need to look at the results of a console printout or a log output
-by your test application.  And you will need to take the time to look through
-this output every time you run your test.  For Java, Logging Selenium (Chap 5)
-is a convenient logging utility for recording the results of verify commands,
-however you still need to open the logs and examine the results.  If you are
-running hundreds of tests, each with it's own log, this will be time-consuming. 
+results.  That is, you won't get feedback from TestNG or JUnit.
+You will need to look at the results of a console printout or a log output.
+And you will need to take the time to look through
+this output every time you run your test.  If you are
+running hundreds of tests, each with it's own log, this will be time-consuming,
+and the immediate feedback of asserts will be more appropriate.  Asserts are more
+commonly used then verifys due to their immediate feedback.
 
 Trade-offs: *assertTextPresent*, *assertElementPresent*, *assertText* 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
