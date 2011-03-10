@@ -142,7 +142,7 @@ Trade-offs: *assertTextPresent*, *assertElementPresent*, *assertText*
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 You should now be familiar with these commands, and the mechanics of using them.
-If not, please refer to Chapter 4 first.  When constructing your tests, you
+If not, please refer to Chapter 3 first.  When constructing your tests, you
 will need to decide
 
 - Do I only check that the text exists on the page?  (*verify/assertTextPresent*)
@@ -150,48 +150,53 @@ will need to decide
 - Must I test both, the element and it's text content?  (*verify/assertText*)
 
 There is no right answer.  It depends on the requirements for your test.  Which, of course, depend on the requirements for the application you're testing.
-If in doubt, and if the requirements are not clear, you can go with your best guess
-and can always change the test later.  Most of these are easily changed in either Sel-IDE or Sel-RC.
+If in doubt, use *assertText* since this is the strictest type of checkpoint.  You can always change it later but at least you won't be missing any potential failures.
 
-Realize that *verify/assertText* is the *most specific test*.  This can fail if either the HTML element (tag) OR the text is not what your test is expecting.
-Sometimes, for instance if HTML changes frequently by your programmers, *verifyTextPresent* makes more sense.  It can check for the content, but will pass
-the test when the programmers change the HTML used to present that text.  Alternatively,  perhaps your web-designers are frequently changing the page and you don't want your test to fail every time they do this because the changes themselves are expected periodically.  However, assume you still need to check that
-*something* is on the page, say a paragraph, or heading text, or an image.  In this case you can use *verify/assertElementPresent*.  It will ensure that a particular type of element exists (and if using XPath can ensure it exists relative to other objects within the page).  But you don't care what the content is, that is, a specific image file, or specific text.  You only care that some type of image exists.
+*Verify/assertText* is the *most specific test* type.  This can fail if either the HTML element (tag)
+OR the text is not what your test is expecting.
+Perhaps your web-designers are frequently changing the page and you don't want your test to fail every time
+they do this because the changes themselves are expected periodically.  However, assume you still need to
+check that *something* is on the page, say a paragraph, or heading text, or an image.  In this case you
+can use *verify/assertElementPresent*.  It will ensure that a particular type of element exists
+(and if using XPath can ensure it exists relative to other objects within the page).  But you don't
+care what the content is.  You only care that a specific element, say, an image, is at a specific location.
 
-Getting a feel for these types of decisions will come with time and a little experience.  They are easy concepts, and easy to change in your test, but they do depend do depend on the requirements of your AUT.  For some projects the requirements are clear and therefore your tests will be clear.  For others, not so much, and you will have to give it your best guess.  The purpose of this subsection 
-is to help you anticipate your needs so you can make these decisions more efficiently.
+Getting a feel for these types of decisions will come with time and a little experience.  They are
+easy concepts, and easy to change in your test.
 		
 		
 Choosing a Location Strategy
 ----------------------------
 
-You know from the Selenese section there are multiple ways of selecting an object
+There are multiple ways of selecting an object
 on a page.  But what are the trade offs of each of these locator types?  Recall
 we can locate an object using
 
-- the element ID
-- the element name attribute
+- the element's ID
+- the element's name attribute
 - an XPath statement
+- by a links text
 - document object model (DOM)
 
-Generally, using an ID locator is more efficient as it makes your test code
-more readable, assuming the ID used by the AUT's page source is a meaningful
-one.  Using the name attribute also has similar advantages.  These
-also give the best performance.  XPath statements have been known to be slow
-in Internet Explorer due to limitations of IE's XPath processor.
+Using an element ID or name locator is the most efficient in terms of test performance,
+and also makes your test code more readable, assuming the ID or name within the page source is well-named.
+XPath statements take longer to process since the browser must run it's XPath processor.  Xpath has 
+been known to be especially slow in Internet Explorer version 7.  Locating via a link's text is often
+convenient and performs well.  This technique is speciic to links though.  Also,
+if the link text is likely to change frequently, locating by the <a> element
+would be the better choice.
   
 Sometimes though, you must use an XPath locator.  If the page source does not
-have an ID or name attribute you have no choice but to use an XPath or DOM locator.
-It appears at the time of writing that DOM locators are not commonly used now,
-and XPath appears to the preferred choice, possibly because XPath provides a
-rich set of possibilities for Identifying an object--it is quite flexible.
+have an ID or name attribute you may have no choice but to use an XPath locator.
+(DOM locators are no longer commonly used since Xpath can do everything they can and more.
+DOM locators are available simply to support legacy tests.)
 
-There is an advantage to using XPath or DOM that locating via ID or name
-attributes do not have. With XPath and DOM you can locate an object with
+There is an advantage to using XPath that locating via ID or name
+attributes do not have. With XPath (and DOM) you can locate an object with
 respect to another object on the page.  For example, if there is a link
 that must occur within the second paragraph within a <div> section,
-you can use XPath or DOM to specify this.  With ID and name locators,
-you can only specify that they occur on the page--somewhere on the page.
+you can use XPath to specify this.  With ID and name locators,
+you can only specify that they occur on the page that is, somewhere on the page.
 If you must test that an image displaying the company logo appears at 
 the top of the page within a header section XPath may be the better locator. 
 
