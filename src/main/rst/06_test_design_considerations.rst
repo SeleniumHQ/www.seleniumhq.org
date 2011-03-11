@@ -201,25 +201,21 @@ If you must test that an image displaying the company logo appears at
 the top of the page within a header section XPath may be the better locator. 
 
 
-Locating Dynamic Objects
-~~~~~~~~~~~~~~~~~~~~~~~~
+Locating Dynamic Elements
+~~~~~~~~~~~~~~~~~~~~~~~~~
 
-First, you must understand what a dynamic object is, and to do so, we will
-contrast that with a static object.  Until now, all the AUT page elements
-we have been considering have been static objects.  These are objects who's
-html page source is the same each time the page is loaded in the browser.
-
-For example,
+As was described earlier in the section on types of tests, a dynamic element is a page element
+who's identifer varies with each instance of the page.  For example,
            
 .. code-block:: html
 
     <a class="button" id="adminHomeForm" onclick="return oamSubmitForm('adminHomeForm',
 	'adminHomeForm:_ID38');" href="#">View Archived Allocation Events</a>
 
-This is HTML anchor tag defining an button with an ID attribute of "adminHomeForm".
+This HTML anchor tag defines a button with an ID attribute of "adminHomeForm".
 It's a fairly complex anchor tag when compared to most HTML tags, but it is still
 a static tag.  The HTML will be the same each time this page is loaded in the
-browser.  Its ID remains constant within all instances of this page. That is,
+browser.  Its ID remains constant with all instances of this page. That is,
 when this page is displayed, this UI element will always have this Identifier.
 So, for your test script to click this button you simply need to use the following
 selenium command.
@@ -228,15 +224,15 @@ selenium command.
 
     click	adminHomeForm
 
-Or, in Selenium-RC 
+Or, in Selenium 1.0 
 	
 .. code-block:: java
 
     selenium.click("adminHomeForm");
 
-Your application, however, may generate HTML with IDs that are generated
-dynamically and therefore the ID itself varies on different instances
-of the webpage under test.  For instance, HTML for a dynamic page element
+Your application, however, may generate HTML
+dynamically where the identifier varies on different instances
+of the webpage.  For instance, HTML for a dynamic page element
 might look like this.
            
 .. code-block:: html
@@ -283,9 +279,8 @@ Or
 
     click 	//div/p[2]/input[3]
 	
-If however, you do need to use the ID to locate the element, a programmed solution
-is required.  Another solution is 
-to capture this ID from the website itself, before you need to use it in a Selenium
+If however, you do need to use the ID to locate the element, a different solution
+is needed.  You can capture this ID from the website before you use it in a Selenium
 command. It can be done like this.
 
 .. code-block:: java
@@ -299,11 +294,11 @@ command. It can be done like this.
                    }
            }
 
-This approach will work if there is only one field whose ID has the text 
+This approach will work if there is only one whose ID has the text 
 'addForm' appended to it.
 
 Consider one more example of a Dynamic object; a page with two links having 
-the same name and the same html name. Now if href is used to click the link,
+the same ID and name attributes. Now if href is used to click the link,
 it would always be clicking on the first element. Clicking on the second link
 can be achieved as follows.
 
@@ -347,37 +342,6 @@ can be achieved as follows.
     // Click on link.
     selenium.click(editInfo);
                    
-
-
-How can I avoid using complex XPath expressions in my test?
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Where possible, element IDs should be explicitly created by the application designer, 
-not automatically generated. Automatically generated (non-descriptive) 
-element IDs (i.e. id_147) tend to cause two problems: first, each time the 
-application is deployed, different element IDs could be generated. If the 
-element ID changes then your test will fail.  Second, a non-descriptive element
-id makes it hard for automation testers to keep track of and determine which 
-element IDs to use (which ID is associated with which GUI object).
-
-You might consider trying the `UI-Element`_ extension in this situation.
-
-.. _`UI-Element`:
-
-	http://wiki.openqa.org/display/SIDE/Contributed+Extensions+and+Formats#ContributedExtensionsandFormats-UIElementLocator
-
-Performance Considerations for Locators
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-Custom Locators
-~~~~~~~~~~~~~~~
-  
-*This section is not yet developed.*
-
-  
-.. Dave: New suggested section. I've been documenting location strategies and 
-   it's possible in RC to add new strategies. Maybe an advanced topic but 
-   something that isn't documented elsewhere to my knowledge.
-
 
 
 Testing Ajax Applications
