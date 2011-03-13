@@ -286,62 +286,14 @@ command. It can be done like this.
 .. code-block:: java
 
    String[] checkboxids  = selenium.getAllFields(); // Collect all input IDs on page.
-   if(!GenericValidator.IsBlankOrNull(checkboxids[i])) // If collected ID is not null.
-          {
-                   // If the ID starts with addForm
-                   if(checkboxids[i].indexOf("addForm") > -1) {                       
-                       selenium.click(checkboxids[i]);                    
-                   }
-           }
+		for(String checkboxid:checkboxids) {
+		       if(checkboxid.contains("addForm")) {
+                   selenium.click(expectedText);
+               }
+		}
 
-This approach will work if there is only one whose ID has the text 
-'addForm' appended to it.
-
-Consider one more example of a Dynamic object; a page with two links having 
-the same ID and name attributes. Now if href is used to click the link,
-it would always be clicking on the first element. Clicking on the second link
-can be achieved as follows.
-
-.. code-block:: java
-
-    // Flag for second appearance of link.
-    boolean isSecondInstanceLink = false;
-    
-    // Desired link.
-    String editInfo = null;
-
-    // Collect all links.
-    String[] links = selenium.getAllLinks();
-
-    // Loop through collected links.
-    for(String linkID: links) {
-
-        // If retrieved link is not null
-        if(!GenericValidator.isBlankOrNull(linkID))  {
-
-            // Find the inner HTML of link.
-            String editTermSectionInfo = selenium.getEval
-			("window.document.getElementByID('"+linkID+"').innerHTML");
-
-            // If retrieved link is expected link.
-            if(editTermSectionInfo.equalsIgnoreCase("expectedlink")) {
-
-                // If it is second appearance of link then save the link ID
-				and break the loop.
-                if(isSecondInstanceLink) {
-                    editInfo = linkID;
-                    break;
-                }
-
-            // Set the second appearance of Autumn term link to true as
-            isSecondInstanceLink = true;
-            }
-        }
-    }
-    
-    // Click on link.
-    selenium.click(editInfo);
-                   
+This approach will work if there is only one check box whose ID has the text 
+'expectedText' appended to it.
 
 
 Testing Ajax Applications
