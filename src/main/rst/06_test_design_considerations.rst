@@ -106,8 +106,8 @@ retrieved from the application server and then displayed on the page without
 reloading the entire page.  Only a portion of the page, or strictly the element
 itself is reloaded.
 
-Verifying Results
------------------
+Validating Results
+------------------
 
 Assert vs. Verify
 ~~~~~~~~~~~~~~~~~
@@ -163,10 +163,12 @@ care what the content is.  You only care that a specific element, say, an image,
 
 Getting a feel for these types of decisions will come with time and a little experience.  They are
 easy concepts, and easy to change in your test.
-		
+
+Location Strategies
+-------------------
 		
 Choosing a Location Strategy
-----------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 There are multiple ways of selecting an object
 on a page.  But what are the trade offs of each of these locator types?  Recall
@@ -296,24 +298,29 @@ This approach will work if there is only one check box whose ID has the text
 'expectedText' appended to it.
 
 
-Testing Ajax Applications
--------------------------
 
-We introduced the special characteristics of AJAX technology earlier in this
-chapter.  Basically, a page element implemented with Ajax is an element that
-can be dynamically refreshed without having to refresh the entire page.
 
-Waiting for an Ajax Element
-~~~~~~~~~~~~~~~~~~~~~~~~~~~
-For an Ajax element using Selenium's *waitForPageToLoad* wouldn't
-work since the page is not actually loaded to refresh the Ajax element. Pausing
-the test execution for a specified period of time is also not good
-because the web element might appear later than expected leading to invalid
-test failures (reported failures that aren't actually failures). 
-A better approach is to wait for a predefined period and then continue
-execution as soon as the element is found.
 
-Consider a page which brings a link (link=ajaxLink) on click
+
+Locating Ajax Elements
+~~~~~~~~~~~~~~~~~~~~~~
+As was presented in the Test Types subsection above, a page element implemented with Ajax
+is an element that
+can be dynamically refreshed without having to refresh the entire page.  
+The best way to locate and verify an Ajax element is to use the Selenium 2.0 WebDriver API.
+It was specifically designed to address testing of Ajax elements where Selenium 1 has some
+limitations.
+
+In Selenim 2.0 you use the waitFor() method to wait for a page element to become available.
+The parameter is a By object which is how WebDriver implements locators.  This is 
+explained in detail in the WebDriver chapters.
+
+To do this with Selenium 1.0 (Selenium-RC) a bit more coding is involved, but it 
+isn't difficult.  The approach is to check for the element, if it's not availble 
+wait for a predefined period and then again recheck it.  This is then executed with a loop
+with a predetermined time-out terminating the loop if the element isn't found.
+
+Let's consider a page which brings a link (link=ajaxLink) on click
 of a button on page (without refreshing the page)  This could be handled
 by Selenium using a *for* loop. 
 
@@ -333,74 +340,95 @@ by Selenium using a *for* loop.
 	
    } 
 
-This certainly isn't the only solution.  Ajax is a common topic in the user group and we
-suggest searching previous discussions to see what others have done along with the questions
-they have posted.  
+This certainly isn't the only solution.  Ajax is a common topic in the user forum and we
+recommend searching previous discussions to see what others have done.  
 
-Wrapping Selenium Calls
-------------------------
+Wrapping Selenium Calls to Reduce Duplication
+---------------------------------------------
 
-Interaction of selenium object with web application can be made very compact
-by delegating multiple selenium interactions to one single method. For example
-how many times you click on an object on web page and then wait for page to load 
+As with any programming, you will want to use utility functions to handle code 
+that would otherwise be duplicated throughout your tests.  One way to prevent this
+is to wrap frequently used selenium calls with functions or class methods of your
+own design.  For example, many tests will frequently click on a page element 
+and wait for page to load multiple times within a test.
 
 .. code-block:: java
 
 	selenium.click(elementLocator);
 	selenium.waitForPageToLoad(waitPeriod);
 
-Instead of using this all around your tests you	could write a wrapper method to 
-perform both click and waitForPageToLoad calls in one method it self, i.e.
+Instead of duplicting this code you	could write a wrapper method that performs
+both functions.
 
 .. code-block:: java
 
 	/**
 	 * Clicks and Waits for page to load.
 	 * 
-	 * @param elementLocator
-	 * @param waitPeriod
+	 * param elementLocator
+	 * param waitPeriod
 	 */
 	public void clickAndWait(String elementLocator, String waitPeriod) {
 		selenium.click(elementLocator);
 		selenium.waitForPageToLoad(waitPeriod);
 	}
+	
 
-Now when ever you want to perform click and wait operation call to clickAndWait 
-method would suffice.
+'Safe Operations' that Depend on Element Presence
+-------------------------------------------------
 
 Another common usage of wrapping selenium methods is to check for presence of 
-element on page before carrying out any operation, which results in abortion of
-test if element were not present on page. Hence instead of doing
-
-.. code-block:: java
-
-	selenium.click(elementLocator)
-
-the following method could be used which carries out safe operation on element.
+an element on page before carrying out some operation. This is sometimes called 
+a 'safe operation'.  For instance, the following method could be used to implements
+a safe operation that depends on an expected element being present.
 
 .. code-block:: java
 
 	/**
-	 * Clicks on element only if it is available on page.
+	 * Selenum-RC -- Clicks on element only if it is available on page.
 	 * 
-	 * @param elementLocator
+	 * param elementLocator
 	 */
 	public void safeClick(String elementLocator) {
 		if(selenium.isElementPresent(elementLocator)) {
 			selenium.click(elementLocator);
 		} else {
-			// TestNG API for logging			
+			// Using the TestNG API for logging			
 			Reporter.log("Element: " +elementLocator+ ", is not available on page - "
 					+selenium.getLocation());
 		}
 	}
 
-Using safe methods entirely boil down to discretion of test developer.
-Hence if test execution is to be continued even in the wake of missing elements 
-on page then safe methods could be used, while posting the log about
-missing element in test report. But if element must be available on page in order 
+This example uses the Selenium 1 API but Selenium 2 also supports this.
+
+.. code-block:: java
+
+	/**
+	 * Selenium-WebDriver -- Clicks on element only if it is available on page.
+	 * 
+	 * param elementLocator
+	 */
+	public void safeClick(String elementLocator) {
+		WebElement webElement = getDriver().findElement(By.XXXX(elementLocator));
+		if(webElement != null) {
+			selenium.click(elementLocator);
+		} else {
+			// Using the TestNG API for logging			
+			Reporter.log("Element: " +elementLocator+ ", is not available on page - "
+					+ getDriver().getUrl());
+		}
+	}
+
+In this second example 'XXXX' is simply a placeholder for one of the multiple location
+methods that can be called here.
+
+Using safe methods is up to the test developer's discretion.
+Hence, if test execution is to be continued, even in the wake of missing elements 
+on the page, then safe methods could be used, while posting a message to a log about
+the missing element. This, essentially, implements a 'verify' with a reporting 
+mechanism as opposed to an abortive assert.  But if element must be available on page in order 
 to be able to carry out further operations (i.e. login button on home page 
-of a portal) then safe methods should not be used.
+of a portal) then this safe method technique should not be used.
 
 
 UI Mapping
