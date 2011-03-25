@@ -1,6 +1,5 @@
 using OpenQA.Selenium.Firefox;
 using OpenQA.Selenium;
-using System.Collections.ObjectModel;
 
 class GoogleSuggest
 {
@@ -14,7 +13,7 @@ class GoogleSuggest
         driver.Navigate().GoToUrl("http://www.google.com/");
         IWebElement query = driver.FindElement(By.Name("q"));
         query.SendKeys("Cheese");
-        System.Console.WriteLine("Page title is: " + driver.getTitle());
+        System.Console.WriteLine("Page title is: " + driver.Title);
         driver.Quit();
     }
 
