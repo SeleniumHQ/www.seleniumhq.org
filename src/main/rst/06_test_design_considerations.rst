@@ -434,14 +434,11 @@ of a portal) then this safe method technique should not be used.
 UI Mapping
 ----------
 
-A UI map is a mechanism that stores Identifiers the locators for a test suite in one place
-for easy modification when identifiers or the path to the UI elements change in
+A UI map is a mechanism that stores all the locators for a test suite in one place
+for easy modification when identifiers or paths to UI elements change in
 the AUT.  The test script then uses the UI Map for locating
 the elements to be tested.  Basically, a UI map is a repository of test script objects
-that correspond to UI elements of the application being tested.
-
-.. Santi: Yeah, there's a pretty used extension for this (UI-element), it's 
-   also very well integrated with selenium IDE.   
+that correspond to UI elements of the application being tested.  
 
 What makes a UI map heplful?  Its primary purpose for making test script management
 much easier.  When a locator needs to be edited, there is a central location for easily
@@ -472,7 +469,7 @@ Consider the following, difficult to understand, example (in java).
    		selenium.waitForPageToLoad("30000");
    } 
    
-This script would be hard to follow for anyone who isn't familiar 
+This script would be hard to follow for anyone not familiar 
 with the AUT's page source. Even regular users of the application 
 might have difficulty understanding what thus script does. A better 
 script could be:
@@ -491,9 +488,7 @@ script could be:
    		selenium.waitForPageToLoad("30000");
    }
    
-This is more understandable because of the keywords used. (please
-be aware that UI Map is NOT a replacement for comments!  Adding comments
-and some white-space combined with the identifiers for the locators makes
+Now, using some comments and whitespace along with the UI Map identifiers makes
 a very readable script.
    
 .. code-block:: java
@@ -522,13 +517,9 @@ a very readable script.
    		selenium.waitForPageToLoad("30000");
    }
    
-The idea is to have a centralized location for objects and using 
-comprehensible names for those objects. To achieve this, properties files can 
-be used in java. A properties file contains key/value pairs, where each 
-key and value are strings.
+There are various ways a UI Map can be implemented.  One could create a class or struct which only stores public String variables each storing a locator.  Alternatively, a text file storing key value pairs could be used.  In Java, a properties file containing key/value pairs is probably best method.
    
-Consider a property file *prop.properties* which assigns as 'aliases' easily
-understood Identifiers for the HTML objects used earlier. 
+Consider a property file *prop.properties* which assigns as 'aliases' reader-friendly identifiers for UI elements from the previous example. 
    
 .. code-block:: java
    
@@ -542,7 +533,7 @@ The locators will still refer to html objects, but we have introduced a layer
 of abstraction between the test script and the UI elements.
 Values are read from the properties file and used in the Test Class to 
 implement the UI 
-Map. For more on Properties files refer to the following `link`_.
+Map. For more on Java properties files refer to the following `link`_.
 
 .. _link: http://java.sun.com/docs/books/tutorial/essential/environment/properties.html
 
