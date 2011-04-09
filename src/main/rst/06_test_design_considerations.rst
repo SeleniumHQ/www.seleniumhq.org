@@ -298,10 +298,6 @@ This approach will work if there is only one check box whose ID has the text
 'expectedText' appended to it.
 
 
-
-
-
-
 Locating Ajax Elements
 ~~~~~~~~~~~~~~~~~~~~~~
 As was presented in the Test Types subsection above, a page element implemented with Ajax
@@ -670,10 +666,7 @@ There are other design patterns that also may be used in testing.  Some use a Pa
 
 Data Driven Testing
 --------------------
-Data Driven Testing provides capabilities of testing application under tests using 
-varying data sets. These data sets can be read from external files i.e. csv file, data base
-or plane excel sheet etc. Data driven testing is a favourite of test automation as test
-data expansion does not require any code change.
+Data Driven Testing refers to using the same test (or tests) multiple times with varying data.  These data sets are often from external files i.e. .csv file, text file, or perhaps loaded from a database. Data driven testing is a commonly used test automation technique used to validate an application against many varying input.  When the test is designed for varying data, the input data can expand, essentially creating additional tests, without requiring changes to the test code.
 
 **In Python:**
 
@@ -691,37 +684,22 @@ data expansion does not require any code change.
        sel.waitForPageToLoad("30000")
        self.failUnless(sel.is_text_present("Results * for " + search))
 
-Why would we want a separate file with data in it for our tests?  One important 
-method of testing is to run the same test repetitively with different data values.
-This is called *Data Driven Testing* and is a very 
-common testing task.  Test automation tools, Selenium included, generally 
-handle this as it's a common reason for test automation. 
 
-The Python script above opens a text file.  This file contains a different search
-string on each line. The code then saves this in an array of strings, and iterates
-over the array doing a search and assert on each string. 
+The Python script above opens a text file.  This file contains a different search string on each line. The code then saves this in an array of strings, and iterates over the array doing a search and assert on each string. 
 
-This is a very basic example of what you can do, but the Idea is to show you
-things that can easily be done with either a programming or scripting 
-language when they're difficult or even impossible to do using Selenium-IDE.
-
-Refer to the `Selenium RC wiki`_ for examples of reading data from spread sheet or using
-data provider capabilities of TestNG with java client driver.
+This is a very basic example, but the idea is to show that running a test with varying data can be done easily with a programming or scripting 
+language.  For more examples, refer to the `Selenium RC wiki`_ for examples of reading data from a spreadsheet or for using the data provider capabilities of TestNG.  Additionally, this is a well-known topic among test automation professionals including those who don't use Selenium so searching the internet on "data-driven testing" should reveal many blogs on this topic.
 
 .. _`Selenium RC wiki`: http://wiki.openqa.org/pages/viewpage.action?pageID=21430298
 
    
    
-Database Validations
-~~~~~~~~~~~~~~~~~~~~~
+Database Validation
+-------------------
 
-Since you can also do database queries from your favorite programming 
-language, assuming you have database support functions, why not use them
-for some data validations/retrieval on the Application Under Test?
+Another common type of testing is to compare data in the UI against the data actually stored in the AUT's database.  Since you can also do database queries from a programming language, assuming you have database support functions, you can use them to retrieve data and then use the data to verify what's displayed by the AUT is correct.
 
-Consider the example of a registration process where a registered email address
-is to be retrieved from the database. An example of establishing a DB connection
-and retrieving data from the DB would be:  
+Consider the example of a registered email address to be retrieved from a database and then later compared against the UI. An example of establishing a DB connection and retrieving data from the DB could look like this.  
 
 **In Java:**
 
@@ -754,10 +732,9 @@ and retrieving data from the DB would be:
    // Use the fetched value to login to application.
    selenium.type("userID", emailaddress);
    
-This is a very simple example of data retrieval from a DB in Java. 
-A more complex test could be to validate that inactive users are not
-able to login to the application. This wouldn't take too much work from what you've 
-already seen.
+This is a simple Java example of data retrieval from a database. 
+
+
 
 .. Bitmap Comparison
    ------------------
