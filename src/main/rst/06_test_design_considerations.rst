@@ -343,8 +343,8 @@ by Selenium using a *for* loop.
 This certainly isn't the only solution.  Ajax is a common topic in the user forum and we
 recommend searching previous discussions to see what others have done.  
 
-Wrapping Selenium Calls to Reduce Duplication
----------------------------------------------
+Wrapping Selenium Calls
+-----------------------
 
 As with any programming, you will want to use utility functions to handle code 
 that would otherwise be duplicated throughout your tests.  One way to prevent this
@@ -374,12 +374,12 @@ both functions.
 	}
 	
 
-'Safe Operations' that Depend on Element Presence
--------------------------------------------------
+'Safe Operations' for Element Presence
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Another common usage of wrapping selenium methods is to check for presence of 
 an element on page before carrying out some operation. This is sometimes called 
-a 'safe operation'.  For instance, the following method could be used to implements
+a 'safe operation'.  For instance, the following method could be used to implement
 a safe operation that depends on an expected element being present.
 
 .. code-block:: java
@@ -434,8 +434,9 @@ of a portal) then this safe method technique should not be used.
 UI Mapping
 ----------
 
-A UI map is a mechanism that stores Identifiers, or in our case, locators, for
-an application's UI elements.  The test script then uses the UI Map for locating
+A UI map is a mechanism that stores Identifiers the locators for a test suite in one place
+for easy modification when identifiers or the path to the UI elements change in
+the AUT.  The test script then uses the UI Map for locating
 the elements to be tested.  Basically, a UI map is a repository of test script objects
 that correspond to UI elements of the application being tested.
 
@@ -455,7 +456,7 @@ To summarize, a UI map has two significant advantages.
 - Cryptic HTML Identifiers and names can be given more human-readable names improving the 
   readability of test scripts.
 
-Consider the following example (in java) of selenium tests for a website: 
+Consider the following, difficult to understand, example (in java). 
 
 .. code-block:: java
 
@@ -471,10 +472,10 @@ Consider the following example (in java) of selenium tests for a website:
    		selenium.waitForPageToLoad("30000");
    } 
    
-This script is incomprehensible to anyone who isn't very familiar 
+This script would be hard to follow for anyone who isn't familiar 
 with the AUT's page source. Even regular users of the application 
-would have difficulty understanding what the script does. A better 
-script would be:
+might have difficulty understanding what thus script does. A better 
+script could be:
    
 .. code-block:: java
 
@@ -490,11 +491,10 @@ script would be:
    		selenium.waitForPageToLoad("30000");
    }
    
-There are no comments provided but it is
-more comprehensible because of the keywords used in scripts. (please
-be aware that UI Map is NOT a replacement for comments!  Comments are still
-important for documenting an automated test.) An even better test script could
-look like this.
+This is more understandable because of the keywords used. (please
+be aware that UI Map is NOT a replacement for comments!  Adding comments
+and some white-space combined with the identifiers for the locators makes
+a very readable script.
    
 .. code-block:: java
 
