@@ -541,27 +541,25 @@ Map. For more on Java properties files refer to the following `link`_.
 Page Object Design Pattern
 ---------------------------
 
-Page Object Design Pattern models the page specific behaviour in a corresponding 
-class which represents services (public methods) offered by page object. 
-Selenium tests use page object to interact with application and their own 
-verification/assertion to validate page. Page Object Design Pattern brings following 
-advantages -
+Page Object is a Design Pattern which has become popular in test automation for enhancing test maintenance and reducing code duplication.  A page object is an object-oriented class that serves as an interface to a page of your AUT.  The tests then use the methods of this page object class whenever they need to interact with that page of the UI.  The benefit is that if the UI changes for the page, the tests themselves don't need to change, only the code within the page object needs to change.  Subsequently all changes to support that new UI are located in one place.
 
-1. There is clean separation between automation code which knows about application 
-html and the one which carries out actual tests.
+The Page Object Design Pattern provides the following 
+advantages.
 
-2. There is single repository of services offered by page, instead of application 
-html scattered through out the tests. Hence improved maintainability and reduction
-in code duplication.
+1. There is clean separation between test code and page specific code such as locators (or their use if you're using a UI map) and layout.
 
-Let us see these problems in more detail by considering a selenium test -
+2. There is single repository for the services or operations offered by the page rather than having these services scattered through out the tests. 
+
+In both cases this allows any modifications required due to UI changes to all be made in one place.  Useful information on this technque can be found on numerous blogs as this 'test design pattern' is becomming widely used.  *We encourage the reader who wishes to know more to search the internet for blogs on this subject.*  Many have written on this design pattern and can provide useful tips beyond the scope of this user guide.  To get you started, though, we'll illustrate page objecs with a simple example.
+
+First, consider an example, typical of test automation, that does not use a page object.
 
 .. code-block:: java
 
 	/***
 	 * Tests login feature
 	 */
-	public class Login extends SelTestCase {
+	public class Login {
 
 		public void testLogin() {
 			selenium.type("inputBox", "testUser");
@@ -573,33 +571,22 @@ Let us see these problems in more detail by considering a selenium test -
 		}
 	}
 	
-There are two primary problems with this approach -
+There are two problems with this approach.
 
-1. There is no separation between test method and application html as both of them 
-are intertwined in one method.
+1. There is no separation between the test method and the AUTs locators (IDs in this example); both are intertwined in a single method.  If the AUT's UI changes it's identifiers, layout, or how a login is input and processed, the test itself must change.
 
-2. Application html would be spread in multiple tests, which induces 
-unwarranted redundancy and makes test maintenance difficult.	
+2. The id-locators would would be spread in multiple tests, all tests that had to use this login page.	
 
-Page Object may represent an entirely new page or just part of page. If user 
-action causes control to be directed to new page then it is represented by 
-new page else same page object could be returned.
-
-For example login feature on sign-in page could be represented by HomePage class for 
-user as sign in operation directs user to home page of logged in user. While auto 
-suggest window of a search engine could be represented by same page as auto 
-suggest window appears on the same page on which user is types in search term.
-
-Applying the page object techniques, above mentioned example could be rewritten as 
+Applying the page object techniques this example could be rewritten like this.
 
 Page Object for Sign-in page -
 
 .. code-block:: java
 
 	/**
-	 * Models sign-in page for user
+	 * Page Object encapsulates the Sign-in page.
 	 */
-	public class SignInPage extends SelTestCase {
+	public class SignInPage {
 		
 		private Selenium selenium;
 		
@@ -633,9 +620,9 @@ and page object for Home page would look as -
 .. code-block:: java
 
 	/**
-	 *Models features presented by Home page
+	 * Page Object encapsulates the Home Page
 	 */
-	public class HomePage extends SelTestCase {
+	public class HomePage {
 
 		private Selenium selenium;
 
@@ -652,14 +639,14 @@ and page object for Home page would look as -
 		
 	}
 	
-and updated login test looks as -
+So now, the login test woud use these two page objects as follows.
 
 .. code-block:: java
 
 	/***
 	 * Tests login feature
 	 */
-	public class TestLogin extends SelTestCase {
+	public class TestLogin {
 
 		public void testLogin() {
 			SignInPage signInPage = new SignInPage(selenium);
@@ -668,35 +655,18 @@ and updated login test looks as -
 					"Login was unsuccessful");
 		}
 	}
-	
-Page objects themselves should never be used to make verification/assertion and it 
-is responsibility of tests to validate application state. Though there is an 
-exception to it. While instantiating a page object it could be checked whether 
-control is really on expected page or not. Hence in the examples illustrates above
-both SignInPage and HomePage constructors check if control is on right page.
 
+*NOTE:  THIS LAST CODE SNIPPET NEEDS TO BE RE-WRITTEN, IT DOESN'T USE THE HOME PAGE PAGE OBJECT.*
 
-.. Bitmap Comparison
-   ------------------
-   *This section has not been developed yet.*
+There is a lot of flexibility in how the page objects may be designed, but there are a few basic rules for getting the desired maintainability of your test code.	
+Page objects themselves should never be make verifications or assertions. This is part of your test and should always be within the test's code, never in an page object. The page object will contain the representation of the page, and the services the page provides via methods but no code related to what is being tested should be within the page object.
 
-.. Tarun: Bitmap comparison is about comparison of two images. This feature 
-   is available in commercial web automation tools and helps in UI testing (or
-   I guess so)
-   Santi: I'm not really sure how this can be achieved using Selenium. The only
-   Idea that I have right now is calculating the checksum of the image and 
-   comparing that with the one of the image that should be present there, like:
+There is one, single, verification which can, and should, be within the page object and that is to verify that the page, and possibly critical elements on the page, were loaded correctly.  This verification should be done while instantiating the page object. In the examples above, both the SignInPage and HomePage constructors check that the expected page is availabe and ready for requests from the test.
 
-   <pseudocode>
-     img_url = sel.get_attribute("//img[@src]")
-     image = wget(img_url)
-     assertEqual(get_md5(image), "MD5SUMEXPECTED12341234KJL234")
-   </pseudocode>
+A page object does not necessarily need to represent an entire page. The Page Object design pattern could be used to represent components on a page.  If a page in the AUT has multiple components, it may improved maintainablity if there was a separate page object for each component.
 
-   But I've never implemented this before...
+There are other design patterns that also may be used in testing.  Some use a Page Factory for instantiating their page objects.  Discussing all of these is beyond the scope of this user guide.  Here, we merely want to introduce the concepts to make the reader aware of some of the things that can be done.  As was mentioned earlier, many have blogged on this topic and we encourage the reader to search for blogs on these topics.
 
-.. Santi: Isn't the "Advanced Selenium" chapter better for this topic to be 
-   placed on?
 
 Data Driven Testing
 --------------------
@@ -822,3 +792,20 @@ This is a very simple example of data retrieval from a DB in Java.
 A more complex test could be to validate that inactive users are not
 able to login to the application. This wouldn't take too much work from what you've 
 already seen.
+
+.. Bitmap Comparison
+   ------------------
+   *This section has not been developed yet.*
+
+.. Tarun: Bitmap comparison is about comparison of two images. This feature 
+   is available in commercial web automation tools and helps in UI testing (or
+   I guess so)
+   Santi: I'm not really sure how this can be achieved using Selenium. The only
+   Idea that I have right now is calculating the checksum of the image and 
+   comparing that with the one of the image that should be present there, like:
+
+   <pseudocode>
+     img_url = sel.get_attribute("//img[@src]")
+     image = wget(img_url)
+     assertEqual(get_md5(image), "MD5SUMEXPECTED12341234KJL234")
+   </pseudocode>
