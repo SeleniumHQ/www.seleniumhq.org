@@ -710,40 +710,6 @@ data provider capabilities of TestNG with java client driver.
 
 .. _`Selenium RC wiki`: http://wiki.openqa.org/pages/viewpage.action?pageID=21430298
 
-
-Handling Errors
----------------
-
-*Note: This section is not yet developed.*
-
-Error Reporting
-~~~~~~~~~~~~~~~
-
-
-Recovering From Failure
-~~~~~~~~~~~~~~~~~~~~~~~
-
-A quick note though--recognize that your programming language's exception-
-handling support can be used for error handling and recovery.
-
-.. TODO: Complete this... Not sure if the scenario that I put is the best example to use
-.. Then, what if google.com is down at the moment of our tests? Even if that sounds
-   completely impossible. We can create a recovery scenario for that test. We can
-   make our tests to wait for a certain amount of time and try again:
-
-.. The Idea here is to use a try-catch statement to grab a really unexpected
-   error.
-
-*This section has not been developed yet.*
-
-.. Tarun: Here Test attempt is re made against a website which comes up with 
-   something unexpected i.e. pop up window or unexpected page etc, I guess 
-   for selenium this largely depends on how tests are designed. Say in case 
-   of java Try Catch Block might help achieving this.
-
-.. Santi: Isn't the "Advanced Selenium" chapter better for this topic to be 
-   placed on?
-
    
    
 Database Validations
