@@ -34,11 +34,13 @@ Testing Static Content
 The simplest type of test, a *content test*, is a simple test for the existence
 of a static, non-changing, UI element.  For instance
 
-- Does each page have its expected page title?  This can be used to verify your test found an expected page after following a link.
+- Does each page have its expected page title?  This can be used to verify your 
+test found an expected page after following a link.
 - Does the application's home page contain an image expected to be at the top of the page?  
 - Does each page of the website contain a footer area with links to the company contact page, 
   privacy policy, and trademarks information?  
-- Does each page begin with heading text using the <h1> tag?  And, does each page have the correct text within that header?
+- Does each page begin with heading text using the <h1> tag?  And, does each page have 
+the correct text within that header?
 
 
 
@@ -146,11 +148,14 @@ If not, please refer to Chapter 3 first.  When constructing your tests, you
 will need to decide
 
 - Do I only check that the text exists on the page?  (*verify/assertTextPresent*)
-- Do I only check that the HTML element exists on the page?  That is, the text, image, or other content is not to be checked, only the HTML tag is what is relevant. (*verify/assertElementPresent*)
+- Do I only check that the HTML element exists on the page?  That is, the text, 
+image, or other content is not to be checked, only the HTML tag is what is relevant. (*verify/assertElementPresent*)
 - Must I test both, the element and it's text content?  (*verify/assertText*)
 
-There is no right answer.  It depends on the requirements for your test.  Which, of course, depend on the requirements for the application you're testing.
-If in doubt, use *assertText* since this is the strictest type of checkpoint.  You can always change it later but at least you won't be missing any potential failures.
+There is no right answer.  It depends on the requirements for your test.  Which, of course, 
+depend on the requirements for the application you're testing.
+If in doubt, use *assertText* since this is the strictest type of checkpoint.  You 
+can always change it later but at least you won't be missing any potential failures.
 
 *Verify/assertText* is the *most specific test* type.  This can fail if either the HTML element (tag)
 OR the text is not what your test is expecting.
@@ -513,9 +518,12 @@ a very readable script.
    		selenium.waitForPageToLoad("30000");
    }
    
-There are various ways a UI Map can be implemented.  One could create a class or struct which only stores public String variables each storing a locator.  Alternatively, a text file storing key value pairs could be used.  In Java, a properties file containing key/value pairs is probably best method.
+There are various ways a UI Map can be implemented.  One could create a class 
+or struct which only stores public String variables each storing a locator.  
+Alternatively, a text file storing key value pairs could be used.  In Java, a properties file containing key/value pairs is probably best method.
    
-Consider a property file *prop.properties* which assigns as 'aliases' reader-friendly identifiers for UI elements from the previous example. 
+Consider a property file *prop.properties* which assigns as 'aliases' 
+reader-friendly identifiers for UI elements from the previous example. 
    
 .. code-block:: java
    
@@ -537,16 +545,29 @@ Map. For more on Java properties files refer to the following `link`_.
 Page Object Design Pattern
 ---------------------------
 
-Page Object is a Design Pattern which has become popular in test automation for enhancing test maintenance and reducing code duplication.  A page object is an object-oriented class that serves as an interface to a page of your AUT.  The tests then use the methods of this page object class whenever they need to interact with that page of the UI.  The benefit is that if the UI changes for the page, the tests themselves don't need to change, only the code within the page object needs to change.  Subsequently all changes to support that new UI are located in one place.
+Page Object is a Design Pattern which has become popular in test automation 
+for enhancing test maintenance and reducing code duplication.  A page object 
+is an object-oriented class that serves as an interface to a page of your AUT.  
+The tests then use the methods of this page object class whenever they need to 
+interact with that page of the UI.  The benefit is that if the UI changes for 
+the page, the tests themselves don't need to change, only the code within the page 
+object needs to change.  Subsequently all changes to support that new UI are located in one place.
 
 The Page Object Design Pattern provides the following 
 advantages.
 
-1. There is clean separation between test code and page specific code such as locators (or their use if you're using a UI map) and layout.
+1. There is clean separation between test code and page specific code such 
+as locators (or their use if you're using a UI map) and layout.
 
-2. There is single repository for the services or operations offered by the page rather than having these services scattered through out the tests. 
+2. There is single repository for the services or operations offered by the 
+page rather than having these services scattered through out the tests. 
 
-In both cases this allows any modifications required due to UI changes to all be made in one place.  Useful information on this technque can be found on numerous blogs as this 'test design pattern' is becomming widely used.  *We encourage the reader who wishes to know more to search the internet for blogs on this subject.*  Many have written on this design pattern and can provide useful tips beyond the scope of this user guide.  To get you started, though, we'll illustrate page objecs with a simple example.
+In both cases this allows any modifications required due to UI changes to all 
+be made in one place.  Useful information on this technque can be found on 
+numerous blogs as this 'test design pattern' is becomming widely used.  
+*We encourage the reader who wishes to know more to search the internet for blogs on this subject.*  
+Many have written on this design pattern and can provide useful tips beyond the scope 
+of this user guide.  To get you started, though, we'll illustrate page objecs with a simple example.
 
 First, consider an example, typical of test automation, that does not use a page object.
 
@@ -569,7 +590,9 @@ First, consider an example, typical of test automation, that does not use a page
 	
 There are two problems with this approach.
 
-1. There is no separation between the test method and the AUTs locators (IDs in this example); both are intertwined in a single method.  If the AUT's UI changes it's identifiers, layout, or how a login is input and processed, the test itself must change.
+1. There is no separation between the test method and the AUTs locators (IDs in this example); 
+both are intertwined in a single method.  If the AUT's UI changes it's identifiers, layout, 
+or how a login is input and processed, the test itself must change.
 
 2. The id-locators would would be spread in multiple tests, all tests that had to use this login page.	
 
@@ -629,6 +652,11 @@ and page object for Home page would look as -
 			}
 		}
 		
+		public HomePage manageProfile() {
+			// Page encapsulation to manage profile functionality
+			return new HomePage(selenium);
+		}
+		
 		/*More methods offering the services represented by Home Page
 		of Logged User. These methods in turn might return more Page Objects
 		for example click on Compose mail button could return ComposeMail class object*/
@@ -646,13 +674,15 @@ So now, the login test woud use these two page objects as follows.
 
 		public void testLogin() {
 			SignInPage signInPage = new SignInPage(selenium);
-			signInPage.loginValidUser("userName", "password");
+			HomePage homePage = signInPage.loginValidUser("userName", "password");
 			Assert.assertTrue(selenium.isElementPresent("compose button"),
 					"Login was unsuccessful");
+								
+			homePage.manageProfile();
+			// Few more test for Home Page
+			
 		}
 	}
-
-*NOTE:  THIS LAST CODE SNIPPET NEEDS TO BE RE-WRITTEN, IT DOESN'T USE THE HOME PAGE PAGE OBJECT.*
 
 There is a lot of flexibility in how the page objects may be designed, but there are a few basic rules for getting the desired maintainability of your test code.	
 Page objects themselves should never be make verifications or assertions. This is part of your test and should always be within the test's code, never in an page object. The page object will contain the representation of the page, and the services the page provides via methods but no code related to what is being tested should be within the page object.
