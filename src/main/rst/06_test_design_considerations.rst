@@ -37,12 +37,8 @@ of a static, non-changing, UI element.  For instance
 - Does each page have its expected page title?  This can be used to verify your 
 test found an expected page after following a link.
 - Does the application's home page contain an image expected to be at the top of the page?  
-- Does each page of the website contain a footer area with links to the company contact page, 
-  privacy policy, and trademarks information?  
-- Does each page begin with heading text using the <h1> tag?  And, does each page have 
-the correct text within that header?
-
-
+- Does each page of the website contain a footer area with links to the company contact page, privacy policy, and trademarks information?  
+- Does each page begin with heading text using the <h1> tag?  And, does each page have the correct text within that header?
 
 You may or may not need content tests.  If your page content is not likely to be
 affected then it may be more efficient to test page content manually.  If, for example,
@@ -313,13 +309,11 @@ It was specifically designed to address testing of Ajax elements where Selenium 
 limitations.
 
 In Selenim 2.0 you use the waitFor() method to wait for a page element to become available.
-The parameter is a By object which is how WebDriver implements locators.  This is 
-explained in detail in the WebDriver chapters.
+The parameter is a By object which is how WebDriver implements locators.  This is explained in detail in the WebDriver chapters.
 
 To do this with Selenium 1.0 (Selenium-RC) a bit more coding is involved, but it 
 isn't difficult.  The approach is to check for the element, if it's not availble 
-wait for a predefined period and then again recheck it.  This is then executed with a loop
-with a predetermined time-out terminating the loop if the element isn't found.
+wait for a predefined period and then again recheck it.  This is then executed with a loop with a predetermined time-out terminating the loop if the element isn't found.
 
 Let's consider a page which brings a link (link=ajaxLink) on click
 of a button on page (without refreshing the page)  This could be handled
@@ -590,11 +584,9 @@ First, consider an example, typical of test automation, that does not use a page
 	
 There are two problems with this approach.
 
-1. There is no separation between the test method and the AUTs locators (IDs in this example); 
-both are intertwined in a single method.  If the AUT's UI changes it's identifiers, layout, 
-or how a login is input and processed, the test itself must change.
-
-2. The id-locators would would be spread in multiple tests, all tests that had to use this login page.	
+- There is no separation between the test method and the AUTs locators (IDs in this example); 
+both are intertwined in a single method.  If the AUT's UI changes it's identifiers, layout, or how a login is input and processed, the test itself must change.
+- The id-locators would would be spread in multiple tests, all tests that had to use this login page.	
 
 Applying the page object techniques this example could be rewritten like this.
 
