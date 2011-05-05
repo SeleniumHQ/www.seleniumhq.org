@@ -587,7 +587,7 @@ There are two problems with this approach.
 
 2. The id-locators would would be spread in multiple tests, all tests that had to use this login page.	
 
-Applying the page object techniques this example could be rewritten like this in the following example of a Page Object for a Sign-in page.
+Applying the page object techniques this example could be rewritten like this in the following example of a page object for a Sign-in page.
 
 .. code-block:: java
 
@@ -623,7 +623,7 @@ Applying the page object techniques this example could be rewritten like this in
 		}	
 	}
 	
-and page object for Home page would look as -
+and page object for a Home page could look like this.
 
 .. code-block:: java
 
