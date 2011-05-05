@@ -35,10 +35,13 @@ The simplest type of test, a *content test*, is a simple test for the existence
 of a static, non-changing, UI element.  For instance
 
 - Does each page have its expected page title?  This can be used to verify your 
-test found an expected page after following a link.
-- Does the application's home page contain an image expected to be at the top of the page?  
-- Does each page of the website contain a footer area with links to the company contact page, privacy policy, and trademarks information?  
-- Does each page begin with heading text using the <h1> tag?  And, does each page have the correct text within that header?
+  test found an expected page after following a link.
+- Does the application's home page contain an image expected to be at the top of
+  the page?  
+- Does each page of the website contain a footer area with links to the company
+  contact page, privacy policy, and trademarks information?  
+- Does each page begin with heading text using the <h1> tag?  And, does each
+  page have the correct text within that header?
 
 You may or may not need content tests.  If your page content is not likely to be
 affected then it may be more efficient to test page content manually.  If, for example,
