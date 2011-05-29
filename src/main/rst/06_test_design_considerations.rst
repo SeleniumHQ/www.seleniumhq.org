@@ -666,10 +666,6 @@ So now, the login test woud use these two page objects as follows.
 			HomePage homePage = signInPage.loginValidUser("userName", "password");
 			Assert.assertTrue(selenium.isElementPresent("compose button"),
 					"Login was unsuccessful");
-								
-			homePage.manageProfile();
-			// Few more test for Home Page
-			
 		}
 	}
 
@@ -748,8 +744,12 @@ Consider the example of a registered email address to be retrieved from a databa
    // Fetch value of "email_address" from "result" object.
    String emailaddress = result.getString("email_address");
    
-   // Use the fetched value to login to application.
+   // Use the emailAddress value to login to application.
    selenium.type("userID", emailaddress);
+   selenium.type("password", secretPassword);
+   selenium.click("loginButton");
+   selenium.waitForPageToLoad(timeOut);
+   Assert.assertTrue(selenium.isTextPresent("Welcome back" +emailaddress), "Unable to log in for user" +emailaddress)
    
 This is a simple Java example of data retrieval from a database. 
 
