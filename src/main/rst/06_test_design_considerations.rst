@@ -143,8 +143,7 @@ If not, please refer to Chapter 3 first.  When constructing your tests, you
 will need to decide
 
 - Do I only check that the text exists on the page?  (*verify/assertTextPresent*)
-- Do I only check that the HTML element exists on the page?  That is, the text, 
-image, or other content is not to be checked, only the HTML tag is what is relevant. (*verify/assertElementPresent*)
+- Do I only check that the HTML element exists on the page?  That is, the text, image, or other content is not to be checked, only the HTML tag is what is relevant. (*verify/assertElementPresent*)
 - Must I test both, the element and it's text content?  (*verify/assertText*)
 
 There is no right answer.  It depends on the requirements for your test.  Which, of course, 
@@ -752,22 +751,3 @@ Consider the example of a registered email address to be retrieved from a databa
    Assert.assertTrue(selenium.isTextPresent("Welcome back" +emailaddress), "Unable to log in for user" +emailaddress)
    
 This is a simple Java example of data retrieval from a database. 
-
-
-
-.. Bitmap Comparison
-   ------------------
-   *This section has not been developed yet.*
-
-.. Tarun: Bitmap comparison is about comparison of two images. This feature 
-   is available in commercial web automation tools and helps in UI testing (or
-   I guess so)
-   Santi: I'm not really sure how this can be achieved using Selenium. The only
-   Idea that I have right now is calculating the checksum of the image and 
-   comparing that with the one of the image that should be present there, like:
-
-   <pseudocode>
-     img_url = sel.get_attribute("//img[@src]")
-     image = wget(img_url)
-     assertEqual(get_md5(image), "MD5SUMEXPECTED12341234KJL234")
-   </pseudocode>
