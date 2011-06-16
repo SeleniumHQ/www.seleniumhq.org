@@ -244,7 +244,7 @@ Flexibility and Extensibility
 You'll find that Selenium is highly flexible.  There are many ways you
 can add functionality to both Selenium test scripts and Selenium's framework
 to customize your test automation. This is perhaps Selenium's 
-greatest strenght when compared with other automation tools. These customizations
+greatest strength when compared with other automation tools. These customizations
 are described in various places throughout this document.  In addition, since Selenium is Open Source, the sourcecode can always be 
 downloaded and modified.
 
