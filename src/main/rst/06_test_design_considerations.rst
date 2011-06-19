@@ -47,8 +47,8 @@ Testing Links
 ~~~~~~~~~~~~~
 A frequent source of errors for web-sites is broken links or missing pages
 behind links.  Testing involves clicking each link
-and verifying the expected page.  If static links are infrequently changed then manual tseting 
-may be sufficient.  However if your web designers frequently alter links, or if files are occassionally
+and verifying the expected page.  If static links are infrequently changed then manual testing 
+may be sufficient.  However if your web designers frequently alter links, or if files are occasionally
 relocated, link tests should be automated.
 
 
@@ -64,7 +64,7 @@ lists, or any other browser-supported input.
 Function tests are often the most complex tests you'll automate, but are usually the most 
 important.  Typical tests can be for login, registration to the site, user account operations,
 account settings changes, complex data retrieval operations, among others.  Function tests
-typically mirro the user-scenarios used to specify the features and design or your application.
+typically mirror the user-scenarios used to specify the features and design or your application.
 
 Testing Dynamic Elements
 ~~~~~~~~~~~~~~~~~~~~~~~~
@@ -72,7 +72,7 @@ Often a web page element has a unique identifier used to uniquely locate that
 element within the page.  Usually these are implemented using the html tag's 
 'id' attribute or it's 'name' attribute.  These names can be a static, i.e 
 unchanging, string constant.  They can also be dynamically generated values that
-vary each  instance of the page.  For example, some web servers might name a diplayed
+vary each  instance of the page.  For example, some web servers might name a displayed
 document doc3861 one instance of a page, and 'doc6148' on a different instance of the 
 page depending on what 'document' the user was retrieving.  This means your test script which
 is verify that a document exists may not have a consistent identifier to user for locating that
@@ -183,7 +183,7 @@ Using an element ID or name locator is the most efficient in terms of test perfo
 and also makes your test code more readable, assuming the ID or name within the page source is well-named.
 XPath statements take longer to process since the browser must run it's XPath processor.  Xpath has 
 been known to be especially slow in Internet Explorer version 7.  Locating via a link's text is often
-convenient and performs well.  This technique is speciic to links though.  Also,
+convenient and performs well.  This technique is specific to links though.  Also,
 if the link text is likely to change frequently, locating by the <a> element
 would be the better choice.
   
@@ -310,7 +310,7 @@ In Selenim 2.0 you use the waitFor() method to wait for a page element to become
 The parameter is a By object which is how WebDriver implements locators.  This is explained in detail in the WebDriver chapters.
 
 To do this with Selenium 1.0 (Selenium-RC) a bit more coding is involved, but it 
-isn't difficult.  The approach is to check for the element, if it's not availble 
+isn't difficult.  The approach is to check for the element, if it's not available 
 wait for a predefined period and then again recheck it.  This is then executed with a loop with a predetermined time-out terminating the loop if the element isn't found.
 
 Let's consider a page which brings a link (link=ajaxLink) on click
@@ -350,7 +350,7 @@ and wait for page to load multiple times within a test.
 	selenium.click(elementLocator);
 	selenium.waitForPageToLoad(waitPeriod);
 
-Instead of duplicting this code you	could write a wrapper method that performs
+Instead of duplicating this code you	could write a wrapper method that performs
 both functions.
 
 .. code-block:: java
@@ -433,7 +433,7 @@ the AUT.  The test script then uses the UI Map for locating
 the elements to be tested.  Basically, a UI map is a repository of test script objects
 that correspond to UI elements of the application being tested.  
 
-What makes a UI map heplful?  Its primary purpose for making test script management
+What makes a UI map helpful?  Its primary purpose for making test script management
 much easier.  When a locator needs to be edited, there is a central location for easily
 finding that object, rather than having to search through test script code.  Also, it allows
 changing the Identifier in a single place, rather than having to make the change in multiple
@@ -555,11 +555,11 @@ as locators (or their use if you're using a UI map) and layout.
 page rather than having these services scattered through out the tests. 
 
 In both cases this allows any modifications required due to UI changes to all 
-be made in one place.  Useful information on this technque can be found on 
-numerous blogs as this 'test design pattern' is becomming widely used.  
+be made in one place.  Useful information on this technique can be found on 
+numerous blogs as this 'test design pattern' is becoming widely used.  
 *We encourage the reader who wishes to know more to search the internet for blogs on this subject.*  
 Many have written on this design pattern and can provide useful tips beyond the scope 
-of this user guide.  To get you started, though, we'll illustrate page objecs with a simple example.
+of this user guide.  To get you started, though, we'll illustrate page objects with a simple example.
 
 First, consider an example, typical of test automation, that does not use a page object.
 
@@ -584,7 +584,7 @@ There are two problems with this approach.
 
 1. There is no separation between the test method and the AUTs locators (IDs in this example); both are intertwined in a single method.  If the AUT's UI changes it's identifiers, layout, or how a login is input and processed, the test itself must change.
 
-2. The id-locators would would be spread in multiple tests, all tests that had to use this login page.	
+2. The id-locators would be spread in multiple tests, all tests that had to use this login page.	
 
 Applying the page object techniques this example could be rewritten like this in the following example of a page object for a Sign-in page.
 
@@ -651,7 +651,7 @@ and page object for a Home page could look like this.
 		
 	}
 	
-So now, the login test woud use these two page objects as follows.
+So now, the login test would use these two page objects as follows.
 
 .. code-block:: java
 
@@ -671,9 +671,9 @@ So now, the login test woud use these two page objects as follows.
 There is a lot of flexibility in how the page objects may be designed, but there are a few basic rules for getting the desired maintainability of your test code.	
 Page objects themselves should never be make verifications or assertions. This is part of your test and should always be within the test's code, never in an page object. The page object will contain the representation of the page, and the services the page provides via methods but no code related to what is being tested should be within the page object.
 
-There is one, single, verification which can, and should, be within the page object and that is to verify that the page, and possibly critical elements on the page, were loaded correctly.  This verification should be done while instantiating the page object. In the examples above, both the SignInPage and HomePage constructors check that the expected page is availabe and ready for requests from the test.
+There is one, single, verification which can, and should, be within the page object and that is to verify that the page, and possibly critical elements on the page, were loaded correctly.  This verification should be done while instantiating the page object. In the examples above, both the SignInPage and HomePage constructors check that the expected page is available and ready for requests from the test.
 
-A page object does not necessarily need to represent an entire page. The Page Object design pattern could be used to represent components on a page.  If a page in the AUT has multiple components, it may improved maintainablity if there was a separate page object for each component.
+A page object does not necessarily need to represent an entire page. The Page Object design pattern could be used to represent components on a page.  If a page in the AUT has multiple components, it may improved maintainability if there was a separate page object for each component.
 
 There are other design patterns that also may be used in testing.  Some use a Page Factory for instantiating their page objects.  Discussing all of these is beyond the scope of this user guide.  Here, we merely want to introduce the concepts to make the reader aware of some of the things that can be done.  As was mentioned earlier, many have blogged on this topic and we encourage the reader to search for blogs on these topics.
 
