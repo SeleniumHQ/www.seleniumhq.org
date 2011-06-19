@@ -730,7 +730,7 @@ are explained below with examples for each.
 Locating by Identifier
 ++++++++++++++++++++++
 This is probably the most common method of locating elements and is the 
-catch-all default when no recognised locator type is used. With this strategy,
+catch-all default when no recognized locator type is used. With this strategy,
 the first element with the id attribute value matching the location will be used. If
 no element has a matching id attribute, then the first element with a name 
 attribute matching the location will be used.

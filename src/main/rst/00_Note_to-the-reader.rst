@@ -8,7 +8,7 @@ welcome you, and to thank you for being interested in Selenium.
 *We are currently updating this document for the Selenium 2.0 release.*  This means
 we are currently writing and editing new material, and revising old material.
 While reading, you may experience typos or other minor errors.  If so, please be patient with us.
-Rather than witholding information until it's finally complete, we are frequently checking-in
+Rather than withholding information until it's finally complete, we are frequently checking-in
 new writing and revisions as we go.  Still, we do check our facts first
 and are confident the info we've submitted is accurate and useful.  Still, if you find an error, particularly
 in one of our code examples, please let us know.  You can send an email directly to the Selenium Developers forum 
