@@ -7,7 +7,7 @@ steps:
 * Download Selenium-RC from the SeleniumHQ `downloads page`_ 
 * Start any java IDE
 * Create new project
-* Add to your project classpath selenium-java-client-driver.jar 
+* Add "selenium-java-<version-number>.jar" to your project classpath  
 * Record your test from Selenium-IDE and translate it to java code (Selenium
   IDE has automatic translation feature to generate tests in variety of languages)
 * Run selenium server from console
