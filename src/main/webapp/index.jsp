@@ -124,11 +124,6 @@
     "/about/platforms.html#testing-frameworks">Testing
     Frameworks</a></li>
 
-    <li><a href="/documentation/screencasts/">Screencasts</a></li>
-
-    <li><a href="/documentation/tutorials">Tutorials /
-    Labs</a></li>
-
     <li><a href="http://release.openqa.org/selenium-core/1.0/reference.html">Selenium
     API</a></li>
   </ul>
