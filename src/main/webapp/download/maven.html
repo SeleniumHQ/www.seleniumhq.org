@@ -14,15 +14,18 @@
   artifacts directly in the central Maven repository here:
   <a href="http://repo1.maven.org/maven2/org/seleniumhq/selenium/">http://repo1.maven.org/maven2/org/seleniumhq/selenium/</a></p>
 
-  <p>In order start using Selenium Remote Control or one of
+  <p>In order start using <tt>DefaultSelenium</tt> or one of
   the new <tt>WebDriver</tt> implementations in your Maven project,
   just add the following dependcy to your <tt>pom.xml</tt>:<pre>
     &lt;dependency&gt;
         &lt;groupId&gt;org.seleniumhq.selenium&lt;/groupId&gt;
-        &lt;artifactId&gt;selenium-remote-control&lt;/artifactId&gt;
-        &ltversion&gt;...&lt;/version&gt;
+        &lt;artifactId&gt;selenium-java&lt;/artifactId&gt;
+        &ltversion&gt;2.0rc3&lt;/version&gt;
     &lt;/dependency&gt;  
 </pre></p>
+  
+  <p><i>Note:</i> Before version 2.0rc3 the artifact, was named
+  <tt>selenium-remote-control</tt>.</p>
   
   <p>To get an overview of the different Selenium Maven artifacts,
   click on the thumbnail below to open a diagram, which shows
@@ -50,13 +53,13 @@
   
   <p>If you know, that you will only use a certain <tt>WebDriver</tt>
   implementation, e.g. the <tt>FirefoxDriver</tt>, you don't need to
-  depend on the <tt>selenium-remote-control</tt> artifact (which has
+  depend on the <tt>selenium-java</tt> artifact (which has
   a lot of transitive dependencies). Instead you can just add the
   dependency to the artifact you need, e.g.<pre>
     &lt;dependency&gt;
         &lt;groupId&gt;org.seleniumhq.selenium&lt;/groupId&gt;
         &lt;artifactId&gt;selenium-firefox-driver&lt;/artifactId&gt;
-        &ltversion&gt;...&lt;/version&gt;
+        &ltversion&gt;2.0rc3&lt;/version&gt;
     &lt;/dependency&gt;  
 </pre></p>
 
@@ -69,12 +72,13 @@
     &lt;dependency&gt;
         &lt;groupId&gt;org.seleniumhq.selenium&lt;/groupId&gt;
         &lt;artifactId&gt;selenium-server&lt;/artifactId&gt;
-        &ltversion&gt;...&lt;/version&gt;
+        &ltversion&gt;2.0rc3&lt;/version&gt;
     &lt;/dependency&gt;  
-</pre> Now you can create a <tt>SeleniumServer</tt> instance yourself and start it.
-   Be aware, that the <tt>selenium-server</tt> artifact has a dependency to the
-   <tt>servlet-api-2.5</tt> artifact, which you need to exclude, if your project
-   will be run in a web application container.</p>
+</pre> Now you can create a <tt>SeleniumServer</tt> instance yourself and start it.</p>
+
+   <p><i>Note:</i> Be aware, that the <tt>selenium-server</tt> artifact has
+   a dependency to the <tt>servlet-api-2.5</tt> artifact, which you should
+   exclude, if your project will be run inside a web application container.</p>
 
 </body>
 </html>
