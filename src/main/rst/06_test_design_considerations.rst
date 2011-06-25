@@ -205,8 +205,7 @@ the top of the page within a header section XPath may be the better locator.
 Locating Dynamic Elements
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
-As was described earlier in the section on types of tests, a dynamic element is a page element
-who's identifer varies with each instance of the page.  For example,
+As was described earlier in the section on types of tests, a dynamic element is a page element whose identifer varies with each instance of the page.  For example,
            
 .. code-block:: html
 
@@ -582,7 +581,7 @@ First, consider an example, typical of test automation, that does not use a page
 	
 There are two problems with this approach.
 
-1. There is no separation between the test method and the AUTs locators (IDs in this example); both are intertwined in a single method.  If the AUT's UI changes it's identifiers, layout, or how a login is input and processed, the test itself must change.
+1. There is no separation between the test method and the AUTs locators (IDs in this example); both are intertwined in a single method.  If the AUT's UI changes its identifiers, layout, or how a login is input and processed, the test itself must change.
 
 2. The id-locators would be spread in multiple tests, all tests that had to use this login page.	
 

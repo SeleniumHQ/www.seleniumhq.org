@@ -327,7 +327,7 @@ Acknowledgements
 A huge special thanks goes to Patrick Lightbody.  As an administrator of the 
 SeleniumHQ website, creator of Selenium RC, and long term involvement in the Selenium
 community, his support was invaluable when writing the original user's
-guide.  Patrick helped us understand the our audience. 
+guide.  Patrick helped us understand our audience. 
 He also set us up with 
 everything we needed on the seleniumhq.org website for publishing the documents.
 Also thanks goes to Andras Hatvani for his advice on publishing

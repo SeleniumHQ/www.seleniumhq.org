@@ -323,7 +323,7 @@ popup, you can access the alert with the following:
     Alert alert = driver.switchTo().alert();
 	
 This will return the currently open alert object. With this object you can now accept,
-dismiss, read it's contents or even type into a prompt. This interface works equally 
+dismiss, read its contents or even type into a prompt. This interface works equally 
 well on alerts, confirms, prompts. Refer to the JavaDocs for more information.
 
 Navigation: History and Location
@@ -403,7 +403,7 @@ Pros
 Cons
 ++++
 
-* Emulates other browser's JavaScript behaviour (see below)
+* Emulates other browsers' JavaScript behaviour (see below)
 
 JavaScript in the HtmlUnit Driver
 +++++++++++++++++++++++++++++++++
