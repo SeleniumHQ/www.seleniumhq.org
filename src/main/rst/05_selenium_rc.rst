@@ -106,9 +106,8 @@ Selenium-IDE.
 
 Installation
 -------------
-After downloading the Selenium RC zip file from the `downloads page`_, you'll
-notice it has several sub-folders. These folders have all the components you 
-need for using Selenium RC with the programming language of your choice.
+Installation is rather a misnomer for Selenium. Selenium has set of libraries available
+in the programming language of your choice. You could download them from `downloads page`_
 
 Once you've chosen a language to work with, you simply need to:
 
@@ -117,7 +116,7 @@ Once you've chosen a language to work with, you simply need to:
 
 Installing Selenium Server
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
-The Selenium RC server is simply a Java *jar* file (*selenium-server.jar*), which doesn't
+The Selenium RC server is simply a Java *jar* file (*selenium-server-standalone-<version-number>.jar*), which doesn't
 require any special installation. Just downloading the zip file and extracting the 
 server in the desired directory is sufficient. 
 
@@ -127,7 +126,7 @@ Before starting any tests you must start the server.  Go to the directory
 where Selenium RC's server is located and run the following from a command-line 
 console.
 
-    java -jar selenium-server.jar
+    java -jar selenium-server-standalone-<version-number>.jar
 
 This can be simplified by creating
 a batch or shell executable file (.bat on Windows and .sh on Linux) containing the command
@@ -148,12 +147,12 @@ If you get a version number (which needs to be 1.5 or later), you're ready to st
 
 Using the Java Client Driver
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-* Download Selenium RC from the SeleniumHQ `downloads page`_.
-* Extract the file *selenium-java-client-driver.jar*.
+* Download Selenium RC java client driver from the SeleniumHQ `downloads page`_.
+* Extract selenium-java-<version-number>.jar file
 * Open your desired Java IDE (Eclipse, NetBeans, IntelliJ, Netweaver, etc.)
-* Create a new project.
-* Add the selenium-java-client-driver.jar files to your project as references.
-* Add to your project classpath the file *selenium-java-client-driver.jar*.
+* Create a java project.
+* Add the selenium-java-<version-number>.jar files to your project as references.
+* Add to your project classpath the file selenium-java-<version-number>.jar.
 * From Selenium-IDE, export a script to a Java file and include it in your Java
   project, or write your Selenium test in Java using the selenium-java-client API.
   The API is presented later in this chapter.  You can either use JUnit, or TestNg
@@ -1183,13 +1182,13 @@ Recall, the server is started by running the following.
 
 .. code-block:: bash
  
-   $ java -jar selenium-server.jar
+   $ java -jar selenium-server-standalone-<version-number>.jar
 
 To see the list of options, run the server with the ``-h`` option.
 
 .. code-block:: bash
  
-   $ java -jar selenium-server.jar -h
+   $ java -jar selenium-server-standalone-<version-number> -h
 
 You'll see a list of all the options you can use with the server and a brief
 description of each. The provided descriptions will not always be enough, so we've
@@ -1204,7 +1203,7 @@ using the following command.
 
 .. code-block:: bash
 
-   $ java -jar selenium-server.jar -Dhttp.proxyHost=proxy.com -Dhttp.proxyPort=8080 -Dhttp.proxyUser=username -Dhttp.proxyPassword=password
+   $ java -jar selenium-server-standalone-<version-number>.jar -Dhttp.proxyHost=proxy.com -Dhttp.proxyPort=8080 -Dhttp.proxyUser=username -Dhttp.proxyPassword=password
 
 
 Multi-Window Mode
@@ -1289,7 +1288,7 @@ Run Selenese Directly Within the Server Using -htmlSuite
 You can run Selenese html files directly within the Selenium Server
 by passing the html file to the server's command line.  For instance::
 
-   java -jar selenium-server.jar -htmlSuite "*firefox" "http://www.google.com" "c:\absolute\path\to\my\HTMLSuite.html" "c:\absolute\path\to\my\results.html"
+   java -jar selenium-server-standalone-<version-number>.jar -htmlSuite "*firefox" "http://www.google.com" "c:\absolute\path\to\my\HTMLSuite.html" "c:\absolute\path\to\my\results.html"
 
 This will automatically launch your HTML suite, run all the tests and save a
 nice HTML report with the results.
@@ -1314,7 +1313,7 @@ valuable debugging information reported by the Selenium Server to a text file.
 
 .. code-block:: bash
 
-   java -jar selenium-server.jar -log selenium.log
+   java -jar selenium-server-standalone-<version-number>.jar -log selenium.log
    
 This log file is more verbose than the standard console logs (it includes DEBUG 
 level logging messages). The log file also includes the logger name, and the ID
@@ -1342,7 +1341,7 @@ argument to the Selenium Server.
 
 .. code-block:: bash
 
-   java -jar selenium-server.jar -browserSideLog
+   java -jar selenium-server-standalone-<version-number>.jar -browserSideLog
    
 **-browserSideLog** must be combined with the **-log** argument, to log 
 browserSideLogs (as well as all other DEBUG level logging messages) to a file.
