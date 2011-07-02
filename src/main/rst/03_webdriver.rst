@@ -49,15 +49,30 @@ C#
 .. literalinclude:: /examples/Chapter3/CSharp/Selenium2Example.cs
    :language: csharp
 
+Python
+~~~~~~
 
+.. literalinclude:: /examples/Chapter3/Python/Selenium2Example.py
+   :language: python
 
-In this next example, you shall use a page that requires Javascript to work 
-properly, such as Google Suggest. You will also be using the `Firefox Driver`_. 
-Make sure that :ref:`Firefox is installed on your machine and is in the normal 
-location for your OS <FirefoxDefaultLocations>`.
+Ruby
+~~~~
 
-When you run this program, you'll see the list of suggestions being printed 
-to the console. That's all there is to using WebDriver! 
+.. literalinclude:: /examples/Chapter3/Ruby/Selenium2Example.rb
+   :language: ruby
+
+PHP
+~~~
+
+.. literalinclude:: /examples/Chapter3/PHP/Selenium2Example.php
+   :language: php
+
+Perl
+~~~~
+
+.. literalinclude:: /examples/Chapter3/Perl/Selenium2Example.pl
+   :language: perl
+
 
 Hopefully, this will have whet your appetite for more. In the `Next Steps`_
 section you will learn more about how to use WebDriver for things 
@@ -245,27 +260,15 @@ element isn't in a form, then the ``NoSuchElementException`` will be thrown:
 Getting Visual Information And Drag And Drop
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Sometimes you want to extract some visual information out of an element, 
-perhaps to see if it's visible or where it is on screen. You can find out this 
-information by casting the element to a ``RenderedWebElement``:
+Here's an example of using the Actions class to perform a drag and drop.
+As of rc2 this only works on the Windows platform.
 
 .. code-block:: java
 
-    WebElement plain = driver.findElement(By.name("q"));
-    RenderedWebElement element = (RenderedWebElement) element;
+    WebElement element = driver.findElement(By.name("source"));
+    WebElement target = driver.findElement(By.name("target"));
 
-Not all drivers render their content to the screen (such as the 
-`HtmlUnit Driver`_), so it's not safe to assume that the cast will work, but if 
-it does you can gather additional information such as the size and location of 
-the element. In addition, you can use drag and drop, either moving an element 
-by a certain amount, or on to another element:
-
-.. code-block:: java
-
-    RenderedWebElement element = (RenderedWebElement) driver.findElement(By.name("source"));
-    RenderedWebElement target = (RenderedWebElement) driver.findElement(By.name("target"));
-
-    element.dragAndDropOn(target);
+    (new Actions(driver)).dragAndDrop(element, target).perform();
 
 Moving Between Windows and Frames
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -677,24 +680,6 @@ sandbox.
 
 Tips and Tricks
 ---------------
-
-Using Drag and Drop
-~~~~~~~~~~~~~~~~~~~
-
-It may not be immediately obvious, but if you're using a browser that supports 
-it you can cast a ``WebElement`` to ``RenderedWebElement`` and then it's easy 
-to do drag and drop:
-
-.. code-block:: java
-
-    // Note the casts
-    RenderedWebElement from = (RenderedWebElement) driver.findElement(By.id("one"));
-    RenderedWebElement to = (RenderedWebElement) driver.findElement(By.id("two"));
-
-    from.dragAndDropOn(to);
-
-Currently, only the `Firefox Driver`_ supports this, but you should also expect 
-support for the `Internet Explorer Driver`_ too.
 
 Changing the user agent
 ~~~~~~~~~~~~~~~~~~~~~~~

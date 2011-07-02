@@ -14,6 +14,7 @@ class GoogleSuggest
         IWebElement query = driver.FindElement(By.Name("q"));
         query.SendKeys("Cheese");
         System.Console.WriteLine("Page title is: " + driver.Title);
+        // TODO add wait
         driver.Quit();
     }
 
