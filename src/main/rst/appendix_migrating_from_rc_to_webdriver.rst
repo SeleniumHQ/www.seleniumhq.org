@@ -30,7 +30,8 @@ The first step when starting the migration is to change how you obtain your inst
 
 .. code-block:: java
 
-    Selenium selenium = new DefaultSelenium("localhost", 4444, "*firefox", "http://www.yoursite.com");
+    Selenium selenium = new DefaultSelenium(
+        "localhost", 4444, "*firefox", "http://www.yoursite.com");
     selenium.start();
 
 This should be replaced like so:
@@ -132,7 +133,8 @@ Alternatively, you might be using the browserbot to locate elements. In WebDrive
 
 .. code-block:: java
 
-    String name = selenium.getEval("selenium.browserbot.findElement('id=foo', browserbot.getCurrentWindow()).tagName");
+    String name = selenium.getEval(
+        "selenium.browserbot.findElement('id=foo', browserbot.getCurrentWindow()).tagName");
 
 becomes:
 
@@ -141,6 +143,9 @@ becomes:
     WebElement element = driver.findElement(By.id("foo"));
     String name = (String) ((JavascriptExecutor) driver).executeScript(
         "return arguments[0].tagName", element);
+        
+Notice how the passed in "element" variable appears as the first item in the JS standard "arguments" array.        
+
 
 Executing Javascript Doesn't Return Anything
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
