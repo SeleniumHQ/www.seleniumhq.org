@@ -115,6 +115,8 @@ Of course, adding all these "wait" calls may clutter up your code. If that's the
     driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 
 
+By doing this, every time an element is located, if the element is not present, the location is retried until either it is present, or until 30 seconds have passed.
+
 Finding By XPath or CSS Selectors Doesn't Always Work, But It Does In Selenium 1
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
