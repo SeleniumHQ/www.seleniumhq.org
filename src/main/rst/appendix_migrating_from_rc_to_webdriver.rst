@@ -46,7 +46,7 @@ Once you've done this, run your existing tests. This will give you a fair idea o
 Next Steps
 ----------
 
-Once your tests are running green again, the next stage is to migrate the actual test code to use the WebDriver APIs. Depending on how how well abstracted your code, this might be a short process or a long one. In either case, the approach is the same and can be summed up simply: modify code to use the new API when you come to edit it.
+Once your tests are running green again, the next stage is to migrate the actual test code to use the WebDriver APIs. Depending on how well abstracted your code, this might be a short process or a long one. In either case, the approach is the same and can be summed up simply: modify code to use the new API when you come to edit it.
 
 .. This needs to be fleshed out.
 
