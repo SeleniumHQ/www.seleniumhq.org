@@ -48,6 +48,20 @@ Next Steps
 
 Once your tests are running green again, the next stage is to migrate the actual test code to use the WebDriver APIs. Depending on how well abstracted your code is, this might be a short process or a long one. In either case, the approach is the same and can be summed up simply: modify code to use the new API when you come to edit it.
 
+If you need to extract the underlying WebDriver implementation from the Selenium instance, you can simply cast it to WrapsDriver:
+
+.. code-block:: java
+
+    WebDriver driver = ((WrapsDriver) selenium).getWrappedDriver();
+
+This allows you to continue passing the Selenium instance around as normal, but to unwrap the WebDriver instance as required.
+
+At some point, you're code base will mostly be using the newer APIs. At this point, you can flip the relationship, using WebDriver throughout and instantiating a Selenium instance on demand:
+
+.. code-block:: java
+
+    Selenium selenium = new WebDriverBackedSelenium(driver, baseUrl);
+
 .. This needs to be fleshed out.
 
 
