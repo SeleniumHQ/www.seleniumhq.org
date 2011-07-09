@@ -11,6 +11,43 @@ programming interface.  The goal is to develop an object-oriented API that
 provides additional support for a larger number of browsers along with improved
 support for modern advanced web-app testing problems.
 
+
+Installing Selenium 2.0 -- Setting Up a Selenium Project
+--------------------------------------------------------
+To install Selenium means to set up a project in a development so you can write a program using
+Selenium.  How you do this depends on your programming language and your development environment.
+
+_NOTE: These sections will be available very soon.  We're currently working on them.  Thanks for 
+your patience.
+
+Java
+~~~~
+
+C#
+~~
+
+Python
+~~~~~~
+
+Ruby
+~~~~
+
+Perl
+~~~~
+
+PHP
+~~~
+
+
+Migrating from Selenium 1.0
+---------------------------
+For those who already have test suites writting using Selenium 1.0, we have provided tips on how to 
+migrate your existing code to Selenium 2.0.  Simon Stewart, the lead developer for Selenium 2.0,
+has written an article on migrating from Selenium 1.0.  We've included this as an appendix.
+
+:ref:`Migrating From Selenium RC to Selenium WebDriver <migrating_to_webdriver-reference>` 
+
+
 The 5 Minute Getting Started Guide
 ----------------------------------
 WebDriver is a tool for automating testing web applications, and in particular 
