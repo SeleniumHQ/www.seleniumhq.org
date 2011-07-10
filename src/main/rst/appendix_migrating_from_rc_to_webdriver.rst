@@ -3,6 +3,9 @@ Migrating From Selenium RC to Selenium WebDriver
 
 .. _migrating_to_webdriver-reference:
 
+How to Migrate to Selenium WebDriver
+------------------------------------
+
 A common question when adopting Selenium 2 is what's the correct thing to do when writing new tests in code. Users who are new to the framework can begin by using the new WebDriver APIs for writing their tests. But what of users who already have suites of existing tests? This guide is designed to demonstrate how to migrate your existing tests to the new APIs, allowing all new tests to be written using the new features offered by WebDriver.
 
 The method presented here describes a piecemeal migration to the WebDriver APIs without needing to rework everything in one massive push. This means that the process may take a significant amount of time, and makes it easier for you to decide where to spend your effort.
