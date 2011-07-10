@@ -12,32 +12,79 @@ provides additional support for a larger number of browsers along with improved
 support for modern advanced web-app testing problems.
 
 
-Installing Selenium 2.0 -- Setting Up a Selenium Project
---------------------------------------------------------
+Setting Up a Selenium 2.0 Project
+---------------------------------
 To install Selenium means to set up a project in a development so you can write a program using
 Selenium.  How you do this depends on your programming language and your development environment.
 
-_NOTE: These sections will be available very soon.  We're currently working on them.  Thanks for 
-your patience.
+*NOTE: We're currently working on documenting these sections; they are only partially written but we
+provided them anyway so as to not hold back on information.  They will be complete in the upcoming
+weeks.  Thanks for your patience.*
+
+The Selenium Server
+~~~~~~~~~~~~~~~~~~~
+You may, or may not, need the Selenium Server, depending on how you intend to use Selenium.
 
 Java
 ~~~~
+The easiest way to set up a Selenium 2.0 Java project is to use Maven.  Maven will download the 
+java bindings (the Selenium 2.0 java client library) and all it's dependencies, and will create the 
+project for you, using a maven pom.xml (project configuration) file.  Once you've done this, you
+can import the maven project into your preferred IDE, IntelliJ IDEA or Eclipse.
+
+
+
+
 
 C#
 ~~
+We do not have installation steps in the user's guide for Selenium 2.0 with C# yet.  For the 
+moment, we recommend searching the internet, there are most likely blogs on this topic.
+
+If you have 
+experience with C# and Selenium and would be willing to contribute we'd love to hear from you.  
+Please post a note to the Selenium developers_.
+
+.. _developers: http://groups.google.com/group/selenium-developers
+
 
 Python
 ~~~~~~
+If you are using Python for test automation then you probably are already familiar with developing
+in Python.  To add Selenium to your Python environment run the following command from 
+a command-line.
+
+.. literalinclude::pip install selenium
+
+Teaching Python development itself is beyond the scope of this document, however there are many
+resources on Python and likely developers in your organization can help you get up to speed.
 
 Ruby
 ~~~~
+If you are using Python for test automation then you probably are already familiar with developing
+in Python.  To add Selenium to your Python environment run the following command from 
+a command-line.
+
+.. literalinclude::gem install selenium-webdriver
+
+Teaching Python development itself is beyond the scope of this document, however there are many
+resources on Python and likely developers in your organization can help you get up to speed.
 
 Perl
 ~~~~
+We do not have installation steps for Selenium 2.0 with Perl at this time.  If you have 
+experience with this and would be willing to contribute we'd love to hear from you.  Please post
+a note to the Selenium developers_.
+
+.. _developers: http://groups.google.com/group/selenium-developers
 
 PHP
 ~~~
+We do not have installation steps for Selenium 2.0 with PHP at this time.  If you have 
+experience with this and would be willing to contribute we'd love to hear from you.  Please post
+a note to the Selenium developers_.
 
+.. _developers: http://groups.google.com/group/selenium-developers
 
 Migrating from Selenium 1.0
 ---------------------------
