@@ -32,9 +32,51 @@ java bindings (the Selenium 2.0 java client library) and all it's dependencies, 
 project for you, using a maven pom.xml (project configuration) file.  Once you've done this, you
 can import the maven project into your preferred IDE, IntelliJ IDEA or Eclipse.
 
+First, create a folder to contain your Selenium project files.  Then, to use Maven, you need a 
+pom.xml file.  This can be created with a text editor.  We won't teach the 
+details of pom.xml files or for using Maven since there are already excellent references on this.
+Your pom.xml file will look something like this.  Create this file in the folder you created for
+your project.
 
+.. code-block:: xml
 
+	<?xml version="1.0" encoding="UTF-8"?>
+	<project xmlns="http://maven.apache.org/POM/4.0.0"
+			 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+			 xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+		<modelVersion>4.0.0</modelVersion>	
+		<groupId>MySel20Proj</groupId>
+		<artifactId>MySel20Proj</artifactId>
+		<version>1.0</version>	
+		<dependencies>
+		<dependency>
+		<groupId>org.seleniumhq.selenium</groupId>
+		<artifactId>selenium-remote-control</artifactId>
+		<version>2.0</version>
+		</dependency>
+		</dependencies>		
+	</project>
 
+The key component adding Selenium and its dependencies are the lines
+
+.. code-block:: xml
+
+		<dependency>
+		<groupId>org.seleniumhq.selenium</groupId>
+		<artifactId>selenium-remote-control</artifactId>
+		<version>2.0</version>
+		</dependency>
+
+Now, from a command-line, CD into the project directory and run maven as follows.
+
+.. literalinclude::mvn clean install
+
+This will download Selenium and all it's dependencies and will add them to the project.
+
+Finally, import the project into your preferred development environment.  For those not familiar 
+with this, we've provided an appendix which shows this.
+
+:ref:`Importing a maven project into IntelliJ IDEA. <importing_maven_into_intellij-reference>` 
 
 C#
 ~~
