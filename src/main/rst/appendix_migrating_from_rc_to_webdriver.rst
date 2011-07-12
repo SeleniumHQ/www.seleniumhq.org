@@ -135,7 +135,7 @@ Of course, adding all these "wait" calls may clutter up your code. If that's the
 By doing this, every time an element is located, if the element is not present, the location is retried until either it is present, or until 30 seconds have passed.
 
 Finding By XPath or CSS Selectors Doesn't Always Work, But It Does In Selenium 1
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 In Selenium 1, it was common for xpath to use a bundled library rather than the capabilities of the browser itself. WebDriver will always use the native browser methods unless there's no alternative. That means that complex xpath expressions may break on some browsers.
 
