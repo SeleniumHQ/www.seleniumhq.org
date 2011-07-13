@@ -71,7 +71,7 @@ Now, from a command-line, CD into the project directory and run maven as follows
 
 .. literalinclude::mvn clean install
 
-This will download Selenium and all it's dependencies and will add them to the project.
+This will download Selenium and all its dependencies and will add them to the project.
 
 Finally, import the project into your preferred development environment.  For those not familiar 
 with this, we've provided an appendix which shows this.
@@ -109,8 +109,8 @@ a command-line.
 
 .. literalinclude::gem install selenium-webdriver
 
-Teaching Python development itself is beyond the scope of this document, however there are many
-resources on Python and likely developers in your organization can help you get up to speed.
+Teaching Ruby development itself is beyond the scope of this document, however there are many
+resources on Ruby and likely developers in your organization can help you get up to speed.
 
 Perl
 ~~~~
@@ -149,12 +149,12 @@ get you started becoming familiar with it.
 
 Start by `Downloading <http://code.google.com/p/selenium/downloads/list>`_ 
 the latest binaries and unpack them into a directory. From now on, we'll 
-refer to that as ``$WEBDRIVER_HOME``. Now, open your favourite IDE and:
+refer to this directory as ``$WEBDRIVER_HOME``. Now, open your favourite IDE and:
 
  * Start a new project in your favourite IDE/editor
  * Add a reference to all the libraries in ``$WEBDRIVER_HOME``
 
-You can see that WebDriver acts just as a normal library does: it's 
+You can see that WebDriver acts just as a normal library does: it is 
 entirely self-contained, and you usually don't need to remember to start any 
 additional processes or run any installers before using it, as opposed to the proxy server 
 with Selenium-RC. 
@@ -200,12 +200,12 @@ Perl
    :language: perl
 
 
-Hopefully, this will have whet your appetite for more. In the `Next Steps`_
+Hopefully, this example has whet your appetite for more. In the `Next Steps`_
 section you will learn more about how to use WebDriver for things 
 such as navigating forward and backward in your browser's history, and how to 
-use frames and windows. It also provides a more complete discussion of the 
-examples than `The 5 Minute Getting Started Guide`_. If you're ready, let's
-take the `Next Steps`_!
+test web sites that use frames and windows. `Next Steps`_ also provides a more
+complete discussion of the examples than `The 5 Minute Getting Started Guide`_.
+If you're ready, let's take the `Next Steps`_!
 
 .. _`Next Steps`: `Next Steps For Using WebDriver`_
 
@@ -216,7 +216,7 @@ Which Implementation of WebDriver Should I Use?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 WebDriver is the name of the key interface against which tests should be 
-written, but there are several implementations. These are:
+written, but there are several implementations. These include:
 
 =============================  ========================  =============================================
 Name of driver                 Available on which OS?    Class to instantiate
@@ -258,8 +258,8 @@ To keep things simple, let's start with the `HtmlUnit Driver`_:
 Navigating
 ~~~~~~~~~~
 
-The first thing you'll want to do with WebDriver is navigate to a page. The 
-normal way to do this is by calling "get":
+The first thing you're likely to want to do with WebDriver is navigate to a page.
+The normal way to do this is by calling "get":
 
 .. code-block:: java
 
@@ -285,7 +285,7 @@ ways of finding elements. For example, given an element defined as:
 
     <input type="text" name="passwd" id="passwd-id" />
 
-you could find it using any of:
+you could find it using any of the following examples:
 
 .. code-block:: java
 
@@ -353,7 +353,7 @@ with SELECT tags isn't too bad:
 
 This will find the first "SELECT" element on the page, and cycle through each 
 of it's OPTIONs in turn, printing out their values, and selecting each in turn. 
-As you can see, this isn't the most efficient way of dealing with SELECT 
+As you will notice, this isn't the most efficient way of dealing with SELECT 
 elements. WebDriver's support classes include one called "Select", which 
 provides useful methods for interacting with these.
 
@@ -399,9 +399,8 @@ As of rc2 this only works on the Windows platform.
 Moving Between Windows and Frames
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-It's rare for a modern web application not to have any frames or to be 
-constrained to a single window. WebDriver supports moving between named 
-windows using the "switchTo" method:
+Some web applications have any frames or multiple windows. WebDriver supports 
+moving between named windows using the "switchTo" method:
 
 .. code-block:: java
 
@@ -444,7 +443,7 @@ Popup Dialogs
 ~~~~~~~~~~~~~~
 
 Starting with Selenium 2.0 beta 1, there is built in support for handling popup 
-dialog boxes. After you've triggerd and action that would open a 
+dialog boxes. After you've triggered an action that opens a 
 popup, you can access the alert with the following:
 
 .. code-block:: java
@@ -542,10 +541,10 @@ None of the popular browsers uses the JavaScript engine used by HtmlUnit
 significantly from those browsers.
 
 When we say "JavaScript" we actually mean "JavaScript and the DOM". Although 
-the DOM is defined by the W3C each browser out there has its own quirks and 
-differences in their implementation of the DOM and in how JavaScript interacts 
-with it. HtmlUnit has an impressively complete implementation of the DOM and 
-has good support for using JavaScript, but it is no different from any other 
+the DOM is defined by the W3C each browser has its own quirks and differences 
+in their implementation of the DOM and in how JavaScript interacts with it. 
+HtmlUnit has an impressively complete implementation of the DOM and has good 
+support for using JavaScript, but it is no different from any other 
 browser: it has its own quirks and differences from both the W3C standard and 
 the DOM implementations of the major browsers, despite its ability to mimic 
 other browsers.
@@ -670,7 +669,7 @@ Chrome Driver
 
 See below for instructions on how to install the `Chrome Driver`_.
 
-Note that `Chrome Driver`_ is one of the newest drivers. Please report any problems 
+Note that `Chrome Driver`_ is one of the newer drivers. Please report any problems 
 through the `issue tracker <http://code.google.com/p/selenium/issues/list>`_.
 
 Pros

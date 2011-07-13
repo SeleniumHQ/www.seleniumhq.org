@@ -6,16 +6,16 @@ Migrating From Selenium RC to Selenium WebDriver
 How to Migrate to Selenium WebDriver
 ------------------------------------
 
-A common question when adopting Selenium 2 is what's the correct thing to do when writing new tests in code. Users who are new to the framework can begin by using the new WebDriver APIs for writing their tests. But what of users who already have suites of existing tests? This guide is designed to demonstrate how to migrate your existing tests to the new APIs, allowing all new tests to be written using the new features offered by WebDriver.
+A common question when adopting Selenium 2 is what's the correct thing to do when adding new tests to an existing set of tests? Users who are new to the framework can begin by using the new WebDriver APIs for writing their tests. But what of users who already have suites of existing tests? This guide is designed to demonstrate how to migrate your existing tests to the new APIs, allowing all new tests to be written using the new features offered by WebDriver.
 
-The method presented here describes a piecemeal migration to the WebDriver APIs without needing to rework everything in one massive push. This means that the process may take a significant amount of time, and makes it easier for you to decide where to spend your effort.
+The method presented here describes a piecemeal migration to the WebDriver APIs without needing to rework everything in one massive push. This means that you can allow more time for migrating your existing tests, which may make it easier for you to decide where to spend your effort.
 
 This guide is written using Java, because this has the best support for making the migration. As we provide better tools for other languages, this guide shall be expanded to include those languages.
 
 Why Migrate to WebDriver
 ------------------------
 
-Moving a suite of tests from one API requires an enormous amount of effort. Why would you and your team consider making this move?
+Moving a suite of tests from one API to another API requires an enormous amount of effort. Why would you and your team consider making this move? Here are some reasons why you should consider migrating your Selenium Tests to use WebDriver.
 
 * Smaller, compact API. WebDriver's API is more Object Oriented than the original Selenium RC API. This can make it easier to work with.
 * Better emulation of user interactions. Where possible, WebDriver makes use of native events in order to interact with a web page. This more closely mimics the way that your users work with your site and apps. In addition, WebDriver offers the advanced user interactions APIs which allow you to model complex interactions with your site.
@@ -49,7 +49,7 @@ Once you've done this, run your existing tests. This will give you a fair idea o
 Next Steps
 ----------
 
-Once your tests are running green again, the next stage is to migrate the actual test code to use the WebDriver APIs. Depending on how well abstracted your code is, this might be a short process or a long one. In either case, the approach is the same and can be summed up simply: modify code to use the new API when you come to edit it.
+Once your tests execute without errors, the next stage is to migrate the actual test code to use the WebDriver APIs. Depending on how well abstracted your code is, this might be a short process or a long one. In either case, the approach is the same and can be summed up simply: modify code to use the new API when you come to edit it.
 
 If you need to extract the underlying WebDriver implementation from the Selenium instance, you can simply cast it to WrapsDriver:
 
@@ -59,7 +59,7 @@ If you need to extract the underlying WebDriver implementation from the Selenium
 
 This allows you to continue passing the Selenium instance around as normal, but to unwrap the WebDriver instance as required.
 
-At some point, you're code base will mostly be using the newer APIs. At this point, you can flip the relationship, using WebDriver throughout and instantiating a Selenium instance on demand:
+At some point, you're codebase will mostly be using the newer APIs. At this point, you can flip the relationship, using WebDriver throughout and instantiating a Selenium instance on demand:
 
 .. code-block:: java
 
@@ -98,7 +98,7 @@ WaitForPageToLoad Returns Too Soon
 
 Discovering when a page load is complete is a tricky business. Do we mean "when the load event fires", "when all AJAX requests are complete", "when there's no network traffic", "when document.readyState has changed" or something else entirely?
 
-WebDriver attempts to simulate the original Selenium behavior, but this doesn't always work perfectly for many reasons. The most common reason is that it's hard to tell the difference between a page load not having started yet, and a page load having completed between method calls. This sometimes means that control is returned to your test before the page has finished (or started!) loading.
+WebDriver attempts to simulate the original Selenium behavior, but this doesn't always work perfectly for various reasons. The most common reason is that it's hard to tell the difference between a page load not having started yet, and a page load having completed between method calls. This sometimes means that control is returned to your test before the page has finished (or even started!) loading.
 
 The solution to this is to wait on something specific. Commonly, this might be for the element you want to interact with next, or for some Javascript variable to be set to a specific value. An example would be:
 
@@ -123,7 +123,7 @@ Where "visibilityOfElementLocated" is implemented as:
       };
     }
  
-This may look complex, but it's almost all boiler-plate code. The only interesting bit is that the "ExpectedCondition" will be evaluated until the "apply" method returns something that is neither "null" nor Boolean.FALSE.
+This may look complex, but it's almost all boiler-plate code. The only interesting bit is that the "ExpectedCondition" will be evaluated repeatedly until the "apply" method returns something that is neither "null" nor Boolean.FALSE.
 
 Of course, adding all these "wait" calls may clutter up your code. If that's the case, and your needs are simple, consider using the implicit waits:
 
