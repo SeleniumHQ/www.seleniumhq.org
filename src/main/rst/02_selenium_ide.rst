@@ -755,9 +755,9 @@ The following locator strategies would return the elements from the HTML
 snippet above indicated by line number:
 
 - ``identifier=loginForm`` (3)
-- ``identifier=password`` (4)
-- ``identifier=continue`` (5)
-- ``continue`` (5)
+- ``identifier=password`` (5)
+- ``identifier=continue`` (6)
+- ``continue`` (6)
 
 Since the ``identifier`` type of locator is the default, the ``identifier=``
 in the first three examples above is not necessary.
