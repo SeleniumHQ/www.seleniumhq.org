@@ -181,7 +181,7 @@ we can locate an object using
 
 Using an element ID or name locator is the most efficient in terms of test performance,
 and also makes your test code more readable, assuming the ID or name within the page source is well-named.
-XPath statements take longer to process since the browser must run it's XPath processor.  Xpath has 
+XPath statements take longer to process since the browser must run it's XPath processor.  XPath has 
 been known to be especially slow in Internet Explorer version 7.  Locating via a link's text is often
 convenient and performs well.  This technique is specific to links though.  Also,
 if the link text is likely to change frequently, locating by the <a> element
@@ -189,7 +189,7 @@ would be the better choice.
   
 Sometimes though, you must use an XPath locator.  If the page source does not
 have an ID or name attribute you may have no choice but to use an XPath locator.
-(DOM locators are no longer commonly used since Xpath can do everything they can and more.
+(DOM locators are no longer commonly used since XPath can do everything they can and more.
 DOM locators are available simply to support legacy tests.)
 
 There is an advantage to using XPath that locating via ID or name
