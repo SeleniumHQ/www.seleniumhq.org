@@ -3,27 +3,48 @@ Selenium 2.0 and WebDriver
 
 .. _chapter03-reference:
 
-As you can see in the :ref:`Brief History of The Selenium Project <selenium-history>`
-The Selenium developers are working towards a Selenium 2.0 release.  The
-primary new feature will be the integration of the WebDriver API into Selenium 1.
-This will address a number of limitations along with providing an alternative
+*NOTE: We're currently working on documenting these sections; they are only partially written but we
+provided them anyway so as to not hold back on information.*
+
+Selenium 2.0 has many new exciting features and improvements over Selenium 1.  These new features are 
+introduced release in the release announcement in the Official Selenium Blog_.
+
+.. _Blog: http://seleniumhq.wordpress.com
+
+The primary new feature is the integration of the WebDriver API.
+This addresses a number of limitations along with providing an alternative, and simpler,
 programming interface.  The goal is to develop an object-oriented API that
 provides additional support for a larger number of browsers along with improved
 support for modern advanced web-app testing problems.
 
+*NOTE:  We will add a description to the docs of those new features--for now we refer readers to
+the release announcement.*
 
-Setting Up a Selenium 2.0 Project
----------------------------------
+
+The Selenium Server -- When to Use It
+-------------------------------------
+You may, or may not, need the Selenium Server, depending on how you intend to use Selenium.  If 
+you will be strictly using the WebDriver API you do not need the Selenium Server.  The Selenium
+Server provides Selenium-RC functionality, which is primarily used for Selenium 1.0 backwards
+compatability.  Since WebDriver uses completely different technology to interact with the 
+browsers, the Selenium Server is not needed.  Selenium-WebDriver makes direct calls to the browser
+using each browser's native support for automation.  Selenium-RC however requires the Selenium-
+Server to inject javascript into the browser and to then translate messages from your test 
+program's language-specific Selenium client library into commands that invoke the javascript
+commands which in turn, automate the AUT from within the browser.  In short, if you're using
+Selenium-WebDriver, you don't need the Selenium-Server.
+
+Another reason for using the Selenium-Server is if you are using Selenium-Grid for distributed
+exectution of your tests.  Finally, if you are using Selenium-backed Web-Driver (the WebDriver API
+but with back-end Selenium technology) you will also need the Selenium Server.  
+These topics are described in more detail later in this chapter.
+
+
+Setting Up a Selenium-WebDriver Project
+---------------------------------------
 To install Selenium means to set up a project in a development so you can write a program using
 Selenium.  How you do this depends on your programming language and your development environment.
 
-*NOTE: We're currently working on documenting these sections; they are only partially written but we
-provided them anyway so as to not hold back on information.  They will be complete in the upcoming
-weeks.  Thanks for your patience.*
-
-The Selenium Server
-~~~~~~~~~~~~~~~~~~~
-You may, or may not, need the Selenium Server, depending on how you intend to use Selenium.
 
 Java
 ~~~~
@@ -52,7 +73,7 @@ your project.
 		<dependency>
 		<groupId>org.seleniumhq.selenium</groupId>
 		<artifactId>selenium-remote-control</artifactId>
-		<version>2.0</version>
+		<version>2.0.0</version>
 		</dependency>
 		</dependencies>		
 	</project>
@@ -64,7 +85,7 @@ The key component adding Selenium and its dependencies are the lines
 		<dependency>
 		<groupId>org.seleniumhq.selenium</groupId>
 		<artifactId>selenium-remote-control</artifactId>
-		<version>2.0</version>
+		<version>2.0.0</version>
 		</dependency>
 
 Now, from a command-line, CD into the project directory and run maven as follows.
