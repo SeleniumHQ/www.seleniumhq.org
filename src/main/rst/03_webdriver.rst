@@ -71,9 +71,9 @@ your project.
 		<version>1.0</version>	
 		<dependencies>
 		<dependency>
-		<groupId>org.seleniumhq.selenium</groupId>
-		<artifactId>selenium-remote-control</artifactId>
-		<version>2.0.0</version>
+			<groupId>org.seleniumhq.selenium</groupId>
+            <artifactId>selenium-java</artifactId>
+            <version>2.0.0</version>
 		</dependency>
 		</dependencies>		
 	</project>
