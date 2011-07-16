@@ -17,7 +17,7 @@ programming interface.  The goal is to develop an object-oriented API that
 provides additional support for a larger number of browsers along with improved
 support for modern advanced web-app testing problems.
 
-*NOTE:  We will add a description to the docs of those new features--for now we refer readers to
+*NOTE:  We will add a description of SEL 2.0 new features--for now we refer readers to
 the release announcement.*
 
 
@@ -83,9 +83,9 @@ The key component adding Selenium and its dependencies are the lines
 .. code-block:: xml
 
 		<dependency>
-		<groupId>org.seleniumhq.selenium</groupId>
-		<artifactId>selenium-remote-control</artifactId>
-		<version>2.0.0</version>
+			<groupId>org.seleniumhq.selenium</groupId>
+            <artifactId>selenium-java</artifactId>
+            <version>2.0.0</version>
 		</dependency>
 
 Now, from a command-line, CD into the project directory and run maven as follows.
