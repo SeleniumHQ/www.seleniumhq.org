@@ -3,9 +3,11 @@ Selenium 2.0 and WebDriver
 
 .. _chapter03-reference:
 
-*NOTE: We're currently working on documenting these sections; they are only partially written but we
-provided them anyway so as to not hold back on information.*
+*NOTE: We're currently working on documenting these sections for the new Selenium release.
+The information will be helpful, yet be aware we are also still working on them.*
 
+Selenium 2.0 Features
+---------------------
 Selenium 2.0 has many new exciting features and improvements over Selenium 1.  These new features are 
 introduced release in the release announcement in the Official Selenium Blog_.
 
@@ -97,7 +99,8 @@ This will download Selenium and all its dependencies and will add them to the pr
 Finally, import the project into your preferred development environment.  For those not familiar 
 with this, we've provided an appendix which shows this.
 
-:ref:`Importing a maven project into IntelliJ IDEA. <importing_maven_into_intellij-reference>` 
+:ref:`Importing a maven project into IntelliJ IDEA <importing-maven-into-intellij-reference>`. 
+
 
 C#
 ~~
@@ -135,16 +138,15 @@ resources on Ruby and likely developers in your organization can help you get up
 
 Perl
 ~~~~
-We do not have installation steps for Selenium 2.0 with Perl at this time.  If you have 
-experience with this and would be willing to contribute we'd love to hear from you.  Please post
-a note to the Selenium developers_.
+Perl is not supported in Selenium 2.0 at this time. If you have questions, or would like to assist
+providing this support, please post a note to the Selenium developers_.
 
 .. _developers: http://groups.google.com/group/selenium-developers
 
 PHP
 ~~~
-We do not have installation steps for Selenium 2.0 with PHP at this time.  If you have 
-experience with this and would be willing to contribute we'd love to hear from you.  Please post
+PHP is not supported in Selenium 2.0 at this time. If you have questions, or would like to assist
+providing this support, please  post
 a note to the Selenium developers_.
 
 .. _developers: http://groups.google.com/group/selenium-developers
