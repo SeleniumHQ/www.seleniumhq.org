@@ -3,8 +3,10 @@ Selenium 2.0 and WebDriver
 
 .. _chapter03-reference:
 
-*NOTE: We're currently working on documenting these sections for the new Selenium release.
-The information will be helpful, yet be aware we are also still working on them.*
+*NOTE: We're currently working on documenting these sections.
+We believe the information here is accurate, however be aware we are also still working on this
+chapter.  Additional information will be provided as we go which should make this chapter more
+solid.  In addition, we will be proofreading and reviewing it.*
 
 Selenium 2.0 Features
 ---------------------
@@ -259,6 +261,9 @@ To keep things simple, let's start with the `HtmlUnit Driver`_:
 WebDriver Commands and Operations
 ---------------------------------
 
+Fetching a Page
+~~~~~~~~~~~~~~~
+
 The first thing you're likely to want to do with WebDriver is navigate to a page.
 The normal way to do this is by calling "get":
 
@@ -335,8 +340,8 @@ contents of a text field or textarea:
 
     element.clear();
 
-Filling In Forms
-~~~~~~~~~~~~~~~~
+User Input - Filling In Forms
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 We've already seen how to enter text into a textarea or text field, but what 
 about the other elements? You can "toggle" the state of checkboxes, and you 
@@ -384,18 +389,6 @@ element isn't in a form, then the ``NoSuchElementException`` will be thrown:
 
     element.submit();
 
-Getting Visual Information And Drag And Drop
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-Here's an example of using the Actions class to perform a drag and drop.
-As of rc2 this only works on the Windows platform.
-
-.. code-block:: java
-
-    WebElement element = driver.findElement(By.name("source"));
-    WebElement target = driver.findElement(By.name("target"));
-
-    (new Actions(driver)).dragAndDrop(element, target).perform();
 
 Moving Between Windows and Frames
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -504,14 +497,20 @@ valid for:
         System.out.println(String.format("%s -> %s", loadedCookie.getName(), loadedCookie.getValue()));
     }
 
-Next, Next Steps!
-~~~~~~~~~~~~~~~~~
 
-This has been a high level walkthrough of WebDriver and some of its key 
-capabilities. You may want to look at the
-:ref:`Test Design Considerations chapter <chapter06-reference>` to get
-some ideas about how you can write more maintainable tests by making
-your test code more modular.
+Drag And Drop
+~~~~~~~~~~~~~
+
+Here's an example of using the Actions class to perform a drag and drop.
+As of rc2 this only works on the Windows platform.
+
+.. code-block:: java
+
+    WebElement element = driver.findElement(By.name("source"));
+    WebElement target = driver.findElement(By.name("target"));
+
+    (new Actions(driver)).dragAndDrop(element, target).perform();
+
 
 Driver Specifics and Tradeoffs
 ------------------------------
@@ -898,6 +897,10 @@ to match against these implicit attributes.
 Getting and Using WebDriver
 ---------------------------
 
+*NOTE:  this info is likely out of date.  For installing Selenium-WebDriver see the 
+beginning of this chapter.  We're not removing this section just yet though; we need to
+evaluate it first.*
+
 From a New Download
 ~~~~~~~~~~~~~~~~~~~
 
@@ -965,6 +968,15 @@ following dependency to your pom.xml:
         <version>0.9.7376</version>
     </dependency>
 
+Next Steps
+~~~~~~~~~~
+
+This has been a high level walkthrough of WebDriver and some of its key 
+capabilities. You may want to look at the
+:ref:`Test Design Considerations chapter <chapter06-reference>` to get
+some ideas about how you can write more maintainable tests by making
+your test code more modular.
+
 .. _Roadmap:
 
 Roadmap
@@ -975,8 +987,8 @@ The roadmap for WebDriver
 
 .. _FurtherResources:
 
-Further Resources
------------------
+Selenium WebDriver Wiki
+-----------------------
 
 You can find further resources for WebDriver 
 in `WebDriver's wiki <http://code.google.com/p/selenium/wiki/FurtherResources>`_
