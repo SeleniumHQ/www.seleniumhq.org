@@ -977,15 +977,8 @@ capabilities. You may want to look at the
 some ideas about how you can write more maintainable tests by making
 your test code more modular.
 
-.. _Roadmap:
 
-Roadmap
--------
-
-The roadmap for WebDriver 
-`is available here <http://code.google.com/p/selenium/wiki/RoadMap>`_
-
-.. _FurtherResources:
+.. _SeleniumWebDriverWiki:
 
 Selenium WebDriver Wiki
 -----------------------
