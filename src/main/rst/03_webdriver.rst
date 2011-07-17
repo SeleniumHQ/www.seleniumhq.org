@@ -41,6 +41,7 @@ exectution of your tests.  Finally, if you are using Selenium-backed Web-Driver 
 but with back-end Selenium technology) you will also need the Selenium Server.  
 These topics are described in more detail later in this chapter.
 
+.. _setting-up-webdriver-project:
 
 Setting Up a Selenium-WebDriver Project
 ---------------------------------------
@@ -160,25 +161,20 @@ has written an article on migrating from Selenium 1.0.  We've included this as a
 :ref:`Migrating From Selenium RC to Selenium WebDriver <migrating_to_webdriver-reference>` 
 
 
-The 5 Minute Getting Started Guide
-----------------------------------
+Getting Started With WebDriver
+------------------------------
 WebDriver is a tool for automating testing web applications, and in particular 
 to verify that they work as expected. It aims to provide a friendly API that's
-easy to explore and understand, which will help make your tests easier to 
+easy to explore and understand, easier to use than the Selenium-RC (1.0) API, 
+which will help make your tests easier to 
 read and maintain. It's not tied to any particular test framework, so it can 
 be used equally well in a unit testing or from a plain old "main" method. 
-This "Getting Started" guide introduces you to WebDriver's API and helps 
-get you started becoming familiar with it.
+This section introduces WebDriver's API and helps get you started becoming
+familiar with it.  Start by setting up a WebDriver project if you haven't already.
+This was described in the previous section, :ref:`setting-up-webdriver-project`.
 
-Start by `Downloading <http://code.google.com/p/selenium/downloads/list>`_ 
-the latest binaries and unpack them into a directory. From now on, we'll 
-refer to this directory as ``$WEBDRIVER_HOME``. Now, open your favourite IDE and:
-
- * Start a new project in your favourite IDE/editor
- * Add a reference to all the libraries in ``$WEBDRIVER_HOME``
-
-You can see that WebDriver acts just as a normal library does: it is 
-entirely self-contained, and you usually don't need to remember to start any 
+Once your project is set up, you can see that WebDriver acts just as any normal library:
+it is entirely self-contained, and you usually don't need to remember to start any 
 additional processes or run any installers before using it, as opposed to the proxy server 
 with Selenium-RC. 
 
@@ -210,33 +206,15 @@ Ruby
 .. literalinclude:: /examples/Chapter3/Ruby/Selenium2Example.rb
    :language: ruby
 
-PHP
-~~~
 
-.. literalinclude:: /examples/Chapter3/PHP/Selenium2Example.php
-   :language: php
-
-Perl
-~~~~
-
-.. literalinclude:: /examples/Chapter3/Perl/Selenium2Example.pl
-   :language: perl
-
-
-Hopefully, this example has whet your appetite for more. In the `Next Steps`_
-section you will learn more about how to use WebDriver for things 
+In upcoming sections, you will learn more about how to use WebDriver for things 
 such as navigating forward and backward in your browser's history, and how to 
-test web sites that use frames and windows. `Next Steps`_ also provides a more
-complete discussion of the examples than `The 5 Minute Getting Started Guide`_.
-If you're ready, let's take the `Next Steps`_!
+test web sites that use frames and windows. We also provide a more
+thorough discussions and examples.
 
-.. _`Next Steps`: `Next Steps For Using WebDriver`_
 
-Next Steps For Using WebDriver
-------------------------------
-
-Which Implementation of WebDriver Should I Use?
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Introducing WebDriver's Drivers
+-------------------------------
 
 WebDriver is the name of the key interface against which tests should be 
 written, but there are several implementations. These include:
@@ -278,8 +256,8 @@ To keep things simple, let's start with the `HtmlUnit Driver`_:
     
     WebDriver driver = new HtmlUnitDriver();
 
-Navigating
-~~~~~~~~~~
+WebDriver Commands and Operations
+---------------------------------
 
 The first thing you're likely to want to do with WebDriver is navigate to a page.
 The normal way to do this is by calling "get":
@@ -532,11 +510,11 @@ Next, Next Steps!
 This has been a high level walkthrough of WebDriver and some of its key 
 capabilities. You may want to look at the
 :ref:`Test Design Considerations chapter <chapter06-reference>` to get
-some ideas about how you can reduce the pain of maintaining your tests and how
-to make your code more modular.
+some ideas about how you can write more maintainable tests by making
+your test code more modular.
 
-WebDriver Implementations
--------------------------
+Driver Specifics and Tradeoffs
+------------------------------
 
 HtmlUnit Driver
 ~~~~~~~~~~~~~~~
