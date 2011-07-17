@@ -1,5 +1,5 @@
-Java Client Driver Configuration
---------------------------------
+Selenium 1.0 Java Client Driver Configuration
+---------------------------------------------
 
 In General configuration of Selenium-RC with any java IDE would have following 
 steps:
