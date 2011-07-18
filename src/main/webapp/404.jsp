@@ -76,6 +76,7 @@
             <ul>
                 <li><a href="/projects/ide/">Selenium IDE</a></li>
                 <li><a href="/projects/remote-control/">Selenium Remote Control</a></li>
+                <li><a href="/projects/webdriver/">Selenium WebDriver</a></li>
                 <li><a href="/projects/grid/">Selenium Grid</a></li>
             </ul>
         </li>
