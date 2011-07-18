@@ -42,7 +42,7 @@ into a text box.
 Accessors/Assertions
 --------------------
 All \ *get*\Foo and \ *is*\Foo methods on the Selenium prototype are added as accessors 
-(storeFoo). For each accessor there is an assertFoo, verifyFooa nd waitForFoo 
+(storeFoo). For each accessor there is an assertFoo, verifyFoo and waitForFoo 
 registered. An assert method can take up to 2 parameters, which will be 
 passed the second and third column values in the test. You can also define 
 your own assertions literally as simple "assert" methods, which will also 
