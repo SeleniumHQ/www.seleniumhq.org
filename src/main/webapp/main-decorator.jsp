@@ -122,7 +122,7 @@ pageTracker._trackPageview();
         <img alt="Selenium Logo" src="/images/big-logo.png"/>
 
         <p>
-            <strong>Selenium is a suite of tools</strong> to automate web app testing across many platforms.
+            <strong>Selenium is a suite of tools</strong> to automate web browsers across many platforms.
         </p>
 
         <p>Selenium...</p>
