@@ -77,11 +77,6 @@
                 <li><a href="/projects/ide/">Selenium IDE</a></li>
                 <li><a href="/projects/remote-control/">Selenium Remote Control</a></li>
                 <li><a href="http://selenium-grid.seleniumhq.org/">Selenium Grid</a></li>
-                <li><a href="/projects/core/">Selenium Core</a></li>
-                <li><a href="/projects/on-rails/">Selenium on Rails</a></li>
-                <li><a href="/projects/ruby/">Selenium on Ruby</a></li>
-                <li><a href="http://cubictest.seleniumhq.org">CubicTest (for Eclipse)</a></li>
-                <li><a href="/projects/bromine/">Bromine</a></li>
             </ul>
         </li>
         <li><a href="/docs/">Documentation</a>
