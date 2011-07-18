@@ -24,11 +24,6 @@
 </head>
 
 <body class="homepage">
-  <div id="conf-banner">
-    <a href="http://www.seleniumconf.com/">
-      <img src="http://www.seleniumconf.com/wp-content/uploads/2010/12/banner_main.png" width="600" height="103" alt="The Selenium Conference: April 4-6">
-    </a>
-  </div>
   <h2>Get started with Selenium!</h2>
 
   <div class="bigMenu">
