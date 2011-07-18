@@ -19,7 +19,7 @@
   <meta name="generator" content=
   "HTML Tidy (version num removed), see www.w3.org" />
 
-  <title>Selenium web application testing system</title>
+  <title>Selenium - Web Browser Automation</title>
   <link rel="alternate" type="application/rss+xml" title="Selenium Blog Posts Feed" href="http://feeds.feedburner.com/Selenium" />
 </head>
 
