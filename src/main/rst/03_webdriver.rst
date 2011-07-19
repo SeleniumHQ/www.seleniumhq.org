@@ -75,11 +75,11 @@ your project.
                 <artifactId>MySel20Proj</artifactId>
                 <version>1.0</version>
                 <dependencies>
-                <dependency>
+                    <dependency>
                         <groupId>org.seleniumhq.selenium</groupId>
-            <artifactId>selenium-java</artifactId>
-            <version>2.0.0</version>
-                </dependency>
+                        <artifactId>selenium-java</artifactId>
+                        <version>2.0.0</version>
+                    </dependency>
                 </dependencies>
         </project>
 
@@ -89,8 +89,8 @@ The key component adding Selenium and its dependencies are the lines
 
                 <dependency>
                         <groupId>org.seleniumhq.selenium</groupId>
-            <artifactId>selenium-java</artifactId>
-            <version>2.0.0</version>
+                        <artifactId>selenium-java</artifactId>
+                        <version>2.0.0</version>
                 </dependency>
 
 Now, from a command-line, CD into the project directory and run maven as follows.
