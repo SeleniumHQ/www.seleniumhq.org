@@ -17,7 +17,7 @@ WebDriverWait in combination with ExpectedCondition is one way this can be accom
 .. literalinclude:: /examples/Chapter4/Java/ExplicitWaitExample01.java
    :language: java
    
-This waits up to 10 seconds before throwing an Element not found Exception or if it finds the element will return it in 0 - 10 seconds.
+This waits up to 10 seconds before throwing a TimeoutException or if it finds the element will return it in 0 - 10 seconds.
 WebDriverWait by default calls the ExpectedCondition every 500 milliseconds until it returns successfully. A successful return is
 for ExpectedCondition type is Boolean return true or not null return value for all other ExpectedCondition types.
 
@@ -44,7 +44,7 @@ HtmlUnit isn't confined to just Java.  Selenium makes accessing HtmlUnit easy fr
 is the same example in C#. Note that you'll need to run the remote WebDriver server
 to use HtmlUnit from C#
 
-.. code-block:: c#
+.. code-block:: csharp
 
     using OpenQA.Selenium;
     using OpenQA.Selenium.Remote;
