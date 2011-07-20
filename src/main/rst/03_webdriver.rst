@@ -107,15 +107,17 @@ with this, we've provided an appendix which shows this.
 
 C#
 ~~
-We do not have installation steps in the user's guide for Selenium 2.0 with C# yet.  For the
-moment, we recommend searching the internet, there are most likely blogs on this topic.
+Selenium 2.0 is distributed as a set of unsigned dlls, including all
+dependencies.  To include Selenium in your project, simply download the latest
+selenium-dotnet zip file from https://code.google.com/p/selenium/downloads/list.
+If you are using Windows Vista or above, you should unblock the zip file before
+unzipping it: Right click on the zip file, click "Properties", click "Unblock"
+and click "OK".
 
-If you have
-experience with C# and Selenium and would be willing to contribute we'd love to hear from you.
-Please post a note to the Selenium developers_.
+Unzip the contents of the zip file, and add a reference to each of the unzipped
+dlls to your project in Visual Studio (or your IDE of choice).
 
-.. _developers: http://groups.google.com/group/selenium-developers
-
+Note that we do not have an official NuGet package at this time.
 
 Python
 ~~~~~~
