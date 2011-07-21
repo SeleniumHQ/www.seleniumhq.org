@@ -971,7 +971,7 @@ Test Reports in Java
 - If Selenium Test cases are developed using JUnit then JUnit Report can be used
   to generate test reports. Refer to `JUnit Report`_ for specifics.
 
-.. _`JUnit Report`: http://ant.apache.org/manual/OptionalTasks/junitreport.html
+.. _`JUnit Report`: http://ant.apache.org/manual/Tasks/junitreport.html
 
 - If Selenium Test cases are developed using TestNG then no external task 
   is required to generate test reports. The TestNG framework generates an 
@@ -984,7 +984,7 @@ Test Reports in Java
   ReportNG provides a simple, colour-coded view of the test results. 
   See `ReportNG`_ for more. 
   
-.. _`ReportNG`: https://reportng.dev.java.net/  
+.. _`ReportNG`: http://reportng.uncommons.org/  
 
 - Also, for a very nice summary report try using TestNG-xslt. 
   A TestNG-xslt Report looks like this.
