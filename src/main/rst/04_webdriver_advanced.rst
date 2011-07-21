@@ -19,6 +19,11 @@ Java
 .. literalinclude:: /examples/Chapter4/Java/ExplicitWaitExample01.java
    :language: java
 
+C#
+
+.. literalinclude:: /examples/Chapter4/CSharp/ExplicitWaitExample01.cs
+   :language: csharp
+
 Python 
 
 .. literalinclude:: /examples/Chapter4/python/ExplicitWaitExample01.py
@@ -44,6 +49,11 @@ Java
 
 .. literalinclude:: /examples/Chapter4/Java/ImplicitWaitExample01.java
    :language: java
+
+C# 
+
+.. literalinclude:: /examples/Chapter4/CSharp/ImplicitWaitExample01.cs
+   :language: csharp
 
 Python
 
