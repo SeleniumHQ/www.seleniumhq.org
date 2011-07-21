@@ -6,7 +6,7 @@ driver.get "http://somedomain/url_that_delays_loading"
 
 wait = Selenium::WebDriver::Wait.new(:timeout => 10) # seconds
 begin
-    element = wait.until { driver.find_element(:id => "some-dynamic-element") }
+  element = wait.until { driver.find_element(:id => "some-dynamic-element") }
 ensure
-    driver.quit
+  driver.quit
 end

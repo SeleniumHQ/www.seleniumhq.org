@@ -6,7 +6,7 @@ driver.manage.timeouts.implicit_wait = 10 # seconds
 
 driver.get "http://somedomain/url_that_delays_loading"
 begin
-    element = driver.find_element(:id => "some-dynamic-element")
+  element = driver.find_element(:id => "some-dynamic-element")
 ensure
-    driver.quit
+  driver.quit
 end
