@@ -7,10 +7,11 @@ class WebDriverWait:
     def __init__(self, driver, timeout):
         self._driver = driver
         self._timeout = timeout
+        if timeout == 0:
+        	self._timeout = 0.5
 
     def until(self, method):
-        start_time = time.time()
-        while (time.time() - start_time) < self._timeout:
+        for i in xrange(int(2 * self._timeout)):
             try:
                 value = method(self._driver)
                 print value
