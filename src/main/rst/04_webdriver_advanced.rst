@@ -14,9 +14,16 @@ The worst case of this is Thread.sleep(), which sets the condition to an exact t
 There are some convenience methods provided that help you write code that will wait only as long as required.
 WebDriverWait in combination with ExpectedCondition is one way this can be accomplished.
 
+Java 
+
 .. literalinclude:: /examples/Chapter4/Java/ExplicitWaitExample01.java
    :language: java
-   
+
+Python 
+
+.. literalinclude:: /examples/Chapter4/python/ExplicitWaitExample01.py
+   :language: python
+
 This waits up to 10 seconds before throwing a TimeoutException or if it finds the element will return it in 0 - 10 seconds.
 WebDriverWait by default calls the ExpectedCondition every 500 milliseconds until it returns successfully. A successful return is
 for ExpectedCondition type is Boolean return true or not null return value for all other ExpectedCondition types.
@@ -28,9 +35,15 @@ Implicit Waits
 An implicit wait is to tell WebDriver to poll the DOM for a certain amount of time when trying to find an element or elements if they are not immediately available.
 The default setting is 0. Once set, the implicit wait is set for the life of the WebDriver object instance.
 
+Java 
+
 .. literalinclude:: /examples/Chapter4/Java/ImplicitWaitExample01.java
    :language: java
 
+Python
+
+.. literalinclude:: /examples/Chapter4/python/ImplicitWaitExample01.py
+   :language: python
 
 RemoteWebDriver
 ---------------
