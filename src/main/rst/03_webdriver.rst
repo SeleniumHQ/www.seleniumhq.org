@@ -312,7 +312,7 @@ thrown.
 
 WebDriver has an "Object-based" API; we represent all types of elements using
 the same interface:
-`Web Element <http://selenium.googlecode.com/svn/webdriver/javadoc/org/openqa/selenium/WebElement.html>`_.
+`Web Element <http://selenium.googlecode.com/svn/trunk/docs/api/java/org/openqa/selenium/WebElement.html>`_.
 This means that although you may see a lot of possible methods you could invoke
 when you hit your IDE's auto-complete key combination, not all of them will
 make sense or be valid. Don't worry! WebDriver will attempt to do the Right
