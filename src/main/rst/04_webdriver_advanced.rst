@@ -24,6 +24,11 @@ Python
 .. literalinclude:: /examples/Chapter4/python/ExplicitWaitExample01.py
    :language: python
 
+Ruby
+
+.. literalinclude:: /examples/Chapter4/ruby/ExplicitWaitExample01.rb
+   :language: ruby
+
 This waits up to 10 seconds before throwing a TimeoutException or if it finds the element will return it in 0 - 10 seconds.
 WebDriverWait by default calls the ExpectedCondition every 500 milliseconds until it returns successfully. A successful return is
 for ExpectedCondition type is Boolean return true or not null return value for all other ExpectedCondition types.
@@ -44,6 +49,11 @@ Python
 
 .. literalinclude:: /examples/Chapter4/python/ImplicitWaitExample01.py
    :language: python
+
+Ruby
+
+.. literalinclude:: /examples/Chapter4/ruby/ImplicitWaitExample01.rb
+   :language: ruby
 
 RemoteWebDriver
 ---------------
