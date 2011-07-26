@@ -125,7 +125,9 @@ If you are using Python for test automation then you probably are already famili
 in Python.  To add Selenium to your Python environment run the following command from
 a command-line.
 
-.. literalinclude::pip install selenium
+.. code-block:: bash
+
+    pip install selenium
 
 Teaching Python development itself is beyond the scope of this document, however there are many
 resources on Python and likely developers in your organization can help you get up to speed.
@@ -136,7 +138,9 @@ If you are using Ruby for test automation then you probably are already familiar
 in Ruby.  To add Selenium to your Ruby environment run the following command from
 a command-line.
 
-.. literalinclude::gem install selenium-webdriver
+.. code-block:: bash
+
+    gem install selenium-webdriver
 
 Teaching Ruby development itself is beyond the scope of this document, however there are many
 resources on Ruby and likely developers in your organization can help you get up to speed.
