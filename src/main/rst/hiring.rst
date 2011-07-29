@@ -40,14 +40,14 @@ applications prior to deployment.
 The candidate may not qualify for Entry level Selenium skills if they have just used Selenium-IDE 
 sporadically to aid form filling as they manually test.
 
-If you think they qualify for entry level selenium, they should be able to use it in from of you to
+If you think they qualify for entry level selenium, they should be able to use it in front of you to
 test a site of your choosing.
 
 One the advanced side, they may be running their suites automatically from Continuous Integration 
 tools, and have a high level of confidence and ability to move forward with confidence.  Perhaps they
 are using Selenium-RC to execute whole sets of 'html' Selenium tests.
 
-(There is al least one friend of the Selenium project that has really pushed this space, and we're not
+(There is at least one friend of the Selenium project that has really pushed this space, and we're not
 wanting to cast that dev team as beginners with Selenium here)
 
 The nature of HTML, JavaScript and CSS should be understood to a rudimentary degree.
