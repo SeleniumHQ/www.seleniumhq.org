@@ -95,7 +95,9 @@ The key component adding Selenium and its dependencies are the lines
 
 Now, from a command-line, CD into the project directory and run maven as follows.
 
-.. literalinclude::mvn clean install
+.. code-block:: bash
+
+		mvn clean install
 
 This will download Selenium and all its dependencies and will add them to the project.
 
