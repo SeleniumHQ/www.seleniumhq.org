@@ -614,7 +614,7 @@ Property                       What it means
 =============================  ==============================================================================================================
 webdriver.firefox.bin          The location of the binary used to control Firefox.
 webdriver.firefox.profile      The name of the profile to use when starting Firefox. This defaults to WebDriver creating an anonymous profile
-webdriver.reap_profile         Should be "true" if temporary files and profiles should not be deleted
+webdriver.reap_profile         Should be ``false`` if temporary files and profiles should not be deleted
 =============================  ==============================================================================================================
 
 Normally the Firefox binary is assumed to be in the default location for your
@@ -719,7 +719,7 @@ command line flag) are used by the `Chrome Driver`_:
 Property                What it means
 ======================  ======================================================================
 webdriver.chrome.bin    The location of the binary used to control Chrome.
-webdriver.reap_profile  Should be "true" if temporary files and profiles should not be deleted
+webdriver.reap_profile  Should be ``false`` if temporary files and profiles should not be deleted
 ======================  ======================================================================
 
 Normally the Chrome binary is assumed to be in the default location for your
