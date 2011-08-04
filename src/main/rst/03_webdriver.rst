@@ -78,7 +78,7 @@ your project.
                     <dependency>
                         <groupId>org.seleniumhq.selenium</groupId>
                         <artifactId>selenium-java</artifactId>
-                        <version>2.3.0</version>
+                        <version>2.3.1</version>
                     </dependency>
                 </dependencies>
         </project>
@@ -90,7 +90,7 @@ The key component adding Selenium and its dependencies are the lines
                 <dependency>
                         <groupId>org.seleniumhq.selenium</groupId>
                         <artifactId>selenium-java</artifactId>
-                        <version>2.3.0</version>
+                        <version>2.3.1</version>
                 </dependency>
 
 Now, from a command-line, CD into the project directory and run maven as follows.
