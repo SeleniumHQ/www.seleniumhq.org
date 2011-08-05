@@ -27,6 +27,7 @@
     }
     #release_announcements ul { float: left; }
     #release_announcements li { width:250px; }
+    ul.thirdPartyBinding { list-style-type: none; padding: 0; }
   </style>
 </head>
 
@@ -142,6 +143,12 @@
       </tr>
     </tbody>
   </table>
+  <h4>Third Party Language Bindings NOT SUPPORTED/DEVELOPED by seleniumhq</h4>
+  <ul class="thirdPartyBinding">
+    <li><a href="https://github.com/aivaturi/Selenium-Remote-Driver">Perl</a> by Gordon Child</li>
+    <li><a href="https://github.com/chibimagic/WebDriver-PHP/">PHP</a> by Chibimagic (real name unknown?)</li>
+    <li><a href="http://code.google.com/p/php-webdriver-bindings/">PHP</a> by Lukasz Kolczynski <!-- appologies for not being able to do the UTF-8 proper encoding of your name --></li>
+  </ul>
 
   <h3>Selenium Grid</h3>
   <p>Scripts running too slow or want to run them against multiple browser types and versions? Either download the latest version of Selenium Server (from above) or download the old version of <a href="http://selenium-grid.seleniumhq.org/">Selenium Grid</a>. Both can help distribute script execution for either parallelization or browser variation.</p>
