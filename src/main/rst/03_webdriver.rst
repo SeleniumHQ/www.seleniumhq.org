@@ -592,55 +592,10 @@ Cons
 
 * Slower than the `HtmlUnit Driver`_
 
-Before Going Any Further
-++++++++++++++++++++++++
+Info
+++++
 
-The `Firefox Driver`_ contains everything it needs in the JAR file. If you're just
-interested in using this driver, then all you need to do is put the
-``webdriver-firefox.jar`` or ``webdriver-all.jar`` on your ``CLASSPATH``, and
-WebDriver will do everything else for you.
-
-If you want to dig deeper, though, carry on reading!
-
-Important System Properties
-+++++++++++++++++++++++++++
-
-The following system properties (read using ``System.getProperty()`` and set
-using ``System.setProperty()`` in Java code or the ``-DpropertyName=value``
-command line flag) are used by the `Firefox Driver`_:
-
-=============================  ==============================================================================================================
-Property                       What it means
-=============================  ==============================================================================================================
-webdriver.firefox.bin          The location of the binary used to control Firefox.
-webdriver.firefox.profile      The name of the profile to use when starting Firefox. This defaults to WebDriver creating an anonymous profile
-webdriver.reap_profile         Should be ``false`` if temporary files and profiles should not be deleted
-=============================  ==============================================================================================================
-
-Normally the Firefox binary is assumed to be in the default location for your
-particular operating system:
-
-.. _FirefoxDefaultLocations:
-
-=============  ===================================================
-OS             Expected Location of Firefox
-=============  ===================================================
-Linux          firefox (found using "which")
-Mac            /Applications/Firefox.app/Contents/MacOS/firefox
-Windows XP     %PROGRAMFILES%\\Mozilla Firefox\\firefox.exe
-Windows Vista  \\Program Files (x86)\\Mozilla Firefox\\firefox.exe
-=============  ===================================================
-
-By default, the Firefox driver creates an anonymous profile
-
-Installing a Downloaded Binary
-++++++++++++++++++++++++++++++
-
-The "wedriver-all.zip" which may be downloaded from the website, contains all
-the dependencies (including the common library) required to run the
-`Firefox Driver`_. In order to use it:
-
-* Copy all the "jar" files on to your ``CLASSPATH``.
+See the `wiki page <http://code.google.com/p/selenium/wiki/FirefoxDriver>`_ for the most up to date info.
 
 Internet Explorer Driver
 ~~~~~~~~~~~~~~~~~~~~~~~~
@@ -659,26 +614,20 @@ Cons
 * Obviously the `Internet Explorer Driver`_ will only work on Windows!
 * Comparatively slow (though still pretty snappy :)
 
-Installing
-++++++++++
+Info
+++++
 
-Simply add ``webdriver-all.jar`` to your ``CLASSPATH``. You do not need to run
-an installer before using the `Internet Explorer Driver`_, though some configuration
-is required.
+See the `wiki page <http://code.google.com/p/selenium/wiki/InternetExplorerDriver>`_ for the most up to date info.
+Please take special not of the Required Configuration section.
 
-Required Configuration
-++++++++++++++++++++++
-
-Add every site you intend to visit to your "Trusted Sites" If you do not do
-this, then you will not be able to interact with the page.
 
 Chrome Driver
 ~~~~~~~~~~~~~
 
-See below for instructions on how to install the `Chrome Driver`_.
-
-Note that `Chrome Driver`_ is one of the newer drivers. Please report any problems
-through the `issue tracker <http://code.google.com/p/selenium/issues/list>`_.
+Chrome Driver is maintained / supported by the `Chromium <http://code.google.com/p/chromium/>`_ 
+project iteslf.
+WebDriver is now inside of the Chrome browser iteslf. Please 
+`see our wiki <http://code.google.com/p/selenium/wiki/ChromeDriver>`_ for the most up to date info.
 
 Pros
 ++++
@@ -698,48 +647,12 @@ Cons
          the Wiki or issue tracker. Can we add a link to all issues raised
          against ChromeDriver?
 
-Before Going Any Further
-++++++++++++++++++++++++
+Getting running with Chrome Driver
+++++++++++++++++++++++++++++++++++
 
-The `Chrome Driver`_ contains everything it needs in the JAR file. If you're just
-interested in using this driver, then all you need to do is put
-``webdriver-all.jar`` on your ``CLASSPATH``, and WebDriver will do everything
-else for you.
-
-The `Chrome Driver_` works with Google Chrome version 4.0 and above.
-
-Important System Properties
-+++++++++++++++++++++++++++
-
-The following system properties (read using ``System.getProperty()`` and set
-using ``System.setProperty()`` in Java code or the ``-DpropertyName=value``
-command line flag) are used by the `Chrome Driver`_:
-
-======================  ======================================================================
-Property                What it means
-======================  ======================================================================
-webdriver.chrome.bin    The location of the binary used to control Chrome.
-webdriver.reap_profile  Should be ``false`` if temporary files and profiles should not be deleted
-======================  ======================================================================
-
-Normally the Chrome binary is assumed to be in the default location for your
-particular operating system:
-
-=============  =================================================================================================
-OS             Expected Location of Chrome
-=============  =================================================================================================
-Linux          /usr/bin/google-chrome
-Mac            /Applications/Google Chrome.app/Contents/MacOS/Google\ Chrome or /User/:username/:as_to_the_left
-Windows XP     %HOMEPATH%\\Local Settings\\Application Data\\Google\\Chrome\\Application\\chrome.exe
-Windows Vista  C:\\User\s\%USERNAME%\\AppData\\Local\\Google\\Chrome\\Application\\chrome.exe
-=============  =================================================================================================
-
-Installing a Downloaded Binary
-++++++++++++++++++++++++++++++
-
-The "wedriver-all.zip" which may be downloaded from the website, contains all
-the dependencies required to run the `Chrome Driver`_. In order to use it, copy all
-the "jar" files on to your ``CLASSPATH``.
+Download the `Chrome Driver executable <http://code.google.com/p/chromium/downloads/list>`_
+and follow the other instructions on the 
+`wiki page <http://code.google.com/p/selenium/wiki/ChromeDriver>`_
 
 .. _SeleniumRCEmulation:
 
