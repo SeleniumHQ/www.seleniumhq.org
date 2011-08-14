@@ -599,6 +599,56 @@ Cons
 
 * Slower than the `HtmlUnit Driver`_
 
+
+Changing the User Agent
++++++++++++++++++++++++
+
+This is easy with the `Firefox Driver`_:
+
+.. code-block:: java
+
+    FirefoxProfile profile = new FirefoxProfile();
+    profile.addAdditionalPreference("general.useragent.override", "some UA string");
+    WebDriver driver = new FirefoxDriver(profile);
+
+
+Mofifying the Firefox Profile
++++++++++++++++++++++++++++++
+
+Suppose that you wanted to modify the user agent string (as above), but you've
+got a tricked out Firefox profile that contains dozens of useful extensions.
+There are two ways to obtain this profile. Assuming that the profile has been
+created using Firefox's profile manager (``firefox -ProfileManager``):
+
+.. code-block:: java
+
+    ProfileIni allProfiles = new ProfilesIni();
+    FirefoxProfile profile = allProfiles.getProfile("WebDriver");
+    profile.setPreferences("foo.bar", 23);
+    WebDriver driver = new FirefoxDriver(profile);
+
+Alternatively, if the profile isn't already registered with Firefox:
+
+.. code-block:: java
+
+    File profileDir = new File("path/to/top/level/of/profile");
+    FirefoxProfile profile = new FirefoxProfile(profileDir);
+    profile.addAdditionalPreferences(extraPrefs);
+    WebDriver driver = new FirefoxDriver(profile);
+    Enabling features that might not be wise to use in Firefox
+
+As we develop features in the `Firefox Driver`_, we expose the ability to use them.
+For example, until we feel native events are stable on Firefox for Linux, they
+are disabled by default. To enable them:
+
+.. code-block:: java
+
+    FirefoxProfile profile = new FirefoxProfile();
+    profile.setEnableNativeEvents(true);
+    WebDriver driver = new FirefoxDriver(profile);
+
+
+
 Info
 ++++
 
@@ -753,52 +803,6 @@ sandbox.
 
 Tips and Tricks
 ---------------
-
-Changing the user agent
-~~~~~~~~~~~~~~~~~~~~~~~
-
-This is easy with the `Firefox Driver`_:
-
-.. code-block:: java
-
-    FirefoxProfile profile = new FirefoxProfile();
-    profile.addAdditionalPreference("general.useragent.override", "some UA string");
-    WebDriver driver = new FirefoxDriver(profile);
-
-Tweaking an existing Firefox profile
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-Suppose that you wanted to modify the user agent string (as above), but you've
-got a tricked out Firefox profile that contains dozens of useful extensions.
-There are two ways to obtain this profile. Assuming that the profile has been
-created using Firefox's profile manager (``firefox -ProfileManager``):
-
-.. code-block:: java
-
-    ProfileIni allProfiles = new ProfilesIni();
-    FirefoxProfile profile = allProfiles.getProfile("WebDriver");
-    profile.setPreferences("foo.bar", 23);
-    WebDriver driver = new FirefoxDriver(profile);
-
-Alternatively, if the profile isn't already registered with Firefox:
-
-.. code-block:: java
-
-    File profileDir = new File("path/to/top/level/of/profile");
-    FirefoxProfile profile = new FirefoxProfile(profileDir);
-    profile.addAdditionalPreferences(extraPrefs);
-    WebDriver driver = new FirefoxDriver(profile);
-    Enabling features that might not be wise to use in Firefox
-
-As we develop features in the `Firefox Driver`_, we expose the ability to use them.
-For example, until we feel native events are stable on Firefox for Linux, they
-are disabled by default. To enable them:
-
-.. code-block:: java
-
-    FirefoxProfile profile = new FirefoxProfile();
-    profile.setEnableNativeEvents(true);
-    WebDriver driver = new FirefoxDriver(profile);
 
 How XPATH Works in WebDriver
 ----------------------------
