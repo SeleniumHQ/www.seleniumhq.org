@@ -654,6 +654,15 @@ Cons
          the Wiki or issue tracker. Can we add a link to all issues raised
          against ChromeDriver?
 
+Getting running with Chrome Driver
+++++++++++++++++++++++++++++++++++
+
+Download the `Chrome Driver executable <http://code.google.com/p/chromium/downloads/list>`_
+and follow the other instructions on the 
+`wiki page <http://code.google.com/p/selenium/wiki/ChromeDriver>`_
+
+.. _SeleniumRCEmulation:
+
 Opera Driver
 ~~~~~~~~~~~~~
 
@@ -669,20 +678,16 @@ Android Driver
 
 Sorry, we haven't developed this section yet.
 
-Getting running with Chrome Driver
-++++++++++++++++++++++++++++++++++
+WebDriver-Backed Selenium-RC
+----------------------------
 
-Download the `Chrome Driver executable <http://code.google.com/p/chromium/downloads/list>`_
-and follow the other instructions on the 
-`wiki page <http://code.google.com/p/selenium/wiki/ChromeDriver>`_
+The Java version of WebDriver provides an implementation of the Selenium-RC API.  These means that
+you can use the underlying WebDriver technology using the Selenium-RC API.  This is primarily 
+provided for backwards compatablity.  It allows those who have existing test suites using the 
+Selenium-RC API to use WebDriver under the covers.  It's provided to help ease the migration path
+to Selenium-WebDriver.  Also, this allows one to use both APIs, side-by-side, in the same test code.
 
-.. _SeleniumRCEmulation:
-
-Emulating Selenium RC
----------------------
-
-The Java version of WebDriver provides an implementation of the Selenium RC API.
-It is used like so:
+Selenium-WebDriver is used like this:
 
 .. code-block:: java
 
@@ -837,89 +842,6 @@ not require the "type" attribute because it defaults to "text". The rule of
 thumb when using xpath in WebDriver is that you **should not** expect to be able
 to match against these implicit attributes.
 
-Getting and Using WebDriver
----------------------------
-
-*NOTE:  this info is likely out of date.  For installing Selenium-WebDriver see the
-beginning of this chapter.  We're not removing this section just yet though; we need to
-evaluate it first.*
-
-From a New Download
-~~~~~~~~~~~~~~~~~~~
-
-Unpack the "webdriver-all.zip" you can download from the site, and add all the
-JARs to your ``CLASSPATH``. This will give you the `Chrome Driver`_, `Firefox Driver`_,
-`HtmlUnit Driver`_, `Internet Explorer Driver`_, Remote Web Driver client and
-the support packages. The support packages give you useful helper classes, such
-as the LiftStyleApi and the PageFactory.
-
-With Maven
-~~~~~~~~~~
-
-If you want to use the `HtmlUnit Driver`_, add the following dependency to your
-pom.xml:
-
-.. code-block:: xml
-
-    <dependency>
-        <groupId>org.seleniumhq.webdriver</groupId>
-        <artifactId>webdriver-htmlunit</artifactId>
-        <version>0.9.7376</version>
-    </dependency>
-
-If you want to use the `Firefox Driver`_, you need to add the following dependency
-to your pom.xml:
-
-.. code-block:: xml
-
-    <dependency>
-        <groupId>org.seleniumhq.webdriver</groupId>
-        <artifactId>webdriver-firefox</artifactId>
-        <version>0.9.7376</version>
-    </dependency>
-
-If you want to use the `Internet Explorer Driver`_, you need to add the following
-dependency to your pom.xml:
-
-.. code-block:: xml
-
-    <dependency>
-        <groupId>org.seleniumhq.webdriver</groupId>
-        <artifactId>webdriver-ie</artifactId>
-        <version>0.9.7376</version>
-    </dependency>
-
-If you want to use the `Chrome Driver`_, you need to add the following dependency
-to your pom.xml:
-
-.. code-block:: xml
-
-    <dependency>
-        <groupId>org.seleniumhq.webdriver</groupId>
-        <artifactId>webdriver-chrome</artifactId>
-        <version>0.9.7376</version>
-    </dependency>
-
-Finally, if you like to use any of our support classes, you should add the
-following dependency to your pom.xml:
-
-.. code-block:: xml
-
-    <dependency>
-        <groupId>org.seleniumhq.webdriver</groupId>
-        <artifactId>webdriver-support</artifactId>
-        <version>0.9.7376</version>
-    </dependency>
-
-Next Steps
-~~~~~~~~~~
-
-This has been a high level walkthrough of WebDriver and some of its key
-capabilities. You may want to look at the
-:ref:`Test Design Considerations chapter <chapter06-reference>` to get
-some ideas about how you can write more maintainable tests by making
-your test code more modular.
-
 
 .. _SeleniumWebDriverWiki:
 
@@ -928,3 +850,19 @@ Selenium WebDriver Wiki
 
 You can find further resources for WebDriver
 in `WebDriver's wiki <http://code.google.com/p/selenium/wiki/FurtherResources>`_
+
+
+Next Steps
+----------
+
+This chapter has simply been a high level walkthrough of WebDriver and some of its key
+capabilities.  Once getting familiar with the Selenium-WebDriver API you will then want to learn
+how to build test suites for maintainability, extensibility, and reduced fragility when features of
+the AUT frequently change.  The approach most Selenium experts are now recommending is to design
+your test code using the Page Object Design Pattern along with possibly a Page Factor.  
+Selenium-WebDriver provides support for this by supplying a PageFactory class.  This is presented,
+along with other advanced topics, in the next chapter.  Also, for high-level description of this
+technique, you may want to look at the
+:ref:`Test Design Considerations chapter <chapter06-reference>`.  Both of these
+chapters present techniques for writing more maintainable tests by making your test code more
+modular.
