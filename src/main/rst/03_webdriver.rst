@@ -355,6 +355,55 @@ contents of a text field or textarea:
 
     element.clear();
 
+
+Locating UI Elements (WebElements)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+*Note:  This section still needs to be developed.*  
+
+Locating elements in WebDriver is done using the "By" class.  This class implements all location
+strategies used by WebDriver.
+
+Using XPATH Statements
+++++++++++++++++++++++
+
+At a high level, WebDriver uses a browser's native XPath capabilities wherever
+possible. On those browsers that don't have native XPath support, we have
+provided our own implementation. This can lead to some unexpected behaviour
+unless you are aware of the differences in the various xpath engines.
+
+===========================  =======================  ==========================  ====================
+Driver                       Tag and Attribute Name   Attribute Values            Native XPath Support
+===========================  =======================  ==========================  ====================
+`HtmlUnit Driver`_           Lower-cased              As they appear in the HTML  Yes
+`Internet Explorer Driver`_  Lower-cased              As they appear in the HTML  No
+`Firefox Driver`_            Case insensitive         As they appear in the HTML  Yes
+===========================  =======================  ==========================  ====================
+
+This is a little abstract, so for the following piece of HTML:
+
+.. code-block:: html
+
+    <input type="text" name="example" />
+    <INPUT type="text" name="other" />
+
+The following number of matches will be found
+
+=================== ====================== ====================== =============================
+ XPath expression   `HtmlUnit Driver`_     `Firefox Driver`_      `Internet Explorer Driver`_
+=================== ====================== ====================== =============================
+  //input            1 ("example")          2                      2
+
+  //INPUT            0                      2                      0
+=================== ====================== ====================== =============================
+
+Sometimes HTML elements do not need attributes to be explicitly declared
+because they will default to known values. For example, the "input" tag does
+not require the "type" attribute because it defaults to "text". The rule of
+thumb when using xpath in WebDriver is that you **should not** expect to be able
+to match against these implicit attributes.
+
+
 User Input - Filling In Forms
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -707,6 +756,10 @@ Cons
 Getting running with Chrome Driver
 ++++++++++++++++++++++++++++++++++
 
+*Note:  this section is likely out of date.  If you used the commands at the beginning of this
+chapter for setting up a Selenium 2 project you should already have the Chrome Driver along with
+all the other drivers.*
+
 Download the `Chrome Driver executable <http://code.google.com/p/chromium/downloads/list>`_
 and follow the other instructions on the 
 `wiki page <http://code.google.com/p/selenium/wiki/ChromeDriver>`_
@@ -799,52 +852,6 @@ findElements doesn't work as expected. Also, because we're using Selenium Core
 for the heavy lifting of driving the browser, you are limited by the JavaScript
 sandbox.
 
-.. _TipsAndTricks:
-
-Tips and Tricks
----------------
-
-How XPATH Works in WebDriver
-----------------------------
-
-At a high level, WebDriver uses a browser's native XPath capabilities wherever
-possible. On those browsers that don't have native XPath support, we have
-provided our own implementation. This can lead to some unexpected behaviour
-unless you are aware of the differences in the various xpath engines.
-
-===========================  =======================  ==========================  ====================
-Driver                       Tag and Attribute Name   Attribute Values            Native XPath Support
-===========================  =======================  ==========================  ====================
-`HtmlUnit Driver`_           Lower-cased              As they appear in the HTML  Yes
-`Internet Explorer Driver`_  Lower-cased              As they appear in the HTML  No
-`Firefox Driver`_            Case insensitive         As they appear in the HTML  Yes
-===========================  =======================  ==========================  ====================
-
-This is a little abstract, so for the following piece of HTML:
-
-.. code-block:: html
-
-    <input type="text" name="example" />
-    <INPUT type="text" name="other" />
-
-The following number of matches will be found
-
-=================== ====================== ====================== =============================
- XPath expression   `HtmlUnit Driver`_     `Firefox Driver`_      `Internet Explorer Driver`_
-=================== ====================== ====================== =============================
-  //input            1 ("example")          2                      2
-
-  //INPUT            0                      2                      0
-=================== ====================== ====================== =============================
-
-Matching Implicit Attributes
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-Sometimes HTML elements do not need attributes to be explicitly declared
-because they will default to known values. For example, the "input" tag does
-not require the "type" attribute because it defaults to "text". The rule of
-thumb when using xpath in WebDriver is that you **should not** expect to be able
-to match against these implicit attributes.
 
 
 .. _SeleniumWebDriverWiki:
