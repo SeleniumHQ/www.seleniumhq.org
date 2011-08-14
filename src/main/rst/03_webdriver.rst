@@ -93,6 +93,10 @@ The key component adding Selenium and its dependencies are the lines
                         <version>2.3.1</version>
                 </dependency>
 
+Be sure you specify the most current version.  At the time of writing, the version listed above was
+the most current, however there were frequent releases immediately after the releast of Selenium 2.0.
+Check the SeleniumHq website for the current release and edit the above dependency accordingly.
+
 Now, from a command-line, CD into the project directory and run maven as follows.
 
 .. code-block:: bash
@@ -171,8 +175,8 @@ has written an article on migrating from Selenium 1.0.  We've included this as a
 :ref:`Migrating From Selenium RC to Selenium WebDriver <migrating_to_webdriver-reference>`
 
 
-Getting Started With WebDriver
-------------------------------
+Getting Started With Selenium-WebDriver
+---------------------------------------
 WebDriver is a tool for automating testing web applications, and in particular
 to verify that they work as expected. It aims to provide a friendly API that's
 easy to explore and understand, easier to use than the Selenium-RC (1.0) API,
@@ -236,6 +240,9 @@ Name of driver                 Available on which OS?    Class to instantiate
 `Firefox Driver`_              All                       org.openqa.selenium.firefox.FirefoxDriver
 `Internet Explorer Driver`_    Windows                   org.openqa.selenium.ie.InternetExplorerDriver
 `Chrome Driver`_               All                       org.openqa.selenium.chrome.ChromeDriver
+`Opera Driver`_                                          We're currently upating this table
+`Mac iOS Driver`_
+`Android Driver`_
 =============================  ========================  =============================================
 
 You can find out more information about each of these by following the links in
@@ -266,8 +273,8 @@ To keep things simple, let's start with the `HtmlUnit Driver`_:
 
     WebDriver driver = new HtmlUnitDriver();
 
-WebDriver Commands and Operations
----------------------------------
+Commands and Operation
+----------------------
 
 Fetching a Page
 ~~~~~~~~~~~~~~~
@@ -595,7 +602,7 @@ Cons
 Info
 ++++
 
-See the `wiki page <http://code.google.com/p/selenium/wiki/FirefoxDriver>`_ for the most up to date info.
+See the `Firefox secion in the wiki page <http://code.google.com/p/selenium/wiki/FirefoxDriver>`_ for the most up to date info.
 
 Internet Explorer Driver
 ~~~~~~~~~~~~~~~~~~~~~~~~
@@ -617,8 +624,8 @@ Cons
 Info
 ++++
 
-See the `wiki page <http://code.google.com/p/selenium/wiki/InternetExplorerDriver>`_ for the most up to date info.
-Please take special not of the Required Configuration section.
+See the `Internet Explorer section of the wiki page <http://code.google.com/p/selenium/wiki/InternetExplorerDriver>`_ for the most up to date info.
+Please take special note of the Required Configuration section.
 
 
 Chrome Driver
@@ -646,6 +653,21 @@ Cons
 .. TODO: I removed the known issues section as this type of content is best in
          the Wiki or issue tracker. Can we add a link to all issues raised
          against ChromeDriver?
+
+Opera Driver
+~~~~~~~~~~~~~
+
+Sorry, we haven't developed this section yet.
+
+Mac iOS Driver
+~~~~~~~~~~~~~~
+
+Sorry, we haven't developed this section yet.
+
+Android Driver
+~~~~~~~~~~~~~~
+
+Sorry, we haven't developed this section yet.
 
 Getting running with Chrome Driver
 ++++++++++++++++++++++++++++++++++
