@@ -24,87 +24,39 @@
 </head>
 
 <body class="homepage">
-  <h2>Get started with Selenium!</h2>
+  <h2>What is Selenium?</h2>
+  <p><i>Selenium automates browsers</i>. That's it. What you do with that power is entirely up to you. Primarily it is for automating web applications for testing purposes, but is certainly not limited to just that. Boring web-based administration tasks can (and should!) also be automated as well.</p>
+  <p>Selenium has the support of some of the largest browser vendors who have taken (or are taking) steps to make Selenium a native part of their browser. It is also the core technology in countless other browser automation tools, APIs and frameworks.</p>
+  
+  <h2>Which part of Selenium is appropriate for me?</h2>
 
-  <div class="bigMenu">
-    <h3 id="step0">0. Watch: see the magic.</h3>
-
-    <div>
-      <center>
-        <a class="video" href="movies/intro.mov" title=
-        "Watch the video"><img alt="video icon" src=
-        "images/intro-video-icon.png" />2 Minute Intro</a>
-      </center>
-    </div>
-
-    <h3 id="step1">1. Begin: write and run tests in Firefox.</h3>
-
-    <div>
-      <a href="/projects/ide/"><img alt="Selenium IDE Logo" class=
-      "icon" src="images/selenium-ide-logo.png" /></a>
-
-      <p><strong><a href="/projects/ide/">Selenium IDE</a></strong>
-      is a Firefox add-on that records clicks, typing, and other
-      actions to make a test, which you can play back in the
-      browser.</p>
-
-      <ul>
-        <li><a href="/download">Download Selenium IDE</a></li>
-
-        <li><a href="/projects/ide/">Learn more</a></li>
-
-        <li><a href="/projects/ide/">Screenshots</a></li>
-      </ul>
-    </div>
-
-    <h3 id="step2">2. Customize: your language, your browser.</h3>
-
-    <div>
-      <a href="/projects/remote-control/index.html"><img alt=
-      "Selenium RC Logo" class="icon" src=
-      "images/selenium-rc-logo.png" /></a>
-
-      <p><strong><a href="/projects/remote-control/">Selenium
-      Remote Control (RC)</a></strong> runs your tests in <a href=
-      "/about/platforms.html#browsers">multiple browsers</a> and
-      <a href=
-      "/about/platforms.html#operating-systems">platforms</a>.
-      Tweak your tests in your <a href=
-      "/about/platforms.html#programming-languages">preferred
-      language</a>.</p>
-
-      <ul>
-        <li><a href="/download">Download Selenium RC</a></li>
-
-        <li><a href="/projects/remote-control">Learn more</a></li>
-      </ul>
-    </div>
-
-    <h3 id="step3">3. Deploy: scale out, speed up.</h3>
-
-    <div>
-      <a href="http://selenium-grid.openqa.org/"><img alt=
-      "Selenium Grid Logo" class="icon" src=
-      "images/selenium-grid-logo.png" /></a>
-
-      <p><strong><a href=
-      "http://selenium-grid.openqa.org/">Selenium Grid</a></strong>
-      extends Selenium RC to distribute your tests across multiple
-      servers, saving you time by running tests in parallel.</p>
-
-      <ul>
-        <li><a href=
-        "http://selenium-grid.openqa.org/download.html">Download
-        Selenium Grid</a></li>
-
-        <li><a href=
-        "http://selenium-grid.seleniumhq.org/how_it_works.html">Learn
-        more</a></li>
-      </ul>
-    </div>
-  </div>
-
-  <h2>Learn Selenium</h2>
+  <table id="choice">
+    <tbody>
+      <tr>
+        <td style="border-right: 1px solid #CCCCCC"><center><a href="/projects/ide/"><img alt="Selenium IDE Logo" class="icon" src="images/selenium-ide-logo.png" /></a></center><br />
+If you want to
+<ul>
+  <li>create quick bug reproduction scripts</li>
+  <li>create scripts to aid in automation-aided exploratory testing</li>
+</ul>
+<br />
+<p>Then you want to use <a href="/projects/ide/">Selenium IDE</a>; a Firefox add-on that will do simple record-and-playback of interactions with the browser</p>
+        </td>
+        <td><center><a href="/projects/webdriver/"><img alt="Selenium Logo" class="icon" src="images/selenium-logo.png" /></a><a href="/projects/webdriver/"><img alt="Selenium Grid Logo" class="icon" src="images/selenium-grid-logo.png" /></a></center><br />
+If you want to
+<ul>
+  <li>create robust, browser-based regression automation</li>
+  <li>scale and distribute scripts across many environments</li>
+</ul>
+<br />
+<p>Then you want to use <a href="/projects/webdriver/">Selenium WebDriver</a>; a collection of language specific bindings to drive a browser -- the way it is meant to be driven.</p>
+<p>Selenium WebDriver is the successor of <a href="/projects/remote-control/">Selenium Remote Control</a> which has been officially deprecated. The Selenium Server (used by both WebDriver and Remote Control) now also includes built-in grid capabilities.</p>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  
+<!--   <h2>Learn Selenium</h2>
 
   <ul>
     <li><a href="/about/how.html">The Magic of Selenium: How it
@@ -121,7 +73,7 @@
 
     <li><a href="http://release.openqa.org/selenium-core/1.0/reference.html">Selenium
     API</a></li>
-  </ul>
+  </ul> -->
 
   <h2>Selenium News</h2>
 

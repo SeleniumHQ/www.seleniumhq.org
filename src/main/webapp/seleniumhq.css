@@ -42,6 +42,11 @@ body
 	border: none;
 }
 
+#choice td
+{
+    vertical-align: top;
+} 
+
 #sidebar
 {
 	float: right;
