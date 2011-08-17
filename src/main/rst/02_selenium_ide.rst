@@ -229,7 +229,7 @@ Adding Verifications and Asserts With the Context Menu
   
 Your test cases will also need to check the properties of a web-page.  This 
 requires *assert* and *verify* commands.  We won't describe the specifics of 
-these commands here; that is in the chapter on :ref:`"Selenese" Selenium Commands <chapter04-reference>`.  Here we'll 
+these commands here; that is in the chapter on `Selenium Commands -- "Selenese"`_.  Here we'll 
 simply describe how to add them to your test case. 
   
 With Selenium-IDE recording, go to the browser displaying your test application and 
