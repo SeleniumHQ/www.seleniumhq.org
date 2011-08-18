@@ -28,6 +28,7 @@
     #release_announcements ul { float: left; }
     #release_announcements li { width:250px; }
     ul.thirdPartyBinding { list-style-type: none; padding: 0; }
+    span.unsupported { color: red; }
   </style>
 </head>
 
@@ -131,7 +132,7 @@
     <li><a href="http://www.nuget.org/List/Packages/Selenium.WebDriverBackedSelenium">WebDriverBackedSelenium</a></li>
     <li><a href="http://www.nuget.org/List/Packages/Selenium.Support">Support</a></li>
   </ul>
-  <h4>Third Party Browser Drivers NOT SUPPORTED/DEVELOPED by seleniumhq</h4>
+  <h4>Third Party Browser Drivers <span class="unsupported">NOT SUPPORTED/DEVELOPED</span> by seleniumhq</h4>
   <table>
     <thead>
       <th>Browser</th>
@@ -157,9 +158,9 @@
       </tr>
     </tbody>
   </table>
-  <h4>Third Party Language Bindings NOT SUPPORTED/DEVELOPED by seleniumhq</h4>
+  <h4>Third Party Language Bindings <span class="unsupported">NOT SUPPORTED/DEVELOPED</span> by seleniumhq</h4>
   <ul class="thirdPartyBinding">
-    <li><a href="https://github.com/aivaturi/Selenium-Remote-Driver">Perl</a> by Gordon Child</li>
+    <li><a href="https://github.com/aivaturi/Selenium-Remote-Driver">Perl</a> <a href="https://metacpan.org/module/Selenium::Remote::Driver">download and docs</a> by Gordon Child</li>
     <li><a href="https://github.com/chibimagic/WebDriver-PHP/">PHP</a> by Chibimagic (real name unknown?)</li>
     <li><a href="http://code.google.com/p/php-webdriver-bindings/">PHP</a> by Lukasz Kolczynski <!-- appologies for not being able to do the UTF-8 proper encoding of your name --></li>
   </ul>

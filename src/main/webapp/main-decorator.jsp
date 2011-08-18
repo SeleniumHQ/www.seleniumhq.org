@@ -35,7 +35,7 @@ pageTracker._trackPageview();
           title="seleniumhq.org Selenium Search">
         <div>
             <label for="q" title="Search SeleniumHQ.org's sites for selenium content">search selenium:</label>
-            <input type="hidden" name="cx" value="016909259827549404702:hzru01fldsm">
+            <input type="hidden" name="cx" value="005991058577830013072:2lr_j6t3fko">
             <input type="hidden" name="cof" value="FORID:">
             <input type="text" id="q" name="q" accesskey="s" size="30">
             <input type="submit" id="submit" value="Go">
