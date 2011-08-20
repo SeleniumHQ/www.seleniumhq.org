@@ -241,7 +241,7 @@ Name of driver                 Available on which OS?    Class to instantiate
 `Internet Explorer Driver`_    Windows                   org.openqa.selenium.ie.InternetExplorerDriver
 `Chrome Driver`_               All                       org.openqa.selenium.chrome.ChromeDriver
 `Opera Driver`_                                          We're currently upating this table
-`Mac iOS Driver`_
+`iPhone Driver`_
 `Android Driver`_
 =============================  ========================  =============================================
 
@@ -316,12 +316,11 @@ you could find it using any of the following examples:
     element = driver.findElement(By.xpath("//input[@id='passwd-id']"));
 
 You can also look for a link by its text, but be careful! The text must be an
-exact match! You should also be careful when using `XPATH in WebDriver`_. If
-there's more than one element that matches the query, then only the first will
+exact match! You should also be careful when using 
+`XPATH in WebDriver <http://code.google.com/p/selenium/wiki/XpathInWebDriver>`_. 
+If there's more than one element that matches the query, then only the first will
 be returned. If nothing can be found, a ``NoSuchElementException`` will be
 thrown.
-
-.. _`XPATH in WebDriver` : `How XPATH Works in WebDriver`_
 
 WebDriver has an "Object-based" API; we represent all types of elements using
 the same interface:
@@ -769,17 +768,20 @@ and follow the other instructions on the
 Opera Driver
 ~~~~~~~~~~~~~
 
-Sorry, we haven't developed this section yet.
+See the `Opera Driver wiki article <http://code.google.com/p/selenium/wiki/OperaDriver>`_ in the
+Selenium Wiki for information on using the Opera Driver.
 
-Mac iOS Driver
+iPhone Driver
 ~~~~~~~~~~~~~~
 
-Sorry, we haven't developed this section yet.
+See the `iPhone Driver wiki article <http://code.google.com/p/selenium/wiki/IPhoneDriver>`_ in the
+Selenium Wiki for information on using the Mac iOS Driver.
 
 Android Driver
 ~~~~~~~~~~~~~~
 
-Sorry, we haven't developed this section yet.
+See the `Android Driver wiki article <http://code.google.com/p/selenium/wiki/AndroidDriver>`_
+in the Selenium Wiki for information on using the Android Driver.
 
 WebDriver-Backed Selenium-RC
 ----------------------------
