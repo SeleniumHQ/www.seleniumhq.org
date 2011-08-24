@@ -1266,7 +1266,7 @@ following:
 
 Create the new profile using the dialog. Then when you run Selenium Server, 
 tell it to use this new Firefox profile with the server command-line option 
-*\-firefoxProfileTemplate* and specify the path to the profile using it's filename 
+*\-firefoxProfileTemplate* and specify the path to the profile using its filename 
 and directory path.
 
 .. code-block:: bash

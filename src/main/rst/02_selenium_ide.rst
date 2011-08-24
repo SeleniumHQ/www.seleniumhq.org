@@ -572,7 +572,7 @@ verifyElementPresent
    verifies an expected UI element, as defined by its HTML tag, is present on
    the page.
 verifyText
-   verifies expected text and it's corresponding HTML tag are present on the page.
+   verifies expected text and its corresponding HTML tag are present on the page.
 verifyTable
    verifies a table's expected contents.
 waitForPageToLoad
@@ -1465,7 +1465,7 @@ storeFooPresent(*variable*)     stores the text of the pop-up in a variable and 
 When running under Selenium, JavaScript pop-ups will not appear. This is because
 the function calls are actually being overridden at runtime by Selenium's own
 JavaScript. However, just because you cannot see the pop-up doesn't mean you don't
-have do deal with it. To handle a pop-up, you must call it's ``assertFoo(pattern)``
+have do deal with it. To handle a pop-up, you must call its ``assertFoo(pattern)``
 function. If you fail to assert the presence of a pop-up your next command will be 
 blocked and you will get an error similar to the following ``[error] Error: There
 was an unexpected Confirmation! [Chose an option.]``
@@ -1492,7 +1492,7 @@ You may be thinking "Thats odd, I never tried to assert that alert." But this is
 Selenium-IDE handling and closing the alert for you. If you remove that step and replay
 the test you will get the following error ``[error] Error: There was an unexpected
 Alert! [I'm blocking!]``. You must include an assertion of the alert to acknowledge 
-it's presence.
+its presence.
  
 If you just want to assert that an alert is present but either don't know or don't care
 what text it contains, you can use ``assertAlertPresent``. This will return true or false,

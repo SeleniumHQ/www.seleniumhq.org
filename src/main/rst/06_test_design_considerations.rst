@@ -70,7 +70,7 @@ Testing Dynamic Elements
 ~~~~~~~~~~~~~~~~~~~~~~~~
 Often a web page element has a unique identifier used to uniquely locate that
 element within the page.  Usually these are implemented using the html tag's 
-'id' attribute or it's 'name' attribute.  These names can be a static, i.e 
+'id' attribute or its 'name' attribute.  These names can be a static, i.e 
 unchanging, string constant.  They can also be dynamically generated values that
 vary each  instance of the page.  For example, some web servers might name a displayed
 document doc3861 one instance of a page, and 'doc6148' on a different instance of the 
@@ -131,7 +131,7 @@ results.  That is, you won't get feedback from TestNG or JUnit.
 You will need to look at the results of a console printout or a log output.
 And you will need to take the time to look through
 this output every time you run your test.  If you are
-running hundreds of tests, each with it's own log, this will be time-consuming,
+running hundreds of tests, each with its own log, this will be time-consuming,
 and the immediate feedback of asserts will be more appropriate.  Asserts are more
 commonly used then verifys due to their immediate feedback.
 
@@ -144,7 +144,7 @@ will need to decide
 
 - Do I only check that the text exists on the page?  (*verify/assertTextPresent*)
 - Do I only check that the HTML element exists on the page?  That is, the text, image, or other content is not to be checked, only the HTML tag is what is relevant. (*verify/assertElementPresent*)
-- Must I test both, the element and it's text content?  (*verify/assertText*)
+- Must I test both, the element and its text content?  (*verify/assertText*)
 
 There is no right answer.  It depends on the requirements for your test.  Which, of course, 
 depend on the requirements for the application you're testing.
@@ -181,7 +181,7 @@ we can locate an object using
 
 Using an element ID or name locator is the most efficient in terms of test performance,
 and also makes your test code more readable, assuming the ID or name within the page source is well-named.
-XPath statements take longer to process since the browser must run it's XPath processor.  XPath has 
+XPath statements take longer to process since the browser must run its XPath processor.  XPath has 
 been known to be especially slow in Internet Explorer version 7.  Locating via a link's text is often
 convenient and performs well.  This technique is specific to links though.  Also,
 if the link text is likely to change frequently, locating by the <a> element

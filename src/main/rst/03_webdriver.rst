@@ -54,7 +54,7 @@ Selenium.  How you do this depends on your programming language and your develop
 Java
 ~~~~
 The easiest way to set up a Selenium 2.0 Java project is to use Maven.  Maven will download the
-java bindings (the Selenium 2.0 java client library) and all it's dependencies, and will create the
+java bindings (the Selenium 2.0 java client library) and all its dependencies, and will create the
 project for you, using a maven pom.xml (project configuration) file.  Once you've done this, you
 can import the maven project into your preferred IDE, IntelliJ IDEA or Eclipse.
 
@@ -421,7 +421,7 @@ with SELECT tags isn't too bad:
     }
 
 This will find the first "SELECT" element on the page, and cycle through each
-of it's OPTIONs in turn, printing out their values, and selecting each in turn.
+of its OPTIONs in turn, printing out their values, and selecting each in turn.
 As you will notice, this isn't the most efficient way of dealing with SELECT
 elements. WebDriver's support classes include one called "Select", which
 provides useful methods for interacting with these.
