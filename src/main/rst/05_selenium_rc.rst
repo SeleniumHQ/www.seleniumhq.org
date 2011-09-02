@@ -1902,6 +1902,14 @@ source code is in lowercase, you should use::
 This is a problem if your test is intended to work on multiple browsers, but
 you can easily code your test to detect the situation and try the alternative
 locator that only works in IE.
+
+Error encountered - "Cannot convert object to primitive value" with shut down of  \*googlechrome  browser
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+To avoid this error you have to start browser with an option that disables same origin policy checks: 
+
+.. code-block:: bash
+
+   selenium.start("commandLineFlags=--disable-web-security");
    
 
 Where can I Ask Questions that Aren't Answered Here?
