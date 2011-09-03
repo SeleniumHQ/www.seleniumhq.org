@@ -408,7 +408,7 @@ User Input - Filling In Forms
 
 We've already seen how to enter text into a textarea or text field, but what
 about the other elements? You can "toggle" the state of checkboxes, and you
-can use "setSelected" to set something like an OPTION tag selected. Dealing
+can use "click" to set something like an OPTION tag selected. Dealing
 with SELECT tags isn't too bad:
 
 .. code-block:: java
@@ -416,8 +416,8 @@ with SELECT tags isn't too bad:
     WebElement select = driver.findElement(By.xpath("//select"));
     List<WebElement> allOptions = select.findElements(By.tagName("option"));
     for (WebElement option : allOptions) {
-        System.out.println(String.format("Value is: %s", option.getValue()));
-        option.setSelected();
+        System.out.println(String.format("Value is: %s", option.getAttribute("value")));
+        option.click();
     }
 
 This will find the first "SELECT" element on the page, and cycle through each
