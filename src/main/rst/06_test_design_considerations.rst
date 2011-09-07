@@ -220,7 +220,7 @@ when this page is displayed, this UI element will always have this Identifier.
 So, for your test script to click this button you simply need to use the following
 selenium command.
 
-.. code-block:: java
+.. code-block:: html
 
     click	adminHomeForm
 
@@ -244,7 +244,7 @@ This defines a checkbox. Its ID and name  attributes
 (both addForm:_ID74:_ID75:0:_ID79:0:checkBox) are dynamically generated values.
 In this case, using a standard locator would look something like the following.
 
-.. code-block:: java
+.. code-block:: html
 
     click 	addForm:_ID74:_ID75:0:_ID79:0:checkBox
 
@@ -262,20 +262,20 @@ The click operation will fail with an "element not found" error.
 To correct this, a simple solution would be to just use an XPath locator rather than 
 trying to use an ID locator.  So, for the checkbox you can simply use
 
-.. code-block:: java
+.. code-block:: html
 
     click 	//input
 
 Or, if it is not the first input element on the page (which it likely is not)
 try a more detailed XPath statement.
 
-.. code-block:: java
+.. code-block:: html
 
     click 	//input[3]
 
 Or
 
-.. code-block:: java
+.. code-block:: html
 
     click 	//div/p[2]/input[3]
 	
@@ -316,7 +316,7 @@ Let's consider a page which brings a link (link=ajaxLink) on click
 of a button on page (without refreshing the page)  This could be handled
 by Selenium using a *for* loop. 
 
-.. code-block:: bash
+.. code-block:: java
    
    // Loop initialization.
    for (int second = 0;; second++) {
@@ -516,7 +516,7 @@ Alternatively, a text file storing key value pairs could be used.  In Java, a pr
 Consider a property file *prop.properties* which assigns as 'aliases' 
 reader-friendly identifiers for UI elements from the previous example. 
    
-.. code-block:: java
+.. code-block:: text
    
    admin.username = loginForm:tbUsername
    admin.loginbutton = loginForm:btnLogin

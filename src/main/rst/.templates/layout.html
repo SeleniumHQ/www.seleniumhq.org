@@ -4,6 +4,7 @@
 {%- endblock %}
 {%- set reldelim1 = reldelim1 is not defined and ' &raquo;' or reldelim1 %}
 {%- set reldelim2 = reldelim2 is not defined and ' |' or reldelim2 %}
+{%- set languages = ['java', 'csharp', 'python', 'ruby', 'php', 'perl'] %}
 
 {%- macro relbar() %}
 <content tag="related">
@@ -26,6 +27,18 @@
       </ul>
     </div>
 </content>
+{%- endmacro %}
+
+{%- macro languagebar() %}
+    <div id="codeLanguagePreference">
+      <h4>Programming Language Preference</h4>
+      <ul>
+        {%- for language in languages %}
+        <li><input type="image" value="{{ language }}" src="/images/icons/{{ language }}.png" /></li>
+        {%- endfor %}
+      </ul>
+      <div class="clear"></div>
+    </div>
 {%- endmacro %}
 
 {%- macro sidebar() %}
@@ -91,9 +104,9 @@
       {%- set titlesuffix = "" %}
     {%- endif %}
     <title>{{ title|striptags }}{{ titlesuffix }}</title>
-    <link rel="stylesheet" href="{{ pathto('_static/' + style, 1) }}" type="text/css" />
     <link rel="stylesheet" href="{{ pathto('_static/pygments.css', 1) }}" type="text/css" />
     <link rel="stylesheet" href="{{ pathto('_static/jquery.treeview.css', 1) }}" type="text/css" />
+    <link rel="stylesheet" href="{{ pathto('_static/docs.css', 1) }}" type="text/css" />
     {%- if not embedded %}
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
@@ -165,6 +178,8 @@
 {%- block relbar1 %}{{ relbar() }}{% endblock %}
 
 {%- block sidebar1 %} {# possible location for sidebar #} {% endblock %}
+
+{%- block languagePref %} {{ languagebar() }} {%- endblock %}
 
     <div class="document">
 {%- block document %}

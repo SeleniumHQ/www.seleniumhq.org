@@ -3,6 +3,8 @@ WebDriver: Advanced Usage
 
 .. _chapter04-reference:
 
+.. _explicit_and_implicit_waits-reference:
+
 Explicit and Implicit Waits
 ---------------------------
 Waiting is having the automated task execution elapse a certain amount of time before continuing with the next step.
@@ -14,22 +16,14 @@ The worst case of this is Thread.sleep(), which sets the condition to an exact t
 There are some convenience methods provided that help you write code that will wait only as long as required.
 WebDriverWait in combination with ExpectedCondition is one way this can be accomplished.
 
-Java 
-
 .. literalinclude:: /examples/Chapter4/Java/ExplicitWaitExample01.java
    :language: java
-
-C#
 
 .. literalinclude:: /examples/Chapter4/CSharp/ExplicitWaitExample01.cs
    :language: csharp
 
-Python 
-
 .. literalinclude:: /examples/Chapter4/python/ExplicitWaitExample01.py
    :language: python
-
-Ruby
 
 .. literalinclude:: /examples/Chapter4/ruby/ExplicitWaitExample01.rb
    :language: ruby
@@ -45,70 +39,35 @@ Implicit Waits
 An implicit wait is to tell WebDriver to poll the DOM for a certain amount of time when trying to find an element or elements if they are not immediately available.
 The default setting is 0. Once set, the implicit wait is set for the life of the WebDriver object instance.
 
-Java 
-
 .. literalinclude:: /examples/Chapter4/Java/ImplicitWaitExample01.java
    :language: java
-
-C# 
 
 .. literalinclude:: /examples/Chapter4/CSharp/ImplicitWaitExample01.cs
    :language: csharp
 
-Python
-
 .. literalinclude:: /examples/Chapter4/python/ImplicitWaitExample01.py
    :language: python
-
-Ruby
 
 .. literalinclude:: /examples/Chapter4/ruby/ImplicitWaitExample01.rb
    :language: ruby
 
 RemoteWebDriver
 ---------------
-You'll start by using the HtmlUnit Driver. 
-This is a pure Java driver that runs entirely in-memory. Because of this, you won't see a new browser window open. 
 
-.. literalinclude:: /examples/Chapter4/Java/HtmlUnitExample.java
+Taking a Screenshot
+~~~~~~~~~~~~~~~~~~~
+
+.. literalinclude:: /examples/Chapter4/Java/RemoteScreenShot.java
    :language: java
 
-HtmlUnit isn't confined to just Java.  Selenium makes accessing HtmlUnit easy from any language. Below
-is the same example in C#. Note that you'll need to run the remote WebDriver server
-to use HtmlUnit from C#
+.. literalinclude:: /examples/Chapter4/CSharp/RemoteScreenShot.cs
+   :language: csharp
 
-.. code-block:: csharp
+.. literalinclude:: /examples/Chapter4/python/RemoteScreenShot.py
+   :language: python
 
-    using OpenQA.Selenium;
-    using OpenQA.Selenium.Remote;
-
-    class Example
-    {
-        static void Main(string[] args)
-        {
-            //to use HtmlUnit from .Net we must access it through the RemoteWebDriver
-            //Download and run the selenium-server-standalone-2.0b1.jar locally to run this example
-            ICapabilities desiredCapabilities = DesiredCapabilities.HtmlUnit();
-            IWebDriver driver = new RemoteWebDriver(desiredCapabilities);
-
-            //the .Net Webdriver relies on a slightly different API to navigate to
-            //web pages because 'get' is a keyword in .Net
-            driver.Navigate().GoToUrl("http://google.ca/");
-
-            //The rest of the code should look very similar to the Java library
-            IWebElement element = driver.FindElement(By.Name("q"));
-            element.SendKeys("Cheese!");
-            element.Submit();
-            System.Console.WriteLine("Page title is: " + driver.Title);
-            driver.Quit();
-            System.Console.ReadLine();
-        }
-    }
-    
-Compile and run this. You should see a line with the title of the Google search 
-results as output on the console. Congratulations, you've managed to get 
-started with WebDriver!
-
+.. literalinclude:: /examples/Chapter4/ruby/RemoteScreenShot.rb
+   :language: ruby
 
 AdvancedUserInteractions
 ------------------------

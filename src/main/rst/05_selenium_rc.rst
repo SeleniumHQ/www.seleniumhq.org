@@ -136,7 +136,7 @@ desktop and simply double-click the icon to start the server.
 For the server to run you'll need Java installed 
 and the PATH environment variable correctly configured to run it from the console.
 You can check that you have Java correctly installed by running the following
-on a console::
+on a console.
 
        java -version
 
@@ -254,11 +254,7 @@ oriented programming language, you will understand how Selenium
 runs Selenese commands by reading one of these 
 examples.  To see an example in a specific language, select one of these buttons.
 
-.. container:: toggled
-
-   **In C#**:
-
-   .. code-block:: c#
+.. code-block:: csharp
 
         using System;
         using System.Text;
@@ -309,11 +305,8 @@ examples.  To see an example in a specific language, select one of these buttons
             }
         }
 
-.. container:: toggled
 
-   **In Java**:
-
-   .. code-block:: java
+.. code-block:: java
       
 	  /** Add JUnit framework to your classpath if not already there 
 	   *  for this example to work
@@ -336,11 +329,7 @@ examples.  To see an example in a specific language, select one of these buttons
           }
       }
 
-.. container:: toggled
-
-   **In Perl**:
-
-   .. code-block:: perl
+.. code-block:: perl
 
       use strict;
       use warnings;
@@ -360,11 +349,7 @@ examples.  To see an example in a specific language, select one of these buttons
       $sel->wait_for_page_to_load_ok("30000");
       $sel->is_text_present_ok("Results * for selenium rc");
 
-.. container:: toggled
-
-   **In PHP**:
-
-   .. code-block:: php
+.. code-block:: php
 
       <?php
 
@@ -389,11 +374,7 @@ examples.  To see an example in a specific language, select one of these buttons
       }
       ?>
 
-.. container:: toggled
-
-   **in Python**:
-
-   .. code-block:: python
+.. code-block:: python
 
       from selenium import selenium
       import unittest, time, re
@@ -424,11 +405,7 @@ examples.  To see an example in a specific language, select one of these buttons
     upgrade) below, and maybe it would be overwhelming to start trying
     to explain it here?
 
-.. container:: toggled
-
-   **in Ruby**:
-
-   .. code-block:: ruby
+.. code-block:: ruby
 
       require "selenium"
       require "test/unit"
@@ -495,7 +472,9 @@ already have some experience with one of these test frameworks.
 
 You will probably want to rename the test class from "NewTest" to something 
 of your own choosing.  Also, you will need to change the browser-open 
-parameters in the statement::
+parameters in the statement:
+
+.. code-block:: bash
 
     selenium = new DefaultSelenium("localhost", 4444, "*iehta", "http://www.google.com/");
 
@@ -553,13 +532,15 @@ the role for each member function of the test class.
 
 You will probably have to rename the test class from "NewTest" to 
 something of your own choosing.  Also, you will need to change the browser-open
-parameters in the statement::
+parameters in the statement:
+
+.. code-block:: bash
 
     selenium = new DefaultSelenium("localhost", 4444, "*iehta", "http://www.google.com/");
 
 The generated code will look similar to this.
 
-.. code-block:: c#
+.. code-block:: csharp
 
     using System;
     using System.Text;
@@ -824,58 +805,34 @@ possibly less obvious aspects.
 Starting the Browser 
 ~~~~~~~~~~~~~~~~~~~~
 
-.. container:: toggled
-
-   **In C#**:
-
-   .. code-block:: c#
+.. code-block:: csharp
 
       selenium = new DefaultSelenium("localhost", 4444, "*firefox", "http://www.google.com/");
       selenium.Start();
 
-.. container:: toggled
-
-   **In Java**:
-
-   .. code-block:: java
+.. code-block:: java
 
       setUp("http://www.google.com/", "*firefox");
 
-.. container:: toggled
-
-   **In Perl**:
-
-   .. code-block:: perl
+.. code-block:: perl
 
       my $sel = Test::WWW::Selenium->new( host => "localhost", 
                                           port => 4444, 
                                           browser => "*firefox", 
                                           browser_url => "http://www.google.com/" );
 
-.. container:: toggled
-
-   **In PHP**:
-
-   .. code-block:: php
+.. code-block:: php
 
       $this->setBrowser("*firefox");
       $this->setBrowserUrl("http://www.google.com/");
 
-.. container:: toggled
-
-   **In Python**:
-
-   .. code-block:: python
+.. code-block:: python
 
       self.selenium = selenium("localhost", 4444, "*firefox",
                                "http://www.google.com/")
       self.selenium.start()
 
-.. container:: toggled
-
-   **In Ruby**:
-
-   .. code-block:: ruby
+.. code-block:: ruby
 
       @selenium = Selenium::ClientDriver.new("localhost", 4444, "*firefox", "http://www.google.com/", 10000);
       @selenium.start
@@ -914,7 +871,7 @@ Running Commands
 Once you have the browser initialized and assigned to a variable (generally
 named "selenium") you can make it run Selenese commands by calling the respective 
 methods from the browser variable. For example, to call the *type* method
-of the selenium object::
+of the selenium object:
 
     selenium.type("field-id","string to type")
 
@@ -1286,7 +1243,9 @@ More information about Firefox profiles can be found in `Mozilla's Knowledge Bas
 Run Selenese Directly Within the Server Using -htmlSuite
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 You can run Selenese html files directly within the Selenium Server
-by passing the html file to the server's command line.  For instance::
+by passing the html file to the server's command line.  For instance:
+
+.. code-block:: bash
 
    java -jar selenium-server-standalone-<version-number>.jar -htmlSuite "*firefox" "http://www.google.com" "c:\absolute\path\to\my\HTMLSuite.html" "c:\absolute\path\to\my\results.html"
 
@@ -1373,7 +1332,9 @@ You can specify to Selenium RC a path to a specific browser. This is useful if
 you have different versions of the same browser and you wish to use a specific
 one. Also, this is used to allow your tests to run against a browser not 
 directly supported by Selenium RC. When specifying the run mode, use the 
-\*custom specifier followed by the full path to the browser's executable::
+\*custom specifier followed by the full path to the browser's executable:
+
+.. code-block:: bash
 
    *custom <path to browser> 
 
@@ -1595,11 +1556,13 @@ Unable to Connect to Server
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
 When your test program cannot connect to the Selenium Server, an exception 
 will be thrown in your test program. It should display this message or a 
-similar one::
+similar one:
 
-    "Unable to connect to remote server….Inner Exception Message: 
+.. code-block:: bash
+
+    "Unable to connect to remote server (Inner Exception Message: 
 	No connection could be made because the target machine actively 
-	refused it…."
+	refused it )"
     
 	(using .NET and XP Service Pack 2) 
 
@@ -1629,7 +1592,7 @@ Unable to Load the Browser
 Ok, not a friendly error message, sorry, but if the Selenium Server cannot load the browser 
 you will likley see this error.
  
-:: 
+.. code-block:: bash
 
     (500) Internal Server Error
 
@@ -1658,12 +1621,16 @@ Firefox Refused Shutdown While Preparing a Profile
 This most often occurs when your run your Selenium RC test program against Firefox,
 but you already have a Firefox browser session running and, you didn't specify
 a separate profile when you started the Selenium Server. The error from the 
-test program looks like this::
+test program looks like this:
+
+.. code-block:: bash
 
     Error:  java.lang.RuntimeException: Firefox refused shutdown while 
     preparing a profile 
 
-Here's the complete error message from the server::
+Here's the complete error message from the server:
+
+.. code-block:: bash
 
     16:20:03.919 INFO - Preparing Firefox profile... 
     16:20:27.822 WARN - GET /selenium-server/driver/?cmd=getNewBrowserSession&1=*fir 
@@ -1671,13 +1638,14 @@ Here's the complete error message from the server::
     java.lang.RuntimeException: Firefox refused shutdown while preparing a profile 
             at org.openqa.selenium.server.browserlaunchers.FirefoxCustomProfileLaunc 
     her.waitForFullProfileToBeCreated(FirefoxCustomProfileLauncher.java:277) 
-    ……………………. 
+    ... 
     Caused by: org.openqa.selenium.server.browserlaunchers.FirefoxCustomProfileLaunc 
     her$FileLockRemainedException: Lock file still present! C:\DOCUME~1\jsvec\LOCALS 
     ~1\Temp\customProfileDir203138\parent.lock 
 
-To resolve this, see the section on `Specifying a Separate Firefox Profile 
-<Specifying the Firefox Profile>`_
+To resolve this, see the section on `Specifying a Separate Firefox Profile`_
+
+.. _`Specifying a Separate Firefox Profile` : `Specifying the Firefox Profile`_
 
 
 Versioning Problems 
@@ -1864,7 +1832,9 @@ On Unix/Linux, versions of Selenium before 1.0 needed to invoke "firefox-bin"
 directly, so if you are using a previous version, make sure that the real 
 executable is on the path. 
 
-On most Linux distributions, the real *firefox-bin* is located on::
+On most Linux distributions, the real *firefox-bin* is located on:
+
+.. code-block:: bash
 
    /usr/lib/firefox-x.x.x/ 
 
@@ -1881,7 +1851,9 @@ to the user's path. you will have to add the following to your .bashrc file:
    running.  Santi: not sure if we should put this here...
 
 If necessary, you can specify the path to firefox-bin directly in your test,
-like this::
+like this:
+
+.. code-block:: bash
 
    "*firefox /usr/lib/firefox-x.x.x/firefox-bin"
 
@@ -1889,13 +1861,17 @@ IE and Style Attributes
 ~~~~~~~~~~~~~~~~~~~~~~~
 If you are running your tests on Internet Explorer and you cannot locate
 elements using their `style` attribute.
-For example::
+For example:
+
+.. code-block:: bash
 
     //td[@style="background-color:yellow"]
 
 This would work perfectly in Firefox, Opera or Safari but not with IE. 
 IE interprets the keys in  `@style` as uppercase. So, even if the
-source code is in lowercase, you should use::
+source code is in lowercase, you should use:
+
+.. code-block:: bash
 
     //td[@style="BACKGROUND-COLOR:yellow"]
 

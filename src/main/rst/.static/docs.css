@@ -1,0 +1,41 @@
+.clear { clear:both; }
+.hidden { display: none; }
+
+div#codeLanguagePreference {
+  padding-left: 10px;
+}
+
+div#codeLanguagePreference.follow {
+  background-color: white;
+  background-image: close.gif;
+  position: fixed;
+  top:5px;
+  border: 1px solid #787878;
+  width: 590px;
+}
+
+div#codeLanguagePreference.follow a {
+  font-size: 8px;
+  position: absolute;
+  top: 15px;
+  right: 5px;
+}
+
+div#codeLanguagePreference h4 {
+  border-bottom: none;
+  float: left;
+  margin-right: 12px;
+}
+
+div#codeLanguagePreference ul {
+  list-style-type:none;
+  padding-top: 8px;
+}
+div#codeLanguagePreference.follow ul {
+  margin-top: 0px;
+}
+
+div#codeLanguagePreference li {
+  float:left;
+  height: 25px;
+}

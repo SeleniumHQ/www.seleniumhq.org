@@ -113,8 +113,9 @@ with this, we've provided an appendix which shows this.
 
 C#
 ~~
-Selenium 2.0 is distributed as a set of unsigned dlls, including all
-dependencies.  To include Selenium in your project, simply download the latest
+As of Selenium 2.2.0 is distributed as a set of signed dlls and all other
+dependency dlls. Prior to 2.2.0, all Selenium dll's were unsigned.  
+To include Selenium in your project, simply download the latest
 selenium-dotnet zip file from https://code.google.com/p/selenium/downloads/list.
 If you are using Windows Vista or above, you should unblock the zip file before
 unzipping it: Right click on the zip file, click "Properties", click "Unblock"
@@ -196,26 +197,14 @@ You're now ready to write some code. An easy way to get started is this
 example, which searches for the term "Cheese" on Google and then outputs the
 result page's title to the console.
 
-Java
-~~~~
-
 .. literalinclude:: /examples/Chapter3/Java/Selenium2Example.java
    :language: java
-
-C#
-~~
 
 .. literalinclude:: /examples/Chapter3/CSharp/Selenium2Example.cs
    :language: csharp
 
-Python
-~~~~~~
-
 .. literalinclude:: /examples/Chapter3/Python/Selenium2Example.py
    :language: python
-
-Ruby
-~~~~
 
 .. literalinclude:: /examples/Chapter3/Ruby/Selenium2Example.rb
    :language: ruby
@@ -290,9 +279,7 @@ WebDriver will wait until the page has fully loaded (that is, the "onload"
 event has fired) before returning control to your test or script. It's worth
 noting that if your page uses a lot of AJAX on load then WebDriver may not
 know when it has completely loaded. If you need to ensure such pages are
-fully loaded then you can use "waits".
-
-.. TODO: link to a section on explicit waits in WebDriver
+fully loaded then you can use an :ref:`Explicit and Implicit Waits <explicit_and_implicit_waits-reference>`.
 
 Interacting With the Page
 ~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -509,7 +496,7 @@ popup, you can access the alert with the following:
 
 This will return the currently open alert object. With this object you can now accept,
 dismiss, read its contents or even type into a prompt. This interface works equally
-well on alerts, confirms, prompts. Refer to the JavaDocs for more information.
+well on alerts, confirms, prompts. Refer to the `JavaDocs <http://selenium.googlecode.com/svn/trunk/docs/api/java/index.html>`_ for more information.
 
 Navigation: History and Location
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

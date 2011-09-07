@@ -193,9 +193,7 @@ Example
 	java -jar selenium-server.jar -userExtensions user-extensions.js
 
 
-.. container:: toggled
-
-	.. code-block:: c#
+.. code-block:: csharp
 
 		using System;
 		using System.Text;

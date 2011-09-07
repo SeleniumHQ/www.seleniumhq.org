@@ -4,7 +4,7 @@ Selenium 1.0 Java Client Driver Configuration
 In General configuration of Selenium-RC with any java IDE would have following 
 steps:
 
-* Download Selenium-RC from the SeleniumHQ `downloads page`_ 
+* Download Selenium-RC from the SeleniumHQ `downloads page <http://seleniumhq.org/download/>`_ 
 * Start any java IDE
 * Create new project
 * Add "selenium-java-<version-number>.jar" to your project classpath  
@@ -134,120 +134,10 @@ Added libraries would appear in Package Explorer as following:
 
 Configuring Selenium-RC With Intellij
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-**IntelliJ IDEA** is a commercial Java IDE by the company JetBrains. Intellij 
-provides a set of integrated refactoring tools that allow programmers to 
-quickly redesign their code. IntelliJ IDEA provides close integration with 
-popular open source development tools such as CVS, Subversion, Apache Ant and 
-JUnit.
 
-Following lines describes configuration of Selenium-RC with IntelliJ 6.0
-It should not be very different for higher version of intelliJ.
+* Watch `this excellent tutorial <http://www.youtube.com/watch?v=Eft3qGFoqwE>`_ by Simon Stewart on 
+  starting a Selenium project with IntelliJ
 
-* Open a New Project in IntelliJ IDEA.
-
-.. image:: images/chapt5_img28_Create_New_Project.png
-   :class: align-center
-     
-* Provide name and location to Project.
-
-.. image:: images/chapt5_img28_Name_Project.png
-   :class: align-center
-   
-* Click Next and provide compiler output path.
-
-.. image:: images/chapt5_img29_Compiler_Output.png
-   :class: align-center 
-   
-* Click Next and select the JDK to be used.   
-
-.. image:: images/chapt5_img30_JDK_Selection.png
-   :class: align-center
-
-* Click Next and select Single Module Project.
-
-.. image:: images/chapt5_img31_Single_module.png
-   :class: align-center
-   
-* Click Next and select Java module.
-
-.. image:: images/chapt5_img32_Java_module.png
-   :class: align-center
-
-
-* Click Next and provide Module name and Module content root.
-
-.. image:: images/chapt5_img33_Module_Root.png
-   :class: align-center
-   
-
-* Click Next and select Source directory.   
-
-.. image:: images/chapt5_img34_Src.png
-   :class: align-center
-   
-* At last click Finish. This will launch the Project Pan.
-
-.. image:: images/chapt5_img34_Project_Pan.png
-   :class: align-center
-   
-
-**Adding Libraries to Project:**
-
-* Click on *Settings* button in the Project Tool bar.
-
-.. image:: images/chapt5_img35_Add_Lib.png
-   :class: align-center
-
-* Click on *Project Structure* in Settings pan. 
-
-.. image:: images/chapt5_img36_Proj_Struct.png
-   :class: align-center
-   
-* Select *Module* in Project Structure and browse to *Dependencies* tab.   
-
-.. image:: images/chapt5_img37_Dependencies.png
-   :class: align-center
-   
-* Click on Add button followed by click on Module Library.  
-
-.. image:: images/chapt5_img38_Module_Library.png
-   :class: align-center
-
-* Browse to the Selenium directory and select selenium-java-client-driver.jar 
-  and selenium-server.jar. (Multiple Jars can be selected b holding down the 
-  control key.). 
-
-.. image:: images/chapt5_img39_Library_Files.png
-   :class: align-center
-   
-* Select both jar files in project pan and click on *Apply* button.   
-
-.. image:: images/chapt5_img40_Add_Jars.png
-   :class: align-center
-   
-   
-* Now click ok on Project Structure followed by click on Close on 
-  Project Settings pan. Added jars would appear in project Library as following.    
-
-.. image:: images/chapt5_img41_Added_Jars.png
-   :class: align-center
-   
-* Create the directory structure in src folder as following.   
-
-.. image:: images/chapt5_img42_Project_Directories.png 
-   :class: align-center
-   
-.. note:: This is not hard and fast convention and might very from project to
-   project.
-
-
-* Herein *core* contains the SelTestCase class which is used to create 
-  Selenium object and fire up the browser. *testscripts* package contains 
-  the test classes which extend the SelTestCase class. Hence extended 
-  structure would look as following.
-  
-.. image:: images/chapt5_img43_Project_Structure.png
-   :class: align-center 
-   
-
-.. _`downloads page`: http://seleniumhq.org/download/
+.. LukeIS: this section was really out of date, just linking to the youtube
+           that simon produced for now, refer back to revision 12528 for 
+           original contents

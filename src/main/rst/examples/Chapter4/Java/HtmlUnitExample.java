@@ -1,16 +1,20 @@
 package org.openqa.selenium.example;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.Capabilities;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.htmlunit.HtmlUnitDriver;
+import org.openqa.selenium.remote.DesiredCapabilities;
+import org.openqa.selenium.remote.RemoteWebDriver;
 
 public class HtmlUnitExample  {
     public static void main(String[] args) {
         // Create a new instance of the html unit driver
         // Notice that the remainder of the code relies on the interface, 
         // not the implementation.
-        WebDriver driver = new HtmlUnitDriver();
+    	CapabilitiesCapabilities capability = DesiredCapabilities.htmlUnit();
+    	WebDriver driver = new RemoteWebDriver(capability);
 
         // And now use this to visit Google
         driver.get("http://www.google.com");
