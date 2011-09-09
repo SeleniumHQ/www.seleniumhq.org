@@ -124,7 +124,11 @@ and click "OK".
 Unzip the contents of the zip file, and add a reference to each of the unzipped
 dlls to your project in Visual Studio (or your IDE of choice).
 
-Note that we do not have an official NuGet package at this time.
+Official NuGet Packages:
+`RC <http://www.nuget.org/List/Packages/Selenium.RC>`_
+`WebDriver <http://www.nuget.org/List/Packages/Selenium.WebDriver>`_
+`WebDriverBackedSelenium <http://www.nuget.org/List/Packages/Selenium.WebDriverBackedSelenium>`_
+`Support <http://www.nuget.org/List/Packages/Selenium.Support>`_
 
 Python
 ~~~~~~
