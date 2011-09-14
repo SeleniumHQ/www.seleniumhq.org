@@ -78,7 +78,7 @@ your project.
                     <dependency>
                         <groupId>org.seleniumhq.selenium</groupId>
                         <artifactId>selenium-java</artifactId>
-                        <version>2.5.0</version>
+                        <version>2.6.0</version>
                     </dependency>
                 </dependencies>
         </project>
@@ -90,7 +90,7 @@ The key component adding Selenium and its dependencies are the lines
                 <dependency>
                         <groupId>org.seleniumhq.selenium</groupId>
                         <artifactId>selenium-java</artifactId>
-                        <version>2.5.0</version>
+                        <version>2.6.0</version>
                 </dependency>
 
 Be sure you specify the most current version.  At the time of writing, the version listed above was
