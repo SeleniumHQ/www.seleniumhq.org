@@ -5,6 +5,7 @@ driver = Selenium::WebDriver.for :firefox
 driver.get "http://google.com"
 
 element = driver.find_element :name => "q"
+element.clear
 element.send_keys "Cheese!"
 element.submit
 
