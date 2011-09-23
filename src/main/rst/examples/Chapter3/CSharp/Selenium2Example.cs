@@ -12,8 +12,6 @@ class GoogleSuggest
         //This is because 'get' is a keyword in C#
         driver.Navigate().GoToUrl("http://www.google.com/");
         IWebElement query = driver.FindElement(By.Name("q"));
-        // issue #2487 in 2.6, here's the workaround
-        query.Clear();
         query.SendKeys("Cheese");
         System.Console.WriteLine("Page title is: " + driver.Title);
         // TODO add wait

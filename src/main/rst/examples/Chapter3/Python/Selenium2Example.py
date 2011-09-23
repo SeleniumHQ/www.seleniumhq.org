@@ -12,9 +12,6 @@ driver.get("http://www.google.com")
 # find the element that's name attribute is q (the google search box)
 inputElement = driver.find_element_by_name("q")
 
-# issue #2487 in 2.6 release, here's the workaround
-inputElement.clear()
-
 # type in the search
 inputElement.send_keys("Cheese!")
 

@@ -22,9 +22,6 @@ public class Selenium2Example  {
         // Find the text input element by its name
         WebElement element = driver.findElement(By.name("q"));
 
-        // issue #2487 in 2.6 release, here's the workaround
-        element.clear();
-
         // Enter something to search for
         element.sendKeys("Cheese!");
 
