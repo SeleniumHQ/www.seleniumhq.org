@@ -307,15 +307,16 @@ The Documentation Team--Authors Past and Present
 ------------------------------------------------
 
 In alphabetical order, the following people have made significant contributions
-to the authoring of this user's guide or with out publishing infrastructure
-or both.
+to the authoring of this user's guide, its publishing infrastructure,
+or both.  We are very grateful to all of them.
 
 * Dave Hunt
 * Mary Ann May-Pumphrey
 * Noah Sussman
 * Paul Grandjean
 * Peter Newhook
-* Santiago Suarez Ordonez
+* Santiago Suarez-Ordonez
+* Simon Stewart
 * `Tarun Kumar`_
 
 .. _`Tarun Kumar`: http://seleniumsoftwaretesting.blogspot.com/
@@ -324,13 +325,12 @@ or both.
 
 Acknowledgements
 ~~~~~~~~~~~~~~~~
-A huge special thanks goes to Patrick Lightbody.  As an administrator of the 
-SeleniumHQ website, creator of Selenium RC, and long term involvement in the Selenium
-community, his support was invaluable when writing the original user's
-guide.  Patrick helped us understand our audience. 
+A special thanks goes to Patrick Lightbody.  As an administrator of the 
+SeleniumHQ website, major contributor to Selenium RC, his support was invaluable when 
+writing the first release of the user's guide.  Patrick helped us understand our audience. 
 He also set us up with 
 everything we needed on the seleniumhq.org website for publishing the documents.
-Also thanks goes to Andras Hatvani for his advice on publishing
+Also a thanks goes to Andras Hatvani for his advice on publishing
 solutions, and to Amit Kumar for participating in our discussions and for 
 assisting with reviewing the document.
 

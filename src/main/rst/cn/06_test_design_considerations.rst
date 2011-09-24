@@ -1,4 +1,4 @@
-﻿测试设计的注意事项
+测试设计的注意事项
 =====================
 
 .. _chapter06-cn-reference:
@@ -368,9 +368,7 @@ Selenium将使用 *for* 循环处理这种情况。
 UI映射
 ----------
 UI映射是集中应用程序的UI元素的定位符，然后测试脚本使用UI映射定位被测元素。
-
-.. Santi: Yeah, there's a pretty used extension for this (UI-element), it's 
-   also very well integrated with selenium IDE.   
+  
 
 UI映射是一个仓库，是所有脚本对象的存储地点。UI映射有以下几点优势。
 
