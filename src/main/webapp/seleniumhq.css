@@ -829,6 +829,7 @@ th
 		margin: 1em 0 0.2em 0;
 		border-bottom: 1px solid #ccc;
 		font-family: arial, verdana, sans-serif;
+		clear: left;
 	}
 	li h1, li h2, li h3, li h4, li h5, li h6 {
 		border: none;
