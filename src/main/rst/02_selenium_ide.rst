@@ -501,18 +501,18 @@ page:
 .. code-block:: html
 
    <table>
-       <tr><td>open</td><td></td><td>/download/</td></tr>
+       <tr><td>open</td><td>/download/</td><td></td></tr>
        <tr><td>assertTitle</td><td></td><td>Downloads</td></tr>
        <tr><td>verifyText</td><td>//h2</td><td>Downloads</td></tr>
    </table>
 
 Rendered as a table in a browser this would look like the following:
 
-===========  ====  ==========
-open               /download/
-assertTitle        Downloads
-verifyText   //h2  Downloads
-===========  ====  ==========
+===========  ==========  =========
+open         /download/  
+assertTitle              Downloads
+verifyText   //h2        Downloads
+===========  ==========  =========
 
 The Selenese HTML syntax can be used to write and run tests without requiring 
 knowledge of a programming language.  With a basic knowledge of selenese and 
