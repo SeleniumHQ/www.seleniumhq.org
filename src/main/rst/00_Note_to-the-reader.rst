@@ -11,8 +11,9 @@ While reading, you may experience typos or other minor errors.  If so, please be
 Rather than withholding information until it's finally complete, we are frequently checking-in
 new writing and revisions as we go.  Still, we do check our facts first
 and are confident the info we've submitted is accurate and useful.  Still, if you find an error, particularly
-in one of our code examples, please let us know.  You can send an email directly to the Selenium Developers forum 
-("selenium-developers" <selenium-developers@googlegroups.com>) with "Docs Error" in the subject line.
+in one of our code examples, please let us know.  
+You can create a new issue (http://code.google.com/p/selenium/issues/entry)
+with "Docs Error" in the subject line.
 
 We have worked very, very hard on this document.  And, as just mentioned, we are once again working hard, 
 on the new revision.  Why?  We absolutely believe 
