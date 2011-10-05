@@ -882,9 +882,6 @@ following references are recommended:
 
 * `W3Schools XPath Tutorial <http://www.w3schools.com/Xpath/>`_ 
 * `W3C XPath Recommendation <http://www.w3.org/TR/xpath>`_
-* `XPath Tutorial 
-  <http://www.zvon.org/xxl/XPathTutorial/General/examples.html>`_ 
-  - with interactive examples. 
 
 There are also a couple of very useful Firefox Add-ons that can assist in 
 discovering the XPath of an element:
