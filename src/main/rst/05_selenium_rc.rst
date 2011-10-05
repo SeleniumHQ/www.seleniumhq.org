@@ -147,7 +147,7 @@ If you get a version number (which needs to be 1.5 or later), you're ready to st
 
 Using the Java Client Driver
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-* Download Selenium RC java client driver from the SeleniumHQ `downloads page`_.
+* Download Selenium java client driver zip from the SeleniumHQ `downloads page`_.
 * Extract selenium-java-<version-number>.jar file
 * Open your desired Java IDE (Eclipse, NetBeans, IntelliJ, Netweaver, etc.)
 * Create a java project.
@@ -168,11 +168,9 @@ and
 
 Using the Python Client Driver 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-* Download Selenium RC from the SeleniumHQ `downloads page`_ 
-* Extract the file *selenium.py*
+* Install Selenium via PIP, instructions linked at SeleniumHQ `downloads page`_ 
 * Either write your Selenium test in Python or export
   a script from Selenium-IDE to a python file.
-* Add to your test's path the file *selenium.py*
 * Run Selenium server from the console
 * Execute your test from a console or your Python IDE 
 
@@ -1247,7 +1245,9 @@ by passing the html file to the server's command line.  For instance:
 
 .. code-block:: bash
 
-   java -jar selenium-server-standalone-<version-number>.jar -htmlSuite "*firefox" "http://www.google.com" "c:\absolute\path\to\my\HTMLSuite.html" "c:\absolute\path\to\my\results.html"
+   java -jar selenium-server-standalone-<version-number>.jar -htmlSuite "*firefox" 
+   "http://www.google.com" "c:\absolute\path\to\my\HTMLSuite.html" 
+   "c:\absolute\path\to\my\results.html"
 
 This will automatically launch your HTML suite, run all the tests and save a
 nice HTML report with the results.
