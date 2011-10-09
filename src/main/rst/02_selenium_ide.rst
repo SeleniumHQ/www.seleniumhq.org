@@ -58,8 +58,12 @@ IDE Features
 ------------
 Menu Bar 
 ++++++++
-The File menu allows you to create, open, and save test case and test suite 
-files.  The Edit menu allows copy, paste, delete, undo, and select all 
+The File menu has options for Test Case and Test Suite (suite of Test Cases).
+Using these you can add a new Test Case, open a Test Case, save a Test Case,
+export Test Case in a language of your choice. You can also open the recent
+Test Case.All these options are also available for Test Suite.
+
+The Edit menu allows copy, paste, delete, undo, and select all 
 operations for editing the commands in your test case.  The Options menu allows 
 the changing of settings.  You can set the timeout value for 
 certain commands, add user-defined user extensions to the base set of Selenium 
