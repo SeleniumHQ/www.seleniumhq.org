@@ -1485,7 +1485,7 @@ this:
 ==================    ============================================   ===========
 open                   /                                             
 click                  btnAlert                                       
-assertAlert            I'm blocking
+assertAlert            I'm blocking!
 verifyTextPresent      Alert is gone.
 ==================    ============================================   ===========
 
