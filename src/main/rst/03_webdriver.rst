@@ -78,24 +78,15 @@ your project.
                     <dependency>
                         <groupId>org.seleniumhq.selenium</groupId>
                         <artifactId>selenium-java</artifactId>
-                        <version>2.6.0</version>
+                        <version>2.9.0</version>
                     </dependency>
                 </dependencies>
         </project>
 
-The key component adding Selenium and its dependencies are the lines
-
-.. code-block:: xml
-
-                <dependency>
-                        <groupId>org.seleniumhq.selenium</groupId>
-                        <artifactId>selenium-java</artifactId>
-                        <version>2.6.0</version>
-                </dependency>
 
 Be sure you specify the most current version.  At the time of writing, the version listed above was
 the most current, however there were frequent releases immediately after the releast of Selenium 2.0.
-Check the SeleniumHq website for the current release and edit the above dependency accordingly.
+Check the `Maven download page <http://seleniumhq.org/download/maven.html>`_ for the current release and edit the above dependency accordingly.
 
 Now, from a command-line, CD into the project directory and run maven as follows.
 
@@ -534,7 +525,10 @@ Cookies
 
 Before we leave these next steps, you may be interested in understanding how to
 use cookies. First of all, you need to be on the domain that the cookie will be
-valid for:
+valid for. If you are trying to preset cookies before
+you start interacting with a site and your homepage is large / takes a while to load
+an alternative is to find a smaller page on the site, typically the 404 page is small
+(http://example.com/some404page)
 
 .. code-block:: java
 
@@ -550,6 +544,33 @@ valid for:
     for (Cookie loadedCookie : allCookies) {
         System.out.println(String.format("%s -> %s", loadedCookie.getName(), loadedCookie.getValue()));
     }
+
+    // You can delete cookies in 3 ways
+    // By name
+    driver.manage().deleteCookieNamed("CookieName");
+    // By Cookie
+    driver.manage().deleteCookie(loadedCookie);
+    // Or all of them
+    driver.manage().deleteAllCookies();
+
+.. code-block:: python
+    
+    # Go to the correct domain
+    driver.get("http://www.example.com")
+
+    # Now set the cookie. Here's one for the entire domain
+    # the cookie name here is 'key' and it's value is 'value'
+    driver.add_cookie({'key': 'value'})
+
+    # And now output all the available cookies for the current URL
+    for cookie in driver.get_cookies:
+        print "%s -> %s" % (cookie['name'], cookie['value'])
+
+    # You can delete cookies in 2 ways
+    # By name
+    driver.delete_cookie("CookieName")
+    # Or all of them
+    driver.delete_all_cookies()
 
 
 Drag And Drop
@@ -863,9 +884,10 @@ This chapter has simply been a high level walkthrough of WebDriver and some of i
 capabilities.  Once getting familiar with the Selenium-WebDriver API you will then want to learn
 how to build test suites for maintainability, extensibility, and reduced fragility when features of
 the AUT frequently change.  The approach most Selenium experts are now recommending is to design
-your test code using the Page Object Design Pattern along with possibly a Page Factor.  
-Selenium-WebDriver provides support for this by supplying a PageFactory class.  This is presented,
-along with other advanced topics, in the next chapter.  Also, for high-level description of this
+your test code using the Page Object Design Pattern along with possibly a Page Factory.  
+Selenium-WebDriver provides support for this by supplying a PageFactory class in Java and C#.  
+This is presented,along with other advanced topics, in the 
+:ref:`next chapter <chapter04-reference>`.  Also, for high-level description of this
 technique, you may want to look at the
 :ref:`Test Design Considerations chapter <chapter06-reference>`.  Both of these
 chapters present techniques for writing more maintainable tests by making your test code more

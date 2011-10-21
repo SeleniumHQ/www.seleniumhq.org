@@ -73,14 +73,6 @@ AdvancedUserInteractions
 ------------------------
 Todo
 
-HTML5
------
-Todo
-
-Cookies
--------
-Todo
-
 Browser Startup Manipulation
 ----------------------------
 Todo
@@ -90,6 +82,88 @@ Topics to be included:
 - restoring cookies
 - changing firefox profile
 - running browsers with plugins
+
+Using a Proxy
+~~~~~~~~~~~~~
+
+Internet Explorer
++++++++++++++++++
+The easiest and recommended way is to manually set the proxy on the machine that will be running the test.
+If that is not possible or you want your test to run with a different configuration or proxy,
+then you can use the following technique that uses a Capababilities object. This temporarily changes the system's
+proxy settings and changes them back to the original state when done.
+
+.. literalinclude:: /examples/Chapter4/Java/ProxySetupIE.java
+    :language: java
+
+.. #literalinclude:: /examples/Chapter4/CSharp/ProxySetupIE.cs
+..    :language: csharp
+
+.. literalinclude:: /examples/Chapter4/python/ProxySetupIE.py
+    :language: python
+
+.. literalinclude:: /examples/Chapter4/ruby/ProxySetupIE.rb
+    :language: ruby
+
+Chrome
+++++++
+Is basically the same as internet explorer. It uses the same configuration on the machine as IE does (on windows).
+On Mac it uses the System Preference -> Network settings. On Linux it uses (on Ubuntu) System > Preferences > 
+Network Proxy Preferences (Alternatively in "/etc/environment" set http_proxy).
+As of this writing it is unknown how to set the proxy programmatically. 
+
+.. TODO (lukeis), this does not work! So the method of chrome switches is commented out.
+.. Here's how to set a proxy with Chrome Switches.
+
+.. #literalinclude:: /examples/Chapter4/Java/ProxySetupChrome.java
+..    :language: java
+
+.. #literalinclude:: /examples/Chapter4/CSharp/ProxySetupChrome.cs
+..    :language: csharp
+
+.. #literalinclude:: /examples/Chapter4/python/ProxySetupChrome.py
+..    :language: python
+
+.. #literalinclude:: /examples/Chapter4/ruby/ProxySetupChrome.rb
+..    :language: ruby
+
+Firefox
++++++++
+Firefox maintains it's proxy configuration in a profile. You can preset the
+proxy in a profile and use that Firefox Profile or you can set it on profile
+that is created on the fly as is shown in the following example.
+
+.. literalinclude:: /examples/Chapter4/Java/ProxySetupFirefox.java
+    :language: java
+
+.. #literalinclude:: /examples/Chapter4/CSharp/ProxySetupFirefox.cs
+..    :language: csharp
+
+.. literalinclude:: /examples/Chapter4/python/ProxySetupFirefox.py
+    :language: python
+
+.. literalinclude:: /examples/Chapter4/ruby/ProxySetupFirefox.rb
+    :language: ruby
+
+Opera
++++++
+Todo
+
+.. #literalinclude:: /examples/Chapter4/Java/ProxySetupOpera.java
+..    :language: java
+
+.. #literalinclude:: /examples/Chapter4/CSharp/ProxySetupOpera.cs
+..    :language: csharp
+
+.. #literalinclude:: /examples/Chapter4/python/ProxySetupOpera.py
+..    :language: python
+
+.. #literalinclude:: /examples/Chapter4/ruby/ProxySetupOpera.rb
+..    :language: ruby
+
+HTML5
+-----
+Todo
 
 Parallelizing Your Test Runs
 ----------------------------
