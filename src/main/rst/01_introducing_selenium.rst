@@ -209,10 +209,32 @@ with Selenium 2 since this is the portion of Selenium that will continue to be
 supported in the future.
 
   
-Supported Browsers
-------------------
+Supported Browsers and Platforms
+--------------------------------
 
-*IMPORTANT:  This list was for Sel 1.0, It requires updating for Sel2.0--we will do that very soon.*
+In Selenium 2.0, the supported browsers vary depending on whether you are using Selenium-WebDriver
+or Selenium-RC.
+
+Selenium-WebDriver
+~~~~~~~~~~~~~~~~~~
+
+Selenium-WebDriver supports the following browsers along with the operating systems these browsers
+are compatable with.
+
+* Google Chrome 12.0.712.0+
+* Internet Explorer 6, 7, 8, 9 - 32 and 64-bit where applicable
+* Firefox 3.0, 3.5, 3.6, 4.0, 5.0
+* Opera 11.5+
+* HtmlUnit 2.8
+* Android 2.3+ on devices
+
+
+
+Selenium 1.0 and Selenium-RC.
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+This is the old, support platfom for Selenium 1.0.  It should still apply to the Selenium 2.0 
+release of Selenium-RC.
 
 =============  ==================================================  ===========================  =====================
 **Browser**    **Selenium IDE**                                    **Selenium 1 (RC)**          **Operating Systems**
@@ -311,6 +333,7 @@ to the authoring of this user's guide, its publishing infrastructure,
 or both.  We are very grateful to all of them.
 
 * Dave Hunt
+* Luke Inman-Semerau
 * Mary Ann May-Pumphrey
 * Noah Sussman
 * Paul Grandjean
