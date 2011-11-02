@@ -223,10 +223,12 @@ are compatable with.
 
 * Google Chrome 12.0.712.0+
 * Internet Explorer 6, 7, 8, 9 - 32 and 64-bit where applicable
-* Firefox 3.0, 3.5, 3.6, 4.0, 5.0
+* Firefox 3.0, 3.5, 3.6, 4.0, 5.0, 6, 7
 * Opera 11.5+
-* HtmlUnit 2.8
-* Android 2.3+ on devices
+* HtmlUnit 2.9
+* Android -- 2.3+ on devices.  Planned support is for 4.0 "Ice Cream Sandwich".  We still need to confirm 
+present support for emulators.  
+* iOS 3 & 4
 
 
 
