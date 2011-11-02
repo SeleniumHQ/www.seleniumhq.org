@@ -219,7 +219,7 @@ Selenium-WebDriver
 ~~~~~~~~~~~~~~~~~~
 
 Selenium-WebDriver supports the following browsers along with the operating systems these browsers
-are compatable with.
+are compatible with.
 
 * Google Chrome 12.0.712.0+
 * Internet Explorer 6, 7, 8, 9 - 32 and 64-bit where applicable
