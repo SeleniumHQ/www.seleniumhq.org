@@ -226,10 +226,12 @@ are compatable with.
 * Firefox 3.0, 3.5, 3.6, 4.0, 5.0, 6, 7
 * Opera 11.5+
 * HtmlUnit 2.9
-* Android -- 2.3+ on devices.  Planned support is for 4.0 "Ice Cream Sandwich".  We still need to confirm 
-present support for emulators.  
-* iOS 3 & 4
+* Android -- 2.3+ for phones and tablets (devices & emulators) 
+* iOS 3+ for phones (devices & emulators) and 3.2+ for tablets (devices & emulators)
 
+*Note:  At the time of writing there is an emulator bug with Android 2.3 that prevents the driver
+from working properly on device emulators.  However, it works fine on tablet emulators and real
+devices.*  
 
 
 Selenium 1.0 and Selenium-RC.
