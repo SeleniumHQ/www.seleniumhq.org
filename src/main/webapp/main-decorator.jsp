@@ -64,7 +64,7 @@ pageTracker._trackPageview();
         </ul>
         <div class="ads">
             <script type="text/javascript"><!--
-            google_ad_client = "pub-6291771388053870";
+            google_ad_client = "ca-pub-5440279806572486";
             /* 160x600, created 7/31/08 */
             google_ad_slot = "9920140235";
             google_ad_width = 160;
@@ -88,7 +88,7 @@ pageTracker._trackPageview();
         </ul>
         <div class="ads">
             <script type="text/javascript"><!--
-            google_ad_client = "pub-6291771388053870";
+            google_ad_client = "ca-pub-5440279806572486";
             /* 160x600, created 7/31/08 */
             google_ad_slot = "9920140235";
             google_ad_width = 160;
@@ -107,7 +107,7 @@ pageTracker._trackPageview();
 
         <div class="ads">
             <script type="text/javascript"><!--
-            google_ad_client = "pub-6291771388053870";
+            google_ad_client = "ca-pub-5440279806572486";
             /* 160x600, created 7/31/08 */
             google_ad_slot = "9920140235";
             google_ad_width = 160;
@@ -140,7 +140,7 @@ pageTracker._trackPageview();
 
         <div class="ads">
             <script type="text/javascript"><!--
-            google_ad_client = "pub-6291771388053870";
+            google_ad_client = "ca-pub-5440279806572486";
             /* 160x600, created 7/31/08 */
             google_ad_slot = "9920140235";
             google_ad_width = 160;
