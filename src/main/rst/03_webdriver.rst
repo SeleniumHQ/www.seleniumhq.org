@@ -672,7 +672,7 @@ This is easy with the `Firefox Driver`_:
     WebDriver driver = new FirefoxDriver(profile);
 
 
-Mofifying the Firefox Profile
+Modifying the Firefox Profile
 +++++++++++++++++++++++++++++
 
 Suppose that you wanted to modify the user agent string (as above), but you've
