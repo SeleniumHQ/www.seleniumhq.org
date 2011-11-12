@@ -184,7 +184,7 @@ it is entirely self-contained, and you usually don't need to remember to start a
 additional processes or run any installers before using it, as opposed to the proxy server
 with Selenium-RC.
 
-Note: addition steps are required to use `Chrome Driver`_, `Opera Driver`_, `Android Driver`_
+Note: additional steps are required to use `Chrome Driver`_, `Opera Driver`_, `Android Driver`_
 and `iPhone Driver`_
 
 You're now ready to write some code. An easy way to get started is this
@@ -292,15 +292,14 @@ If you can't wait, enabling JavaScript support is very easy:
 
 .. code-block:: ruby
 
-    caps = Selenium::WebDriver::Remote::Capabilities.htmlunit
-    caps[:javascript_enabled] = true
+    caps = Selenium::WebDriver::Remote::Capabilities.htmlunit(:javascript_enabled => true)
     driver = Selenium::WebDriver.for :remote, :url => "http://localhost:4444/wd/hub", :desired_capabilities => caps
 
 .. code-block:: python
 
     driver = webdriver.Remote("http://localhost:4444/wd/hub", webdriver.DesiredCapabilities.HTMLUNITWITHJS)
 
-This will cause the HtmlUnit Driver to emulate Internet Explorer's JavaScript
+This will cause the HtmlUnit Driver to emulate Firefox 3.6's JavaScript
 handling by default.
 
 Firefox Driver
@@ -310,7 +309,7 @@ Controls the `Firefox <http://getfirefox.com>`_ browser using a Firefox plugin.
 The Firefox Profile that is used is stripped down from what is installed on the
 machine to only include the Selenium WebDriver.xpi (plugin). A few settings are
 also changed by default (`see the source to see which ones 
-<http://code.google.com/p/selenium/source/browse/trunk/java/client/src/org/openqa/selenium/browserlaunchers/LauncherUtils.java#254>`_)
+<http://code.google.com/p/selenium/source/browse/trunk/java/client/src/org/openqa/selenium/firefox/FirefoxProfile.java#55>`_)
 Firefox Driver is capable of being run and is tested on Windows, Mac, Linux. 
 Currently on versions 3.0, 3.6, 5, 6, 7, and 8
 
@@ -364,7 +363,6 @@ Alternatively, if the profile isn't already registered with Firefox:
     FirefoxProfile profile = new FirefoxProfile(profileDir);
     profile.addAdditionalPreferences(extraPrefs);
     WebDriver driver = new FirefoxDriver(profile);
-    Enabling features that might not be wise to use in Firefox
 
 As we develop features in the `Firefox Driver`_, we expose the ability to use them.
 For example, until we feel native events are stable on Firefox for Linux, they
@@ -419,6 +417,8 @@ Cons
 * XPath is not natively supported in most versions. Sizzle is injected automatically
   which is significantly slower than other browsers and slower when comparing to CSS
   selectors in the same browser.
+* CSS is not natively supported in versions 6 and 7. Sizzle is injected instead.
+* CSS selectors in IE 8 and 9 are native, but those browsers don't fully support CSS3
 
 Info
 ++++
@@ -639,16 +639,16 @@ Example of how to find an element that looks like this:
 
 .. code-block:: ruby
 
-    frame = driver.find_elements(:tag_name, "iframe")
+    frame = driver.find_element(:tag_name, "iframe")
 
 .. code-block:: python
 
-    frame = driver.find_elements_by_tag_name("iframe")
+    frame = driver.find_element_by_tag_name("iframe")
 
     or
 
     from selenium.webdriver.common.by import By
-    frame = driver.find_elements(By.TAG_NAME, "iframe")
+    frame = driver.find_element(By.TAG_NAME, "iframe")
 
 
 By Name
@@ -672,16 +672,16 @@ Example of how to find an element that looks like this:
 
 .. code-block:: ruby
 
-    cheese = driver.find_elements(:name, "cheese")
+    cheese = driver.find_element(:name, "cheese")
 
 .. code-block:: python
 
-    cheese = driver.find_elements_by_name("cheese")
+    cheese = driver.find_element_by_name("cheese")
 
     or
 
     from selenium.webdriver.common.by import By
-    cheese = driver.find_elements(By.NAME, "cheese")
+    cheese = driver.find_element(By.NAME, "cheese")
 
 
 By Link Text
@@ -705,20 +705,20 @@ Example of how to find an element that looks like this:
 
 .. code-block:: ruby
 
-    cheese = driver.find_elements(:link_text, "cheese")
+    cheese = driver.find_element(:link_text, "cheese")
 
     or
 
-    cheese = driver.find_elements(:link, "cheese")
+    cheese = driver.find_element(:link, "cheese")
 
 .. code-block:: python
 
-    cheese = driver.find_elements_by_link_text("cheese")
+    cheese = driver.find_element_by_link_text("cheese")
 
     or
 
     from selenium.webdriver.common.by import By
-    cheese = driver.find_elements(By.LINK_TEXT, "cheese")
+    cheese = driver.find_element(By.LINK_TEXT, "cheese")
 
 
 By Partial Link Text
@@ -742,16 +742,16 @@ Example of how to find an element that looks like this:
 
 .. code-block:: ruby
 
-    cheese = driver.find_elements(:partial_link_text, "cheese")
+    cheese = driver.find_element(:partial_link_text, "cheese")
 
 .. code-block:: python
 
-    cheese = driver.find_elements_by_partial_link_text("cheese")
+    cheese = driver.find_element_by_partial_link_text("cheese")
 
     or
 
     from selenium.webdriver.common.by import By
-    cheese = driver.find_elements(By.PARTIAL_LINK_TEXT, "cheese")
+    cheese = driver.find_element(By.PARTIAL_LINK_TEXT, "cheese")
 
 By CSS
 ++++++
@@ -781,16 +781,16 @@ Example of to find the cheese below:
 
 .. code-block:: ruby
 
-    cheese = driver.find_elements(:css, "#food span.dairy.aged")
+    cheese = driver.find_element(:css, "#food span.dairy.aged")
 
 .. code-block:: python
 
-    cheese = driver.find_elements_by_css_selector("#food span.dairy.aged")
+    cheese = driver.find_element_by_css_selector("#food span.dairy.aged")
 
     or
 
     from selenium.webdriver.common.by import By
-    cheese = driver.find_elements(By.CSS_SELECTOR, "#food span.dairy.aged")
+    cheese = driver.find_element(By.CSS_SELECTOR, "#food span.dairy.aged")
 
 
 By XPATH
@@ -826,16 +826,16 @@ This is a little abstract, so for the following piece of HTML:
 
 .. code-block:: ruby
 
-    cheese = driver.find_elements(:xpath, "//input")
+    inputs = driver.find_elements(:xpath, "//input")
 
 .. code-block:: python
 
-    cheese = driver.find_elements_by_xpath("//input")
+    inputs = driver.find_elements_by_xpath("//input")
 
     or
 
     from selenium.webdriver.common.by import By
-    cheese = driver.find_elements(By.XPATH, "//input")
+    inputs = driver.find_elements(By.XPATH, "//input")
 
 
 The following number of matches will be found
@@ -939,8 +939,8 @@ with SELECT tags isn't too bad:
 .. code-block:: ruby
 
     select = driver.find_element(:tag_name, "select")
-    allOptions = select.find_elements(:tag_name, "option")
-    allOptions.each do |option|
+    all_options = select.find_elements(:tag_name, "option")
+    all_options.each do |option|
       puts "Value is: " + option.attribute("value")
       option.click
     end
