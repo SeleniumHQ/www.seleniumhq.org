@@ -56,7 +56,7 @@
 								</goals>
 								<configuration>
 									<tasks>
-										<copy file="target/selenium-website-1.0-SNAPSHOT.war"
+										<copy file="target/${project.artifactId}-${project.version}.war"
 											tofile="/opt/j2ee/domains/openqa.org/projectwebsites/tomcat/webapps/selenium/ROOT.war" />
 									</tasks>
 								</configuration>
@@ -84,12 +84,12 @@
         						</goals>
         						<configuration>
         							<tasks>
-        								<mkdir dir="target/selenium-website-1.0-SNAPSHOT/docs"/>
+        								<mkdir dir="target/${project.artifactId}-${project.version}/docs"/>
         								<exec executable="sphinx-build">
         									<arg value="-b"/>
         									<arg value="html"/>
         									<arg value="src/main/rst"/>
-        									<arg value="target/selenium-website-1.0-SNAPSHOT/docs/"/>
+        									<arg value="target/${project.artifactId}-${project.version}/docs/"/>
         								</exec>
         							</tasks>
         						</configuration>
@@ -102,12 +102,12 @@
         						</goals>
         						<configuration>
         							<tasks>
-        								<mkdir dir="target/selenium-website-1.0-SNAPSHOT/docs/book/"/>
+        								<mkdir dir="target/${project.artifactId}-${project.version}/docs/book/"/>
         								<exec executable="sphinx-build">
         									<arg value="-b"/>
         									<arg value="latex"/>
         									<arg value="src/main/rst"/>
-        									<arg value="target/selenium-website-1.0-SNAPSHOT/docs/book/"/>
+        									<arg value="target/${project.artifactId}-${project.version}/docs/book/"/>
         								</exec>
         							</tasks>
         						</configuration>
@@ -122,7 +122,7 @@
         							<tasks>
         								<exec executable="make">
         									<arg value="-C"/>
-        									<arg value="target/selenium-website-1.0-SNAPSHOT/docs/book/"/>
+        									<arg value="target/${project.artifactId}-${project.version}/docs/book/"/>
         									<arg value="all-pdf"/>
         								</exec>
         							</tasks>

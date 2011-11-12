@@ -1,3 +1,31 @@
+Importing Sel2.0 Project into Eclipse using Maven
+=================================================
+
+.. _importing-maven-into-eclipse-reference:
+
+Once you have created your pom.xml file in your project, you can have
+maven autogenerate the project files necessary for eclipse with a simple
+command:
+
+.. code-block:: bash
+
+    mvn eclipse:eclipse
+
+Then open eclipse. Choose your workspace or create a new one. Once the Eclipse
+IDE loads, do the following:
+
+ # File -> Import...
+ # General -> Existing Projects into Workspace
+ # Click next
+ # Next to "Select root Directory:" click "Browse" button
+ # locate the project folder containing your pom.xml and click ok.
+ # Your project should appear in the "Projects" box already
+ # click finish
+
+If you haven't already, install the `m2eclipse plugin <http://m2eclipse.sonatype.org/installing-m2eclipse.html>`_ then 
+right click on your project and select Maven -> Enable Dependency Management.
+
+
 Importing Sel2.0 Project into IntelliJ Using Maven
 ==================================================
 

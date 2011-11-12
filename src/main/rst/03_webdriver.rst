@@ -6,7 +6,7 @@ Selenium 2.0 and WebDriver
 *NOTE: We're currently working on documenting these sections.
 We believe the information here is accurate, however be aware we are also still working on this
 chapter.  Additional information will be provided as we go which should make this chapter more
-solid.  In addition, we will be proofreading and reviewing it.*
+solid.* 
 
 Selenium 2.0 Features
 ---------------------
@@ -28,20 +28,16 @@ the release announcement.*
 The Selenium Server -- When to Use It
 -------------------------------------
 You may, or may not, need the Selenium Server, depending on how you intend to use Selenium.  If
-you will be strictly using the WebDriver API you do not need the Selenium Server.  The Selenium
-Server provides Selenium-RC functionality, which is primarily used for Selenium 1.0 backwards
-compatability.  Since WebDriver uses completely different technology to interact with the
-browsers, the Selenium Server is not needed.  Selenium-WebDriver makes direct calls to the browser
-using each browser's native support for automation.  Selenium-RC however requires the Selenium-
-Server to inject javascript into the browser and to then translate messages from your test
-program's language-specific Selenium client library into commands that invoke the javascript
-commands which in turn, automate the AUT from within the browser.  In short, if you're using
-Selenium-WebDriver, you don't need the Selenium-Server.
+you will be strictly using the WebDriver API you do not necessarily need the Selenium Server. 
+Selenium-WebDriver makes direct calls to the browser using each browser's native support for automation.
+How these direct calls are made, depends on the browser you are using. See the information for each
+browser implementaion below.
 
-Another reason for using the Selenium-Server is if you are using Selenium-Grid for distributed
-exectution of your tests.  Finally, if you are using Selenium-backed Web-Driver (the WebDriver API
-but with back-end Selenium technology) you will also need the Selenium Server.
-These topics are described in more detail later in this chapter.
+Some reason why you will need the Selenium-Server -
+ * You are using Selenium-Grid to distribute your tests over many machines / VMs.
+ * You want to connect to a remote machine that has a particular browser version that is not on 
+   your current machine.
+ * You are not using the Java bindings and would like to use `HtmlUnit Driver`_
 
 .. _setting-up-webdriver-project:
 
@@ -78,7 +74,7 @@ your project.
                     <dependency>
                         <groupId>org.seleniumhq.selenium</groupId>
                         <artifactId>selenium-java</artifactId>
-                        <version>2.9.0</version>
+                        <version>2.12.0</version>
                     </dependency>
                 </dependencies>
         </project>
@@ -100,11 +96,12 @@ Finally, import the project into your preferred development environment.  For th
 with this, we've provided an appendix which shows this.
 
 :ref:`Importing a maven project into IntelliJ IDEA <importing-maven-into-intellij-reference>`.
+:ref:`Importing a maven project into Eclipse <importing-maven-into-eclipse-reference>`.
 
 
 C#
 ~~
-As of Selenium 2.2.0 is distributed as a set of signed dlls and all other
+As of Selenium 2.2.0, the C# bindings are distributed as a set of signed dlls along with other
 dependency dlls. Prior to 2.2.0, all Selenium dll's were unsigned.  
 To include Selenium in your project, simply download the latest
 selenium-dotnet zip file from https://code.google.com/p/selenium/downloads/list.
@@ -131,6 +128,9 @@ a command-line.
 
     pip install selenium
 
+Pip requires `pip <http://pypi.python.org/pypi/pip>`_ to be installed, pip also has a dependency
+on `setuptools <http://pypi.python.org/pypi/setuptools>`_.
+
 Teaching Python development itself is beyond the scope of this document, however there are many
 resources on Python and likely developers in your organization can help you get up to speed.
 
@@ -149,18 +149,14 @@ resources on Ruby and likely developers in your organization can help you get up
 
 Perl
 ~~~~
-Perl is not supported in Selenium 2.0 at this time. If you have questions, or would like to assist
-providing this support, please post a note to the Selenium developers_.
-
-.. _developers: http://groups.google.com/group/selenium-developers
+Perl bindings are provided by a third party, please refer to any of their documentation on how to
+install / get started. There is one known `Perl binding <https://metacpan.org/module/Selenium::Remote::Driver>`_ as of this writing.
 
 PHP
 ~~~
-PHP is not supported in Selenium 2.0 at this time. If you have questions, or would like to assist
-providing this support, please  post
-a note to the Selenium developers_.
-
-.. _developers: http://groups.google.com/group/selenium-developers
+PHP bindings are provided by a third party, please refer to any of their documentation on how to
+install / get started. There are three known bindings at this time: `By Chibimagic <https://github.com/chibimagic/WebDriver-PHP/>`_
+`By Lukasz Kolczynski <http://code.google.com/p/php-webdriver-bindings/>`_ and `By the Facebook <https://github.com/facebook/php-webdriver>`_
 
 Migrating from Selenium 1.0
 ---------------------------
@@ -187,6 +183,9 @@ Once your project is set up, you can see that WebDriver acts just as any normal 
 it is entirely self-contained, and you usually don't need to remember to start any
 additional processes or run any installers before using it, as opposed to the proxy server
 with Selenium-RC.
+
+Note: addition steps are required to use `Chrome Driver`_, `Opera Driver`_, `Android Driver`_
+and `iPhone Driver`_
 
 You're now ready to write some code. An easy way to get started is this
 example, which searches for the term "Cheese" on Google and then outputs the
@@ -217,45 +216,290 @@ Introducing WebDriver's Drivers
 WebDriver is the name of the key interface against which tests should be
 written, but there are several implementations. These include:
 
-=============================  ========================  =============================================
-Name of driver                 Available on which OS?    Class to instantiate
-=============================  ========================  =============================================
-`HtmlUnit Driver`_             All                       org.openqa.selenium.htmlunit.HtmlUnitDriver
-`Firefox Driver`_              All                       org.openqa.selenium.firefox.FirefoxDriver
-`Internet Explorer Driver`_    Windows                   org.openqa.selenium.ie.InternetExplorerDriver
-`Chrome Driver`_               All                       org.openqa.selenium.chrome.ChromeDriver
-`Opera Driver`_                                          We're currently upating this table
-`iPhone Driver`_
-`Android Driver`_
-=============================  ========================  =============================================
+HtmlUnit Driver
+~~~~~~~~~~~~~~~
 
-You can find out more information about each of these by following the links in
-the table. Which you use depends on what you want to do. For sheer speed, the
-`HtmlUnit Driver`_ is great, but it's not graphical, which means that you can't
-watch what's happening. As a developer you may be comfortable with this, but
-sometimes it's good to be able to test using a real browser, especially when
-you're showing a demo of your application (or running the tests) for an
-audience. Often, this idea is referred to as "safety", and it falls into two
-parts. Firstly, there's "actual safety", which refers to whether or not the
-tests work as they should. This can be measured and quantified. Secondly,
-there's "perceived safety", which refers to whether or not an observer believes
-the tests work as they should. This varies from person to person, and will
-depend on their familiarity with the application under test, WebDriver, and your
-testing framework.
+This is currently the fastest and most lightweight implementation of WebDriver.
+As the name suggests, this is based on HtmlUnit. HtmlUnit is a java based implementation
+of a WebBrowser without a GUI. For any language binding (other than java) the 
+Selenium Server is required to use this driver.
 
-To support higher "perceived safety", you may wish to choose a driver such as
-the `Firefox Driver`_. This has the added advantage that this driver actually
-renders content to a screen, and so can be used to detect information such
-as the position of an element on a page, or the CSS properties that apply to
-it. However, this additional flexibility comes at the cost of slower overall
-speed. By writing your tests against the WebDriver interface, it is possible to
-pick the most appropriate driver for a given test.
+Usage
++++++
 
-To keep things simple, let's start with the `HtmlUnit Driver`_:
+.. literalinclude:: /examples/Chapter3/Java/HtmlUnitUsage.java
+   :language: java
+
+.. literalinclude:: /examples/Chapter3/CSharp/HtmlUnitUsage.cs
+   :language: csharp
+
+.. literalinclude:: /examples/Chapter3/Python/HtmlUnitUsage.py
+   :language: python
+
+.. literalinclude:: /examples/Chapter3/Ruby/HtmlUnitUsage.rb
+   :language: ruby
+
+
+Pros
+++++
+
+* Fastest implementation of WebDriver
+* A pure Java solution and so it is platform independent.
+* Supports JavaScript
+
+Cons
+++++
+
+* Emulates other browsers' JavaScript behaviour (see below)
+
+JavaScript in the HtmlUnit Driver
++++++++++++++++++++++++++++++++++
+
+None of the popular browsers uses the JavaScript engine used by HtmlUnit
+(Rhino). If you test JavaScript using HtmlUnit the results may differ
+significantly from those browsers.
+
+When we say "JavaScript" we actually mean "JavaScript and the DOM". Although
+the DOM is defined by the W3C each browser has its own quirks and differences
+in their implementation of the DOM and in how JavaScript interacts with it.
+HtmlUnit has an impressively complete implementation of the DOM and has good
+support for using JavaScript, but it is no different from any other
+browser: it has its own quirks and differences from both the W3C standard and
+the DOM implementations of the major browsers, despite its ability to mimic
+other browsers.
+
+With WebDriver, we had to make a choice; do we enable HtmlUnit's JavaScript
+capabilities and run the risk of teams running into problems that only manifest
+themselves there, or do we leave JavaScript disabled, knowing that there are
+more and more sites that rely on JavaScript? We took the conservative approach,
+and by default have disabled support when we use HtmlUnit. With each release of
+both WebDriver and HtmlUnit, we reassess this decision: we hope to enable
+JavaScript by default on the HtmlUnit at some point.
+
+Enabling JavaScript
++++++++++++++++++++
+
+If you can't wait, enabling JavaScript support is very easy:
 
 .. code-block:: java
 
-    WebDriver driver = new HtmlUnitDriver();
+    HtmlUnitDriver driver = new HtmlUnitDriver(true);
+
+.. code-block:: csharp
+
+    WebDriver driver = new RemoteWebDriver(new Uri("http://127.0.0.1:4444/wd/hub"),
+                           DesiredCapabilities.HtmlUnitWithJavaScript());
+
+.. code-block:: ruby
+
+    caps = Selenium::WebDriver::Remote::Capabilities.htmlunit
+    caps[:javascript_enabled] = true
+    driver = Selenium::WebDriver.for :remote, :url => "http://localhost:4444/wd/hub", :desired_capabilities => caps
+
+.. code-block:: python
+
+    driver = webdriver.Remote("http://localhost:4444/wd/hub", webdriver.DesiredCapabilities.HTMLUNITWITHJS)
+
+This will cause the HtmlUnit Driver to emulate Internet Explorer's JavaScript
+handling by default.
+
+Firefox Driver
+~~~~~~~~~~~~~~
+
+Controls the `Firefox <http://getfirefox.com>`_ browser using a Firefox plugin.
+The Firefox Profile that is used is stripped down from what is installed on the
+machine to only include the Selenium WebDriver.xpi (plugin). A few settings are
+also changed by default (`see the source to see which ones 
+<http://code.google.com/p/selenium/source/browse/trunk/java/client/src/org/openqa/selenium/browserlaunchers/LauncherUtils.java#254>`_)
+Firefox Driver is capable of being run and is tested on Windows, Mac, Linux. 
+Currently on versions 3.0, 3.6, 5, 6, 7, and 8
+
+Usage
++++++
+
+.. literalinclude:: /examples/Chapter3/Java/FirefoxUsage.java
+   :language: java
+
+.. literalinclude:: /examples/Chapter3/CSharp/FirefoxUsage.cs
+   :language: csharp
+
+.. literalinclude:: /examples/Chapter3/Python/FirefoxUsage.py
+   :language: python
+
+.. literalinclude:: /examples/Chapter3/Ruby/FirefoxUsage.rb
+   :language: ruby
+
+Pros
+++++
+
+* Runs in a real browser and supports JavaScript
+* Faster than the `Internet Explorer Driver`_
+
+Cons
+++++
+
+* Slower than the `HtmlUnit Driver`_
+
+
+Modifying the Firefox Profile
++++++++++++++++++++++++++++++
+
+Suppose that you wanted to modify the user agent string (as above), but you've
+got a tricked out Firefox profile that contains dozens of useful extensions.
+There are two ways to obtain this profile. Assuming that the profile has been
+created using Firefox's profile manager (``firefox -ProfileManager``):
+
+.. code-block:: java
+
+    ProfileIni allProfiles = new ProfilesIni();
+    FirefoxProfile profile = allProfiles.getProfile("WebDriver");
+    profile.setPreferences("foo.bar", 23);
+    WebDriver driver = new FirefoxDriver(profile);
+
+Alternatively, if the profile isn't already registered with Firefox:
+
+.. code-block:: java
+
+    File profileDir = new File("path/to/top/level/of/profile");
+    FirefoxProfile profile = new FirefoxProfile(profileDir);
+    profile.addAdditionalPreferences(extraPrefs);
+    WebDriver driver = new FirefoxDriver(profile);
+    Enabling features that might not be wise to use in Firefox
+
+As we develop features in the `Firefox Driver`_, we expose the ability to use them.
+For example, until we feel native events are stable on Firefox for Linux, they
+are disabled by default. To enable them:
+
+.. code-block:: java
+
+    FirefoxProfile profile = new FirefoxProfile();
+    profile.setEnableNativeEvents(true);
+    WebDriver driver = new FirefoxDriver(profile);
+
+
+
+Info
+++++
+
+See the `Firefox secion in the wiki page <http://code.google.com/p/selenium/wiki/FirefoxDriver>`_ for the most up to date info.
+
+Internet Explorer Driver
+~~~~~~~~~~~~~~~~~~~~~~~~
+
+This driver is controlled by a .dll and is thus only available on Windows OS.
+Each Selenium release has it's core functionality tested against versions
+6, 7 and 8 on XP, and 9 on Windows7.
+
+Usage
++++++
+
+.. literalinclude:: /examples/Chapter3/Java/IEUsage.java
+   :language: java
+
+.. literalinclude:: /examples/Chapter3/CSharp/IEUsage.cs
+   :language: csharp
+
+.. literalinclude:: /examples/Chapter3/Python/IEUsage.py
+   :language: python
+
+.. literalinclude:: /examples/Chapter3/Ruby/IEUsage.rb
+   :language: ruby
+
+Pros
+++++
+
+* Runs in a real browser and supports JavaScript with all the quirks
+  your end users see.
+
+Cons
+++++
+
+* Obviously the `Internet Explorer Driver`_ will only work on Windows!
+* Comparatively slow (though still pretty snappy :)
+* XPath is not natively supported in most versions. Sizzle is injected automatically
+  which is significantly slower than other browsers and slower when comparing to CSS
+  selectors in the same browser.
+
+Info
+++++
+
+See the `Internet Explorer section of the wiki page <http://code.google.com/p/selenium/wiki/InternetExplorerDriver>`_ for the most up to date info.
+Please take special note of the Required Configuration section.
+
+
+Chrome Driver
+~~~~~~~~~~~~~
+
+Chrome Driver is maintained / supported by the `Chromium <http://code.google.com/p/chromium/>`_ 
+project iteslf. WebDriver works with Chrome through the chromedriver binary (found on the chromium
+project's download page). You need to have both chromedriver and a version of chrome browser installed.
+chromedriver needs to be placed somewhere on your system's path in order for WebDriver to automatically
+discover it. The Chrome browser itself is discovered by chromedriver in the default installation path.
+These both can be overridden by environment variables. Please refer to `the wiki <http://code.google.com/p/selenium/wiki/ChromeDriver>`_
+for more information.
+
+Usage
++++++
+
+.. literalinclude:: /examples/Chapter3/Java/ChromeUsage.java
+   :language: java
+
+.. literalinclude:: /examples/Chapter3/CSharp/ChromeUsage.cs
+   :language: csharp
+
+.. literalinclude:: /examples/Chapter3/Python/ChromeUsage.py
+   :language: python
+
+.. literalinclude:: /examples/Chapter3/Ruby/ChromeUsage.rb
+   :language: ruby
+
+Pros
+++++
+
+* Runs in a real browser and supports JavaScript
+* Because Chrome is a Webkit-based browser, the `Chrome Driver`_ may allow you to
+  verify that your site works in Safari. Note that since Chrome uses its own V8
+  JavaScript engine rather than Safari's Nitro engine, JavaScript execution may
+  differ.
+
+Cons
+++++
+
+* Slower than the `HtmlUnit Driver`_
+
+Info
+++++
+
+`See our wiki <http://code.google.com/p/selenium/wiki/ChromeDriver>`_ for the most up to date info.
+More info can also be found on the `downloads page </download/>`_
+
+Getting running with Chrome Driver
+++++++++++++++++++++++++++++++++++
+
+Download the `Chrome Driver executable <http://code.google.com/p/chromium/downloads/list>`_
+and follow the other instructions on the 
+`wiki page <http://code.google.com/p/selenium/wiki/ChromeDriver>`_
+
+.. _SeleniumRCEmulation:
+
+Opera Driver
+~~~~~~~~~~~~~
+
+See the `Opera Driver wiki article <http://code.google.com/p/selenium/wiki/OperaDriver>`_ in the
+Selenium Wiki for information on using the Opera Driver.
+
+iPhone Driver
+~~~~~~~~~~~~~~
+
+See the `iPhone Driver wiki article <http://code.google.com/p/selenium/wiki/IPhoneDriver>`_ in the
+Selenium Wiki for information on using the Mac iOS Driver.
+
+Android Driver
+~~~~~~~~~~~~~~
+
+See the `Android Driver wiki article <http://code.google.com/p/selenium/wiki/AndroidDriver>`_
+in the Selenium Wiki for information on using the Android Driver.
+
 
 Commands and Operation
 ----------------------
@@ -270,83 +514,287 @@ The normal way to do this is by calling "get":
 
     driver.get("http://www.google.com");
 
+.. code-block:: csharp
+
+    driver.Url = "http://www.google.com";
+
+.. code-block:: ruby
+    
+    driver.get "http://www.google.com"
+
+.. code-block:: python
+
+    driver.get("http://www.google.com")
+
 WebDriver will wait until the page has fully loaded (that is, the "onload"
 event has fired) before returning control to your test or script. It's worth
 noting that if your page uses a lot of AJAX on load then WebDriver may not
 know when it has completely loaded. If you need to ensure such pages are
 fully loaded then you can use an :ref:`Explicit and Implicit Waits <explicit_and_implicit_waits-reference>`.
 
-Interacting With the Page
-~~~~~~~~~~~~~~~~~~~~~~~~~
-
-Just being able to go to places isn't terribly useful. What we'd really like
-to do is to interact with the pages, or, more specifically, the HTML elements
-within a page. First of all, we need to find one. WebDriver offers a number of
-ways of finding elements. For example, given an element defined as:
-
-.. code-block:: html
-
-    <input type="text" name="passwd" id="passwd-id" />
-
-you could find it using any of the following examples:
-
-.. code-block:: java
-
-    WebElement element;
-    element = driver.findElement(By.id("passwd-id"));
-    element = driver.findElement(By.name("passwd"));
-    element = driver.findElement(By.xpath("//input[@id='passwd-id']"));
-
-You can also look for a link by its text, but be careful! The text must be an
-exact match! You should also be careful when using 
-`XPATH in WebDriver <http://code.google.com/p/selenium/wiki/XpathInWebDriver>`_. 
-If there's more than one element that matches the query, then only the first will
-be returned. If nothing can be found, a ``NoSuchElementException`` will be
-thrown.
-
-WebDriver has an "Object-based" API; we represent all types of elements using
-the same interface:
-`Web Element <http://selenium.googlecode.com/svn/trunk/docs/api/java/org/openqa/selenium/WebElement.html>`_.
-This means that although you may see a lot of possible methods you could invoke
-when you hit your IDE's auto-complete key combination, not all of them will
-make sense or be valid. Don't worry! WebDriver will attempt to do the Right
-Thing, and if you call a method that makes no sense ("setSelected()" on a
-"meta" tag, for example) an exception will be thrown.
-
-So, you've got an element. What can you do with it? First of all, you may want
-to enter some text into a text field:
-
-.. code-block:: java
-
-    element.sendKeys("some text");
-
-You can simulate pressing the arrow keys by using the "Keys" class:
-
-.. code-block:: java
-
-    element.sendKeys(" and some", Keys.ARROW_DOWN);
-
-It is possible to call sendKeys on any element, which makes it possible to test
-keyboard shortcuts such as those used on GMail. A side-effect of this is that
-typing something into a text field won't automatically clear it. Instead, what
-you type will be appended to what's already there. You can easily clear the
-contents of a text field or textarea:
-
-.. code-block:: java
-
-    element.clear();
-
 
 Locating UI Elements (WebElements)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-*Note:  This section still needs to be developed.*  
+Locating elements in WebDriver can be done on the WebDriver instance itself or on a WebElement.
+Each of the language bindings expose a "Find Element" and "Find Elements" method. The first returns
+a WebElement object otherwise it throws an exception. The latter returns a list of WebElements, it can
+return an empty list if no DOM elements match the query.
 
-Locating elements in WebDriver is done using the "By" class.  This class implements all location
-strategies used by WebDriver.
+The "Find" methods take a locator or query object called "By". "By" strategies are listed below.
 
-Using XPATH Statements
-++++++++++++++++++++++
+By ID
++++++
+
+This is the most efficient and prefered way to locate an element. Common pitfalls that UI developers
+make is having non-unique id's on a page or auto-generating the id, both should be avoided. A class
+on an html element is more appropriate than an auto-generated id.
+
+Example of how to find an element that looks like this:
+
+.. code-block:: html
+
+    <div id="coolestWidgetEvah">...</div>
+
+.. code-block:: java
+
+    WebElement element = driver.findElement(By.id("coolestWidgetEvah"));
+
+.. code-block:: csharp
+
+    IWebElement element = driver.FindElement(By.Id("coolestWidgetEvah"));
+
+.. code-block:: ruby
+
+    element = driver.find_element(:id, "coolestWidgetEvah")
+
+.. code-block:: python
+
+    element = driver.find_element_by_id("coolestWidgetEvah")
+
+    or
+
+    from selenium.webdriver.common.by import By
+    element = driver.find_element(by=By.ID, value="coolestWidgetEvah")
+
+
+By Class Name
++++++++++++++
+
+"Class" in this case refers to the attribute on the DOM element. Often in practicle use there are
+many DOM elements with the same class name, thus finding multiple elements becomes the more praticle
+option over finding the first element.
+
+
+Example of how to find an element that looks like this:
+
+.. code-block:: html
+
+    <div class="cheese"><span>Cheddar</span></div><div class="cheese"><span>Gouda</span></div>
+
+.. code-block:: java
+
+    List<WebElement> cheeses = driver.findElements(By.className("cheese"));
+
+.. code-block:: csharp
+
+    IList<IWebElement> cheeses = driver.FindElements(By.ClassName("cheese"));
+
+.. code-block:: ruby
+
+    cheeses = driver.find_elements(:class_name, "cheese")
+
+    or
+
+    cheeses = driver.find_elements(:class, "cheese")
+
+.. code-block:: python
+
+    cheeses = driver.find_elements_by_class_name("cheese")
+
+    or
+
+    from selenium.webdriver.common.by import By
+    cheeses = driver.find_elements(By.CLASS_NAME, "cheese")
+
+
+By Tag Name
++++++++++++
+
+The DOM Tag Name of the element.
+
+Example of how to find an element that looks like this:
+
+.. code-block:: html
+
+    <iframe src="..."></iframe>
+
+.. code-block:: java
+
+    WebElement frame = driver.findElement(By.tagName("iframe"));
+
+.. code-block:: csharp
+
+    IWebElement frame = driver.FindElement(By.TagName("iframe"));
+
+.. code-block:: ruby
+
+    frame = driver.find_elements(:tag_name, "iframe")
+
+.. code-block:: python
+
+    frame = driver.find_elements_by_tag_name("iframe")
+
+    or
+
+    from selenium.webdriver.common.by import By
+    frame = driver.find_elements(By.TAG_NAME, "iframe")
+
+
+By Name
++++++++
+
+Find the input element with matching name attribute.
+
+Example of how to find an element that looks like this:
+
+.. code-block:: html
+
+    <input name="cheese" type="text"/>
+
+.. code-block:: java
+
+    WebElement cheese = driver.findElement(By.name("cheese"));
+
+.. code-block:: csharp
+
+    IWebElement cheese = driver.FindElement(By.Name("cheese"));
+
+.. code-block:: ruby
+
+    cheese = driver.find_elements(:name, "cheese")
+
+.. code-block:: python
+
+    cheese = driver.find_elements_by_name("cheese")
+
+    or
+
+    from selenium.webdriver.common.by import By
+    cheese = driver.find_elements(By.NAME, "cheese")
+
+
+By Link Text
+++++++++++++
+
+Find the link element with matching visible text.
+
+Example of how to find an element that looks like this:
+
+.. code-block:: html
+
+    <a href="http://www.google.com/search?q=cheese">cheese</a>>
+
+.. code-block:: java
+
+    WebElement cheese = driver.findElement(By.linkText("cheese"));
+
+.. code-block:: csharp
+
+    IWebElement cheese = driver.FindElement(By.LinkText("cheese"));
+
+.. code-block:: ruby
+
+    cheese = driver.find_elements(:link_text, "cheese")
+
+    or
+
+    cheese = driver.find_elements(:link, "cheese")
+
+.. code-block:: python
+
+    cheese = driver.find_elements_by_link_text("cheese")
+
+    or
+
+    from selenium.webdriver.common.by import By
+    cheese = driver.find_elements(By.LINK_TEXT, "cheese")
+
+
+By Partial Link Text
+++++++++++++++++++++
+
+Find the link element with partial matching visible text.
+
+Example of how to find an element that looks like this:
+
+.. code-block:: html
+
+    <a href="http://www.google.com/search?q=cheese">search for cheese</a>>
+
+.. code-block:: java
+
+    WebElement cheese = driver.findElement(By.partialLinkText("cheese"));
+
+.. code-block:: csharp
+
+    IWebElement cheese = driver.FindElement(By.PartialLinkText("cheese"));
+
+.. code-block:: ruby
+
+    cheese = driver.find_elements(:partial_link_text, "cheese")
+
+.. code-block:: python
+
+    cheese = driver.find_elements_by_partial_link_text("cheese")
+
+    or
+
+    from selenium.webdriver.common.by import By
+    cheese = driver.find_elements(By.PARTIAL_LINK_TEXT, "cheese")
+
+By CSS
+++++++
+
+Like the name implies it is a locator strategy by css. Native browser support
+is used by default, so please refer to `w3c css selectors <http://www.w3.org/TR/CSS/#selectors>`
+for a list of generally available css selectors. If a browser does not have
+native support for css queries, then `Sizzle <http://sizzlejs.com/>`_ is used. IE 6,7 and FF3.0 
+currently use Sizzle as the css query engine.
+
+Beware that not all browsers were created equal, some css that might work in one version may not work
+in another.
+
+Example of to find the cheese below:
+
+.. code-block:: html
+
+    <div id="food"><span class="dairy">milk</span><span class="dairy aged">cheese</span></div>
+
+.. code-block:: java
+
+    WebElement cheese = driver.findElement(By.cssSelector("#food span.dairy.aged"));
+
+.. code-block:: csharp
+
+    IWebElement cheese = driver.FindElement(By.CssSelector("#food span.dairy.aged"));
+
+.. code-block:: ruby
+
+    cheese = driver.find_elements(:css, "#food span.dairy.aged")
+
+.. code-block:: python
+
+    cheese = driver.find_elements_by_css_selector("#food span.dairy.aged")
+
+    or
+
+    from selenium.webdriver.common.by import By
+    cheese = driver.find_elements(By.CSS_SELECTOR, "#food span.dairy.aged")
+
+
+By XPATH
+++++++++
 
 At a high level, WebDriver uses a browser's native XPath capabilities wherever
 possible. On those browsers that don't have native XPath support, we have
@@ -368,6 +816,28 @@ This is a little abstract, so for the following piece of HTML:
     <input type="text" name="example" />
     <INPUT type="text" name="other" />
 
+.. code-block:: java
+
+    List<WebElement> inputs = driver.findElements(By.xpath("//input"));
+
+.. code-block:: csharp
+
+    IList<IWebElement> inputs = driver.FindElements(By.XPath("//input"));
+
+.. code-block:: ruby
+
+    cheese = driver.find_elements(:xpath, "//input")
+
+.. code-block:: python
+
+    cheese = driver.find_elements_by_xpath("//input")
+
+    or
+
+    from selenium.webdriver.common.by import By
+    cheese = driver.find_elements(By.XPATH, "//input")
+
+
 The following number of matches will be found
 
 =================== ====================== ====================== =============================
@@ -384,6 +854,60 @@ not require the "type" attribute because it defaults to "text". The rule of
 thumb when using xpath in WebDriver is that you **should not** expect to be able
 to match against these implicit attributes.
 
+Using JavaScript
+++++++++++++++++
+
+You can execute arbitrary javascript to find an element and as long as you return a DOM Element,
+it will be automatically converted to a WebElement object.
+
+Simple example on a page that has jQuery loaded:
+
+.. code-block:: java
+
+    WebElement element = (WebElement) ((JavascriptExecutor)driver).executeScript("return $('.cheese')[0]");
+
+.. code-block:: csharp
+
+    IWebElement element = (IWebElement) ((IJavaScriptExecutor)driver).ExecuteScript("return $('.cheese')[0]");
+
+.. code-block:: ruby
+
+    element = driver.execute_script("return $('.cheese')[0]")
+
+.. code-block:: python
+
+    element = driver.execute_script("return $('.cheese')[0]")
+
+Finding all the input elements to the every label on a page:
+
+.. code-block:: java
+    
+    List<WebElement> labels = driver.findElements(By.tagName("label"));
+    List<WebElement> inputs = (List<WebElement>) ((JavascriptExecutor)driver).executeScript(
+        "var labels = arguments[0], inputs = []; for (var i=0; i < labels.length; i++){" +
+        "inputs.push(document.getElementById(labels[i].getAttribute('for'))); } return inputs;", labels);
+
+.. code-block:: csharp
+
+    IList<IWebElement> labels = driver.FindElements(By.TagName("label"));
+    IList<IWebElement> inputs = (IList<IWebElement>) ((IJavaScriptExecutor)driver).ExecuteScript(
+        "var labels = arguments[0], inputs = []; for (var i=0; i < labels.length; i++){" +
+        "inputs.push(document.getElementById(labels[i].getAttribute('for'))); } return inputs;", labels);
+
+.. code-block:: ruby
+
+    labels = driver.find_elements(:tag_name, "label")
+    inputs = driver.execute_script(
+        "var labels = arguments[0], inputs = []; for (var i=0; i < labels.length; i++){" +
+        "inputs.push(document.getElementById(labels[i].getAttribute('for'))); } return inputs;", labels)
+
+.. code-block:: python
+
+    labels = driver.find_elements_by_tag_name("label")
+    inputs = driver.execute_script(
+        "var labels = arguments[0], inputs = []; for (var i=0; i < labels.length; i++){" +
+        "inputs.push(document.getElementById(labels[i].getAttribute('for'))); } return inputs;", labels)
+
 
 User Input - Filling In Forms
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -395,12 +919,40 @@ with SELECT tags isn't too bad:
 
 .. code-block:: java
 
-    WebElement select = driver.findElement(By.xpath("//select"));
+    WebElement select = driver.findElement(By.tagName("select"));
     List<WebElement> allOptions = select.findElements(By.tagName("option"));
     for (WebElement option : allOptions) {
         System.out.println(String.format("Value is: %s", option.getAttribute("value")));
         option.click();
     }
+
+.. code-block:: csharp
+
+    IWebElement select = driver.FindElement(By.TagName("select"));
+    IList<IWebElement> allOptions = select.FindElements(By.TagName("option"));
+    foreach (IWebElement option in allOptions)
+    {
+        System.Console.WriteLine("Value is: " + option.GetAttribute("value"));
+        option.Click();
+    }
+
+.. code-block:: ruby
+
+    select = driver.find_element(:tag_name, "select")
+    allOptions = select.find_elements(:tag_name, "option")
+    allOptions.each do |option|
+      puts "Value is: " + option.attribute("value")
+      option.click
+    end
+
+.. code-block:: python
+
+    select = driver.find_element_by_tag_name("select")
+    allOptions = select.find_elements_by_tag_name("option")
+    for option in allOptions:
+        print "Value is: " + option.get_attribute("value")
+        option.click()
+
 
 This will find the first "SELECT" element on the page, and cycle through each
 of its OPTIONs in turn, printing out their values, and selecting each in turn.
@@ -410,9 +962,23 @@ provides useful methods for interacting with these.
 
 .. code-block:: java
 
-    Select select = new Select(driver.findElement(By.xpath("//select")));
+    Select select = new Select(driver.findElement(By.tagName("select")));
     select.deselectAll();
     select.selectByVisibleText("Edam");
+
+.. code-block:: csharp
+
+    SelectElement select = new SelectElement(driver.FindElement(By.TagName("select")));
+    select.DeselectAll();
+    select.SelectByText("Edam");
+
+.. code-block:: python
+    
+    # available since 2.12
+    from selenium.webdriver.support.ui import Select 
+    select = Select(driver.find_element_by_tag_name("select"))
+    select.deselect_all()
+    select.select_by_visible_text("Edam")
 
 This will deselect all OPTIONs from the first SELECT on the page, and then
 select the OPTION with the displayed text of "Edam".
@@ -423,7 +989,6 @@ way to do this would be to find the "submit" button and click it:
 .. code-block:: java
 
     driver.findElement(By.id("submit")).click();
-    // Assume the button has the ID "submit" :)
 
 Alternatively, WebDriver has the convenience method "submit" on every element.
 If you call this on an element within a form, WebDriver will walk up the DOM
@@ -573,11 +1138,23 @@ an alternative is to find a smaller page on the site, typically the 404 page is 
     driver.delete_all_cookies()
 
 
+Changing the User Agent
+~~~~~~~~~~~~~~~~~~~~~~~
+
+This is easy with the `Firefox Driver`_:
+
+.. code-block:: java
+
+    FirefoxProfile profile = new FirefoxProfile();
+    profile.addAdditionalPreference("general.useragent.override", "some UA string");
+    WebDriver driver = new FirefoxDriver(profile);
+
+
 Drag And Drop
 ~~~~~~~~~~~~~
 
 Here's an example of using the Actions class to perform a drag and drop.
-As of rc2 this only works on the Windows platform.
+Native events are required to be enabled.
 
 .. code-block:: java
 
@@ -590,210 +1167,6 @@ As of rc2 this only works on the Windows platform.
 Driver Specifics and Tradeoffs
 ------------------------------
 
-HtmlUnit Driver
-~~~~~~~~~~~~~~~
-
-This is currently the fastest and most lightweight implementation of WebDriver.
-As the name suggests, this is based on HtmlUnit.
-
-Pros
-++++
-
-* Fastest implementation of WebDriver
-* A pure Java solution and so it is platform independent.
-* Supports JavaScript
-
-Cons
-++++
-
-* Emulates other browsers' JavaScript behaviour (see below)
-
-JavaScript in the HtmlUnit Driver
-+++++++++++++++++++++++++++++++++
-
-None of the popular browsers uses the JavaScript engine used by HtmlUnit
-(Rhino). If you test JavaScript using HtmlUnit the results may differ
-significantly from those browsers.
-
-When we say "JavaScript" we actually mean "JavaScript and the DOM". Although
-the DOM is defined by the W3C each browser has its own quirks and differences
-in their implementation of the DOM and in how JavaScript interacts with it.
-HtmlUnit has an impressively complete implementation of the DOM and has good
-support for using JavaScript, but it is no different from any other
-browser: it has its own quirks and differences from both the W3C standard and
-the DOM implementations of the major browsers, despite its ability to mimic
-other browsers.
-
-With WebDriver, we had to make a choice; do we enable HtmlUnit's JavaScript
-capabilities and run the risk of teams running into problems that only manifest
-themselves there, or do we leave JavaScript disabled, knowing that there are
-more and more sites that rely on JavaScript? We took the conservative approach,
-and by default have disabled support when we use HtmlUnit. With each release of
-both WebDriver and HtmlUnit, we reassess this decision: we hope to enable
-JavaScript by default on the HtmlUnit at some point.
-
-Enabling JavaScript
-+++++++++++++++++++
-
-If you can't wait, enabling JavaScript support is very easy:
-
-.. code-block:: java
-
-    HtmlUnitDriver driver = new HtmlUnitDriver();
-    driver.setJavascriptEnabled(true);
-
-This will cause the `HtmlUnit Driver`_ to emulate Internet Explorer's JavaScript
-handling by default.
-
-Firefox Driver
-~~~~~~~~~~~~~~
-
-Pros
-++++
-
-* Runs in a real browser and supports JavaScript
-* Faster than the `Internet Explorer Driver`_
-
-Cons
-++++
-
-* Slower than the `HtmlUnit Driver`_
-
-
-Changing the User Agent
-+++++++++++++++++++++++
-
-This is easy with the `Firefox Driver`_:
-
-.. code-block:: java
-
-    FirefoxProfile profile = new FirefoxProfile();
-    profile.addAdditionalPreference("general.useragent.override", "some UA string");
-    WebDriver driver = new FirefoxDriver(profile);
-
-
-Modifying the Firefox Profile
-+++++++++++++++++++++++++++++
-
-Suppose that you wanted to modify the user agent string (as above), but you've
-got a tricked out Firefox profile that contains dozens of useful extensions.
-There are two ways to obtain this profile. Assuming that the profile has been
-created using Firefox's profile manager (``firefox -ProfileManager``):
-
-.. code-block:: java
-
-    ProfileIni allProfiles = new ProfilesIni();
-    FirefoxProfile profile = allProfiles.getProfile("WebDriver");
-    profile.setPreferences("foo.bar", 23);
-    WebDriver driver = new FirefoxDriver(profile);
-
-Alternatively, if the profile isn't already registered with Firefox:
-
-.. code-block:: java
-
-    File profileDir = new File("path/to/top/level/of/profile");
-    FirefoxProfile profile = new FirefoxProfile(profileDir);
-    profile.addAdditionalPreferences(extraPrefs);
-    WebDriver driver = new FirefoxDriver(profile);
-    Enabling features that might not be wise to use in Firefox
-
-As we develop features in the `Firefox Driver`_, we expose the ability to use them.
-For example, until we feel native events are stable on Firefox for Linux, they
-are disabled by default. To enable them:
-
-.. code-block:: java
-
-    FirefoxProfile profile = new FirefoxProfile();
-    profile.setEnableNativeEvents(true);
-    WebDriver driver = new FirefoxDriver(profile);
-
-
-
-Info
-++++
-
-See the `Firefox secion in the wiki page <http://code.google.com/p/selenium/wiki/FirefoxDriver>`_ for the most up to date info.
-
-Internet Explorer Driver
-~~~~~~~~~~~~~~~~~~~~~~~~
-
-This driver has been tested with Internet Explorer 6, 7 and 8 on XP. It has
-also been successfully tested on Vista.
-
-Pros
-++++
-
-* Runs in a real browser and supports JavaScript
-
-Cons
-++++
-
-* Obviously the `Internet Explorer Driver`_ will only work on Windows!
-* Comparatively slow (though still pretty snappy :)
-
-Info
-++++
-
-See the `Internet Explorer section of the wiki page <http://code.google.com/p/selenium/wiki/InternetExplorerDriver>`_ for the most up to date info.
-Please take special note of the Required Configuration section.
-
-
-Chrome Driver
-~~~~~~~~~~~~~
-
-Chrome Driver is maintained / supported by the `Chromium <http://code.google.com/p/chromium/>`_ 
-project iteslf.
-WebDriver is now inside of the Chrome browser iteslf. Please 
-`see our wiki <http://code.google.com/p/selenium/wiki/ChromeDriver>`_ for the most up to date info.
-
-Pros
-++++
-
-* Runs in a real browser and supports JavaScript
-* Because Chrome is a Webkit-based browser, the `Chrome Driver`_ may allow you to
-  verify that your site works in Safari. Note that since Chrome uses its own V8
-  JavaScript engine rather than Safari's Nitro engine, JavaScript execution may
-  differ.
-
-Cons
-++++
-
-* Slower than the `HtmlUnit Driver`_
-
-.. TODO: I removed the known issues section as this type of content is best in
-         the Wiki or issue tracker. Can we add a link to all issues raised
-         against ChromeDriver?
-
-Getting running with Chrome Driver
-++++++++++++++++++++++++++++++++++
-
-*Note:  this section is likely out of date.  If you used the commands at the beginning of this
-chapter for setting up a Selenium 2 project you should already have the Chrome Driver along with
-all the other drivers.*
-
-Download the `Chrome Driver executable <http://code.google.com/p/chromium/downloads/list>`_
-and follow the other instructions on the 
-`wiki page <http://code.google.com/p/selenium/wiki/ChromeDriver>`_
-
-.. _SeleniumRCEmulation:
-
-Opera Driver
-~~~~~~~~~~~~~
-
-See the `Opera Driver wiki article <http://code.google.com/p/selenium/wiki/OperaDriver>`_ in the
-Selenium Wiki for information on using the Opera Driver.
-
-iPhone Driver
-~~~~~~~~~~~~~~
-
-See the `iPhone Driver wiki article <http://code.google.com/p/selenium/wiki/IPhoneDriver>`_ in the
-Selenium Wiki for information on using the Mac iOS Driver.
-
-Android Driver
-~~~~~~~~~~~~~~
-
-See the `Android Driver wiki article <http://code.google.com/p/selenium/wiki/AndroidDriver>`_
-in the Selenium Wiki for information on using the Android Driver.
 
 WebDriver-Backed Selenium-RC
 ----------------------------
@@ -826,10 +1199,10 @@ Selenium-WebDriver is used like this:
     // same WebDriver instance as the "driver" variable above.
     WebDriver driverInstance = ((WebDriverBackedSelenium) selenium).getUnderlyingWebDriver();
 
-        //Finally, close the browser. Call stop on the WebDriverBackedSelenium instance
-        //instead of calling driver.quit(). Otherwise, the JVM will continue running after
-        //the browser has been closed.
-        selenium.stop();
+    //Finally, close the browser. Call stop on the WebDriverBackedSelenium instance
+    //instead of calling driver.quit(). Otherwise, the JVM will continue running after
+    //the browser has been closed.
+    selenium.stop();
 
 Pros
 ~~~~
@@ -852,13 +1225,16 @@ Backing WebDriver with Selenium
 
 WebDriver doesn't support as many browsers as Selenium RC does, so in order to
 provide that support while still using the WebDriver API, you can make use of
-the ``SeleneseCommandExecutor`` It is done like this:
+the ``SeleneseCommandExecutor``
+
+Safari is supported in this way with the following code (be sure to disable
+pop-up blocking):
 
 .. code-block:: java
 
-    Capabilities capabilities = new DesiredCapabilities()
+    DesiredCapabilities capabilities = new DesiredCapabilities();
     capabilities.setBrowserName("safari");
-    CommandExecutor executor = new SeleneseCommandExecutor("http:localhost:4444/", "http://www.google.com/", capabilities);
+    CommandExecutor executor = new SeleneseCommandExecutor(new URL("http://localhost:4444/"), new URL("http://www.google.com/"), capabilities);
     WebDriver driver = new RemoteWebDriver(executor, capabilities);
 
 There are currently some major limitations with this approach, notably that
