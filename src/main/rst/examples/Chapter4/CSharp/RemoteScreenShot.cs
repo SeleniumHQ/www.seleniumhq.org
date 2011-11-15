@@ -3,6 +3,11 @@
 
 public class ScreenShotRemoteWebDriver : RemoteWebDriver, ITakesScreenshot
 {
+       public ScreenShotRemoteWebDriver(Uri RemoteAdress, ICapabilities capabilities)
+       : base(RemoteAdress, capabilities)
+       {           
+       }
+
        /// <summary>
        /// Gets a <see cref="Screenshot"/> object representing the image of the page on the screen.
        /// </summary>
@@ -17,3 +22,13 @@ public class ScreenShotRemoteWebDriver : RemoteWebDriver, ITakesScreenshot
            return new Screenshot(base64);
        }
 }
+
+
+// And then the usage would be:
+
+ScreenShotRemoteWebDriver webDriver = new ScreenShotRemoteWebDriver(new Uri("http://127.0.0.1:4444/wd/hub"), DesiredCapabilities.Firefox());
+// ... do stuff with webDriver
+Screenshot ss = ((ITakesScreenshot)webDriver).GetScreenshot();
+string screenshot = ss.AsBase64EncodedString;
+byte[] screenshotAsByteArray = ss.AsByteArray;
+ss.SaveAsFile(activeDir + TestSuiteName + "//" + FileNanme + imageFormat, ImageFormat.Jpeg);
