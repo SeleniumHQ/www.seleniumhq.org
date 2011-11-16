@@ -327,25 +327,9 @@ examples.  To see an example in a specific language, select one of these buttons
           }
       }
 
-.. code-block:: perl
+.. literalinclude:: /examples/Chapter5/Perl/SeleniumRCExample01.pl
+    :language: perl
 
-      use strict;
-      use warnings;
-      use Time::HiRes qw(sleep);
-      use Test::WWW::Selenium;
-      use Test::More "no_plan";
-      use Test::Exception;
-
-      my $sel = Test::WWW::Selenium->new( host => "localhost", 
-                                          port => 4444, 
-                                          browser => "*firefox", 
-                                          browser_url => "http://www.google.com/" );
-
-      $sel->open_ok("/");
-      $sel->type_ok("q", "selenium rc");
-      $sel->click_ok("btnG");
-      $sel->wait_for_page_to_load_ok("30000");
-      $sel->is_text_present_ok("Results * for selenium rc");
 
 .. code-block:: php
 
