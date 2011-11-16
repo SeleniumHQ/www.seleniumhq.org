@@ -173,11 +173,11 @@ WebDriver's JavascriptExecutor will wrap all JS and evaluate it as an anonymous 
 
 .. code-block:: java
 
-    String title = selenium.getEval("browserbot.getCurrentWindow().title");
+    String title = selenium.getEval("browserbot.getCurrentWindow().document.title");
 
 becomes:
 
 .. code-block:: java
 
-    ((JavascriptExecutor) driver).executeScript("return window.title;");
+    ((JavascriptExecutor) driver).executeScript("return document.title;");
     
