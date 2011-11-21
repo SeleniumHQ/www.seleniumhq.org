@@ -1127,7 +1127,7 @@ To see the list of options, run the server with the ``-h`` option.
 
 .. code-block:: bash
  
-   $ java -jar selenium-server-standalone-<version-number> -h
+   $ java -jar selenium-server-standalone-<version-number>.jar -h
 
 You'll see a list of all the options you can use with the server and a brief
 description of each. The provided descriptions will not always be enough, so we've
