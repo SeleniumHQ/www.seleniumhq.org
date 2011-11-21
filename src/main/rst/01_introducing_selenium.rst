@@ -82,7 +82,7 @@ functionality of Selenium Remote Control (RC) and Selenium IDE. Selenium RC was
 ground-breaking because no other product allowed you to control a browser from
 a language of your choosing.
 
-While Selenium was a tremendous tool, it wasn't without it's drawbacks.
+While Selenium was a tremendous tool, it wasn't without its drawbacks.
 Because of its Javascript based automation engine and the security limitations
 browsers apply to Javascript, different things became impossible to do.  To
 make things "worst", webapps became more and more powerful over time, using all
@@ -315,7 +315,7 @@ The remaining chapters of the reference present:
     This chapter presents programming techniques for use with Selenium-WebDriver and
     Selenium RC. We also demonstrate techniques commonly asked about 
     in the user forum such as how to design setup and teardown functions, how to 
-    implement data-driven tests (tests where one can varies the data between test passes)
+    implement data-driven tests (tests where one can vary the data between test passes)
     and other methods of programming common test automation tasks.
 
 :ref:`Selenium-Grid <chapter07-reference>`
@@ -346,7 +346,7 @@ or both.  We are very grateful to all of them.
 * Simon Stewart
 * `Tarun Kumar`_
 
-.. _`Tarun Kumar`: http://seleniumsoftwaretesting.blogspot.com/
+.. _`Tarun Kumar`: http://seleniumtests.com/
 
 
 

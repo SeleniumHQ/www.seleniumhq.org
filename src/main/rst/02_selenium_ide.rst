@@ -306,7 +306,7 @@ __________
 Select the line in your test case where you 
 want to insert the comment.  Right-click and select Insert Comment.  Now use 
 the Command field to enter the comment.  Your comment will appear in purple
-font.
+text.
 
 Source View
 ___________
@@ -323,7 +323,7 @@ and Value fields.
 
 Source View
 ___________
-Since Source view provides the equivalent of a WYSIWYG editor, simply modify
+Since Source view provides the equivalent of a WYSIWYG (What You See is What You Get) editor, simply modify
 which line you wish--command, parameter, or comment.
 
 Opening and Saving a Test Case
@@ -423,7 +423,7 @@ the available commands.
 .. _`Command Reference`: http://release.seleniumhq.org/selenium-core/1.0.1/reference.html
 
 A *command* is what tells Selenium what to do. Selenium commands come in 
-three "flavors": **Actions**, **Accessors** and **Assertions**. 
+three "flavors": **Actions**, **Accessors**, and **Assertions**. 
 
 * **Actions** are commands that generally manipulate the state of the 
   application. They do things like "click this link" and "select that option". 
@@ -555,7 +555,7 @@ programming and can be done a number of ways.  Commonly Junit is used to
 maintain a test suite if one is using Selenium-RC with Java.  Additionally, if
 C# is the chosen language, Nunit could be employed.  If using an interpreted 
 language like Python with Selenium-RC than some simple programming would be
-involved in setting up a test suite.  Since the whole reason for using Sel-RC
+involved in setting up a test suite.  Since the whole reason for using Selenium-RC
 is to make use of programming logic for your testing this usually isn't a
 problem.
 
