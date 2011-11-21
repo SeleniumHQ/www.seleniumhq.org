@@ -1125,7 +1125,10 @@ an alternative is to find a smaller page on the site, typically the 404 page is 
 
     # Now set the cookie. Here's one for the entire domain
     # the cookie name here is 'key' and it's value is 'value'
-    driver.add_cookie({'key': 'value'})
+    driver.add_cookie({'name':'key', 'value':'value', 'path':'/'})
+    # additional keys that can be passed in are:
+    # 'domain' -> String, 'secure' -> Boolean, 
+    # 'expiry' -> Milliseconds since the Epoch it should expire.
 
     # And now output all the available cookies for the current URL
     for cookie in driver.get_cookies:
