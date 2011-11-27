@@ -146,7 +146,7 @@ brought up Selenium 2, the newest and more powerful tool.
 
 Selenium 1 is still actively supported (mostly in maintenance mode) and
 provides some features that may not be available in Selenium 2 for a while,
-including support for several languages (Java, Javascript, PRuby, HP, Python,
+including support for several languages (Java, Javascript, Ruby, PHP, Python,
 Perl and C#) and support for almost every browser out there.
 
 Selenium IDE

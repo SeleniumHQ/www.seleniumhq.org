@@ -168,7 +168,7 @@ Reference
 ~~~~~~~~~
 
 The Reference tab is the default selection whenever you are
-entering or modifying Selenese commands and parameters in Table
+entering or modifying Selenese_ commands and parameters in Table
 mode.  In Table mode, the Reference pane will display documentation on the current command.  When entering or modifying
 commands, whether from Table or Source mode, it is critically
 important to ensure that the parameters specified in the
@@ -400,6 +400,7 @@ This same test case with a modified Base URL setting would be run against
 .. image:: images/chapt3_img22_BaseURL_beta.png
    :class: align-center
 
+.. _Selenese:
 
 Selenium Commands -- "Selenese" 
 -------------------------------
@@ -1466,7 +1467,7 @@ storeFooPresent(*variable*)     stores the text of the pop-up in a variable and 
 When running under Selenium, JavaScript pop-ups will not appear. This is because
 the function calls are actually being overridden at runtime by Selenium's own
 JavaScript. However, just because you cannot see the pop-up doesn't mean you don't
-have do deal with it. To handle a pop-up, you must call its ``assertFoo(pattern)``
+have to deal with it. To handle a pop-up, you must call its ``assertFoo(pattern)``
 function. If you fail to assert the presence of a pop-up your next command will be 
 blocked and you will get an error similar to the following ``[error] Error: There
 was an unexpected Confirmation! [Chose an option.]``
