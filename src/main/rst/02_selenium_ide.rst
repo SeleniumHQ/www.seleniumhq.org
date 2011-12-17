@@ -1474,7 +1474,7 @@ was an unexpected Confirmation! [Chose an option.]``
 
 Alerts
 ++++++
-Let's start with asserts because they are the simplest pop-up to handle. To begin,
+Let's start with alerts because they are the simplest pop-up to handle. To begin,
 open the HTML sample above in a browser and click on the "Show alert" button. You'll
 notice that after you close the alert the text "Alert is gone." is displayed on the
 page. Now run through the same steps with Selenium IDE recording, and verify
@@ -1490,7 +1490,7 @@ assertAlert            I'm blocking!
 verifyTextPresent      Alert is gone.
 ==================    ============================================   ===========
 
-You may be thinking "Thats odd, I never tried to assert that alert." But this is
+You may be thinking "That's odd, I never tried to assert that alert." But this is
 Selenium-IDE handling and closing the alert for you. If you remove that step and replay
 the test you will get the following error ``[error] Error: There was an unexpected
 Alert! [I'm blocking!]``. You must include an assertion of the alert to acknowledge 
@@ -1514,7 +1514,7 @@ in the popup, then assert the output text. Your test may look something like thi
 open                                     /                                             
 click                                    btnConfirm                                       
 chooseCancelOnNextConfirmation
-assertConfirmation                       Choose and option.
+assertConfirmation                       Choose an option.
 verifyTextPresent                        Rejected
 ===============================    ============================================   ===========
 
@@ -1734,17 +1734,17 @@ Format, under the Options menu, allows you to select a language for saving
 and displaying the test case.  The default is HTML.
   
 If you will be using Selenium-RC to run your test cases, this feature is used 
-to translate your test case into a programming language.  Select the 
-language, i.e. Java, PHP, you will be using with Selenium-RC for developing 
-your test programs.  Then simply save the test case using File=>Save.  Your 
-test case will be translated into a series of functions in the language you 
-choose.  Essentially, program code supporting your test is generated for you 
+to translate your test case into a programming language. Select the 
+language, e.g. Java, PHP, you will be using with Selenium-RC for developing 
+your test programs.  Then simply save the test case using File=>Export Test Case As.
+Your test case will be translated into a series of functions in the language you 
+choose. Essentially, program code supporting your test is generated for you 
 by Selenium-IDE. 
   
 Also, note that if the generated code does not suit your needs, you can alter 
 it by editing a configuration file which defines the generation process.  
 Each supported language has configuration settings which are editable.  This 
-is under the Options=>Options=>Format tab. 
+is under the Options=>Options=>Formats tab. 
   
 .. TODO: Add the steps here to change the format. 
   

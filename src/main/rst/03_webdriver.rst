@@ -169,10 +169,10 @@ has written an article on migrating from Selenium 1.0.  We've included this as a
 
 Getting Started With Selenium-WebDriver
 ---------------------------------------
-WebDriver is a tool for automating testing web applications, and in particular
+WebDriver is a tool for automating web application testing, and in particular
 to verify that they work as expected. It aims to provide a friendly API that's
 easy to explore and understand, easier to use than the Selenium-RC (1.0) API,
-which will help make your tests easier to
+which will help to make your tests easier to
 read and maintain. It's not tied to any particular test framework, so it can
 be used equally well in a unit testing or from a plain old "main" method.
 This section introduces WebDriver's API and helps get you started becoming
@@ -1003,7 +1003,7 @@ element isn't in a form, then the ``NoSuchElementException`` will be thrown:
 Moving Between Windows and Frames
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Some web applications have any frames or multiple windows. WebDriver supports
+Some web applications have many frames or multiple windows. WebDriver supports
 moving between named windows using the "switchTo" method:
 
 .. code-block:: java

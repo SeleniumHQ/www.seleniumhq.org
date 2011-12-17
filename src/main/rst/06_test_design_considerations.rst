@@ -8,7 +8,7 @@ Test Design Considerations
 Introducing Test Design
 -----------------------
 
-We've provided in this chapter information that will be useful to both, those new to test automation
+We've provided in this chapter information that will be useful to both those new to test automation
 and for the experienced QA professional.  Here we describe the most common types of automated tests.  
 We also describe 'design patterns' commonly used in test automation for improving the maintenance
 and extensibily of your automation suite.  The more experienced reader will find these interesting
@@ -74,10 +74,10 @@ element within the page.  Usually these are implemented using the html tag's
 unchanging, string constant.  They can also be dynamically generated values that
 vary each  instance of the page.  For example, some web servers might name a displayed
 document doc3861 one instance of a page, and 'doc6148' on a different instance of the 
-page depending on what 'document' the user was retrieving.  This means your test script which
-is verify that a document exists may not have a consistent identifier to user for locating that
-document.  Often, dynamic elements with varying identifiers are on some type of result page 
-based on a user action.  Thing though certainly depends on the function of the web application.  
+page depending on what 'document' the user was retrieving.  A test script verifying that 
+a document exists may not have a consistent identifier to use for locating that document.
+Often, dynamic elements with varying identifiers are on some type of result page 
+based on a user action.  This though certainly depends on the function of the web application.  
 
 Here's an example.  
            
@@ -252,7 +252,7 @@ Or, again in Selenium-RC
 	
 .. code-block:: java
 
-    selenium.click("addForm:_ID74:_ID75:0:_ID79:0:checkBox);
+    selenium.click("addForm:_ID74:_ID75:0:_ID79:0:checkBox");
 
 Given the dynamically generated Identifier, this approach would not work. 
 The next time this page is loaded the Identifier will be a different value
@@ -369,7 +369,7 @@ both functions.
 'Safe Operations' for Element Presence
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Another common usage of wrapping selenium methods is to check for presence of 
+Another common usage of wrapping Selenium methods is to check for presence of 
 an element on page before carrying out some operation. This is sometimes called 
 a 'safe operation'.  For instance, the following method could be used to implement
 a safe operation that depends on an expected element being present.
@@ -432,7 +432,7 @@ the AUT.  The test script then uses the UI Map for locating
 the elements to be tested.  Basically, a UI map is a repository of test script objects
 that correspond to UI elements of the application being tested.  
 
-What makes a UI map helpful?  Its primary purpose for making test script management
+What makes a UI map helpful?  Its primary purpose is making test script management
 much easier.  When a locator needs to be edited, there is a central location for easily
 finding that object, rather than having to search through test script code.  Also, it allows
 changing the Identifier in a single place, rather than having to make the change in multiple

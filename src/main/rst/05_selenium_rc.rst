@@ -889,7 +889,7 @@ variety of formats such as HTML or PDF.
 
 What's The Best Approach? 
 ~~~~~~~~~~~~~~~~~~~~~~~~~
-Most people new to the testing frameworks will being with the framework's
+Most people new to the testing frameworks will begin with the framework's
 built-in reporting features.  From there most will examine any available libraries
 as that's less time consuming than developing your own.  As you begin to use
 Selenium no doubt you will start putting in your own "print statements" for 
@@ -1054,7 +1054,7 @@ This can cause your test to abort.  For some tests that's what you want.  But
 often that is not desirable as your test script has many other subsequent tests
 to perform.
 
-A better approach is to first validate if the element is really present
+A better approach is to first validate whether the element is really present
 and then take alternatives when it it is not.  Let's look at this using Java.
 
 .. code-block:: java
@@ -1538,9 +1538,8 @@ that are commonly encountered.  We present them along with their solutions here.
 
 Unable to Connect to Server 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
-When your test program cannot connect to the Selenium Server, an exception 
-will be thrown in your test program. It should display this message or a 
-similar one:
+When your test program cannot connect to the Selenium Server, Selenium throws an exception in your test program. 
+It should display this message or a similar one:
 
 .. code-block:: bash
 

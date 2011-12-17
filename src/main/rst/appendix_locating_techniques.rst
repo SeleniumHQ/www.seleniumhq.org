@@ -39,7 +39,7 @@ Starting to use CSS instead of XPATH
 Locating elements based on class
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 In order to locate an element based on associated class in XPath you must consider that
-the element could have multiple classes and defined in any order, however with CSS 
+the element could have multiple classes and defined in any order. However with CSS 
 locators this is much simpler (and faster).
 
 * XPath: ``//div[contains(@class, 'article-heading')]``
