@@ -80,7 +80,7 @@ with the page, allowing him to automatically rerun tests against multiple
 browsers. That library eventually became Selenium Core, which underlies all the
 functionality of Selenium Remote Control (RC) and Selenium IDE. Selenium RC was
 ground-breaking because no other product allowed you to control a browser from
-a language of your choosing.
+a language of your choice.
 
 While Selenium was a tremendous tool, it wasn't without its drawbacks.
 Because of its Javascript based automation engine and the security limitations
