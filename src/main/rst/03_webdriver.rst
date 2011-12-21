@@ -528,9 +528,10 @@ The normal way to do this is by calling "get":
 
 WebDriver will wait until the page has fully loaded (that is, the "onload"
 event has fired) before returning control to your test or script. It's worth
-noting that if your page uses a lot of AJAX on load then WebDriver may not
-know when it has completely loaded. If you need to ensure such pages are
-fully loaded then you can use an :ref:`Explicit and Implicit Waits <explicit_and_implicit_waits-reference>`.
+noting that there are many other mechanisms that the browser uses to determine if the
+page has been loaded, WebDriver may not detect all of them appropriately. 
+In these cases you need to wait for the element(s) to exist in the page using
+:ref:`Explicit and Implicit Waits <explicit_and_implicit_waits-reference>`.
 
 
 Locating UI Elements (WebElements)
