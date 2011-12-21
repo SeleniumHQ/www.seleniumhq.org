@@ -526,11 +526,10 @@ The normal way to do this is by calling "get":
 
     driver.get("http://www.google.com")
 
-WebDriver will wait until the page has fully loaded (that is, the "onload"
-event has fired) before returning control to your test or script. It's worth
-noting that there are many other mechanisms that the browser uses to determine if the
-page has been loaded, WebDriver may not detect all of them appropriately. 
-In these cases you need to wait for the element(s) to exist in the page using
+Dependent on several factors, including the OS/Browser combination, 
+WebDriver may or may not wait for the page to load. In some circumstances, 
+WebDriver may return control before the page has finished, or even started, loading.  
+To ensure robustness, you need to wait for the element(s) to exist in the page using
 :ref:`Explicit and Implicit Waits <explicit_and_implicit_waits-reference>`.
 
 
