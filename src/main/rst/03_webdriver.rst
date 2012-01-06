@@ -74,7 +74,7 @@ your project.
                     <dependency>
                         <groupId>org.seleniumhq.selenium</groupId>
                         <artifactId>selenium-java</artifactId>
-                        <version>2.16.0</version>
+                        <version>2.16.1</version>
                     </dependency>
                 </dependencies>
         </project>
