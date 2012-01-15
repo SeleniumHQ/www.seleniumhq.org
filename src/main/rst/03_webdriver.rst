@@ -31,7 +31,7 @@ You may, or may not, need the Selenium Server, depending on how you intend to us
 you will be strictly using the WebDriver API you do not necessarily need the Selenium Server. 
 Selenium-WebDriver makes direct calls to the browser using each browser's native support for automation.
 How these direct calls are made, depends on the browser you are using. See the information for each
-browser implementaion below.
+browser implementation below.
 
 Some reason why you will need the Selenium-Server -
  * You are using Selenium-Grid to distribute your tests over many machines / VMs.
@@ -81,7 +81,7 @@ your project.
 
 
 Be sure you specify the most current version.  At the time of writing, the version listed above was
-the most current, however there were frequent releases immediately after the releast of Selenium 2.0.
+the most current, however there were frequent releases immediately after the release of Selenium 2.0.
 Check the `Maven download page <http://seleniumhq.org/download/maven.html>`_ for the current release and edit the above dependency accordingly.
 
 Now, from a command-line, CD into the project directory and run maven as follows.
@@ -160,7 +160,7 @@ install / get started. There are three known bindings at this time: `By Chibimag
 
 Migrating from Selenium 1.0
 ---------------------------
-For those who already have test suites writting using Selenium 1.0, we have provided tips on how to
+For those who already have test suites written using Selenium 1.0, we have provided tips on how to
 migrate your existing code to Selenium 2.0.  Simon Stewart, the lead developer for Selenium 2.0,
 has written an article on migrating from Selenium 1.0.  We've included this as an appendix.
 
@@ -379,7 +379,7 @@ are disabled by default. To enable them:
 Info
 ++++
 
-See the `Firefox secion in the wiki page <http://code.google.com/p/selenium/wiki/FirefoxDriver>`_ for the most up to date info.
+See the `Firefox section in the wiki page <http://code.google.com/p/selenium/wiki/FirefoxDriver>`_ for the most up to date info.
 
 Internet Explorer Driver
 ~~~~~~~~~~~~~~~~~~~~~~~~
@@ -546,7 +546,7 @@ The "Find" methods take a locator or query object called "By". "By" strategies a
 By ID
 +++++
 
-This is the most efficient and prefered way to locate an element. Common pitfalls that UI developers
+This is the most efficient and preferred way to locate an element. Common pitfalls that UI developers
 make is having non-unique id's on a page or auto-generating the id, both should be avoided. A class
 on an html element is more appropriate than an auto-generated id.
 
@@ -581,7 +581,7 @@ Example of how to find an element that looks like this:
 By Class Name
 +++++++++++++
 
-"Class" in this case refers to the attribute on the DOM element. Often in practicle use there are
+"Class" in this case refers to the attribute on the DOM element. Often in practical use there are
 many DOM elements with the same class name, thus finding multiple elements becomes the more praticle
 option over finding the first element.
 
@@ -1176,7 +1176,7 @@ WebDriver-Backed Selenium-RC
 
 The Java version of WebDriver provides an implementation of the Selenium-RC API.  These means that
 you can use the underlying WebDriver technology using the Selenium-RC API.  This is primarily 
-provided for backwards compatablity.  It allows those who have existing test suites using the 
+provided for backwards compatiblity.  It allows those who have existing test suites using the 
 Selenium-RC API to use WebDriver under the covers.  It's provided to help ease the migration path
 to Selenium-WebDriver.  Also, this allows one to use both APIs, side-by-side, in the same test code.
 
