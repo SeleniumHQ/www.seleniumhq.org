@@ -1176,7 +1176,7 @@ WebDriver-Backed Selenium-RC
 
 The Java version of WebDriver provides an implementation of the Selenium-RC API.  These means that
 you can use the underlying WebDriver technology using the Selenium-RC API.  This is primarily 
-provided for backwards compatiblity.  It allows those who have existing test suites using the 
+provided for backwards compatibility.  It allows those who have existing test suites using the 
 Selenium-RC API to use WebDriver under the covers.  It's provided to help ease the migration path
 to Selenium-WebDriver.  Also, this allows one to use both APIs, side-by-side, in the same test code.
 
