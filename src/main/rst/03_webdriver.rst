@@ -972,6 +972,13 @@ provides useful methods for interacting with these.
     select.DeselectAll();
     select.SelectByText("Edam");
 
+.. code-block:: ruby
+	
+    # available since 2.14
+	select = Selenium::WebDriver::Support::Select.new(driver.find_element(:tag_name, "select"))
+	select.deselect_all()
+	select.select_by(:text, "Edam")
+
 .. code-block:: python
     
     # available since 2.12
