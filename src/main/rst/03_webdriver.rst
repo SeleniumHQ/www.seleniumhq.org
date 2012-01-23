@@ -1207,7 +1207,7 @@ Selenium-WebDriver is used like this:
 
     // Get the underlying WebDriver implementation back. This will refer to the
     // same WebDriver instance as the "driver" variable above.
-    WebDriver driverInstance = ((WebDriverBackedSelenium) selenium).getUnderlyingWebDriver();
+    WebDriver driverInstance = ((WebDriverBackedSelenium) selenium).getWrappedDriver();
 
     //Finally, close the browser. Call stop on the WebDriverBackedSelenium instance
     //instead of calling driver.quit(). Otherwise, the JVM will continue running after
