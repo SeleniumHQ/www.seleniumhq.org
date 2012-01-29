@@ -56,7 +56,7 @@ get done within that time frame, then manual testing is the best solution.
 
 Introducing Selenium 
 --------------------
-Selenium is set of different software tools each with a different approach
+Selenium is a set of different software tools each with a different approach
 to supporting test automation. Most Selenium QA Engineers focus on the one 
 or two tools that most meet the needs of their project, however learning all
 the tools will give you many different options for approaching different 
