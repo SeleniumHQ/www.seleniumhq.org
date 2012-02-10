@@ -52,12 +52,13 @@ pageTracker._trackPageview();
             <li><a href="/about/">About Selenium</a>
                 <ul>
                     <li><a href="/about/news.jsp">News/Blog</a></li>
-                    <li><a href="/about/license.html">License</a></li>
+                    <li><a href="/about/events.html">Selenium Events</a></li>
                     <li><a href="/about/how.html">How it Works</a></li>
                     <li><a href="/about/platforms.html">Platform support</a></li>
+                    <li><a href="/about/contributors.html">Contributors</a></li>
+                    <li><a href="/about/license.html">License</a></li>
                     <li><a href="/about/history.html">History</a></li>
                     <li><a href="http://code.google.com/p/selenium/wiki/RoadMap">Roadmap</a></li>
-                    <li><a href="/about/contributors.html">Contributors</a></li>
                     <li><a href="/about/getting-involved.html">Getting Involved</a></li>
                 </ul>
             </li>
