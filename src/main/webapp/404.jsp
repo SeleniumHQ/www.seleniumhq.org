@@ -98,12 +98,12 @@
         </li>
         <li><a href="/about/">About Selenium</a>
             <ul>
-                <li><a href="/about/how.html">How it Works</a></li>
-                <li><a href="/about/platforms.html">Supported Platforms</a></li>
-                <li><a href="/about/contributors.html">Who made Selenium</a>
                 <li><a href="/about/news.jsp">News/Blogs</a></li>
+                <li><a href="/about/events.html">Events</a></li>
+                <li><a href="/about/contributors.html">Who made Selenium</a>
                 <li><a href="http://code.google.com/p/selenium/wiki/RoadMap">Roadmap</a></li>
                 <li><a href="/about/getting-involved.html">Getting Involved</a></li>
+                <li><a href="/docs">Documentation</a></li>
             </ul>
         </li>
         <li><a href="http://openqa.org/">OpenQA.org</a>

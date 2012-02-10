@@ -56,25 +56,6 @@ If you want to
     </tbody>
   </table>
   
-<!--   <h2>Learn Selenium</h2>
-
-  <ul>
-    <li><a href="/about/how.html">The Magic of Selenium: How it
-    works</a></li>
-
-    <li>Support Matrix: <a href=
-    "/about/platforms.html#browsers">Browsers</a>, <a href=
-    "/about/platforms.html#operating-systems">Operating
-    Systems</a>, <a href=
-    "/about/platforms.html#programming-languages">Programming
-    Languages</a>, <a href=
-    "/about/platforms.html#testing-frameworks">Testing
-    Frameworks</a></li>
-
-    <li><a href="http://release.openqa.org/selenium-core/1.0/reference.html">Selenium
-    API</a></li>
-  </ul> -->
-
   <h2>Selenium News</h2>
 
   <%@include file="/news.jspf"%>
