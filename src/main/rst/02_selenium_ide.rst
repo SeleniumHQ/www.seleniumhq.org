@@ -1832,17 +1832,6 @@ An enhancement request has been raised to improve this error message. See
 
 ----------
 
-.. image:: images/chapt3_img26_Trouble_space.png
-
-Selenium-IDE is very *space-sensitive*!  An extra space before or after 
-a command will cause it to be unrecognizable.
-
-This defect has been raised. See `issue 1012`_.
-
-.. _issue 1012: http://code.google.com/p/selenium/issues/detail?id=1012
-
-----------
-
 .. image:: images/chapt3_img27_Trouble_extension.png
 
 Your extension file's contents have not been read by Selenium-IDE.  Be 
@@ -1851,21 +1840,3 @@ sure you have specified the proper pathname to the extensions file via
 Also, Selenium-IDE must be restarted after any change to either an
 extensions file *or* to the contents of the **Selenium Core extensions**
 field.
-
-----------
-
-.. image:: images/chapt3_img30_Trouble_collapsed.png
-
-This type of error message makes it appear that Selenium-IDE has generated
-a failure where there is none.  However, Selenium-IDE is correct that
-the actual value does not match the value specified in such test cases.
-The problem is that the log file error messages collapse a series of
-two or more spaces into a single space, which is confusing.  In the 
-example above, note that the parameter for **verifyTitle** has two 
-spaces between the words "Selenium" and "web"  The page's actual 
-title has only one space between these words.  Thus, Selenium-IDE is 
-correct to generate an error, but is misleading in the nature of the error.
-
-This defect has been raised. See `issue 1013`_.
-
-.. _issue 1013: http://code.google.com/p/selenium/issues/detail?id=1013
