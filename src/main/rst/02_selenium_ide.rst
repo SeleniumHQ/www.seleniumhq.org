@@ -1644,9 +1644,9 @@ is opened *or* when the user selects the New Test Case item from the
 File menu.  In the latter case, the new test case will appear immediately
 below the previous test case.
 
-Selenium-IDE does not yet support loading pre-existing test cases into 
-a test suite.  Users who want to create or modify a test suite by adding
-pre-existing test cases must manually edit a test suite file.
+Selenium-IDE also supports loading pre-existing test cases by using the File 
+-> Add Test Case menu option.  This allows you to add existing test cases to 
+a new test suite.
 
 A test suite file is an HTML file containing a one-column table.  Each
 cell of each row in the <tbody> section contains a link to a test case.
