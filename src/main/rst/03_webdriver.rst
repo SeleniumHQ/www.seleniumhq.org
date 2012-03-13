@@ -374,7 +374,13 @@ are disabled by default. To enable them:
     profile.setEnableNativeEvents(true);
     WebDriver driver = new FirefoxDriver(profile);
 
-
+.. code-block:: ruby
+    
+    profile = Selenium::WebDriver::Firefox::Profile.new
+    profile.native_events = true
+    driver = Selenium::WebDriver.for :firefox, :profile => profile
+    
+    
 
 Info
 ++++
@@ -996,6 +1002,11 @@ way to do this would be to find the "submit" button and click it:
 .. code-block:: java
 
     driver.findElement(By.id("submit")).click();
+    
+.. code-block:: ruby
+
+    driver.find_element(:id, "submit").click
+    
 
 Alternatively, WebDriver has the convenience method "submit" on every element.
 If you call this on an element within a form, WebDriver will walk up the DOM
@@ -1006,7 +1017,11 @@ element isn't in a form, then the ``NoSuchElementException`` will be thrown:
 
     element.submit();
 
+.. code-block:: ruby
 
+    element.submit
+    
+    
 Moving Between Windows and Frames
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -1016,7 +1031,7 @@ moving between named windows using the "switchTo" method:
 .. code-block:: java
 
     driver.switchTo().window("windowName");
-
+    
 All calls to ``driver`` will now be interpreted as being directed to the
 particular window. But how do you know the window's name? Take a look at the
 javascript or link that opened it:
@@ -1033,8 +1048,14 @@ method. Knowing this, it's possible to iterate over every open window like so:
     for (String handle : driver.getWindowHandles()) {
         driver.switchTo().window(handle);
     }
+    
+.. code-block:: ruby
 
-You can also swing from frame to frame (or into iframes):
+    driver.window_handles.each do |handle|
+        driver.switch_to.window handle
+    end
+
+You can also switch from frame to frame (or into iframes):
 
 .. code-block:: java
 
@@ -1046,7 +1067,7 @@ can specify the frame by its index too. That is:
 .. code-block:: java
 
     driver.switchTo().frame("frameName.0.child");
-
+    
 would go to the frame named "child" of the first subframe of the frame called
 "frameName". **All frames are evaluated as if from *top*.**
 
@@ -1060,10 +1081,17 @@ popup, you can access the alert with the following:
 .. code-block:: java
 
     Alert alert = driver.switchTo().alert();
+    
+.. code-block:: ruby
+
+    alert = driver.switch_to.alert
 
 This will return the currently open alert object. With this object you can now accept,
 dismiss, read its contents or even type into a prompt. This interface works equally
-well on alerts, confirms, prompts. Refer to the `JavaDocs <http://selenium.googlecode.com/svn/trunk/docs/api/java/index.html>`_ for more information.
+well on alerts, confirms, and prompts. Refer to the `JavaDocs <http://selenium.googlecode.com/svn/trunk/docs/api/java/index.html>`_ 
+or `RubyDocs <http://selenium.googlecode.com/svn/trunk/docs/api/rb/Selenium/WebDriver/Alert.html>`_ for more information.
+
+
 
 Navigation: History and Location
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -1077,6 +1105,10 @@ lives on the main WebDriver interface, but it's simply a synonym to:
 .. code-block:: java
 
     driver.navigate().to("http://www.example.com");
+    
+.. code-block:: ruby
+
+    driver.navigate.to "http://www.example.com"
 
 To reiterate: "``navigate().to()``" and "``get()``" do exactly the same thing.
 One's just a lot easier to type than the other!
@@ -1087,6 +1119,11 @@ The "navigate" interface also exposes the ability to move backwards and forwards
 
     driver.navigate().forward();
     driver.navigate().back();
+    
+.. code-block:: ruby
+
+    driver.navigate.forward
+    driver.navigate.back
 
 Please be aware that this functionality depends entirely on the underlying
 browser. It's just possible that something unexpected may happen when you call
@@ -1147,6 +1184,28 @@ an alternative is to find a smaller page on the site, typically the 404 page is 
     # Or all of them
     driver.delete_all_cookies()
 
+.. code-block:: ruby
+
+    # Go to the correct domain
+    driver.get "http://www.example.com"
+    
+    # Now set the cookie. Here's one for the entire domain
+    # the cookie name here is 'key' and it's value is 'value'
+    driver.manage.add_cookie(:name => 'key', :value => 'value')
+    # additional keys that can be passed in are:
+    # :path => String, :secure -> Boolean, :expires -> Time, DateTime, or seconds since epoch
+    
+    # And now output all the available cookies for the current URL
+    driver.manage.all_cookies.each { |cookie| 
+        puts "#{cookie[:name]} => #{cookie[:value]}" 
+    }
+    
+    # You can delete cookies in 2 ways
+    # By name
+    driver.manage.delete_cookie("CookieName")
+    # Or all of them
+    driver.manage.delete_all_cookies
+    
 
 Changing the User Agent
 ~~~~~~~~~~~~~~~~~~~~~~~
@@ -1159,6 +1218,11 @@ This is easy with the `Firefox Driver`_:
     profile.addAdditionalPreference("general.useragent.override", "some UA string");
     WebDriver driver = new FirefoxDriver(profile);
 
+.. code-block:: ruby
+
+    profile = Selenium::WebDriver::Firefox::Profile.new
+    profile['general.useragent.override'] = "some UA string"
+    driver = Selenium::WebDriver.for :firefox, :profile => profile
 
 Drag And Drop
 ~~~~~~~~~~~~~
@@ -1172,6 +1236,13 @@ Native events are required to be enabled.
     WebElement target = driver.findElement(By.name("target"));
 
     (new Actions(driver)).dragAndDrop(element, target).perform();
+    
+.. code-block:: ruby
+
+    element = driver.find_element(:name => 'source')
+    target = driver.find_element(:name => 'target')
+    
+    driver.action.drag_and_drop(element, target).perform
 
 
 Driver Specifics and Tradeoffs
