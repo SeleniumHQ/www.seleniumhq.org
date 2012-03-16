@@ -55,7 +55,13 @@ If you want to
       </tr>
     </tbody>
   </table>
-  
+
+  <h2>Sponsors</h2>
+
+  <p>The Selenium project is sponsored by:</p>
+
+  <a href="http://saucelabs.com"><img src="images/sponsors/saucelabs.jpg" alt="Sauce Labs"></a>
+
   <h2>Selenium News</h2>
 
   <%@include file="/news.jspf"%>
