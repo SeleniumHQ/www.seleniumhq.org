@@ -61,9 +61,6 @@ pageTracker._trackPageview();
                 </ul>
             </li>
         </ul>
-        <div class="ads">
-          
-        </div>
     </div>
     <%
         } else if ("sectionDownload".equals(p.getProperty("body.class"))) {
@@ -79,21 +76,6 @@ pageTracker._trackPageview();
                 </ul>
             </li>
         </ul>
-        <div class="ads">
-
-<script type="text/javascript"><!--
-google_ad_client = "ca-pub-5440279806572486";
-/* Selenium Website */
-google_ad_slot = "1904863682";
-google_ad_width = 160;
-google_ad_height = 600;
-//-->
-</script>
-<script type="text/javascript"
-src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
-</script>
-
-        </div>
     </div>
     <%
         } else if ("sectionDocumentation".equals(p.getProperty("body.class"))) {
@@ -104,15 +86,6 @@ src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
 
         <%= p.getProperty("page.sphinxsidebar") %>
 
-        <div class="ads">
-            <script type="text/javascript"><!--
-            google_ad_client = "ca-pub-5440279806572486";
-            /* 160x600, created 7/31/08 */
-            google_ad_slot = "1904863682";
-            google_ad_width = 160;
-            google_ad_height = 600; //--> </script>
-            <script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"> </script>
-        </div>
     </div>
     <%
         } else {
@@ -137,16 +110,6 @@ src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
 
         <%--<script language="javascript" src="http://tipjoy.com/socnet/widget?username=patrick4&url=http%3A%2F%2Fseleniumhq.org&message=Love%20Selenium%3F%20Leave%20us%20a%20tip!&amount=0.99&showTipperMessage=True&tipperMessageTitle=What%20is%20your%20favorite%20Selenium%20project%3F"></script>--%>
 
-        <div class="ads">
-            <script type="text/javascript"><!--
-            google_ad_client = "ca-pub-5440279806572486";
-            /* 160x600, created 7/31/08 */
-            google_ad_slot = "1904863682";
-            google_ad_width = 160;
-            google_ad_height = 600;
-            //--> </script>
-            <script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
-        </div>
     </div>
     <%
         }
