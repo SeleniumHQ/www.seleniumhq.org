@@ -588,7 +588,7 @@ By Class Name
 +++++++++++++
 
 "Class" in this case refers to the attribute on the DOM element. Often in practical use there are
-many DOM elements with the same class name, thus finding multiple elements becomes the more praticle
+many DOM elements with the same class name, thus finding multiple elements becomes the more practical
 option over finding the first element.
 
 
