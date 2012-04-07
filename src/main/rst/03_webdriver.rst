@@ -1,5 +1,5 @@
 Selenium WebDriver
-==========================
+==================
 
 .. _chapter03-reference:
 
@@ -25,9 +25,9 @@ Selenium-WebDriver makes direct calls to the browser using each browser's native
 How these direct calls are made, and the features they support depends on the browser you are using. 
 Information on each 'browser driver' is provided later in this chapter.
 
-For those familiar with Selenium-RC, this is quite different from what you are used to.  Seleniu-RC
+For those familiar with Selenium-RC, this is quite different from what you are used to.  Selenium-RC
 worked the same way for each supported browser.  It 'injected' javascript functions into the browser
-when the browser was loaded and then used it's javascript to drive the AUT within the browser.
+when the browser was loaded and then used its javascript to drive the AUT within the browser.
 WebDriver does not use this technique.  Again, it drives the browser directly using the browser's
 built in support for automation.
 
