@@ -34,6 +34,8 @@ for ExpectedCondition type is Boolean return true or not null return value for a
 
 This example is also functionally equivalent to the first `Implicit Waits`_ example.
 
+The `ExpectedConditions <http://selenium.googlecode.com/svn/trunk/docs/api/java/org/openqa/selenium/support/ui/ExpectedConditions.html>`_ class in contains a set of predefined conditions to use with WebDriverWait in Java.
+
 Implicit Waits
 ~~~~~~~~~~~~~~
 An implicit wait is to tell WebDriver to poll the DOM for a certain amount of time when trying to find an element or elements if they are not immediately available.
