@@ -733,6 +733,9 @@ way to do this would be to find the "submit" button and click it:
 
     driver.find_element(:id, "submit").click
     
+.. code-block:: python
+
+    driver.find_element_by_id("submit").click()    
 
 Alternatively, WebDriver has the convenience method "submit" on every element.
 If you call this on an element within a form, WebDriver will walk up the DOM
@@ -747,7 +750,11 @@ element isn't in a form, then the ``NoSuchElementException`` will be thrown:
 
     element.submit
     
-    
+.. code-block:: python
+
+    element.submit()
+
+
 Moving Between Windows and Frames
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -758,6 +765,10 @@ moving between named windows using the "switchTo" method:
 
     driver.switchTo().window("windowName");
     
+.. code-block:: python
+
+    driver.switch_to_window("windowName")
+
 All calls to ``driver`` will now be interpreted as being directed to the
 particular window. But how do you know the window's name? Take a look at the
 javascript or link that opened it:
@@ -781,11 +792,21 @@ method. Knowing this, it's possible to iterate over every open window like so:
         driver.switch_to.window handle
     end
 
+.. code-block:: python
+
+    for handle in driver.window_handles:
+        driver.switch_to_window(handle)
+
+
 You can also switch from frame to frame (or into iframes):
 
 .. code-block:: java
 
     driver.switchTo().frame("frameName");
+
+.. code-block:: python
+
+    driver.switch_to_frame("frameName")
 
 It's possible to access subframes by separating the path with a dot, and you
 can specify the frame by its index too. That is:
@@ -794,6 +815,11 @@ can specify the frame by its index too. That is:
 
     driver.switchTo().frame("frameName.0.child");
     
+.. code-block:: python
+
+    driver.switch_to_frame("frameName.0.child")
+
+
 would go to the frame named "child" of the first subframe of the frame called
 "frameName". **All frames are evaluated as if from *top*.**
 
@@ -811,6 +837,11 @@ popup, you can access the alert with the following:
 .. code-block:: ruby
 
     alert = driver.switch_to.alert
+
+.. code-block:: python
+
+    alert = driver.switch_to_alert()
+    # usage: alert.dismiss(), etc.
 
 This will return the currently open alert object. With this object you can now accept,
 dismiss, read its contents or even type into a prompt. This interface works equally
@@ -836,6 +867,10 @@ lives on the main WebDriver interface, but it's simply a synonym to:
 
     driver.navigate.to "http://www.example.com"
 
+.. code-block:: python
+
+    driver.get("http://www.example.com")  # python doesn't have driver.navigate
+
 To reiterate: "``navigate().to()``" and "``get()``" do exactly the same thing.
 One's just a lot easier to type than the other!
 
@@ -850,6 +885,11 @@ The "navigate" interface also exposes the ability to move backwards and forwards
 
     driver.navigate.forward
     driver.navigate.back
+
+.. code-block:: python
+
+    driver.forward()
+    driver.back()
 
 Please be aware that this functionality depends entirely on the underlying
 browser. It's just possible that something unexpected may happen when you call
@@ -901,7 +941,7 @@ an alternative is to find a smaller page on the site, typically the 404 page is 
     # 'expiry' -> Milliseconds since the Epoch it should expire.
 
     # And now output all the available cookies for the current URL
-    for cookie in driver.get_cookies:
+    for cookie in driver.get_cookies():
         print "%s -> %s" % (cookie['name'], cookie['value'])
 
     # You can delete cookies in 2 ways
@@ -969,6 +1009,14 @@ Native events are required to be enabled.
     target = driver.find_element(:name => 'target')
     
     driver.action.drag_and_drop(element, target).perform
+
+.. code-block:: python
+
+    from selenium.webdriver.common.action_chains import ActionChains
+    element = driver.find_element_by_name("source")
+    target =  driver.find_element_by_name("target")
+    
+    ActionChains(driver).drag_and_drop(element, target).perform()
 
 
 Driver Specifics and Tradeoffs
