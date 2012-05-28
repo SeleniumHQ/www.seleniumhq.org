@@ -102,17 +102,65 @@ Replace the term 'Selenium Remote Control' with 'Selenium-Grid node' the diagram
 description for Selenium-Grid 2.
 
 
+Installation
+------------
+Installation is simple.  Download the Selenium-Server jar file from the `SeleniumHq website's 
+download page <http://seleniumhq.org/download/>`_.  You want the link under the section
+"Selenium-Server (formerly Selenium-RC)".
+
+Install it in a folder of your choice.  You'll need to be sure the java executable is on your
+execution path so you can run it from the command-line.  If it does not run correcly, verify
+your system's path variable includes the path to the java.exe.
+
+
+Starting Selenium-Grid
+----------------------
+Generally you would start a hub first since nodes depend on a hub.  This is not abolutely necessary
+however, since nodes can recognize when a hub has been started and vice-versa.  For learning 
+purposes though, it would easier to start the hub first, otherwise you'll see error
+messages that may not want to start off with your first time using Selenium-Grid.
+
 
 Starting a Hub
---------------
+~~~~~~~~~~~~~~
+To start a hub with default parameters, run the following command from a command-line shell.  This
+will work on all the supported platforms, Windows Linux, or MacOs.
+
+.. code-block:: bash
+
+    java -jar selenium-server-standalone-2.21.0.jar -hub
+    
+This starts a hub using default parameter values.  We'll explain these parameters in folowing 
+subsections.  Note that you will likely have to change the version number in the jar filename 
+depending on which version of the selenium-server you're using.
 
 
 Starting a Node
----------------
+~~~~~~~~~~~~~~~
+To start a node using default parameters, run the following command from a command-line.
+
+.. code-block:: bash
+
+	java -jar selenium-server-standalone-2.21.0.jar -role node  -hub http://localhost:4444/grid/register
+
+This assumes the hub has been started above using default parameters.  The default port the hub
+uses to listen for new requests is port 4444.  This is why port 4444 was used in the URL for 
+locating the hub.  Also the use of 'localhost' assumes your node is running on the same machine
+as your hub.  For getting started this is probably easiest.  If running the hub and node on 
+separate machines, simply replace 'localhost' with the hostname of the remote machine running the
+hub.
+
+WARNING:  Be sure to turn off the firewalls on the machine running your hub and nodes.  Otherwise
+you'll likely receive connection errors.
+	
+
+Getting Command-Line Help
+-------------------------
 
 
-Configuring Nodes
------------------
+
+Node Configuration Examples
+---------------------------
 
 
 Timing Parameters
