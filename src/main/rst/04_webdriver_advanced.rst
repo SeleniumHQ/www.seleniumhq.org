@@ -34,6 +34,28 @@ for ExpectedCondition type is Boolean return true or not null return value for a
 
 This example is also functionally equivalent to the first `Implicit Waits`_ example.
 
+Expected Conditions
++++++++++++++++++++
+There are some common conditions that are frequently come across when automating web browsers. Listed below are 
+Implementations of each. Java happens to have convienence methods so you don't have to code an ExpectedCondition
+class yourself or create your own utility package for them.
+
+* Element is Clickable - it is Displayed and Enabled.
+
+.. code-block:: java
+
+    WebDriverWait wait = new WebDriverWait(driver, 10);
+    WebElement element = wait.until(ExpectedConditions.elementToBeClickable(By.id("someid")));
+
+.. code-block:: python
+
+    wait = WebDriverWait(driver, 10)
+    def clickable(element):
+      if element.is_clickable():
+        return element
+      return null
+    element = wait.until(lambda d: clickable(d.find_element_by_id('someid')))
+
 The `ExpectedConditions <http://selenium.googlecode.com/svn/trunk/docs/api/java/org/openqa/selenium/support/ui/ExpectedConditions.html>`_ class in contains a set of predefined conditions to use with WebDriverWait in Java.
 
 Implicit Waits
@@ -71,9 +93,123 @@ Taking a Screenshot
 .. literalinclude:: /examples/Chapter4/ruby/RemoteScreenShot.rb
    :language: ruby
 
+Using a FirefoxProfile
+~~~~~~~~~~~~~~~~~~~~~~
+
+.. code-block:: java
+    
+    FirefoxProfile fp = new FirefoxProfile();
+    // set something on the profile...
+    DesiredCapabilities dc = DesiredCapabilities.firefox();
+    dc.setCapability(FirefoxDriver.PROFILE, fp);
+    WebDriver driver = new RemoteWebDriver(dc);
+
+.. code-block:: python
+    
+    from selenium import webdriver
+    fp = webdriver.FirefoxProfile()
+    # set something on the profile...
+    driver = webdriver.Remote(desired_capabilities=webdriver.DesiredCapabilities.FIREFOX, browser_profile=fp)
+
+Using ChromeOptions
+~~~~~~~~~~~~~~~~~~~
+
+.. code-block:: java
+
+    ChromeOptions options = new ChromeOptions();
+    // set some options
+    DesiredCapabilities dc = DesiredCapabilities.chrome();
+    dc.setCapability(ChromeOptions.CAPABILITY, options);
+    WebDriver driver = new RemoteWebDriver(dc);
+
+.. code-block:: python
+    
+    from selenium import webdriver
+    options = webdriver.ChromeOptions()
+    # set some options
+    driver = webdriver.Remote(desired_capabilities=options.to_capabilities())
+
 AdvancedUserInteractions
 ------------------------
-Todo
+
+The Actions class(es) allow you to build a Chain of Actions and perform them.
+There are too many possible combinations to count. Below are a few of the common
+interactions that you may want to use. For a full list of actions please refer to
+the API docs `Java <http://selenium.googlecode.com/svn/trunk/docs/api/java/index.html?org/openqa/selenium/interactions/Actions.html>`_ 
+`C# <http://selenium.googlecode.com/svn/trunk/docs/api/dotnet/html/AllMembers_T_OpenQA_Selenium_Interactions_Actions.htm>`_ 
+`Ruby <http://selenium.googlecode.com/svn/trunk/docs/api/rb/Selenium/WebDriver/ActionBuilder.html>`_ 
+`Python <http://selenium.googlecode.com/svn/trunk/docs/api/py/webdriver/selenium.webdriver.common.action_chains.html>`_
+
+The Advanced User Interactions require native events to be enabled. Here's a table
+of the current support Matrix for native events:
+
+=================  ===  ===  ===  ===  ======  ======  =============  ===========  ==========  ===== ======= ===
+platform           IE6  IE7  IE8  IE9  FF3.6   FF10+   Chrome stable  Chrome beta  Chrome dev  Opera Android iOS  
+=================  ===  ===  ===  ===  ======  ======  =============  ===========  ==========  ===== ======= ===
+Windows XP         Y    Y    Y    n/a  Y       Y       Y              Y            Y           ?     Y [1]_  n/a
+Windows 7          n/a  n/a  Y    Y    Y       Y       Y              Y            Y           ?     Y [1]_  n/a
+Linux (Ubuntu)     n/a  n/a  n/a  n/a  Y [2]_  Y [2]_  Y              Y            Y           ?     Y [1]_  n/a
+Mac OSX            n/a  n/a  n/a  n/a  N       N       Y              Y            Y           ?     Y [1]_  N
+Mobile Device      n/a  n/a  n/a  n/a  n/a     ?       n/a            n/a          n/a         ?     Y       N 
+=================  ===  ===  ===  ===  ======  ======  =============  ===========  ==========  ===== ======= ===
+
+.. [1] Using the emulator
+
+.. [2] With explicitly enabling native events
+
+
+.. 
+    #Mouse Movement
+    #~~~~~~~~~~~~~~
+    #
+    #These examples show how to Mouse over an element, drag and drop, and move the mouse out of an element
+    #
+    #.. literalinclude:: /examples/Chapter4/Java/AUIMouseMove.java
+    #   :language: java
+    #
+    #.. literalinclude:: /examples/Chapter4/CSharp/AUIMouseMove.cs
+    #   :language: csharp
+    #
+    #.. literalinclude:: /examples/Chapter4/python/AUIMouseMove.py
+    #   :language: python
+    #
+    #.. literalinclude:: /examples/Chapter4/ruby/AUIMouseMove.rb
+    #   :language: ruby
+    #
+    #Clicks
+    #~~~~~~
+    #
+    #These examples show you how to context click (right click),
+    #perform a simple click, and double click.
+    #
+    #.. literalinclude:: /examples/Chapter4/Java/AUIClicking.java
+    #   :language: java
+    #
+    #.. literalinclude:: /examples/Chapter4/CSharp/AUIClicking.cs
+    #   :language: csharp
+    #
+    #.. literalinclude:: /examples/Chapter4/python/AUIClicking.py
+    #   :language: python
+    #
+    #.. literalinclude:: /examples/Chapter4/ruby/AUIClicking.rb
+    #   :language: ruby
+    #
+    #Modifier Keys
+    #~~~~~~~~~~~~~
+    #
+    #These examples show you how to use a `modifier key <http://en.wikipedia.org/modifier_key>`_.
+    #
+    #.. literalinclude:: /examples/Chapter4/Java/AUIModifierKeys.java
+    #   :language: java
+    #
+    #.. literalinclude:: /examples/Chapter4/CSharp/AUIModifierKeys.cs
+    #   :language: csharp
+    #
+    #.. literalinclude:: /examples/Chapter4/python/AUIModifierKeys.py
+    #   :language: python
+    #
+    #.. literalinclude:: /examples/Chapter4/ruby/AUIModifierKeys.rb
+    #   :language: ruby
 
 Browser Startup Manipulation
 ----------------------------
