@@ -1130,7 +1130,7 @@ machine to only include the Selenium WebDriver.xpi (plugin). A few settings are
 also changed by default (`see the source to see which ones 
 <http://code.google.com/p/selenium/source/browse/trunk/java/client/src/org/openqa/selenium/firefox/FirefoxProfile.java#55>`_)
 Firefox Driver is capable of being run and is tested on Windows, Mac, Linux. 
-Currently on versions 3.0, 3.6, 5, 6, 7, and 8
+Currently on versions 3.6, 10, latest - 1, latest
 
 Usage
 +++++
@@ -1413,6 +1413,32 @@ findElements doesn't work as expected. Also, because we're using Selenium Core
 for the heavy lifting of driving the browser, you are limited by the JavaScript
 sandbox.
 
+Running Standalone Selenium Server for use with RemoteDrivers
+-------------------------------------------------------------
+
+From `Selenium's Download page <https://code.google.com/p/selenium/downloads/list>`_ download selenium-server-standalone-<version>.jar and optionally IEDriverServer. If you plan to work with Chrome, download it from `Google Code <http://chromedriver.googlecode.com/>`_. 
+
+Unpack IEDriverServer and/or chromedriver and put them in a directory which is on the $PATH / %PATH% - the Selenium Server should then be able to handle requests for IE / Chrome without additional modifications. 
+
+Start the server on the command line with 
+
+.. code-block:: bash
+  
+  java -jar <path_to>/selenium-server-standalone-<version>.jar
+
+If you want to use native events functionality, indicate this on the command line with the option 
+
+.. code-block:: bash
+  
+  -Dwebdriver.enable.native.events=1
+
+For other command line options, execute 
+
+.. code-block:: bash
+
+  java -jar <path_to>/selenium-server-standalone-<version>.jar -help
+
+In order to function properly, the following ports should be allowed incoming TCP connections: 4444, 7054-5 (or twice as many ports as the number of concurrent instances you plan to run). Under Windows, you may need to unblock the applications as well.
 
 
 .. _SeleniumWebDriverWiki:
