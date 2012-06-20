@@ -83,7 +83,7 @@ your project.
                     <dependency>
                         <groupId>org.seleniumhq.selenium</groupId>
                         <artifactId>selenium-java</artifactId>
-                        <version>2.23.1</version>
+                        <version>2.24.1</version>
                     </dependency>
                     <dependency>
                         <groupId>com.opera</groupId>
@@ -943,7 +943,8 @@ an alternative is to find a smaller page on the site, typically the 404 page is 
     # the cookie name here is 'key' and it's value is 'value'
     driver.add_cookie({'name':'key', 'value':'value', 'path':'/'})
     # additional keys that can be passed in are:
-    # 'domain' -> String, 'secure' -> Boolean, 
+    # 'domain' -> String, 
+    # 'secure' -> Boolean, 
     # 'expiry' -> Milliseconds since the Epoch it should expire.
 
     # And now output all the available cookies for the current URL
@@ -1191,6 +1192,12 @@ are disabled by default. To enable them:
     FirefoxProfile profile = new FirefoxProfile();
     profile.setEnableNativeEvents(true);
     WebDriver driver = new FirefoxDriver(profile);
+
+.. code-block:: python
+
+    profile = webdriver.FirefoxProfile()
+    profile.native_events_enabled = True
+    driver = webdriver.Firefox(profile)
 
 .. code-block:: ruby
     
