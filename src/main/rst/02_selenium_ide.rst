@@ -555,7 +555,7 @@ Test suites can also be maintained when using Selenium-RC.  This is done via
 programming and can be done a number of ways.  Commonly Junit is used to
 maintain a test suite if one is using Selenium-RC with Java.  Additionally, if
 C# is the chosen language, Nunit could be employed.  If using an interpreted 
-language like Python with Selenium-RC than some simple programming would be
+language like Python with Selenium-RC then some simple programming would be
 involved in setting up a test suite.  Since the whole reason for using Selenium-RC
 is to make use of programming logic for your testing this usually isn't a
 problem.
