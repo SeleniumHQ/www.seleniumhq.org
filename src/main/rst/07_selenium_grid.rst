@@ -262,7 +262,10 @@ default.  To see the ports used by all running programs on your machine use the 
 
 	netstat -a
 	
-This should work on all supported systems, Unix/Linux, MacOs, and Windows.
+This should work on all supported systems, Unix/Linux, MacOs, and Windows although additional options
+beyond -a may be required.  Basically you need to display the process ID along with the port.  In 
+Unix you may 'grep' the output (use a pipe) from the port number to only display those records 
+you're concerned with.
 
 
 
@@ -273,6 +276,24 @@ Timing Parameters for the Hub
 
 Node Configuration
 ------------------
+
+
+Common Errors
+-------------
+
+
+Unable to acess the jarfile
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. code-block:: bash
+
+	Unable to access jarfile selenium-server-standalone-2.21.0.jar
+
+This error can occur when starting up either a hub or node.  
+This means Java cannot find the selenium-server jar file.  Either run the command from the
+directory where the selenium-server-XXXX.jar file is stored, or specify an explicit path to
+the jar.
+
 
 
 Troubleshooting
