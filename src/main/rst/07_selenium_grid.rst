@@ -151,20 +151,132 @@ separate machines, simply replace 'localhost' with the hostname of the remote ma
 hub.
 
 WARNING:  Be sure to turn off the firewalls on the machine running your hub and nodes.  Otherwise
-you'll likely receive connection errors.
+you may get connection errors.
 	
 
 Getting Command-Line Help
 -------------------------
+The Selenium-Server provides listings of available options with a brief description of each.
+Currently (summer 2012), the command-line help has some oddities, but it can be helpful if you know
+where to look and how to interpret the information.  
+
+The Selenium-Server provides two distinct functions, that of the Selenium-RC server
+and that of Selenium-Grid.  These were likely written by different Selenium teams, and therefore 
+the command-line help for each function has ended up in two different places.  And, for the 
+new user, it may not be apparent at first which of these two you are viewing.
+
+If you simply pass a -h option as you might first assume, you get the Selenium-RC Server options
+but not those for Selenium-Grid. 
+
+.. code-block:: bash
+
+	java -jar selenium-server-standalone-2.21.0.jar -h
+	
+This would give you Selenium-RC's server options.  If you want the command-line help for 
+Selenium-Grid, you first use the -hub or -node options to tell Selenium-Server you're intereted
+in Selenium-Grid, and then follow with a -h.
+
+.. code-block:: bash
+
+	java -jar selenium-server-standalone-2.21.0.jar -role node -h
+
+Or, for that matter, just pass a garbage argument to the -role node as follows.
+
+.. code-block:: bash
+
+	java -jar selenium-server-standalone-2.21.0.jar -role node xx
 
 
+You will first see "INFO..." and an "ERROR" but below that you'll get the command-line options for
+Selenium-Grid.  We won't list the whole output here since it's rather long, but the first few
+lines look like this.
 
-Node Configuration Examples
----------------------------
+.. code-block:: bash
 
+	Jul 19, 2012 10:10:39 AM org.openqa.grid.selenium.GridLauncher main
+	INFO: Launching a selenium grid node
+	org.openqa.grid.common.exception.GridConfigurationException: You need to specify a hub to register to using -hubHost X -hubPort 5555. The specified config was -hubHost null -hubPort 4444
+		at org.openqa.grid.common.RegistrationRequest.validate(RegistrationRequest.java:610)
+		at org.openqa.grid.internal.utils.SelfRegisteringRemote.startRemoteServer(SelfRegisteringRemote.java:88)
+		at org.openqa.grid.selenium.GridLauncher.main(GridLauncher.java:72)
+	Error building the config :You need to specify a hub to register to using -hubHost X -hubPort 5555. The specified config was -hubHost null -hubPort 4444
+	Usage :
+	  -hubConfig:	
+		(hub) a JSON file following grid2 format.
 
-Timing Parameters
+	 -nodeTimeout:	
+		(node) <XXXX>  the timeout in seconds before the hub
+		  automatically ends a test that hasn't had aby activity than XX
+		  sec.The browser will be released for another test to use.This
+		  typically takes care of the client crashes.
+
+	
+
+Hub Configuration
 -----------------
+To run the hub using the default options simply specify -role hub to the Selenim-Server
+
+.. code-block:: bash
+
+	java -jar selenium-server-standalone-2.21.0.jar -hub
+
+You should see the following logging output.
+
+.. code-block:: bash
+	
+	Jul 19, 2012 10:46:21 AM org.openqa.grid.selenium.GridLauncher main
+	INFO: Launching a selenium grid server
+	2012-07-19 10:46:25.082:INFO:osjs.Server:jetty-7.x.y-SNAPSHOT
+	2012-07-19 10:46:25.151:INFO:osjsh.ContextHandler:started o.s.j.s.ServletContextHandler{/,null}
+	2012-07-19 10:46:25.185:INFO:osjs.AbstractConnector:Started SocketConnector@0.0.0.0:4444
+
+
+Specifying the Port
+~~~~~~~~~~~~~~~~~~~
+
+The default port used by the hub is 4444.  The port being referred to hear, is the TCP/IP port used when the 
+'client', that is, the automated tests connect to the Selenium-Grid hub.  If another application
+on your computer is already using this port, or if, you already have a Selenium-Server started,
+you'll see the following message in the log output.
+
+.. code-block:: bash
+
+	10:56:35.490 WARN - Failed to start: SocketListener0@0.0.0.0:4444
+	Exception in thread "main" java.net.BindException: Selenium is already running on port 4444. Or some other service is.
+
+If this occurs you can either shutdown the other process that is using port 4444, or you can 
+tell Selenium-Grid to use a different port for its hub.  Use the -port option for changing the 
+port used by the hub.
+
+.. code-block:: bash
+
+	java -jar selenium-server-standalone-2.21.0.jar -hub -port 4441
+
+This will work even if another hub is already running on the same machine, that is, as long as
+they're both not using port 4441.
+
+You may, however, want to see what process is using port 4444 so you can allow the hub to use the 
+default.  To see the ports used by all running programs on your machine use the command.
+
+.. code-block:: bash
+
+	netstat -a
+	
+This should work on all supported systems, Unix/Linux, MacOs, and Windows.
+
+
+
+
+Timing Parameters for the Hub
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+Node Configuration
+------------------
+
+
+Troubleshooting
+---------------
 
 
 
