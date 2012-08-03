@@ -5,7 +5,7 @@ $(document).ready(function() {
     $(".toggled p").hide();
 
     //Hide the code and insert a button before it with the value equals to the class of the code
-    languages = {'java':false,'csharp':false,'python':false,'ruby':false,'php':false,'perl':false}
+    languages = {'java':false,'csharp':false,'python':false,'ruby':false,'php':false,'perl':false,'javascript':false}
     if (cookieSet("langPref")) {
         var set = getCookie("langPref").split(",");
         for (var i=0; i<set.length; i++) {

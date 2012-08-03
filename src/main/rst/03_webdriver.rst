@@ -83,7 +83,7 @@ your project.
                     <dependency>
                         <groupId>org.seleniumhq.selenium</groupId>
                         <artifactId>selenium-java</artifactId>
-                        <version>2.24.1</version>
+                        <version>2.25.0</version>
                     </dependency>
                     <dependency>
                         <groupId>com.opera</groupId>
@@ -95,7 +95,7 @@ your project.
                         <dependency>
                             <groupId>com.opera</groupId>
                             <artifactId>operadriver</artifactId>
-                            <version>0.14</version>
+                            <version>0.16</version>
                             <exclusions>
                                 <exclusion>
                                     <groupId>org.seleniumhq.selenium</groupId>
@@ -230,6 +230,9 @@ result page's title to the console.
 
 .. literalinclude:: /examples/Chapter3/Ruby/Selenium2Example.rb
    :language: ruby
+
+.. literalinclude:: /examples/Chapter3/Javascript/Selenium2Example.js
+   :language: javascript
 
 
 In upcoming sections, you will learn more about how to use WebDriver for things
