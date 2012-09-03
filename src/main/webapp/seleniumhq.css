@@ -1236,6 +1236,8 @@ ol.faq li a:hover {
 	#footer {
 		clear: both;
 		margin-top: 1em;
+        width: 705px;
+        float: right;
 	}
 		
 	#footer ul {

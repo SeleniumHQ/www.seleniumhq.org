@@ -6,9 +6,11 @@
   "HTML Tidy (version num removed), see www.w3.org">
 
   <title>Nightly Releases</title>
+<%@include file="/jsp/head.jspf"%>
 </head>
 
 <body class="sectionDownload">
+<%@include file="/jsp/header.jspf"%><div id="mainContent">
   <h2>Nightly Releases</h2>
 
   <p>Selenium has nightly builds running every night. Most are
@@ -21,5 +23,6 @@
   components in these repositories, so please browser around. For
   example, you can find the nightlies for the Ruby, Python, perl,
   and C# bindings in these repositories.</p>
+<%@include file="/jsp/footer.jspf"%>
 </body>
 </html>

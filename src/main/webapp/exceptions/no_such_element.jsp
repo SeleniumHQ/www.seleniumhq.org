@@ -3,6 +3,7 @@
     <title>No Such Element/title>
 </head>
 <body>
+<%@include file="/jsp/header.jspf"%><div id="mainContent">
 <h1>No Such Element</h1>
     
 <p>This page describes why you might be seeing the NoSuchElementException (or similar).</p>
@@ -16,5 +17,6 @@
 
 <h2>Common Solutions</h2>
     
+<%@include file="/jsp/footer.jspf"%>
 </body>        
 </html>

@@ -6,9 +6,11 @@
   "HTML Tidy (version num removed), see www.w3.org">
 
   <title>Previous Releases</title>
+<%@include file="/jsp/head.jspf"%>
 </head>
 
 <body class="sectionDownload">
+<%@include file="/jsp/header.jspf"%><div id="mainContent">
   <h2>Previous Releases</h2>
 
   <ul>
@@ -448,5 +450,6 @@
       </tr>
     </tbody>
   </table>
+<%@include file="/jsp/footer.jspf"%>
 </body>
 </html>

@@ -6,9 +6,11 @@
   "HTML Tidy (version num removed), see www.w3.org">
 
   <title>About Selenium</title>
+<%@include file="/jsp/head.jspf"%>
 </head>
 
 <body class="sectionAbout">
+<%@include file="/jsp/header.jspf"%><div id="mainContent">
   <h2>About Selenium</h2>
 
   <p>Selenium is a suite of tools specifically for automating web browsers.</p>
@@ -62,5 +64,6 @@
   <p>
     We use a free license of <a href="http://www.atlassian.com/software/bamboo/">Atlassian Bamboo</a> for our continuous integration/build system.
   </p>
+<%@include file="/jsp/footer.jspf"%>
 </body>
 </html>

@@ -1,16 +1,3 @@
-<%!private String text(Element e, String name) {
-    return e.getElementsByTagName(name).item(0).getFirstChild().getNodeValue();
-}%>
-<%@ page import="org.w3c.dom.Element" %>
-<%@ page import="org.w3c.dom.NodeList" %>
-<%@ page import="org.w3c.dom.Document" %>
-<%@ page import="javax.xml.parsers.DocumentBuilderFactory" %>
-<%@ page import="javax.xml.parsers.DocumentBuilder" %>
-<%@ page import="java.net.URL" %>
-<%@ page import="java.text.SimpleDateFormat" %>
-<%@ page import="java.util.TimeZone" %>
-<%@ page import="java.util.Date" %>
-<%@ taglib uri="http://www.opensymphony.com/oscache" prefix="oscache" %>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
@@ -20,10 +7,12 @@
   "HTML Tidy (version num removed), see www.w3.org" />
 
   <title>Selenium - Web Browser Automation</title>
+<%@include file="/jsp/head.jspf"%>
   <link rel="alternate" type="application/rss+xml" title="Selenium Blog Posts Feed" href="http://feeds.feedburner.com/Selenium" />
 </head>
 
 <body class="homepage">
+<%@include file="/jsp/header.jspf"%><div id="mainContent">
   <h2>What is Selenium?</h2>
   <p><i>Selenium automates browsers</i>. That's it. What you do with that power is entirely up to you. Primarily it is for automating web applications for testing purposes, but is certainly not limited to just that. Boring web-based administration tasks can (and should!) also be automated as well.</p>
   <p>Selenium has the support of some of the largest browser vendors who have taken (or are taking) steps to make Selenium a native part of their browser. It is also the core technology in countless other browser automation tools, APIs and frameworks.</p>
@@ -64,6 +53,7 @@ If you want to
 
   <h2>Selenium News</h2>
 
-  <%@include file="/news.jspf"%>
+  <%@include file="/jsp/news.jspf"%>
+<%@include file="/jsp/footer.jspf"%>
 </body>
 </html>

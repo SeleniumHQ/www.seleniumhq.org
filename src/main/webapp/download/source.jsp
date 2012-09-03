@@ -6,9 +6,11 @@
   "HTML Tidy (version num removed), see www.w3.org">
 
   <title>Source Code</title>
+<%@include file="/jsp/head.jspf"%>
 </head>
 
 <body class="sectionDownload">
+<%@include file="/jsp/header.jspf"%><div id="mainContent">
   <h2>Source Code</h2>
 
   <p>Below is where you can find the the source control for all the
@@ -67,5 +69,6 @@
       
     </tbody>
   </table>
+<%@include file="/jsp/footer.jspf"%>
 </body>
 </html>

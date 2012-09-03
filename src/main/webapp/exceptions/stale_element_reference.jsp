@@ -1,8 +1,10 @@
 <html>
 <head>
     <title>Stale Element Reference Exception</title>
+<%@include file="/jsp/head.jspf"%>
 </head>
 <body>
+<%@include file="/jsp/header.jspf"%><div id="mainContent">
 <h1>Stale Element Reference Exception</h1>
     
 <p>You have probably been directed to this page because you've seen a StaleElementReferenceException in your tests.</p>
@@ -46,5 +48,6 @@ If WebDriver throws a stale element exception in this case, even though the elem
 <h3>The element changes type, but keeps the same locator sematics (JQuery and others)</h3>
 
 <p>Watermarked fields in JQuery change from a regular input to a password field as they get focus. The first end-user key press arrives in the password variant.  Refer to pwField2 in <a href="http://regression-tests.seleniumhq.org/issues/2915.groovy">this example</a></p>
+<%@include file="/jsp/footer.jspf"%>
 </body>        
 </html>

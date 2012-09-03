@@ -5,9 +5,11 @@
     <link rel="stylesheet" type="text/css" href="../fancybox/jquery.fancybox-1.3.4.css" media="screen" />  
 
   <title>Maven Information</title>
+<%@include file="/jsp/head.jspf"%>
 </head>
 
 <body class="sectionDownload">
+<%@include file="/jsp/header.jspf"%><div id="mainContent">
   <h2>Maven Information</h2>
 
   <p>If you're using Maven, you will find all Selenium Maven
@@ -92,5 +94,6 @@
     &lt;/dependency&gt;  
   </pre>
     
+<%@include file="/jsp/footer.jspf"%>
 </body>
 </html>

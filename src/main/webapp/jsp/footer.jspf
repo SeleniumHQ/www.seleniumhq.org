@@ -1,0 +1,40 @@
+</div>
+</div>
+<div id="footer">
+    <ul id="sitemap">
+        <li><a href="/projects/">Selenium Projects</a>
+            <ul>
+                <li><a href="/projects/ide/">Selenium IDE</a></li>
+                <li><a href="/projects/remote-control/">Selenium Remote Control</a></li>
+                <li><a href="/projects/webdriver/">Selenium WebDriver</a></li>
+                <li><a href="/projects/grid">Selenium Grid</a></li>
+            </ul>
+        </li>
+        <li><a href="/docs/">Documentation</a>
+            <ul>
+                <li><a href="/docs/">Online version</a></li>
+                <li><a href="http://code.google.com/p/selenium/w/list">Wiki</a></li>
+                <li><a href="/download/#client-drivers">Selenium API</a></li>
+            </ul>
+        </li>
+        <li><a href="/support/">Support</a>
+            <ul>
+                <li><a href="http://groups.google.com/group/selenium-users">User Group</a></li>
+                <li><a href="http://code.google.com/p/selenium/issues/list">Bug Tracker</a></li>
+                <li><a href="/support/index.html#CommercialSupport">Commercial Support</a></li>
+                <li><a href="/support/index.html#IRC">IRC</a></li>
+            </ul>
+        </li>
+        <li><a href="/about/">About Selenium</a>
+            <ul>
+                <li><a href="/about/news.jsp">News/Blogs</a></li>
+                <li><a href="/about/events.html">Events</a></li>
+                <li><a href="/about/contributors.html">Who made Selenium</a>
+                <li><a href="http://code.google.com/p/selenium/wiki/RoadMap">Roadmap</a></li>
+                <li><a href="/about/getting-involved.html">Getting Involved</a></li>
+            </ul>
+        </li>
+    </ul>
+    <a href="http://openqa.org/"><img alt="openqa.org logo" id="footerLogo" src="/images/openqa-logo.png"/></a>
+</div>
+</div>

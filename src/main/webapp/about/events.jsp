@@ -6,9 +6,11 @@
   "HTML Tidy (version num removed), see www.w3.org">
 
   <title>Selenium Events</title>
+<%@include file="/jsp/head.jspf"%>
 </head>
 
 <body class="sectionAbout">
+<%@include file="/jsp/header.jspf"%><div id="mainContent">
   <h2>Selenium Events</h2>
 
   <h2>Upcoming events</h2>
@@ -19,5 +21,6 @@
 
   <script src="/js/events.js" type="text/javascript"></script>
 
+<%@include file="/jsp/footer.jspf"%>
 </body>
 </html>

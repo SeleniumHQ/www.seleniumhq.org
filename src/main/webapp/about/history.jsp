@@ -6,9 +6,11 @@
   "HTML Tidy (version num removed), see www.w3.org">
 
   <title>Selenium History</title>
+<%@include file="/jsp/head.jspf"%>
 </head>
 
 <body class="sectionAbout">
+<%@include file="/jsp/header.jspf"%><div id="mainContent">
   <h2>Selenium History</h2>
 
   <p>See also: <a href="contributors.html">Selenium
@@ -156,5 +158,6 @@
     <li>Paul's Squid-proxy plugin (C++), RC server negates the need
     for it.</li>
   </ul>
+<%@include file="/jsp/footer.jspf"%>
 </body>
 </html>

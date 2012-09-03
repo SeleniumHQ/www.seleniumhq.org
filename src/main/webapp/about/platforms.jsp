@@ -6,9 +6,11 @@
   "HTML Tidy (version num removed), see www.w3.org">
 
   <title>Platforms Supported by Selenium</title>
+<%@include file="/jsp/head.jspf"%>
 </head>
 
 <body class="sectionAbout">
+<%@include file="/jsp/header.jspf"%><div id="mainContent">
   <h2>Platforms Supported by Selenium</h2>
 
   <p>We take compatibility seriously - that's why Selenium works
@@ -672,5 +674,6 @@
 
   <p class="remark">**** Selenium <a href="http://blog.infostretch.com/?p=1106">IDE Plug-in for InfoStretch Framework</a> includes a formatter for <a href="http://blog.infostretch.com/806">ISFW</a> as well as a bunch of other extensions.</p>
 
+<%@include file="/jsp/footer.jspf"%>
 </body>
 </html>

@@ -12,3 +12,11 @@ mvn clean jetty:run
 You will then be able to access them at:
 
 http://localhost:8080
+
+deploying to google appengine:
+
+run mvn -Dgae.home=<absolute path to>/appengine-java-sdk clean gae:deploy
+
+Specify your username/password to the appengine account by specifying
+it in your ~/.m2/settings.xml file, as described here:
+http://www.kindleit.net/maven_gae_plugin/examples/passwordPrompt.html

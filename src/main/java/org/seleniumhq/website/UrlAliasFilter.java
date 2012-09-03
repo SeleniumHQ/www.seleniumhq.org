@@ -1,20 +1,18 @@
 package org.seleniumhq.website;
 
-import javax.servlet.*;
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
-import java.util.Map;
-import java.util.HashMap;
 import java.io.IOException;
 
+import javax.servlet.Filter;
+import javax.servlet.FilterChain;
+import javax.servlet.FilterConfig;
+import javax.servlet.ServletException;
+import javax.servlet.ServletRequest;
+import javax.servlet.ServletResponse;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
 public class UrlAliasFilter implements Filter {
-    private static final Map<String, String> aliasMap = new HashMap<String, String>();
-
-    static {
-        aliasMap.put("/index.html", "/");
-        aliasMap.put("/about/news.html", "/about/news.jsp");
-    }
-
+    
     public void init(FilterConfig filterConfig) throws ServletException {
     }
 
@@ -29,12 +27,10 @@ public class UrlAliasFilter implements Filter {
             return;
         }
 
-        String newUrl = aliasMap.get(path);
-
-        if (newUrl == null) {
-            chain.doFilter(request, response);
+        if (path.endsWith(".html")) {
+        	res.sendRedirect(path.replaceFirst(".html", ".jsp"));
         } else {
-            res.sendRedirect(newUrl);
+            chain.doFilter(request, response);
         }
     }
 

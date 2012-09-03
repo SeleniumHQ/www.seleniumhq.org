@@ -16,12 +16,21 @@ import java.util.Date;
 import java.util.TimeZone;
 
 public class FeedParser {
+	
+	private static Long lastChecked = null;
+	private static String rendered = null;
+	
     public static void main(String[] args) throws IOException, SAXException, ParseException, ParserConfigurationException {
         System.out.println(render());
     }
 
     public static String render() throws IOException, ParserConfigurationException, SAXException, ParseException {
-        StringBuilder sb = new StringBuilder();
+        if (lastChecked != null && rendered != null && (System.currentTimeMillis() - lastChecked) < 300000 /* 5 min */) {
+        	return rendered;
+        }
+        lastChecked = System.currentTimeMillis();
+    	
+    	StringBuilder sb = new StringBuilder();
 
         SimpleDateFormat in = new SimpleDateFormat("EEE, dd MMM yyyy HH:mm:ss ZZZ");
         SimpleDateFormat out = new SimpleDateFormat("EEE, dd MMM yyyy");
@@ -41,6 +50,7 @@ public class FeedParser {
             sb.append("</li>\n");
         }
 
-        return sb.toString();
+        rendered = sb.toString();
+        return rendered;
     }
 }

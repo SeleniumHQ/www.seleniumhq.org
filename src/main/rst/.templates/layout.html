@@ -7,7 +7,6 @@
 {%- set languages = ['java', 'csharp', 'python', 'ruby', 'php', 'perl', 'javascript'] %}
 
 {%- macro relbar() %}
-<content tag="related">
     <div class="related">
       <h3>{{ _('Navigation') }}</h3>
       <ul>
@@ -26,7 +25,6 @@
         {%- block relbaritems %} {% endblock %}
       </ul>
     </div>
-</content>
 {%- endmacro %}
 
 {%- macro languagebar() %}
@@ -43,7 +41,6 @@
 
 {%- macro sidebar() %}
       {%- if not embedded %}{% if not theme_nosidebar|tobool %}
-<content tag="sphinxsidebar">
       <div class="sphinxsidebar">
         <div class="sphinxsidebarwrapper">
           {%- block sidebarlogo %}
@@ -90,7 +87,6 @@
           {%- endblock %}
         </div>
       </div>
-</content>
       {%- endif %}{% endif %}
 {%- endmacro %}
 
@@ -104,6 +100,7 @@
       {%- set titlesuffix = "" %}
     {%- endif %}
     <title>{{ title|striptags }}{{ titlesuffix }}</title>
+    <%@include file="/jsp/head.jspf"%>
     <link rel="stylesheet" href="{{ pathto('_static/pygments.css', 1) }}" type="text/css" />
     <link rel="stylesheet" href="{{ pathto('_static/jquery.treeview.css', 1) }}" type="text/css" />
     <link rel="stylesheet" href="{{ pathto('_static/docs.css', 1) }}" type="text/css" />
@@ -173,14 +170,16 @@
  {% endblock %}
   </head>
   <body class="sectionDocumentation">
+  <%@include file="/jsp/header.jspf"%>
 {%- block header %}{% endblock %}
 
+<div id="side" class="left">
 {%- block relbar1 %}{{ relbar() }}{% endblock %}
 
-{%- block sidebar1 %} {# possible location for sidebar #} {% endblock %}
-
-{%- block languagePref %} {{ languagebar() }} {%- endblock %}
-
+{%- block sidebar1 %} {{ sidebar() }} {% endblock %}
+</div>
+  <div id="mainContent">
+	{%- block languagePref %} {{ languagebar() }} {%- endblock %}
     <div class="document">
 {%- block document %}
       <div class="documentwrapper">
@@ -195,8 +194,6 @@
       {%- endif %}{% endif %}
       </div>
 {%- endblock %}
-
-{%- block sidebar2 %}{{ sidebar() }}{% endblock %}
       <div class="clearer"></div>
     </div>
 
@@ -217,5 +214,6 @@
     {%- endif %}
     </div>
 {%- endblock %}
+    <%@include file="/jsp/footer.jspf"%>
   </body>
 </html>

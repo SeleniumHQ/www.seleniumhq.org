@@ -1,9 +1,11 @@
 <html>
 <head>
     <title>OpenQA Forums Have Been Discountinued</title>
+<%@include file="/jsp/head.jspf"%>
 </head>
 
 <body>
+<%@include file="/jsp/header.jspf"%><div id="mainContent">
 
 <h1>The OpenQA Forums Have Been Discountinued</h1>
 
@@ -43,5 +45,6 @@
     to host on their own, should they feel the content must be migrated.
 </p>
 
+<%@include file="/jsp/footer.jspf"%>
 </body>
 </html>

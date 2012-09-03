@@ -1,8 +1,10 @@
 <html>
 <head>
     <title>Getting Help</title>
+<%@include file="/jsp/head.jspf"%>
 </head>
 <body class="sectionSupport">
+<%@include file="/jsp/header.jspf"%><div id="mainContent">
 
 <h1>Getting Help</h1>
 
@@ -97,5 +99,6 @@ posting to the <a href="http://groups.google.com/group/selenium-developers">
 Selenium Developers group</a>.
 </p>
 
+<%@include file="/jsp/footer.jspf"%>
 </body>
 </html>

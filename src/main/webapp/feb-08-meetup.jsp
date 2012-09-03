@@ -7,9 +7,11 @@
   "HTML Tidy (version num removed), see www.w3.org">
 
   <title>Selenium March '08 Meetup'</title>
+<%@include file="/jsp/head.jspf"%>
 </head>
 
 <body>
+<%@include file="/jsp/header.jspf"%><div id="mainContent">
   <p>The Selenium developers gathered at Google in Mountain View,
   California for 2 days of coding on February 24 &amp; 25,
   2008.</p>
@@ -41,5 +43,6 @@
     "application/x-shockwave-flash" allowfullscreen="true" width=
     "425" height="344">
   </object>
+<%@include file="/jsp/footer.jspf"%>
 </body>
 </html>

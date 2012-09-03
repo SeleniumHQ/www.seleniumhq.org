@@ -1,0 +1,93 @@
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-7221039-1");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+<div id="container">
+<div id="header">
+    <h1><a href="/" title="Return to Selenium home page">Selenium</a></h1>
+    <ul>
+        <li id="menu_about"><a href="/about/" title="Overview of Selenium">About</a></li>
+        <li id="menu_support"><a href="/support/" title="Get help with Selenium">Support</a></li>
+        <li id="menu_documentation"><a href="/documentation/"
+                                       title="Technical references and guides">Documentation</a></li>
+        <li id="menu_download"><a href="/download/" title="Get Selenium">Download</a></li>
+        <li id="menu_projects"><a href="/projects/" title="Selenium Projects">Projects</a></li>
+    </ul>
+    <form id="searchbox_016909259827549404702:hzru01fldsm" action="http://www.google.com/cse"
+          title="seleniumhq.org Selenium Search">
+        <div>
+            <label for="q" title="Search SeleniumHQ.org's sites for selenium content">search selenium:</label>
+            <input type="hidden" name="cx" value="005991058577830013072:2lr_j6t3fko">
+            <input type="hidden" name="cof" value="FORID:">
+            <input type="text" id="q" name="q" accesskey="s" size="30">
+            <input type="submit" id="submit" value="Go">
+        </div>
+    </form>
+
+</div>
+
+<div id="mBody">
+    <%
+        if (request.getRequestURI().startsWith("/about/")) {
+    %>
+    <div id="side" class="left">
+        <ul id="nav">
+            <li><a href="/about/">About Selenium</a>
+                <ul>
+                    <li><a href="/about/news.jsp">News/Blog</a></li>
+                    <li><a href="/about/events.html">Events</a></li>
+                    <li><a href="/about/contributors.html">Contributors</a></li>
+                    <li><a href="/about/license.html">License</a></li>
+                    <li><a href="/about/history.html">History</a></li>
+                    <li><a href="http://code.google.com/p/selenium/wiki/RoadMap">Roadmap</a></li>
+                    <li><a href="/about/getting-involved.html">Getting Involved</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <%
+        } else if (request.getRequestURI().startsWith("/download/")) {
+    %>
+    <div id="side" class="left">
+        <ul id="nav">
+            <li><a href="/download/">Selenium Downloads</a>
+                <ul>
+                    <li><a href="http://release.seleniumhq.org">Previous Releases</a></li>
+                    <li><a href="http://sci.illicitonion.com/">Latest Builds</a></li>
+                    <li><a href="/download/source.html">Source Code</a></li>
+                    <li><a href="/download/maven.html">Maven Information</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <%
+        } else if (request.getRequestURI().startsWith("/docs/")) {
+        } else {
+    %>
+    <div id="sidebar">
+        <img alt="Selenium Logo" src="/images/big-logo.png"/>
+
+        <p>
+            <strong>Selenium is a suite of tools</strong> to automate web browsers across many platforms.
+        </p>
+
+        <p>Selenium...</p>
+        <ul>
+            <li>runs in <a href="/about/platforms.html#browsers">many browsers</a> and <a
+                    href="/about/platforms.html#operating-systems">operating systems</a></li>
+            <li>can be controlled by many <a href="/about/platforms.html#programming-languages">programming
+                languages</a> and <a href="/about/platforms.html#testing-frameworks">testing frameworks</a>.
+            </li>
+        </ul>
+
+        <div class="downloadBox"><a href="/download/">Download Selenium</a></div>
+
+    </div>
+    <%
+        }
+    %>

@@ -973,7 +973,7 @@ an alternative is to find a smaller page on the site, typically the 404 page is 
     
     # And now output all the available cookies for the current URL
     driver.manage.all_cookies.each { |cookie| 
-        puts "#{cookie[:name]} => #{cookie[:value]}" 
+        puts "&#35;{cookie[:name]} => &#35;{cookie[:value]}" 
     }
     
     # You can delete cookies in 2 ways
