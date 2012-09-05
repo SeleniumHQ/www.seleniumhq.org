@@ -49,20 +49,6 @@ pageTracker._trackPageview();
                 </ul>
             </li>
         </ul>
-        <div class="ads">
-            <script type="text/javascript"><!--
-            google_ad_client = "ca-pub-7407598198321946";
-            /* sehq */
-            google_ad_slot = "6878866463";
-            google_ad_width = 160;
-            google_ad_height = 600;
-            //-->
-            </script>
-            <script type="text/javascript"
-            src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
-            </script>
-        </div>
-
     </div>
     <%
         } else if (request.getRequestURI().startsWith("/download/")) {
@@ -78,20 +64,6 @@ pageTracker._trackPageview();
                 </ul>
             </li>
         </ul>
-        <div class="ads">
-            <script type="text/javascript"><!--
-            google_ad_client = "ca-pub-7407598198321946";
-            /* sehq */
-            google_ad_slot = "6878866463";
-            google_ad_width = 160;
-            google_ad_height = 600;
-            //-->
-            </script>
-            <script type="text/javascript"
-            src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
-            </script>
-        </div>
-
     </div>
     <%
         } else if (request.getRequestURI().startsWith("/docs/")) {
@@ -114,20 +86,6 @@ pageTracker._trackPageview();
         </ul>
 
         <div class="downloadBox"><a href="/download/">Download Selenium</a></div>
-
-        <div class="ads">
-            <script type="text/javascript"><!--
-            google_ad_client = "ca-pub-7407598198321946";
-            /* sehq */
-            google_ad_slot = "6878866463";
-            google_ad_width = 160;
-            google_ad_height = 600;
-            //-->
-            </script>
-            <script type="text/javascript"
-            src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
-            </script>
-        </div>
 
     </div>
     <%
