@@ -238,7 +238,7 @@ devices.*
 Selenium 1.0 and Selenium-RC.
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-This is the old, support platfom for Selenium 1.0.  It should still apply to the Selenium 2.0 
+This is the old, support platform for Selenium 1.0.  It should still apply to the Selenium 2.0 
 release of Selenium-RC.
 
 =============  ==================================================  ===========================  =====================
