@@ -39,7 +39,7 @@
   <p>Below is where you can find the latest releases of all the
   Selenium components. You can also find a list <a href=
   "previous.html">previous releases</a>, <a href=
-  "http://xserve.openqa.org:8085/">latest releases</a>, <a href="http://seleniumhq.org/download/source.html">source
+  "http://code.google.com/p/selenium/downloads/list">latest releases</a>, <a href="http://seleniumhq.org/download/source.html">source
   code</a>, and additional information for <a href=
   "/download/maven.html">Maven users</a> (Maven is a popular Java build
   tool).</p>
