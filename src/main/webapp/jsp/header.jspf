@@ -57,8 +57,8 @@ pageTracker._trackPageview();
         <ul id="nav">
             <li><a href="/download/">Selenium Downloads</a>
                 <ul>
-                    <li><a href="http://release.seleniumhq.org">Previous Releases</a></li>
-                    <li><a href="http://sci.illicitonion.com/">Latest Builds</a></li>
+                    <li><a href="http://code.google.com/p/selenium/downloads/list">Latest Releases</a></li>
+                    <li><a href="/download/previous.html">Previous Releases</a></li>
                     <li><a href="/download/source.html">Source Code</a></li>
                     <li><a href="/download/maven.html">Maven Information</a></li>
                 </ul>
