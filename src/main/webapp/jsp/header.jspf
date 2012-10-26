@@ -49,6 +49,7 @@ pageTracker._trackPageview();
                 </ul>
             </li>
         </ul>
+	<%@include file="/jsp/donate.jspf"%>
     </div>
     <%
         } else if (request.getRequestURI().startsWith("/download/")) {
@@ -64,6 +65,7 @@ pageTracker._trackPageview();
                 </ul>
             </li>
         </ul>
+	<%@include file="/jsp/donate.jspf"%>
     </div>
     <%
         } else if (request.getRequestURI().startsWith("/docs/")) {
@@ -87,6 +89,7 @@ pageTracker._trackPageview();
 
         <div class="downloadBox"><a href="/download/">Download Selenium</a></div>
 
+	<%@include file="/jsp/donate.jspf"%>
     </div>
     <%
         }
