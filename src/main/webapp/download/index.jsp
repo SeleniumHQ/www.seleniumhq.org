@@ -130,7 +130,7 @@
     <li><a href="http://selenium.googlecode.com/files/android-server-2.21.0.apk">Android 2.21.0</a> <a href="http://code.google.com/p/selenium/wiki/AndroidDriver">wiki</a></li>
     <li>iOS <a href="http://code.google.com/p/selenium/wiki/IPhoneDriver">wiki</a></li>
   </ul>
-  <h4>Third Party Browser Drivers <span class="unsupported">NOT SUPPORTED/DEVELOPED</span> by seleniumhq</h4>
+  <h4>Third Party Browser Drivers <span class="unsupported">NOT DEVELOPED</span> by seleniumhq</h4>
   <table>
     <thead>
       <th>Browser</th>
@@ -165,7 +165,7 @@
       </tr>
     </tbody>
   </table>
-  <h4>Third Party Language Bindings <span class="unsupported">NOT SUPPORTED/DEVELOPED</span> by seleniumhq</h4>
+  <h4>Third Party Language Bindings <span class="unsupported">NOT DEVELOPED</span> by seleniumhq</h4>
   <ul class="thirdPartyBinding">
     <li><a href="https://github.com/aivaturi/Selenium-Remote-Driver">Perl</a> <a href="https://metacpan.org/module/Selenium::Remote::Driver">download and docs</a> by Gordon Child</li>
     <li><a href="https://github.com/chibimagic/WebDriver-PHP/">PHP</a> by Chibimagic (real name unknown?)</li>
