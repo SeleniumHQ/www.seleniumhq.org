@@ -150,11 +150,11 @@
       </tr>
       <tr>
         <td><a href="http://www.opera.com/developer/tools/operadriver/">Opera</td>
-        <td><a href="https://github.com/downloads/operasoftware/operadriver/operadriver-v0.18.zip">0.18</a></td>
+        <td><a href="https://github.com/downloads/operasoftware/operadriver/operadriver-v1.1.zip">1.1</a></td>
         <td><a href="https://raw.github.com/operasoftware/operadriver/master/CHANGES">change log</a>&nbsp;&nbsp;</td>
         <td><a href="https://github.com/operasoftware/operadriver/issues">issue tracker</a></td>
         <td><a href="http://code.google.com/p/selenium/wiki/OperaDriver">selenium wiki page</a></td>
-        <td>Released 2012-08-27</td>
+        <td>Released 2012-10-09</td>
       </tr>
       <tr>
         <td><a href="https://github.com/detro/ghostdriver">GhostDriver</a></td>
