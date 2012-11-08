@@ -423,7 +423,7 @@ the available commands.
 
 .. _`Command Reference`: http://release.seleniumhq.org/selenium-core/1.0.1/reference.html
 
-A *command* is what tells Selenium what to do. Selenium commands come in 
+A *command* tells Selenium what to do. Selenium commands come in 
 three "flavors": **Actions**, **Accessors**, and **Assertions**. 
 
 * **Actions** are commands that generally manipulate the state of the 
