@@ -5,6 +5,6 @@ proxy.setHttpProxy(PROXY)
      .setFtpProxy(PROXY)
      .setSslProxy(PROXY);
 DesiredCapabilities cap = new DesiredCapabailities();
-cap.setPreference(CapabilityType.PROXY, proxy);
+cap.setCapability(CapabilityType.PROXY, proxy);
 
 WebDriver driver = new InternetExplorerDriver(cap);
