@@ -86,7 +86,7 @@ a language of your choice.
 While Selenium was a tremendous tool, it wasn't without its drawbacks.
 Because of its Javascript based automation engine and the security limitations
 browsers apply to Javascript, different things became impossible to do.  To
-make things "worst", webapps became more and more powerful over time, using all
+make things worse, webapps became more and more powerful over time, using all
 sorts of special features new browsers provide and making this restrictions
 more and more painful.
 
