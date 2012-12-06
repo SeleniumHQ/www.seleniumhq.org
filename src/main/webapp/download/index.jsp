@@ -52,7 +52,7 @@
   <h3>Selenium Server (formerly the Selenium RC Server)</h3>
   <p>The Selenium Server is needed in order to run either Selenium RC style scripts or Remote Selenium Webdriver ones. The 2.x server is a drop-in replacement for the old Selenium RC server and is designed to be backwards compatible with your existing infrastructure.</p>
   <p>Download version <a
-    href="http://selenium.googlecode.com/files/selenium-server-standalone-2.26.0.jar">2.26.0</a>
+    href="http://selenium.googlecode.com/files/selenium-server-standalone-2.27.0.jar">2.27.0</a>
   </p>
   <p>To use the Selenium Server in a Grid configuration <a href="http://code.google.com/p/selenium/wiki/Grid2">see the wiki page</a>.</p>
 
@@ -61,10 +61,10 @@
   features of the WebDriver InternetExplorerDriver. Please make sure that this
   is available on your $PATH (or %PATH% on Windows) in order for the IE Driver
   to work as expected.</p>
-  <p>Download version 2.26.0 for (recommended) <a
-    href="http://code.google.com/p/selenium/downloads/detail?name=IEDriverServer_Win32_2.26.0.zip">32
+  <p>Download version 2.27.0 for (recommended) <a
+    href="http://code.google.com/p/selenium/downloads/detail?name=IEDriverServer_Win32_2.27.0.zip">32
     bit Windows IE</a> or <a
-    href="http://code.google.com/p/selenium/downloads/detail?name=IEDriverServer_x64_2.26.0.zip">64 bit Windows IE</a></p>
+    href="http://code.google.com/p/selenium/downloads/detail?name=IEDriverServer_x64_2.27.0.zip">64 bit Windows IE</a></p>
 
   <a name="client-drivers"/>
   <h3>Selenium Client Drivers</h3>
@@ -85,32 +85,32 @@
     <tbody>
       <tr>
         <td>Java</td>
-        <td>2.26.0</td>
-        <td>2012-11-01</td>
-        <td><a href="http://selenium.googlecode.com/files/selenium-java-2.26.0.zip">Download</a>&nbsp;&nbsp;</td>
+        <td>2.27.0</td>
+        <td>2012-12-05</td>
+        <td><a href="http://selenium.googlecode.com/files/selenium-java-2.27.0.zip">Download</a>&nbsp;&nbsp;</td>
         <td><a href="http://selenium.googlecode.com/svn/trunk/java/CHANGELOG">Change log</a>&nbsp;&nbsp;</td>
         <td><a href="http://selenium.googlecode.com/svn/trunk/docs/api/java/index.html" alt="Javadoc">Javadoc</a></td>
       </tr>
       <tr>
         <td>C#</td>
-        <td>2.26.0</td>
-        <td>2012-11-01</td>
-        <td><a href="http://selenium.googlecode.com/files/selenium-dotnet-2.26.0.zip">Download</a></td>
+        <td>2.27.0</td>
+        <td>2012-12-05</td>
+        <td><a href="http://selenium.googlecode.com/files/selenium-dotnet-2.27.0.zip">Download</a></td>
         <td><a href="http://selenium.googlecode.com/svn/trunk/dotnet/CHANGELOG">Change log</a></td>
         <td><a href="http://selenium.googlecode.com/svn/trunk/docs/api/dotnet/index.html">API docs</a></td>
       </tr>
       <tr>
         <td>Ruby</td>
-        <td>2.26.0</td>
-        <td>2012-11-01</td>
+        <td>2.27.0</td>
+        <td>2012-12-06</td>
         <td><a href="http://rubygems.org/gems/selenium-webdriver">Download</a></td>
         <td><a href="http://selenium.googlecode.com/svn/trunk/rb/CHANGES">Change log</a></td>
         <td><a href="http://selenium.googlecode.com/svn/trunk/docs/api/rb/index.html">API docs</a></td>
       </tr>
       <tr>
         <td>Python</td>
-        <td>2.26.0</td>
-        <td>2012-11-01</td>
+        <td>2.27.0</td>
+        <td>2012-11-05</td>
         <td><a href="http://pypi.python.org/pypi/selenium">Download</a></td>
         <td><a href="http://selenium.googlecode.com/svn/trunk/py/CHANGES">Change log</a></td>
         <td><a href="http://selenium.googlecode.com/svn/trunk/docs/api/py/index.html">API docs</a></td>
@@ -118,7 +118,7 @@
     </tbody>
   </table>
   <h4>C# NuGet</h4>
-  <p>NuGet lastest release is 2.26.0, Released on 2012-11-01</p>
+  <p>NuGet lastest release is 2.27.0, Released on 2012-12-05</p>
   <ul>
     <li><a href="http://www.nuget.org/List/Packages/Selenium.RC">RC</a></li>
     <li><a href="http://www.nuget.org/List/Packages/Selenium.WebDriver">WebDriver</a></li>
@@ -171,7 +171,7 @@
     <li><a href="https://github.com/chibimagic/WebDriver-PHP/">PHP</a> by Chibimagic (real name unknown?)</li>
     <li><a href="http://code.google.com/p/php-webdriver-bindings/">PHP</a> by Lukasz Kolczynski <!-- appologies for not being able to do the UTF-8 proper encoding of your name --></li>
     <li><a href="https://github.com/facebook/php-webdriver">PHP</a> by facebook</li>
-    <li><a href="https://github.com/Element-34/php-webdriver">PHP</a> by Adam Goucher</li>
+    <li><a href="https://github.com/Element-34/php-webdriver">PHP</a> by Adam Goucher (SeHQ recommended php client)</li>
     <li><a href="https://github.com/Nearsoft/PHP-SeleniumClient">PHP</a> by Nearsoft</li>
     <li><a href="http://hackage.haskell.org/package/webdriver">Haskell</a> by Adam Curtis</li>
   </ul>
