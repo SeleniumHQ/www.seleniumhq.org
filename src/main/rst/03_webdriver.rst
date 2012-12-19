@@ -1172,7 +1172,7 @@ created using Firefox's profile manager (``firefox -ProfileManager``):
 
 .. code-block:: java
 
-    ProfileIni allProfiles = new ProfilesIni();
+    ProfilesIni allProfiles = new ProfilesIni();
     FirefoxProfile profile = allProfiles.getProfile("WebDriver");
     profile.setPreferences("foo.bar", 23);
     WebDriver driver = new FirefoxDriver(profile);
