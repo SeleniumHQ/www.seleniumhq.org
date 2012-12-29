@@ -51,7 +51,7 @@ class yourself or create your own utility package for them.
 
     wait = WebDriverWait(driver, 10)
     def clickable(element):
-      if element.is_clickable():
+      if element.is_displayed():
         return element
       return null
     element = wait.until(lambda d: clickable(d.find_element_by_id('someid')))
