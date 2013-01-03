@@ -152,7 +152,7 @@
     <div class="contributor">
       <h3>
         <img src="/images/people/jim-evans.jpg" class="profile" alt=
-        "Image"><a href="">Evans, Jim</a>
+        "Image"><a href="http://jimevansmusic.blogspot.com/">Evans, Jim</a>
       </h3>
       <ul>
         <li>Committer on Selenium WebDriver
@@ -309,7 +309,7 @@
     <div class="contributor">
       <h3>
         <img src="/images/people/luke-Semerau.jpg" class="profile" alt=
-        "Image"><a href="http://lukeis.me">Inman-Semerau, Luke</a>
+        "Image"><a href="https://github.com/lukeis">Inman-Semerau, Luke</a>
       </h3>
       <ul>
         <li>Involved since 2011</li>
@@ -405,13 +405,13 @@
     <div class="contributor">
       <h3>
         <img src="/images/people/francois-reynaud.jpg" class="profile" alt=
-        "Image"><a href="http://">Reynaud, Francois</a>
+        "Image"><a href="https://github.com/freynaud">Reynaud, Fran&ccedil;ois</a>
       </h3>
     </div>
     <div class="contributor">
       <h3>
         <img src="/images/people/kristian-rosenvold.jpg" class="profile" alt=
-        "Image"><a href="http://">Rosenvold, Kristian</a>
+        "Image"><a href="https://github.com/krosenvold">Rosenvold, Kristian</a>
       </h3>
         <ul>
           <li>Involved since 2010</li>

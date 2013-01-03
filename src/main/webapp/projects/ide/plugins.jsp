@@ -1,8 +1,10 @@
 <html>
 <head>
 <title>Selenium IDE</title>
+<%@include file="/jsp/head.jspf"%>
 </head>
 <body class="sectionProjects">
+<%@include file="/jsp/header.jspf"%><div id="mainContent">
   <p>
   Clearly this will get flushed out further, but for now...
   </p>
@@ -42,5 +44,6 @@
     <h3>Plugins</h3>
     See the list of known plugins on the <a href="http://seleniumhq.org/download/">downloads page</a>.
   </p>
+<%@include file="/jsp/footer.jspf"%>
 </body>
 </html>

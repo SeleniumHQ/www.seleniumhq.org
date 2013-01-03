@@ -1293,7 +1293,7 @@ ol.faq li a:hover {
 		top: 0;
 		left: 0;
 		margin: 0;
-		font-size: 2px;
+		font-size: 15px;
 		background: url("images/header_tl.gif") no-repeat;
 		height: 8px;
 		z-index: 100; /* above the UL */
@@ -1303,8 +1303,11 @@ ol.faq li a:hover {
 		width: 268px;
 		height: 64px;
 		background: transparent url("images/header-logo.png") no-repeat;
-		text-indent: -700em;
+		text-indent: -6px;
 		text-decoration: none;
+        color:white;
+        padding-top:42px;
+        text-align:center;
 	} 
 	#header ul {
 		width: auto;
@@ -1822,4 +1825,13 @@ text-align:center;
 
 .sectionDocumentation .body img {
     margin-bottom:3px;
+}
+
+#editPage {
+    position:absolute;
+    left:450px;
+}
+#editPage a {
+    color: white;
+    font-weight: bold;
 }

@@ -1,19 +1,10 @@
-<script type="text/javascript">
-var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
-document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
-</script>
-<script type="text/javascript">
-try {
-var pageTracker = _gat._getTracker("UA-7221039-1");
-pageTracker._trackPageview();
-} catch(err) {}</script>
 <div id="container">
 <div id="header">
-    <h1><a href="/" title="Return to Selenium home page">Selenium</a></h1>
+    <h1><a href="/" title="Return to Selenium home page">Browser Automation</a></h1>
     <ul>
         <li id="menu_about"><a href="/about/" title="Overview of Selenium">About</a></li>
         <li id="menu_support"><a href="/support/" title="Get help with Selenium">Support</a></li>
-        <li id="menu_documentation"><a href="/documentation/"
+        <li id="menu_documentation"><a href="/docs/"
                                        title="Technical references and guides">Documentation</a></li>
         <li id="menu_download"><a href="/download/" title="Get Selenium">Download</a></li>
         <li id="menu_projects"><a href="/projects/" title="Selenium Projects">Projects</a></li>
@@ -28,6 +19,27 @@ pageTracker._trackPageview();
             <input type="submit" id="submit" value="Go">
         </div>
     </form>
+    <div id="editPage">
+<script type="text/javascript">
+(function(){
+    var match = window.location.pathname.match(/\/([^\/]*)\/(.*)/);
+    var location = '#';
+    if (match && match[1] == 'docs') {
+        location = "http://code.google.com/p/selenium/source/browse/websites/www.seleniumhq.org/src/main/rst/" +
+            ( match.length == 2 ? 'index' : match[2].replace(/\.jsp$/, '') ) +
+            ".rst?edit=1";
+    } else {
+        var path = window.location.pathname;
+        if (path.match(/\/$/)) {
+            path += 'index.jsp';
+        }
+        location = "http://code.google.com/p/selenium/source/browse/websites/www.seleniumhq.org/src/main/webapp" +
+            path + "?edit=1";
+    }
+    document.write("<a href=\"" + location + "\">edit this page</a>");
+})();
+</script>
+</div>
 
 </div>
 

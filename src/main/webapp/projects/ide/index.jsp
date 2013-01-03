@@ -1,8 +1,10 @@
 <html>
 <head>
 <title>Selenium IDE Plugins</title>
+<%@include file="/jsp/head.jspf"%>
 </head>
 <body class="sectionProjects">
+<%@include file="/jsp/header.jspf"%><div id="mainContent">
 
 <table border="0">
 <tr>
@@ -47,6 +49,7 @@
 </tr>
 </table>
 
+<%@include file="/jsp/footer.jspf"%>
 </body>
 </html>
 
