@@ -1398,15 +1398,15 @@ As a test suite starts in your favorite language, the following happens:
 3. The client-driver passes a Selenese command to the server.
 4. The Server interprets the command and then triggers the corresponding 
    JavaScript execution to execute that command within the browser.
-5. Selenium-Core instructs the browser to act on that first instruction, typically opening a page of the
+   Selenium-Core instructs the browser to act on that first instruction, typically opening a page of the
    AUT.
-6. The browser receives the open request and asks for the website's content from
+5. The browser receives the open request and asks for the website's content from
    the Selenium RC server (set as the HTTP proxy for the browser to use).
-7. Selenium RC server communicates with the Web server asking for the page and once
+6. Selenium RC server communicates with the Web server asking for the page and once
    it receives it, it sends the page to the browser masking the origin to look
    like the page comes from the same server as Selenium-Core (this allows 
    Selenium-Core to comply with the Same Origin Policy).
-8. The browser receives the web page and renders it in the frame/window reserved
+7. The browser receives the web page and renders it in the frame/window reserved
    for it.
    
 Heightened Privileges Browsers
