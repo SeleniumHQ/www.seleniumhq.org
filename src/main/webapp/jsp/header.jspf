@@ -25,6 +25,7 @@
     var match = window.location.pathname.match(/\/([^\/]*)\/(.*)/);
     var location = '#';
     if (match && match[1] == 'docs') {
+        if (window.location.pathname.match(/\/$/)) return;
         location = "http://code.google.com/p/selenium/source/browse/websites/www.seleniumhq.org/src/main/rst/" +
             ( match.length == 2 ? 'index' : match[2].replace(/\.jsp$/, '') ) +
             ".rst?edit=1";
