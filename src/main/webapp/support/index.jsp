@@ -57,7 +57,7 @@ integration, and other QA automation techniques.
 <ul>
     <li><a href="http://thoughtworks.com">ThoughtWorks</a> - the original
     creator of Selenium and leader in agile development.</li>
-    <li><a href="http://browsermob.com">BrowserMob</a> - provides
+    <li><a href="http://www.neustar.biz/enterprise/web-performance">Web Performance Mangement by Neustar</a> - provides
     Selenium-based load testing services using thousands of real browsers.</li>
     <li><a href="http://saucelabs.com">Sauce Labs</a> - cloud-based service to
     run Selenium tests faster and more easily.</li>
