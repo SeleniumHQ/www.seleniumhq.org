@@ -49,14 +49,11 @@ class yourself or create your own utility package for them.
 
 .. code-block:: python
 
+    from selenium.webdriver.support.expected_conditions import ExpectedConditions as EC
     wait = WebDriverWait(driver, 10)
-    def clickable(element):
-      if element.is_displayed():
-        return element
-      return null
-    element = wait.until(lambda d: clickable(d.find_element_by_id('someid')))
+    element = wait.until(EC.element_to_be_clickable((By.Id,'someid')))
 
-The `ExpectedConditions <http://selenium.googlecode.com/svn/trunk/docs/api/java/org/openqa/selenium/support/ui/ExpectedConditions.html>`_ class in contains a set of predefined conditions to use with WebDriverWait in Java.
+The ExpectedConditions package (`Java <http://selenium.googlecode.com/svn/trunk/docs/api/java/org/openqa/selenium/support/ui/ExpectedConditions.html>`_)  (`Python <http://selenium.googlecode.com/svn/trunk/docs/api/py/webdriver_support/selenium.webdriver.support.expected_conditions.html>`_) (`.NET <http://selenium.googlecode.com/svn/trunk/docs/api/dotnet/html/AllMembers_T_OpenQA_Selenium_Support_UI_ExpectedConditions.htm>`_) contains a set of predefined conditions to use with WebDriverWait.
 
 Implicit Waits
 ~~~~~~~~~~~~~~
