@@ -93,6 +93,15 @@
         &lt;version&gt;1.1&lt;/version&gt;
     &lt;/dependency&gt;  
   </pre>
+  
+  <p>PhantomJSDriver (GhostDriver)</p>
+  <pre>
+    &lt;dependency&gt;
+        &lt;groupId&gt;com.github.detro.ghostdriver&lt;/groupId&gt;
+        &lt;artifactId&gt;phantomjsdriver&lt;/artifactId&gt;
+        &lt;version&gt;1.0.1&lt;/version&gt;
+    &lt;/dependency&gt;  
+  </pre>
     
 <%@include file="/jsp/footer.jspf"%>
 </body>
