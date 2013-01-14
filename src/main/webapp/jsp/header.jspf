@@ -23,19 +23,18 @@
 <script type="text/javascript">
 (function(){
     var match = window.location.pathname.match(/\/([^\/]*)\/(.*)/);
-    var location = '#';
+    var location = 'http://code.google.com/p/selenium/source/browse/websites/src/main';
     if (match && match[1] == 'docs') {
         if (window.location.pathname.match(/\/$/)) return;
-        location = "http://code.google.com/p/selenium/source/browse/websites/www.seleniumhq.org/src/main/rst/" +
+        location += "/rst/" +
             ( match.length == 2 ? 'index' : match[2].replace(/\.jsp$/, '') ) +
-            ".rst?edit=1";
+            ".rst?repo=site&edit=1";
     } else {
         var path = window.location.pathname;
         if (path.match(/\/$/)) {
             path += 'index.jsp';
         }
-        location = "http://code.google.com/p/selenium/source/browse/websites/www.seleniumhq.org/src/main/webapp" +
-            path + "?edit=1";
+        location += "/webapp" + path + "?repo=site&edit=1";
     }
     document.write("<a href=\"" + location + "\">edit this page</a>");
 })();
