@@ -1,11 +1,10 @@
 from selenium import webdriver
-from selenium.webdriver.common.proxy import Proxy
+from selenium.webdriver.common.proxy import *
 
 myProxy = "host:8080"
 
 proxy = Proxy({
-    # Direct = 0, Manual = 1, PAC = 2, AUTODETECT = 4, SYSTEM = 5
-    'proxyType': 1,
+    'proxyType': ProxyType.MANUAL,
     'httpProxy': myProxy,
     'ftpProxy': myProxy,
     'sslProxy': myProxy,
