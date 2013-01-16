@@ -1,20 +1,21 @@
 from selenium import webdriver
+from selenium.webdriver.common.proxy import Proxy
 
-PROXY_HOST = "host"
-PROXY_PORT = 8080
+myProxy = "host:8080"
 
-fp = webdriver.FirefoxProfile()
+proxy = Proxy({
+    # Direct = 0, Manual = 1, PAC = 2, AUTODETECT = 4, SYSTEM = 5
+    'proxyType': 1,
+    'httpProxy': myProxy,
+    'ftpProxy': myProxy,
+    'sslProxy': myProxy,
+    'noProxy': '' # set this value as desired
+    })
 
-# Direct = 0, Manual = 1, PAC = 2, AUTODETECT = 4, SYSTEM = 5
-fp.set_preference("network.proxy.type", 1)
+driver = webdriver.Firefox(proxy=proxy)
 
-fp.set_preference("network.proxy.http", PROXY_HOST)
-fp.set_preference("network.proxy.http_port", PROXY_PORT)
-fp.set_preference("network.proxy.ftp", PROXY_HOST)
-fp.set_preference("network.proxy.ftp_port", PROXY_PORT)
-fp.set_preference("network.proxy.ssl", PROXY_HOST)
-fp.set_preference("network.proxy.ssl_port", PROXY_PORT)
+# for remote
+caps = webdriver.DesiredCapabilities.FIREFOX
+proxy.add_to_capabilities(caps)
 
-fp.set_preference("network.proxy.no_proxies_on", "") # set this value as desired
-
-driver = webdriver.Firefox(firefox_profile=fp)
+driver = webdriver.Remote(desired_capabilities=caps)
