@@ -88,32 +88,32 @@
         <td>2.29.0</td>
         <td>2013-01-17</td>
         <td><a href="http://selenium.googlecode.com/files/selenium-java-2.29.0.zip">Download</a>&nbsp;&nbsp;</td>
-        <td><a href="http://selenium.googlecode.com/svn/trunk/java/CHANGELOG">Change log</a>&nbsp;&nbsp;</td>
-        <td><a href="http://selenium.googlecode.com/svn/trunk/docs/api/java/index.html" alt="Javadoc">Javadoc</a></td>
+        <td><a href="http://selenium.googlecode.com/git/java/CHANGELOG">Change log</a>&nbsp;&nbsp;</td>
+        <td><a href="http://selenium.googlecode.com/git/docs/api/java/index.html" alt="Javadoc">Javadoc</a></td>
       </tr>
       <tr>
         <td>C#</td>
         <td>2.29.1</td>
         <td>2013-01-17</td>
         <td><a href="http://selenium.googlecode.com/files/selenium-dotnet-2.29.1.zip">Download</a></td>
-        <td><a href="http://selenium.googlecode.com/svn/trunk/dotnet/CHANGELOG">Change log</a></td>
-        <td><a href="http://selenium.googlecode.com/svn/trunk/docs/api/dotnet/index.html">API docs</a></td>
+        <td><a href="http://selenium.googlecode.com/git/dotnet/CHANGELOG">Change log</a></td>
+        <td><a href="http://selenium.googlecode.com/git/docs/api/dotnet/index.html">API docs</a></td>
       </tr>
       <tr>
         <td>Ruby</td>
         <td>2.29.0</td>
         <td>2013-01-18</td>
         <td><a href="http://rubygems.org/gems/selenium-webdriver">Download</a></td>
-        <td><a href="http://selenium.googlecode.com/svn/trunk/rb/CHANGES">Change log</a></td>
-        <td><a href="http://selenium.googlecode.com/svn/trunk/docs/api/rb/index.html">API docs</a></td>
+        <td><a href="http://selenium.googlecode.com/git/rb/CHANGES">Change log</a></td>
+        <td><a href="http://selenium.googlecode.com/git/docs/api/rb/index.html">API docs</a></td>
       </tr>
       <tr>
         <td>Python</td>
         <td>2.29.0</td>
         <td>2013-01-17</td>
         <td><a href="http://pypi.python.org/pypi/selenium">Download</a></td>
-        <td><a href="http://selenium.googlecode.com/svn/trunk/py/CHANGES">Change log</a></td>
-        <td><a href="http://selenium.googlecode.com/svn/trunk/docs/api/py/index.html">API docs</a></td>
+        <td><a href="http://selenium.googlecode.com/git/py/CHANGES">Change log</a></td>
+        <td><a href="http://selenium.googlecode.com/git/docs/api/py/index.html">API docs</a></td>
       </tr>
     </tbody>
   </table>
