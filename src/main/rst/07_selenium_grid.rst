@@ -128,7 +128,7 @@ will work on all the supported platforms, Windows Linux, or MacOs.
 
 .. code-block:: bash
 
-    java -jar selenium-server-standalone-2.21.0.jar -hub
+    java -jar selenium-server-standalone-2.21.0.jar -role hub
     
 This starts a hub using default parameter values.  We'll explain these parameters in folowing 
 subsections.  Note that you will likely have to change the version number in the jar filename 
@@ -209,7 +209,7 @@ port used by the hub.
 
 .. code-block:: bash
 
-	java -jar selenium-server-standalone-2.21.0.jar -hub -port 4441
+	java -jar selenium-server-standalone-2.21.0.jar -role hub -port 4441
 
 This will work even if another hub is already running on the same machine, that is, as long as
 they're both not using port 4441.
