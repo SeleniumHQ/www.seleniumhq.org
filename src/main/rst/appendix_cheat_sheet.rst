@@ -11,10 +11,10 @@ One of the differences between Selenium RC and Selenium WebDriver is that the We
 ================== =========================================================================================== =============================================================================================================
 Interface          Role                                                                                        Documentation
 ================== =========================================================================================== =============================================================================================================
-HasCapabilities    Provides access to the capabilities supported by this driver.                               `Java HasCapabilities.java <http://selenium.googlecode.com/svn/trunk/docs/api/java/org/openqa/selenium/HasCapabilities.html>`_
-JavascriptExecutor Allows the execution of arbitrary JS commands.                                              `Java JavascriptExecutor.java <http://selenium.googlecode.com/svn/trunk/docs/api/java/org/openqa/selenium/JavascriptExecutor.html>`_
-Rotatable          Indicates whether the driver supports rotating the display (mostly just mobile drivers).    `Java Rotatable.java <http://selenium.googlecode.com/svn/trunk/docs/api/java/org/openqa/selenium/Rotatable.html>`_
-TakesScreenshot    Provides a mechanism for taking screenshots.                                                `Java TakesScreenshot.java <http://selenium.googlecode.com/svn/trunk/docs/api/java/org/openqa/selenium/TakesScreenshot.html>`_
+HasCapabilities    Provides access to the capabilities supported by this driver.                               `Java HasCapabilities.java <http://selenium.googlecode.com/git/docs/api/java/org/openqa/selenium/HasCapabilities.html>`_
+JavascriptExecutor Allows the execution of arbitrary JS commands.                                              `Java JavascriptExecutor.java <http://selenium.googlecode.com/git/docs/api/java/org/openqa/selenium/JavascriptExecutor.html>`_
+Rotatable          Indicates whether the driver supports rotating the display (mostly just mobile drivers).    `Java Rotatable.java <http://selenium.googlecode.com/git/docs/api/java/org/openqa/selenium/Rotatable.html>`_
+TakesScreenshot    Provides a mechanism for taking screenshots.                                                `Java TakesScreenshot.java <http://selenium.googlecode.com/git/docs/api/java/org/openqa/selenium/TakesScreenshot.html>`_
 ================== =========================================================================================== =============================================================================================================
 
 

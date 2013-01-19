@@ -31,20 +31,10 @@
         <td>Selenium (IDE, Selenium Server, Selenium WebDriver)</td>
 
         <td><a href=
-        "http://selenium.googlecode.com/svn/trunk/">Anonymous SVN</a>
+        "http://selenium.googlecode.com/git/">Git</a>
         | <a href=
-        "http://code.google.com/p/selenium/source/browse/#svn/trunk">Browse SVN</a>
+        "http://code.google.com/p/selenium/source/browse/">Browse Git</a>
         </td>
-      </tr>
-
-      <tr>
-        <td>Selenium Grid</td>
-
-        <td><a href=
-        "https://github.com/nirvdrum/selenium-grid.git">Git Read-only</a>
-        | <a href=
-        "https://github.com/nirvdrum/selenium-grid">Browse
-        at Github</a></td>
       </tr>
 
       <tr>

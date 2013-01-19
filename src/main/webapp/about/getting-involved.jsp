@@ -54,7 +54,7 @@
     <p>For the most part, our documentation is held in source control for the main website. The main documentation is in
         plain text
         so use your favorite editor offline to edit the pages. The source for this main
-        site is <a class="reference external" href="http://selenium.googlecode.com/svn/websites/www.seleniumhq.org/">here</a>
+        site is <a class="reference external" href="http://site.selenium.googlecode.com/git/">here</a>
         and if you are familiar with Subversion you should be able to
         bring it down to your local system for offline editing.</p>
 
@@ -127,7 +127,7 @@ Drawbacks
     <p>Much of the magic behind Selenium is the hard work of programmers with
         backgrounds in Javascript, Java, Ruby, PHP, Python, Perl, C#, HTML and other
         languages. If you haven&#8217;t already, you can download the source code from our
-        Subversion repository at: <a class="reference external" href="http://selenium.googlecode.com/svn/trunk">http://selenium.googlecode.com/svn/trunk</a></p>
+        Git repository at: <a class="reference external" href="http://selenium.googlecode.com/git">http://selenium.googlecode.com/git</a></p>
 	
     <p>We encourage code patches and other contributions - get involved by posting
         to the <a class="reference external" href="http://groups.google.com/group/selenium-developers">Selenium

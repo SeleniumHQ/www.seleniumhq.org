@@ -31,7 +31,7 @@ String text = element.getText();
 
 <p>If "element.getText" returns before the element is removed from the DOM you'll get one result. If, however, the element is removed from the DOM and your code does an automatic lookup for the element again before "element.getText" a different result may be returned.</p>
 
-<p>Should you wish to head down this route, the simplest hook point is to call <a href="http://selenium.googlecode.com/svn/trunk/docs/api/java/org/openqa/selenium/remote/RemoteWebDriver.html#setElementConverter(org.openqa.selenium.remote.internal.JsonToWebElementConverter)">setElementConverter</a>.
+<p>Should you wish to head down this route, the simplest hook point is to call <a href="http://selenium.googlecode.com/git/docs/api/java/org/openqa/selenium/remote/RemoteWebDriver.html#setElementConverter(org.openqa.selenium.remote.internal.JsonToWebElementConverter)">setElementConverter</a>.
 
 <h3>The Element is not Attached to the DOM</h3>
 
