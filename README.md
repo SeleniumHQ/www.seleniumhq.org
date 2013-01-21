@@ -1,3 +1,6 @@
+The canonical repo lives in google code:
+http://code.google.com/p/selenium/source/checkout?repo=site
+
 Things you need to have installed to run the docs:
 
 Maven           http://maven.apache.org
@@ -7,15 +10,15 @@ Sphinx-build    http://sphinx.pocoo.org
 
 To build the docs and run locally (command line):
 
-mvn clean jetty:run
+    mvn clean jetty:run
 
 You will then be able to access them at:
 
 http://localhost:8080
 
-deploying to google appengine:
+deploying to google appengine run: 
 
-run mvn -Dgae.home=<absolute path to>/appengine-java-sdk clean gae:deploy
+    mvn -Dgae.home=<absolute path to>/appengine-java-sdk clean gae:deploy
 
 Specify your username/password to the appengine account by specifying
 it in your ~/.m2/settings.xml file, as described here:
