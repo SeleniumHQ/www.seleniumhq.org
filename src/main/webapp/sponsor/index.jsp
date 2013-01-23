@@ -32,7 +32,7 @@
     <li>Placement on the front page of  <a href="http://seleniumhq.org">http://seleniumhq.org</a> will be for donations that equal or are more than the Gold level.</li>
     <li>For donations that are equal to or more than the Platinum level, your logo will be placed on each page of the documentation hosted at <a href="http://seleniumhq.org/docs/">http://seleniumhq.org/docs/</a></li>
     <li>Logo placement is time-based, per category: the first to donate is at the top, with subsequent sponsors' logos placed in the order they donated.</li>
-    <li>Logos on the front page will only be there for the year that a sponsor has donated. Each year starts fresh again, with an opportunity to get your logo at the top by early sponsorship!</li>
+    <li>Logos on the front page will only be there for a year, starting from when your logo is put up on the page.</li>
 </ul>
 
 <h2>Logo Requirements</h2>
