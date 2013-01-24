@@ -40,7 +40,7 @@
     <li>Adding new locator strategies (coming soon)</li>
   </ul>
   <br />
-  For more information, see the <a href="/projects/ide/plugins.html">Selenium IDE Plugins</a> page.
+  For more information, see the <a href="/projects/ide/plugins.jsp">Selenium IDE Plugins</a> page.
   </p>
 </td>
 <td valign="top">
