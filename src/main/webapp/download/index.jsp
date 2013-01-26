@@ -67,9 +67,9 @@
     href="http://code.google.com/p/selenium/downloads/detail?name=IEDriverServer_x64_2.29.0.zip">64 bit Windows IE</a></p>
 
   <a name="client-drivers"/>
-  <h3>Selenium Client Drivers</h3>
-  <p>In order to create scripts that interact with the Selenium Server (Selenium RC, Selenium Remote Webdriver) or create local Selenium WebDriver script you need to make use of language-specific client drivers. Unless otherwise specified, drivers include both 1.x and 2.x style drivers.</p>
-  <p>While drivers for other languages exist, these are the core ones that are supported by the main project.</p>
+  <h3>Selenium Client & WebDriver Language Bindings</h3>
+  <p>In order to create scripts that interact with the Selenium Server (Selenium RC, Selenium Remote Webdriver) or create local Selenium WebDriver script you need to make use of language-specific client drivers. These languages include both 1.x and 2.x style clients.</p>
+  <p>While language bindings for <a href="#thirdPartyLanguageBindings">other languages exist</a>, these are the core ones that are supported by the main project hosted on google code.</p>
 
   <table>
     <thead>
@@ -165,6 +165,7 @@
       </tr>
     </tbody>
   </table>
+  <a name="thirdPartyLanguageBindings"/>
   <h4>Third Party Language Bindings <span class="unsupported">NOT DEVELOPED</span> by seleniumhq</h4>
   <ul class="thirdPartyBinding">
     <li><a href="https://github.com/aivaturi/Selenium-Remote-Driver">Perl</a> <a href="https://metacpan.org/module/Selenium::Remote::Driver">download and docs</a> by Gordon Child</li>
