@@ -49,7 +49,7 @@ class yourself or create your own utility package for them.
 
 .. code-block:: python
 
-    from selenium.webdriver.support.expected_conditions import ExpectedConditions as EC
+    from selenium.webdriver.support import expected_conditions as EC
     wait = WebDriverWait(driver, 10)
     element = wait.until(EC.element_to_be_clickable((By.Id,'someid')))
 
