@@ -1,3 +1,4 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html><title>Selenium Remote-Control</title>
 <%@include file="/jsp/head.jspf"%>
 </head>
