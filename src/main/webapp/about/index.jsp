@@ -59,7 +59,8 @@
 
   <h3>Atlassian</h3>
 
-<a href="http://www.atlassian.com/software/bamboo" title="Continuous Integration Tools"><img border="0" width="150" height="50"alt="Continuous Integration Tools" src="http://www.atlassian.com/software/bamboo/images/badges/v2/continuous_integration_tools_lg.png"></a>
+<a href="http://www.atlassian.com/software/bamboo" title="Continuous Integration Tools" style="background-color:#036;display:block;width:155px;padding:5px;"><img border="0" alt="Continuous Integration Tools" src="http://www.atlassian.com/dms/wac/images/logoAtlassian.png"/></a>
+http://www.atlassian.com/software/bamboo/images/badges/v2/continuous_integration_tools_lg.png"></a>
 
   <p>
     We use a free license of <a href="http://www.atlassian.com/software/bamboo/">Atlassian Bamboo</a> for our continuous integration/build system.
