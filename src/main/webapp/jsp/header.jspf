@@ -23,7 +23,7 @@
 <script type="text/javascript">
 (function(){
     var match = window.location.pathname.match(/\/([^\/]*)\/(.*)/);
-    var location = 'http://code.google.com/p/selenium/source/browse/websites/src/main';
+    var location = 'http://code.google.com/p/selenium/source/browse/src/main';
     if (match && match[1] == 'docs') {
         if (window.location.pathname.match(/\/$/)) return;
         location += "/rst/" +
