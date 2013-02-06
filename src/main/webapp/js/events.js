@@ -99,7 +99,7 @@ function renderPast(events){
 
 
 var today = new Date(),
-    pastStartDate = new Date(today.getTime() - (3 * 30 * 24 * 60 * 60 * 1000)),
+    pastStartDate = new Date(today.getTime() - (12 * 30 * 24 * 60 * 60 * 1000)),
     futureEndDate = new Date(today.getTime() + (6 * 30 * 24 * 60 * 60 * 1000));
 
 getEvents(today, futureEndDate, "renderFuture", 10);
