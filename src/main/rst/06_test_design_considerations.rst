@@ -133,7 +133,7 @@ And you will need to take the time to look through
 this output every time you run your test.  If you are
 running hundreds of tests, each with its own log, this will be time-consuming,
 and the immediate feedback of asserts will be more appropriate.  Asserts are more
-commonly used then verifys due to their immediate feedback.
+commonly used than verifys due to their immediate feedback.
 
 Trade-offs: *assertTextPresent*, *assertElementPresent*, *assertText* 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
