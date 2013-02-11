@@ -30,8 +30,8 @@
 <h2>Logos</h2>
 
 <ul>
-    <li>Placement on the front page of  <a href="http://seleniumhq.org">http://seleniumhq.org</a> will be for donations that equal or are more than the Gold level.</li>
-    <li>For donations that are equal to or more than the Platinum level, your logo will be placed on each page of the documentation hosted at <a href="http://seleniumhq.org/docs/">http://seleniumhq.org/docs/</a></li>
+    <li>Placement on the front page of  <a href="http://seleniumhq.org">http://seleniumhq.org</a> will be for donations that equal or are more than the Platinum level.</li>
+    <li>For donations that are equal to the Selenium level, your logo will be placed on each page of the documentation hosted at <a href="http://seleniumhq.org/docs/">http://seleniumhq.org/docs/</a></li>
     <li>Logo placement is time-based, per category: the first to donate is at the top, with subsequent sponsors' logos placed in the order they donated. Position will be maintained as long as sponsorship is continued each year.</li>
     <li>Logos on the front page will only be there for a year, starting from when your logo is put up on the page.</li>
 </ul>
@@ -42,7 +42,7 @@
 
 <h2>Sponsorship Levels</h2>
 
-<p>Below are the names and amounts associated with levels of sponsorship.</p>
+<p>Below are the names and amounts associated with levels of sponsorship (all values in USD).</p>
 <ul>
     <li>Selenium: $20,000</li>
     <li>Platinum: $10,000</li>
