@@ -14,7 +14,7 @@
 
 <h2>Goals</h2>
 
-<p>Our goals are simple: we want to be able to continue improving Selenium -- everything from code reviews to specialized bug fixes to paying hosting bills -- for the benefit of the community, the users of Selenium. We want sponsors to be able to make tax-deductible donations and for the project to publicly acknowledge these donations.</p>
+<p>Our goals are simple: we want to be able to continue improving Selenium -- everything from code reviews to specialized bug fixes to paying hosting bills -- for the benefit of the entire Selenium user and the public at large. We want sponsors to be able to make tax-deductible donations and for the project to publicly acknowledge these donations.</p>
 
 <h2>Benefits of Sponsorship</h2>
 
