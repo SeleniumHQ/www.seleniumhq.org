@@ -61,10 +61,10 @@
   features of the WebDriver InternetExplorerDriver. Please make sure that this
   is available on your $PATH (or %PATH% on Windows) in order for the IE Driver
   to work as expected.</p>
-  <p>Download version 2.29.0 for (recommended) <a
-    href="http://code.google.com/p/selenium/downloads/detail?name=IEDriverServer_Win32_2.29.0.zip">32
+  <p>Download version 2.30.0 for (recommended) <a
+    href="http://code.google.com/p/selenium/downloads/detail?name=IEDriverServer_Win32_2.30.0.zip">32
     bit Windows IE</a> or <a
-    href="http://code.google.com/p/selenium/downloads/detail?name=IEDriverServer_x64_2.29.0.zip">64 bit Windows IE</a></p>
+    href="http://code.google.com/p/selenium/downloads/detail?name=IEDriverServer_x64_2.30.0.zip">64 bit Windows IE</a></p>
 
   <a name="client-drivers"/>
   <h3>Selenium Client & WebDriver Language Bindings</h3>
@@ -93,9 +93,9 @@
       </tr>
       <tr>
         <td>C#</td>
-        <td>2.29.1</td>
-        <td>2013-01-17</td>
-        <td><a href="http://selenium.googlecode.com/files/selenium-dotnet-2.29.1.zip">Download</a></td>
+        <td>2.30.0</td>
+        <td>2013-02-18</td>
+        <td><a href="http://selenium.googlecode.com/files/selenium-dotnet-2.30.0.zip">Download</a></td>
         <td><a href="http://selenium.googlecode.com/git/dotnet/CHANGELOG">Change log</a></td>
         <td><a href="http://selenium.googlecode.com/git/docs/api/dotnet/index.html">API docs</a></td>
       </tr>
@@ -109,8 +109,8 @@
       </tr>
       <tr>
         <td>Python</td>
-        <td>2.29.0</td>
-        <td>2013-01-17</td>
+        <td>2.30.0</td>
+        <td>2013-02-19</td>
         <td><a href="http://pypi.python.org/pypi/selenium">Download</a></td>
         <td><a href="http://selenium.googlecode.com/git/py/CHANGES">Change log</a></td>
         <td><a href="http://selenium.googlecode.com/git/docs/api/py/index.html">API docs</a></td>
@@ -118,7 +118,7 @@
     </tbody>
   </table>
   <h4>C# NuGet</h4>
-  <p>NuGet lastest release is 2.29.1, Released on 2013-01-17</p>
+  <p>NuGet lastest release is 2.30.0, Released on 2013-02-18</p>
   <ul>
     <li><a href="http://www.nuget.org/List/Packages/Selenium.RC">RC</a></li>
     <li><a href="http://www.nuget.org/List/Packages/Selenium.WebDriver">WebDriver</a></li>
