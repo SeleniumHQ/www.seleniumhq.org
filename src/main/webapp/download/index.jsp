@@ -61,10 +61,10 @@
   features of the WebDriver InternetExplorerDriver. Please make sure that this
   is available on your $PATH (or %PATH% on Windows) in order for the IE Driver
   to work as expected.</p>
-  <p>Download version 2.30.0 for (recommended) <a
-    href="http://code.google.com/p/selenium/downloads/detail?name=IEDriverServer_Win32_2.30.0.zip">32
+  <p>Download version 2.30.1 for (recommended) <a
+    href="http://code.google.com/p/selenium/downloads/detail?name=IEDriverServer_Win32_2.30.1.zip">32
     bit Windows IE</a> or <a
-    href="http://code.google.com/p/selenium/downloads/detail?name=IEDriverServer_x64_2.30.0.zip">64 bit Windows IE</a></p>
+    href="http://code.google.com/p/selenium/downloads/detail?name=IEDriverServer_x64_2.30.1.zip">64 bit Windows IE</a></p>
 
   <a name="client-drivers"/>
   <h3>Selenium Client & WebDriver Language Bindings</h3>
