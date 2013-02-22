@@ -93,6 +93,7 @@ integration, and other QA automation techniques.
     <li><a href="http://www.qmetry.com/products/integrations/qmetry-selenium-integration/">QMetry</a> - End-to-end Test  Management Tool that provides integration with Selenium</li>
     <li><a href="http://www.infostretch.com/QA/selenium-testing.php">InfoStretch</a> - QA & automation services company with an expertise in Selenium.</li>
     <li><a href="http://www.wakaleo.com/">Wakaleo</a> - Training and Consulting services around automated acceptance and regression testing with Selenium.</li>
+    <li><a href="http://www.dynacrongroup.com/about/selenium-training/">Dynacron Group</a> - Continuous Delivery software development consulting, including both Selenium and Sauce Labs.</li>
 </ul>
 
 <p>
