@@ -98,8 +98,8 @@ integration, and other QA automation techniques.
 
 <p>
 If you think you or your company should be listed here, just let us know by
-posting to the <a href="http://groups.google.com/group/selenium-developers">
-Selenium Developers group</a>.
+submitting a patch to this file (click the "edit this page" link at the top).
+Please add your link to the bottom and in the same format as the others, otherwise your patch will be rejected.
 </p>
 
 <%@include file="/jsp/footer.jspf"%>
