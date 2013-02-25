@@ -9,7 +9,7 @@
 <body>
 <%@include file="/jsp/header.jspf"%><div id="mainContent">
 
-<h1>The OpenQA Forums Have Been Discountinued</h1>
+<h1>The OpenQA Forums Have Been Discontinued</h1>
 
 <p>
     On February 23, 2010 we <strong>terminated the forum service</strong> we were providing at <em>clearspace.openqa.org</em>.
