@@ -294,11 +294,11 @@ Example:
 
 .. code-block:: html
 
-<tr>
-    <td>Command</td>
-    <td>target (locator)</td>
-    <td>Value</td>
-</tr>
+    <tr>
+        <td>Command</td>
+        <td>target (locator)</td>
+        <td>Value</td>
+    </tr>
 
   
 Insert Comment 
