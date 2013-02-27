@@ -291,12 +291,13 @@ to create a 3-column row containing the Command, first parameter
 (if one is required by the Command), and second parameter (again,
 if one is required to locate an element) and third parameter(again, if one is required to have a value).
 Example:
+
 .. code-block:: html
 
 <tr>
-	<td>Command</td>
-	<td>target (locator)</td>
-	<td>Value</td>
+    <td>Command</td>
+    <td>target (locator)</td>
+    <td>Value</td>
 </tr>
 
   
