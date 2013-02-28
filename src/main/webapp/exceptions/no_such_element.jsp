@@ -3,6 +3,7 @@
 <html>
 <head>
     <title>No Such Element</title>
+<%@include file="/jsp/head.jspf"%>
 </head>
 <body>
 <%@include file="/jsp/header.jspf"%><div id="mainContent">
