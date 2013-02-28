@@ -2,7 +2,7 @@
 "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
-    <title>No Such Element/title>
+    <title>No Such Element</title>
 </head>
 <body>
 <%@include file="/jsp/header.jspf"%><div id="mainContent">
