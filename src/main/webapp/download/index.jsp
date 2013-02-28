@@ -93,8 +93,8 @@
       </tr>
       <tr>
         <td>C#</td>
-        <td>2.31.0</td>
-        <td>2013-02-27</td>
+        <td>2.31.1</td>
+        <td>2013-02-28</td>
         <td><a href="http://selenium.googlecode.com/files/selenium-dotnet-2.31.0.zip">Download</a></td>
         <td><a href="http://selenium.googlecode.com/git/dotnet/CHANGELOG">Change log</a></td>
         <td><a href="http://selenium.googlecode.com/git/docs/api/dotnet/index.html">API docs</a></td>
@@ -118,7 +118,7 @@
     </tbody>
   </table>
   <h4>C# NuGet</h4>
-  <p>NuGet lastest release is 2.31.0, Released on 2013-02-27</p>
+  <p>NuGet lastest release is 2.31.1, Released on 2013-02-28</p>
   <ul>
     <li><a href="http://www.nuget.org/List/Packages/Selenium.RC">RC</a></li>
     <li><a href="http://www.nuget.org/List/Packages/Selenium.WebDriver">WebDriver</a></li>
