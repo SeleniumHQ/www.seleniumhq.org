@@ -95,7 +95,7 @@ your project.
                         <dependency>
                             <groupId>com.opera</groupId>
                             <artifactId>operadriver</artifactId>
-                            <version>1.1</version>
+                            <version>1.2</version>
                             <exclusions>
                                 <exclusion>
                                     <groupId>org.seleniumhq.selenium</groupId>

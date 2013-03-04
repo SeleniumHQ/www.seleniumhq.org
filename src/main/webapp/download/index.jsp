@@ -101,8 +101,8 @@
       </tr>
       <tr>
         <td>Ruby</td>
-        <td>2.30.0</td>
-        <td>2013-02-19</td>
+        <td>2.31.0</td>
+        <td>2013-03-01</td>
         <td><a href="http://rubygems.org/gems/selenium-webdriver">Download</a></td>
         <td><a href="http://selenium.googlecode.com/git/rb/CHANGES">Change log</a></td>
         <td><a href="http://selenium.googlecode.com/git/docs/api/rb/index.html">API docs</a></td>
@@ -110,7 +110,7 @@
       <tr>
         <td>Python</td>
         <td>2.31.0</td>
-        <td>2013-02-19</td>
+        <td>2013-02-27</td>
         <td><a href="http://pypi.python.org/pypi/selenium">Download</a></td>
         <td><a href="http://selenium.googlecode.com/git/py/CHANGES">Change log</a></td>
         <td><a href="http://selenium.googlecode.com/git/docs/api/py/index.html">API docs</a></td>
@@ -150,7 +150,7 @@
       </tr>
       <tr>
         <td><a href="http://www.opera.com/developer/tools/operadriver/">Opera</td>
-        <td><a href="https://github.com/downloads/operasoftware/operadriver/operadriver-v1.1.zip">1.1</a></td>
+        <td><a href="http://selenium.googlecode.com/git/third_party/java/opera-driver/operadriver-1.2.jar">1.2</a></td>
         <td><a href="https://raw.github.com/operasoftware/operadriver/master/CHANGES">change log</a>&nbsp;&nbsp;</td>
         <td><a href="https://github.com/operasoftware/operadriver/issues">issue tracker</a></td>
         <td><a href="http://code.google.com/p/selenium/wiki/OperaDriver">selenium wiki page</a></td>

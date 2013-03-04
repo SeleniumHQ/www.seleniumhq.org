@@ -90,7 +90,7 @@
     &lt;dependency&gt;
         &lt;groupId&gt;com.opera&lt;/groupId&gt;
         &lt;artifactId&gt;operadriver&lt;/artifactId&gt;
-        &lt;version&gt;1.1&lt;/version&gt;
+        &lt;version&gt;1.2&lt;/version&gt;
     &lt;/dependency&gt;  
   </pre>
   
