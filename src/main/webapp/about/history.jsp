@@ -23,7 +23,7 @@
   of an internal Time and Expenses application (Python, Plone).
   Automatic testing of any applications is core to ThoughtWork's
   style, given the Agile leanings of this consultancy. He has help
-  from Paul Gross and Jie Tina Wang. For them, this was a day
+  from <a href="http://www.pgrs.net">Paul Gross</a> and Jie Tina Wang. For them, this was a day
   job.</p>
 
   <p>Jason started demoing the test tool to various colleagues.
@@ -127,14 +127,6 @@
   Selenium-RC, which gave rise to the obvious conclusion that the
   two projects should merge. Simon, now at Google, gets to spend
   some of his time making that a reality.</p>
-
-  <p>Erik Beans does much of the day to day work with Selenium at
-  Google, and is moving toward committer status.</p>
-
-  <h3>Selenium ICE</h3>
-
-  <p>(history is presently being written for Selenium
-  ICE...standy)</p>
 
   <h3>Fallen by the wayside, never started, or not started
   yet.</h3>
