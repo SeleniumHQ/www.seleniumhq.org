@@ -175,6 +175,7 @@
     <li><a href="https://github.com/Element-34/php-webdriver">PHP</a> by Adam Goucher (SeHQ recommended php client)</li>
     <li><a href="https://github.com/Nearsoft/PHP-SeleniumClient">PHP</a> by Nearsoft</li>
     <li><a href="http://hackage.haskell.org/package/webdriver">Haskell</a> by Adam Curtis</li>
+    <li><a href="https://github.com/appium/selenium-objective-c">Objective-C</a> by Dan Cuellar</li>
   </ul>
 
   <h3>Selenium IDE Plugins</h3>
