@@ -94,6 +94,9 @@ integration, and other QA automation techniques.
     <li><a href="http://www.infostretch.com/QA/selenium-testing.php">InfoStretch</a> - QA & automation services company with an expertise in Selenium.</li>
     <li><a href="http://www.wakaleo.com/">Wakaleo</a> - Training and Consulting services around automated acceptance and regression testing with Selenium.</li>
     <li><a href="http://www.dynacrongroup.com/about/selenium-training/">Dynacron Group</a> - Continuous Delivery software development consulting, including both Selenium and Sauce Labs.</li>
+    <li><a href="http://www.aspiresys.com/independent-testing-services/test-automation">Aspire Systems</a> - Test Automation for Web and Mobile</li>
+    <li><a href="http://pluralsight.com/training/courses/TableOfContents?courseName=selenium">Pluralsight</a> - Beginner training course on using Selenium and creating an automated test framework.</li>
+    <li><a href="http://www.wedoqa.com">WeDoQA</a> - Selenium Automation, Custom Selenium Frameworks, Load testing using Selenium to simulate real usage</li>
 </ul>
 
 <p>

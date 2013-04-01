@@ -677,7 +677,7 @@ where the text occurs on the page.
 verifyElementPresent
 ++++++++++++++++++++
 Use this command when you must test for the presence of a specific UI 
-element, rather then its content.  This verification does not check the text, 
+element, rather than its content.  This verification does not check the text,
 only the HTML tag.  One common use is to check for the presence of an image. 
 
 ====================   ==================   ============
