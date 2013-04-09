@@ -191,6 +191,7 @@
                         <groupId>net.kindleit</groupId>
                         <artifactId>gae-runtime</artifactId>
                         <version>1.7.5.1</version>
+                        <type>pom</type>
                     </dependency>
                 </dependencies>
 			</plugin>
