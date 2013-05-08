@@ -178,6 +178,27 @@
     <li><a href="https://github.com/appium/selenium-objective-c">Objective-C</a> by Dan Cuellar</li>
   </ul>
 
+  <h3>Selenium GRID Plugins</h3>
+  <p>Selenium grid can be extended by extending Java classes.</p>
+
+  <div class="plugin">
+    <div class="name">Move mouse away from screen</div>
+    <div class="column">
+      <table>
+        <tr><th>Links:</th><td><a href="https://github.com/AutomatedTester/speedy-gonzales-proxy">Proxy extension for Grid and the Node</a> - <a href="https://github.com/AutomatedTester/speedy-gonzales-servlette">Servlet to move the mouse on the NODE</a></td></tr>
+        <tr><th>Author:</th><td><a href="http://www.theautomatedtester.co.uk/">David Burns</a></td></tr>
+        <tr><th>License:</th><td>Unknown/Free</td></tr>
+      </table>
+    </div>
+    <div class="column">
+      <table>
+        <tr><th>Released:</th><td>2012</td></tr>
+        <tr><th>Version:</th><td>N/A</td></tr>
+      </table>
+    </div>
+    <p class="description">This plugin is made of 2 parts, a servlet that lives on the NODE machine and does the actual moving of the mouse, and an extension of the Selenium Grid, to send an HTTP request to the servlet before a new test session is started.</p>
+  </div>
+
   <h3>Selenium IDE Plugins</h3>
   <p>Selenium IDE can be extended through its own plugin system. Here are a number of plugins that have been created using it. For more information on how to create your own plugin or have it listed, see the <a href="http://seleniumhq.org/projects/ide/plugins.html">plugin tutorial page</a>.</p>
   <p>Please note that these are not supported by the Selenium project and all issues need to be raised with the relevant developers</p>
