@@ -988,11 +988,11 @@ strategy.
    </body>
    <html>
 
-- ``css=form#loginForm (3)``
+- ``css=form#loginForm`` (3)
 - ``css=input[name="username"]`` (4)
 - ``css=input.required[type="text"]`` (4)
-- ``css=input.passfield (5)``
-- ``css=#loginForm input[type="button"]`` (4)
+- ``css=input.passfield`` (5)
+- ``css=#loginForm input[type="button"]`` (7)
 - ``css=#loginForm input:nth-child(2)`` (5)
 
 For more information about CSS Selectors, the best place to go is `the W3C 
