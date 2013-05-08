@@ -37,7 +37,7 @@
 <%@include file="/jsp/header.jspf"%><div id="mainContent">
   <h2>Downloads</h2>
   <p>Below is where you can find the latest releases of all the
-  Selenium components. You can also find a list <a href=
+  Selenium components. You can also find a list of <a href=
   "/download/previous.html">previous releases</a>, <a href="/download/source.html">source
   code</a>, and additional information for <a href=
   "/download/maven.html">Maven users</a> (Maven is a popular Java build
@@ -118,7 +118,7 @@
     </tbody>
   </table>
   <h4>C# NuGet</h4>
-  <p>NuGet lastest release is 2.32.0, Released on 2013-04-09</p>
+  <p>NuGet latest release is 2.32.0, Released on 2013-04-09</p>
   <ul>
     <li><a href="http://www.nuget.org/List/Packages/Selenium.RC">RC</a></li>
     <li><a href="http://www.nuget.org/List/Packages/Selenium.WebDriver">WebDriver</a></li>
