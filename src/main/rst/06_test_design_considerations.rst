@@ -285,15 +285,16 @@ command. It can be done like this.
 
 .. code-block:: java
 
-   String[] checkboxids  = selenium.getAllFields(); // Collect all input IDs on page.
-		for(String checkboxid:checkboxids) {
-		       if(checkboxid.contains("addForm")) {
-                   selenium.click(expectedText);
-               }
-		}
+    String[] checkboxids  = selenium.getAllFields(); // Collect all input IDs on page.
 
-This approach will work if there is only one check box whose ID has the text 
-'expectedText' appended to it.
+    for(String checkboxid:checkboxids) {
+        if(checkboxid.contains("addForm")) {
+            selenium.click(checkboxid);
+        }
+    }
+
+This approach will work if there is only one check box whose ID contains the text 
+'addForm'.
 
 
 Locating Ajax Elements
