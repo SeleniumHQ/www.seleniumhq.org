@@ -15,7 +15,7 @@
     <h3><a href="ide/">Selenium IDE</a></h3>
       <a href="ide/"><img alt="Selenium IDE Logo" class="icon" src="/images/selenium-ide-logo.png" /></a>
       <p><a href="ide/">Selenium IDE</a> is a Firefox add-on that makes it easy to record and
-      playback tests in Firefox 2+. You can even use it generate code to run the tests with Selenium
+      playback tests in Firefox 2+. You can even use it to generate code to run the tests with Selenium
       Remote Control.</p>
       
     <h3><a href="remote-control/">Selenium Remote Control</a></h3>
