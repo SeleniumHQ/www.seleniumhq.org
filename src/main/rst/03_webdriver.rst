@@ -83,7 +83,7 @@ your project.
                     <dependency>
                         <groupId>org.seleniumhq.selenium</groupId>
                         <artifactId>selenium-java</artifactId>
-                        <version>2.32.0</version>
+                        <version>2.33.0</version>
                     </dependency>
                     <dependency>
                         <groupId>com.opera</groupId>
@@ -95,7 +95,7 @@ your project.
                         <dependency>
                             <groupId>com.opera</groupId>
                             <artifactId>operadriver</artifactId>
-                            <version>1.2</version>
+                            <version>1.3</version>
                             <exclusions>
                                 <exclusion>
                                     <groupId>org.seleniumhq.selenium</groupId>
