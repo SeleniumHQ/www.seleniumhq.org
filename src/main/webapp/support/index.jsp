@@ -37,7 +37,7 @@ important (or too simple) issue that needs a solution ASAP, you can always enter
 the IRC chat room. You might just find someone ready to help on <em>#selenium at
 Freenode</em> (irc.freenode.net). There is more info about 
 <a href="http://en.wikipedia.org/wiki/Irc">IRC on wikipedia</a><br/>
-Today's <a href="javascript:(function(){var date=(function(){var d=new Date();d=new Date(d.getTime() + (d.getTimezoneOffset())*60000);m=d.getMonth()+1;if(m<10)m='0'+m;day=d.getDate();if(day<10)day='0'+day;return (d.getYear()+1900)+'/'+m+'/'+day;})();window.location='http://www.illicitonion.com/selogs/selenium/'+date+'.txt';})();">Selenium IRC Chat log</a>. You can bookmark this link to always get
+Today's <a href="javascript:(function(){var date=(function(){var d=new Date();d=new Date(d.getTime() + (d.getTimezoneOffset())*60000);m=d.getMonth()+1;if(m<10)m='0'+m;day=d.getDate();if(day<10)day='0'+day;return (d.getYear()+1900)+'/'+m+'/'+day;})();window.location='https://raw.github.com/SeleniumHQ/irc-logs/master/'+date+'.txt';})();">Selenium IRC Chat log</a>. You can bookmark this link to always get
 the current day's log.
 </p>
 
