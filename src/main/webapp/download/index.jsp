@@ -149,7 +149,7 @@
         <td><a href="http://code.google.com/p/selenium/wiki/ChromeDriver">selenium wiki page</a>&nbsp;&nbsp;</td>
       </tr>
       <tr>
-        <td><a href="http://www.opera.com/developer/tools/operadriver/">Opera</td>
+        <td><a href="http://choice.opera.com/developer/tools/operadriver/">Opera</td>
         <td><a href="http://selenium.googlecode.com/git/third_party/java/opera-driver/operadriver-1.3.jar">1.3</a></td>
         <td><a href="https://raw.github.com/operasoftware/operadriver/master/CHANGES">change log</a>&nbsp;&nbsp;</td>
         <td><a href="https://github.com/operasoftware/operadriver/issues">issue tracker</a></td>
