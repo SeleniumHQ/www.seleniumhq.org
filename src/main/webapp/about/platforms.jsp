@@ -406,7 +406,7 @@
 
       <td>n/a</td>
 	  
-	  <td>not supported</td>
+	  <td>not supported**</td>
     </tr>
 
     <tr>
