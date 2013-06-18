@@ -163,6 +163,24 @@
         <td><a href="https://github.com/detro/ghostdriver/issues">issue tracker</a></td>
         <td><a href="http://www.youtube.com/watch?v=wqxkKIC2HDY">SeConf talk</a></td>
       </tr>
+      <tr>
+        <td><a href="http://dominikdary.github.io/selendroid/">Selendroid</a></td>
+        <td><&nbsp;</td>
+        <td><&nbsp;</td>
+        <td><a href="https://github.com/DominikDary/selendroid/issues">issue tracker</a></td>
+      </tr>
+      <tr>
+        <td><a href="http://ios-driver.github.io/ios-driver/">ios-driver</a></td>
+        <td><&nbsp;</td>
+        <td><&nbsp;</td>
+        <td><a href="https://github.com/ios-driver/ios-driver/issues">issue tracker</a></td>
+      </tr>
+      <tr>
+        <td><a href="http://appium.io/">Appium</a></td>
+        <td><&nbsp;</td>
+        <td><&nbsp;</td>
+        <td><a href="https://github.com/appium/appium/issues">issue tracker</a></td>
+      </tr>
     </tbody>
   </table>
   <a name="thirdPartyLanguageBindings"/>
