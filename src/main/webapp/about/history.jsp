@@ -125,7 +125,7 @@
   API than Selenium-RC and showed lots of promise. Simon presented
   the tool at GTAC, and started work on compatibility with
   Selenium-RC, which gave rise to the obvious conclusion that the
-  two projects should merge. Simon, now at Google, gets to spend
+  two projects should merge. Simon, at Google from 2007 to 2012, and now at Facebook, gets to spend
   some of his time making that a reality.</p>
 
   <h3>Fallen by the wayside, never started, or not started

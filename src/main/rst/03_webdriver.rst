@@ -999,6 +999,13 @@ This is easy with the `Firefox Driver`_:
     profile = Selenium::WebDriver::Firefox::Profile.new
     profile['general.useragent.override'] = "some UA string"
     driver = Selenium::WebDriver.for :firefox, :profile => profile
+    
+.. code-block:: python
+
+    profile = webdriver.FirefoxProfile()
+    profile.set_preference("general.useragent.override", "some UA string")
+    driver = webdriver.Firefox(profile)
+
 
 Drag And Drop
 ~~~~~~~~~~~~~
