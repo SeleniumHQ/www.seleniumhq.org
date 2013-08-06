@@ -53,7 +53,7 @@
   <h3>Selenium Server (formerly the Selenium RC Server)</h3>
   <p>The Selenium Server is needed in order to run either Selenium RC style scripts or Remote Selenium Webdriver ones. The 2.x server is a drop-in replacement for the old Selenium RC server and is designed to be backwards compatible with your existing infrastructure.</p>
   <p>Download version <a
-    href="http://selenium.googlecode.com/files/selenium-server-standalone-2.33.0.jar">2.33.0</a>
+    href="http://selenium.googlecode.com/files/selenium-server-standalone-2.34.0.jar">2.34.0</a>
   </p>
   <p>To use the Selenium Server in a Grid configuration <a href="http://code.google.com/p/selenium/wiki/Grid2">see the wiki page</a>.</p>
 
@@ -62,10 +62,10 @@
   features of the WebDriver InternetExplorerDriver. Please make sure that this
   is available on your $PATH (or %PATH% on Windows) in order for the IE Driver
   to work as expected.</p>
-  <p>Download version 2.33.0 for (recommended) <a
-    href="http://code.google.com/p/selenium/downloads/detail?name=IEDriverServer_Win32_2.33.0.zip">32
+  <p>Download version 2.34.0 for (recommended) <a
+    href="http://code.google.com/p/selenium/downloads/detail?name=IEDriverServer_Win32_2.34.0.zip">32
     bit Windows IE</a> or <a
-    href="http://code.google.com/p/selenium/downloads/detail?name=IEDriverServer_x64_2.33.0.zip">64 bit Windows IE</a></p>
+    href="http://code.google.com/p/selenium/downloads/detail?name=IEDriverServer_x64_2.34.0.zip">64 bit Windows IE</a></p>
 
   <a name="client-drivers"/>
   <h3>Selenium Client & WebDriver Language Bindings</h3>
@@ -86,17 +86,17 @@
     <tbody>
       <tr>
         <td>Java</td>
-        <td>2.33.0</td>
-        <td>2013-05-22</td>
-        <td><a href="http://selenium.googlecode.com/files/selenium-java-2.33.0.zip">Download</a>&nbsp;&nbsp;</td>
+        <td>2.34.0</td>
+        <td>2013-08-06</td>
+        <td><a href="http://selenium.googlecode.com/files/selenium-java-2.34.0.zip">Download</a>&nbsp;&nbsp;</td>
         <td><a href="http://selenium.googlecode.com/git/java/CHANGELOG">Change log</a>&nbsp;&nbsp;</td>
         <td><a href="http://selenium.googlecode.com/git/docs/api/java/index.html" alt="Javadoc">Javadoc</a></td>
       </tr>
       <tr>
         <td>C#</td>
-        <td>2.33.0</td>
-        <td>2013-05-22</td>
-        <td><a href="http://selenium.googlecode.com/files/selenium-dotnet-2.33.0.zip">Download</a></td>
+        <td>2.34.0</td>
+        <td>2013-08-06</td>
+        <td><a href="http://selenium.googlecode.com/files/selenium-dotnet-2.34.0.zip">Download</a></td>
         <td><a href="http://selenium.googlecode.com/git/dotnet/CHANGELOG">Change log</a></td>
         <td><a href="http://selenium.googlecode.com/git/docs/api/dotnet/index.html">API docs</a></td>
       </tr>
@@ -110,16 +110,23 @@
       </tr>
       <tr>
         <td>Python</td>
-        <td>2.33.0</td>
-        <td>2013-05-22</td>
+        <td>2.34.0</td>
+        <td>2013-08-06</td>
         <td><a href="http://pypi.python.org/pypi/selenium">Download</a></td>
         <td><a href="http://selenium.googlecode.com/git/py/CHANGES">Change log</a></td>
         <td><a href="http://selenium.googlecode.com/git/docs/api/py/index.html">API docs</a></td>
       </tr>
+      <tr>
+        <td>Javascript (Node)</td>
+        <td>2.34.0</td>
+        <td>2013-08-06</td>
+        <td><a href="https://npmjs.org/package/selenium-webdriver">Download</a></td>
+        <td><a href="https://github.com/SeleniumHQ/selenium/blob/master/javascript/node/selenium-webdriver/CHANGES.md">Change log</a></td>
+      </tr>
     </tbody>
   </table>
   <h4>C# NuGet</h4>
-  <p>NuGet latest release is 2.33.0, Released on 2013-05-22</p>
+  <p>NuGet latest release is 2.34.0, Released on 2013-08-06</p>
   <ul>
     <li><a href="http://www.nuget.org/List/Packages/Selenium.RC">RC</a></li>
     <li><a href="http://www.nuget.org/List/Packages/Selenium.WebDriver">WebDriver</a></li>
@@ -195,6 +202,8 @@
     <li><a href="https://github.com/Nearsoft/PHP-SeleniumClient">PHP</a> by Nearsoft</li>
     <li><a href="http://hackage.haskell.org/package/webdriver">Haskell</a> by Adam Curtis</li>
     <li><a href="https://github.com/appium/selenium-objective-c">Objective-C</a> by Dan Cuellar</li>
+    <li><a href="https://github.com/admc/wd">Javascript</a> by Adam Christian</li>
+    <li><a href="https://github.com/jlipps/yiewd">Javascript</a> by Jonathan Lipps</li>
   </ul>
 
   <h3>Selenium GRID Plugins</h3>
