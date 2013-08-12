@@ -13,7 +13,7 @@ driver.get("http://www.google.com")
 inputElement = driver.find_element_by_name("q")
 
 # type in the search
-inputElement.send_keys("Cheese!")
+inputElement.send_keys("cheese!")
 
 # submit the form (although google automatically searches now without submitting)
 inputElement.submit()
