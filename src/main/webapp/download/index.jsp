@@ -151,18 +151,19 @@
     <tbody>
       <tr>
         <td><a href="http://code.google.com/p/chromedriver/">Chrome</a></td>
-        <td><a href="http://chromedriver.storage.googleapis.com/index.html">download page</a>&nbsp;&nbsp;</td>
-        <td>&nbsp;</td>
+        <td><a href="http://chromedriver.storage.googleapis.com/index.html">2.4</a>&nbsp;&nbsp;</td>
+        <td><a href="http://chromedriver.storage.googleapis.com/2.4/notes.txt">change log</a>&nbsp;&nbsp;</td>
         <td><a href="http://code.google.com/p/chromedriver/issues/list">issue tracker</a>&nbsp;&nbsp;</td>
         <td><a href="http://code.google.com/p/selenium/wiki/ChromeDriver">selenium wiki page</a>&nbsp;&nbsp;</td>
+        <td>Released 2013-09-02</td>
       </tr>
       <tr>
         <td><a href="http://choice.opera.com/developer/tools/operadriver/">Opera</td>
-        <td><a href="http://selenium.googlecode.com/git/third_party/java/opera-driver/operadriver-1.4-5-g0310e9d.jar">1.4.5</a></td>
+        <td><a href="http://selenium.googlecode.com/git/third_party/java/opera-driver/operadriver-1.5.jar">1.5</a></td>
         <td><a href="https://raw.github.com/operasoftware/operadriver/master/CHANGES">change log</a>&nbsp;&nbsp;</td>
         <td><a href="https://github.com/operasoftware/operadriver/issues">issue tracker</a></td>
         <td><a href="http://code.google.com/p/selenium/wiki/OperaDriver">selenium wiki page</a></td>
-        <td>Released 2012-10-09</td>
+        <td>Released 2013-08-13</td>
       </tr>
       <tr>
         <td><a href="https://github.com/detro/ghostdriver">GhostDriver</a></td>
