@@ -63,9 +63,9 @@
   is available on your $PATH (or %PATH% on Windows) in order for the IE Driver
   to work as expected.</p>
   <p>Download version 2.35.0 for (recommended) <a
-    href="http://code.google.com/p/selenium/downloads/detail?name=IEDriverServer_Win32_2.35.1.zip">32
+    href="http://code.google.com/p/selenium/downloads/detail?name=IEDriverServer_Win32_2.35.3.zip">32
     bit Windows IE</a> or <a
-    href="http://code.google.com/p/selenium/downloads/detail?name=IEDriverServer_x64_2.35.1.zip">64 bit Windows IE</a></p>
+    href="http://code.google.com/p/selenium/downloads/detail?name=IEDriverServer_x64_2.35.3.zip">64 bit Windows IE</a></p>
 
   <a name="client-drivers"/>
   <h3>Selenium Client & WebDriver Language Bindings</h3>
