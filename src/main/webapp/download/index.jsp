@@ -151,8 +151,8 @@
     <tbody>
       <tr>
         <td><a href="http://code.google.com/p/chromedriver/">Chrome</a></td>
-        <td><a href="http://code.google.com/p/chromedriver/downloads/list">2.3</a>&nbsp;&nbsp;</td>
-        <td><a href="http://chromedriver.googlecode.com/files/release_notes_2.3.txt">release notes</a>&nbsp;&nbsp;</td>
+        <td><a href="http://chromedriver.storage.googleapis.com/index.html">2.4</a>&nbsp;&nbsp;</td>
+        <td><a href="http://chromedriver.storage.googleapis.com/2.4/notes.txt">change log</a>&nbsp;&nbsp;</td>
         <td><a href="http://code.google.com/p/chromedriver/issues/list">issue tracker</a>&nbsp;&nbsp;</td>
         <td><a href="http://code.google.com/p/selenium/wiki/ChromeDriver">selenium wiki page</a>&nbsp;&nbsp;</td>
         <td>Released 2013-09-02</td>
