@@ -12,10 +12,10 @@
 <tr>
 <td valign="top">
   <p>
-  <b>Selenium IDE</b> is an integrated development environment for Selenium scripts. It is implemented as a Firefox extension, and allows you to record, edit, and debug tests. Selenium IDE includes the entire Selenium Core, allowing you to easily and quickly record and play back tests in the actual environment that they will run.
+  <b>Selenium IDE</b> is an integrated development environment for Selenium scripts. It is implemented as a Firefox extension, and allows you to record, edit, and debug tests. Selenium IDE includes the entire Selenium Core, allowing you to easily and quickly record and play back tests in the actual environment that they will run in.
   </p>
   <p>
-  Selenium IDE is not only recording tool: <b>it is a complete IDE</b>. You can choose to use its recording capability, or you may edit your scripts by hand. With autocomplete support and the ability to move commands around quickly, Selenium IDE is the ideal environment for creating Selenium tests no matter what style of tests you prefer.
+  Selenium IDE is not only a recording tool: <b>it is a complete IDE</b>. You can choose to use its recording capability, or you may edit your scripts by hand. With autocomplete support and the ability to move commands around quickly, Selenium IDE is the ideal environment for creating Selenium tests no matter what style of tests you prefer.
   </p>
   <p>
   <h3>Features:</h3>
