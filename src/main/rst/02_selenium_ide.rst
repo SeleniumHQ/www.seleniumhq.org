@@ -487,7 +487,7 @@ examples:
 goBackAndWait 
 verifyTextPresent                Welcome to My Home Page 
 type               id=phone      \(555\) 666-7066 
-type               id=address1   ${myVariableAddress} 
+type               id=address1   \\${myVariableAddress} 
 =================  ===========   =======================
  
 The command reference describes the parameter requirements for each command. 
@@ -1287,7 +1287,7 @@ curly brackets ({}) and precede it with a dollar sign like this.
 ============  ==========  ===========
 **Command**   **Target**  **Value**
 ============  ==========  ===========
-verifyText    //div/p     \${userName\}               
+verifyText    //div/p     \\${userName}               
 ============  ==========  ===========
 
 A common use of variables is for storing input for an input field.
@@ -1295,7 +1295,7 @@ A common use of variables is for storing input for an input field.
 ============  ==========   ===========
 **Command**   **Target**   **Value**
 ============  ==========   ===========
-type	      id=login     \${userName\}               
+type	      id=login     \\${userName}               
 ============  ==========   ===========
 
 Selenium variables can be used in either the first or second parameter and 
@@ -1399,7 +1399,7 @@ Selenium variables.
 **Command**        **Target**                 **Value**
 ============   	   ========================   =========
 echo    	   Testing page footer now.    
-echo    	   Username is ${userName}                 
+echo    	   Username is \\${userName}                 
 ============   	   ========================   =========
 
 
