@@ -114,7 +114,7 @@
         <td>2013-10-21</td>
         <td><a href="http://pypi.python.org/pypi/selenium">Download</a></td>
         <td><a href="http://selenium.googlecode.com/git/py/CHANGES">Change log</a></td>
-        <td><a href="http://selenium.googlecode.com/git/docs/api/py/index.html">API docs</a></td>
+        <td><a href="http://selenium.googlecode.com/git/docs/api/py/api.html">API docs</a></td>
       </tr>
       <tr>
         <td>Javascript (Node)</td>
