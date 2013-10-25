@@ -1860,6 +1860,11 @@ To avoid this error you have to start browser with an option that disables same 
    selenium.start("commandLineFlags=--disable-web-security");
    
 
+Error encountered in IE - "Couldn't open app window; is the pop-up blocker enabled?"
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+To avoid this error you have to configure the browser: disable the popup blocker AND uncheck 'Enable Protected Mode' option in Tools >> Options >> Security.
+
+
 Where can I Ask Questions that Aren't Answered Here?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Try our `user group`_
