@@ -122,6 +122,7 @@
         <td>2013-10-18</td>
         <td><a href="https://npmjs.org/package/selenium-webdriver">Download</a></td>
         <td><a href="https://github.com/SeleniumHQ/selenium/blob/master/javascript/node/selenium-webdriver/CHANGES.md">Change log</a></td>
+        <td><a href="http://selenium.googlecode.com/git/docs/api/javascript/index.html">API docs</a></td>
       </tr>
     </tbody>
   </table>
