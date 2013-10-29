@@ -264,7 +264,7 @@ As of this writing it is unknown how to set the proxy programmatically.
 
 Firefox
 +++++++
-Firefox maintains it's proxy configuration in a profile. You can preset the
+Firefox maintains its proxy configuration in a profile. You can preset the
 proxy in a profile and use that Firefox Profile or you can set it on profile
 that is created on the fly as is shown in the following example.
 

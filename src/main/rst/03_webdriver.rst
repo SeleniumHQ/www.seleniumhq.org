@@ -943,7 +943,7 @@ an alternative is to find a smaller page on the site, typically the 404 page is 
     driver.get("http://www.example.com")
 
     # Now set the cookie. Here's one for the entire domain
-    # the cookie name here is 'key' and it's value is 'value'
+    # the cookie name here is 'key' and its value is 'value'
     driver.add_cookie({'name':'key', 'value':'value', 'path':'/'})
     # additional keys that can be passed in are:
     # 'domain' -> String, 
@@ -966,7 +966,7 @@ an alternative is to find a smaller page on the site, typically the 404 page is 
     driver.get "http://www.example.com"
     
     # Now set the cookie. Here's one for the entire domain
-    # the cookie name here is 'key' and it's value is 'value'
+    # the cookie name here is 'key' and its value is 'value'
     driver.manage.add_cookie(:name => 'key', :value => 'value')
     # additional keys that can be passed in are:
     # :path => String, :secure -> Boolean, :expires -> Time, DateTime, or seconds since epoch
@@ -1226,7 +1226,7 @@ Internet Explorer Driver
 ~~~~~~~~~~~~~~~~~~~~~~~~
 
 This driver is controlled by a .dll and is thus only available on Windows OS.
-Each Selenium release has it's core functionality tested against versions
+Each Selenium release has its core functionality tested against versions
 6, 7 and 8 on XP, and 9 on Windows7.
 
 Usage
