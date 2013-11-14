@@ -65,7 +65,8 @@
   <p>Download version 2.37.0 for (recommended) <a
     href="http://code.google.com/p/selenium/downloads/detail?name=IEDriverServer_Win32_2.37.0.zip">32
     bit Windows IE</a> or <a
-    href="http://code.google.com/p/selenium/downloads/detail?name=IEDriverServer_x64_2.37.0.zip">64 bit Windows IE</a></p>
+    href="http://code.google.com/p/selenium/downloads/detail?name=IEDriverServer_x64_2.37.0.zip">64 bit Windows IE</a><br/>
+    <a href="http://selenium.googlecode.com/git/cpp/iedriverserver/CHANGELOG">CHANGELOG</a></p>
 
   <a name="client-drivers"/>
   <h3>Selenium Client & WebDriver Language Bindings</h3>
