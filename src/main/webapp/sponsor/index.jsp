@@ -58,7 +58,7 @@
 
 <h2>How to Donate</h2>
 
-<p>You can use the form on the front page at anytime to make a donation to the Selenium project: just click one of the PayPal and Google Checkout "Donate" buttons. These linked buttons point to the Conservancy's account for us, which is a tax-exempt 501(c)(3) organization. As a result, donations to the Selenium project are now tax-deductible.</p>
+<p>You can use the form on the front page at anytime to make a donation to the Selenium project: just click on the PayPal "Donate" button. These linked buttons point to the Conservancy's account for us, which is a tax-exempt 501(c)(3) organization. As a result, donations to the Selenium project are now tax-deductible.</p>
 <p>If you would prefer to cut a cheque, you may do this as well. Make the check payable to "Software Freedom Conservancy" and write "Directed Donation for Selenium" in the "memo" field. Checks should be sent to the following address, so that the Conservancy can process them:</p>
 <pre>
     Software Freedom Conservancy, Inc.
