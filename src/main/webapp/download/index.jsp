@@ -140,6 +140,7 @@
     <li><a href="http://selenium.googlecode.com/files/android-server-2.21.0.apk">Android 2.21.0</a> <a href="http://code.google.com/p/selenium/wiki/AndroidDriver">wiki</a></li>
     <li>iOS <a href="http://code.google.com/p/selenium/wiki/IPhoneDriver">wiki</a></li>
   </ul>
+  <a name="thirdPartyDrivers"></a>
   <h4>Third Party Browser Drivers <span class="unsupported">NOT DEVELOPED</span> by seleniumhq</h4>
   <table>
     <thead>
