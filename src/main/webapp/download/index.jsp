@@ -179,6 +179,7 @@
         <td><a href="http://winphonewebdriver.codeplex.com/downloads/get/761780">4.14.028.10</a>&nbsp;&nbsp;</td>
         <td>&nbsp;&nbsp;</td>
         <td><a href="http://winphonewebdriver.codeplex.com/workitem/list/basic">issue tracker</a>&nbsp;&nbsp;</td>
+        <td>&nbsp;&nbsp;</td>
         <td>Released 2013-11-23</td>
       </tr>
       <tr>
