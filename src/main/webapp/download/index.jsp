@@ -153,11 +153,11 @@
     <tbody>
       <tr>
         <td><a href="http://code.google.com/p/chromedriver/">Chrome</a></td>
-        <td><a href="http://chromedriver.storage.googleapis.com/index.html">2.4</a>&nbsp;&nbsp;</td>
-        <td><a href="http://chromedriver.storage.googleapis.com/2.4/notes.txt">change log</a>&nbsp;&nbsp;</td>
+        <td><a href="http://chromedriver.storage.googleapis.com/index.html">2.7</a>&nbsp;&nbsp;</td>
+        <td><a href="http://chromedriver.storage.googleapis.com/2.7/notes.txt">change log</a>&nbsp;&nbsp;</td>
         <td><a href="http://code.google.com/p/chromedriver/issues/list">issue tracker</a>&nbsp;&nbsp;</td>
         <td><a href="http://code.google.com/p/selenium/wiki/ChromeDriver">selenium wiki page</a>&nbsp;&nbsp;</td>
-        <td>Released 2013-09-02</td>
+        <td>Released 2013-11-22</td>
       </tr>
       <tr>
         <td><a href="http://choice.opera.com/developer/tools/operadriver/">Opera</td>
@@ -173,6 +173,13 @@
         <td>&nbsp;</td>
         <td><a href="https://github.com/detro/ghostdriver/issues">issue tracker</a></td>
         <td><a href="http://www.youtube.com/watch?v=wqxkKIC2HDY">SeConf talk</a></td>
+      </tr>
+      <tr>
+        <td><a href="http://winphonewebdriver.codeplex.com/">Windows Phone</a></td>
+        <td><a href="http://winphonewebdriver.codeplex.com/downloads/get/761780">4.14.028.10</a>&nbsp;&nbsp;</td>
+        <td>&nbsp;&nbsp;</td>
+        <td><a href="http://winphonewebdriver.codeplex.com/workitem/list/basic">issue tracker</a>&nbsp;&nbsp;</td>
+        <td>Released 2013-11-23</td>
       </tr>
       <tr>
         <td><a href="http://selendroid.io/">Selendroid</a></td>
