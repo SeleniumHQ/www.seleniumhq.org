@@ -218,7 +218,7 @@
         </li>
         <li>Involved since 2007, on WebDriver related work
         </li>
-        <li>Organization: <a href="http://www.ebayinc.com/">eBay</a>
+        <li>Organization: adrift
         </li>
         <li>Favorite Selenium method: Native events
         </li>
