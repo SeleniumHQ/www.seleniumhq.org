@@ -8,9 +8,6 @@
 <body class="sectionProjects">
 <%@include file="/jsp/header.jspf"%><div id="mainContent">
   <p>
-  Clearly this will get flushed out further, but for now...
-  </p>
-  <p>
     <h3>Documentation</h3>
     <ol>
       <li><a href="http://adam.goucher.ca/?p=1331">Build and Preferences</a></li>
