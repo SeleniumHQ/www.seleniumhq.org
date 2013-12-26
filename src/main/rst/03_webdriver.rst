@@ -213,7 +213,7 @@ additional processes or run any installers before using it, as opposed to the pr
 with Selenium-RC.
 
 Note: additional steps are required to use `Chrome Driver`_, `Opera Driver`_, `Android Driver`_
-and `iPhone Driver`_
+and `iOS Driver`_
 
 You're now ready to write some code. An easy way to get started is this
 example, which searches for the term "Cheese" on Google and then outputs the
@@ -1329,18 +1329,15 @@ Opera Driver
 See the `Opera Driver wiki article <http://code.google.com/p/selenium/wiki/OperaDriver>`_ in the
 Selenium Wiki for information on using the Opera Driver.
 
-iPhone Driver
+iOS Driver
 ~~~~~~~~~~~~~~
 
-See the `iPhone Driver wiki article <http://code.google.com/p/selenium/wiki/IPhoneDriver>`_ in the
-Selenium Wiki for information on using the Mac iOS Driver.
+See either the `ios-driver <http://ios-driver.github.io/ios-driver/>`_ or `appium <http://appium.io>`_ projects.
 
 Android Driver
 ~~~~~~~~~~~~~~
 
-See the `Android Driver wiki article <http://code.google.com/p/selenium/wiki/AndroidDriver>`_
-in the Selenium Wiki for information on using the Android Driver.
-
+See the `Selendroid project <http://selendroid.io>`_
 
 
 Alternative Back-Ends: Mixing WebDriver and RC Technologies

@@ -135,11 +135,6 @@
     <li><a href="http://www.nuget.org/List/Packages/Selenium.WebDriverBackedSelenium">WebDriverBackedSelenium</a></li>
     <li><a href="http://www.nuget.org/List/Packages/Selenium.Support">Support</a></li>
   </ul>
-  <h4>Mobile Devices<h4>
-  <ul>
-    <li><a href="http://selenium.googlecode.com/files/android-server-2.21.0.apk">Android 2.21.0</a> <a href="http://code.google.com/p/selenium/wiki/AndroidDriver">wiki</a></li>
-    <li>iOS <a href="http://code.google.com/p/selenium/wiki/IPhoneDriver">wiki</a></li>
-  </ul>
   <a name="thirdPartyDrivers"></a>
   <h4>Third Party Browser Drivers <span class="unsupported">NOT DEVELOPED</span> by seleniumhq</h4>
   <table>
@@ -184,7 +179,7 @@
         <td>Released 2013-11-23</td>
       </tr>
       <tr>
-        <td><a href="http://selendroid.io/">Selendroid</a></td>
+        <td><a href="http://selendroid.io/">Selendroid</a> - Selenium for Android</td>
         <td>&nbsp;</td>
         <td>&nbsp;</td>
         <td><a href="https://github.com/selendroid/selendroid/issues">issue tracker</a></td>
