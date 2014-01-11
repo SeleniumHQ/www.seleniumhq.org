@@ -1690,7 +1690,7 @@ launched with \*firefox, \*iexplore, \*opera, or \*custom.
 	  sure that one is adjusting the relevant settings.
       
     * For other browsers (\*firefox, \*opera) we automatically hard-code
-      the proxy for you, and so ther are no known issues with this functionality.
+      the proxy for you, and so there are no known issues with this functionality.
       If you're encountering 404 errors and have followed this user guide carefully 
       post your results to user group for some help from the user community.
       
