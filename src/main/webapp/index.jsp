@@ -14,7 +14,7 @@
 <body class="homepage">
 <%@include file="/jsp/header.jspf"%><div id="mainContent">
   <h2>What is Selenium?</h2>
-  <p><i>Selenium automates browsers</i>. That's it! What you do with that power is entirely up to you. Primarily it is for automating web applications for testing purposes, but is certainly not limited to just that. Boring web-based administration tasks can (and should!) also be automated as well.</p>
+  <p><i>Selenium automates browsers</i>. That's it! What you do with that power is entirely up to you. Primarily, it is for automating web applications for testing purposes, but is certainly not limited to just that. Boring web-based administration tasks can (and should!) also be automated as well.</p>
   <p>Selenium has the support of some of the largest browser vendors who have taken (or are taking) steps to make Selenium a native part of their browser. It is also the core technology in countless other browser automation tools, APIs and frameworks.</p>
   
   <h2>Which part of Selenium is appropriate for me?</h2>
