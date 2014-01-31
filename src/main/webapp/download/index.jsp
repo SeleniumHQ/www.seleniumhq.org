@@ -240,6 +240,24 @@
   <p>Please note that these are not supported by the Selenium project and all issues need to be raised with the relevant developers</p>
 
   <div class="plugin">
+    <div class="name">SelBlocks</div>
+    <div class="column">
+      <table>
+          <tr><th>Links:</th><td><a href="https://addons.mozilla.org/en-US/firefox/addon/selenium-ide-sel-blocks/">Download</a> - <a href="http://refactoror.wikia.com/wiki/Selblocks_Reference">Docs</a> - <a href="https://github.com/refactoror/SelBlocks/issues?state=open">Support</a></td></tr>
+        <tr><th>Author:</th><td><a href="http://refactoror.net/">Chris Noe</a></td></tr>
+        <tr><th>License:</th><td>Mozilla Public License</td></tr>
+      </table>
+    </div>
+    <div class="column">
+      <table>
+        <tr><th>Released:</th><td>October 28, 2013</td></tr>
+        <tr><th>Version:</th><td>2.0</td></tr>
+      </table>
+    </div>
+    <p class="description">This plugin is a language extension for Selenium IDE that provides javascript-like conditionals, looping, callable functions, error catching, and JSON/XML driven parameterization.</p>
+  </div>
+
+  <div class="plugin">
     <div class="name">ScreenShot on Fail</div>
     <div class="column">
       <table>
