@@ -124,11 +124,11 @@ messages that may not want to start off with your first time using Selenium-Grid
 Starting a Hub
 ~~~~~~~~~~~~~~
 To start a hub with default parameters, run the following command from a command-line shell.  This
-will work on all the supported platforms, Windows Linux, or MacOs.
+will work on all the supported platforms, Windows Linux, or Mac OSX.
 
 .. code-block:: bash
 
-    java -jar selenium-server-standalone-2.21.0.jar -role hub
+    java -jar selenium-server-standalone-2.38.0.jar -role hub
     
 This starts a hub using default parameter values.  We'll explain these parameters in folowing 
 subsections.  Note that you will likely have to change the version number in the jar filename 
@@ -141,7 +141,7 @@ To start a node using default parameters, run the following command from a comma
 
 .. code-block:: bash
 
-	java -jar selenium-server-standalone-2.21.0.jar -role node  -hub http://localhost:4444/grid/register
+	java -jar selenium-server-standalone-2.38.0.jar -role node  -hub http://localhost:4444/grid/register
 
 This assumes the hub has been started above using default parameters.  The default port the hub
 uses to listen for new requests is port 4444.  This is why port 4444 was used in the URL for 
@@ -177,7 +177,7 @@ To run the hub using the default options simply specify -role hub to the Selenim
 
 .. code-block:: bash
 
-	java -jar selenium-server-standalone-2.21.0.jar -hub
+	java -jar selenium-server-standalone-2.38.0.jar -hub
 
 You should see the following logging output.
 
@@ -209,7 +209,7 @@ port used by the hub.
 
 .. code-block:: bash
 
-	java -jar selenium-server-standalone-2.21.0.jar -role hub -port 4441
+	java -jar selenium-server-standalone-2.38.0.jar -role hub -port 4441
 
 This will work even if another hub is already running on the same machine, that is, as long as
 they're both not using port 4441.
@@ -252,7 +252,7 @@ but not those for Selenium-Grid.
 
 .. code-block:: bash
 
-	java -jar selenium-server-standalone-2.21.0.jar -h
+	java -jar selenium-server-standalone-2.38.0.jar -h
 	
 This would give you Selenium-RC's server options.  If you want the command-line help for 
 Selenium-Grid, you first use the -hub or -node options to tell Selenium-Server you're intereted
@@ -260,13 +260,13 @@ in Selenium-Grid, and then follow with a -h.
 
 .. code-block:: bash
 
-	java -jar selenium-server-standalone-2.21.0.jar -role node -h
+	java -jar selenium-server-standalone-2.38.0.jar -role node -h
 
 Or, for that matter, just pass a garbage argument to the -role node as follows.
 
 .. code-block:: bash
 
-	java -jar selenium-server-standalone-2.21.0.jar -role node xx
+	java -jar selenium-server-standalone-2.38.0.jar -role node xx
 
 
 You will first see "INFO..." and an "ERROR" but below that you'll get the command-line options for
@@ -302,7 +302,7 @@ Unable to acess the jarfile
 
 .. code-block:: bash
 
-	Unable to access jarfile selenium-server-standalone-2.21.0.jar
+	Unable to access jarfile selenium-server-standalone-2.38.0.jar
 
 This error can occur when starting up either a hub or node.  
 This means Java cannot find the selenium-server jar file.  Either run the command from the
