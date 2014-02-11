@@ -1285,7 +1285,6 @@ ol.faq li a:hover {
 		voice-family: "\"}\"";
 		voice-family: inherit;
 		height: 3em;
-		padding: 15px 0;
 	} #ignored {}
 	
 	#header h1 {
@@ -1380,6 +1379,7 @@ ol.faq li a:hover {
 		float: right;
 		background: url("images/header_tr.gif") no-repeat top right;
 		margin-left: 20px;
+		padding: 12px 20px 0 20px;
 		text-align: right; /* need for IE Mac */
 		white-space: nowrap; /* for Opera */
 	}
@@ -1826,7 +1826,7 @@ text-align:center;
 
 #editPage {
     float: right;
-    margin-top: 2px;
+    padding-top: 14px;
 }
 #editPage a {
     color: white;
