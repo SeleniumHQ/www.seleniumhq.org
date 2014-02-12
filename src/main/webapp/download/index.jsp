@@ -211,6 +211,7 @@
     <li><a href="https://github.com/appium/selenium-objective-c">Objective-C</a> by Dan Cuellar</li>
     <li><a href="https://github.com/admc/wd">Javascript</a> by Adam Christian</li>
     <li><a href="https://github.com/jlipps/yiewd">Javascript</a> by Jonathan Lipps</li>
+    <li><a href="https://webdriver.io">Javascript</a> by Camilo Tapia, Vincent Voyer and Christian Bromann</li>
   </ul>
 
   <h3>Selenium GRID Plugins</h3>
