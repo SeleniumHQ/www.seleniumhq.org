@@ -191,6 +191,13 @@
         <td><a href="https://github.com/ios-driver/ios-driver/issues">issue tracker</a></td>
       </tr>
       <tr>
+        <td><a href="http://devblog.blackberry.com/2014/02/selenium-support-in-blackberry-10/">BlackBerry 10</a></td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td><a href="https://www.blackberry.com/jira/">issue tracker</a></td>
+        <td>Released 2014-01-28</td>
+      </tr>
+      <tr>
         <td><a href="http://appium.io/">Appium</a></td>
         <td>&nbsp;</td>
         <td>&nbsp;</td>
