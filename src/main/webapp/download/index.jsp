@@ -2,8 +2,6 @@
 
 <html>
 <head>
-  <meta name="generator" content=
-  "HTML Tidy (version num removed), see www.w3.org">
 
   <title>Downloads</title>
 <%@include file="/jsp/head.jspf"%>
@@ -247,7 +245,47 @@
   <h3>Selenium IDE Plugins</h3>
   <p>Selenium IDE can be extended through its own plugin system. Here are a number of plugins that have been created using it. For more information on how to create your own plugin or have it listed, see the <a href="http://seleniumhq.org/projects/ide/plugins.html">plugin tutorial page</a>.</p>
   <p>Please note that these are not supported by the Selenium project and all issues need to be raised with the relevant developers</p>
+<!--
+  <div class="plugin">
+    <div class="name">Selenium XML Formatter</div>
+    <div class="column">
+      <table>
+          <tr><th>Links:</th><td><a href="https://addons.mozilla.org/en-US/firefox/addon/selenium-xml-formatter/">Download</a> - <a href="https://addons.mozilla.org/en-US/firefox/addon/selenium-xml-formatter/">Docs</a> - <a href="https://addons.mozilla.org/en-US/firefox/addon/selenium-xml-formatter/">Support</a></td></tr>
+        <tr><th>Author:</th><td>Thibault ROHMER</td></tr>
+        <tr><th>License:</th><td>BSD License</td></tr>
+      </table>
+    </div>
+    <div class="column">
+      <table>
+        <tr><th>Released:</th><td>January 9, 2011</td></tr>
+        <tr><th>Version:</th><td>1.5</td></tr>
+      </table>
+    </div>
+    <p class="description">Selenium XML Formatter is a custom XML Formatter for Selenium-IDE.
+Compliant with Selenium command &amp; comment syntax, this formatter output data in a very common language. This way, you can easily parse the test case in your favorite programming language.</p>
+  </div>
 
+  <div class="plugin">
+    <div class="name">Selenium2Excel Converter</div>
+    <div class="column">
+      <table>
+          <tr><th>Links:</th><td><a href="https://addons.mozilla.org/en-US/firefox/addon/selenium2excel-converter/">Download</a> - <a href="https://addons.mozilla.org/en-US/firefox/addon/selenium2excel-converter/">Docs</a> - <a href="https://sourceforge.net/p/selenium2excel/tickets/">Support</a></td></tr>
+        <tr><th>Author:</th><td>Shankar Laggishetti</td></tr>
+        <tr><th>License:</th><td>BSD License</td></tr>
+      </table>
+    </div>
+    <div class="column">
+      <table>
+        <tr><th>Released:</th><td>January 7, 2014</td></tr>
+        <tr><th>Version:</th><td>1.0.1</td></tr>
+      </table>
+    </div>
+    <p class="description">Selenium2Excel Converter is a tool to convert your selenese scripts to Excel format.
+With the help of the this plug-in users can easily convert the recorded script into Excel file.
+Selenium2Excel Converter is very useful when automating the selenium scripts in Keyword driven or Hybrid driven framework.
+To use this plug-in user's need to have Microsoft Excel installed.</p>
+  </div>
+-->
   <div class="plugin">
     <div class="name">SelBlocks</div>
     <div class="column">
@@ -271,7 +309,7 @@
     <div class="column">
       <table>
         <tr><th>Links:</th><td><a href="https://addons.mozilla.org/en-US/firefox/addon/screenshot-on-fail-selenium/">Download</a> - <a href="http://blog.reallysimplethoughts.com/2012/02/20/screenshot-on-fail-v1-0-for-selenium-ide-now-available/#respond">Support</a></td></tr>
-        <tr><th>Author:</th><td><a href="http://blog.reallysimplethoughts.com">Samit Badle</a></td></tr>
+        <tr><th>Author:</th><td><a href="http://blog.reallysimplethoughts.com">Samit Badle</a> (Selenium IDE Maintainer)</td></tr>
         <tr><th>License:</th><td>Unknown/Free</td></tr>
       </table>
     </div>
@@ -289,7 +327,7 @@
     <div class="column">
       <table>
         <tr><th>Links:</th><td><a href="https://addons.mozilla.org/en-US/firefox/addon/favorites-selenium-ide/">Download</a> - <a href="http://blog.reallysimplethoughts.com/2011/04/07/favorites-for-selenium-ide/#respond">Support</a></td></tr>
-        <tr><th>Author:</th><td><a href="http://blog.reallysimplethoughts.com">Samit Badle</a></td></tr>
+        <tr><th>Author:</th><td><a href="http://blog.reallysimplethoughts.com">Samit Badle</a> (Selenium IDE Maintainer)</td></tr>
         <tr><th>License:</th><td>Unknown/Free</td></tr>
       </table>
     </div>
@@ -307,7 +345,7 @@
     <div class="column">
       <table>
         <tr><th>Links:</th><td><a href="https://addons.mozilla.org/en-US/firefox/addon/page-coverage-selenium-ide/">Download</a> - <a href="http://blog.reallysimplethoughts.com/2012/01/16/page-coverage-v1-0-for-selenium-ide-now-available/#respond">Support</a></td></tr>
-        <tr><th>Author:</th><td><a href="http://blog.reallysimplethoughts.com">Samit Badle</a></td></tr>
+        <tr><th>Author:</th><td><a href="http://blog.reallysimplethoughts.com">Samit Badle</a> (Selenium IDE Maintainer)</td></tr>
         <tr><th>License:</th><td>Unknown/Free</td></tr>
       </table>
     </div>
@@ -325,7 +363,7 @@
     <div class="column">
       <table>
         <tr><th>Links:</th><td><a href="https://addons.mozilla.org/en-US/firefox/addon/test-results-selenium-ide/">Download</a> - <a href="http://blog.reallysimplethoughts.com/2011/10/08/test-results-v1-0-for-selenium-ide-now-available/#respond">Support</a></td></tr>
-        <tr><th>Author:</th><td><a href="http://blog.reallysimplethoughts.com">Samit Badle</a></td></tr>
+        <tr><th>Author:</th><td><a href="http://blog.reallysimplethoughts.com">Samit Badle</a> (Selenium IDE Maintainer)</td></tr>
         <tr><th>License:</th><td>Unknown/Free</td></tr>
       </table>
     </div>
@@ -336,6 +374,114 @@
       </table>
     </div>
     <p class="description">This plugin for Selenium-IDE saves the results of the test execution for the test suite and included test cases with a single click. It also allows you to export the test results for individual test cases. <a href="http://blog.reallysimplethoughts.com/2011/10/08/test-results-v1-0-for-selenium-ide-now-available/">More info</a>.</p>
+  </div>
+
+  <div class="plugin">
+    <div class="name">Highlight Elements</div>
+    <div class="column">
+      <table>
+        <tr><th>Links:</th><td><a href="https://addons.mozilla.org/en-US/firefox/addon/228386/">Download</a> - <a href="http://blog.reallysimplethoughts.com/2011/07/27/highlight-elements-plugin-v1-2-for-selenium-ide/#respond">Support</a></td></tr>
+        <tr><th>Author:</th><td><a href="http://blog.reallysimplethoughts.com">Samit Badle</a> (Selenium IDE Maintainer)</td></tr>
+        <tr><th>License:</th><td>Unknown/Free</td></tr>
+      </table>
+    </div>
+    <div class="column">
+      <table>
+        <tr><th>Released:</th><td>August 3, 2010</td></tr>
+        <tr><th>Version:</th><td>1.2</td></tr>
+      </table>
+    </div>
+    <p class="description">This plugin for Selenium-IDE highlights elements specified in the Selenese commands on the web page as the test case is executed. Once this plugin is installed, a Highlight elements button will be available on the Selenium-IDE main window and Sidebar. <a href="http://blog.reallysimplethoughts.com/2011/07/27/highlight-elements-plugin-v1-2-for-selenium-ide">More info</a>.</p>
+  </div>
+
+  <div class="plugin">
+    <div class="name">Test Suite Batch Converter</div>
+    <div class="column">
+      <table>
+        <tr><th>Links:</th><td><a href="https://addons.mozilla.org/en-US/firefox/addon/197691/">Download</a> - <a href="http://blog.reallysimplethoughts.com/2011/01/11/test-suite-batch-converter-plugin-v1-5-released/#respond">Support</a></td></tr>
+        <tr><th>Author:</th><td><a href="http://blog.reallysimplethoughts.com">Samit Badle</a> (Selenium IDE Maintainer)</td></tr>
+        <tr><th>License:</th><td>Unknown/Free</td></tr>
+      </table>
+    </div>
+    <div class="column">
+      <table>
+        <tr><th>Released:</th><td>January 13, 2011</td></tr>
+        <tr><th>Version:</th><td>1.5</td></tr>
+      </table>
+    </div>
+    <p class="description">A plugin for Selenium-IDE to convert one or more test suites, including their test cases, from the html format to any other format supported by the Selenium-IDE. <a href="http://blog.reallysimplethoughts.com/2011/01/11/test-suite-batch-converter-plugin-v1-5-released/">More info</a>.</p>
+  </div>
+  
+  <div class="plugin">
+    <div class="name">Selenium Expert</div>
+    <div class="column">
+      <table>
+        <tr><th>Links:</th><td><a href="https://addons.mozilla.org/en-US/firefox/addon/268716/">Download</a> - <a href="http://blog.reallysimplethoughts.com/2010/12/28/the-selenium-expert-is-here/#respond">Support</a></td></tr>
+        <tr><th>Author:</th><td><a href="http://blog.reallysimplethoughts.com">Samit Badle</a> (Selenium IDE Maintainer)</td></tr>
+        <tr><th>License:</th><td>Unknown/Free</td></tr>
+      </table>
+    </div>
+    <div class="column">
+      <table>
+        <tr><th>Released:</th><td>May 3, 2011</td></tr>
+        <tr><th>Version:</th><td>0.2</td></tr>
+      </table>
+    </div>
+    <p class="description">This plugin is my attempt to bring the wonderful world of inspections, tips, hints, fixes and refactoring to Selenese! The Selenium Expert goes through your selenium test cases suggesting improvements, giving tips and even lets you apply them with a single click. Recently, Selenium IDE has brought a some improvements that will break some test scripts. The good news is that most of the essential breaking changes introduced in Selenium IDE 1.0.10 have been incorporated into the Selenium Expert. This should make your migration task a few clicks affair. <a href="http://blog.reallysimplethoughts.com/2010/12/28/the-selenium-expert-is-here/">More info</a>.</p>
+  </div>
+  
+  <div class="plugin">
+    <div class="name">Power Debugger</div>
+    <div class="column">
+      <table>
+        <tr><th>Links:</th><td><a href="https://addons.mozilla.org/en-US/firefox/addon/255245/">Download</a> - <a href="http://blog.reallysimplethoughts.com/2010/11/15/the-power-debugger-plugin-v1-0-for-selenium-ide-released/#respond">Support</a></td></tr>
+        <tr><th>Author:</th><td><a href="http://blog.reallysimplethoughts.com">Samit Badle</a> (Selenium IDE Maintainer)</td></tr>
+        <tr><th>License:</th><td>Unknown/Free</td></tr>
+      </table>
+    </div>
+    <div class="column">
+      <table>
+        <tr><th>Released:</th><td>November 15, 2010</td></tr>
+        <tr><th>Version:</th><td>1.0</td></tr>
+      </table>
+    </div>
+    <p class="description">This plugin for Selenium-IDE improves debugging and troubleshooting issues with scripts. This plugin adds the pause on fail tool to the Selenium IDE toolbar. When pause on fail is turned on, Selenium IDE would pause the execution of the test case when there is an error or a command failure, allowing you to troubleshoot the problem. <a href="http://blog.reallysimplethoughts.com/2010/11/15/the-power-debugger-plugin-v1-0-for-selenium-ide-released/">More info</a>.</p>
+  </div>
+  
+  <div class="plugin">
+    <div class="name">File Logging</div>
+    <div class="column">
+      <table>
+        <tr><th>Links:</th><td><a href="https://addons.mozilla.org/en-US/firefox/addon/177844/">Download</a> - <a href="http://blog.reallysimplethoughts.com/2010/08/16/file-logging-extension-for-selenium-ide-v1-6-released/#respond">Support</a></td></tr>
+        <tr><th>Author:</th><td><a href="http://blog.reallysimplethoughts.com">Samit Badle</a> (Selenium IDE Maintainer)</td></tr>
+        <tr><th>License:</th><td>Unknown/Free</td></tr>
+      </table>
+    </div>
+    <div class="column">
+      <table>
+        <tr><th>Released:</th><td>August 18, 2010</td></tr>
+        <tr><th>Version:</th><td>1.7</td></tr>
+      </table>
+    </div>
+    <p class="description">This plugin for Selenium-IDE saves log messages to a file in real time at a user selectable log level. Once this plugin is installed, a FileLogging tab will be added to the options dialog and a FileLogging menu will be added to the log pane. <a href="http://blog.reallysimplethoughts.com/2010/08/16/file-logging-extension-for-selenium-ide-v1-6-released/">More info</a>.</p>
+  </div>
+  
+  <div class="plugin">
+    <div class="name">Log Search Bar</div>
+    <div class="column">
+      <table>
+        <tr><th>Links:</th><td><a href="https://addons.mozilla.org/en-US/firefox/addon/210844/">Download</a> - <a href="http://blog.reallysimplethoughts.com/2010/08/02/log-search-bar-plugin-for-selenium-ide/#respond">Support</a></td></tr>
+        <tr><th>Author:</th><td><a href="http://blog.reallysimplethoughts.com">Samit Badle</a> (Selenium IDE Maintainer)</td></tr>
+        <tr><th>License:</th><td>Unknown/Free</td></tr>
+      </table>
+    </div>
+    <div class="column">
+      <table>
+        <tr><th>Released:</th><td>August 2, 2010</td></tr>
+        <tr><th>Version:</th><td>1.1</td></tr>
+      </table>
+    </div>
+    <p class="description">A plugin for Selenium-IDE to show a find toolbar in the log pane making it easy to search the displayed log messages. Once this plugin is installed, the log pane will be changed to contain the find toolbar similar to the one found in the Firefox browser. <a href="http://blog.reallysimplethoughts.com/2010/08/02/log-search-bar-plugin-for-selenium-ide/">More info</a>.</p>
   </div>
 
   <div class="plugin">
@@ -412,78 +558,6 @@
   </div>
 
   <div class="plugin">
-    <div class="name">Highlight Elements</div>
-    <div class="column">
-      <table>
-        <tr><th>Links:</th><td><a href="https://addons.mozilla.org/en-US/firefox/addon/228386/">Download</a> - <a href="http://blog.reallysimplethoughts.com/2011/07/27/highlight-elements-plugin-v1-2-for-selenium-ide/#respond">Support</a></td></tr>
-        <tr><th>Author:</th><td><a href="http://blog.reallysimplethoughts.com">Samit Badle</a></td></tr>
-        <tr><th>License:</th><td>Unknown/Free</td></tr>
-      </table>
-    </div>
-    <div class="column">
-      <table>
-        <tr><th>Released:</th><td>August 3, 2010</td></tr>
-        <tr><th>Version:</th><td>1.2</td></tr>
-      </table>
-    </div>
-    <p class="description">This plugin for Selenium-IDE highlights elements specified in the Selenese commands on the web page as the test case is executed. Once this plugin is installed, a Highlight elements button will be available on the Selenium-IDE main window and Sidebar. <a href="http://blog.reallysimplethoughts.com/2011/07/27/highlight-elements-plugin-v1-2-for-selenium-ide">More info</a>.</p>
-  </div>
-
-  <div class="plugin">
-    <div class="name">Test Suite Batch Converter</div>
-    <div class="column">
-      <table>
-        <tr><th>Links:</th><td><a href="https://addons.mozilla.org/en-US/firefox/addon/197691/">Download</a> - <a href="http://blog.reallysimplethoughts.com/2011/01/11/test-suite-batch-converter-plugin-v1-5-released/#respond">Support</a></td></tr>
-        <tr><th>Author:</th><td><a href="http://blog.reallysimplethoughts.com">Samit Badle</a></td></tr>
-        <tr><th>License:</th><td>Unknown/Free</td></tr>
-      </table>
-    </div>
-    <div class="column">
-      <table>
-        <tr><th>Released:</th><td>January 13, 2011</td></tr>
-        <tr><th>Version:</th><td>1.5</td></tr>
-      </table>
-    </div>
-    <p class="description">A plugin for Selenium-IDE to convert one or more test suites, including their test cases, from the html format to any other format supported by the Selenium-IDE. <a href="http://blog.reallysimplethoughts.com/2011/01/11/test-suite-batch-converter-plugin-v1-5-released/">More info</a>.</p>
-  </div>
-  
-  <div class="plugin">
-    <div class="name">Selenium Expert</div>
-    <div class="column">
-      <table>
-        <tr><th>Links:</th><td><a href="https://addons.mozilla.org/en-US/firefox/addon/268716/">Download</a> - <a href="http://blog.reallysimplethoughts.com/2010/12/28/the-selenium-expert-is-here/#respond">Support</a></td></tr>
-        <tr><th>Author:</th><td><a href="http://blog.reallysimplethoughts.com">Samit Badle</a></td></tr>
-        <tr><th>License:</th><td>Unknown/Free</td></tr>
-      </table>
-    </div>
-    <div class="column">
-      <table>
-        <tr><th>Released:</th><td>May 3, 2011</td></tr>
-        <tr><th>Version:</th><td>0.2</td></tr>
-      </table>
-    </div>
-    <p class="description">This plugin is my attempt to bring the wonderful world of inspections, tips, hints, fixes and refactoring to Selenese! The Selenium Expert goes through your selenium test cases suggesting improvements, giving tips and even lets you apply them with a single click. Recently, Selenium IDE has brought a some improvements that will break some test scripts. The good news is that most of the essential breaking changes introduced in Selenium IDE 1.0.10 have been incorporated into the Selenium Expert. This should make your migration task a few clicks affair. <a href="http://blog.reallysimplethoughts.com/2010/12/28/the-selenium-expert-is-here/">More info</a>.</p>
-  </div>
-  
-  <div class="plugin">
-    <div class="name">Power Debugger</div>
-    <div class="column">
-      <table>
-        <tr><th>Links:</th><td><a href="https://addons.mozilla.org/en-US/firefox/addon/255245/">Download</a> - <a href="http://blog.reallysimplethoughts.com/2010/11/15/the-power-debugger-plugin-v1-0-for-selenium-ide-released/#respond">Support</a></td></tr>
-        <tr><th>Author:</th><td><a href="http://blog.reallysimplethoughts.com">Samit Badle</a></td></tr>
-        <tr><th>License:</th><td>Unknown/Free</td></tr>
-      </table>
-    </div>
-    <div class="column">
-      <table>
-        <tr><th>Released:</th><td>November 15, 2010</td></tr>
-        <tr><th>Version:</th><td>1.0</td></tr>
-      </table>
-    </div>
-    <p class="description">This plugin for Selenium-IDE improves debugging and troubleshooting issues with scripts. This plugin adds the pause on fail tool to the Selenium IDE toolbar. When pause on fail is turned on, Selenium IDE would pause the execution of the test case when there is an error or a command failure, allowing you to troubleshoot the problem. <a href="http://blog.reallysimplethoughts.com/2010/11/15/the-power-debugger-plugin-v1-0-for-selenium-ide-released/">More info</a>.</p>
-  </div>
-  
-  <div class="plugin">
     <div class="name">Flex Pilot X</div>
     <div class="column">
       <table>
@@ -499,60 +573,6 @@
       </table>
     </div>
     <p class="description">A Selenium IDE plugin for integrating with Flex-Pilot, for Flex automation. <a href="http://github.com/admc/flex-pilot-x">More info</a>.</p>
-  </div>
-  
-  <div class="plugin">
-    <div class="name">File Logging</div>
-    <div class="column">
-      <table>
-        <tr><th>Links:</th><td><a href="https://addons.mozilla.org/en-US/firefox/addon/177844/">Download</a> - <a href="http://blog.reallysimplethoughts.com/2010/08/16/file-logging-extension-for-selenium-ide-v1-6-released/#respond">Support</a></td></tr>
-        <tr><th>Author:</th><td><a href="http://blog.reallysimplethoughts.com">Samit Badle</a></td></tr>
-        <tr><th>License:</th><td>Unknown/Free</td></tr>
-      </table>
-    </div>
-    <div class="column">
-      <table>
-        <tr><th>Released:</th><td>August 18, 2010</td></tr>
-        <tr><th>Version:</th><td>1.7</td></tr>
-      </table>
-    </div>
-    <p class="description">This plugin for Selenium-IDE saves log messages to a file in real time at a user selectable log level. Once this plugin is installed, a FileLogging tab will be added to the options dialog and a FileLogging menu will be added to the log pane. <a href="http://blog.reallysimplethoughts.com/2010/08/16/file-logging-extension-for-selenium-ide-v1-6-released/">More info</a>.</p>
-  </div>
-  
-  <div class="plugin">
-    <div class="name">Log Search Bar</div>
-    <div class="column">
-      <table>
-        <tr><th>Links:</th><td><a href="https://addons.mozilla.org/en-US/firefox/addon/210844/">Download</a> - <a href="http://blog.reallysimplethoughts.com/2010/08/02/log-search-bar-plugin-for-selenium-ide/#respond">Support</a></td></tr>
-        <tr><th>Author:</th><td><a href="http://blog.reallysimplethoughts.com">Samit Badle</a></td></tr>
-        <tr><th>License:</th><td>Unknown/Free</td></tr>
-      </table>
-    </div>
-    <div class="column">
-      <table>
-        <tr><th>Released:</th><td>August 2, 2010</td></tr>
-        <tr><th>Version:</th><td>1.1</td></tr>
-      </table>
-    </div>
-    <p class="description">A plugin for Selenium-IDE to show a find toolbar in the log pane making it easy to search the displayed log messages. Once this plugin is installed, the log pane will be changed to contain the find toolbar similar to the one found in the Firefox browser. <a href="http://blog.reallysimplethoughts.com/2010/08/02/log-search-bar-plugin-for-selenium-ide/">More info</a>.</p>
-  </div>
-  
-  <div class="plugin">
-    <div class="name">Stored Variables Viewer</div>
-    <div class="column">
-      <table>
-        <tr><th>Links:</th><td><a href="https://addons.mozilla.org/en-US/firefox/addon/189780/">Download</a> - <a href="http://blog.reallysimplethoughts.com/2010/07/01/the-stored-variables-viewer-plugin-for-selenium-ide/#respond">Support</a></td></tr>
-        <tr><th>Author:</th><td><a href="http://blog.reallysimplethoughts.com">Samit Badle</a></td></tr>
-        <tr><th>License:</th><td>Unknown/Free</td></tr>
-      </table>
-    </div>
-    <div class="column">
-      <table>
-        <tr><th>Released:</th><td>September 28, 2010</td></tr>
-        <tr><th>Version:</th><td>1.3</td></tr>
-      </table>
-    </div>
-    <p class="description">A plugin for Selenium-IDE to view the stored variables within Selenium IDE. Stored variables are created using the store, storeText, storeExpression and other similar store* commands. This plugin allows you to view these variables when the test is running. <a href="http://blog.reallysimplethoughts.com/2010/07/01/the-stored-variables-viewer-plugin-for-selenium-ide/">More info</a>.</p>
   </div>
   
   <div class="plugin">
@@ -596,7 +616,7 @@
     <div class="column">
       <table>
         <tr><th>Links:</th><td><a href="https://addons.mozilla.org/en-US/firefox/addon/85794/">Download</a> - <a href="https://github.com/davehunt/selenium-ide-flowcontrol/issues">Support</a></td></tr>
-        <tr><th>Author:</th><td><a href="http://seleniumexamples.com/blog/">Dave Hunt</a></td></tr>
+        <tr><th>Author:</th><td><a href="http://seleniumexamples.com/blog/">Dave Hunt</a> (Selenium IDE Maintainer)</td></tr>
         <tr><th>License:</th><td>Apache</td></tr>
       </table>
     </div>
@@ -614,7 +634,7 @@
     <div class="column">
       <table>
         <tr><th>Links:</th><td><a href="https://addons.mozilla.org/en-US/firefox/addon/85793/">Download</a> - <a href="https://github.com/davehunt/selenium-ide-webdriver-backed-formatters/issues">Support</a></td></tr>
-        <tr><th>Author:</th><td><a href="http://seleniumexamples.com/blog/">Dave Hunt</a></td></tr>
+        <tr><th>Author:</th><td><a href="http://seleniumexamples.com/blog/">Dave Hunt</a> (Selenium IDE Maintainer)</td></tr>
         <tr><th>License:</th><td>Mozilla Public License</td></tr>
       </table>
     </div>
@@ -632,7 +652,7 @@
     <div class="column">
       <table>
         <tr><th>Links:</th><td><a href="https://addons.mozilla.org/en-US/firefox/addon/separated-values-formatter/">Download</a> - <a href="https://github.com/davehunt/selenium-ide-separated-values-formatter/issues">Support</a></td></tr>
-        <tr><th>Author:</th><td><a href="http://seleniumexamples.com/blog/">Dave Hunt</a></td></tr>
+        <tr><th>Author:</th><td><a href="http://seleniumexamples.com/blog/">Dave Hunt</a> (Selenium IDE Maintainer)</td></tr>
         <tr><th>License:</th><td>Apache</td></tr>
       </table>
     </div>
