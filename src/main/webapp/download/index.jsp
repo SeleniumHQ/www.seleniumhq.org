@@ -481,6 +481,24 @@
     </div>
     <p class="description">This plugin is my attempt to bring the wonderful world of inspections, tips, hints, fixes and refactoring to Selenese! The Selenium Expert goes through your selenium test cases suggesting improvements, giving tips and even lets you apply them with a single click. Recently, Selenium IDE has brought a some improvements that will break some test scripts. The good news is that most of the essential breaking changes introduced in Selenium IDE 1.0.10 have been incorporated into the Selenium Expert. This should make your migration task a few clicks affair. <a href="http://blog.reallysimplethoughts.com/2010/12/28/the-selenium-expert-is-here/">More info</a>.</p>
   </div>
+  
+  <div class="plugin">
+    <div class="name">Stored Variables Viewer</div>
+    <div class="column">
+      <table>
+        <tr><th>Links:</th><td><a href="https://addons.mozilla.org/en-US/firefox/addon/stored-variables-viewer-seleni/">Download</a> - <a href="http://blog.reallysimplethoughts.com/2012/07/30/stored-variables-plugin-v1-21-for-selenium-ide-released/#respond">Support</a></td></tr>
+        <tr><th>Author:</th><td><a href="http://blog.reallysimplethoughts.com">Samit Badle</a> (Selenium IDE Maintainer)</td></tr>
+        <tr><th>License:</th><td>Unknown/Free</td></tr>
+      </table>
+    </div>
+    <div class="column">
+      <table>
+        <tr><th>Released:</th><td>July 30, 2012</td></tr>
+        <tr><th>Version:</th><td>1.21</td></tr>
+      </table>
+    </div>
+    <p class="description">This plugin for Selenium-IDE to allows you to view and delete the stored variables within Selenium IDE using an easy to use user interface. Stored variables are created using the store, storeText, storeExpression and other similar store* commands. This plugin allows you to view these variables when the test is running. <a href="http://blog.reallysimplethoughts.com/2012/07/30/stored-variables-plugin-v1-21-for-selenium-ide-released/">More info</a>.</p>
+  </div>
 
   <div class="plugin">
     <div class="name">Test Results</div>
