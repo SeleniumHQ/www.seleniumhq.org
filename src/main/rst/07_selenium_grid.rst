@@ -90,7 +90,7 @@ The hub receives a test to be executed along with information on which
 browser and 'platform' (i.e. WINDOWS, LINUX, etc) where the test should be run.  It 'knows' the 
 configuration of each node that has been 'registered' to the hub.  Using this information it
 selects an available node that has the requested browser-platform combination.  Once a node has
-been selected, Selenium commands initiated by the test are send the the hub, which passes them to 
+been selected, Selenium commands initiated by the test are send to the hub, which passes them to
 the node assigned to that test.  The node runs the browser, and executes the Selenium commands
 within that browser against the application under test.
 
