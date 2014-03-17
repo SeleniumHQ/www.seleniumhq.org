@@ -46,6 +46,8 @@ If you want to
 
   <a href="http://saucelabs.com"><img src="images/sponsors/saucelabs.jpg" alt="Sauce Labs"></a>
 
+  <p>If you or your company are interested in sponsoring the Selenium project, you can find out more in the <a href="sponsor">sponsoring section</a> of this site.</p>
+
   <h2>Selenium News</h2>
 
   <%@include file="/jsp/news.jspf"%>
