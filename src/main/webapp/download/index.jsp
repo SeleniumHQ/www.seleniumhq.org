@@ -240,6 +240,24 @@
     <p class="description">This plugin is made of 2 parts, a servlet that lives on the NODE machine and does the actual moving of the mouse, and an extension of the Selenium Grid, to send an HTTP request to the servlet before a new test session is started.</p>
   </div>
 
+  <div class="plugin">
+    <div class="name">VisGrid-UI for Selenium Grid 2.0</div>
+    <div class="column">
+      <table>
+        <tr><th>Links:</th><td><a href="http://www.codoid.com/products/view/2/30">VisGrid-UI for Selenium Grid 2.0</a></td></tr>
+        <tr><th>Author:</th><td><a href="http://www.codoid.com">Codoid</a></td></tr>
+        <tr><th>License:</th><td>Apache License/Free</td></tr>
+      </table>
+    </div>
+    <div class="column">
+      <table>
+        <tr><th>Released:</th><td>2014</td></tr>
+        <tr><th>Version:</th><td>1.0</td></tr>
+      </table>
+    </div>
+    <p class="description">VisGrid is a GUI for Selenium Grid. You can start hub, create and attach a Selenium node very easily and quickly.</p>
+  </div>
+
   <a name="side_plugins"/>
   <h3>Selenium IDE Plugins</h3>
   <p>Selenium IDE can be extended through its own plugin system. Here are a number of plugins that have been created using it. For more information on how to create your own plugin or have it listed, see the <a href="http://seleniumhq.org/projects/ide/plugins.html">plugin tutorial page</a>.</p>
