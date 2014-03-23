@@ -106,7 +106,7 @@ Selenium-IDE.
 
 Installation
 -------------
-Installation is rather a misnomer for Selenium. Selenium has set of libraries available
+Installation is rather a misnomer for Selenium. Selenium has a set of libraries available
 in the programming language of your choice. You could download them from `downloads page`_
 
 Once you've chosen a language to work with, you simply need to:
