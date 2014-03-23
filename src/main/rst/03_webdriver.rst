@@ -1470,7 +1470,7 @@ how to build test suites for maintainability, extensibility, and reduced fragili
 the AUT frequently change.  The approach most Selenium experts are now recommending is to design
 your test code using the Page Object Design Pattern along with possibly a Page Factory.  
 Selenium-WebDriver provides support for this by supplying a PageFactory class in Java and C#.  
-This is presented,along with other advanced topics, in the 
+This is presented, along with other advanced topics, in the
 :ref:`next chapter <chapter04-reference>`.  Also, for high-level description of this
 technique, you may want to look at the
 :ref:`Test Design Considerations chapter <chapter06-reference>`.  Both of these
