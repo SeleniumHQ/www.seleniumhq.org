@@ -50,7 +50,7 @@
   <h3>Selenium Server (formerly the Selenium RC Server)</h3>
   <p>The Selenium Server is needed in order to run either Selenium RC style scripts or Remote Selenium Webdriver ones. The 2.x server is a drop-in replacement for the old Selenium RC server and is designed to be backwards compatible with your existing infrastructure.</p>
   <p>Download version <a
-    href="http://selenium-release.storage.googleapis.com/2.40/selenium-server-standalone-2.40.0.jar">2.40.0</a>
+    href="http://selenium-release.storage.googleapis.com/2.41/selenium-server-standalone-2.41.0.jar">2.41.0</a>
   </p>
   <p>To use the Selenium Server in a Grid configuration <a href="http://code.google.com/p/selenium/wiki/Grid2">see the wiki page</a>.</p>
 
@@ -59,10 +59,10 @@
   features of the WebDriver InternetExplorerDriver. Please make sure that this
   is available on your $PATH (or %PATH% on Windows) in order for the IE Driver
   to work as expected.</p>
-  <p>Download version 2.40.0 for (recommended) <a
-    href="http://selenium-release.storage.googleapis.com/2.40/IEDriverServer_Win32_2.40.0.zip">32
+  <p>Download version 2.41.0 for (recommended) <a
+    href="http://selenium-release.storage.googleapis.com/2.41/IEDriverServer_Win32_2.41.0.zip">32
     bit Windows IE</a> or <a
-    href="http://selenium-release.storage.googleapis.com/2.40/IEDriverServer_x64_2.40.0.zip">64 bit Windows IE</a><br/>
+    href="http://selenium-release.storage.googleapis.com/2.41/IEDriverServer_x64_2.41.0.zip">64 bit Windows IE</a><br/>
     <a href="http://selenium.googlecode.com/git/cpp/iedriverserver/CHANGELOG">CHANGELOG</a></p>
 
   <a name="client-drivers"/>
@@ -84,17 +84,17 @@
     <tbody>
       <tr>
         <td>Java</td>
-        <td>2.40.0</td>
-        <td>2014-02-19</td>
-        <td><a href="http://selenium-release.storage.googleapis.com/2.40/selenium-java-2.40.0.zip">Download</a>&nbsp;&nbsp;</td>
+        <td>2.41.0</td>
+        <td>2014-03-27</td>
+        <td><a href="http://selenium-release.storage.googleapis.com/2.41/selenium-java-2.41.0.zip">Download</a>&nbsp;&nbsp;</td>
         <td><a href="http://selenium.googlecode.com/git/java/CHANGELOG">Change log</a>&nbsp;&nbsp;</td>
         <td><a href="http://selenium.googlecode.com/git/docs/api/java/index.html" alt="Javadoc">Javadoc</a></td>
       </tr>
       <tr>
         <td>C#</td>
-        <td>2.40.0</td>
-        <td>2014-02-19</td>
-        <td><a href="http://selenium-release.storage.googleapis.com/2.40/selenium-dotnet-2.40.0.zip">Download</a></td>
+        <td>2.41.0</td>
+        <td>2014-03-27</td>
+        <td><a href="http://selenium-release.storage.googleapis.com/2.41/selenium-dotnet-2.41.0.zip">Download</a></td>
         <td><a href="http://selenium.googlecode.com/git/dotnet/CHANGELOG">Change log</a></td>
         <td><a href="http://selenium.googlecode.com/git/docs/api/dotnet/index.html">API docs</a></td>
       </tr>
