@@ -125,7 +125,7 @@
     </tbody>
   </table>
   <h4>C# NuGet</h4>
-  <p>NuGet latest release is 2.40.0, Released on 2014-02-19</p>
+  <p>NuGet latest release is 2.41.0, Released on 2014-03-27</p>
   <ul>
     <li><a href="http://www.nuget.org/List/Packages/Selenium.RC">RC</a></li>
     <li><a href="http://www.nuget.org/List/Packages/Selenium.WebDriver">WebDriver</a></li>
