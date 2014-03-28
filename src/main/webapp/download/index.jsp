@@ -108,16 +108,16 @@
       </tr>
       <tr>
         <td>Python</td>
-        <td>2.40.0</td>
-        <td>2014-02-19</td>
+        <td>2.41.0</td>
+        <td>2014-03-28</td>
         <td><a href="http://pypi.python.org/pypi/selenium">Download</a></td>
         <td><a href="http://selenium.googlecode.com/git/py/CHANGES">Change log</a></td>
         <td><a href="http://selenium.googlecode.com/git/docs/api/py/api.html">API docs</a></td>
       </tr>
       <tr>
         <td>Javascript (Node)</td>
-        <td>2.40.0</td>
-        <td>2014-02-19</td>
+        <td>2.41.0</td>
+        <td>2014-03-28</td>
         <td><a href="https://npmjs.org/package/selenium-webdriver">Download</a></td>
         <td><a href="https://github.com/SeleniumHQ/selenium/blob/master/javascript/node/selenium-webdriver/CHANGES.md">Change log</a></td>
         <td><a href="http://selenium.googlecode.com/git/docs/api/javascript/index.html">API docs</a></td>
