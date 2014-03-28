@@ -100,8 +100,8 @@
       </tr>
       <tr>
         <td>Ruby</td>
-        <td>2.40.0</td>
-        <td>2014-02-19</td>
+        <td>2.41.0</td>
+        <td>2014-03-28</td>
         <td><a href="http://rubygems.org/gems/selenium-webdriver">Download</a></td>
         <td><a href="http://selenium.googlecode.com/git/rb/CHANGES">Change log</a></td>
         <td><a href="http://selenium.googlecode.com/git/docs/api/rb/index.html">API docs</a></td>
