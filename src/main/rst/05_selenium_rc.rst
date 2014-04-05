@@ -1542,7 +1542,7 @@ If you see a message like this, be sure you started the Selenium Server. If
 so, then there is a problem with the connectivity between the Selenium Client 
 Library and the Selenium Server. 
 
-When starting with Selenium RC, most people begin by running thier test program
+When starting with Selenium RC, most people begin by running their test program
 (with a Selenium Client Library) and the Selenium Server on the same machine.  To
 do this use "localhost" as your connection parameter.
 We recommend beginning this way since it reduces the influence of potential networking problems
@@ -1562,7 +1562,7 @@ Unable to Load the Browser
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Ok, not a friendly error message, sorry, but if the Selenium Server cannot load the browser 
-you will likley see this error.
+you will likely see this error.
  
 .. code-block:: bash
 
@@ -1590,7 +1590,7 @@ for your application to be tested.
 
 Firefox Refused Shutdown While Preparing a Profile 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-This most often occurs when your run your Selenium RC test program against Firefox,
+This most often occurs when you run your Selenium RC test program against Firefox,
 but you already have a Firefox browser session running and, you didn't specify
 a separate profile when you started the Selenium Server. The error from the 
 test program looks like this:
