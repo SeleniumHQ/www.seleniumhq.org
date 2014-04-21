@@ -26,7 +26,6 @@
 <a title="class in org.openqa.selenium.firefox" href="http://selenium.googlecode.com/git/docs/api/java/org/openqa/selenium/firefox/FirefoxDriver.html">FirefoxDriver</a>,
 <a title="class in org.openqa.selenium.htmlunit" href="http://selenium.googlecode.com/git/docs/api/java/org/openqa/selenium/htmlunit/HtmlUnitDriver.html">HtmlUnitDriver</a>,
 <a title="class in org.openqa.selenium.ie" href="http://selenium.googlecode.com/git/docs/api/java/org/openqa/selenium/ie/InternetExplorerDriver.html">InternetExplorerDriver</a>,
-<a title="class in org.openqa.selenium.iphone" href="http://selenium.googlecode.com/git/docs/api/java/org/openqa/selenium/iphone/IPhoneDriver.html">IPhoneDriver</a>,
 <a title="class in org.openqa.selenium.phantomjs" href="https://github.com/detro/ghostdriver/blob/master/binding/java/src/main/java/org/openqa/selenium/phantomjs/PhantomJSDriver.java">PhantomJSDriver</a>,
 <a title="class in org.openqa.selenium.remote" href="http://selenium.googlecode.com/git/docs/api/java/org/openqa/selenium/remote/RemoteWebDriver.html">RemoteWebDriver</a>,
 <a title="class in org.openqa.selenium.safari" href="http://selenium.googlecode.com/git/docs/api/java/org/openqa/selenium/safari/SafariDriver.html">SafariDriver</a>
