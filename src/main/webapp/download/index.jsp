@@ -146,8 +146,8 @@
     <tbody>
       <tr>
         <td><a href="http://code.google.com/p/chromedriver/">Chrome</a></td>
-        <td><a href="http://chromedriver.storage.googleapis.com/index.html">2.7</a>&nbsp;&nbsp;</td>
-        <td><a href="http://chromedriver.storage.googleapis.com/2.7/notes.txt">change log</a>&nbsp;&nbsp;</td>
+        <td><a href="http://chromedriver.storage.googleapis.com/index.html?path=2.9/">2.9</a>&nbsp;&nbsp;</td>
+        <td><a href="http://chromedriver.storage.googleapis.com/2.9/notes.txt">change log</a>&nbsp;&nbsp;</td>
         <td><a href="http://code.google.com/p/chromedriver/issues/list">issue tracker</a>&nbsp;&nbsp;</td>
         <td><a href="http://code.google.com/p/selenium/wiki/ChromeDriver">selenium wiki page</a>&nbsp;&nbsp;</td>
         <td>Released 2013-11-22</td>
