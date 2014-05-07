@@ -817,7 +817,7 @@ moving between named windows using the "switchTo" method:
 
 .. code-block:: python
 
-    driver.switch_to_window("windowName")
+    driver.switch_to.window("windowName")
 
 .. code-block:: perl
 
@@ -850,7 +850,7 @@ method. Knowing this, it's possible to iterate over every open window like so:
 .. code-block:: python
 
     for handle in driver.window_handles:
-        driver.switch_to_window(handle)
+        driver.switch_to.window(handle)
 
 .. code-block:: perl
 
@@ -867,7 +867,7 @@ You can also switch from frame to frame (or into iframes):
 
 .. code-block:: python
 
-    driver.switch_to_frame("frameName")
+    driver.switch_to.frame("frameName")
 
 .. code-block:: perl
 
@@ -890,7 +890,7 @@ popup, you can access the alert with the following:
 
 .. code-block:: python
 
-    alert = driver.switch_to_alert()
+    alert = driver.switch_to.alert
     # usage: alert.dismiss(), etc.
 
 .. code-block:: perl
