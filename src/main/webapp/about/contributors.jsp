@@ -449,7 +449,7 @@
         </li>
         <li>Involved since 2008 (since 2006 with WebDriver)
         </li>
-        <li>Organization: <a href="http://www.google.com/">Google</a>
+        <li>Organization: <a href="http://www.facebook.com/">Facebook</a>
         </li>
         <li>Favorite method: WebDriver.findElement()
         </li>
