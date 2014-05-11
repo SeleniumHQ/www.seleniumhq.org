@@ -33,8 +33,14 @@ If you want to
   <li>scale and distribute scripts across many environments</li>
 </ul>
 <br />
-<p>Then you want to use <a href="/projects/webdriver/">Selenium WebDriver</a>; a collection of language specific bindings to drive a browser -- the way it is meant to be driven.</p>
-<p>Selenium WebDriver is the successor of <a href="/projects/remote-control/">Selenium Remote Control</a> which has been officially deprecated. The Selenium Server (used by both WebDriver and Remote Control) now also includes built-in grid capabilities.</p>
+
+            <p>Then you want to use <a href="/projects/webdriver/">Selenium WebDriver</a>; a collection of language
+                specific bindings to drive a browser -- the way it is meant to be driven.</p>
+
+            <p>Selenium WebDriver is the successor of <a href="/projects/remote-control/">Selenium Remote Control</a>
+                which has been officially deprecated. The Selenium Server (used by both WebDriver and Remote Control)
+                now also includes built-in grid capabilities.</p>
+
         </td>
       </tr>
     </tbody>
