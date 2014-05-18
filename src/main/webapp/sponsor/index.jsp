@@ -4,7 +4,7 @@
     <title>Sponsoring Selenium</title>
     <%@include file="/jsp/head.jspf"%>
 </head>
-<body class="sectionSupport">
+<body class="sectionAbout">
 <%@include file="/jsp/header.jspf"%>
 <div id="mainContent">
 <h1>Sponsoring Selenium</h1>
@@ -59,11 +59,16 @@
 
 <p>You can use the form on the front page at anytime to make a donation to the Selenium project: just click on the PayPal "Donate" button. These linked buttons point to the Conservancy's account for us, which is a tax-exempt 501(c)(3) organization. As a result, donations to the Selenium project are now tax-deductible.</p>
 <p>If you would prefer to cut a cheque, you may do this as well. Make the check payable to "Software Freedom Conservancy" and write "Directed Donation for Selenium" in the "memo" field. Checks should be sent to the following address, so that the Conservancy can process them:</p>
+
 <pre>
     Software Freedom Conservancy, Inc.
     137 MONTAGUE ST STE 380
     Brooklyn, NY 11201-3548
 </pre>
+
+<p>
+    If you have any questions or plan to write a check, please contact <strong><a href="mailto:sponsorship@seleniumhq.org">sponsorship@seleniumhq.org</a></strong> to talk to the appropriate team.
+</p>
 
 <%@include file="/jsp/footer.jspf"%>
 </body>

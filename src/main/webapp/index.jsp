@@ -46,13 +46,11 @@ If you want to
     </tbody>
   </table>
 
-  <h2>Sponsors</h2>
+  <h2>Selenium Sponsors</h2>
 
-  <p>The Selenium project is sponsored by:</p>
+  Want to support the Selenium project? <a href="/sponsor">Learn more about sponsorship</a> or view the <a href="/sponsors">full list of sponsors</a>.
 
-  <a href="http://saucelabs.com"><img src="images/sponsors/saucelabs.jpg" alt="Sauce Labs"></a>
-
-  <p>If you or your company are interested in sponsoring the Selenium project, you can find out more in the <a href="sponsor">sponsoring section</a> of this site.</p>
+  <%@include file="sponsors/top-sponsors.jspf"%>
 
   <h2>Selenium News</h2>
 

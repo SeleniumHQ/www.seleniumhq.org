@@ -53,6 +53,8 @@
                 <ul>
                     <li><a href="/about/news.jsp">News/Blog</a></li>
                     <li><a href="/about/events.html">Events</a></li>
+                    <li><a href="/sponsor">Sponsoring</a></li>
+                    <li><a href="/sponsors">Sponsors</a></li>
                     <li><a href="/about/contributors.html">Contributors</a></li>
                     <li><a href="/about/license.html">License</a></li>
                     <li><a href="/about/history.html">History</a></li>

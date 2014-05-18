@@ -12,7 +12,24 @@
 </form>
 
 <h5>through sponsorship</h5>
-<p>You can <a href="/sponsor">sponsor the selenium project</a> if you'd like some public recognition of your generous contribution.</p>
+<p>You can <a href="/sponsor">sponsor the Selenium project</a> if you'd like some public recognition of your generous contribution.</p>
+
+
+<%
+    if (!request.getRequestURI().equals("/index.jsp")) {
+%>
+
+<h3>Selenium Sponsors</h3>
+
+<p>
+    See who <a href="/sponsors">supports the Selenium project</a>.
+</p>
+
+<%@include file="/sponsors/selenium-sponsors.jspf"%>
+
+<%
+    }
+%>
 
 <!-- closing "ads" div -->
 </div>
