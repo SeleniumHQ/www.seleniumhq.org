@@ -132,6 +132,28 @@
     <li><a href="http://www.nuget.org/List/Packages/Selenium.WebDriverBackedSelenium">WebDriverBackedSelenium</a></li>
     <li><a href="http://www.nuget.org/List/Packages/Selenium.Support">Support</a></li>
   </ul>
+
+  <hr/>
+
+  <h3>Third Party Drivers, Bindings, and Plugins</h3>
+
+  <p>
+      Selenium can be extended through the use of plugins.  Here are a number of
+      plugins created and maintained by third parties.  For more information on
+      how to create your own plugin or have it listed, consult the docs.
+  </p>
+
+  <p>
+      Please note that these plugins are not supported, maintained, hosted, or
+      endorsed by the Selenium project.  In addition, be advised that the plugins
+      listed below are not necessarily licensed under the Apache License v.2.0.
+      Some of the plugins are available under another free and open source
+      software license; others are only available under a proprietary license.
+      Any questions about plugins and their license of distribution need to be
+      raised with their respective developer(s).
+  </p>
+
+
   <a name="thirdPartyDrivers"></a>
   <h4>Third Party Browser Drivers <span class="unsupported">NOT DEVELOPED</span> by seleniumhq</h4>
   <table>
@@ -228,7 +250,7 @@
       <table>
         <tr><th>Links:</th><td><a href="https://github.com/AutomatedTester/speedy-gonzales-proxy">Proxy extension for Grid and the Node</a> - <a href="https://github.com/AutomatedTester/speedy-gonzales-servlette">Servlet to move the mouse on the NODE</a></td></tr>
         <tr><th>Author:</th><td><a href="http://www.theautomatedtester.co.uk/">David Burns</a></td></tr>
-        <tr><th>License:</th><td>Unknown/Free</td></tr>
+        <tr><th>License:</th><td>Unknown</td></tr>
       </table>
     </div>
     <div class="column">
@@ -271,7 +293,7 @@
       <table>
         <tr><th>Links:</th><td><a href="https://addons.mozilla.org/en-US/firefox/addon/favorites-selenium-ide/">Download</a> - <a href="http://blog.reallysimplethoughts.com/2011/04/07/favorites-for-selenium-ide/#respond">Support</a></td></tr>
         <tr><th>Author:</th><td><a href="http://blog.reallysimplethoughts.com">Samit Badle</a> (Selenium IDE Maintainer)</td></tr>
-        <tr><th>License:</th><td>Unknown/Free</td></tr>
+        <tr><th>License:</th><td>Unknown</td></tr>
       </table>
     </div>
     <div class="column">
@@ -325,7 +347,7 @@
       <table>
         <tr><th>Links:</th><td><a href="https://addons.mozilla.org/en-US/firefox/addon/177844/">Download</a> - <a href="http://blog.reallysimplethoughts.com/2010/08/16/file-logging-extension-for-selenium-ide-v1-6-released/#respond">Support</a></td></tr>
         <tr><th>Author:</th><td><a href="http://blog.reallysimplethoughts.com">Samit Badle</a> (Selenium IDE Maintainer)</td></tr>
-        <tr><th>License:</th><td>Unknown/Free</td></tr>
+        <tr><th>License:</th><td>Other</td></tr>
       </table>
     </div>
     <div class="column">
@@ -343,7 +365,7 @@
       <table>
         <tr><th>Links:</th><td><a href="https://addons.mozilla.org/en-US/firefox/addon/85794/">Download</a> - <a href="https://github.com/davehunt/selenium-ide-flowcontrol/issues">Support</a></td></tr>
         <tr><th>Author:</th><td><a href="http://seleniumexamples.com/blog/">Dave Hunt</a> (Selenium IDE Maintainer)</td></tr>
-        <tr><th>License:</th><td>Apache</td></tr>
+        <tr><th>License:</th><td>Unknown</td></tr>
       </table>
     </div>
     <div class="column">
@@ -361,7 +383,7 @@
       <table>
         <tr><th>Links:</th><td><a href="https://addons.mozilla.org/en-US/firefox/addon/228386/">Download</a> - <a href="http://blog.reallysimplethoughts.com/2011/07/27/highlight-elements-plugin-v1-2-for-selenium-ide/#respond">Support</a></td></tr>
         <tr><th>Author:</th><td><a href="http://blog.reallysimplethoughts.com">Samit Badle</a> (Selenium IDE Maintainer)</td></tr>
-        <tr><th>License:</th><td>Unknown/Free</td></tr>
+        <tr><th>License:</th><td>Unknown</td></tr>
       </table>
     </div>
     <div class="column">
@@ -397,7 +419,7 @@
       <table>
         <tr><th>Links:</th><td><a href="https://addons.mozilla.org/en-US/firefox/addon/210844/">Download</a> - <a href="http://blog.reallysimplethoughts.com/2010/08/02/log-search-bar-plugin-for-selenium-ide/#respond">Support</a></td></tr>
         <tr><th>Author:</th><td><a href="http://blog.reallysimplethoughts.com">Samit Badle</a> (Selenium IDE Maintainer)</td></tr>
-        <tr><th>License:</th><td>Unknown/Free</td></tr>
+        <tr><th>License:</th><td>Unknown</td></tr>
       </table>
     </div>
     <div class="column">
@@ -415,7 +437,7 @@
       <table>
         <tr><th>Links:</th><td><a href="https://addons.mozilla.org/en-US/firefox/addon/page-coverage-selenium-ide/">Download</a> - <a href="http://blog.reallysimplethoughts.com/2012/01/16/page-coverage-v1-0-for-selenium-ide-now-available/#respond">Support</a></td></tr>
         <tr><th>Author:</th><td><a href="http://blog.reallysimplethoughts.com">Samit Badle</a> (Selenium IDE Maintainer)</td></tr>
-        <tr><th>License:</th><td>Unknown/Free</td></tr>
+        <tr><th>License:</th><td>Unknown</td></tr>
       </table>
     </div>
     <div class="column">
@@ -433,7 +455,7 @@
       <table>
         <tr><th>Links:</th><td><a href="https://addons.mozilla.org/en-US/firefox/addon/255245/">Download</a> - <a href="http://blog.reallysimplethoughts.com/2010/11/15/the-power-debugger-plugin-v1-0-for-selenium-ide-released/#respond">Support</a></td></tr>
         <tr><th>Author:</th><td><a href="http://blog.reallysimplethoughts.com">Samit Badle</a> (Selenium IDE Maintainer)</td></tr>
-        <tr><th>License:</th><td>Unknown/Free</td></tr>
+        <tr><th>License:</th><td>Unknown</td></tr>
       </table>
     </div>
     <div class="column">
@@ -451,7 +473,7 @@
       <table>
         <tr><th>Links:</th><td><a href="https://addons.mozilla.org/en-US/firefox/addon/screenshot-on-fail-selenium/">Download</a> - <a href="http://blog.reallysimplethoughts.com/2012/02/20/screenshot-on-fail-v1-0-for-selenium-ide-now-available/#respond">Support</a></td></tr>
         <tr><th>Author:</th><td><a href="http://blog.reallysimplethoughts.com">Samit Badle</a> (Selenium IDE Maintainer)</td></tr>
-        <tr><th>License:</th><td>Unknown/Free</td></tr>
+        <tr><th>License:</th><td>Unknown</td></tr>
       </table>
     </div>
     <div class="column">
@@ -487,7 +509,7 @@
       <table>
         <tr><th>Links:</th><td><a href="https://addons.mozilla.org/en-US/firefox/addon/268716/">Download</a> - <a href="http://blog.reallysimplethoughts.com/2010/12/28/the-selenium-expert-is-here/#respond">Support</a></td></tr>
         <tr><th>Author:</th><td><a href="http://blog.reallysimplethoughts.com">Samit Badle</a> (Selenium IDE Maintainer)</td></tr>
-        <tr><th>License:</th><td>Unknown/Free</td></tr>
+        <tr><th>License:</th><td>Unknown</td></tr>
       </table>
     </div>
     <div class="column">
@@ -505,7 +527,7 @@
       <table>
         <tr><th>Links:</th><td><a href="https://addons.mozilla.org/en-US/firefox/addon/stored-variables-viewer-seleni/">Download</a> - <a href="http://blog.reallysimplethoughts.com/2012/07/30/stored-variables-plugin-v1-21-for-selenium-ide-released/#respond">Support</a></td></tr>
         <tr><th>Author:</th><td><a href="http://blog.reallysimplethoughts.com">Samit Badle</a> (Selenium IDE Maintainer)</td></tr>
-        <tr><th>License:</th><td>Unknown/Free</td></tr>
+        <tr><th>License:</th><td>Unknown</td></tr>
       </table>
     </div>
     <div class="column">
@@ -523,7 +545,7 @@
       <table>
         <tr><th>Links:</th><td><a href="https://addons.mozilla.org/en-US/firefox/addon/test-results-selenium-ide/">Download</a> - <a href="http://blog.reallysimplethoughts.com/2011/10/08/test-results-v1-0-for-selenium-ide-now-available/#respond">Support</a></td></tr>
         <tr><th>Author:</th><td><a href="http://blog.reallysimplethoughts.com">Samit Badle</a> (Selenium IDE Maintainer)</td></tr>
-        <tr><th>License:</th><td>Unknown/Free</td></tr>
+        <tr><th>License:</th><td>Unknown</td></tr>
       </table>
     </div>
     <div class="column">
@@ -541,7 +563,7 @@
       <table>
         <tr><th>Links:</th><td><a href="https://addons.mozilla.org/en-US/firefox/addon/197691/">Download</a> - <a href="http://blog.reallysimplethoughts.com/2011/01/11/test-suite-batch-converter-plugin-v1-5-released/#respond">Support</a></td></tr>
         <tr><th>Author:</th><td><a href="http://blog.reallysimplethoughts.com">Samit Badle</a> (Selenium IDE Maintainer)</td></tr>
-        <tr><th>License:</th><td>Unknown/Free</td></tr>
+        <tr><th>License:</th><td>Unknown</td></tr>
       </table>
     </div>
     <div class="column">
@@ -562,7 +584,7 @@
       <table>
         <tr><th>Links:</th><td><a href="http://addons.seleniumhq.org/grails-formatters/grails-formatters-1.0.xpi">Download</a> - <a href="https://github.com/robfletcher/selenium-ide-grails-formats/issues">Support</a></td></tr>
         <tr><th>Author:</th><td><a href="http://adhockery.blogspot.com">Robert Fletcher</a></td></tr>
-        <tr><th>License:</th><td>Unknown/Free</td></tr>
+        <tr><th>License:</th><td>Unknown</td></tr>
       </table>
     </div>
     <div class="column">
@@ -580,7 +602,7 @@
       <table>
         <tr><th>Links:</th><td><a href="https://addons.mozilla.org/en-US/firefox/addon/selenium-ide-perl-formatter/">Download</a> - <a href="https://addons.mozilla.org/en-US/firefox/addon/selenium-ide-perl-formatter/">Support</a></td></tr>
         <tr><th>Author:</th><td><a href="http://logician.eu">Nate Broderick</a></td></tr>
-        <tr><th>License:</th><td>Apache 2</td></tr>
+        <tr><th>License:</th><td>MPLv1.1</td></tr>
       </table>
     </div>
     <div class="column">
@@ -598,7 +620,7 @@
       <table>
         <tr><th>Links:</th><td><a href="https://addons.mozilla.org/en-US/firefox/addon/selenium-ide-php-formatters/">Download</a> - <a href="https://addons.mozilla.org/en-US/firefox/addon/selenium-ide-php-formatters/">Support</a></td></tr>
         <tr><th>Author:</th><td><a href="http://logician.eu">Dan Chan</a></td></tr>
-        <tr><th>License:</th><td>Apache 2</td></tr>
+        <tr><th>License:</th><td>GPLv3</td></tr>
       </table>
     </div>
     <div class="column">
@@ -654,7 +676,7 @@ Compliant with Selenium command &amp; comment syntax, this formatter output data
       <table>
           <tr><th>Links:</th><td><a href="https://addons.mozilla.org/en-US/firefox/addon/selenium2excel-converter/">Download</a> - <a href="https://addons.mozilla.org/en-US/firefox/addon/selenium2excel-converter/">Docs</a> - <a href="https://sourceforge.net/p/selenium2excel/tickets/">Support</a></td></tr>
         <tr><th>Author:</th><td>Shankar Laggishetti</td></tr>
-        <tr><th>License:</th><td>BSD License</td></tr>
+        <tr><th>License:</th><td>MPLv2</td></tr>
       </table>
     </div>
     <div class="column">
@@ -675,7 +697,7 @@ To use this plug-in users need to have Microsoft Excel installed and it only wor
       <table>
         <tr><th>Links:</th><td><a href="https://addons.mozilla.org/en-US/firefox/addon/separated-values-formatter/">Download</a> - <a href="https://github.com/davehunt/selenium-ide-separated-values-formatter/issues">Support</a></td></tr>
         <tr><th>Author:</th><td><a href="http://seleniumexamples.com/blog/">Dave Hunt</a> (Selenium IDE Maintainer)</td></tr>
-        <tr><th>License:</th><td>Apache</td></tr>
+        <tr><th>License:</th><td>MPLv1.1</td></tr>
       </table>
     </div>
     <div class="column">
@@ -693,7 +715,7 @@ To use this plug-in users need to have Microsoft Excel installed and it only wor
       <table>
         <tr><th>Links:</th><td><a href="https://addons.mozilla.org/en-US/firefox/addon/85793/">Download</a> - <a href="https://github.com/davehunt/selenium-ide-webdriver-backed-formatters/issues">Support</a></td></tr>
         <tr><th>Author:</th><td><a href="http://seleniumexamples.com/blog/">Dave Hunt</a> (Selenium IDE Maintainer)</td></tr>
-        <tr><th>License:</th><td>Mozilla Public License</td></tr>
+        <tr><th>License:</th><td>MPLv1.1</td></tr>
       </table>
     </div>
     <div class="column">
