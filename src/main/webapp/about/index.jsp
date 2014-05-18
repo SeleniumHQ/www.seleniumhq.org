@@ -35,9 +35,9 @@
   <p>Get to know the <a href="contributors.html">people behind the
   projects</a>.</p>
 
-  <h3><a href="history.html">History</a></h3>
+  <h3><a href="history.html">History</a> and <a href="/ecosystem">Ecosystem</a></h3>
 
-  <p>Look back on <a href="history.html">Selenium's past</a>.</p>
+  <p>Look back on <a href="history.html">Selenium's past</a> and check out the <a href="/ecosystem">large ecosystem</a> of Selenium-related companies today.</p>
 
   <h3><a href="roadmap.html">Roadmap</a></h3>
 
