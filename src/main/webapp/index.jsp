@@ -53,7 +53,7 @@ If you want to
     </p>
 
     <p>
-        Although we are in the process of migrating Sauce Labs to our new sponsorship program (launched in May 2014), a special thanks goes out to <a href="http://saucelabs.com">Sauce Labs</a>, which has been a long supporter of Selenium and provides free access to their products.
+        Although we are in the process of migrating them to our new sponsorship program (launched in May 2014), a special thanks goes out to <a href="http://saucelabs.com">Sauce Labs</a>, which has been a long supporter of Selenium and provides free access to their products.
     </p>
 
     <a href="http://saucelabs.com"><img src="images/sponsors/saucelabs.jpg" alt="Sauce Labs"></a>
