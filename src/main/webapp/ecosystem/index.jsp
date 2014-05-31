@@ -110,7 +110,11 @@
         </li>
         <li>
             <a rel="nofollow" href="http://www.maestrodev.com/">MaestroDev</a> -
-            Provides automated, cross-browser execution of Selenium tests on both private and public cloud
+            Provides automated, cross-browser execution of Selenium tests on both private and public cloud.
+        </li>
+        <li>
+            <a rel="nofollow" href="http://www.qualitiasoft.com">Qualitia</a> -
+            Scriptless test automation builder for Selenium.
         </li>
     </ul>
 
