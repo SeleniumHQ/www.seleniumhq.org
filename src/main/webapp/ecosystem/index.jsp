@@ -13,6 +13,53 @@
         Over the last decade, a large ecosystem of opensource projects and commercial services have sprouted up around Selenium. This page attempts to capture some of the companies that make use of Selenium as a central part of what they do.
     </p>
 
+    <h2>Functional Test Services</h2>
+
+    <ul>
+        <li>
+            <a rel="nofollow" href="http://saucelabs.com">Sauce Labs</a> -
+            cloud-based service to run Selenium tests faster and more easily.
+        </li>
+        <li>
+            <a rel="nofollow" href="https://www.browserstack.com/">BrowserStack</a> -
+            Selenium cloud testing in 300+ Real Desktop and Mobile Browsers.
+        </li>
+        <li>
+            <a rel="nofollow" href="http://testingbot.com/">TestingBot</a> -
+            easy cross browser testing with Selenium in the cloud.
+        </li>
+    </ul>
+
+    <h2>Monitoring &amp; Load Testing Services</h2>
+
+    <ul>
+        <li>
+            <a rel="nofollow" href="http://www.neustar.biz/enterprise/web-performance">Neustar</a> -
+            provides Selenium-based load testing and website monitoring services.
+        </li>
+    </ul>
+
+    <h2>Tools with Selenium Support</h2>
+
+    <ul>
+        <li>
+            <a rel="nofollow" href="http://TestOptimal.com">TestOptimal</a> -
+            A Model-Based test automation tool leveraging the power of Selenium.
+        </li>
+        <li>
+            <a rel="nofollow" href="http://www.xqual.com/">XStudio</a> -
+            Test Management tool with Selenium integration capabilities.
+        </li>
+        <li>
+            <a rel="nofollow" href="http://www.maestrodev.com/">MaestroDev</a> -
+            Provides automated, cross-browser execution of Selenium tests on both private and public cloud.
+        </li>
+        <li>
+            <a rel="nofollow" href="http://www.qualitiasoft.com">Qualitia</a> -
+            Scriptless test automation builder for Selenium.
+        </li>
+    </ul>
+
     <h2>Commercial Support, Services &amp; Training</h2>
 
     <ul>
@@ -68,53 +115,6 @@
         <li>
             <a rel="nofollow" href="http://www.w3qa.eu">W3QA</a> -
             On-demand test automation services dedicated to Selenium.
-        </li>
-    </ul>
-
-    <h2>Functional Test Services</h2>
-
-    <ul>
-        <li>
-            <a rel="nofollow" href="http://saucelabs.com">Sauce Labs</a> -
-            cloud-based service to run Selenium tests faster and more easily.
-        </li>
-        <li>
-            <a rel="nofollow" href="https://www.browserstack.com/">BrowserStack</a> -
-            Selenium cloud testing in 300+ Real Desktop and Mobile Browsers.
-        </li>
-        <li>
-            <a rel="nofollow" href="http://testingbot.com/">TestingBot</a> -
-            easy cross browser testing with Selenium in the cloud.
-        </li>
-    </ul>
-
-    <h2>Monitoring &amp; Load Testing Services</h2>
-
-    <ul>
-        <li>
-            <a rel="nofollow" href="http://www.neustar.biz/enterprise/web-performance">Neustar</a> -
-            provides Selenium-based load testing and website monitoring services.
-        </li>
-    </ul>
-
-    <h2>Tools with Selenium Support</h2>
-
-    <ul>
-        <li>
-            <a rel="nofollow" href="http://TestOptimal.com">TestOptimal</a> -
-            A Model-Based test automation tool leveraging the power of Selenium.
-        </li>
-        <li>
-            <a rel="nofollow" href="http://www.xqual.com/">XStudio</a> -
-            Test Management tool with Selenium integration capabilities.
-        </li>
-        <li>
-            <a rel="nofollow" href="http://www.maestrodev.com/">MaestroDev</a> -
-            Provides automated, cross-browser execution of Selenium tests on both private and public cloud.
-        </li>
-        <li>
-            <a rel="nofollow" href="http://www.qualitiasoft.com">Qualitia</a> -
-            Scriptless test automation builder for Selenium.
         </li>
     </ul>
 
