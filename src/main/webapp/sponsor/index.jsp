@@ -37,7 +37,7 @@
 
 <h2>Logo Requirements</h2>
 
-<p>Logos must be 160 pixels wide and 80 pixels tall.</p>
+<p>Logos may be up to 468 pixels wide and 80 pixels tall.</p>
 
 <h2>Sponsorship Levels</h2>
 
