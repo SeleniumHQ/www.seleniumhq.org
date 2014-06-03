@@ -50,7 +50,7 @@
   <h3>Selenium Server (formerly the Selenium RC Server)</h3>
   <p>The Selenium Server is needed in order to run either Selenium RC style scripts or Remote Selenium Webdriver ones. The 2.x server is a drop-in replacement for the old Selenium RC server and is designed to be backwards compatible with your existing infrastructure.</p>
   <p>Download version <a
-    href="http://selenium-release.storage.googleapis.com/2.42/selenium-server-standalone-2.42.1.jar">2.42.1</a>
+    href="http://selenium-release.storage.googleapis.com/2.42/selenium-server-standalone-2.42.2.jar">2.42.2</a>
   </p>
   <p>To use the Selenium Server in a Grid configuration <a href="http://code.google.com/p/selenium/wiki/Grid2">see the wiki page</a>.</p>
 
@@ -84,9 +84,9 @@
     <tbody>
       <tr>
         <td>Java</td>
-        <td>2.42.1</td>
-        <td>2014-05-29</td>
-        <td><a href="http://selenium-release.storage.googleapis.com/2.42/selenium-java-2.42.1.zip">Download</a>&nbsp;&nbsp;</td>
+        <td>2.42.2</td>
+        <td>2014-06-03</td>
+        <td><a href="http://selenium-release.storage.googleapis.com/2.42/selenium-java-2.42.2.zip">Download</a>&nbsp;&nbsp;</td>
         <td><a href="http://selenium.googlecode.com/git/java/CHANGELOG">Change log</a>&nbsp;&nbsp;</td>
         <td><a href="http://selenium.googlecode.com/git/docs/api/java/index.html" alt="Javadoc">Javadoc</a></td>
       </tr>
