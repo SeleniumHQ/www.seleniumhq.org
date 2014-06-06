@@ -58,6 +58,10 @@
             <a rel="nofollow" href="http://www.qualitiasoft.com">Qualitia</a> -
             Scriptless test automation builder for Selenium.
         </li>
+        <li>
+            <a rel="nofollow" href="http://webperformance.com/permlink/selenium-webdriver-integration">Web Performance Load Tester</a> -
+            The no-coding real-browser load testing software that knows how many users your website can handle.
+        </li>
     </ul>
 
     <h2>Commercial Support, Services &amp; Training</h2>
