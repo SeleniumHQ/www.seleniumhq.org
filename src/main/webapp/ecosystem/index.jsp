@@ -103,6 +103,10 @@
             <a rel="nofollow" href="http://www.wexte.com/">Wexte</a> -
             Selenium-based regression testing, performance analysis, load testing and monitoring
         </li>
+        <li>
+            <a rel="nofollow" href="http://selenium2.ru/trainings.html">Selenium2.Ru</a> -
+            Selenium consulting, training and coaching in Russian
+        </li>
     </ul>
 
     <h2>Commercial Training</h2>
