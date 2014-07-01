@@ -132,14 +132,6 @@ Drawbacks
         to the <a class="reference external" href="http://groups.google.com/group/selenium-developers">Selenium
             Developers Group</a>. You can also track the activity of the development team by checking out the read-only <a class="reference external" href="http://groups.google.com/group/selenium-developer-activity">Selenium Developer Activity Group</a>.</p>
     <p>If you do supply a patch we will need you to <a href="https://spreadsheets.google.com/spreadsheet/viewform?hl=en_US&formkey=dFFjXzBzM1VwekFlOWFWMjFFRjJMRFE6MQ#gid=0">sign the CLA</a>. We are a part of <a href="http://www.sfconservancy.org/">SFC</a></p>
-
-    <div class="admonition note">
-        <p class="first admonition-title">Note</p>
-
-        <p class="last">Useful information for people willing to code for Selenium-RC can be
-            found in the <a class="reference external" href="http://wiki.openqa.org/display/SRC/Developer%27s+Guide">Developer&#8217;s
-                Guide</a> at OpenQA&#8217;s wiki.</p>
-    </div>
 </div>
 
 
