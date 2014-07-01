@@ -51,11 +51,9 @@
     <h2>Writing Documentation</h2>
 
     <p>For the most part, our documentation is held in source control for the main website. The main documentation is in
-        plain text
-        so use your favorite editor offline to edit the pages. The source for this main
-        site is <a class="reference external" href="http://site.selenium.googlecode.com/git/">here</a>
-        and if you are familiar with Subversion you should be able to
-        bring it down to your local system for offline editing.</p>
+        plain text so use your favorite editor offline to edit the pages. The source for this main
+        site is <a class="reference external" href="https://code.google.com/p/selenium/source/checkout?repo=site">here</a>
+        and if you are familiar with Git you should be able to bring it down to your local system for offline editing.</p>
 
     <div class="section" id="submitting-documentation-bugs">
         <h3>Submitting Documentation &#8220;Bugs&#8221;</h3>
