@@ -83,7 +83,7 @@ your project.
                     <dependency>
                         <groupId>org.seleniumhq.selenium</groupId>
                         <artifactId>selenium-java</artifactId>
-                        <version>2.33.0</version>
+                        <version>2.42.2</version>
                     </dependency>
                     <dependency>
                         <groupId>com.opera</groupId>
@@ -95,7 +95,7 @@ your project.
                         <dependency>
                             <groupId>com.opera</groupId>
                             <artifactId>operadriver</artifactId>
-                            <version>1.3</version>
+                            <version>1.5</version>
                             <exclusions>
                                 <exclusion>
                                     <groupId>org.seleniumhq.selenium</groupId>
@@ -213,7 +213,7 @@ additional processes or run any installers before using it, as opposed to the pr
 with Selenium-RC.
 
 Note: additional steps are required to use `Chrome Driver`_, `Opera Driver`_, `Android Driver`_
-and `iPhone Driver`_
+and `iOS Driver`_
 
 You're now ready to write some code. An easy way to get started is this
 example, which searches for the term "Cheese" on Google and then outputs the
@@ -260,12 +260,16 @@ The normal way to do this is by calling "get":
     driver.Url = "http://www.google.com";
 
 .. code-block:: ruby
-    
+
     driver.get "http://www.google.com"
 
 .. code-block:: python
 
     driver.get("http://www.google.com")
+
+.. code-block:: perl
+
+    $driver->('http://www.google.com')
 
 Dependent on several factors, including the OS/Browser combination, 
 WebDriver may or may not wait for the page to load. In some circumstances, 
@@ -318,6 +322,9 @@ Example of how to find an element that looks like this:
     from selenium.webdriver.common.by import By
     element = driver.find_element(by=By.ID, value="coolestWidgetEvah")
 
+.. code-block:: perl
+
+    $element = $driver->find_element('coolestWidgetEvah','id')
 
 By Class Name
 +++++++++++++
@@ -358,6 +365,10 @@ Example of how to find an element that looks like this:
     from selenium.webdriver.common.by import By
     cheeses = driver.find_elements(By.CLASS_NAME, "cheese")
 
+.. code-block:: perl
+
+    @cheeses = $driver->find_elements('cheese', 'class');
+
 
 By Tag Name
 +++++++++++
@@ -392,6 +403,10 @@ Example of how to find an element that looks like this:
     frame = driver.find_element(By.TAG_NAME, "iframe")
 
 
+.. code-block:: perl
+
+    $frame = $driver->find_element('iframe', 'tag_name');
+
 By Name
 +++++++
 
@@ -423,6 +438,10 @@ Example of how to find an element that looks like this:
 
     from selenium.webdriver.common.by import By
     cheese = driver.find_element(By.NAME, "cheese")
+
+.. code-block:: perl
+
+    $cheese = $driver->find_element('cheese', 'name');
 
 
 By Link Text
@@ -460,6 +479,7 @@ Example of how to find an element that looks like this:
 
     from selenium.webdriver.common.by import By
     cheese = driver.find_element(By.LINK_TEXT, "cheese")
+
 
 
 By Partial Link Text
@@ -578,6 +598,10 @@ This is a little abstract, so for the following piece of HTML:
     from selenium.webdriver.common.by import By
     inputs = driver.find_elements(By.XPATH, "//input")
 
+.. code-block:: perl
+
+    @inputs = $driver->find_elements('//input')
+
 
 The following number of matches will be found
 
@@ -622,7 +646,7 @@ Simple example on a page that has jQuery loaded:
 Finding all the input elements to the every label on a page:
 
 .. code-block:: java
-    
+
     List<WebElement> labels = driver.findElements(By.tagName("label"));
     List<WebElement> inputs = (List<WebElement>) ((JavascriptExecutor)driver).executeScript(
         "var labels = arguments[0], inputs = []; for (var i=0; i < labels.length; i++){" +
@@ -694,6 +718,15 @@ with SELECT tags isn't too bad:
         print "Value is: " + option.get_attribute("value")
         option.click()
 
+.. code-block:: perl
+
+    $select = $driver->find_element('select', 'tag_name');
+    @allOptions = $driver->find_child_element($select, "option", 'tag_name');
+    foreach $option (@allOptions){
+        print "Value is: ".$option->get_attribute("value");
+        $option->click();
+    }
+
 
 This will find the first "SELECT" element on the page, and cycle through each
 of its OPTIONs in turn, printing out their values, and selecting each in turn.
@@ -714,14 +747,14 @@ provides useful methods for interacting with these.
     select.SelectByText("Edam");
 
 .. code-block:: ruby
-	
+
     # available since 2.14
 	select = Selenium::WebDriver::Support::Select.new(driver.find_element(:tag_name, "select"))
 	select.deselect_all()
 	select.select_by(:text, "Edam")
 
 .. code-block:: python
-    
+
     # available since 2.12
     from selenium.webdriver.support.ui import Select 
     select = Select(driver.find_element_by_tag_name("select"))
@@ -737,14 +770,18 @@ way to do this would be to find the "submit" button and click it:
 .. code-block:: java
 
     driver.findElement(By.id("submit")).click();
-    
+
 .. code-block:: ruby
 
     driver.find_element(:id, "submit").click
-    
+
 .. code-block:: python
 
     driver.find_element_by_id("submit").click()    
+
+.. code-block:: perl
+
+    $driver->find_element('submit','id')->click()
 
 Alternatively, WebDriver has the convenience method "submit" on every element.
 If you call this on an element within a form, WebDriver will walk up the DOM
@@ -758,10 +795,14 @@ element isn't in a form, then the ``NoSuchElementException`` will be thrown:
 .. code-block:: ruby
 
     element.submit
-    
+
 .. code-block:: python
 
     element.submit()
+
+.. code-block:: perl
+
+    $element->submit()
 
 
 Moving Between Windows and Frames
@@ -773,10 +814,15 @@ moving between named windows using the "switchTo" method:
 .. code-block:: java
 
     driver.switchTo().window("windowName");
-    
+
 .. code-block:: python
 
-    driver.switch_to_window("windowName")
+    driver.switch_to.window("windowName")
+
+.. code-block:: perl
+
+    $windows = $driver->get_window_handles()
+    $driver->switch_to_window($windows->[1]);
 
 All calls to ``driver`` will now be interpreted as being directed to the
 particular window. But how do you know the window's name? Take a look at the
@@ -794,7 +840,7 @@ method. Knowing this, it's possible to iterate over every open window like so:
     for (String handle : driver.getWindowHandles()) {
         driver.switchTo().window(handle);
     }
-    
+
 .. code-block:: ruby
 
     driver.window_handles.each do |handle|
@@ -804,8 +850,14 @@ method. Knowing this, it's possible to iterate over every open window like so:
 .. code-block:: python
 
     for handle in driver.window_handles:
-        driver.switch_to_window(handle)
+        driver.switch_to.window(handle)
 
+.. code-block:: perl
+
+    $windows = $driver->get_window_handles()
+    foreach $window (@$windows){
+        $driver->switch_to_window($window);
+    }
 
 You can also switch from frame to frame (or into iframes):
 
@@ -815,22 +867,11 @@ You can also switch from frame to frame (or into iframes):
 
 .. code-block:: python
 
-    driver.switch_to_frame("frameName")
+    driver.switch_to.frame("frameName")
 
-It's possible to access subframes by separating the path with a dot, and you
-can specify the frame by its index too. That is:
+.. code-block:: perl
 
-.. code-block:: java
-
-    driver.switchTo().frame("frameName.0.child");
-    
-.. code-block:: python
-
-    driver.switch_to_frame("frameName.0.child")
-
-
-would go to the frame named "child" of the first subframe of the frame called
-"frameName". **All frames are evaluated as if from *top*.**
+    $driver->switch_to_frame('frameName');
 
 Popup Dialogs
 ~~~~~~~~~~~~~~
@@ -842,15 +883,21 @@ popup, you can access the alert with the following:
 .. code-block:: java
 
     Alert alert = driver.switchTo().alert();
-    
+
 .. code-block:: ruby
 
     alert = driver.switch_to.alert
 
 .. code-block:: python
 
-    alert = driver.switch_to_alert()
+    alert = driver.switch_to.alert
     # usage: alert.dismiss(), etc.
+
+.. code-block:: perl
+
+    $driver->get_alert_text();
+    $driver->accept_alert();
+
 
 This will return the currently open alert object. With this object you can now accept,
 dismiss, read its contents or even type into a prompt. This interface works equally
@@ -871,7 +918,7 @@ lives on the main WebDriver interface, but it's simply a synonym to:
 .. code-block:: java
 
     driver.navigate().to("http://www.example.com");
-    
+
 .. code-block:: ruby
 
     driver.navigate.to "http://www.example.com"
@@ -879,6 +926,11 @@ lives on the main WebDriver interface, but it's simply a synonym to:
 .. code-block:: python
 
     driver.get("http://www.example.com")  # python doesn't have driver.navigate
+
+.. code-block:: perl
+
+    $driver->navigate('http://www.example.com');  
+
 
 To reiterate: "``navigate().to()``" and "``get()``" do exactly the same thing.
 One's just a lot easier to type than the other!
@@ -889,7 +941,7 @@ The "navigate" interface also exposes the ability to move backwards and forwards
 
     driver.navigate().forward();
     driver.navigate().back();
-    
+
 .. code-block:: ruby
 
     driver.navigate.forward
@@ -899,6 +951,11 @@ The "navigate" interface also exposes the ability to move backwards and forwards
 
     driver.forward()
     driver.back()
+
+.. code-block:: perl
+    $driver->go_forward();
+    $driver->go_back();
+
 
 Please be aware that this functionality depends entirely on the underlying
 browser. It's just possible that something unexpected may happen when you call
@@ -938,12 +995,12 @@ an alternative is to find a smaller page on the site, typically the 404 page is 
     driver.manage().deleteAllCookies();
 
 .. code-block:: python
-    
+
     # Go to the correct domain
     driver.get("http://www.example.com")
 
     # Now set the cookie. Here's one for the entire domain
-    # the cookie name here is 'key' and it's value is 'value'
+    # the cookie name here is 'key' and its value is 'value'
     driver.add_cookie({'name':'key', 'value':'value', 'path':'/'})
     # additional keys that can be passed in are:
     # 'domain' -> String, 
@@ -964,24 +1021,28 @@ an alternative is to find a smaller page on the site, typically the 404 page is 
 
     # Go to the correct domain
     driver.get "http://www.example.com"
-    
+
     # Now set the cookie. Here's one for the entire domain
-    # the cookie name here is 'key' and it's value is 'value'
+    # the cookie name here is 'key' and its value is 'value'
     driver.manage.add_cookie(:name => 'key', :value => 'value')
     # additional keys that can be passed in are:
     # :path => String, :secure -> Boolean, :expires -> Time, DateTime, or seconds since epoch
-    
+
     # And now output all the available cookies for the current URL
     driver.manage.all_cookies.each { |cookie| 
         puts "&#35;{cookie[:name]} => &#35;{cookie[:value]}" 
     }
-    
+
     # You can delete cookies in 2 ways
     # By name
     driver.manage.delete_cookie("CookieName")
     # Or all of them
     driver.manage.delete_all_cookies
-    
+
+
+.. code-block:: perl
+
+    $driver->get_all_cookies();
 
 Changing the User Agent
 ~~~~~~~~~~~~~~~~~~~~~~~
@@ -1000,6 +1061,13 @@ This is easy with the `Firefox Driver`_:
     profile['general.useragent.override'] = "some UA string"
     driver = Selenium::WebDriver.for :firefox, :profile => profile
 
+.. code-block:: python
+
+    profile = webdriver.FirefoxProfile()
+    profile.set_preference("general.useragent.override", "some UA string")
+    driver = webdriver.Firefox(profile)
+
+
 Drag And Drop
 ~~~~~~~~~~~~~
 
@@ -1012,12 +1080,12 @@ Native events are required to be enabled.
     WebElement target = driver.findElement(By.name("target"));
 
     (new Actions(driver)).dragAndDrop(element, target).perform();
-    
+
 .. code-block:: ruby
 
     element = driver.find_element(:name => 'source')
     target = driver.find_element(:name => 'target')
-    
+
     driver.action.drag_and_drop(element, target).perform
 
 .. code-block:: python
@@ -1025,8 +1093,12 @@ Native events are required to be enabled.
     from selenium.webdriver.common.action_chains import ActionChains
     element = driver.find_element_by_name("source")
     target =  driver.find_element_by_name("target")
-    
+
     ActionChains(driver).drag_and_drop(element, target).perform()
+
+.. code-block:: perl
+
+    $element->drag(216,158);
 
 
 Driver Specifics and Tradeoffs
@@ -1121,6 +1193,10 @@ If you can't wait, enabling JavaScript support is very easy:
 
     driver = webdriver.Remote("http://localhost:4444/wd/hub", webdriver.DesiredCapabilities.HTMLUNITWITHJS)
 
+.. code-block:: perl
+
+    $driver = new Selenium::Remote::Driver( browser_name=>'firefox', port=> 4444, version=>'', platform=>'LINUX', javascript=>1, auto_close=>1);
+
 This will cause the HtmlUnit Driver to emulate Firefox 3.6's JavaScript
 handling by default.
 
@@ -1203,12 +1279,12 @@ are disabled by default. To enable them:
     driver = webdriver.Firefox(profile)
 
 .. code-block:: ruby
-    
+
     profile = Selenium::WebDriver::Firefox::Profile.new
     profile.native_events = true
     driver = Selenium::WebDriver.for :firefox, :profile => profile
-    
-    
+
+
 
 Info
 ++++
@@ -1219,7 +1295,7 @@ Internet Explorer Driver
 ~~~~~~~~~~~~~~~~~~~~~~~~
 
 This driver is controlled by a .dll and is thus only available on Windows OS.
-Each Selenium release has it's core functionality tested against versions
+Each Selenium release has its core functionality tested against versions
 6, 7 and 8 on XP, and 9 on Windows7.
 
 Usage
@@ -1322,18 +1398,15 @@ Opera Driver
 See the `Opera Driver wiki article <http://code.google.com/p/selenium/wiki/OperaDriver>`_ in the
 Selenium Wiki for information on using the Opera Driver.
 
-iPhone Driver
+iOS Driver
 ~~~~~~~~~~~~~~
 
-See the `iPhone Driver wiki article <http://code.google.com/p/selenium/wiki/IPhoneDriver>`_ in the
-Selenium Wiki for information on using the Mac iOS Driver.
+See either the `ios-driver <http://ios-driver.github.io/ios-driver/>`_ or `appium <http://appium.io>`_ projects.
 
 Android Driver
 ~~~~~~~~~~~~~~
 
-See the `Android Driver wiki article <http://code.google.com/p/selenium/wiki/AndroidDriver>`_
-in the Selenium Wiki for information on using the Android Driver.
-
+See the `Selendroid project <http://selendroid.io>`_
 
 
 Alternative Back-Ends: Mixing WebDriver and RC Technologies
@@ -1426,13 +1499,13 @@ Unpack IEDriverServer and/or chromedriver and put them in a directory which is o
 Start the server on the command line with 
 
 .. code-block:: bash
-  
+
   java -jar <path_to>/selenium-server-standalone-<version>.jar
 
 If you want to use native events functionality, indicate this on the command line with the option 
 
 .. code-block:: bash
-  
+
   -Dwebdriver.enable.native.events=1
 
 For other command line options, execute 
@@ -1466,7 +1539,7 @@ how to build test suites for maintainability, extensibility, and reduced fragili
 the AUT frequently change.  The approach most Selenium experts are now recommending is to design
 your test code using the Page Object Design Pattern along with possibly a Page Factory.  
 Selenium-WebDriver provides support for this by supplying a PageFactory class in Java and C#.  
-This is presented,along with other advanced topics, in the 
+This is presented, along with other advanced topics, in the
 :ref:`next chapter <chapter04-reference>`.  Also, for high-level description of this
 technique, you may want to look at the
 :ref:`Test Design Considerations chapter <chapter06-reference>`.  Both of these

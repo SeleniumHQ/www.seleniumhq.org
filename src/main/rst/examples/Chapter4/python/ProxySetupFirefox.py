@@ -14,7 +14,7 @@ proxy = Proxy({
 driver = webdriver.Firefox(proxy=proxy)
 
 # for remote
-caps = webdriver.DesiredCapabilities.FIREFOX
+caps = webdriver.DesiredCapabilities.FIREFOX.copy()
 proxy.add_to_capabilities(caps)
 
 driver = webdriver.Remote(desired_capabilities=caps)

@@ -222,17 +222,15 @@ Selenium-WebDriver
 Selenium-WebDriver supports the following browsers along with the operating systems these browsers
 are compatible with.
 
-* Google Chrome 12.0.712.0+
-* Internet Explorer 6, 7, 8, 9 - 32 and 64-bit where applicable
-* Firefox 3.0, 3.5, 3.6, 4.0, 5.0, 6, 7
-* Opera 11.5+
-* HtmlUnit 2.9
-* Android -- 2.3+ for phones and tablets (devices & emulators) 
-* iOS 3+ for phones (devices & emulators) and 3.2+ for tablets (devices & emulators)
-
-*Note:  At the time of writing there is an emulator bug with Android 2.3 that prevents the driver
-from working properly on device emulators.  However, it works fine on tablet emulators and real
-devices.*  
+* Google Chrome
+* Internet Explorer 6, 7, 8, 9, 10 - 32 and 64-bit where applicable
+* Firefox: latest ESR, previous ESR, current release, one previous release
+* Safari
+* Opera
+* HtmlUnit
+* phantomjs
+* Android (with Selendroid or appium)
+* iOS (with ios-driver or appium)
 
 
 Selenium 1.0 and Selenium-RC.

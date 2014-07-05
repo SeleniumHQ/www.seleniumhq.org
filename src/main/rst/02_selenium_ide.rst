@@ -61,7 +61,7 @@ Menu Bar
 The File menu has options for Test Case and Test Suite (suite of Test Cases).
 Using these you can add a new Test Case, open a Test Case, save a Test Case,
 export Test Case in a language of your choice. You can also open the recent
-Test Case.All these options are also available for Test Suite.
+Test Case. All these options are also available for Test Suite.
 
 The Edit menu allows copy, paste, delete, undo, and select all 
 operations for editing the commands in your test case.  The Options menu allows 
@@ -965,7 +965,7 @@ the ``dom=`` label when specifying a DOM locator.
 
 You can use Selenium itself as well as other sites and extensions to explore
 the DOM of your web application. A good reference exists on `W3Schools
-<http://www.w3schools.com/HTMLDOM/dom_reference.asp>`_. 
+<http://www.w3schools.com/js/js_htmldom.asp>`_. 
 
 Locating by CSS
 ~~~~~~~~~~~~~~~

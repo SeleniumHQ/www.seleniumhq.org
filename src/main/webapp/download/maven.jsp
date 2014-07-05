@@ -1,5 +1,4 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
-
+<!DOCTYPE html>
 <html>
 <head>
     <link rel="stylesheet" type="text/css" href="../fancybox/jquery.fancybox-1.3.4.css" media="screen" />  
@@ -22,7 +21,7 @@
     &lt;dependency&gt;
         &lt;groupId&gt;org.seleniumhq.selenium&lt;/groupId&gt;
         &lt;artifactId&gt;selenium-java&lt;/artifactId&gt;
-        &lt;version&gt;2.33.0&lt;/version&gt;
+        &lt;version&gt;2.42.2&lt;/version&gt;
     &lt;/dependency&gt;  
 </pre></p>
   
@@ -61,7 +60,7 @@
     &lt;dependency&gt;
         &lt;groupId&gt;org.seleniumhq.selenium&lt;/groupId&gt;
         &lt;artifactId&gt;selenium-firefox-driver&lt;/artifactId&gt;
-        &lt;version&gt;2.33.0&lt;/version&gt;
+        &lt;version&gt;2.42.2&lt;/version&gt;
     &lt;/dependency&gt;  
 </pre></p>
 
@@ -74,7 +73,7 @@
     &lt;dependency&gt;
         &lt;groupId&gt;org.seleniumhq.selenium&lt;/groupId&gt;
         &lt;artifactId&gt;selenium-server&lt;/artifactId&gt;
-        &lt;version&gt;2.33.0&lt;/version&gt;
+        &lt;version&gt;2.42.2&lt;/version&gt;
     &lt;/dependency&gt;  
 </pre> Now you can create a <tt>SeleniumServer</tt> instance yourself and start it.</p>
 
@@ -90,7 +89,7 @@
     &lt;dependency&gt;
         &lt;groupId&gt;com.opera&lt;/groupId&gt;
         &lt;artifactId&gt;operadriver&lt;/artifactId&gt;
-        &lt;version&gt;1.3&lt;/version&gt;
+        &lt;version&gt;1.5&lt;/version&gt;
     &lt;/dependency&gt;  
   </pre>
   
@@ -99,7 +98,7 @@
     &lt;dependency&gt;
         &lt;groupId&gt;com.github.detro.ghostdriver&lt;/groupId&gt;
         &lt;artifactId&gt;phantomjsdriver&lt;/artifactId&gt;
-        &lt;version&gt;1.0.3&lt;/version&gt;
+        &lt;version&gt;1.0.4&lt;/version&gt;
     &lt;/dependency&gt;  
   </pre>
     

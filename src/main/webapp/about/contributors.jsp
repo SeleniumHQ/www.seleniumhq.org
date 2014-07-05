@@ -1,5 +1,4 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
-"http://www.w3.org/TR/html4/loose.dtd">
+<!DOCTYPE html>
 <html>
   <head>
     <title>
@@ -218,7 +217,7 @@
         </li>
         <li>Involved since 2007, on WebDriver related work
         </li>
-        <li>Organization: <a href="http://www.ebayinc.com/">eBay</a>
+        <li>Organization: adrift
         </li>
         <li>Favorite Selenium method: Native events
         </li>
@@ -450,7 +449,7 @@
         </li>
         <li>Involved since 2008 (since 2006 with WebDriver)
         </li>
-        <li>Organization: <a href="http://www.google.com/">Google</a>
+        <li>Organization: <a href="http://www.facebook.com/">Facebook</a>
         </li>
         <li>Favorite method: WebDriver.findElement()
         </li>

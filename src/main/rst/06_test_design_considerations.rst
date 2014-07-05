@@ -135,34 +135,6 @@ running hundreds of tests, each with its own log, this will be time-consuming,
 and the immediate feedback of asserts will be more appropriate.  Asserts are more
 commonly used than verifys due to their immediate feedback.
 
-Trade-offs: *assertTextPresent*, *assertElementPresent*, *assertText* 
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-You should now be familiar with these commands, and the mechanics of using them.
-If not, please refer to Chapter 3 first.  When constructing your tests, you
-will need to decide
-
-- Do I only check that the text exists on the page?  (*verify/assertTextPresent*)
-- Do I only check that the HTML element exists on the page?  That is, the text, image, or other content is not to be checked, only the HTML tag is what is relevant. (*verify/assertElementPresent*)
-- Must I test both, the element and its text content?  (*verify/assertText*)
-
-There is no right answer.  It depends on the requirements for your test.  Which, of course, 
-depend on the requirements for the application you're testing.
-If in doubt, use *assertText* since this is the strictest type of checkpoint.  You 
-can always change it later but at least you won't be missing any potential failures.
-
-*Verify/assertText* is the *most specific test* type.  This can fail if either the HTML element (tag)
-OR the text is not what your test is expecting.
-Perhaps your web-designers are frequently changing the page and you don't want your test to fail every time
-they do this because the changes themselves are expected periodically.  However, assume you still need to
-check that *something* is on the page, say a paragraph, or heading text, or an image.  In this case you
-can use *verify/assertElementPresent*.  It will ensure that a particular type of element exists
-(and if using XPath can ensure it exists relative to other objects within the page).  But you don't
-care what the content is.  You only care that a specific element, say, an image, is at a specific location.
-
-Getting a feel for these types of decisions will come with time and a little experience.  They are
-easy concepts, and easy to change in your test.
-
 Location Strategies
 -------------------
 		
@@ -692,19 +664,17 @@ Data Driven Testing refers to using the same test (or tests) multiple times with
    source.close()
    # Execute For loop for each String in the values array
    for search in values:
-       sel.open("/")
-       sel.type("q", search)
-       sel.click("btnG")
-       sel.waitForPageToLoad("30000")
-       self.failUnless(sel.is_text_present("Results * for " + search))
+       driver.get('http://www.google.com')
+       driver.find_element_by_name("q").send_keys(search)
+       driver.find_element_by_id("btnG").click()
+       element = WebDriverWait(driver, 5).until(ExpectedConditions.presence_of_element_located((By.XPATH, "//*[contains(., 'Results')]"))
+       assert search in element.text
 
 
 The Python script above opens a text file.  This file contains a different search string on each line. The code then saves this in an array of strings, and iterates over the array doing a search and assert on each string. 
 
 This is a very basic example, but the idea is to show that running a test with varying data can be done easily with a programming or scripting 
-language.  For more examples, refer to the `Selenium RC wiki`_ for examples of reading data from a spreadsheet or for using the data provider capabilities of TestNG.  Additionally, this is a well-known topic among test automation professionals including those who don't use Selenium so searching the internet on "data-driven testing" should reveal many blogs on this topic.
-
-.. _`Selenium RC wiki`: http://wiki.openqa.org/pages/viewpage.action?pageID=21430298
+language. Additionally, this is a well-known topic among test automation professionals including those who don't use Selenium so searching the internet on "data-driven testing" should reveal many blogs on this topic.
 
    
    
@@ -744,10 +714,10 @@ Consider the example of a registered email address to be retrieved from a databa
    String emailaddress = result.getString("email_address");
    
    // Use the emailAddress value to login to application.
-   selenium.type("userID", emailaddress);
-   selenium.type("password", secretPassword);
-   selenium.click("loginButton");
-   selenium.waitForPageToLoad(timeOut);
-   Assert.assertTrue(selenium.isTextPresent("Welcome back" +emailaddress), "Unable to log in for user" +emailaddress)
+   driver.findElement(By.id, "userID").sendKeys(emailaddress);
+   driver.findElement(By.id, "password").sendKeys(secretPassword);
+   driver.findElement(By.id, "loginButton").click();
+   WebElement element = driver.findElement(By.xpath, "//*[contains(.,'Welcome back ')]");
+   Assert.assertTrue(element.getText().contains(emailaddress), "Unable to log in for user" + emailaddress)
    
 This is a simple Java example of data retrieval from a database. 

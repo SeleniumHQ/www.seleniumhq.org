@@ -23,3 +23,5 @@ deploying to google appengine run:
 Specify your username/password to the appengine account by specifying
 it in your ~/.m2/settings.xml file, as described here:
 http://www.kindleit.net/maven_gae_plugin/examples/passwordPrompt.html
+
+Sphinx may be installed using easy_install or pip

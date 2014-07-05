@@ -1,5 +1,4 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
-"http://www.w3.org/TR/html4/loose.dtd">
+<!DOCTYPE html>
 <html>
 <head>
 <title>Selenium IDE</title>
@@ -7,9 +6,6 @@
 </head>
 <body class="sectionProjects">
 <%@include file="/jsp/header.jspf"%><div id="mainContent">
-  <p>
-  Clearly this will get flushed out further, but for now...
-  </p>
   <p>
     <h3>Documentation</h3>
     <ol>

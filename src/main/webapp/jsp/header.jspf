@@ -53,7 +53,10 @@
                 <ul>
                     <li><a href="/about/news.jsp">News/Blog</a></li>
                     <li><a href="/about/events.html">Events</a></li>
+                    <li><a href="/sponsor">Sponsoring</a></li>
+                    <li><a href="/sponsors">Sponsors</a></li>
                     <li><a href="/about/contributors.html">Contributors</a></li>
+                    <li><a href="/ecosystem">Ecosystem</a></li>
                     <li><a href="/about/license.html">License</a></li>
                     <li><a href="/about/history.html">History</a></li>
                     <li><a href="http://code.google.com/p/selenium/wiki/RoadMap">Roadmap</a></li>
@@ -70,8 +73,8 @@
         <ul id="nav">
             <li><a href="/download/">Selenium Downloads</a>
                 <ul>
-                    <li><a href="http://code.google.com/p/selenium/downloads/list">Latest Releases</a></li>
-                    <li><a href="/download/previous.html">Previous Releases</a></li>
+                    <li><a href="http://selenium-release.storage.googleapis.com/index.html">Latest Releases</a></li>
+                    <li><a href="https://code.google.com/p/selenium/downloads/list?can=1&q=">Previous Releases</a></li>
                     <li><a href="/download/source.html">Source Code</a></li>
                     <li><a href="/download/maven.html">Maven Information</a></li>
                 </ul>

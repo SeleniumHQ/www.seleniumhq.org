@@ -1,5 +1,4 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
-
+<!DOCTYPE html>
 <html>
 <head>
   <meta name="generator" content=
@@ -25,14 +24,20 @@
 
   <p>Find Selenium <a href="events.html">meetups, conferences and other events</a> in your area!</p>
 
+    <h3><a href="/sponsors">Sponsors</a> &amp; <a href="/sponsor">Sponsorship</a></h3>
+
+    <p>
+        We couldn't do this on our own. Learn how to <a href="/sponsor">sponsor</a> the project and see how the <a href="/sponsors">active sponsors</a> are.
+    </p>
+
   <h3><a href="contributors.html">Who made Selenium</a></h3>
 
   <p>Get to know the <a href="contributors.html">people behind the
   projects</a>.</p>
 
-  <h3><a href="history.html">History</a></h3>
+  <h3><a href="history.html">History</a> and <a href="/ecosystem">Ecosystem</a></h3>
 
-  <p>Look back on <a href="history.html">Selenium's past</a>.</p>
+  <p>Look back on <a href="history.html">Selenium's past</a> and check out the <a href="/ecosystem">large ecosystem</a> of Selenium-related companies today.</p>
 
   <h3><a href="roadmap.html">Roadmap</a></h3>
 
@@ -48,23 +53,6 @@
 
   <p>Learn more about Selenium and how it works in <a href="/docs">our docs</a>!</p>
 
-  <h2>Selenium Sponsors</h2>
-
-  <h3>JetBrains</h3>
-
-  <p>
-    JetBrains has graciously donated free licenses of their excellent IDE, IntelliJ IDEA, to Selenium committers.
-  </p>
-  <a href="http://www.jetbrains.com/idea/features/javascript.html" style="display:block; background:#0d3a9e url(http://www.jetbrains.com/idea/opensource/img/all/banners/idea468x60_blue.gif) no-repeat 10px 50%; border:solid 1px #0d3a9e; margin:0;padding:0;text-decoration:none;text-indent:0;letter-spacing:-0.001em; width:466px; height:58px" alt="Java IDE with advanced HTML/CSS/JavaScript editor for hardcore web-developers" title="Java IDE with advanced HTML/CSS/JavaScript editor for hardcore web-developers"><span style="margin: 5px 0 0 52px;padding: 0;float: left;font-size: 12px;cursor:pointer;  background-image:none;border:0;color: #acc4f9; font-family: trebuchet ms,arial,sans-serif;font-weight: normal;text-align:left;">Crazy about</span><span style="margin:0 0 0 205px;padding:18px 0 2px 0; line-height:13px;font-size:12px;cursor:pointer;  background-image:none;border:0;display:block; width:255px; color: #acc4f9; font-family: trebuchet ms,arial,sans-serif;font-weight: normal;text-align:left;">Java IDE with advanced HTML/CSS/JavaScript <br/>editor for hardcore web-developers</span></a>
-
-  <h3>Atlassian</h3>
-
-<a href="http://www.atlassian.com/software/bamboo" title="Continuous Integration Tools" style="background-color:#036;display:block;width:155px;padding:5px;"><img border="0" alt="Continuous Integration Tools" src="http://www.atlassian.com/dms/wac/images/logoAtlassian.png"/></a>
-http://www.atlassian.com/software/bamboo/images/badges/v2/continuous_integration_tools_lg.png"></a>
-
-  <p>
-    We use a free license of <a href="http://www.atlassian.com/software/bamboo/">Atlassian Bamboo</a> for our continuous integration/build system.
-  </p>
 <%@include file="/jsp/footer.jspf"%>
 </body>
 </html>

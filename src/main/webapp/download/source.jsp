@@ -1,5 +1,4 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
-
+<!DOCTYPE html>
 <html>
 <head>
   <meta name="generator" content=
@@ -37,26 +36,6 @@
         </td>
       </tr>
 
-      <tr>
-        <td>CubicTest</td>
-
-        <td><a href="http://svn.openqa.org/svn/cubictest">Anonymous
-        SVN</a> | 
-        <a href=
-        "http://svn.openqa.org/fisheye/browse/cubictest">Browse
-        SVN</a></td>
-      </tr>
-
-      <tr>
-        <td>Bromine</td>
-
-        <td><a href="http://svn.openqa.org/svn/bromine">Anonymous
-        SVN</a> | 
-        <a href=
-        "http://svn.openqa.org/fisheye/browse/bromine">Browse
-        SVN</a></td>
-      </tr>
-      
     </tbody>
   </table>
 <%@include file="/jsp/footer.jspf"%>

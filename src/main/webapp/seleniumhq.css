@@ -1167,7 +1167,7 @@ ol.faq li a:hover {
 
 /* Basic Structure */
 	body {
-		min-width: 610px;
+		min-width: 710px;
 		margin: 20px;
 	}
 
@@ -1279,13 +1279,12 @@ ol.faq li a:hover {
 	#header {
 		background: #455372 url("images/header_bl.png") bottom left repeat-x;
 		position: relative;
-		min-height: 39px;
+		min-height: 69px;
 		height: 5em;
 		padding: 0;
 		voice-family: "\"}\"";
 		voice-family: inherit;
 		height: 3em;
-		padding: 15px 0;
 	} #ignored {}
 	
 	#header h1 {
@@ -1377,12 +1376,10 @@ ol.faq li a:hover {
 /* Search Field */
 
 	#header form {
-		position: absolute;
-		top: 0;
-		right: 0;
-		padding: 12px 20px 0 0;
+		float: right;
 		background: url("images/header_tr.gif") no-repeat top right;
-		margin: 0; /* need for IE Mac */
+		margin-left: 20px;
+		padding: 12px 20px 0 20px;
 		text-align: right; /* need for IE Mac */
 		white-space: nowrap; /* for Opera */
 	}
@@ -1828,8 +1825,8 @@ text-align:center;
 }
 
 #editPage {
-    position:absolute;
-    left:450px;
+    float: right;
+    padding-top: 14px;
 }
 #editPage a {
     color: white;

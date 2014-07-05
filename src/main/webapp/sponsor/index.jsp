@@ -1,11 +1,10 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
-"http://www.w3.org/TR/html4/loose.dtd">
+<!DOCTYPE html>
 <html>
 <head>
     <title>Sponsoring Selenium</title>
     <%@include file="/jsp/head.jspf"%>
 </head>
-<body class="sectionSupport">
+<body class="sectionAbout">
 <%@include file="/jsp/header.jspf"%>
 <div id="mainContent">
 <h1>Sponsoring Selenium</h1>
@@ -20,7 +19,7 @@
 
 <ul>
     <li>You (or your company) are contributing to an extraordinary open source project.</li>
-    <li>For corporate donations over $5000, your logo will be placed on our site for one year, as well as on the sponsor wiki pages.</li>
+    <li>For corporate donations that equal or are more than the Platinum level, your logo will be placed on our site for one year, as well as on the sponsor wiki pages.</li>
     <li>For each six months of non-sponsorship, your logo will be moved to the next lowest sponsorship level on the sponsor wiki page. If your logo is in the Aluminium level when this happens it will be removed from the sponsor wiki page.</li>
     <li>Community consciousness of your company (and its use of Selenium) will be increased in the minds of the wider Selenium community.</li>
     <li>People find out about Selenium first from our website; having a link from our website therefore will associate you and/or your company as a supporter of the Selenium project that our users love.</li>
@@ -38,7 +37,7 @@
 
 <h2>Logo Requirements</h2>
 
-<p>Logos must be 160 pixels wide and 80 pixels tall.</p>
+<p>Logos may be up to 468 pixels wide and 80 pixels tall.</p>
 
 <h2>Sponsorship Levels</h2>
 
@@ -58,13 +57,18 @@
 
 <h2>How to Donate</h2>
 
-<p>You can use the form on the front page at anytime to make a donation to the Selenium project: just click one of the PayPal and Google Checkout "Donate" buttons. These linked buttons point to the Conservancy's account for us, which is a tax-exempt 501(c)(3) organization. As a result, donations to the Selenium project are now tax-deductible.</p>
+<p>You can use the form on the front page at anytime to make a donation to the Selenium project: just click on the PayPal "Donate" button. These linked buttons point to the Conservancy's account for us, which is a tax-exempt 501(c)(3) organization. As a result, donations to the Selenium project are now tax-deductible.</p>
 <p>If you would prefer to cut a cheque, you may do this as well. Make the check payable to "Software Freedom Conservancy" and write "Directed Donation for Selenium" in the "memo" field. Checks should be sent to the following address, so that the Conservancy can process them:</p>
+
 <pre>
     Software Freedom Conservancy, Inc.
     137 MONTAGUE ST STE 380
     Brooklyn, NY 11201-3548
 </pre>
+
+<p>
+    If you have any questions or plan to write a check, please contact <strong><a href="mailto:sponsorship@seleniumhq.org">sponsorship@seleniumhq.org</a></strong> to talk to the appropriate team.
+</p>
 
 <%@include file="/jsp/footer.jspf"%>
 </body>

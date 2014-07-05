@@ -1,5 +1,4 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
-"http://www.w3.org/TR/html4/loose.dtd">
+<!DOCTYPE html>
 <html>
 <head>
     <meta name="generator" content=
@@ -52,11 +51,9 @@
     <h2>Writing Documentation</h2>
 
     <p>For the most part, our documentation is held in source control for the main website. The main documentation is in
-        plain text
-        so use your favorite editor offline to edit the pages. The source for this main
-        site is <a class="reference external" href="http://site.selenium.googlecode.com/git/">here</a>
-        and if you are familiar with Subversion you should be able to
-        bring it down to your local system for offline editing.</p>
+        plain text so use your favorite editor offline to edit the pages. The source for this main
+        site is <a class="reference external" href="https://code.google.com/p/selenium/source/checkout?repo=site">here</a>
+        and if you are familiar with Git you should be able to bring it down to your local system for offline editing.</p>
 
     <div class="section" id="submitting-documentation-bugs">
         <h3>Submitting Documentation &#8220;Bugs&#8221;</h3>
@@ -126,21 +123,11 @@ Drawbacks
 
     <p>Much of the magic behind Selenium is the hard work of programmers with
         backgrounds in Javascript, Java, Ruby, PHP, Python, Perl, C#, HTML and other
-        languages. If you haven&#8217;t already, you can download the source code from our
-        Git repository at: <a class="reference external" href="http://selenium.googlecode.com/git">http://selenium.googlecode.com/git</a></p>
-	
-    <p>We encourage code patches and other contributions - get involved by posting
-        to the <a class="reference external" href="http://groups.google.com/group/selenium-developers">Selenium
-            Developers Group</a>. You can also track the activity of the development team by checking out the read-only <a class="reference external" href="http://groups.google.com/group/selenium-developer-activity">Selenium Developer Activity Group</a>.</p>
+        languages.</p>
+
+    <p>We encourage code patches and other contributions - get involved by following
+        the instructions on <a class="reference external" href="https://code.google.com/p/selenium/wiki/CommitYourCode">our wiki </a>. You can also track the activity of the development team by checking out the read-only <a class="reference external" href="http://groups.google.com/group/selenium-developer-activity">Selenium Developer Activity Group</a>.</p>
     <p>If you do supply a patch we will need you to <a href="https://spreadsheets.google.com/spreadsheet/viewform?hl=en_US&formkey=dFFjXzBzM1VwekFlOWFWMjFFRjJMRFE6MQ#gid=0">sign the CLA</a>. We are a part of <a href="http://www.sfconservancy.org/">SFC</a></p>
-
-    <div class="admonition note">
-        <p class="first admonition-title">Note</p>
-
-        <p class="last">Useful information for people willing to code for Selenium-RC can be
-            found in the <a class="reference external" href="http://wiki.openqa.org/display/SRC/Developer%27s+Guide">Developer&#8217;s
-                Guide</a> at OpenQA&#8217;s wiki.</p>
-    </div>
 </div>
 
 
