@@ -575,6 +575,204 @@
     <p class="description">A plugin for Selenium-IDE to convert one or more test suites, including their test cases, from the html format to any other format supported by the Selenium-IDE. <a href="http://blog.reallysimplethoughts.com/2011/01/11/test-suite-batch-converter-plugin-v1-5-released/">More info</a>.</p>
   </div>
   
+  <div class="plugin">
+    <div class="name">SeLite AutoCheck</div>
+    <div class="column">
+      <table>
+          <tr><th>Links:</th><td><a href="https://addons.mozilla.org/en-US/firefox/addon/selite-auto-check/">Info</a> - <a href="https://addons.mozilla.org/en-US/firefox/addon/selite-auto-check/versions/">Download</a> - <a href="https://code.google.com/p/selite/wiki/AutoCheck">Docs</a> - <a href="https://code.google.com/p/selite/wiki/ReportingIssues">Support</a></td></tr>
+        <tr><th>Author:</th><td>Peter Kehl</td></tr>
+        <tr><th>License:</th><td>LGPL 3</td></tr>
+      </table>
+    </div>
+    <div class="column">
+      <table>
+        <tr><th>Released:</th><td>July 3, 2014</td></tr>
+        <tr><th>Version:</th><td>0.06</td></tr>
+      </table>
+    </div>
+    <p class="description">It runs custom/customisable validation of the tested website after every Selenese step. It's a part of <a href="https://code.google.com/p/selite/wiki/ProjectHome">SeLite</a> and one of its <a href="https://code.google.com/p/selite/wiki/AddOns">add-ons</a>.</p>
+  </div>
+
+  <div class="plugin">
+    <div class="name">SeLite Bootstrap</div>
+    <div class="column">
+      <table>
+          <tr><th>Links:</th><td><a href="https://addons.mozilla.org/en-US/firefox/addon/selite-bootstrap/">Info</a> - <a href="https://addons.mozilla.org/en-US/firefox/addon/SeLite-Bootstrap/versions/">Download</a> - <a href="https://code.google.com/p/selite/wiki/Bootstrap">Docs</a> - <a href="https://code.google.com/p/selite/wiki/ReportingIssues">Support</a></td></tr>
+        <tr><th>Author:</th><td>Peter Kehl</td></tr>
+        <tr><th>License:</th><td>LGPL 3</td></tr>
+      </table>
+    </div>
+    <div class="column">
+      <table>
+        <tr><th>Released:</th><td>July 3, 2014</td></tr>
+        <tr><th>Version:</th><td>0.84</td></tr>
+      </table>
+    </div>
+    <p class="description">It allows smoother development of Selenium Core extensions. It reloads them automatically on change. It's a part of <a href="https://code.google.com/p/selite/wiki/ProjectHome">SeLite</a> and one of its <a href="https://code.google.com/p/selite/wiki/AddOns">add-ons</a>.</p>
+  </div>
+
+  <div class="plugin">
+    <div class="name">SeLite Commands</div>
+    <div class="column">
+      <table>
+          <tr><th>Links:</th><td><a href="https://addons.mozilla.org/en-US/firefox/addon/selite-commands/">Info</a> - <a href="https://addons.mozilla.org/en-US/firefox/addon/selite-commands/versions/">Download</a> - <a href="https://code.google.com/p/selite/wiki/Commands">Docs</a> - <a href="https://code.google.com/p/selite/wiki/ReportingIssues">Support</a></td></tr>
+        <tr><th>Author:</th><td>Peter Kehl</td></tr>
+        <tr><th>License:</th><td>LGPL 3</td></tr>
+      </table>
+    </div>
+    <div class="column">
+      <table>
+        <tr><th>Released:</th><td>July 3, 2014</td></tr>
+        <tr><th>Version:</th><td>0.83</td></tr>
+      </table>
+    </div>
+    <p class="description">It provides various Selenese commands, for example for entering/selecting random input values. It's a part of <a href="https://code.google.com/p/selite/wiki/ProjectHome">SeLite</a> and one of its <a href="https://code.google.com/p/selite/wiki/AddOns">add-ons</a>.</p>
+  </div>
+
+  <div class="plugin">
+    <div class="name">SeLite DB Objects</div>
+    <div class="column">
+      <table>
+          <tr><th>Links:</th><td><a href="https://addons.mozilla.org/en-US/firefox/addon/selite-db-objects/">Info</a> - <a href="https://addons.mozilla.org/en-US/firefox/addon/selite-db-objects/versions/">Download</a> - <a href="https://code.google.com/p/selite/wiki/ReportingIssues">Support</a></td></tr>
+        <tr><th>Author:</th><td>Peter Kehl</td></tr>
+        <tr><th>License:</th><td>LGPL 3</td></tr>
+      </table>
+    </div>
+    <div class="column">
+      <table>
+        <tr><th>Released:</th><td>July 3, 2014</td></tr>
+        <tr><th>Version:</th><td>0.76</td></tr>
+      </table>
+    </div>
+    <p class="description">It provides mid-level objects for accessing test data in SQLite. It's a part of <a href="https://code.google.com/p/selite/wiki/ProjectHome">SeLite</a> and one of its <a href="https://code.google.com/p/selite/wiki/AddOns">add-ons</a>.</p>
+  </div>
+
+  <div class="plugin">
+    <div class="name">SeLite Exit Confirmation Checker</div>
+    <div class="column">
+      <table>
+          <tr><th>Links:</th><td><a href="https://addons.mozilla.org/en-US/firefox/addon/selite-exit-confirmation-check/">Info</a> - <a href="https://addons.mozilla.org/en-US/firefox/addon/selite-exit-confirmation-check/versions/">Download</a> - <a href="https://code.google.com/p/selite/wiki/ExitConfirmationChecker">Docs</a> - <a href="https://code.google.com/p/selite/wiki/ReportingIssues">Support</a></td></tr>
+        <tr><th>Author:</th><td>Peter Kehl</td></tr>
+        <tr><th>License:</th><td>LGPL 3</td></tr>
+      </table>
+    </div>
+    <div class="column">
+      <table>
+        <tr><th>Released:</th><td>June 30, 2014</td></tr>
+        <tr><th>Version:</th><td>0.03</td></tr>
+      </table>
+    </div>
+    <p class="description"> It's beneficial if your web app uses <i>window.onbeforeunload</i> to get confirmation when the user tries to leave an unsubmitted form etc. This extension helps to validate that the confirmation shows up exactly when it should. It's a part of <a href="https://code.google.com/p/selite/wiki/ProjectHome">SeLite</a> and one of its <a href="https://code.google.com/p/selite/wiki/AddOns">add-ons</a>.</p>
+  </div>
+
+  <div class="plugin">
+    <div class="name">SeLite Extension Sequencer</div>
+    <div class="column">
+      <table>
+          <tr><th>Links:</th><td><a href="https://addons.mozilla.org/en-US/firefox/addon/selite-extension-sequencer/">Info</a> - <a href="https://addons.mozilla.org/en-US/firefox/addon/selite-extension-sequencer/versions/">Download</a> - <a href="https://code.google.com/p/selite/wiki/ExtensionSequencer">Docs</a> - <a href="https://code.google.com/p/selite/wiki/ReportingIssues">Support</a></td></tr>
+        <tr><th>Author:</th><td>Peter Kehl</td></tr>
+        <tr><th>License:</th><td>Apache License 2</td></tr>
+      </table>
+    </div>
+    <div class="column">
+      <table>
+        <tr><th>Released:</th><td>July 3, 2014</td></tr>
+        <tr><th>Version:</th><td>0.34</td></tr>
+      </table>
+    </div>
+    <p class="description">It loads user Core or IDE extensions of Selenium IDE in order reflecting their dependancies. It's a part of <a href="https://code.google.com/p/selite/wiki/ProjectHome">SeLite</a> and one of its <a href="https://code.google.com/p/selite/wiki/AddOns">add-ons</a>.</p>
+  </div>
+
+  <div class="plugin">
+    <div class="name">SeLite  Miscellaneous</div>
+    <div class="column">
+      <table>
+          <tr><th>Links:</th><td><a href="https://addons.mozilla.org/en-US/firefox/addon/selite-miscellaneous/">Info</a> - <a href="https://addons.mozilla.org/en-US/firefox/addon/selite-miscellaneous/versions/">Download</a> - <a href="https://code.google.com/p/selite/wiki/ReportingIssues">Support</a></td></tr>
+        <tr><th>Author:</th><td>Peter Kehl</td></tr>
+        <tr><th>License:</th><td>LGPL 3</td></tr>
+      </table>
+    </div>
+    <div class="column">
+      <table>
+        <tr><th>Released:</th><td>July 3, 2014</td></tr>
+        <tr><th>Version:</th><td>0.79</td></tr>
+      </table>
+    </div>
+    <p class="description">It provides miscellaneous internal components for various parts of SeLite group of extensions. It's a part of <a href="https://code.google.com/p/selite/wiki/ProjectHome">SeLite</a> and one of its <a href="https://code.google.com/p/selite/wiki/AddOns">add-ons</a>.</p>
+  </div>
+
+  <div class="plugin">
+    <div class="name">SeLite  SelBlocks Global</div>
+    <div class="column">
+      <table>
+          <tr><th>Links:</th><td><a href="https://addons.mozilla.org/en-US/firefox/addon/selite-selblocks-global/">Info</a> - <a href="https://addons.mozilla.org/en-US/firefox/addon/SeLite-SelBlocks-Global/versions/">Download</a> - <a href="https://code.google.com/p/selite/wiki/SelBlocksGlobal">Docs</a> - <a href="https://code.google.com/p/selite/wiki/ReportingIssues">Support</a></td></tr>
+        <tr><th>Author:</th><td>Peter Kehl, based on SelBlocks from <a href="http://refactoror.net/">Chris Noe</a></td></tr>
+        <tr><th>License:</th><td>Mozilla Public License 1.1</td></tr>
+      </table>
+    </div>
+    <div class="column">
+      <table>
+        <tr><th>Released:</th><td>July 3, 2014</td></tr>
+        <tr><th>Version:</th><td>1.07</td></tr>
+      </table>
+    </div>
+    <p class="description">It's an enhanced version of SelBlocks. It allows to call functions (formerly: scripts) across the test cases (within the same test suite) of Selenium IDE. It's a part of <a href="https://code.google.com/p/selite/wiki/ProjectHome">SeLite</a> and one of its <a href="https://code.google.com/p/selite/wiki/AddOns">add-ons</a>.</p>
+  </div>
+
+  <div class="plugin">
+    <div class="name">SeLite Settings</div>
+    <div class="column">
+      <table>
+          <tr><th>Links:</th><td><a href="https://addons.mozilla.org/en-US/firefox/addon/selite-settings/">Info</a> - <a href="https://addons.mozilla.org/en-US/firefox/addon/selite-settings/versions/">Download</a> - <a href="https://code.google.com/p/selite/wiki/Settings">Docs</a> - <a href="https://code.google.com/p/selite/wiki/ReportingIssues">Support</a></td></tr>
+        <tr><th>Author:</th><td>Peter Kehl</td></tr>
+        <tr><th>License:</th><td>LGPL 3</td></tr>
+      </table>
+    </div>
+    <div class="column">
+      <table>
+        <tr><th>Released:</th><td>July 3, 2014</td></tr>
+        <tr><th>Version:</th><td>0.42</td></tr>
+      </table>
+    </div>
+    <p class="description">It provides template-based visual interface and API to Firefox preferences. It allows preferences to be organised in sets and have single-valued and multi- valued free-type or choice fields. Test frameworks can use it to keep test configuration. It's a part of <a href="https://code.google.com/p/selite/wiki/ProjectHome">SeLite</a> and one of its <a href="https://code.google.com/p/selite/wiki/AddOns">add-ons</a>.</p>
+  </div>
+
+  <div class="plugin">
+    <div class="name">SeLite SQLite Connection Manager</div>
+    <div class="column">
+      <table>
+          <tr><th>Links:</th><td><a href="https://addons.mozilla.org/en-US/firefox/addon/selite-sqlite-connection-mg/">Info</a> - <a href="https://addons.mozilla.org/en-US/firefox/addon/SeLite-SQLite-Connection-Mg/versions/">Download</a> - <a href="https://code.google.com/p/selite/wiki/ReportingIssues">Support</a></td></tr>
+        <tr><th>Author:</th><td>Peter Kehl</td></tr>
+        <tr><th>License:</th><td>LGPL 3</td></tr>
+      </table>
+    </div>
+    <div class="column">
+      <table>
+        <tr><th>Released:</th><td>July 3, 2014</td></tr>
+        <tr><th>Version:</th><td>0.74</td></tr>
+      </table>
+    </div>
+    <p class="description">It manages SQLite DB connection(s). It can be used with other extensions from SeLite family, or on its own. It's a part of <a href="https://code.google.com/p/selite/wiki/ProjectHome">SeLite</a> and one of its <a href="https://code.google.com/p/selite/wiki/AddOns">add-ons</a>.</p>
+  </div>
+
+  <div class="plugin">
+    <div class="name">SeLite TestCase Debug Context</div>
+    <div class="column">
+      <table>
+          <tr><th>Links:</th><td><a href="https://addons.mozilla.org/en-US/firefox/addon/selite-testcase-debug-conte/">Info</a> - <a href="https://addons.mozilla.org/en-US/firefox/addon/SeLite-TestCase-Debug-Conte/versions/">Download</a> - <a href="https://code.google.com/p/selite/wiki/ReportingIssues">Support</a></td></tr>
+        <tr><th>Author:</th><td>Peter Kehl</td></tr>
+        <tr><th>License:</th><td>Apache License 2</td></tr>
+      </table>
+    </div>
+    <div class="column">
+      <table>
+        <tr><th>Released:</th><td>July 3, 2014</td></tr>
+        <tr><th>Version:</th><td>0.71</td></tr>
+      </table>
+    </div>
+    <p class="description">It's needed for SelBlocks Global. It can be used together with other extensions from SeLite family, or on its own. It's a part of <a href="https://code.google.com/p/selite/wiki/ProjectHome">SeLite</a> and one of its <a href="https://code.google.com/p/selite/wiki/AddOns">add-ons</a>.</p>
+  </div>
+
 
   <h3>Selenium IDE Plugins (that provide import / export / language support)</h3>
 
