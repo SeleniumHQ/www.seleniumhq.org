@@ -222,6 +222,13 @@
         <td>&nbsp;</td>
         <td><a href="https://github.com/appium/appium/issues">issue tracker</a></td>
       </tr>
+      <tr>
+        <td><a href="https://crosswalk-project.org/#wiki/Crosswalk-WebDriver">Crosswalk</a></td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td><a href="https://crosswalk-project.org/jira">issue tracker</a></td>
+        <td>Released 2014-05-05</td>
+      </tr>
     </tbody>
   </table>
   <a name="thirdPartyLanguageBindings"/>
