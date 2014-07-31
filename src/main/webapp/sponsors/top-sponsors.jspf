@@ -1,4 +1,4 @@
-<%--<h3>Selenium-Level Sponsors</h3>--%>
+<h3>Selenium-Level Sponsors</h3>
 
 <%@include file="selenium-sponsors.jspf"%>
 
