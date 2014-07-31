@@ -52,13 +52,13 @@ If you want to
         Want to support the Selenium project? <a href="/sponsor">Learn more about sponsorship</a> or view the <a href="/sponsors">full list of sponsors</a>.
     </p>
 
+    <%@include file="sponsors/top-sponsors.jspf"%>
+
     <p>
         Although we are in the process of migrating them to our new sponsorship program (launched in May 2014), a special thanks goes out to <a href="http://saucelabs.com">Sauce Labs</a>, which has been a long supporter of Selenium and provides free access to their products.
     </p>
 
     <a href="http://saucelabs.com"><img src="images/sponsors/saucelabs.jpg" alt="Sauce Labs"></a>
-
-<%@include file="sponsors/top-sponsors.jspf"%>
 
   <h2>Selenium News</h2>
 
