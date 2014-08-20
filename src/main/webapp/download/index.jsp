@@ -43,8 +43,8 @@
   
   <h3>Selenium IDE</h3>
   <p>Selenium IDE is a Firefox plugin which records and plays back user interactions with the browser. Use this to either create simple scripts or assist in exploratory testing. It can also export Remote Control or WebDriver scripts, though they tend to be somewhat brittle and should be overhauled into some sort of Page Object-y structure for any kind of resiliency.</p>
-  <p>Download latest released version <a href="http://release.seleniumhq.org/selenium-ide/2.5.0/selenium-ide-2.5.0.xpi">2.5.0</a> released on 01/Jan/2014 or view the <a href="http://code.google.com/p/selenium/wiki/SeIDEReleaseNotes">Release Notes</a> and then <a href="#side_plugins">install some plugins</a>.</p>
-  <!-- <p>Download next unreleased version <a href="http://release.seleniumhq.org/selenium-ide/2.5.0/selenium-ide-2.5.0.xpi">2.5.0</a> to be released on 16/September/2013</p> -->
+  <p>Download latest released version <a href="http://release.seleniumhq.org/selenium-ide/2.6.0/selenium-ide-2.6.0.xpi">2.6.0</a> released on 20/Aug/2014 or view the <a href="http://code.google.com/p/selenium/wiki/SeIDEReleaseNotes">Release Notes</a> and then <a href="#side_plugins">install some plugins</a>.</p>
+  <!-- <p>Download next unreleased version <a href="http://release.seleniumhq.org/selenium-ide/2.6.0/selenium-ide-2.6.0.xpi">2.6.0</a> to be released on 16/September/2013</p> -->
   <!-- <p>Download version under development <a href="http://ci.seleniumhq.org:8080/job/IDE/lastSuccessfulBuild/artifact/selenium-trunk/build/ide/selenium-ide-multi.xpi">unreleased</a> (currently disabled)</p> -->
 
   <h3>Selenium Server (formerly the Selenium RC Server)</h3>
