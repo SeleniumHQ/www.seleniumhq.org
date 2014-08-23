@@ -1,4 +1,7 @@
-<!-- Sponsorship start date: July 30, 2014 -->
-<p>
+<div class="selenium-sponsors">
+    <!-- Sponsorship start date: July 30, 2014 -->
     <a href="http://www.browserstack.com/automate/?utm_campaign=open-source-sponsor&utm_source=seleniumorg&utm_medium=referral"><img src="/sponsors/browserstack.png" border="0" width="200"/></a>
-</p>
+
+    <!-- Sponsorship start date: August 23, 2014 -->
+    <a href="http://saucelabs.com"><img src="/images/sponsors/saucelabs-logo.png" alt="Sauce Labs"></a>
+</div>

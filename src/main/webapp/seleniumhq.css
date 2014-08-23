@@ -1832,3 +1832,13 @@ text-align:center;
     color: white;
     font-weight: bold;
 }
+
+.ads .selenium-sponsors img {
+    margin: 5px 0 10px 0;
+    width: 200px;
+}
+
+.selenium-sponsors img {
+    width: 280px;
+    margin: 5px;
+}
