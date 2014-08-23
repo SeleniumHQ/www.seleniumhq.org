@@ -11,6 +11,8 @@
 
 <p>The Selenium project is a member of the  Software Freedom Conservancy, a 501(c)3 non-profit organization. The Conservancy has allowed us to pool organizational resources with other projects, such as Inkscape, Samba, and Wine, in order to reduce the management overhead associated with creating our own, dedicated legal entity.</p>
 
+<p>The majority of sponsorship funds go directly towards supporting the Selenium project, such as server and software expenses. A small portion of the funds are set aside for the Conservancy to continue their work in supporting Selenium and other open source initiatives.</p>
+
 <h2>Goals</h2>
 
 <p>Our goals are simple: we want to be able to continue improving Selenium -- everything from code reviews to specialized bug fixes to paying hosting bills -- for the benefit of the entire Selenium user and the public at large. We want sponsors to be able to make tax-deductible donations and for the project to publicly acknowledge these donations.</p>
@@ -26,6 +28,7 @@
     <li>Contributions are tax-deductible.</li>
 </ul>
 
+
 <h2>Logos</h2>
 
 <ul>
@@ -37,7 +40,7 @@
 
 <h2>Logo Requirements</h2>
 
-<p>Logos may be up to 468 pixels wide and 80 pixels tall.</p>
+<p>Logos may be up to 468 pixels wide and 80 pixels tall. Selenium-level sponsors may be up to 600 pixels wide and 250 pixels tall.</p>
 
 <h2>Sponsorship Levels</h2>
 
