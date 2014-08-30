@@ -193,7 +193,7 @@ You should see the following logging output.
 Specifying the Port
 ~~~~~~~~~~~~~~~~~~~
 
-The default port used by the hub is 4444.  The port being referred to hear, is the TCP/IP port used when the 
+The default port used by the hub is 4444.  The port being referred to here, is the TCP/IP port used when the 
 'client', that is, the automated tests connect to the Selenium-Grid hub.  If another application
 on your computer is already using this port, or if, you already have a Selenium-Server started,
 you'll see the following message in the log output.
