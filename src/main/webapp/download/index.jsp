@@ -247,6 +247,7 @@
     <li><a href="http://webdriver.io">Javascript</a> by Camilo Tapia, Vincent Voyer and Christian Bromann</li>
     <li><a href="https://github.com/johndharrison/RSelenium">R</a> by John Harrison</li>
     <li><a href="https://github.com/google/webdriver.dart">Dart</a> by Marc Fisher</li>
+    <li><a href="http://caiusproject.com/">Tcl</a> by Tobias Koch</li>
   </ul>
 
   <h3>Selenium GRID Plugins</h3>
