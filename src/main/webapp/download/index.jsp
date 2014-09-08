@@ -711,6 +711,24 @@
   </div>
 
   <div class="plugin">
+    <div class="name">SeLite  Run All Favorites</div>
+    <div class="column">
+      <table>
+          <tr><th>Links:</th><td><a href="https://addons.mozilla.org/en-US/firefox/addon/selite-run-all-favorites/">Info</a> - <a href="https://addons.mozilla.org/en-US/firefox/addon/selite-run-all-favorites/versions/">Download</a> - <a href="https://code.google.com/p/selite/wiki/ReportingIssues">Support</a></td></tr>
+        <tr><th>Author:</th><td>Peter Kehl</td></tr>
+        <tr><th>License:</th><td>Mozilla Public License 1.1</td></tr>
+      </table>
+    </div>
+    <div class="column">
+      <table>
+        <tr><th>Released:</th><td>September 6, 2014</td></tr>
+        <tr><th>Version:</th><td>0.02</td></tr>
+      </table>
+    </div>
+    <p class="description">It runs a sequence of all test suites marked as favorites in <a href="https://addons.mozilla.org/en-US/firefox/addon/favorites-selenium-ide/">Favorites (Selenium IDE)</a>. It supports team work: it facilitates export/import of favorites by representing them relative to user's home folder. It's a part of <a href="https://code.google.com/p/selite/wiki/ProjectHome">SeLite</a> and one of its <a href="https://code.google.com/p/selite/wiki/AddOns">add-ons</a>.</p>
+  </div>
+  
+  <div class="plugin">
     <div class="name">SeLite  SelBlocks Global</div>
     <div class="column">
       <table>
