@@ -584,7 +584,15 @@
     <p class="description">A plugin for Selenium-IDE to convert one or more test suites, including their test cases, from the html format to any other format supported by the Selenium-IDE. <a href="http://blog.reallysimplethoughts.com/2011/01/11/test-suite-batch-converter-plugin-v1-5-released/">More info</a>.</p>
   </div>
   
+  <h3>SeLite</h3>
+  <p><a href="https://code.google.com/p/selite/wiki/ProjectHome">SeLite</a> is a family of <a href="https://code.google.com/p/selite/wiki/AddOns">add-ons</a> and tools for Selenium IDE. It improves productivity of maintaining, <a href="#selite-extension-sequencer">reusing</a> and <a href="#selite-run-all-favorites">running</a> Selenium scripts. It facilitates team work through <a href="#selite-settings">management and sharing of configurations</a>.
+</p>
+<p>It enhances test automation by <a href="#selite-autocheck">checking for server side errors</a>, adding <a href="#selite-commands">more powerful test commands</a>, <a href="#selite-exit-confirmation-checker">validating the confirmation on leaving an unsubmitted form</a>. It supports function calls functions between test cases, which means <a href="#selite-selblocks-global">better reuse of test cases</a>. It allows <a href="#selite-bootstrap">smoother development</a> of Javascript components.
+</p>
+<p>It enables your scripts to have test data separate from the tested application. That uses <a href="http://www.sqlite.org">SQLite</a>, which is <a href="http://www.sqlite.org/mostdeployed.html">the most widely deployed</a> SQL database in the world. Test frameworks can <a href="#selite-db-objects">access the data via objects</a>.
+  </p>
   <div class="plugin">
+    <a name="selite-autocheck"/>
     <div class="name">SeLite AutoCheck</div>
     <div class="column">
       <table>
@@ -599,10 +607,11 @@
         <tr><th>Version:</th><td>0.06</td></tr>
       </table>
     </div>
-    <p class="description">It runs custom/customisable validation of the tested website after every Selenese step. It's a part of <a href="https://code.google.com/p/selite/wiki/ProjectHome">SeLite</a> and one of its <a href="https://code.google.com/p/selite/wiki/AddOns">add-ons</a>.</p>
+    <p class="description">It runs custom/customisable validation of the tested website after every Selenese step. </p>
   </div>
 
   <div class="plugin">
+    <a name="selite-bootstrap"/>
     <div class="name">SeLite Bootstrap</div>
     <div class="column">
       <table>
@@ -617,10 +626,11 @@
         <tr><th>Version:</th><td>0.84</td></tr>
       </table>
     </div>
-    <p class="description">It allows smoother development of Selenium Core extensions. It reloads them automatically on change. It's a part of <a href="https://code.google.com/p/selite/wiki/ProjectHome">SeLite</a> and one of its <a href="https://code.google.com/p/selite/wiki/AddOns">add-ons</a>.</p>
+    <p class="description">It allows smoother development of Selenium Core extensions as standalone files. It reloads them automatically on change.</p>
   </div>
 
   <div class="plugin">
+    <a name="selite-commands"/>
     <div class="name">SeLite Commands</div>
     <div class="column">
       <table>
@@ -635,10 +645,11 @@
         <tr><th>Version:</th><td>0.83</td></tr>
       </table>
     </div>
-    <p class="description">It provides various Selenese commands, for example for entering/selecting random input values. It's a part of <a href="https://code.google.com/p/selite/wiki/ProjectHome">SeLite</a> and one of its <a href="https://code.google.com/p/selite/wiki/AddOns">add-ons</a>.</p>
+    <p class="description">It provides various Selenese commands, for example for entering/selecting random input values.</p>
   </div>
 
   <div class="plugin">
+    <a name="selite-db-objects"/>
     <div class="name">SeLite DB Objects</div>
     <div class="column">
       <table>
@@ -653,10 +664,11 @@
         <tr><th>Version:</th><td>0.76</td></tr>
       </table>
     </div>
-    <p class="description">It provides mid-level objects for accessing test data in SQLite. It's a part of <a href="https://code.google.com/p/selite/wiki/ProjectHome">SeLite</a> and one of its <a href="https://code.google.com/p/selite/wiki/AddOns">add-ons</a>.</p>
+    <p class="description">It provides mid-level objects for accessing test data in SQLite. You can describe a schema and access the data as objects with little need for writing SQL.</p>
   </div>
 
   <div class="plugin">
+    <a name="selite-exit-confirmation-checker"/>
     <div class="name">SeLite Exit Confirmation Checker</div>
     <div class="column">
       <table>
@@ -671,10 +683,11 @@
         <tr><th>Version:</th><td>0.03</td></tr>
       </table>
     </div>
-    <p class="description"> It's beneficial if your web app uses <i>window.onbeforeunload</i> to get confirmation when the user tries to leave an unsubmitted form etc. This extension helps to validate that the confirmation shows up exactly when it should. It's a part of <a href="https://code.google.com/p/selite/wiki/ProjectHome">SeLite</a> and one of its <a href="https://code.google.com/p/selite/wiki/AddOns">add-ons</a>.</p>
+    <p class="description"> It's beneficial if your web app uses <i>window.onbeforeunload</i> to get confirmation when the user tries to leave an unsubmitted form etc. This extension helps to validate that the confirmation shows up exactly when it should.</p>
   </div>
 
   <div class="plugin">
+    <a name="selite-extension-sequencer"/>
     <div class="name">SeLite Extension Sequencer</div>
     <div class="column">
       <table>
@@ -689,7 +702,7 @@
         <tr><th>Version:</th><td>0.34</td></tr>
       </table>
     </div>
-    <p class="description">It loads user Core or IDE extensions of Selenium IDE in order reflecting their dependancies. It's a part of <a href="https://code.google.com/p/selite/wiki/ProjectHome">SeLite</a> and one of its <a href="https://code.google.com/p/selite/wiki/AddOns">add-ons</a>.</p>
+    <p class="description">It allows user Core or IDE extensions of Selenium IDE to declare what other extensions they depend on. It loads those extensions in the correct order reflecting their dependancies.</p>
   </div>
 
   <div class="plugin">
@@ -707,10 +720,30 @@
         <tr><th>Version:</th><td>0.79</td></tr>
       </table>
     </div>
-    <p class="description">It provides miscellaneous internal components for various parts of SeLite group of extensions. It's a part of <a href="https://code.google.com/p/selite/wiki/ProjectHome">SeLite</a> and one of its <a href="https://code.google.com/p/selite/wiki/AddOns">add-ons</a>.</p>
+    <p class="description">It provides miscellaneous internal components for various parts of SeLite group of extensions.</p>
   </div>
 
   <div class="plugin">
+    <a name="selite-run-all-favorites"/>
+    <div class="name">SeLite  Run All Favorites</div>
+    <div class="column">
+      <table>
+          <tr><th>Links:</th><td><a href="https://addons.mozilla.org/en-US/firefox/addon/selite-run-all-favorites/">Info</a> - <a href="https://addons.mozilla.org/en-US/firefox/addon/selite-run-all-favorites/versions/">Download</a> - <a href="https://code.google.com/p/selite/wiki/ReportingIssues">Support</a></td></tr>
+        <tr><th>Author:</th><td>Peter Kehl</td></tr>
+        <tr><th>License:</th><td>Mozilla Public License 1.1</td></tr>
+      </table>
+    </div>
+    <div class="column">
+      <table>
+        <tr><th>Released:</th><td>September 6, 2014</td></tr>
+        <tr><th>Version:</th><td>0.02</td></tr>
+      </table>
+    </div>
+    <p class="description">It runs a sequence of all test suites marked as favorites in <a href="https://addons.mozilla.org/en-US/firefox/addon/favorites-selenium-ide/">Favorites (Selenium IDE)</a>. It supports team work: it facilitates export/import of favorites by representing them relative to user's home folder.</p>
+  </div>
+  
+  <div class="plugin">
+    <a name="selite-selblocks-global"/>
     <div class="name">SeLite  SelBlocks Global</div>
     <div class="column">
       <table>
@@ -725,16 +758,17 @@
         <tr><th>Version:</th><td>1.07</td></tr>
       </table>
     </div>
-    <p class="description">It's an enhanced version of SelBlocks. It allows to call functions (formerly: scripts) across the test cases (within the same test suite) of Selenium IDE. It's a part of <a href="https://code.google.com/p/selite/wiki/ProjectHome">SeLite</a> and one of its <a href="https://code.google.com/p/selite/wiki/AddOns">add-ons</a>.</p>
+    <p class="description">It's an enhanced version of SelBlocks. It allows to call functions (formerly: scripts) across the test cases (within the same test suite). It also provides <a href="https://code.google.com/p/selite/wiki/EnhancedSyntax">EnhancedSyntax</a>, which supports more expressive tests.</p>
   </div>
 
   <div class="plugin">
+    <a name="selite-settings"/>
     <div class="name">SeLite Settings</div>
     <div class="column">
       <table>
           <tr><th>Links:</th><td><a href="https://addons.mozilla.org/en-US/firefox/addon/selite-settings/">Info</a> - <a href="https://addons.mozilla.org/en-US/firefox/addon/selite-settings/versions/">Download</a> - <a href="https://code.google.com/p/selite/wiki/Settings">Docs</a> - <a href="https://code.google.com/p/selite/wiki/ReportingIssues">Support</a></td></tr>
         <tr><th>Author:</th><td>Peter Kehl</td></tr>
-        <tr><th>License:</th><td>LGPL 3</td></tr>
+        <tr><th>License:</th><td>GNU LGPL 3 for API; GNU GPL 3 for GUI</td></tr>
       </table>
     </div>
     <div class="column">
@@ -743,7 +777,7 @@
         <tr><th>Version:</th><td>0.42</td></tr>
       </table>
     </div>
-    <p class="description">It provides template-based visual interface and API to Firefox preferences. It allows preferences to be organised in sets and have single-valued and multi- valued free-type or choice fields. Test frameworks can use it to keep test configuration. It's a part of <a href="https://code.google.com/p/selite/wiki/ProjectHome">SeLite</a> and one of its <a href="https://code.google.com/p/selite/wiki/AddOns">add-ons</a>.</p>
+    <p class="description">It allows definition of custom configuration schemas (modules), consisting of single-valued and multi-valued fields, either free-type or choice lists. It facilitates team work through sharing of chosen parts of configuration in manifest files. Users can override parts of the shared configuration through manifest files or visual interface. They can have multiple sets of preferences and they can choose between them when running the scripts.</p>
   </div>
 
   <div class="plugin">
@@ -761,7 +795,7 @@
         <tr><th>Version:</th><td>0.74</td></tr>
       </table>
     </div>
-    <p class="description">It manages SQLite DB connection(s). It can be used with other extensions from SeLite family, or on its own. It's a part of <a href="https://code.google.com/p/selite/wiki/ProjectHome">SeLite</a> and one of its <a href="https://code.google.com/p/selite/wiki/AddOns">add-ons</a>.</p>
+    <p class="description">It manages SQLite DB connection(s). It can be used with other extensions from SeLite family, or on its own.</p>
   </div>
 
   <div class="plugin">
@@ -779,7 +813,7 @@
         <tr><th>Version:</th><td>0.71</td></tr>
       </table>
     </div>
-    <p class="description">It's needed for SelBlocks Global. It can be used together with other extensions from SeLite family, or on its own. It's a part of <a href="https://code.google.com/p/selite/wiki/ProjectHome">SeLite</a> and one of its <a href="https://code.google.com/p/selite/wiki/AddOns">add-ons</a>.</p>
+    <p class="description">It's needed for SelBlocks Global.</p>
   </div>
 
 
