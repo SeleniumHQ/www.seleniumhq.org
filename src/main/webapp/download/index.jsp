@@ -585,10 +585,14 @@
   </div>
   
   <h3>SeLite</h3>
-  <p><a href="https://code.google.com/p/selite/wiki/ProjectHome">SeLite</a> is a family of <a href="https://code.google.com/p/selite/wiki/AddOns">add-ons</a> and tools for Selenium IDE. It improves productivity of writing, reusing, configuring, sharing and running Selenium scripts.</p>
-  <p>It enables your scripts to have test data in <a href="http://www.sqlite.org">SQLite</a>, which is <a href="http://www.sqlite.org/mostdeployed.html">the most widely deployed</a> SQL database in the world.
+  <p><a href="https://code.google.com/p/selite/wiki/ProjectHome">SeLite</a> is a family of <a href="https://code.google.com/p/selite/wiki/AddOns">add-ons</a> and tools for Selenium IDE. It improves productivity of maintaining, <a href="#selite-extension-sequencer">reusing</a> and <a href="#selite-run-all-favorites">running</a> Selenium scripts. It facilitates team work through <a href="#selite-settings">management and sharing of configurations</a>.
+</p>
+<p>It enhances test automation by <a href="#selite-autocheck">checking for server side errors</a>, adding <a href="#selite-commands">more powerful test commands</a>, <a href="#selite-exit-confirmation-checker">validating the confirmation on leaving an unsubmitted form</a>. It supports function calls functions between test cases, which means <a href="#selite-selblocks-global">better reuse of test cases</a>. It allows <a href="#selite-bootstrap">smoother development</a> of Javascript components.
+</p>
+<p>It enables your scripts to have test data separate from the tested application. That uses <a href="http://www.sqlite.org">SQLite</a>, which is <a href="http://www.sqlite.org/mostdeployed.html">the most widely deployed</a> SQL database in the world. Test frameworks can <a href="#selite-db-objects">access the data via objects</a>.
   </p>
   <div class="plugin">
+    <a name="selite-autocheck"/>
     <div class="name">SeLite AutoCheck</div>
     <div class="column">
       <table>
@@ -607,6 +611,7 @@
   </div>
 
   <div class="plugin">
+    <a name="selite-bootstrap"/>
     <div class="name">SeLite Bootstrap</div>
     <div class="column">
       <table>
@@ -625,6 +630,7 @@
   </div>
 
   <div class="plugin">
+    <a name="selite-commands"/>
     <div class="name">SeLite Commands</div>
     <div class="column">
       <table>
@@ -643,6 +649,7 @@
   </div>
 
   <div class="plugin">
+    <a name="selite-db-objects"/>
     <div class="name">SeLite DB Objects</div>
     <div class="column">
       <table>
@@ -661,6 +668,7 @@
   </div>
 
   <div class="plugin">
+    <a name="selite-exit-confirmation-checker"/>
     <div class="name">SeLite Exit Confirmation Checker</div>
     <div class="column">
       <table>
@@ -679,6 +687,7 @@
   </div>
 
   <div class="plugin">
+    <a name="selite-extension-sequencer"/>
     <div class="name">SeLite Extension Sequencer</div>
     <div class="column">
       <table>
@@ -715,6 +724,7 @@
   </div>
 
   <div class="plugin">
+    <a name="selite-run-all-favorites"/>
     <div class="name">SeLite  Run All Favorites</div>
     <div class="column">
       <table>
@@ -733,6 +743,7 @@
   </div>
   
   <div class="plugin">
+    <a name="selite-selblocks-global"/>
     <div class="name">SeLite  SelBlocks Global</div>
     <div class="column">
       <table>
@@ -747,16 +758,17 @@
         <tr><th>Version:</th><td>1.07</td></tr>
       </table>
     </div>
-    <p class="description">It's an enhanced version of SelBlocks. It allows to call functions (formerly: scripts) across the test cases (within the same test suite) of Selenium IDE. It also provides <a href="https://code.google.com/p/selite/wiki/EnhancedSyntax">EnhancedSyntax</a>, which supports more expressive tests.</p>
+    <p class="description">It's an enhanced version of SelBlocks. It allows to call functions (formerly: scripts) across the test cases (within the same test suite). It also provides <a href="https://code.google.com/p/selite/wiki/EnhancedSyntax">EnhancedSyntax</a>, which supports more expressive tests.</p>
   </div>
 
   <div class="plugin">
+    <a name="selite-settings"/>
     <div class="name">SeLite Settings</div>
     <div class="column">
       <table>
           <tr><th>Links:</th><td><a href="https://addons.mozilla.org/en-US/firefox/addon/selite-settings/">Info</a> - <a href="https://addons.mozilla.org/en-US/firefox/addon/selite-settings/versions/">Download</a> - <a href="https://code.google.com/p/selite/wiki/Settings">Docs</a> - <a href="https://code.google.com/p/selite/wiki/ReportingIssues">Support</a></td></tr>
         <tr><th>Author:</th><td>Peter Kehl</td></tr>
-        <tr><th>License:</th><td>LGPL 3</td></tr>
+        <tr><th>License:</th><td>GNU LGPL 3 for API; GNU GPL 3 for GUI</td></tr>
       </table>
     </div>
     <div class="column">
