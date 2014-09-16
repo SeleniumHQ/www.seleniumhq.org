@@ -50,7 +50,7 @@
   <h3>Selenium Server (formerly the Selenium RC Server)</h3>
   <p>The Selenium Server is needed in order to run either Selenium RC style scripts or Remote Selenium Webdriver ones. The 2.x server is a drop-in replacement for the old Selenium RC server and is designed to be backwards compatible with your existing infrastructure.</p>
   <p>Download version <a
-    href="http://selenium-release.storage.googleapis.com/2.43/selenium-server-standalone-2.43.0.jar">2.43.0</a>
+    href="http://selenium-release.storage.googleapis.com/2.43/selenium-server-standalone-2.43.1.jar">2.43.1</a>
   </p>
   <p>To use the Selenium Server in a Grid configuration <a href="http://code.google.com/p/selenium/wiki/Grid2">see the wiki page</a>.</p>
 
@@ -84,17 +84,17 @@
     <tbody>
       <tr>
         <td>Java</td>
-        <td>2.43.0</td>
+        <td>2.43.1</td>
         <td>2014-09-09</td>
-        <td><a href="http://selenium-release.storage.googleapis.com/2.43/selenium-java-2.43.0.zip">Download</a>&nbsp;&nbsp;</td>
+        <td><a href="http://selenium-release.storage.googleapis.com/2.43/selenium-java-2.43.1.zip">Download</a>&nbsp;&nbsp;</td>
         <td><a href="http://selenium.googlecode.com/git/java/CHANGELOG">Change log</a>&nbsp;&nbsp;</td>
         <td><a href="http://selenium.googlecode.com/git/docs/api/java/index.html" alt="Javadoc">Javadoc</a></td>
       </tr>
       <tr>
         <td>C#</td>
-        <td>2.43.0</td>
+        <td>2.43.1</td>
         <td>2014-09-09</td>
-        <td><a href="http://selenium-release.storage.googleapis.com/2.43/selenium-dotnet-2.43.0.zip">Download</a></td>
+        <td><a href="http://selenium-release.storage.googleapis.com/2.43/selenium-dotnet-2.43.1.zip">Download</a></td>
         <td><a href="http://selenium.googlecode.com/git/dotnet/CHANGELOG">Change log</a></td>
         <td><a href="http://selenium.googlecode.com/git/docs/api/dotnet/index.html">API docs</a></td>
       </tr>
@@ -116,8 +116,8 @@
       </tr>
       <tr>
         <td>Javascript (Node)</td>
-        <td>2.42.1</td>
-        <td>2014-05-22</td>
+        <td>2.43.4</td>
+        <td>2014-09-13</td>
         <td><a href="https://npmjs.org/package/selenium-webdriver">Download</a></td>
         <td><a href="https://github.com/SeleniumHQ/selenium/blob/master/javascript/node/selenium-webdriver/CHANGES.md">Change log</a></td>
         <td><a href="http://selenium.googlecode.com/git/docs/api/javascript/index.html">API docs</a></td>
