@@ -589,14 +589,14 @@
 </p>
 <p>It enhances test automation by <a href="#selite-autocheck">checking for server side errors</a>, adding <a href="#selite-commands">more powerful test commands</a>, <a href="#selite-exit-confirmation-checker">validating the confirmation on leaving an unsubmitted form</a>. It supports function calls functions between test cases, which means <a href="#selite-selblocks-global">better reuse of test cases</a>. It allows <a href="#selite-bootstrap">smoother development</a> of Javascript components.
 </p>
-<p>It enables your scripts to have test data separate from the tested application. That uses <a href="http://www.sqlite.org">SQLite</a>, which is <a href="http://www.sqlite.org/mostdeployed.html">the most widely deployed</a> SQL database in the world. Test frameworks can <a href="#selite-db-objects">access the data via objects</a>.
+<p>It enables your scripts to have test data separate from the tested application. That uses <a href="http://www.sqlite.org">SQLite</a> (<a href="http://www.sqlite.org/mostdeployed.html">the most widely deployed</a> SQL database in the world). Test frameworks can <a href="#selite-db-objects">access the data via objects</a>.
   </p>
   <div class="plugin">
     <a name="selite-autocheck"/>
     <div class="name">SeLite AutoCheck</div>
     <div class="column">
       <table>
-          <tr><th>Links:</th><td><a href="https://addons.mozilla.org/en-US/firefox/addon/selite-auto-check/">Info</a> - <a href="https://addons.mozilla.org/en-US/firefox/addon/selite-auto-check/versions/">Download</a> - <a href="https://code.google.com/p/selite/wiki/AutoCheck">Docs</a> - <a href="https://code.google.com/p/selite/wiki/ReportingIssues">Support</a></td></tr>
+          <tr><th>Links:</th><td><a href="https://addons.mozilla.org/en-US/firefox/addon/selite-auto-check/">Info</a> - <a href="https://addons.mozilla.org/en-US/firefox/addon/selite-auto-check/versions/">Download</a> - <a href="https://code.google.com/p/selite/wiki/AutoCheck">Docs</a> - <a href="https://code.google.com/p/selite/wiki/Troubleshooting">Support</a></td></tr>
         <tr><th>Author:</th><td>Peter Kehl</td></tr>
         <tr><th>License:</th><td>LGPL 3</td></tr>
       </table>
@@ -615,7 +615,7 @@
     <div class="name">SeLite Bootstrap</div>
     <div class="column">
       <table>
-          <tr><th>Links:</th><td><a href="https://addons.mozilla.org/en-US/firefox/addon/selite-bootstrap/">Info</a> - <a href="https://addons.mozilla.org/en-US/firefox/addon/SeLite-Bootstrap/versions/">Download</a> - <a href="https://code.google.com/p/selite/wiki/Bootstrap">Docs</a> - <a href="https://code.google.com/p/selite/wiki/ReportingIssues">Support</a></td></tr>
+          <tr><th>Links:</th><td><a href="https://addons.mozilla.org/en-US/firefox/addon/selite-bootstrap/">Info</a> - <a href="https://addons.mozilla.org/en-US/firefox/addon/SeLite-Bootstrap/versions/">Download</a> - <a href="https://code.google.com/p/selite/wiki/Bootstrap">Docs</a> - <a href="https://code.google.com/p/selite/wiki/Troubleshooting">Support</a></td></tr>
         <tr><th>Author:</th><td>Peter Kehl</td></tr>
         <tr><th>License:</th><td>LGPL 3</td></tr>
       </table>
@@ -634,7 +634,7 @@
     <div class="name">SeLite Commands</div>
     <div class="column">
       <table>
-          <tr><th>Links:</th><td><a href="https://addons.mozilla.org/en-US/firefox/addon/selite-commands/">Info</a> - <a href="https://addons.mozilla.org/en-US/firefox/addon/selite-commands/versions/">Download</a> - <a href="https://code.google.com/p/selite/wiki/Commands">Docs</a> - <a href="https://code.google.com/p/selite/wiki/ReportingIssues">Support</a></td></tr>
+          <tr><th>Links:</th><!--<td><a href="https://addons.mozilla.org/en-US/firefox/addon/selite-commands/">Info</a> - <a href="https://addons.mozilla.org/en-US/firefox/addon/selite-commands/versions/">--><a href="https://selite.googlecode.com/git/commands.xpi">Download</a> - <a href="https://code.google.com/p/selite/wiki/Commands">Docs</a> - <a href="https://code.google.com/p/selite/wiki/Troubleshooting">Support</a></td></tr>
         <tr><th>Author:</th><td>Peter Kehl</td></tr>
         <tr><th>License:</th><td>LGPL 3</td></tr>
       </table>
@@ -653,7 +653,7 @@
     <div class="name">SeLite DB Objects</div>
     <div class="column">
       <table>
-          <tr><th>Links:</th><td><a href="https://addons.mozilla.org/en-US/firefox/addon/selite-db-objects/">Info</a> - <a href="https://addons.mozilla.org/en-US/firefox/addon/selite-db-objects/versions/">Download</a> - <a href="https://code.google.com/p/selite/wiki/ReportingIssues">Support</a></td></tr>
+          <tr><th>Links:</th><td><a href="https://addons.mozilla.org/en-US/firefox/addon/selite-db-objects/">Info</a> - <a href="https://addons.mozilla.org/en-US/firefox/addon/selite-db-objects/versions/">Download</a> - <a href="https://code.google.com/p/selite/wiki/Troubleshooting">Support</a></td></tr>
         <tr><th>Author:</th><td>Peter Kehl</td></tr>
         <tr><th>License:</th><td>LGPL 3</td></tr>
       </table>
@@ -672,7 +672,7 @@
     <div class="name">SeLite Exit Confirmation Checker</div>
     <div class="column">
       <table>
-          <tr><th>Links:</th><td><a href="https://addons.mozilla.org/en-US/firefox/addon/selite-exit-confirmation-check/">Info</a> - <a href="https://addons.mozilla.org/en-US/firefox/addon/selite-exit-confirmation-check/versions/">Download</a> - <a href="https://code.google.com/p/selite/wiki/ExitConfirmationChecker">Docs</a> - <a href="https://code.google.com/p/selite/wiki/ReportingIssues">Support</a></td></tr>
+          <tr><th>Links:</th><td><a href="https://addons.mozilla.org/en-US/firefox/addon/selite-exit-confirmation-check/">Info</a> - <a href="https://addons.mozilla.org/en-US/firefox/addon/selite-exit-confirmation-check/versions/">Download</a> - <a href="https://code.google.com/p/selite/wiki/ExitConfirmationChecker">Docs</a> - <a href="https://code.google.com/p/selite/wiki/Troubleshooting">Support</a></td></tr>
         <tr><th>Author:</th><td>Peter Kehl</td></tr>
         <tr><th>License:</th><td>LGPL 3</td></tr>
       </table>
@@ -691,7 +691,7 @@
     <div class="name">SeLite Extension Sequencer</div>
     <div class="column">
       <table>
-          <tr><th>Links:</th><td><a href="https://addons.mozilla.org/en-US/firefox/addon/selite-extension-sequencer/">Info</a> - <a href="https://addons.mozilla.org/en-US/firefox/addon/selite-extension-sequencer/versions/">Download</a> - <a href="https://code.google.com/p/selite/wiki/ExtensionSequencer">Docs</a> - <a href="https://code.google.com/p/selite/wiki/ReportingIssues">Support</a></td></tr>
+          <tr><th>Links:</th><td><a href="https://addons.mozilla.org/en-US/firefox/addon/selite-extension-sequencer/">Info</a> - <a href="https://addons.mozilla.org/en-US/firefox/addon/selite-extension-sequencer/versions/">Download</a> - <a href="https://code.google.com/p/selite/wiki/ExtensionSequencer">Docs</a> - <a href="https://code.google.com/p/selite/wiki/Troubleshooting">Support</a></td></tr>
         <tr><th>Author:</th><td>Peter Kehl</td></tr>
         <tr><th>License:</th><td>Apache License 2</td></tr>
       </table>
@@ -709,7 +709,7 @@
     <div class="name">SeLite  Miscellaneous</div>
     <div class="column">
       <table>
-          <tr><th>Links:</th><td><a href="https://addons.mozilla.org/en-US/firefox/addon/selite-miscellaneous/">Info</a> - <a href="https://addons.mozilla.org/en-US/firefox/addon/selite-miscellaneous/versions/">Download</a> - <a href="https://code.google.com/p/selite/wiki/ReportingIssues">Support</a></td></tr>
+          <tr><th>Links:</th><td><a href="https://addons.mozilla.org/en-US/firefox/addon/selite-miscellaneous/">Info</a> - <a href="https://addons.mozilla.org/en-US/firefox/addon/selite-miscellaneous/versions/">Download</a> - <a href="https://code.google.com/p/selite/wiki/Troubleshooting">Support</a></td></tr>
         <tr><th>Author:</th><td>Peter Kehl</td></tr>
         <tr><th>License:</th><td>LGPL 3</td></tr>
       </table>
@@ -728,7 +728,7 @@
     <div class="name">SeLite  Run All Favorites</div>
     <div class="column">
       <table>
-          <tr><th>Links:</th><td><a href="https://addons.mozilla.org/en-US/firefox/addon/selite-run-all-favorites/">Info</a> - <a href="https://addons.mozilla.org/en-US/firefox/addon/selite-run-all-favorites/versions/">Download</a> - <a href="https://code.google.com/p/selite/wiki/ReportingIssues">Support</a></td></tr>
+          <tr><th>Links:</th><td><a href="https://addons.mozilla.org/en-US/firefox/addon/selite-run-all-favorites/">Info</a> - <a href="https://addons.mozilla.org/en-US/firefox/addon/selite-run-all-favorites/versions/">Download</a> - <a href="https://code.google.com/p/selite/wiki/Troubleshooting">Support</a></td></tr>
         <tr><th>Author:</th><td>Peter Kehl</td></tr>
         <tr><th>License:</th><td>Mozilla Public License 1.1</td></tr>
       </table>
@@ -747,7 +747,7 @@
     <div class="name">SeLite  SelBlocks Global</div>
     <div class="column">
       <table>
-          <tr><th>Links:</th><td><a href="https://addons.mozilla.org/en-US/firefox/addon/selite-selblocks-global/">Info</a> - <a href="https://addons.mozilla.org/en-US/firefox/addon/SeLite-SelBlocks-Global/versions/">Download</a> - <a href="https://code.google.com/p/selite/wiki/SelBlocksGlobal">Docs</a> - <a href="https://code.google.com/p/selite/wiki/ReportingIssues">Support</a></td></tr>
+          <tr><th>Links:</th><td><a href="https://addons.mozilla.org/en-US/firefox/addon/selite-selblocks-global/">Info</a> - <a href="https://addons.mozilla.org/en-US/firefox/addon/SeLite-SelBlocks-Global/versions/">Download</a> - <a href="https://code.google.com/p/selite/wiki/SelBlocksGlobal">Docs</a> - <a href="https://code.google.com/p/selite/wiki/Troubleshooting">Support</a></td></tr>
         <tr><th>Author:</th><td>Peter Kehl, based on SelBlocks from <a href="http://refactoror.net/">Chris Noe</a></td></tr>
         <tr><th>License:</th><td>Mozilla Public License 1.1</td></tr>
       </table>
@@ -766,7 +766,7 @@
     <div class="name">SeLite Settings</div>
     <div class="column">
       <table>
-          <tr><th>Links:</th><td><a href="https://addons.mozilla.org/en-US/firefox/addon/selite-settings/">Info</a> - <a href="https://addons.mozilla.org/en-US/firefox/addon/selite-settings/versions/">Download</a> - <a href="https://code.google.com/p/selite/wiki/Settings">Docs</a> - <a href="https://code.google.com/p/selite/wiki/ReportingIssues">Support</a></td></tr>
+          <tr><th>Links:</th><td><a href="https://addons.mozilla.org/en-US/firefox/addon/selite-settings/">Info</a> - <a href="https://addons.mozilla.org/en-US/firefox/addon/selite-settings/versions/">Download</a> - <a href="https://code.google.com/p/selite/wiki/Settings">Docs</a> - <a href="https://code.google.com/p/selite/wiki/Troubleshooting">Support</a></td></tr>
         <tr><th>Author:</th><td>Peter Kehl</td></tr>
         <tr><th>License:</th><td>GNU LGPL 3 for API; GNU GPL 3 for GUI</td></tr>
       </table>
@@ -784,7 +784,7 @@
     <div class="name">SeLite SQLite Connection Manager</div>
     <div class="column">
       <table>
-          <tr><th>Links:</th><td><a href="https://addons.mozilla.org/en-US/firefox/addon/selite-sqlite-connection-mg/">Info</a> - <a href="https://addons.mozilla.org/en-US/firefox/addon/SeLite-SQLite-Connection-Mg/versions/">Download</a> - <a href="https://code.google.com/p/selite/wiki/ReportingIssues">Support</a></td></tr>
+          <tr><th>Links:</th><td><a href="https://addons.mozilla.org/en-US/firefox/addon/selite-sqlite-connection-mg/">Info</a> - <a href="https://addons.mozilla.org/en-US/firefox/addon/SeLite-SQLite-Connection-Mg/versions/">Download</a> - <a href="https://code.google.com/p/selite/wiki/Troubleshooting">Support</a></td></tr>
         <tr><th>Author:</th><td>Peter Kehl</td></tr>
         <tr><th>License:</th><td>LGPL 3</td></tr>
       </table>
@@ -802,7 +802,7 @@
     <div class="name">SeLite TestCase Debug Context</div>
     <div class="column">
       <table>
-          <tr><th>Links:</th><td><a href="https://addons.mozilla.org/en-US/firefox/addon/selite-testcase-debug-conte/">Info</a> - <a href="https://addons.mozilla.org/en-US/firefox/addon/SeLite-TestCase-Debug-Conte/versions/">Download</a> - <a href="https://code.google.com/p/selite/wiki/ReportingIssues">Support</a></td></tr>
+          <tr><th>Links:</th><td><a href="https://addons.mozilla.org/en-US/firefox/addon/selite-testcase-debug-conte/">Info</a> - <a href="https://addons.mozilla.org/en-US/firefox/addon/SeLite-TestCase-Debug-Conte/versions/">Download</a> - <a href="https://code.google.com/p/selite/wiki/Troubleshooting">Support</a></td></tr>
         <tr><th>Author:</th><td>Peter Kehl</td></tr>
         <tr><th>License:</th><td>Apache License 2</td></tr>
       </table>
