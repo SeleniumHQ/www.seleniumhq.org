@@ -21,7 +21,7 @@
     &lt;dependency&gt;
         &lt;groupId&gt;org.seleniumhq.selenium&lt;/groupId&gt;
         &lt;artifactId&gt;selenium-java&lt;/artifactId&gt;
-        &lt;version&gt;2.42.2&lt;/version&gt;
+        &lt;version&gt;2.43.1&lt;/version&gt;
     &lt;/dependency&gt;  
 </pre></p>
   
@@ -60,7 +60,7 @@
     &lt;dependency&gt;
         &lt;groupId&gt;org.seleniumhq.selenium&lt;/groupId&gt;
         &lt;artifactId&gt;selenium-firefox-driver&lt;/artifactId&gt;
-        &lt;version&gt;2.42.2&lt;/version&gt;
+        &lt;version&gt;2.43.1&lt;/version&gt;
     &lt;/dependency&gt;  
 </pre></p>
 
@@ -73,7 +73,7 @@
     &lt;dependency&gt;
         &lt;groupId&gt;org.seleniumhq.selenium&lt;/groupId&gt;
         &lt;artifactId&gt;selenium-server&lt;/artifactId&gt;
-        &lt;version&gt;2.42.2&lt;/version&gt;
+        &lt;version&gt;2.43.1&lt;/version&gt;
     &lt;/dependency&gt;  
 </pre> Now you can create a <tt>SeleniumServer</tt> instance yourself and start it.</p>
 
@@ -96,9 +96,9 @@
   <p>PhantomJSDriver (GhostDriver)</p>
   <pre>
     &lt;dependency&gt;
-        &lt;groupId&gt;com.github.detro.ghostdriver&lt;/groupId&gt;
+        &lt;groupId&gt;com.github.detro&lt;/groupId&gt;
         &lt;artifactId&gt;phantomjsdriver&lt;/artifactId&gt;
-        &lt;version&gt;1.0.4&lt;/version&gt;
+        &lt;version&gt;1.2.0&lt;/version&gt;
     &lt;/dependency&gt;  
   </pre>
     
