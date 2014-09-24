@@ -32,8 +32,8 @@
   
   <div class="browser">
     <h4>Internet Explorer</h4>
-    <p>Versions 6, 7, 8, 9 and 10 are supported. 11 is currently awaiting 
-      <a href="https://code.google.com/p/selenium/issues/detail?id=6511">a fix for this issue</a>.</p>
+    <p>Versions 6, 7, 8, 9, 10 and 11 are supported. Version 11 requires 
+      <a href="https://code.google.com/p/selenium/wiki/InternetExplorerDriver#Required_Configuration">additional configuration</a>.</p>
     <p>The selenium project tests each release on Windows XP, 7 and 8.</p>
   </div>
 
@@ -47,7 +47,7 @@
   </div>
   <div class="browser">
     <h4>Chrome</h4>
-    <p><a href="https://code.google.com/p/chromedriver">Chrome Driver</a> is supported by the Chromium project, please refer to their documentation for any compatibility information</p>
+    <p><a href="https://sites.google.com/a/chromium.org/chromedriver/">Chrome Driver</a> is supported by the Chromium project, please refer to their documentation for any compatibility information</p>
   </div>
 
   <h3><a name="operating-systems" id=
@@ -57,7 +57,7 @@
     <h4>Microsoft Windows</h4>
     <p>Most versions of MS Windows that are currently still supported by Microsoft should work with Selenium. Altough here's the list of OS's we currently run tests against before each release:
     <ul>
-      <li>Windows XP (to be unsupported on April 8, 2014)</li>
+      <li>Windows XP (supported ended April 8, 2014)</li>
       <li>Windows 7</li>
       <li>Windows 8</li>
       <li>Windows 8.1</li>
@@ -80,15 +80,15 @@
   <h3><a name="programming-languages" id=
   "programming-languages"></a>Programming Languages &amp; Frameworks</h3>
 
-  <p>Programming languages are supported through Selenium Remote
-  Control "drivers." These are libraries made for each language
-  that expose commands from the <a href=
-  "/download/#client-drivers">Selenium API</a> natively in the
+  <p>Programming languages are supported through Selenium "drivers." These are libraries made for each language
+  that expose commands from the <a href="/download/#client-drivers">Selenium API</a> natively in the
   form of methods/functions.</p>
+
+  <p>Selenium is often used for automating web applications for testing purposes, but it does not include a testing framework. Some testing frameworks that can be used with Selenium are listed below.</p>
 
   <div class="language">
     <h4>C#</h4>
-    <p>Frameworks available: NUnit</p>
+    <p>Frameworks available: <a href="http://www.nunit.org/">NUnit</a></p>
   </div>
 
   <div class="language">
@@ -98,7 +98,7 @@
 
   <div class="language">
     <h4>Java</h4>
-    <p>Frameworks available: JUnit, TestNG</p>
+    <p>Frameworks available: <a href="https://github.com/junit-team/junit">JUnit</a>, <a href="http://testng.org/doc/index.html">TestNG</a></p>
   </div>
 
   <div class="language">
@@ -123,7 +123,7 @@
 
   <div class="language">
     <h4>Python</h4>
-    <p>Frameworks available: unittest, pyunit, <a href="http://code.google.com/p/robotframework-seleniumlibrary">robot framework</a></p>
+    <p>Frameworks available: unittest, <a href="http://pyunit.sourceforge.net/">pyunit</a>, <a href="http://pytest.org/latest/">py.test</a>, <a href="http://code.google.com/p/robotframework-seleniumlibrary">robot framework</a></p>
   </div>
 
   <div class="language">
@@ -133,7 +133,7 @@
 
   <div class="language">
     <h4>Ruby</h4>
-    <p>Frameworks available: RSpec, Test::Unit</p>
+    <p>Frameworks available: <a href="http://rspec.info/">RSpec</a>, Test::Unit</p>
   </div>
 
 <%@include file="/jsp/footer.jspf"%>
