@@ -234,6 +234,8 @@ result page's title to the console.
 .. literalinclude:: /examples/Chapter3/Javascript/Selenium2Example.js
    :language: javascript
 
+.. literalinclude:: /examples/Chapter3/Perl/Selenium2Example.pl
+   :language: perl
 
 In upcoming sections, you will learn more about how to use WebDriver for things
 such as navigating forward and backward in your browser's history, and how to
@@ -269,7 +271,7 @@ The normal way to do this is by calling "get":
 
 .. code-block:: perl
 
-    $driver->('http://www.google.com')
+    $driver->get('http://www.google.com')
 
 Dependent on several factors, including the OS/Browser combination, 
 WebDriver may or may not wait for the page to load. In some circumstances, 
@@ -480,6 +482,9 @@ Example of how to find an element that looks like this:
     from selenium.webdriver.common.by import By
     cheese = driver.find_element(By.LINK_TEXT, "cheese")
 
+.. code-block:: perl
+
+    $cheese = $driver->find_element('cheese', 'link_text');
 
 
 By Partial Link Text
@@ -513,6 +518,11 @@ Example of how to find an element that looks like this:
 
     from selenium.webdriver.common.by import By
     cheese = driver.find_element(By.PARTIAL_LINK_TEXT, "cheese")
+
+.. code-block:: perl
+
+    $cheese = $driver->find_element('cheese', 'partial_link_text');
+
 
 By CSS
 ++++++
@@ -552,6 +562,10 @@ Example of to find the cheese below:
 
     from selenium.webdriver.common.by import By
     cheese = driver.find_element(By.CSS_SELECTOR, "#food span.dairy.aged")
+
+.. code-block:: perl
+
+    $cheese = $driver->find_element('#food span.dairy.aged', 'css');
 
 
 By XPATH
@@ -643,6 +657,10 @@ Simple example on a page that has jQuery loaded:
 
     element = driver.execute_script("return $('.cheese')[0]")
 
+.. code-block:: perl
+
+    element = $driver->execute_script("return $('.cheese')[0]");
+
 Finding all the input elements to the every label on a page:
 
 .. code-block:: java
@@ -672,6 +690,11 @@ Finding all the input elements to the every label on a page:
     inputs = driver.execute_script(
         "var labels = arguments[0], inputs = []; for (var i=0; i < labels.length; i++){" +
         "inputs.push(document.getElementById(labels[i].getAttribute('for'))); } return inputs;", labels)
+
+.. code-block:: perl
+
+    my @labels = $driver->find_elements('label', 'tag_name');
+    my $inputs = $driver->execute_script("var labels = arguments, inputs = []; for (var i=0; i < labels.length; i++){ inputs.push(document.getElementById(labels[i].getAttribute('for'))); } return inputs;", @labels);
 
 
 User Input - Filling In Forms
@@ -723,7 +746,7 @@ with SELECT tags isn't too bad:
     $select = $driver->find_element('select', 'tag_name');
     @allOptions = $driver->find_child_element($select, "option", 'tag_name');
     foreach $option (@allOptions){
-        print "Value is: ".$option->get_attribute("value");
+        print "Value is: ".$option->get_attribute("value")."\n";
         $option->click();
     }
 
@@ -815,14 +838,17 @@ moving between named windows using the "switchTo" method:
 
     driver.switchTo().window("windowName");
 
+.. code-block:: ruby
+
+    driver.switch_to.window("windowName")
+
 .. code-block:: python
 
     driver.switch_to.window("windowName")
 
 .. code-block:: perl
 
-    $windows = $driver->get_window_handles()
-    $driver->switch_to_window($windows->[1]);
+    $driver->switch_to_window("windowName");
 
 All calls to ``driver`` will now be interpreted as being directed to the
 particular window. But how do you know the window's name? Take a look at the
@@ -864,6 +890,10 @@ You can also switch from frame to frame (or into iframes):
 .. code-block:: java
 
     driver.switchTo().frame("frameName");
+
+.. code-block:: ruby
+
+    driver.switch_to.frame "frameName"
 
 .. code-block:: python
 
@@ -1030,19 +1060,39 @@ an alternative is to find a smaller page on the site, typically the 404 page is 
 
     # And now output all the available cookies for the current URL
     driver.manage.all_cookies.each { |cookie| 
-        puts "&#35;{cookie[:name]} => &#35;{cookie[:value]}" 
+        puts "#{cookie[:name]} => #{cookie[:value]}" 
     }
 
     # You can delete cookies in 2 ways
     # By name
-    driver.manage.delete_cookie("CookieName")
+    driver.manage.delete_cookie "CookieName"
     # Or all of them
     driver.manage.delete_all_cookies
 
 
 .. code-block:: perl
 
-    $driver->get_all_cookies();
+    # Go to the correct domain
+    $driver->get("http://www.example.com");
+
+    # Now set the cookie. Here's one for the entire domain
+    # the cookie name here is 'key' and its value is 'value'
+    $driver->add_cookie('key', 'value', '/', 'example.com', 0);
+    # additional required inputs are path and domain
+    # the final input secure is an optional boolean
+
+    # And now output all the available cookies for the current URL
+    my $cookies_ref = $driver->get_all_cookies(); # Returns reference to AoH
+    for $cookie_ref (@{$cookies_ref}) {
+        printf "%s => %s\n", $cookie_ref->{name}, $cookie_ref->{value};
+    }
+
+    # You can delete cookies in 2 ways
+    # By name
+    $driver->delete_cookie_named("key");
+    # Or all of them
+    $driver->delete_all_cookies();
+
 
 Changing the User Agent
 ~~~~~~~~~~~~~~~~~~~~~~~
@@ -1067,6 +1117,12 @@ This is easy with the `Firefox Driver`_:
     profile.set_preference("general.useragent.override", "some UA string")
     driver = webdriver.Firefox(profile)
 
+.. code-block:: perl
+
+    use Selenium::Remote::Driver::Firefox::Profile;
+    my $profile = Selenium::Remote::Driver::Firefox::Profile->new;
+    $profile->set_preference('general.useragent.overide' => "some UA string");
+    my $driver = Selenium::Remote::Driver->new('firefox_profile' => $profile);
 
 Drag And Drop
 ~~~~~~~~~~~~~
@@ -1132,6 +1188,9 @@ Usage
 
 .. literalinclude:: /examples/Chapter3/Ruby/HtmlUnitUsage.rb
    :language: ruby
+
+.. literalinclude:: examples/Chapter3/Perl/HtmlUnitUsage.pl
+   :language: perl
 
 
 Pros
@@ -1226,6 +1285,9 @@ Usage
 .. literalinclude:: /examples/Chapter3/Ruby/FirefoxUsage.rb
    :language: ruby
 
+.. literalinclude:: /examples/Chapter3/Perl/FirefoxUsage.pl
+   :language: perl
+
 Pros
 ++++
 
@@ -1313,6 +1375,9 @@ Usage
 .. literalinclude:: /examples/Chapter3/Ruby/IEUsage.rb
    :language: ruby
 
+.. literalinclude:: /examples/Chapter3/Perl/IEUsage.pl
+   :language: perl
+
 Pros
 ++++
 
@@ -1362,6 +1427,9 @@ Usage
 
 .. literalinclude:: /examples/Chapter3/Ruby/ChromeUsage.rb
    :language: ruby
+
+.. literalinclude:: /examples/Chapter3/Perl/ChromeUsage.pl
+   :language: perl
 
 Pros
 ++++
