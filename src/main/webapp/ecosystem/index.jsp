@@ -28,6 +28,10 @@
             <a rel="nofollow" href="http://testingbot.com/">TestingBot</a> -
             easy cross browser testing with Selenium in the cloud.
         </li>
+        <li>
+            <a rel="nofollow" href="http://spoon.net/selenium">Spoonium</a> -
+            unlimited Selenium testing on all major browsers.
+        </li>
     </ul>
 
     <h2>Monitoring &amp; Load Testing Services</h2>
