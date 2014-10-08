@@ -66,6 +66,10 @@
             <a rel="nofollow" href="http://webperformance.com/permlink/selenium-webdriver-integration">Web Performance Load Tester</a> -
             The no-coding real-browser load testing software that knows how many users your website can handle.
         </li>
+        <li>
+            <a rel="nofollow" href="http://www.redwoodhq.com">RedwoodHQ</a> -
+            Open Source framework that allows users to develop automation code, create readable keyword driven test cases and execute them across multiple machines all under a single Web interface.
+        </li>
     </ul>
 
     <h2>Commercial Support, Services &amp; Training</h2>
