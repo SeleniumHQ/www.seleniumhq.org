@@ -115,6 +115,10 @@
             <a rel="nofollow" href="http://www.360logica.com/expertise/selenium-automation-testing/">360logica</a> -
             Excellent lab for Selenium and Webdriver automation including continous integration services.
         </li>
+        <li>
+            <a rel="nofollow" href="http://www.nobleprog.co.uk/web-application-testing/consultancy">NobleProg</a> -
+            Selenium training and consulting. Instructor led training in the US, UK, Canada, Germany, Dubai and Poland and also remote courses.
+        </li>
     </ul>
 
     <h2>Commercial Training</h2>
@@ -135,6 +139,17 @@
         <li>
             <a rel="nofollow" href="http://www.seleniumsimplified.com/hq">SeleniumSimplified.com</a> -
             Online Training Courses, and consultancy, for Selenium WebDriver with Java.
+        </li>
+         <li>
+            <a rel="nofollow" href="http://www.nobleprog.us/selenium-training-courses">NobleProg</a> -
+            Selenium training and consulting. Instructor led training in the
+            <a rel="nofollow" href="http://www.nobleprog.us/selenium-training-courses">USA</a>,
+            <a rel="nofollow" href="http://www.nobleprog.co.uk/selenium/training">UK</a>,
+            <a rel="nofollow" href="http://www.nobleprog.ca/selenium-training-courses">Canada</a>,
+            <a rel="nofollow" href="http://www.nobleprog.de/selenium-schulungen">Germany</a>,
+            <a rel="nofollow" href="http://www.nobleprog.ae/selenium/training"> Dubai</a>,
+            <a rel="nofollow" href="http://www.nobleprog.pl/szkolenia/selenium">Poland</a>,
+            <a rel="nofollow" href="http://www.nobleprog.com/selenium/training-courses">and Ohter Locations</a>
         </li>
     </ul>
 
