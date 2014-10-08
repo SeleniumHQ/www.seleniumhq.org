@@ -151,6 +151,10 @@
             <a rel="nofollow" href="http://www.nobleprog.pl/szkolenia/selenium">Poland</a>,
             <a rel="nofollow" href="http://www.nobleprog.com/selenium/training-courses">and Ohter Locations</a>
         </li>
+        <li>
+            <a rel="nofollow" href="http://www.seleniummaster.com">Selenium Master</a> -
+            Selenium Test Automation Training, Selenium Test Framework Design, QA Project Assistance.
+        </li>
     </ul>
 
     <p>
