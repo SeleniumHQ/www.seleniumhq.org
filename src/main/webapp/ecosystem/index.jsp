@@ -124,6 +124,10 @@
             <a rel="nofollow" href="http://www.w3qa.eu">W3QA</a> -
             On-demand test automation services dedicated to Selenium.
         </li>
+        <li>
+            <a rel="nofollow" href="http://www.seleniumsimplified.com/hq">SeleniumSimplified.com</a> -
+            Online Training Courses, and consultancy, for Selenium WebDriver with Java.
+        </li>
     </ul>
 
     <p>
