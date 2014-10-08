@@ -107,6 +107,10 @@
             <a rel="nofollow" href="http://selenium2.ru/trainings.html">Selenium2.Ru</a> -
             Selenium consulting, training and coaching in Russian
         </li>
+        <li>
+            <a rel="nofollow" href="http://www.360logica.com/expertise/selenium-automation-testing/">360logica</a> -
+            Excellent lab for Selenium and Webdriver automation including continous integration services.
+        </li>
     </ul>
 
     <h2>Commercial Training</h2>
