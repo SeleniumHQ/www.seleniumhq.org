@@ -914,6 +914,10 @@ popup, you can access the alert with the following:
 
     Alert alert = driver.switchTo().alert();
 
+.. code-block:: csharp
+
+    Alert alert = driver.SwitchTo().Alert();
+
 .. code-block:: ruby
 
     alert = driver.switch_to.alert
