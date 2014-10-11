@@ -1,4 +1,3 @@
-
 Test Design Considerations 
 ==========================
 
@@ -709,6 +708,9 @@ Consider the example of a registered email address to be retrieved from a databa
    
    ResultSet result =  stmt.executeQuery
    ("select top 1 email_address from user_register_table");
+   
+   // Move cursor from default position to first row of result set.
+   result.next();
    
    // Fetch value of "email_address" from "result" object.
    String emailaddress = result.getString("email_address");
