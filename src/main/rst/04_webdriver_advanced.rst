@@ -9,6 +9,9 @@ Explicit and Implicit Waits
 ---------------------------
 Waiting is having the automated task execution elapse a certain amount of time before continuing with the next step.
 
+WARNING: Do not mix implicit and explicit waits. Doing so can cause unpredictable wait times. For example setting an
+implicit wait of 10s and an explicit wait of 15 seconds, could cause a timeout to occur after 20 seconds.
+
 Explicit Waits
 ~~~~~~~~~~~~~~
 An explicit waits is code you define to wait for a certain condition to occur before proceeding further in the code.
