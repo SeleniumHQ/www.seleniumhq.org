@@ -169,11 +169,11 @@
     <tbody>
       <tr>
         <td><a href="http://code.google.com/p/chromedriver/">Chrome</a></td>
-        <td><a href="http://chromedriver.storage.googleapis.com/index.html?path=2.10/">2.10</a>&nbsp;&nbsp;</td>
-        <td><a href="http://chromedriver.storage.googleapis.com/2.10/notes.txt">change log</a>&nbsp;&nbsp;</td>
+        <td><a href="http://chromedriver.storage.googleapis.com/index.html?path=2.11/">2.11</a>&nbsp;&nbsp;</td>
+        <td><a href="http://chromedriver.storage.googleapis.com/2.11/notes.txt">change log</a>&nbsp;&nbsp;</td>
         <td><a href="http://code.google.com/p/chromedriver/issues/list">issue tracker</a>&nbsp;&nbsp;</td>
         <td><a href="http://code.google.com/p/selenium/wiki/ChromeDriver">selenium wiki page</a>&nbsp;&nbsp;</td>
-        <td>Released 2014-05-01</td>
+        <td>Released 2014-10-07</td>
       </tr>
       <tr>
         <td><a href="http://choice.opera.com/developer/tools/operadriver/">Opera</td>
