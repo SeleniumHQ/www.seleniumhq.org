@@ -51,7 +51,7 @@
   <h3>Selenium Server (formerly the Selenium RC Server)</h3>
   <p>The Selenium Server is needed in order to run either Selenium RC style scripts or Remote Selenium Webdriver ones. The 2.x server is a drop-in replacement for the old Selenium RC server and is designed to be backwards compatible with your existing infrastructure.</p>
   <p>Download version <a
-    href="http://selenium-release.storage.googleapis.com/2.43/selenium-server-standalone-2.43.1.jar">2.43.1</a>
+    href="http://selenium-release.storage.googleapis.com/2.44/selenium-server-standalone-2.44.0.jar">2.44.0</a>
   </p>
   <p>To use the Selenium Server in a Grid configuration <a href="http://code.google.com/p/selenium/wiki/Grid2">see the wiki page</a>.</p>
 
@@ -60,10 +60,10 @@
   features of the WebDriver InternetExplorerDriver. Please make sure that this
   is available on your $PATH (or %PATH% on Windows) in order for the IE Driver
   to work as expected.</p>
-  <p>Download version 2.43.0 for (recommended) <a
-    href="http://selenium-release.storage.googleapis.com/2.43/IEDriverServer_Win32_2.43.0.zip">32
+  <p>Download version 2.44.0 for (recommended) <a
+    href="http://selenium-release.storage.googleapis.com/2.44/IEDriverServer_Win32_2.44.0.zip">32
     bit Windows IE</a> or <a
-    href="http://selenium-release.storage.googleapis.com/2.43/IEDriverServer_x64_2.43.0.zip">64 bit Windows IE</a><br/>
+    href="http://selenium-release.storage.googleapis.com/2.44/IEDriverServer_x64_2.44.0.zip">64 bit Windows IE</a><br/>
     <a href="http://selenium.googlecode.com/git/cpp/iedriverserver/CHANGELOG">CHANGELOG</a></p>
 
   <a name="client-drivers"/>
@@ -85,16 +85,16 @@
     <tbody>
       <tr>
         <td>Java</td>
-        <td>2.43.1</td>
-        <td>2014-09-09</td>
-        <td><a href="http://selenium-release.storage.googleapis.com/2.43/selenium-java-2.43.1.zip">Download</a>&nbsp;&nbsp;</td>
+        <td>2.44.0</td>
+        <td>2014-10-23</td>
+        <td><a href="http://selenium-release.storage.googleapis.com/2.44/selenium-java-2.44.0.zip">Download</a>&nbsp;&nbsp;</td>
         <td><a href="http://selenium.googlecode.com/git/java/CHANGELOG">Change log</a>&nbsp;&nbsp;</td>
         <td><a href="http://selenium.googlecode.com/git/docs/api/java/index.html" alt="Javadoc">Javadoc</a></td>
       </tr>
       <tr>
         <td>C#</td>
-        <td>2.43.1</td>
-        <td>2014-09-09</td>
+        <td>2.44.0</td>
+        <td>2014-10-23</td>
         <td><a href="http://selenium-release.storage.googleapis.com/2.43/selenium-dotnet-2.43.1.zip">Download</a></td>
         <td><a href="http://selenium.googlecode.com/git/dotnet/CHANGELOG">Change log</a></td>
         <td><a href="http://selenium.googlecode.com/git/docs/api/dotnet/index.html">API docs</a></td>
@@ -109,16 +109,16 @@
       </tr>
       <tr>
         <td>Python</td>
-        <td>2.43.0</td>
-        <td>2014-09-09</td>
+        <td>2.44.0</td>
+        <td>2014-10-23</td>
         <td><a href="http://pypi.python.org/pypi/selenium">Download</a></td>
         <td><a href="http://selenium.googlecode.com/git/py/CHANGES">Change log</a></td>
         <td><a href="http://selenium.googlecode.com/git/docs/api/py/api.html">API docs</a></td>
       </tr>
       <tr>
         <td>Javascript (Node)</td>
-        <td>2.43.4</td>
-        <td>2014-09-13</td>
+        <td>2.44.0</td>
+        <td>2014-10-23</td>
         <td><a href="https://npmjs.org/package/selenium-webdriver">Download</a></td>
         <td><a href="https://github.com/SeleniumHQ/selenium/blob/master/javascript/node/selenium-webdriver/CHANGES.md">Change log</a></td>
         <td><a href="http://selenium.googlecode.com/git/docs/api/javascript/index.html">API docs</a></td>
@@ -126,7 +126,7 @@
     </tbody>
   </table>
   <h4>C# NuGet</h4>
-  <p>NuGet latest release is 2.43.0, Released on 2014-09-09</p>
+  <p>NuGet latest release is 2.44.0, Released on 2014-10-23</p>
   <ul>
     <li><a href="http://www.nuget.org/List/Packages/Selenium.RC">RC</a></li>
     <li><a href="http://www.nuget.org/List/Packages/Selenium.WebDriver">WebDriver</a></li>
