@@ -95,7 +95,7 @@
         <td>C#</td>
         <td>2.44.0</td>
         <td>2014-10-23</td>
-        <td><a href="http://selenium-release.storage.googleapis.com/2.43/selenium-dotnet-2.43.1.zip">Download</a></td>
+        <td><a href="http://selenium-release.storage.googleapis.com/2.44/selenium-dotnet-2.44.0.zip">Download</a></td>
         <td><a href="http://selenium.googlecode.com/git/dotnet/CHANGELOG">Change log</a></td>
         <td><a href="http://selenium.googlecode.com/git/docs/api/dotnet/index.html">API docs</a></td>
       </tr>
