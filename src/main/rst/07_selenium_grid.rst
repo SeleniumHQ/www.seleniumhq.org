@@ -49,7 +49,7 @@ against different browsers at the same time.  For example, a 'grid' of virtual m
 setup with each supporting a different browser that the application to be tested must support.  So, 
 machine 1 has Internet Explorer 8, machine 2, Internet Explorer 9, machine 3 the latest Chrome, and
 machine 4 the latest Firefox.  When the test suite is run, Selenium-Grid receives each test-browser
-combination and assigs each test to run against it's required browser.
+combination and assigns each test to run against its required browser.
 
 In addition, one can have a grid of all the same browser, type and version.  For instance, one
 could have a grid of 4 machines each running 3 instances of Firefox 12, allowing for a 'server-farm'
