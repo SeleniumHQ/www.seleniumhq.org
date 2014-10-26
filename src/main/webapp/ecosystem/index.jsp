@@ -123,6 +123,10 @@
             <a rel="nofollow" href="http://www.nobleprog.co.uk/web-application-testing/consultancy">NobleProg</a> -
             Selenium training and consulting. Instructor led training in the US, UK, Canada, Germany, Dubai and Poland and also remote courses.
         </li>
+        <li>
+            <a rel="nofollow" href="http://qasource.com">QASource</a> -
+            NEW QA EXTENSION model to help you build and support robust and maintainable Selenium automation.
+        </li>
     </ul>
 
     <h2>Commercial Training</h2>
