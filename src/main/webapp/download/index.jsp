@@ -224,7 +224,7 @@
         <td><a href="https://github.com/appium/appium/issues">issue tracker</a></td>
       </tr>
       <tr>
-        <td><a href="https://crosswalk-project.org/#wiki/Crosswalk-WebDriver">Crosswalk</a></td>
+        <td><a href="https://github.com/crosswalk-project/crosswalk-web-driver">CrossWalk</a></td>
         <td>&nbsp;</td>
         <td>&nbsp;</td>
         <td><a href="https://crosswalk-project.org/jira">issue tracker</a></td>
