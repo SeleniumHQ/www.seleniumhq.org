@@ -128,7 +128,7 @@ will work on all the supported platforms, Windows Linux, or Mac OSX.
 
 .. code-block:: bash
 
-    java -jar selenium-server-standalone-2.38.0.jar -role hub
+    java -jar selenium-server-standalone-2.44.0.jar -role hub
     
 This starts a hub using default parameter values.  We'll explain these parameters in folowing 
 subsections.  Note that you will likely have to change the version number in the jar filename 
@@ -141,7 +141,7 @@ To start a node using default parameters, run the following command from a comma
 
 .. code-block:: bash
 
-	java -jar selenium-server-standalone-2.38.0.jar -role node  -hub http://localhost:4444/grid/register
+	java -jar selenium-server-standalone-2.44.0.jar -role node  -hub http://localhost:4444/grid/register
 
 This assumes the hub has been started above using default parameters.  The default port the hub
 uses to listen for new requests is port 4444.  This is why port 4444 was used in the URL for 
@@ -177,7 +177,7 @@ To run the hub using the default options simply specify -role hub to the Selenim
 
 .. code-block:: bash
 
-	java -jar selenium-server-standalone-2.38.0.jar -hub
+	java -jar selenium-server-standalone-2.44.0.jar -hub
 
 You should see the following logging output.
 
@@ -209,7 +209,7 @@ port used by the hub.
 
 .. code-block:: bash
 
-	java -jar selenium-server-standalone-2.38.0.jar -role hub -port 4441
+	java -jar selenium-server-standalone-2.44.0.jar -role hub -port 4441
 
 This will work even if another hub is already running on the same machine, that is, as long as
 they're both not using port 4441.
@@ -262,7 +262,7 @@ So for our example, lets say we are creating two servlets.
 
 Now you need to build a jar file (lets assume its called ``myservlets.jar``) that contains both the above mentioned classes (``AllNodes`` and ``NodeLog``).
 
-From the directory where both ``myservlets.jar`` and ``selenium-server-standalone-2.38.0.jar`` exist, start the hub by running the command
+From the directory where both ``myservlets.jar`` and ``selenium-server-standalone-2.44.0.jar`` exist, start the hub by running the command
 
 .. code-block:: bash
 
@@ -270,7 +270,7 @@ From the directory where both ``myservlets.jar`` and ``selenium-server-standalon
 
 This command causes the Grid to be spawned and our new servlet gets added to the Hub. It can be accessed via ``http://localhost:4444/grid/admin/AllNodes``
 
-From the directory where both ``myservlets.jar`` and ``selenium-server-standalone-2.38.0.jar`` exist, start the node by running the command
+From the directory where both ``myservlets.jar`` and ``selenium-server-standalone-2.44.0.jar`` exist, start the node by running the command
 
 .. code-block:: bash
 
@@ -295,13 +295,13 @@ Here's how you would go about doing it.
 
 1. Start off by extending ``org.openqa.grid.selenium.proxy.DefaultRemoteProxy`` and define your custom functionality in it.
 2. Build a jar ( lets call the jar as ``myproxy.jar`` ) that includes your custom proxy ( For the sake of simiplicity lets assume our custom proxy is going to be called as ``org.openqa.grid.MyProxy`` ). 
-3.  From the directory where both ``myproxy.jar`` and ``selenium-server-standalone-2.38.0.jar`` exist, start the hub by running the command.
+3.  From the directory where both ``myproxy.jar`` and ``selenium-server-standalone-2.44.0.jar`` exist, start the hub by running the command.
 
 .. code-block:: bash
 
 	java -cp *:. org.openqa.grid.selenium.GridLauncher -role hub
 
-4. From the directory where both ``myproxy.jar`` and ``selenium-server-standalone-2.38.0.jar`` exist, start the node by running the command.
+4. From the directory where both ``myproxy.jar`` and ``selenium-server-standalone-2.44.0.jar`` exist, start the node by running the command.
 
 .. code-block:: bash
 
@@ -330,7 +330,7 @@ but not those for Selenium-Grid.
 
 .. code-block:: bash
 
-	java -jar selenium-server-standalone-2.38.0.jar -h
+	java -jar selenium-server-standalone-2.44.0.jar -h
 	
 This would give you Selenium-RC's server options.  If you want the command-line help for 
 Selenium-Grid, you first use the -hub or -node options to tell Selenium-Server you're interested
@@ -338,13 +338,13 @@ in Selenium-Grid, and then follow with a -h.
 
 .. code-block:: bash
 
-	java -jar selenium-server-standalone-2.38.0.jar -role node -h
+	java -jar selenium-server-standalone-2.44.0.jar -role node -h
 
 Or, for that matter, just pass a garbage argument to the -role node as follows.
 
 .. code-block:: bash
 
-	java -jar selenium-server-standalone-2.38.0.jar -role node xx
+	java -jar selenium-server-standalone-2.44.0.jar -role node xx
 
 
 You will first see "INFO..." and an "ERROR" but below that you'll get the command-line options for
@@ -380,7 +380,7 @@ Unable to acess the jarfile
 
 .. code-block:: bash
 
-	Unable to access jarfile selenium-server-standalone-2.38.0.jar
+	Unable to access jarfile selenium-server-standalone-2.44.0.jar
 
 This error can occur when starting up either a hub or node.  
 This means Java cannot find the selenium-server jar file.  Either run the command from the
