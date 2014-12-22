@@ -281,7 +281,7 @@ represents the machine name/ip where the node is running.
 
 Points to remember:
 
-1. Assuming that the Hub is running on port 44444 all servlets added to the hub are accessible under ``http://xxx:4444/admin/`` path and
+1. Assuming that the Hub is running on port 4444 all servlets added to the hub are accessible under ``http://xxx:4444/admin/`` path and
 2. Assuming that the node is running on port 5555 all serlvets added to the node are accessible under ``http://xxx:5555/extra/`` path.
 
 

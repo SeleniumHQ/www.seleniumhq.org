@@ -168,12 +168,12 @@
     </thead>
     <tbody>
       <tr>
-        <td><a href="http://code.google.com/p/chromedriver/">Chrome</a></td>
-        <td><a href="http://chromedriver.storage.googleapis.com/index.html?path=2.12/">2.12</a>&nbsp;&nbsp;</td>
-        <td><a href="http://chromedriver.storage.googleapis.com/2.12/notes.txt">change log</a>&nbsp;&nbsp;</td>
+        <td><a href="https://sites.google.com/a/chromium.org/chromedriver/">Chrome</a></td>
+        <td><a href="http://chromedriver.storage.googleapis.com/index.html?path=2.13/">2.13</a>&nbsp;&nbsp;</td>
+        <td><a href="http://chromedriver.storage.googleapis.com/2.13/notes.txt">change log</a>&nbsp;&nbsp;</td>
         <td><a href="http://code.google.com/p/chromedriver/issues/list">issue tracker</a>&nbsp;&nbsp;</td>
         <td><a href="http://code.google.com/p/selenium/wiki/ChromeDriver">selenium wiki page</a>&nbsp;&nbsp;</td>
-        <td>Released 2014-10-07</td>
+        <td>Released 2014-12-10</td>
       </tr>
       <tr>
         <td><a href="http://choice.opera.com/developer/tools/operadriver/">Opera</td>
@@ -229,6 +229,14 @@
         <td>&nbsp;</td>
         <td><a href="https://crosswalk-project.org/jira">issue tracker</a></td>
         <td>Released 2014-05-05</td>
+      </tr>
+      <tr>
+        <td><a href="https://github.com/cisco-open-source/qtwebdriver">QtWebDriver</a></td>
+        <td><a href="https://github.com/cisco-open-source/qtwebdriver/releases/tag/WebDriver-cisco-cmt-1.2.3">1.2.3</a>&nbsp;&nbsp;</td>
+        <td><a href="https://github.com/cisco-open-source/qtwebdriver/releases">change log</a>&nbsp;&nbsp;</td>
+        <td><a href="https://github.com/cisco-open-source/qtwebdriver/issues">issue tracker</a>&nbsp;&nbsp;</td>
+        <td><a href="https://github.com/cisco-open-source/qtwebdriver/wiki">wiki page</a>&nbsp;&nbsp;</td>
+        <td>Released 2014-04-23</td>
       </tr>
     </tbody>
   </table>
