@@ -28,6 +28,10 @@
             <a rel="nofollow" href="http://testingbot.com/">TestingBot</a> -
             easy cross browser testing with Selenium in the cloud.
         </li>
+        <li>
+            <a rel="nofollow" href="http://spoon.net/selenium">Spoonium</a> -
+            unlimited Selenium testing on all major browsers.
+        </li>
     </ul>
 
     <h2>Monitoring &amp; Load Testing Services</h2>
@@ -61,6 +65,10 @@
         <li>
             <a rel="nofollow" href="http://webperformance.com/permlink/selenium-webdriver-integration">Web Performance Load Tester</a> -
             The no-coding real-browser load testing software that knows how many users your website can handle.
+        </li>
+        <li>
+            <a rel="nofollow" href="http://www.redwoodhq.com">RedwoodHQ</a> -
+            Open Source framework that allows users to develop automation code, create readable keyword driven test cases and execute them across multiple machines all under a single Web interface.
         </li>
     </ul>
 
@@ -107,6 +115,18 @@
             <a rel="nofollow" href="http://selenium2.ru/trainings.html">Selenium2.Ru</a> -
             Selenium consulting, training and coaching in Russian
         </li>
+        <li>
+            <a rel="nofollow" href="http://www.360logica.com/expertise/selenium-automation-testing/">360logica</a> -
+            Excellent lab for Selenium and Webdriver automation including continous integration services.
+        </li>
+        <li>
+            <a rel="nofollow" href="http://www.nobleprog.co.uk/web-application-testing/consultancy">NobleProg</a> -
+            Selenium training and consulting. Instructor led training in the US, UK, Canada, Germany, Dubai and Poland and also remote courses.
+        </li>
+        <li>
+            <a rel="nofollow" href="http://qasource.com">QASource</a> -
+            NEW QA EXTENSION model to help you build and support robust and maintainable Selenium automation.
+        </li>
     </ul>
 
     <h2>Commercial Training</h2>
@@ -123,6 +143,25 @@
         <li>
             <a rel="nofollow" href="http://www.w3qa.eu">W3QA</a> -
             On-demand test automation services dedicated to Selenium.
+        </li>
+        <li>
+            <a rel="nofollow" href="http://www.seleniumsimplified.com/hq">SeleniumSimplified.com</a> -
+            Online Training Courses, and consultancy, for Selenium WebDriver with Java.
+        </li>
+         <li>
+            <a rel="nofollow" href="http://www.nobleprog.us/selenium-training-courses">NobleProg</a> -
+            Selenium training and consulting. Instructor led training in the
+            <a rel="nofollow" href="http://www.nobleprog.us/selenium-training-courses">USA</a>,
+            <a rel="nofollow" href="http://www.nobleprog.co.uk/selenium/training">UK</a>,
+            <a rel="nofollow" href="http://www.nobleprog.ca/selenium-training-courses">Canada</a>,
+            <a rel="nofollow" href="http://www.nobleprog.de/selenium-schulungen">Germany</a>,
+            <a rel="nofollow" href="http://www.nobleprog.ae/selenium/training"> Dubai</a>,
+            <a rel="nofollow" href="http://www.nobleprog.pl/szkolenia/selenium">Poland</a>,
+            <a rel="nofollow" href="http://www.nobleprog.com/selenium/training-courses">and Ohter Locations</a>
+        </li>
+        <li>
+            <a rel="nofollow" href="http://www.seleniummaster.com">Selenium Master</a> -
+            Selenium Test Automation Training, Selenium Test Framework Design, QA Project Assistance.
         </li>
     </ul>
 

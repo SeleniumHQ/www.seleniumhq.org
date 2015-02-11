@@ -21,13 +21,6 @@
     </dependency>
 
 		<dependency>
-			<groupId>org.datanucleus</groupId>
-            <artifactId>datanucleus-core</artifactId>
-            <version>${datanucleus.version}</version>
-            <scope>runtime</scope>
-        </dependency>
-
-		<dependency>
 			<groupId>javax.transaction</groupId>
 			<artifactId>jta</artifactId>
 			<version>1.1</version>
@@ -110,54 +103,7 @@
 	</dependencies>
 
 	<build>
-		<plugins>
-			<!--
-				This plug-in "enhances" your domain model objects (i.e. makes them
-				persistent for datanucleus)
-			-->
-			<plugin>
-				<groupId>org.datanucleus</groupId>
-				<artifactId>maven-datanucleus-plugin</artifactId>
-				<version>1.1.4</version>
-				<executions>
-					<execution>
-						<phase>compile</phase>
-						<goals>
-							<goal>enhance</goal>
-						</goals>
-					</execution>
-				</executions>
-				<dependencies>
-					<dependency>
-						<groupId>org.datanucleus</groupId>
-						<artifactId>datanucleus-core</artifactId>
-						<version>${datanucleus.version}</version>
-						<exclusions>
-							<exclusion>
-								<groupId>javax.transaction</groupId>
-								<artifactId>transaction-api</artifactId>
-							</exclusion>
-						</exclusions>
-					</dependency>
-					<dependency>
-						<groupId>org.datanucleus</groupId>
-						<artifactId>datanucleus-rdbms</artifactId>
-						<version>${datanucleus.version}</version>
-					</dependency>
-					<dependency>
-						<groupId>org.datanucleus</groupId>
-						<artifactId>datanucleus-enhancer</artifactId>
-						<version>1.1.4</version>
-					</dependency>
-					<dependency>
-						<groupId>javax.jdo</groupId>
-						<artifactId>jdo2-api</artifactId>
-						<version>2.3-ec</version>
-						<scope>runtime</scope>
-					</dependency>
-				</dependencies>
-			</plugin>
-
+        <plugins>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-war-plugin</artifactId>

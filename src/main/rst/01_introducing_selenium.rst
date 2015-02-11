@@ -145,10 +145,7 @@ As you can read in `Brief History of The Selenium Project`_, Selenium RC was
 the main Selenium project for a long time, before the WebDriver/Selenium merge
 brought up Selenium 2, the newest and more powerful tool. 
 
-Selenium 1 is still actively supported (mostly in maintenance mode) and
-provides some features that may not be available in Selenium 2 for a while,
-including support for several languages (Java, Javascript, Ruby, PHP, Python,
-Perl and C#) and support for almost every browser out there.
+Now Selenium 1 is deprecated and is not actively supported (mostly in maintenance mode).
 
 Selenium IDE
 ~~~~~~~~~~~~

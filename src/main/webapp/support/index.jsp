@@ -50,7 +50,9 @@ one or as inspiration to help make Selenium better.
 <h2 id="CommercialSupport">Commercial Support</h2>
 
 <p>
-Selenium is a diverse project and many commercial services have sprouted up to support it, some of which offer professional support for using and developing with Selenium. Learn more about the <a href="/ecosystem">Selenium ecosystem</a> to see if there is a company that might be able to help you out.
+Selenium is a diverse project and many commercial services have sprouted up to support it, some of which offer professional support for using and developing with Selenium. <br/>
+First please check out our <a href="/sponsors/" style="font-size:large">Sponsors<a/> for your needs.<br/>
+You can also learn more about the <a href="/ecosystem">Selenium ecosystem</a> to see if there is a company that might be able to help you out.
 </p>
 
 <%@include file="/jsp/footer.jspf"%>

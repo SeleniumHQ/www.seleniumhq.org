@@ -14,7 +14,6 @@
 
 <ul>
     <li>The element may not be present.</li>
-    <li></li>
 </ul>
 
 <h2>Common Solutions</h2>

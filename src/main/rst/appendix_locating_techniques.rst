@@ -10,7 +10,15 @@ Useful XPATH patterns
 
 text
 ~~~~
-Not yet written - locate elements based on the text content of the node.
+
+Given: 
+<div>Some Text</div>
+
+* XPath: ``//div[text()='Some Text']``
+
+Partial matching:
+
+* XPath: ``//div[contains(text(),'Some')]``
 
 starts-with
 ~~~~~~~~~~~

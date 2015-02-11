@@ -503,7 +503,7 @@ Locators, text patterns,
 selenium variables, and the commands themselves are described in considerable
 detail in the section on Selenium Commands. 
   
-Selenium scripts that will be run from Selenium-IDE will be be stored in an HTML
+Selenium scripts that will be run from Selenium-IDE will be stored in an HTML
 text file format. This consists of an HTML table with three columns. The first
 column identifies the Selenium command, the second is a target, and the
 final column contains a value. The second and third columns may not require
@@ -1510,7 +1510,7 @@ what text it contains, you can use ``assertAlertPresent``. This will return true
 with false halting the test.
 
 Confirmations
-~~~~~~~~~~~~~
++++++++++++++
 Confirmations behave in much the same way as alerts, with ``assertConfirmation`` and
 ``assertConfirmationPresent`` offering the same characteristics as their alert counterparts.
 However, by default Selenium will select OK when a confirmation pops up. Try recording
@@ -1536,7 +1536,21 @@ causes the click and chooseCancelOnNextConfirmation to be put in the wrong order
 if you think about it, Selenium can't know that you're cancelling before you open a confirmation)
 Simply switch these two commands and your test will run fine.
 
+Prompts
++++++++
+Prompts behave in much the same way as alerts, with ``assertPrompt`` and ``assertPromptPresent`` offering the same characteristics as their alert counterparts. By default, Selenium will wait for you to input data when the prompt pops up. Try recording clicking on the "Show prompt" button in the sample page and enter "Selenium" into the prompt. Your test may look something like this:
 
+=====================    =============================    =====================
+ **Command**             **Target**                       **Value**
+=====================    =============================    =====================
+open                     /
+answerOnNextPrompt       Selenium!
+click                    id=btnPrompt
+assertPrompt             What's the best web QA tool?
+verifyTextPresent        Selenium!
+=====================    =============================    =====================
+
+If you choose cancel on the prompt, you may notice that answerOnNextPrompt will simply show a target of blank. Selenium treats cancel and a blank entry on the prompt basically as the same thing.
 
 Debugging 
 ---------
