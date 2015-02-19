@@ -733,6 +733,24 @@
   </div>
 
   <div class="plugin">
+    <a name="selite-hands-on-gui"/>
+    <div class="name">SeLite Hands-on GUI</div>
+    <div class="column">
+      <table>
+          <tr><th>Links:</th><td><a href="https://addons.mozilla.org/en-US/firefox/addon/selite-hands-on-gui/">Info</a> - <a href="https://addons.mozilla.org/en-US/firefox/addon/selite-hands-on-gui/versions/">Download</a> - <a href="https://code.google.com/p/selite/wiki/TroubleShooting">Support</a></td></tr>
+        <tr><th>Author:</th><td>Peter Kehl</td></tr>
+        <tr><th>License:</th><td>Apache License 2</td></tr>
+      </table>
+    </div>
+    <div class="column">
+      <table>
+        <tr><th>Since:</th><td>February 2015</td></tr>
+      </table>
+    </div>
+    <p class="description">It makes Selenium IDE GUI more practical. You can edit comments and targets and values of commands 'in place' (where they are listed).</p>
+  </div>
+
+  <div class="plugin">
     <div class="name">SeLite  Miscellaneous</div>
     <div class="column">
       <table>
