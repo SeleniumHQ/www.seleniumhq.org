@@ -40,14 +40,6 @@
   "/download/maven.html">Maven users</a> (Maven is a popular Java build
   tool).</p>
 
-  
-  <h3>Selenium IDE</h3>
-  <p>Selenium IDE is a Firefox plugin which records and plays back user interactions with the browser. Use this to either create simple scripts or assist in exploratory testing. It can also export Remote Control or WebDriver scripts, though they tend to be somewhat brittle and should be overhauled into some sort of Page Object-y structure for any kind of resiliency.</p>
-  <p>Download latest released version <a href="http://release.seleniumhq.org/selenium-ide/2.8.0/selenium-ide-2.8.0.xpi">2.8.0</a> released on 29/Sep/2014 or view the <a href="http://code.google.com/p/selenium/wiki/SeIDEReleaseNotes">Release Notes</a> and then <a href="#side_plugins">install some plugins</a>.</p>
-  <p>Download previous version <a href="http://release.seleniumhq.org/selenium-ide/2.7.0/selenium-ide-2.7.0.xpi">2.7.0</a> released on 14/Sep/2014.</p>
-  <!-- <p>Download next unreleased version <a href="http://release.seleniumhq.org/selenium-ide/2.6.0/selenium-ide-2.6.0.xpi">2.6.0</a> to be released on 16/September/2013</p> -->
-  <!-- <p>Download version under development <a href="http://ci.seleniumhq.org:8080/job/IDE/lastSuccessfulBuild/artifact/selenium-trunk/build/ide/selenium-ide-multi.xpi">unreleased</a> (currently disabled)</p> -->
-
   <h3>Selenium Server (formerly the Selenium RC Server)</h3>
   <p>The Selenium Server is needed in order to run either Selenium RC style scripts or Remote Selenium Webdriver ones. The 2.x server is a drop-in replacement for the old Selenium RC server and is designed to be backwards compatible with your existing infrastructure.</p>
   <p>Download version <a
@@ -297,6 +289,13 @@
     </div>
     <p class="description">VisGrid is a GUI for Selenium Grid. You can start hub, create and attach a Selenium node very easily and quickly.</p>
   </div>
+
+  <h3>Selenium IDE</h3>
+  <p>Selenium IDE is a Firefox plugin which records and plays back user interactions with the browser. Use this to either create simple scripts or assist in exploratory testing. It can also export Remote Control or WebDriver scripts, though they tend to be somewhat brittle and should be overhauled into some sort of Page Object-y structure for any kind of resiliency.</p>
+  <p>Download latest released version <a href="http://release.seleniumhq.org/selenium-ide/2.8.0/selenium-ide-2.8.0.xpi">2.8.0</a> released on 29/Sep/2014 or view the <a href="http://code.google.com/p/selenium/wiki/SeIDEReleaseNotes">Release Notes</a> and then <a href="#side_plugins">install some plugins</a>.</p>
+  <p>Download previous version <a href="http://release.seleniumhq.org/selenium-ide/2.7.0/selenium-ide-2.7.0.xpi">2.7.0</a> released on 14/Sep/2014.</p>
+  <!-- <p>Download next unreleased version <a href="http://release.seleniumhq.org/selenium-ide/2.6.0/selenium-ide-2.6.0.xpi">2.6.0</a> to be released on 16/September/2013</p> -->
+  <!-- <p>Download version under development <a href="http://ci.seleniumhq.org:8080/job/IDE/lastSuccessfulBuild/artifact/selenium-trunk/build/ide/selenium-ide-multi.xpi">unreleased</a> (currently disabled)</p> -->
 
   <a name="side_plugins"/>
   <h3>Selenium IDE Plugins</h3>
