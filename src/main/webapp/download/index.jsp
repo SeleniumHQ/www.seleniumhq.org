@@ -594,16 +594,16 @@
   </div>
   
   <h3>SeLite</h3>
-  <p><a href="https://code.google.com/p/selite/wiki/ProjectHome">SeLite</a> is a family of <a href="https://code.google.com/p/selite/wiki/AddOns">add-ons</a> for Selenium IDE. It improves
+  <p><a href="https://code.google.com/p/selite/wiki/ProjectHome">SeLite</a> is a family of extensions that improve Selenium IDE. It
     <ul>
-        <li>effectiveness of user scripts</li>
-        <li>development environment</li>
-        <li>team work.</li>
+        <li>enables user scripts to be more effective</li>
+        <li>enhances development environment</li>
+        <li>facilitates team work.</li>
     </ul>
-    It enables database-driven navigation with <a href="http://www.sqlite.org/">SQLite</a> (the <a href="http://www.sqlite.org/mostdeployed.html">most widely deployed</a> SQL database). 
+    See <a href="https://code.google.com/p/selite/wiki/ProjectHome#Benefits">benefits in detail</a> and <a href="https://code.google.com/p/selite/wiki/SeleniumIde">productivity tips</a>. It also enables database-driven navigation with <a href="http://www.sqlite.org/">SQLite</a> (the <a href="http://www.sqlite.org/mostdeployed.html">most widely deployed</a> SQL database). 
   </p>
   <p>
-    See <a href="https://code.google.com/p/selite/wiki/ProjectHome#Benefits">detailed benefits</a> and <a href="https://code.google.com/p/selite/wiki/SeleniumIde">productivity tips</a>.
+    For the easiest download get all add-ons of <a href="https://addons.mozilla.org/en-US/firefox/collections/peter-kehl/selite/?sort=name">SeLite collection</a>. The following lists them briefly; see also <a href="https://code.google.com/p/selite/wiki/AddOns">add-ons in detail</a>.
   </p>
 
   <div class="plugin">
@@ -621,7 +621,7 @@
         <tr><th>Since:</th><td>July 2014</td></tr>
       </table>
     </div>
-    <p class="description">It runs custom/customisable validation of the tested website after every Selenese step. </p>
+    <p class="description">It runs template-based, customisable or fully custom validation of the tested website after every Selenese step. It records server errors etc.</p>
   </div>
 
   <div class="plugin">
@@ -639,7 +639,7 @@
         <tr><th>Since:</th><td>2012</td></tr>
       </table>
     </div>
-    <p class="description">It allows smoother development of Selenium Core extensions as standalone files. It reloads them automatically on change.</p>
+    <p class="description">It allows smoother development of Selenium Core extensions (saved as standalone files). It reloads them automatically on change.</p>
   </div>
 
   <div class="plugin">
@@ -657,7 +657,7 @@
         <tr><th>Since:</th><td>February 2014</td></tr>
       </table>
     </div>
-    <p class="description">It accepts HTML from clipboard. It enables Selenese commands to be indented with spaces into blocks.</p>
+    <p class="description">It accepts Selenese commands from another Selenium IDE instance (as per <a href="https://code.google.com/p/selite/wiki/SeleniumIde#Using_multiple_Selenium_IDEs_in_parallel">Using multiple Selenium IDEs in parallel</a>) through clipboard. It enables Selenese commands to be indented with spaces into blocks. It indents and unindents structured commands that come with <a href="https://code.google.com/p/selite/wiki/SelBlocksGlobal">SeLite SelBlocks Global</a>.</p>
   </div>
 
   <div class="plugin">
@@ -675,7 +675,7 @@
         <tr><th>Since:</th><td>2011</td></tr>
       </table>
     </div>
-    <p class="description">It provides various Selenese commands, for example for entering/selecting random input values.</p>
+    <p class="description">It provides practical Selenese commands, for example for entering/selecting random input values.</p>
   </div>
 
   <div class="plugin">
@@ -693,7 +693,7 @@
         <tr><th>Since:</th><td>May 2013</td></tr>
       </table>
     </div>
-    <p class="description">It provides mid-level objects for accessing test data in SQLite. You can describe a schema and access the data as objects with little need for writing SQL.</p>
+    <p class="description">It provides mid-level objects for accessing test data in SQLite. Test frameworks can describe a schema and access the data as objects with little need for writing SQL.</p>
   </div>
 
   <div class="plugin">
@@ -711,7 +711,7 @@
         <tr><th>Since:</th><td>June 2014</td></tr>
       </table>
     </div>
-    <p class="description"> It's beneficial if your web application uses <i>window.onbeforeunload</i> to get confirmation when the user tries to leave an unsubmitted form etc. This extension helps to validate that the confirmation shows up exactly when it should.</p>
+    <p class="description"> It's beneficial if your web application uses <i>window.onbeforeunload</i> to get confirmation when the user tries to leave an unsubmitted form etc. This extension helps to validate that the confirmation shows up exactly when it should. It can also validate custom behaviour.</p>
   </div>
 
   <div class="plugin">
@@ -729,7 +729,7 @@
         <tr><th>Since:</th><td>September 2013</td></tr>
       </table>
     </div>
-    <p class="description">It allows user Core or IDE extensions of Selenium IDE to declare what other extensions they depend on. It loads those extensions in the correct order reflecting their dependancies.</p>
+    <p class="description">It allows user Core or IDE extensions of Selenium IDE to declare dependancy on other extensions (and optionally which versions). It validates all dependancies. It loads all those extensions in the correct order.</p>
   </div>
 
   <div class="plugin">
@@ -818,7 +818,9 @@
         <tr><th>Since:</th><td>2013</td></tr>
       </table>
     </div>
-    <p class="description">It allows definition of custom configuration schemas (modules), consisting of single-valued and multi-valued fields, either free-type or choice lists. It facilitates team work through sharing of chosen parts of configuration in manifest files. Users can override parts of the shared configuration through manifest files or visual interface. They can have multiple sets of preferences and they can choose between them when running the scripts.</p>
+    <p class="description">It allows definition of custom configuration schemas (modules), consisting of single-valued and multi-valued fields, either free-type or choice lists.
+    </p>
+    <p class="description"> It facilitates team work through sharing of chosen parts of configuration in manifest files. Users can override parts of the shared configuration through manifest files or visual interface. They can have multiple sets of preferences and they can choose between them when running the scripts.</p>
   </div>
 
   <div class="plugin">
