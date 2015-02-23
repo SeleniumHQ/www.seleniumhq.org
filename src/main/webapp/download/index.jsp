@@ -657,7 +657,7 @@
         <tr><th>Since:</th><td>February 2014</td></tr>
       </table>
     </div>
-    <p class="description">It accepts Selenese commands from another Selenium IDE instance (as per <a href="https://code.google.com/p/selite/wiki/SeleniumIde#Using_multiple_Selenium_IDEs_in_parallel">Using multiple Selenium IDEs in parallel</a>) through clipboard. It enables Selenese commands to be indented with spaces into blocks. It indents and unindents structured commands that come with <a href="https://code.google.com/p/selite/wiki/SelBlocksGlobal">SeLite SelBlocks Global</a>.</p>
+    <p class="description">It accepts Selenese commands from another Selenium IDE instance (as per <a href="https://code.google.com/p/selite/wiki/SeleniumIde#Using_multiple_Selenium_IDEs_in_parallel">Using multiple Selenium IDEs in parallel</a>) through clipboard. It enables Selenese commands to be indented with spaces into blocks, through menu or by pressing right or left arrow. It automatically indents and unindents structured commands that come with <a href="https://code.google.com/p/selite/wiki/SelBlocksGlobal">SeLite SelBlocks Global</a>.</p>
   </div>
 
   <div class="plugin">
@@ -747,7 +747,7 @@
         <tr><th>Since:</th><td>February 2015</td></tr>
       </table>
     </div>
-    <p class="description">It makes Selenium IDE GUI more practical. You can edit comments and targets and values of commands 'in place' (where they are listed).</p>
+    <p class="description">It makes Selenium IDE GUI more practical. You can edit comments and targets and values of commands 'in place' (where they are listed). It adds key shortcuts 'I' and 'M' to insert new command and comment, respectively.</p>
   </div>
 
   <div class="plugin">
