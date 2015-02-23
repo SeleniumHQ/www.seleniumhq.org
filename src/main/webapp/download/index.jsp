@@ -747,7 +747,12 @@
         <tr><th>Since:</th><td>February 2015</td></tr>
       </table>
     </div>
-    <p class="description">It makes Selenium IDE GUI more practical. You can edit comments and targets and values of commands 'in place' (where they are listed). It adds key shortcuts 'I' and 'M' to insert new command and comment, respectively.</p>
+    <p class="description">It makes Selenium IDE GUI more practical:
+        <ul>
+            <li> you can edit comments and Targets and Values of commands 'in place' by clicking at them (where they are listed).</li>
+            <li>It adds key shortcuts 'I' and 'M' to insert new command and comment, respectively.</li>
+        </ul> 
+    </p>
   </div>
 
   <div class="plugin">
