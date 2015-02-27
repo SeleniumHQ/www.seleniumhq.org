@@ -83,28 +83,9 @@ your project.
                     <dependency>
                         <groupId>org.seleniumhq.selenium</groupId>
                         <artifactId>selenium-java</artifactId>
-                        <version>2.44.0</version>
-                    </dependency>
-                    <dependency>
-                        <groupId>com.opera</groupId>
-                        <artifactId>operadriver</artifactId>
+                        <version>2.45.0</version>
                     </dependency>
                 </dependencies>
-                <dependencyManagement>
-                    <dependencies>
-                        <dependency>
-                            <groupId>com.opera</groupId>
-                            <artifactId>operadriver</artifactId>
-                            <version>1.5</version>
-                            <exclusions>
-                                <exclusion>
-                                    <groupId>org.seleniumhq.selenium</groupId>
-                                    <artifactId>selenium-remote-driver</artifactId>
-                                </exclusion>
-                            </exclusions>
-                        </dependency>
-                    </dependencies>
-                </dependencyManagement>
         </project>
 
 
