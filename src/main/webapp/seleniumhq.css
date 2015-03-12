@@ -1300,7 +1300,7 @@ ol.faq li a:hover {
 	#header h1 a {
 		display: block;
 		width: 268px;
-		height: 64px;
+		height: 20px;
 		background: transparent url("images/header-logo.png") no-repeat;
 		text-indent: -6px;
 		text-decoration: none;
