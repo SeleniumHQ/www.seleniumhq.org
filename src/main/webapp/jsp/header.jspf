@@ -23,18 +23,18 @@
 <script type="text/javascript">
 (function(){
     var match = window.location.pathname.match(/\/([^\/]*)\/(.*)/);
-    var location = 'http://https://github.com/SeleniumHQ/www.seleniumhq.org/edit/master/src/main';
+    var location = 'https://github.com/SeleniumHQ/www.seleniumhq.org/edit/master/src/main';
     if (match && match[1] == 'docs') {
         if (window.location.pathname.match(/\/$/)) return;
         location += "/rst/" +
             ( match.length == 2 ? 'index' : match[2].replace(/\.jsp$/, '') ) +
-            ".rst?repo=site&edit=1";
+            ".rst";
     } else {
         var path = window.location.pathname;
         if (path.match(/\/$/)) {
             path += 'index.jsp';
         }
-        location += "/webapp" + path + "?repo=site&edit=1";
+        location += "/webapp" + path;
     }
     document.write("<a href=\"" + location + "\">edit this page</a>");
 })();
