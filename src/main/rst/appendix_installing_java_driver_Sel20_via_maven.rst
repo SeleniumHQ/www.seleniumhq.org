@@ -22,7 +22,7 @@ IDE loads, do the following:
  # Your project should appear in the "Projects" box already
  # click finish
 
-If you haven't already, install the `m2eclipse plugin <http://m2eclipse.sonatype.org/installing-m2eclipse.html>`_ then 
+If you haven't already, install the `m2eclipse plugin <http://eclipse.org/m2e/index.html>`_ then 
 right click on your project and select Maven -> Enable Dependency Management.
 
 
