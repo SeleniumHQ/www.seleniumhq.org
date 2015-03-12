@@ -1,6 +1,3 @@
-The canonical repo lives in google code:
-http://code.google.com/p/selenium/source/checkout?repo=site
-
 Things you need to have installed to run the docs:
 
 * Maven           http://maven.apache.org
