@@ -43,9 +43,8 @@
   <h3>Selenium Server (formerly the Selenium RC Server)</h3>
   <p>The Selenium Server is needed in order to run either Selenium RC style scripts or Remote Selenium Webdriver ones. The 2.x server is a drop-in replacement for the old Selenium RC server and is designed to be backwards compatible with your existing infrastructure.</p>
   <p>Download version <a
-    href="http://selenium-release.storage.googleapis.com/2.45/selenium-server-standalone-2.45.0.jar">2.45.0</a>
-  </p>
-  <p>To use the Selenium Server in a Grid configuration <a href="http://code.google.com/p/selenium/wiki/Grid2">see the wiki page</a>.</p>
+    href="http://selenium-release.storage.googleapis.com/2.45/selenium-server-standalone-2.45.0.jar">2.45.0</a> </p>
+  <p>To use the Selenium Server in a Grid configuration <a href="https://github.com/SeleniumHQ/selenium/wiki/Grid2">see the wiki page</a>.</p>
 
   <h3>The Internet Explorer Driver Server</h3>
   <p>This is required if you want to make use of the latest and greatest
@@ -56,7 +55,7 @@
     href="http://selenium-release.storage.googleapis.com/2.45/IEDriverServer_Win32_2.45.0.zip">32
     bit Windows IE</a> or <a
     href="http://selenium-release.storage.googleapis.com/2.45/IEDriverServer_x64_2.45.0.zip">64 bit Windows IE</a><br/>
-    <a href="http://selenium.googlecode.com/git/cpp/iedriverserver/CHANGELOG">CHANGELOG</a></p>
+    <a href="http://goo.gl/LJ07LL">CHANGELOG</a></p>
 
   <a name="client-drivers"/>
   <h3>Selenium Client & WebDriver Language Bindings</h3>
@@ -80,40 +79,40 @@
         <td>2.45.0</td>
         <td>2015-02-26</td>
         <td><a href="http://selenium-release.storage.googleapis.com/2.45/selenium-java-2.45.0.zip">Download</a>&nbsp;&nbsp;</td>
-        <td><a href="http://selenium.googlecode.com/git/java/CHANGELOG">Change log</a>&nbsp;&nbsp;</td>
-        <td><a href="http://selenium.googlecode.com/git/docs/api/java/index.html" alt="Javadoc">Javadoc</a></td>
+        <td><a href="http://goo.gl/5IVvjZ">Change log</a>&nbsp;&nbsp;</td>
+        <td><a href="http://goo.gl/Grc6tm" alt="Javadoc">Javadoc</a></td>
       </tr>
       <tr>
         <td>C#</td>
         <td>2.45.0</td>
         <td>2015-02-27</td>
         <td><a href="http://selenium-release.storage.googleapis.com/2.45/selenium-dotnet-2.45.0.zip">Download</a></td>
-        <td><a href="http://selenium.googlecode.com/git/dotnet/CHANGELOG">Change log</a></td>
-        <td><a href="http://selenium.googlecode.com/git/docs/api/dotnet/index.html">API docs</a></td>
+        <td><a href="http://goo.gl/t3faSQ">Change log</a></td>
+        <td><a href="http://goo.gl/uutZjZ">API docs</a></td>
       </tr>
       <tr>
         <td>Ruby</td>
         <td>2.45.0</td>
         <td>2015-02-27</td>
         <td><a href="http://rubygems.org/gems/selenium-webdriver">Download</a></td>
-        <td><a href="http://selenium.googlecode.com/git/rb/CHANGES">Change log</a></td>
-        <td><a href="http://selenium.googlecode.com/git/docs/api/rb/index.html">API docs</a></td>
+        <td><a href="http://goo.gl/zNfSLK">Change log</a></td>
+        <td><a href="http://goo.gl/jzh4RU">API docs</a></td>
       </tr>
       <tr>
         <td>Python</td>
         <td>2.45.0</td>
         <td>2015-02-26</td>
         <td><a href="http://pypi.python.org/pypi/selenium">Download</a></td>
-        <td><a href="http://selenium.googlecode.com/git/py/CHANGES">Change log</a></td>
-        <td><a href="http://selenium.googlecode.com/git/docs/api/py/api.html">API docs</a></td>
+        <td><a href="http://goo.gl/rHRdgk">Change log</a></td>
+        <td><a href="http://goo.gl/sG1GfQ">API docs</a></td>
       </tr>
       <tr>
         <td>Javascript (Node)</td>
         <td>2.45.0</td>
         <td>2015-02-26</td>
         <td><a href="https://npmjs.org/package/selenium-webdriver">Download</a></td>
-        <td><a href="https://github.com/SeleniumHQ/selenium/blob/master/javascript/node/selenium-webdriver/CHANGES.md">Change log</a></td>
-        <td><a href="http://selenium.googlecode.com/git/docs/api/javascript/index.html">API docs</a></td>
+        <td><a href="http://goo.gl/e6smYw">Change log</a></td>
+        <td><a href="http://goo.gl/hohAut">API docs</a></td>
       </tr>
     </tbody>
   </table>
@@ -130,7 +129,7 @@
   <p>SafariDriver now requires manual installation of the extension prior to automation</p>
   <ul>
     <li>Latest release <a href="http://selenium-release.storage.googleapis.com/2.45/SafariDriver.safariextz">2.45.0</a></li>
-    <li><a href="https://code.google.com/p/selenium/wiki/SafariDriver">Wiki Page</a></li>
+    <li><a href="https://github.com/SeleniumHQ/selenium/wiki/SafariDriver">Wiki Page</a></li>
   </ul>
 
   <hr/>
@@ -171,7 +170,7 @@
         <td><a href="http://chromedriver.storage.googleapis.com/index.html?path=2.14/">2.14</a>&nbsp;&nbsp;</td>
         <td><a href="http://chromedriver.storage.googleapis.com/2.14/notes.txt">change log</a>&nbsp;&nbsp;</td>
         <td><a href="http://code.google.com/p/chromedriver/issues/list">issue tracker</a>&nbsp;&nbsp;</td>
-        <td><a href="http://code.google.com/p/selenium/wiki/ChromeDriver">selenium wiki page</a>&nbsp;&nbsp;</td>
+        <td><a href="https://github.com/SeleniumHQ/selenium/wiki/ChromeDriver">selenium wiki page</a>&nbsp;&nbsp;</td>
         <td>Released 2015-01-28</td>
       </tr>
       <tr>
@@ -179,7 +178,7 @@
         <td><a href="https://github.com/operasoftware/operachromiumdriver/releases">0.1.0</a></td>
         <td>&nbsp;</td>
         <td><a href="https://github.com/operasoftware/operachromiumdriver/issues">issue tracker</a></td>
-        <td><a href="http://code.google.com/p/selenium/wiki/OperaDriver">selenium wiki page</a></td>
+        <td><a href="https://github.com/SeleniumHQ/selenium/wiki/OperaDriver">selenium wiki page</a></td>
         <td>Released 2014-11-06</td>
       </tr>
       <tr>
@@ -299,7 +298,7 @@
 
   <h3>Selenium IDE</h3>
   <p>Selenium IDE is a Firefox plugin which records and plays back user interactions with the browser. Use this to either create simple scripts or assist in exploratory testing. It can also export Remote Control or WebDriver scripts, though they tend to be somewhat brittle and should be overhauled into some sort of Page Object-y structure for any kind of resiliency.</p>
-  <p>Download latest released version <a href="http://release.seleniumhq.org/selenium-ide/2.9.0/selenium-ide-2.9.0.xpi">2.9.0</a> released on 09/Mar/2015 or view the <a href="http://code.google.com/p/selenium/wiki/SeIDEReleaseNotes">Release Notes</a> and then <a href="#side_plugins">install some plugins</a>.</p>
+  <p>Download latest released version <a href="http://release.seleniumhq.org/selenium-ide/2.9.0/selenium-ide-2.9.0.xpi">2.9.0</a> released on 09/Mar/2015 or view the <a href="https://github.com/SeleniumHQ/selenium/wiki/SeIDEReleaseNotes">Release Notes</a> and then <a href="#side_plugins">install some plugins</a>.</p>
   <p>Download previous version <a href="http://release.seleniumhq.org/selenium-ide/2.8.0/selenium-ide-2.8.0.xpi">2.8.0</a> released on 29/Sep/2014.</p>
   <!-- <p>Download next unreleased version <a href="http://release.seleniumhq.org/selenium-ide/2.6.0/selenium-ide-2.6.0.xpi">2.6.0</a> to be released on 16/September/2013</p> -->
   <!-- <p>Download version under development <a href="http://ci.seleniumhq.org:8080/job/IDE/lastSuccessfulBuild/artifact/selenium-trunk/build/ide/selenium-ide-multi.xpi">unreleased</a> (currently disabled)</p> -->

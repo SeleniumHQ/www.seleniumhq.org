@@ -67,7 +67,7 @@
   <p>If you are using <tt>DefaultSelenium</tt> (or the <tt>RemoteWebDriver</tt>
   implementation), you still need to start a Selenium server. The best way is
   to download the <tt>selenium-server-standalone.jar</tt> from the
-  <a href="http://code.google.com/p/selenium/downloads/list">Selenium Downloads
+  <a href="http://selenium-release.storage.googleapis.com/index.html">Selenium Downloads
   page</a> and just use it. Furthermore you can also embed the Selenium server
   into your own project, if you add the following dependency to your <tt>pom.xml</tt>:<pre>  
     &lt;dependency&gt;

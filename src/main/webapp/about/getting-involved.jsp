@@ -40,7 +40,7 @@
         website, or organizing content.</p>
 
     <p>You can get started on working with the website by following the instructions on
-       <a class="reference external" href="http://code.google.com/p/selenium/wiki/Documentation">our wiki.</a>
+       <a class="reference external" href="https://github.com/SeleniumHQ/selenium/wiki/Documentation">our wiki.</a>
     </p>
 
     <p>Feel free to post questions on the <a class="reference external"
@@ -52,14 +52,14 @@
 
     <p>For the most part, our documentation is held in source control for the main website. The main documentation is in
         plain text so use your favorite editor offline to edit the pages. The source for this main
-        site is <a class="reference external" href="https://code.google.com/p/selenium/source/checkout?repo=site">here</a>
+        site is <a class="reference external" href="https://github.com/SeleniumHQ/www.seleniumhq.org">here</a>
         and if you are familiar with Git you should be able to bring it down to your local system for offline editing.</p>
 
     <div class="section" id="submitting-documentation-bugs">
         <h3>Submitting Documentation &#8220;Bugs&#8221;</h3>
 
         <p>If you find an error in our documentation, either a &#8220;typo&#8221; or innaccurate information. Please let
-        us know. You can submit these in our <a href="http://code.google.com/p/selenium/issues/list" class="reference external">
+        us know. You can submit these in our <a href="https://github.com/SeleniumHQ/selenium/issues" class="reference external">
            bug tracker</a>, please start the subject with "DOCS".</p>
 
     </div>
@@ -69,7 +69,7 @@
 
     <p>If you run into a problem with Selenium, feel free to file a bug report about
     it on <a class="reference external"
-    href="http://code.google.com/p/selenium/issues/list">our Bug Tracker</a>.
+    href="https://github.com/SeleniumHQ/selenium/issues">our Bug Tracker</a>.
     Similarly, if you have an idea for a feature you&#8217;d like to see in a
     future version, report that as well.</p>
 
@@ -126,7 +126,7 @@ Drawbacks
         languages.</p>
 
     <p>We encourage code patches and other contributions - get involved by following
-        the instructions on <a class="reference external" href="https://code.google.com/p/selenium/wiki/CommitYourCode">our wiki </a>. You can also track the activity of the development team by checking out the read-only <a class="reference external" href="http://groups.google.com/group/selenium-developer-activity">Selenium Developer Activity Group</a>.</p>
+        the instructions on <a class="reference external" href="https://github.com/SeleniumHQ/selenium/wiki/CommitYourCode">our wiki </a>. You can also track the activity of the development team by checking out the read-only <a class="reference external" href="http://groups.google.com/group/selenium-developer-activity">Selenium Developer Activity Group</a>.</p>
     <p>If you do supply a patch we will need you to <a href="https://spreadsheets.google.com/spreadsheet/viewform?hl=en_US&formkey=dFFjXzBzM1VwekFlOWFWMjFFRjJMRFE6MQ#gid=0">sign the CLA</a>. We are a part of <a href="http://www.sfconservancy.org/">SFC</a></p>
 </div>
 

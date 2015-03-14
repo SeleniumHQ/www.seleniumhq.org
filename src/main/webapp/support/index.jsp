@@ -42,7 +42,7 @@ the current day's log.
 
 <h2 id="BugTracker">Bug Tracker</h2>
 <p>
-Selenium's <a href="http://code.google.com/p/selenium/issues/list">
+Selenium's <a href="https://github.com/SeleniumHQ/selenium/issues">
 Bug Tracker</a> can be used to log new bugs, check the status of an existing
 one or as inspiration to help make Selenium better.
 </p>
