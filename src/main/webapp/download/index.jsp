@@ -79,7 +79,7 @@
         <td>2.45.0</td>
         <td>2015-02-26</td>
         <td><a href="http://selenium-release.storage.googleapis.com/2.45/selenium-java-2.45.0.zip">Download</a>&nbsp;&nbsp;</td>
-        <td><a href="https://github.com/SeleniumHQ/selenium/blob/master/CHANGES">Change log</a>&nbsp;&nbsp;</td>
+        <td><a href="http://goo.gl/5IVvjZ">Change log</a>&nbsp;&nbsp;</td>
         <td><a href="http://goo.gl/Grc6tm" alt="Javadoc">Javadoc</a></td>
       </tr>
       <tr>
