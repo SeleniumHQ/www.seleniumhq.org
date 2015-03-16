@@ -236,6 +236,12 @@
         <td><a href="https://github.com/cisco-open-source/qtwebdriver/wiki">wiki page</a>&nbsp;&nbsp;</td>
         <td>Released 2014-04-23</td>
       </tr>
+      <tr>
+        <td><a href="https://github.com/MachinePublishers/jBrowserDriver">jBrowserDriver</a></td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td><a href="https://github.com/MachinePublishers/jBrowserDriver/issues">issue tracker</a></td>
+      </tr>
     </tbody>
   </table>
   <a name="thirdPartyLanguageBindings"/>
