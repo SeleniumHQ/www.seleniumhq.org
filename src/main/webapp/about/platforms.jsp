@@ -39,11 +39,11 @@
 
   <div class="browser">
     <h4>Safari</h4>
-    <p><a href="https://github.com/SeleniumHQ/selenium/wiki/SafariDriver">Safari Driver</a> requires Safari 5.1+ and only runs on OS X</p>
+    <p><a href="https://github.com/SeleniumHQ/selenium/wiki/SafariDriver">SafariDriver</a> requires Safari 5.1+ and only runs on OS X</p>
   </div>
   <div class="browser">
     <h4>Opera</h4>
-    <p><a href="https://github.com/SeleniumHQ/selenium/wiki/OperaDriver">Opera Driver</a> requires Opera 12.x and older versions</p>
+    <p><a href="https://github.com/SeleniumHQ/selenium/wiki/OperaDriver">OperaDriver</a> requires Opera 12.x and older versions</p>
   </div>
   <div class="browser">
     <h4>Chrome</h4>
