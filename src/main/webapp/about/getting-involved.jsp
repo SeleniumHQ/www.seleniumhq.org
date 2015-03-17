@@ -40,7 +40,7 @@
         website, or organizing content.</p>
 
     <p>You can get started on working with the website by following the instructions on
-       <a class="reference external" href="https://github.com/SeleniumHQ/selenium/wiki">our wiki.</a>
+       <a class="reference external" href="https://github.com/SeleniumHQ/www.seleniumhq.org/wiki/Documentation">our wiki.</a>
     </p>
 
     <p>Feel free to post questions on the <a class="reference external"
