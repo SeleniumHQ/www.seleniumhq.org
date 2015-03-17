@@ -599,29 +599,34 @@
   </div>
   
   <h3>SeLite</h3>
-  <p><a href="https://code.google.com/p/selite/wiki/ProjectHome">SeLite</a> is a family of <a href="https://code.google.com/p/selite/wiki/AddOns">add-ons</a> and tools for Selenium IDE. It improves productivity of maintaining, <a href="#selite-extension-sequencer">reusing</a> and <a href="#selite-run-all-favorites">running</a> Selenium scripts. It facilitates team work through <a href="#selite-settings">management and sharing of configurations</a>.
-</p>
-<p>It enhances test automation by <a href="#selite-autocheck">checking for server side errors</a>, <a href="#selite-commands">adding powerful test commands</a> and <a href="#selite-exit-confirmation-checker">validating the confirmation on leaving an unsubmitted form</a>. It supports function calls between test cases, which means <a href="#selite-selblocks-global">better reuse of test cases</a>. It allows <a href="#selite-bootstrap">smoother development</a> of Javascript components.
-</p>
-<p>It enables your scripts to have test data separate from the tested application. That uses <a href="http://www.sqlite.org">SQLite</a> (the <a href="http://www.sqlite.org/mostdeployed.html">most widely deployed</a> SQL database in the world). Test frameworks can <a href="#selite-db-objects">access the data via objects</a>.
+  <p><a href="https://code.google.com/p/selite/wiki/ProjectHome">SeLite</a> is a family of extensions that improve Selenium IDE. It
+    <ul>
+        <li>enables user scripts to be more effective</li>
+        <li>enhances development environment</li>
+        <li>facilitates team work.</li>
+    </ul>
+    See <a href="https://code.google.com/p/selite/wiki/ProjectHome#Benefits">benefits in detail</a> and <a href="https://code.google.com/p/selite/wiki/SeleniumIde">productivity tips</a>. It also enables database-driven navigation with <a href="http://www.sqlite.org/">SQLite</a> (the <a href="http://www.sqlite.org/mostdeployed.html">most widely deployed</a> SQL database). 
   </p>
+  <p>
+    For the easiest download get all add-ons of <a href="https://addons.mozilla.org/en-US/firefox/collections/peter-kehl/selite/?sort=name">SeLite collection</a>. The following lists them briefly; see also <a href="https://code.google.com/p/selite/wiki/AddOns">add-ons in detail</a>.
+  </p>
+
   <div class="plugin">
     <a name="selite-autocheck"/>
     <div class="name">SeLite AutoCheck</div>
     <div class="column">
       <table>
-          <tr><th>Links:</th><td><a href="https://addons.mozilla.org/en-US/firefox/addon/selite-auto-check/">Info</a> - <a href="https://addons.mozilla.org/en-US/firefox/addon/selite-auto-check/versions/">Download</a> - <a href="https://code.google.com/p/selite/wiki/AutoCheck">Docs</a> - <a href="https://code.google.com/p/selite/wiki/Troubleshooting">Support</a></td></tr>
+          <tr><th>Links:</th><td><a href="https://addons.mozilla.org/en-US/firefox/addon/selite-auto-check/">Info</a> - <a href="https://addons.mozilla.org/en-US/firefox/addon/selite-auto-check/versions/">Download</a> - <a href="https://code.google.com/p/selite/wiki/AutoCheck">Docs</a> - <a href="https://code.google.com/p/selite/wiki/TroubleShooting">Support</a></td></tr>
         <tr><th>Author:</th><td>Peter Kehl</td></tr>
         <tr><th>License:</th><td>LGPL 3</td></tr>
       </table>
     </div>
     <div class="column">
       <table>
-        <tr><th>Released:</th><td>July 3, 2014</td></tr>
-        <tr><th>Version:</th><td>0.06</td></tr>
+        <tr><th>Since:</th><td>July 2014</td></tr>
       </table>
     </div>
-    <p class="description">It runs custom/customisable validation of the tested website after every Selenese step. </p>
+    <p class="description">It runs template-based, customisable or fully custom validation of the tested website after every Selenese step. It records server errors etc.</p>
   </div>
 
   <div class="plugin">
@@ -629,18 +634,35 @@
     <div class="name">SeLite Bootstrap</div>
     <div class="column">
       <table>
-          <tr><th>Links:</th><td><a href="https://addons.mozilla.org/en-US/firefox/addon/selite-bootstrap/">Info</a> - <a href="https://addons.mozilla.org/en-US/firefox/addon/SeLite-Bootstrap/versions/">Download</a> - <a href="https://code.google.com/p/selite/wiki/Bootstrap">Docs</a> - <a href="https://code.google.com/p/selite/wiki/Troubleshooting">Support</a></td></tr>
+          <tr><th>Links:</th><td><a href="https://addons.mozilla.org/en-US/firefox/addon/selite-bootstrap/">Info</a> - <a href="https://addons.mozilla.org/en-US/firefox/addon/SeLite-Bootstrap/versions/">Download</a> - <a href="https://code.google.com/p/selite/wiki/BootstrapLoader">Docs</a> - <a href="https://code.google.com/p/selite/wiki/TroubleShooting">Support</a></td></tr>
         <tr><th>Author:</th><td>Peter Kehl</td></tr>
         <tr><th>License:</th><td>LGPL 3</td></tr>
       </table>
     </div>
     <div class="column">
       <table>
-        <tr><th>Released:</th><td>July 3, 2014</td></tr>
-        <tr><th>Version:</th><td>0.84</td></tr>
+        <tr><th>Since:</th><td>2012</td></tr>
       </table>
     </div>
-    <p class="description">It allows smoother development of Selenium Core extensions as standalone files. It reloads them automatically on change.</p>
+    <p class="description">It allows smoother development of Selenium Core extensions (saved as standalone files). It reloads them automatically on change.</p>
+  </div>
+
+  <div class="plugin">
+    <a name="selite-commands"/>
+    <div class="name">SeLite Clipboard And Indent</div>
+    <div class="column">
+      <table>
+          <tr><th>Links:</th><td><a href="https://addons.mozilla.org/en-US/firefox/addon/selite-clipboard-and-indent/">Info</a> - <a href="https://addons.mozilla.org/en-US/firefox/addon/selite-clipboard-and-indent/versions/">Download</a> - <a href="https://code.google.com/p/selite/wiki/TroubleShooting">Support</a></td></tr>
+        <tr><th>Author:</th><td>Peter Kehl</td></tr>
+        <tr><th>License:</th><td>Apache License 2</td></tr>
+      </table>
+    </div>
+    <div class="column">
+      <table>
+        <tr><th>Since:</th><td>February 2014</td></tr>
+      </table>
+    </div>
+    <p class="description">It accepts Selenese commands from another Selenium IDE instance (as per <a href="https://code.google.com/p/selite/wiki/SeleniumIde#Using_multiple_Selenium_IDEs_in_parallel">Using multiple Selenium IDEs in parallel</a>) through clipboard. It enables Selenese commands to be indented with spaces into blocks, through menu or by pressing right or left arrow. It automatically indents and unindents structured commands that come with <a href="https://code.google.com/p/selite/wiki/SelBlocksGlobal">SeLite SelBlocks Global</a>.</p>
   </div>
 
   <div class="plugin">
@@ -648,18 +670,17 @@
     <div class="name">SeLite Commands</div>
     <div class="column">
       <table>
-          <tr><th>Links:</th><td><a href="https://addons.mozilla.org/en-US/firefox/addon/selite-commands/">Info</a> - <a href="https://addons.mozilla.org/en-US/firefox/addon/selite-commands/versions/">Download</a> - <a href="https://code.google.com/p/selite/wiki/Commands">Docs</a> - <a href="https://code.google.com/p/selite/wiki/Troubleshooting">Support</a></td></tr>
+          <tr><th>Links:</th><td><a href="https://addons.mozilla.org/en-US/firefox/addon/selite-commands/">Info</a> - <a href="https://addons.mozilla.org/en-US/firefox/addon/selite-commands/versions/">Download</a> - <a href="https://code.google.com/p/selite/wiki/ExtraCommands">Docs</a> - <a href="https://code.google.com/p/selite/wiki/TroubleShooting">Support</a></td></tr>
         <tr><th>Author:</th><td>Peter Kehl</td></tr>
         <tr><th>License:</th><td>LGPL 3</td></tr>
       </table>
     </div>
     <div class="column">
       <table>
-        <tr><th>Released:</th><td>July 3, 2014</td></tr>
-        <tr><th>Version:</th><td>0.83</td></tr>
+        <tr><th>Since:</th><td>2011</td></tr>
       </table>
     </div>
-    <p class="description">It provides various Selenese commands, for example for entering/selecting random input values.</p>
+    <p class="description">It provides practical Selenese commands, for example for entering/selecting random input values.</p>
   </div>
 
   <div class="plugin">
@@ -667,18 +688,17 @@
     <div class="name">SeLite DB Objects</div>
     <div class="column">
       <table>
-          <tr><th>Links:</th><td><a href="https://addons.mozilla.org/en-US/firefox/addon/selite-db-objects/">Info</a> - <a href="https://addons.mozilla.org/en-US/firefox/addon/selite-db-objects/versions/">Download</a> - <a href="https://code.google.com/p/selite/wiki/Troubleshooting">Support</a></td></tr>
+          <tr><th>Links:</th><td><a href="https://addons.mozilla.org/en-US/firefox/addon/selite-db-objects/">Info</a> - <a href="https://addons.mozilla.org/en-US/firefox/addon/selite-db-objects/versions/">Download</a> - <a href="https://code.google.com/p/selite/wiki/TroubleShooting">Support</a></td></tr>
         <tr><th>Author:</th><td>Peter Kehl</td></tr>
         <tr><th>License:</th><td>LGPL 3</td></tr>
       </table>
     </div>
     <div class="column">
       <table>
-        <tr><th>Released:</th><td>July 3, 2014</td></tr>
-        <tr><th>Version:</th><td>0.76</td></tr>
+        <tr><th>Since:</th><td>May 2013</td></tr>
       </table>
     </div>
-    <p class="description">It provides mid-level objects for accessing test data in SQLite. You can describe a schema and access the data as objects with little need for writing SQL.</p>
+    <p class="description">It provides mid-level objects for accessing test data in SQLite. Test frameworks can describe a schema and access the data as objects with little need for writing SQL.</p>
   </div>
 
   <div class="plugin">
@@ -686,18 +706,17 @@
     <div class="name">SeLite Exit Confirmation Checker</div>
     <div class="column">
       <table>
-          <tr><th>Links:</th><td><a href="https://addons.mozilla.org/en-US/firefox/addon/selite-exit-confirmation-check/">Info</a> - <a href="https://addons.mozilla.org/en-US/firefox/addon/selite-exit-confirmation-check/versions/">Download</a> - <a href="https://code.google.com/p/selite/wiki/ExitConfirmationChecker">Docs</a> - <a href="https://code.google.com/p/selite/wiki/Troubleshooting">Support</a></td></tr>
+          <tr><th>Links:</th><td><a href="https://addons.mozilla.org/en-US/firefox/addon/selite-exit-confirmation-check/">Info</a> - <a href="https://addons.mozilla.org/en-US/firefox/addon/selite-exit-confirmation-check/versions/">Download</a> - <a href="https://code.google.com/p/selite/wiki/ExitConfirmationChecker">Docs</a> - <a href="https://code.google.com/p/selite/wiki/TroubleShooting">Support</a></td></tr>
         <tr><th>Author:</th><td>Peter Kehl</td></tr>
         <tr><th>License:</th><td>LGPL 3</td></tr>
       </table>
     </div>
     <div class="column">
       <table>
-        <tr><th>Released:</th><td>June 30, 2014</td></tr>
-        <tr><th>Version:</th><td>0.03</td></tr>
+        <tr><th>Since:</th><td>June 2014</td></tr>
       </table>
     </div>
-    <p class="description"> It's beneficial if your web app uses <i>window.onbeforeunload</i> to get confirmation when the user tries to leave an unsubmitted form etc. This extension helps to validate that the confirmation shows up exactly when it should.</p>
+    <p class="description"> It's beneficial if your web application uses <i>window.onbeforeunload</i> to get confirmation when the user tries to leave an unsubmitted form etc. This extension helps to validate that the confirmation shows up exactly when it should. It can also validate custom behaviour.</p>
   </div>
 
   <div class="plugin">
@@ -705,33 +724,54 @@
     <div class="name">SeLite Extension Sequencer</div>
     <div class="column">
       <table>
-          <tr><th>Links:</th><td><a href="https://addons.mozilla.org/en-US/firefox/addon/selite-extension-sequencer/">Info</a> - <a href="https://addons.mozilla.org/en-US/firefox/addon/selite-extension-sequencer/versions/">Download</a> - <a href="https://code.google.com/p/selite/wiki/ExtensionSequencer">Docs</a> - <a href="https://code.google.com/p/selite/wiki/Troubleshooting">Support</a></td></tr>
+          <tr><th>Links:</th><td><a href="https://addons.mozilla.org/en-US/firefox/addon/selite-extension-sequencer/">Info</a> - <a href="https://addons.mozilla.org/en-US/firefox/addon/selite-extension-sequencer/versions/">Download</a> - <a href="https://code.google.com/p/selite/wiki/ExtensionSequencer">Docs</a> - <a href="https://code.google.com/p/selite/wiki/TroubleShooting">Support</a></td></tr>
         <tr><th>Author:</th><td>Peter Kehl</td></tr>
         <tr><th>License:</th><td>Apache License 2</td></tr>
       </table>
     </div>
     <div class="column">
       <table>
-        <tr><th>Released:</th><td>July 3, 2014</td></tr>
-        <tr><th>Version:</th><td>0.34</td></tr>
+        <tr><th>Since:</th><td>September 2013</td></tr>
       </table>
     </div>
-    <p class="description">It allows user Core or IDE extensions of Selenium IDE to declare what other extensions they depend on. It loads those extensions in the correct order reflecting their dependancies.</p>
+    <p class="description">It allows user Core or IDE extensions of Selenium IDE to declare dependancy on other extensions (and optionally which versions). It validates all dependancies. It loads all those extensions in the correct order.</p>
+  </div>
+
+  <div class="plugin">
+    <a name="selite-hands-on-gui"/>
+    <div class="name">SeLite Hands-on GUI</div>
+    <div class="column">
+      <table>
+          <tr><th>Links:</th><td><a href="https://addons.mozilla.org/en-US/firefox/addon/selite-hands-on-gui/">Info</a> - <a href="https://addons.mozilla.org/en-US/firefox/addon/selite-hands-on-gui/versions/">Download</a> - <a href="https://code.google.com/p/selite/wiki/TroubleShooting">Support</a></td></tr>
+        <tr><th>Author:</th><td>Peter Kehl</td></tr>
+        <tr><th>License:</th><td>Apache License 2</td></tr>
+      </table>
+    </div>
+    <div class="column">
+      <table>
+        <tr><th>Since:</th><td>February 2015</td></tr>
+      </table>
+    </div>
+    <p class="description">It makes Selenium IDE GUI more practical:
+        <ul>
+            <li> you can edit comments and Targets and Values of commands 'in place' by clicking at them (where they are listed).</li>
+            <li>It adds key shortcuts 'I' and 'M' to insert new command and comment, respectively.</li>
+        </ul> 
+    </p>
   </div>
 
   <div class="plugin">
     <div class="name">SeLite  Miscellaneous</div>
     <div class="column">
       <table>
-          <tr><th>Links:</th><td><a href="https://addons.mozilla.org/en-US/firefox/addon/selite-miscellaneous/">Info</a> - <a href="https://addons.mozilla.org/en-US/firefox/addon/selite-miscellaneous/versions/">Download</a> - <a href="https://code.google.com/p/selite/wiki/Troubleshooting">Support</a></td></tr>
+          <tr><th>Links:</th><td><a href="https://addons.mozilla.org/en-US/firefox/addon/selite-miscellaneous/">Info</a> - <a href="https://addons.mozilla.org/en-US/firefox/addon/selite-miscellaneous/versions/">Download</a> - <a href="https://code.google.com/p/selite/wiki/TroubleShooting">Support</a></td></tr>
         <tr><th>Author:</th><td>Peter Kehl</td></tr>
         <tr><th>License:</th><td>LGPL 3</td></tr>
       </table>
     </div>
     <div class="column">
       <table>
-        <tr><th>Released:</th><td>July 3, 2014</td></tr>
-        <tr><th>Version:</th><td>0.79</td></tr>
+        <tr><th>Since:</th><td>May 2013</td></tr>
       </table>
     </div>
     <p class="description">It provides miscellaneous internal components for various parts of SeLite group of extensions.</p>
@@ -742,15 +782,14 @@
     <div class="name">SeLite  Run All Favorites</div>
     <div class="column">
       <table>
-          <tr><th>Links:</th><td><a href="https://addons.mozilla.org/en-US/firefox/addon/selite-run-all-favorites/">Info</a> - <a href="https://addons.mozilla.org/en-US/firefox/addon/selite-run-all-favorites/versions/">Download</a> - <a href="https://code.google.com/p/selite/wiki/Troubleshooting">Support</a></td></tr>
+          <tr><th>Links:</th><td><a href="https://addons.mozilla.org/en-US/firefox/addon/selite-run-all-favorites/">Info</a> - <a href="https://addons.mozilla.org/en-US/firefox/addon/selite-run-all-favorites/versions/">Download</a> - <a href="https://code.google.com/p/selite/wiki/TroubleShooting">Support</a></td></tr>
         <tr><th>Author:</th><td>Peter Kehl</td></tr>
         <tr><th>License:</th><td>Mozilla Public License 1.1</td></tr>
       </table>
     </div>
     <div class="column">
       <table>
-        <tr><th>Released:</th><td>September 6, 2014</td></tr>
-        <tr><th>Version:</th><td>0.02</td></tr>
+        <tr><th>Since:</th><td>September 2014</td></tr>
       </table>
     </div>
     <p class="description">It runs a sequence of all test suites marked as favorites in <a href="https://addons.mozilla.org/en-US/firefox/addon/favorites-selenium-ide/">Favorites (Selenium IDE)</a>. It supports team work: it facilitates export/import of favorites by representing them relative to user's home folder.</p>
@@ -761,15 +800,14 @@
     <div class="name">SeLite  SelBlocks Global</div>
     <div class="column">
       <table>
-          <tr><th>Links:</th><td><a href="https://addons.mozilla.org/en-US/firefox/addon/selite-selblocks-global/">Info</a> - <a href="https://addons.mozilla.org/en-US/firefox/addon/SeLite-SelBlocks-Global/versions/">Download</a> - <a href="https://code.google.com/p/selite/wiki/SelBlocksGlobal">Docs</a> - <a href="https://code.google.com/p/selite/wiki/Troubleshooting">Support</a></td></tr>
-        <tr><th>Author:</th><td>Peter Kehl, based on SelBlocks from <a href="http://refactoror.net/">Chris Noe</a></td></tr>
+          <tr><th>Links:</th><td><a href="https://addons.mozilla.org/en-US/firefox/addon/selite-selblocks-global/">Info</a> - <a href="https://addons.mozilla.org/en-US/firefox/addon/SeLite-SelBlocks-Global/versions/">Download</a> - <a href="https://code.google.com/p/selite/wiki/SelBlocksGlobal">Docs</a> - <a href="https://code.google.com/p/selite/wiki/TroubleShooting">Support</a></td></tr>
+        <tr><th>Author:</th><td><a href="http://refactoror.net/">Chris Noe</a>, Peter Kehl</td></tr>
         <tr><th>License:</th><td>Mozilla Public License 1.1</td></tr>
       </table>
     </div>
     <div class="column">
       <table>
-        <tr><th>Released:</th><td>July 3, 2014</td></tr>
-        <tr><th>Version:</th><td>1.07</td></tr>
+        <tr><th>Since:</th><td>2011</td></tr>
       </table>
     </div>
     <p class="description">It's an enhanced version of SelBlocks. It allows to call functions (formerly: scripts) across the test cases (within the same test suite). It also provides <a href="https://code.google.com/p/selite/wiki/EnhancedSyntax">EnhancedSyntax</a>, which supports more expressive tests.</p>
@@ -780,33 +818,33 @@
     <div class="name">SeLite Settings</div>
     <div class="column">
       <table>
-          <tr><th>Links:</th><td><a href="https://addons.mozilla.org/en-US/firefox/addon/selite-settings/">Info</a> - <a href="https://addons.mozilla.org/en-US/firefox/addon/selite-settings/versions/">Download</a> - <a href="https://code.google.com/p/selite/wiki/Settings">Docs</a> - <a href="https://code.google.com/p/selite/wiki/Troubleshooting">Support</a></td></tr>
+          <tr><th>Links:</th><td><a href="https://addons.mozilla.org/en-US/firefox/addon/selite-settings/">Info</a> - <a href="https://addons.mozilla.org/en-US/firefox/addon/selite-settings/versions/">Download</a> - <a href="https://code.google.com/p/selite/wiki/SettingsOverview">Docs</a> - <a href="https://code.google.com/p/selite/wiki/TroubleShooting">Support</a></td></tr>
         <tr><th>Author:</th><td>Peter Kehl</td></tr>
         <tr><th>License:</th><td>GNU LGPL 3 for API; GNU GPL 3 for GUI</td></tr>
       </table>
     </div>
     <div class="column">
       <table>
-        <tr><th>Released:</th><td>July 3, 2014</td></tr>
-        <tr><th>Version:</th><td>0.42</td></tr>
+        <tr><th>Since:</th><td>2013</td></tr>
       </table>
     </div>
-    <p class="description">It allows definition of custom configuration schemas (modules), consisting of single-valued and multi-valued fields, either free-type or choice lists. It facilitates team work through sharing of chosen parts of configuration in manifest files. Users can override parts of the shared configuration through manifest files or visual interface. They can have multiple sets of preferences and they can choose between them when running the scripts.</p>
+    <p class="description">It allows definition of custom configuration schemas (modules), consisting of single-valued and multi-valued fields, either free-type or choice lists.
+    </p>
+    <p class="description"> It facilitates team work through sharing of chosen parts of configuration in manifest files. Users can override parts of the shared configuration through manifest files or visual interface. They can have multiple sets of preferences and they can choose between them when running the scripts.</p>
   </div>
 
   <div class="plugin">
     <div class="name">SeLite SQLite Connection Manager</div>
     <div class="column">
       <table>
-          <tr><th>Links:</th><td><a href="https://addons.mozilla.org/en-US/firefox/addon/selite-sqlite-connection-mg/">Info</a> - <a href="https://addons.mozilla.org/en-US/firefox/addon/SeLite-SQLite-Connection-Mg/versions/">Download</a> - <a href="https://code.google.com/p/selite/wiki/Troubleshooting">Support</a></td></tr>
+          <tr><th>Links:</th><td><a href="https://addons.mozilla.org/en-US/firefox/addon/selite-sqlite-connection-mg/">Info</a> - <a href="https://addons.mozilla.org/en-US/firefox/addon/SeLite-SQLite-Connection-Mg/versions/">Download</a> - <a href="https://code.google.com/p/selite/wiki/TroubleShooting">Support</a></td></tr>
         <tr><th>Author:</th><td>Peter Kehl</td></tr>
         <tr><th>License:</th><td>LGPL 3</td></tr>
       </table>
     </div>
     <div class="column">
       <table>
-        <tr><th>Released:</th><td>July 3, 2014</td></tr>
-        <tr><th>Version:</th><td>0.74</td></tr>
+        <tr><th>Since:</th><td>2013</td></tr>
       </table>
     </div>
     <p class="description">It manages SQLite DB connection(s). It can be used with other extensions from SeLite family, or on its own.</p>
@@ -816,20 +854,19 @@
     <div class="name">SeLite TestCase Debug Context</div>
     <div class="column">
       <table>
-          <tr><th>Links:</th><td><a href="https://addons.mozilla.org/en-US/firefox/addon/selite-testcase-debug-conte/">Info</a> - <a href="https://addons.mozilla.org/en-US/firefox/addon/SeLite-TestCase-Debug-Conte/versions/">Download</a> - <a href="https://code.google.com/p/selite/wiki/Troubleshooting">Support</a></td></tr>
+          <tr><th>Links:</th><td><a href="https://addons.mozilla.org/en-US/firefox/addon/selite-testcase-debug-conte/">Info</a> - <a href="https://addons.mozilla.org/en-US/firefox/addon/SeLite-TestCase-Debug-Conte/versions/">Download</a> - <a href="https://code.google.com/p/selite/wiki/TroubleShooting">Support</a></td></tr>
         <tr><th>Author:</th><td>Peter Kehl</td></tr>
         <tr><th>License:</th><td>Apache License 2</td></tr>
       </table>
     </div>
     <div class="column">
       <table>
-        <tr><th>Released:</th><td>July 3, 2014</td></tr>
-        <tr><th>Version:</th><td>0.71</td></tr>
+        <tr><th>Since:</th><td>2013</td></tr>
       </table>
     </div>
-    <p class="description">It's needed for SelBlocks Global.</p>
+    <p class="description">It's needed by SelBlocks Global.</p>
   </div>
-
+  <!-- End of SeLite add-ons -->
 
   <h3>Selenium IDE Plugins (that provide import / export / language support)</h3>
 
