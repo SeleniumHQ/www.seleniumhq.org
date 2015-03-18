@@ -20,15 +20,15 @@
 </ul>
 <p>WebDriver is the name of the key interface against which tests should be written in Java, the implementing classes one should use are listed as below:</p>
 <p>
-<a title="class in org.openqa.selenium.android" href="http://selenium.googlecode.com/git/docs/api/java/org/openqa/selenium/android/AndroidDriver.html">AndroidDriver</a>,
-<a title="class in org.openqa.selenium.chrome" href="http://selenium.googlecode.com/git/docs/api/java/org/openqa/selenium/chrome/ChromeDriver.html">ChromeDriver</a>,
-<a title="class in org.openqa.selenium.support.events" href="http://selenium.googlecode.com/git/docs/api/java/org/openqa/selenium/support/events/EventFiringWebDriver.html">EventFiringWebDriver</a>,
-<a title="class in org.openqa.selenium.firefox" href="http://selenium.googlecode.com/git/docs/api/java/org/openqa/selenium/firefox/FirefoxDriver.html">FirefoxDriver</a>,
-<a title="class in org.openqa.selenium.htmlunit" href="http://selenium.googlecode.com/git/docs/api/java/org/openqa/selenium/htmlunit/HtmlUnitDriver.html">HtmlUnitDriver</a>,
-<a title="class in org.openqa.selenium.ie" href="http://selenium.googlecode.com/git/docs/api/java/org/openqa/selenium/ie/InternetExplorerDriver.html">InternetExplorerDriver</a>,
+<a title="class in org.openqa.selenium.android" href="https://seleniumhq.github.io/selenium/docs/api/java/org/openqa/selenium/android/AndroidDriver.html">AndroidDriver</a>,
+<a title="class in org.openqa.selenium.chrome" href="https://seleniumhq.github.io/selenium/docs/api/java/org/openqa/selenium/chrome/ChromeDriver.html">ChromeDriver</a>,
+<a title="class in org.openqa.selenium.support.events" href="https://seleniumhq.github.io/selenium/docs/api/java/org/openqa/selenium/support/events/EventFiringWebDriver.html">EventFiringWebDriver</a>,
+<a title="class in org.openqa.selenium.firefox" href="https://seleniumhq.github.io/selenium/docs/api/java/org/openqa/selenium/firefox/FirefoxDriver.html">FirefoxDriver</a>,
+<a title="class in org.openqa.selenium.htmlunit" href="https://seleniumhq.github.io/selenium/docs/api/java/org/openqa/selenium/htmlunit/HtmlUnitDriver.html">HtmlUnitDriver</a>,
+<a title="class in org.openqa.selenium.ie" href="https://seleniumhq.github.io/selenium/docs/api/java/org/openqa/selenium/ie/InternetExplorerDriver.html">InternetExplorerDriver</a>,
 <a title="class in org.openqa.selenium.phantomjs" href="https://github.com/detro/ghostdriver/blob/master/binding/java/src/main/java/org/openqa/selenium/phantomjs/PhantomJSDriver.java">PhantomJSDriver</a>,
-<a title="class in org.openqa.selenium.remote" href="http://selenium.googlecode.com/git/docs/api/java/org/openqa/selenium/remote/RemoteWebDriver.html">RemoteWebDriver</a>,
-<a title="class in org.openqa.selenium.safari" href="http://selenium.googlecode.com/git/docs/api/java/org/openqa/selenium/safari/SafariDriver.html">SafariDriver</a>
+<a title="class in org.openqa.selenium.remote" href="https://seleniumhq.github.io/selenium/docs/api/java/org/openqa/selenium/remote/RemoteWebDriver.html">RemoteWebDriver</a>,
+<a title="class in org.openqa.selenium.safari" href="https://seleniumhq.github.io/selenium/docs/api/java/org/openqa/selenium/safari/SafariDriver.html">SafariDriver</a>
 </p>
 
 <p>For More information on Selenium WebDriver, please see <a href="http://seleniumhq.org/docs/03_webdriver.html">the documentation</a> and <a href="http://seleniumhq.org/docs/appendix_migrating_from_rc_to_webdriver.html">Remote Control to WebDriver Migration Notes</a>.</p>
