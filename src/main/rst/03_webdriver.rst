@@ -916,8 +916,8 @@ popup, you can access the alert with the following:
 
 This will return the currently open alert object. With this object you can now accept,
 dismiss, read its contents or even type into a prompt. This interface works equally
-well on alerts, confirms, and prompts. Refer to the `JavaDocs <http://selenium.googlecode.com/git/docs/api/java/index.html>`_ 
-or `RubyDocs <http://selenium.googlecode.com/git/docs/api/rb/Selenium/WebDriver/Alert.html>`_ for more information.
+well on alerts, confirms, and prompts. Refer to the `JavaDocs <https://seleniumhq.github.io/selenium/docs/api/java/index.html>`_ 
+or `RubyDocs <https://seleniumhq.github.io/selenium/docs/api/rb/Selenium/WebDriver/Alert.html>`_ for more information.
 
 
 
