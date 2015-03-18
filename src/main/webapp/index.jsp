@@ -25,6 +25,7 @@ If you want to
 </ul>
 <br />
 <p>Then you want to use <a href="/projects/ide/">Selenium IDE</a>; a Firefox add-on that will do simple record-and-playback of interactions with the browser.</p>
+<p style="color: #FF0000;font-size: 0.8em;">*Please note that the Selenium IDE is no longer a recommended tool and will be deprecated in the future. It is recommended to use Selenium Webdriver instead.</p>
         </td>
         <td><center><a href="/projects/webdriver/"><img alt="Selenium Logo" class="icon" src="images/selenium-logo.png" /></a><a href="/projects/webdriver/"><img alt="Selenium Grid Logo" class="icon" src="images/selenium-grid-logo.png" /></a></center><br />
 If you want to
