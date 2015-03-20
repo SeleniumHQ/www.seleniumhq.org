@@ -867,6 +867,24 @@
     <p class="description">It's needed by SelBlocks Global.</p>
   </div>
   <!-- End of SeLite add-ons -->
+  <!-- Add-on for reading a CSV File in Selenium IDE-->
+  <div class="plugin">
+    <div class="name">CSV File Reader</div>
+    <div class="column">
+      <table>
+          <tr><th>Links:</th><td><a href="http://openselenium.com/">Info</a> - <a href="http://openselenium.com/wp-content/uploads/2014/10/CSVRead_Selenium-IDE.js">Download</a></td></tr>
+        <tr><th>Author:</th><td>Abhishek Jain</td></tr>
+        <tr><th>License:</th><td>Apache License 2</td></tr>
+      </table>
+    </div>
+    <div class="column">
+      <table>
+        <tr><th>Since:</th><td>2014</td></tr>
+      </table>
+    </div>
+    <p class="description">Simple add-on to read a CSV file in Selenium IDE for data driven testing.</p>
+  </div> 
+  <!-- End of CSV file read add-on-->
 
   <h3>Selenium IDE Plugins (that provide import / export / language support)</h3>
 
