@@ -4,6 +4,11 @@
   <title>Selenium - Web Browser Automation</title>
 <%@include file="/jsp/head.jspf"%>
   <link rel="alternate" type="application/rss+xml" title="Selenium Blog Posts Feed" href="http://feeds.feedburner.com/Selenium" />
+  <style type="text/css">
+  table#choice td {
+    padding: 10px;
+  }
+  </style>
 </head>
 
 <body class="homepage">
@@ -17,23 +22,13 @@
   <table id="choice">
     <tbody>
       <tr>
-        <td style="border-right: 1px solid #CCCCCC"><center><a href="/projects/ide/"><img alt="Selenium IDE Logo" class="icon" src="images/selenium-ide-logo.png" /></a></center><br />
+        <td style="border-right: 1px solid #CCCCCC"><center><h3>Selenium WebDriver</h4><a href="/projects/webdriver/"><img alt="Selenium Logo" class="icon" src="images/selenium-logo.png" /></a><a href="/projects/webdriver/"><img alt="Selenium Grid Logo" class="icon" src="images/selenium-grid-logo.png" /></a></center><br />
 If you want to
 <ul>
-  <li>create quick bug reproduction scripts</li>
-  <li>create scripts to aid in automation-aided exploratory testing</li>
-</ul>
-<br />
-<p>Then you want to use <a href="/projects/ide/">Selenium IDE</a>; a Firefox add-on that will do simple record-and-playback of interactions with the browser.</p>
-        </td>
-        <td><center><a href="/projects/webdriver/"><img alt="Selenium Logo" class="icon" src="images/selenium-logo.png" /></a><a href="/projects/webdriver/"><img alt="Selenium Grid Logo" class="icon" src="images/selenium-grid-logo.png" /></a></center><br />
-If you want to
-<ul>
-  <li>create robust, browser-based regression automation</li>
+  <li>create robust, browser-based regression automation suites and tests</li>
   <li>scale and distribute scripts across many environments</li>
 </ul>
 <br />
-
             <p>Then you want to use <a href="/projects/webdriver/">Selenium WebDriver</a>; a collection of language
                 specific bindings to drive a browser -- the way it is meant to be driven.</p>
 
@@ -41,6 +36,15 @@ If you want to
                 which has been officially deprecated. The Selenium Server (used by both WebDriver and Remote Control)
                 now also includes built-in grid capabilities.</p>
 
+        </td>
+        <td><center><h3>Selenium IDE</h4><a href="/projects/ide/"><img alt="Selenium IDE Logo" class="icon" src="images/selenium-ide-logo.png" /></a></center><br />
+If you want to
+<ul>
+  <li>create quick bug reproduction scripts</li>
+  <li>create scripts to aid in automation-aided exploratory testing</li>
+</ul>
+<br />
+<p>Then you want to use <a href="/projects/ide/">Selenium IDE</a>; a Firefox add-on that will do simple record-and-playback of interactions with the browser.</p>
         </td>
       </tr>
     </tbody>
