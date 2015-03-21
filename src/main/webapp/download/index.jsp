@@ -189,6 +189,12 @@
         <td><a href="http://www.youtube.com/watch?v=wqxkKIC2HDY">SeConf talk</a></td>
       </tr>
       <tr>
+        <td><a href="https://github.com/forcedotcom/windowsphonedriver/">Windows Phone</a></td>
+        <td>&nbsp;&nbsp;</td>
+        <td>&nbsp;&nbsp;</td>
+        <td><a href="https://github.com/forcedotcom/windowsphonedriver/issues">issue tracker</a>&nbsp;&nbsp;</td>
+      </tr>
+      <tr>
         <td><a href="http://winphonewebdriver.codeplex.com/">Windows Phone</a></td>
         <td><a href="http://winphonewebdriver.codeplex.com/downloads/get/761780">4.14.028.10</a>&nbsp;&nbsp;</td>
         <td>&nbsp;&nbsp;</td>
