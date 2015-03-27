@@ -32,6 +32,10 @@
             <a rel="nofollow" href="http://spoon.net/selenium">Spoonium</a> -
             unlimited Selenium testing on all major browsers.
         </li>
+        <li>
+            <a rel="nofollow" href="https://usetrace.com">Usetrace</a> -
+            scriptless cloud testing service built on top of Selenium.
+        </li>
     </ul>
 
     <h2>Monitoring &amp; Load Testing Services</h2>
