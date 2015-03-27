@@ -524,18 +524,36 @@
     <div class="name">SelBlocks</div>
     <div class="column">
       <table>
-          <tr><th>Links:</th><td><a href="https://addons.mozilla.org/en-US/firefox/addon/selenium-ide-sel-blocks/">Download</a> - <a href="http://refactoror.wikia.com/wiki/Selblocks_Reference">Docs</a> - <a href="https://github.com/refactoror/SelBlocks/issues?state=open">Support</a></td></tr>
+          <tr><th>Links:</th><td><a href="https://addons.mozilla.org/en-US/firefox/addon/selenium-ide-sel-blocks/versions/">Download</a> - <a href="http://refactoror.wikia.com/wiki/Selblocks_Reference">Docs</a> - <a href="https://github.com/refactoror/SelBlocks/issues">Support</a></td></tr>
         <tr><th>Author:</th><td><a href="http://refactoror.net/">Chris Noe</a></td></tr>
         <tr><th>License:</th><td>Mozilla Public License</td></tr>
       </table>
     </div>
     <div class="column">
       <table>
-        <tr><th>Released:</th><td>October 28, 2013</td></tr>
+        <tr><th>Released:</th><td>February 8, 2013</td></tr>
         <tr><th>Version:</th><td>2.0</td></tr>
       </table>
     </div>
     <p class="description">This plugin is a language extension for Selenium IDE that provides javascript-like conditionals, looping, callable functions, error catching, and JSON/XML driven parameterization.</p>
+  </div>
+
+  <div class="plugin">
+    <div class="name">SelBench</div>
+    <div class="column">
+      <table>
+          <tr><th>Links:</th><td><a href="https://addons.mozilla.org/en-US/firefox/addon/selenium-ide-selbench/versions/">Download</a> - <a href="http://refactoror.wikia.com/wiki/SelBench_Reference">Docs</a> - <a href="https://github.com/refactoror/SelBench/issues">Support</a></td></tr>
+        <tr><th>Author:</th><td><a href="http://refactoror.net/">Chris Noe</a></td></tr>
+        <tr><th>License:</th><td>Mozilla Public License</td></tr>
+      </table>
+    </div>
+    <div class="column">
+      <table>
+        <tr><th>Released:</th><td>March 8, 2014</td></tr>
+        <tr><th>Version:</th><td>1.0.1</td></tr>
+      </table>
+    </div>
+    <p class="description">This plugin provides utilities for testing, validating, and benchmarking Selenium IDE scripts. This is especially useful for instrumenting scripts that are used to test Selenium IDE extensions.</p>
   </div>
 
   <div class="plugin">
