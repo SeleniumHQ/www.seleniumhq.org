@@ -654,7 +654,7 @@
     </div>
     <div class="column">
       <table>
-        <tr><th>Since:</th><td>February 2014</td></tr>
+        <tr><th>Since:</th><td>February 2015</td></tr>
       </table>
     </div>
     <p class="description">It accepts Selenese commands from another Selenium IDE instance (as per <a href="https://code.google.com/p/selite/wiki/SeleniumIde#Using_multiple_Selenium_IDEs_in_parallel">Using multiple Selenium IDEs in parallel</a>) through clipboard. It enables Selenese commands to be indented with spaces into blocks, through menu or by pressing right or left arrow. It automatically indents and unindents structured commands that come with <a href="https://code.google.com/p/selite/wiki/SelBlocksGlobal">SeLite SelBlocks Global</a>.</p>
@@ -749,8 +749,15 @@
     </div>
     <p class="description">It makes Selenium IDE GUI more practical:
         <ul>
-            <li> you can edit comments and Targets and Values of commands 'in place' by clicking at them (where they are listed).</li>
-            <li>It adds key shortcuts 'I' and 'M' to insert new command and comment, respectively.</li>
+        <li> you can edit commands and comments an 'in place' by clicking at them (where they are listed). In order to edit 'in place'<ul>
+             <li>click at a cell, or</li>
+             <li>select a row (more below), then hit Enter or I or M, or</li>
+             <li>edit another cell, then hit TAB or Shift+TAB.</li>
+          </ul>
+        </li>
+        <li>After you select a row, you can use key shortcuts 'I' and 'M' to insert new command and comment, respectively, and to edit it 'in place'. (Similarly, pressing I or M in right click context menu goes to edit 'in place'). New commands or comments come with initial indentation.</li>
+        <li>'Command' cell (of commands, i.e. non-comments) operates with autocomplete dropdown.</li>
+        <li>'Target' cell (of commands, i.e. non-comments) overflows to the right (if there is nothing in 'Value' cell), which lets you see long selectors.</li>
         </ul> 
     </p>
   </div>
