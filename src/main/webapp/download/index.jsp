@@ -40,31 +40,22 @@
   "/download/maven.html">Maven users</a> (Maven is a popular Java build
   tool).</p>
 
-  
-  <h3>Selenium IDE</h3>
-  <p>Selenium IDE is a Firefox plugin which records and plays back user interactions with the browser. Use this to either create simple scripts or assist in exploratory testing. It can also export Remote Control or WebDriver scripts, though they tend to be somewhat brittle and should be overhauled into some sort of Page Object-y structure for any kind of resiliency.</p>
-  <p>Download latest released version <a href="http://release.seleniumhq.org/selenium-ide/2.8.0/selenium-ide-2.8.0.xpi">2.8.0</a> released on 29/Sep/2014 or view the <a href="http://code.google.com/p/selenium/wiki/SeIDEReleaseNotes">Release Notes</a> and then <a href="#side_plugins">install some plugins</a>.</p>
-  <p>Download previous version <a href="http://release.seleniumhq.org/selenium-ide/2.7.0/selenium-ide-2.7.0.xpi">2.7.0</a> released on 14/Sep/2014.</p>
-  <!-- <p>Download next unreleased version <a href="http://release.seleniumhq.org/selenium-ide/2.6.0/selenium-ide-2.6.0.xpi">2.6.0</a> to be released on 16/September/2013</p> -->
-  <!-- <p>Download version under development <a href="http://ci.seleniumhq.org:8080/job/IDE/lastSuccessfulBuild/artifact/selenium-trunk/build/ide/selenium-ide-multi.xpi">unreleased</a> (currently disabled)</p> -->
-
   <h3>Selenium Server (formerly the Selenium RC Server)</h3>
   <p>The Selenium Server is needed in order to run either Selenium RC style scripts or Remote Selenium Webdriver ones. The 2.x server is a drop-in replacement for the old Selenium RC server and is designed to be backwards compatible with your existing infrastructure.</p>
   <p>Download version <a
-    href="http://selenium-release.storage.googleapis.com/2.44/selenium-server-standalone-2.44.0.jar">2.44.0</a>
-  </p>
-  <p>To use the Selenium Server in a Grid configuration <a href="http://code.google.com/p/selenium/wiki/Grid2">see the wiki page</a>.</p>
+    href="http://selenium-release.storage.googleapis.com/2.45/selenium-server-standalone-2.45.0.jar">2.45.0</a> </p>
+  <p>To use the Selenium Server in a Grid configuration <a href="https://github.com/SeleniumHQ/selenium/wiki/Grid2">see the wiki page</a>.</p>
 
   <h3>The Internet Explorer Driver Server</h3>
   <p>This is required if you want to make use of the latest and greatest
   features of the WebDriver InternetExplorerDriver. Please make sure that this
   is available on your $PATH (or %PATH% on Windows) in order for the IE Driver
   to work as expected.</p>
-  <p>Download version 2.44.0 for (recommended) <a
-    href="http://selenium-release.storage.googleapis.com/2.44/IEDriverServer_Win32_2.44.0.zip">32
+  <p>Download version 2.45.0 for (recommended) <a
+    href="http://selenium-release.storage.googleapis.com/2.45/IEDriverServer_Win32_2.45.0.zip">32
     bit Windows IE</a> or <a
-    href="http://selenium-release.storage.googleapis.com/2.44/IEDriverServer_x64_2.44.0.zip">64 bit Windows IE</a><br/>
-    <a href="http://selenium.googlecode.com/git/cpp/iedriverserver/CHANGELOG">CHANGELOG</a></p>
+    href="http://selenium-release.storage.googleapis.com/2.45/IEDriverServer_x64_2.45.0.zip">64 bit Windows IE</a><br/>
+    <a href="http://goo.gl/LJ07LL">CHANGELOG</a></p>
 
   <a name="client-drivers"/>
   <h3>Selenium Client & WebDriver Language Bindings</h3>
@@ -85,53 +76,60 @@
     <tbody>
       <tr>
         <td>Java</td>
-        <td>2.44.0</td>
-        <td>2014-10-23</td>
-        <td><a href="http://selenium-release.storage.googleapis.com/2.44/selenium-java-2.44.0.zip">Download</a>&nbsp;&nbsp;</td>
-        <td><a href="http://selenium.googlecode.com/git/java/CHANGELOG">Change log</a>&nbsp;&nbsp;</td>
-        <td><a href="http://selenium.googlecode.com/git/docs/api/java/index.html" alt="Javadoc">Javadoc</a></td>
+        <td>2.45.0</td>
+        <td>2015-02-26</td>
+        <td><a href="http://selenium-release.storage.googleapis.com/2.45/selenium-java-2.45.0.zip">Download</a>&nbsp;&nbsp;</td>
+        <td><a href="http://goo.gl/5IVvjZ">Change log</a>&nbsp;&nbsp;</td>
+        <td><a href="http://goo.gl/Grc6tm" alt="Javadoc">Javadoc</a></td>
       </tr>
       <tr>
         <td>C#</td>
-        <td>2.44.0</td>
-        <td>2014-10-23</td>
-        <td><a href="http://selenium-release.storage.googleapis.com/2.44/selenium-dotnet-2.44.0.zip">Download</a></td>
-        <td><a href="http://selenium.googlecode.com/git/dotnet/CHANGELOG">Change log</a></td>
-        <td><a href="http://selenium.googlecode.com/git/docs/api/dotnet/index.html">API docs</a></td>
+        <td>2.45.0</td>
+        <td>2015-02-27</td>
+        <td><a href="http://selenium-release.storage.googleapis.com/2.45/selenium-dotnet-2.45.0.zip">Download</a></td>
+        <td><a href="http://goo.gl/t3faSQ">Change log</a></td>
+        <td><a href="http://goo.gl/uutZjZ">API docs</a></td>
       </tr>
       <tr>
         <td>Ruby</td>
-        <td>2.44.0</td>
-        <td>2014-10-05</td>
+        <td>2.45.0</td>
+        <td>2015-02-27</td>
         <td><a href="http://rubygems.org/gems/selenium-webdriver">Download</a></td>
-        <td><a href="http://selenium.googlecode.com/git/rb/CHANGES">Change log</a></td>
-        <td><a href="http://selenium.googlecode.com/git/docs/api/rb/index.html">API docs</a></td>
+        <td><a href="http://goo.gl/zNfSLK">Change log</a></td>
+        <td><a href="http://goo.gl/jzh4RU">API docs</a></td>
       </tr>
       <tr>
         <td>Python</td>
-        <td>2.44.0</td>
-        <td>2014-10-23</td>
+        <td>2.45.0</td>
+        <td>2015-02-26</td>
         <td><a href="http://pypi.python.org/pypi/selenium">Download</a></td>
-        <td><a href="http://selenium.googlecode.com/git/py/CHANGES">Change log</a></td>
-        <td><a href="http://selenium.googlecode.com/git/docs/api/py/api.html">API docs</a></td>
+        <td><a href="http://goo.gl/rHRdgk">Change log</a></td>
+        <td><a href="http://goo.gl/sG1GfQ">API docs</a></td>
       </tr>
       <tr>
         <td>Javascript (Node)</td>
-        <td>2.44.0</td>
-        <td>2014-10-23</td>
+        <td>2.45.0</td>
+        <td>2015-02-26</td>
         <td><a href="https://npmjs.org/package/selenium-webdriver">Download</a></td>
-        <td><a href="https://github.com/SeleniumHQ/selenium/blob/master/javascript/node/selenium-webdriver/CHANGES.md">Change log</a></td>
-        <td><a href="http://selenium.googlecode.com/git/docs/api/javascript/index.html">API docs</a></td>
+        <td><a href="http://goo.gl/e6smYw">Change log</a></td>
+        <td><a href="http://goo.gl/hohAut">API docs</a></td>
       </tr>
     </tbody>
   </table>
   <h4>C# NuGet</h4>
-  <p>NuGet latest release is 2.44.0, Released on 2014-10-23</p>
+  <p>NuGet latest release is 2.45.0, Released on 2015-02-27</p>
   <ul>
     <li><a href="http://www.nuget.org/List/Packages/Selenium.RC">RC</a></li>
     <li><a href="http://www.nuget.org/List/Packages/Selenium.WebDriver">WebDriver</a></li>
     <li><a href="http://www.nuget.org/List/Packages/Selenium.WebDriverBackedSelenium">WebDriverBackedSelenium</a></li>
     <li><a href="http://www.nuget.org/List/Packages/Selenium.Support">Support</a></li>
+  </ul>
+
+  <h3>SafariDriver</h3>
+  <p>SafariDriver now requires manual installation of the extension prior to automation</p>
+  <ul>
+    <li>Latest release <a href="http://selenium-release.storage.googleapis.com/2.45/SafariDriver.safariextz">2.45.0</a></li>
+    <li><a href="https://github.com/SeleniumHQ/selenium/wiki/SafariDriver">Wiki Page</a></li>
   </ul>
 
   <hr/>
@@ -169,19 +167,19 @@
     <tbody>
       <tr>
         <td><a href="https://sites.google.com/a/chromium.org/chromedriver/">Chrome</a></td>
-        <td><a href="http://chromedriver.storage.googleapis.com/index.html?path=2.13/">2.13</a>&nbsp;&nbsp;</td>
-        <td><a href="http://chromedriver.storage.googleapis.com/2.13/notes.txt">change log</a>&nbsp;&nbsp;</td>
+        <td><a href="http://chromedriver.storage.googleapis.com/index.html?path=2.14/">2.14</a>&nbsp;&nbsp;</td>
+        <td><a href="http://chromedriver.storage.googleapis.com/2.14/notes.txt">change log</a>&nbsp;&nbsp;</td>
         <td><a href="http://code.google.com/p/chromedriver/issues/list">issue tracker</a>&nbsp;&nbsp;</td>
-        <td><a href="http://code.google.com/p/selenium/wiki/ChromeDriver">selenium wiki page</a>&nbsp;&nbsp;</td>
-        <td>Released 2014-12-10</td>
+        <td><a href="https://github.com/SeleniumHQ/selenium/wiki/ChromeDriver">selenium wiki page</a>&nbsp;&nbsp;</td>
+        <td>Released 2015-01-28</td>
       </tr>
       <tr>
         <td><a href="http://choice.opera.com/developer/tools/operadriver/">Opera</td>
-        <td><a href="http://selenium.googlecode.com/git/third_party/java/opera-driver/operadriver-1.5.jar">1.5</a></td>
-        <td><a href="https://raw.github.com/operasoftware/operadriver/master/CHANGES">change log</a>&nbsp;&nbsp;</td>
-        <td><a href="https://github.com/operasoftware/operadriver/issues">issue tracker</a></td>
-        <td><a href="http://code.google.com/p/selenium/wiki/OperaDriver">selenium wiki page</a></td>
-        <td>Released 2013-08-13</td>
+        <td><a href="https://github.com/operasoftware/operachromiumdriver/releases">0.1.0</a></td>
+        <td>&nbsp;</td>
+        <td><a href="https://github.com/operasoftware/operachromiumdriver/issues">issue tracker</a></td>
+        <td><a href="https://github.com/SeleniumHQ/selenium/wiki/OperaDriver">selenium wiki page</a></td>
+        <td>Released 2014-11-06</td>
       </tr>
       <tr>
         <td><a href="https://github.com/detro/ghostdriver">GhostDriver</a></td>
@@ -189,6 +187,12 @@
         <td>&nbsp;</td>
         <td><a href="https://github.com/detro/ghostdriver/issues">issue tracker</a></td>
         <td><a href="http://www.youtube.com/watch?v=wqxkKIC2HDY">SeConf talk</a></td>
+      </tr>
+      <tr>
+        <td><a href="https://github.com/forcedotcom/windowsphonedriver/">Windows Phone</a></td>
+        <td>&nbsp;&nbsp;</td>
+        <td>&nbsp;&nbsp;</td>
+        <td><a href="https://github.com/forcedotcom/windowsphonedriver/issues">issue tracker</a>&nbsp;&nbsp;</td>
       </tr>
       <tr>
         <td><a href="http://winphonewebdriver.codeplex.com/">Windows Phone</a></td>
@@ -237,6 +241,12 @@
         <td><a href="https://github.com/cisco-open-source/qtwebdriver/issues">issue tracker</a>&nbsp;&nbsp;</td>
         <td><a href="https://github.com/cisco-open-source/qtwebdriver/wiki">wiki page</a>&nbsp;&nbsp;</td>
         <td>Released 2014-04-23</td>
+      </tr>
+      <tr>
+        <td><a href="https://github.com/MachinePublishers/jBrowserDriver">jBrowserDriver</a></td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td><a href="https://github.com/MachinePublishers/jBrowserDriver/issues">issue tracker</a></td>
       </tr>
     </tbody>
   </table>
@@ -297,6 +307,13 @@
     </div>
     <p class="description">VisGrid is a GUI for Selenium Grid. You can start hub, create and attach a Selenium node very easily and quickly.</p>
   </div>
+
+  <h3>Selenium IDE</h3>
+  <p>Selenium IDE is a Firefox plugin which records and plays back user interactions with the browser. Use this to either create simple scripts or assist in exploratory testing. It can also export Remote Control or WebDriver scripts, though they tend to be somewhat brittle and should be overhauled into some sort of Page Object-y structure for any kind of resiliency.</p>
+  <p>Download latest released version <a href="http://release.seleniumhq.org/selenium-ide/2.9.0/selenium-ide-2.9.0.xpi">2.9.0</a> released on 09/Mar/2015 or view the <a href="https://github.com/SeleniumHQ/selenium/wiki/SeIDE-Release-Notes">Release Notes</a> and then <a href="#side_plugins">install some plugins</a>.</p>
+  <p>Download previous version <a href="http://release.seleniumhq.org/selenium-ide/2.8.0/selenium-ide-2.8.0.xpi">2.8.0</a> released on 29/Sep/2014.</p>
+  <!-- <p>Download next unreleased version <a href="http://release.seleniumhq.org/selenium-ide/2.6.0/selenium-ide-2.6.0.xpi">2.6.0</a> to be released on 16/September/2013</p> -->
+  <!-- <p>Download version under development <a href="http://ci.seleniumhq.org:8080/job/IDE/lastSuccessfulBuild/artifact/selenium-trunk/build/ide/selenium-ide-multi.xpi">unreleased</a> (currently disabled)</p> -->
 
   <a name="side_plugins"/>
   <h3>Selenium IDE Plugins</h3>
@@ -507,18 +524,36 @@
     <div class="name">SelBlocks</div>
     <div class="column">
       <table>
-          <tr><th>Links:</th><td><a href="https://addons.mozilla.org/en-US/firefox/addon/selenium-ide-sel-blocks/">Download</a> - <a href="http://refactoror.wikia.com/wiki/Selblocks_Reference">Docs</a> - <a href="https://github.com/refactoror/SelBlocks/issues?state=open">Support</a></td></tr>
+          <tr><th>Links:</th><td><a href="https://addons.mozilla.org/en-US/firefox/addon/selenium-ide-sel-blocks/versions/">Download</a> - <a href="http://refactoror.wikia.com/wiki/Selblocks_Reference">Docs</a> - <a href="https://github.com/refactoror/SelBlocks/issues">Support</a></td></tr>
         <tr><th>Author:</th><td><a href="http://refactoror.net/">Chris Noe</a></td></tr>
         <tr><th>License:</th><td>Mozilla Public License</td></tr>
       </table>
     </div>
     <div class="column">
       <table>
-        <tr><th>Released:</th><td>October 28, 2013</td></tr>
+        <tr><th>Released:</th><td>February 8, 2013</td></tr>
         <tr><th>Version:</th><td>2.0</td></tr>
       </table>
     </div>
     <p class="description">This plugin is a language extension for Selenium IDE that provides javascript-like conditionals, looping, callable functions, error catching, and JSON/XML driven parameterization.</p>
+  </div>
+
+  <div class="plugin">
+    <div class="name">SelBench</div>
+    <div class="column">
+      <table>
+          <tr><th>Links:</th><td><a href="https://addons.mozilla.org/en-US/firefox/addon/selenium-ide-selbench/versions/">Download</a> - <a href="http://refactoror.wikia.com/wiki/SelBench_Reference">Docs</a> - <a href="https://github.com/refactoror/SelBench/issues">Support</a></td></tr>
+        <tr><th>Author:</th><td><a href="http://refactoror.net/">Chris Noe</a></td></tr>
+        <tr><th>License:</th><td>Mozilla Public License</td></tr>
+      </table>
+    </div>
+    <div class="column">
+      <table>
+        <tr><th>Released:</th><td>March 8, 2014</td></tr>
+        <tr><th>Version:</th><td>1.0.1</td></tr>
+      </table>
+    </div>
+    <p class="description">This plugin provides utilities for testing, validating, and benchmarking Selenium IDE scripts. This is especially useful for instrumenting scripts that are used to test Selenium IDE extensions.</p>
   </div>
 
   <div class="plugin">
@@ -592,6 +627,25 @@
     </div>
     <p class="description">A plugin for Selenium-IDE to convert one or more test suites, including their test cases, from the html format to any other format supported by the Selenium-IDE. <a href="http://blog.reallysimplethoughts.com/2011/01/11/test-suite-batch-converter-plugin-v1-5-released/">More info</a>.</p>
   </div>
+  
+  <!-- Add-on for reading a CSV File in Selenium IDE-->
+  <div class="plugin">
+    <div class="name">CSV File Reader</div>
+    <div class="column">
+      <table>
+          <tr><th>Links:</th><td><a href="http://openselenium.com/">Info</a> - <a href="http://openselenium.com/wp-content/uploads/2014/10/CSVRead_Selenium-IDE.js">Download</a></td></tr>
+        <tr><th>Author:</th><td>Abhishek Jain</td></tr>
+        <tr><th>License:</th><td>Apache License 2</td></tr>
+      </table>
+    </div>
+    <div class="column">
+      <table>
+        <tr><th>Since:</th><td>2014</td></tr>
+      </table>
+    </div>
+    <p class="description">Simple add-on to read a CSV file in Selenium IDE for data driven testing.</p>
+  </div> 
+  <!-- End of CSV file read add-on-->
   
   <h3>SeLite</h3>
   <p><a href="https://code.google.com/p/selite/wiki/ProjectHome">SeLite</a> is a family of extensions that improve Selenium IDE. It

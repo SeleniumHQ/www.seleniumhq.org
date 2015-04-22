@@ -84,14 +84,14 @@
             <ul>
                 <li><a href="/docs/">Online version</a></li>
                 <li><a href="/docs/book/Selenium_Documentation.pdf">Offline version (pdf)</a></li>
-                <li><a href="http://code.google.com/p/selenium/w/list">Wiki</a></li>
+                <li><a href="https://github.com/SeleniumHQ/selenium/wiki">Wiki</a></li>
                 <li><a href="/download/#client-drivers">Selenium API</a></li>
             </ul>
         </li>
         <li><a href="/support/">Support</a>
             <ul>
                 <li><a href="http://groups.google.com/group/selenium-users">User Group</a></li>
-                <li><a href="http://code.google.com/p/selenium/issues/list">Bug Tracker</a></li>
+                <li><a href="https://github.com/SeleniumHQ/selenium/issues">Bug Tracker</a></li>
                 <li><a href="/support/index.html#CommercialSupport">Commercial Support</a></li>
                 <li><a href="/support/index.html#IRC">IRC</a></li>
             </ul>
@@ -101,16 +101,9 @@
                 <li><a href="/about/news.jsp">News/Blogs</a></li>
                 <li><a href="/about/events.html">Events</a></li>
                 <li><a href="/about/contributors.html">Who made Selenium</a>
-                <li><a href="http://code.google.com/p/selenium/wiki/RoadMap">Roadmap</a></li>
+                <li><a href="https://github.com/SeleniumHQ/selenium/wiki/RoadMap">Roadmap</a></li>
                 <li><a href="/about/getting-involved.html">Getting Involved</a></li>
                 <li><a href="/docs">Documentation</a></li>
-            </ul>
-        </li>
-        <li><a href="http://openqa.org/">OpenQA.org</a>
-            <ul>
-                <li><a href="http://openqa.org/sass/index.action">Create an account</a></li>
-                <li><a href="http://openqa.org/sass/index.action">Account management</a></li>
-                <li><a href="http://openqa.org/sponsors.action">Sponsors</a></li>
             </ul>
         </li>
     </ul>

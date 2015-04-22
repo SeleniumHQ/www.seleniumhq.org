@@ -83,28 +83,9 @@ your project.
                     <dependency>
                         <groupId>org.seleniumhq.selenium</groupId>
                         <artifactId>selenium-java</artifactId>
-                        <version>2.44.0</version>
-                    </dependency>
-                    <dependency>
-                        <groupId>com.opera</groupId>
-                        <artifactId>operadriver</artifactId>
+                        <version>2.45.0</version>
                     </dependency>
                 </dependencies>
-                <dependencyManagement>
-                    <dependencies>
-                        <dependency>
-                            <groupId>com.opera</groupId>
-                            <artifactId>operadriver</artifactId>
-                            <version>1.5</version>
-                            <exclusions>
-                                <exclusion>
-                                    <groupId>org.seleniumhq.selenium</groupId>
-                                    <artifactId>selenium-remote-driver</artifactId>
-                                </exclusion>
-                            </exclusions>
-                        </dependency>
-                    </dependencies>
-                </dependencyManagement>
         </project>
 
 
@@ -132,7 +113,7 @@ C#
 As of Selenium 2.2.0, the C# bindings are distributed as a set of signed dlls along with other
 dependency dlls. Prior to 2.2.0, all Selenium dll's were unsigned.  
 To include Selenium in your project, simply download the latest
-selenium-dotnet zip file from https://code.google.com/p/selenium/downloads/list.
+selenium-dotnet zip file from http://selenium-release.storage.googleapis.com/index.html.
 If you are using Windows Vista or above, you should unblock the zip file before
 unzipping it: Right click on the zip file, click "Properties", click "Unblock"
 and click "OK".
@@ -935,8 +916,8 @@ popup, you can access the alert with the following:
 
 This will return the currently open alert object. With this object you can now accept,
 dismiss, read its contents or even type into a prompt. This interface works equally
-well on alerts, confirms, and prompts. Refer to the `JavaDocs <http://selenium.googlecode.com/git/docs/api/java/index.html>`_ 
-or `RubyDocs <http://selenium.googlecode.com/git/docs/api/rb/Selenium/WebDriver/Alert.html>`_ for more information.
+well on alerts, confirms, and prompts. Refer to the `JavaDocs <https://seleniumhq.github.io/selenium/docs/api/java/index.html>`_ 
+or `RubyDocs <https://seleniumhq.github.io/selenium/docs/api/rb/Selenium/WebDriver/Alert.html>`_ for more information.
 
 
 
@@ -1270,7 +1251,7 @@ Controls the `Firefox <http://getfirefox.com>`_ browser using a Firefox plugin.
 The Firefox Profile that is used is stripped down from what is installed on the
 machine to only include the Selenium WebDriver.xpi (plugin). A few settings are
 also changed by default (`see the source to see which ones 
-<http://code.google.com/p/selenium/source/browse/trunk/java/client/src/org/openqa/selenium/firefox/FirefoxProfile.java#55>`_)
+<https://github.com/SeleniumHQ/selenium/blob/master/javascript/firefox-driver/webdriver.json>`_)
 Firefox Driver is capable of being run and is tested on Windows, Mac, Linux. 
 Currently on versions 3.6, 10, latest - 1, latest
 
@@ -1355,7 +1336,7 @@ are disabled by default. To enable them:
 Info
 ++++
 
-See the `Firefox section in the wiki page <http://code.google.com/p/selenium/wiki/FirefoxDriver>`_ for the most up to date info.
+See the `Firefox section in the wiki page <https://github.com/SeleniumHQ/selenium/wiki/FirefoxDriver>`_ for the most up to date info.
 
 Internet Explorer Driver
 ~~~~~~~~~~~~~~~~~~~~~~~~
@@ -1402,7 +1383,7 @@ Cons
 Info
 ++++
 
-See the `Internet Explorer section of the wiki page <http://code.google.com/p/selenium/wiki/InternetExplorerDriver>`_ for the most up to date info.
+See the `Internet Explorer section of the wiki page <https://github.com/SeleniumHQ/selenium/wiki/InternetExplorerDriver>`_ for the most up to date info.
 Please take special note of the Required Configuration section.
 
 
@@ -1414,7 +1395,7 @@ project iteslf. WebDriver works with Chrome through the chromedriver binary (fou
 project's download page). You need to have both chromedriver and a version of chrome browser installed.
 chromedriver needs to be placed somewhere on your system's path in order for WebDriver to automatically
 discover it. The Chrome browser itself is discovered by chromedriver in the default installation path.
-These both can be overridden by environment variables. Please refer to `the wiki <http://code.google.com/p/selenium/wiki/ChromeDriver>`_
+These both can be overridden by environment variables. Please refer to `the wiki <https://github.com/SeleniumHQ/selenium/wiki/ChromeDriver>`_
 for more information.
 
 Usage
@@ -1452,7 +1433,7 @@ Cons
 Info
 ++++
 
-`See our wiki <http://code.google.com/p/selenium/wiki/ChromeDriver>`_ for the most up to date info.
+`See our wiki <https://github.com/SeleniumHQ/selenium/wiki/ChromeDriver>`_ for the most up to date info.
 More info can also be found on the `downloads page </download/>`_
 
 Getting running with Chrome Driver
@@ -1460,14 +1441,14 @@ Getting running with Chrome Driver
 
 Download the `Chrome Driver executable <http://code.google.com/p/chromium/downloads/list>`_
 and follow the other instructions on the 
-`wiki page <http://code.google.com/p/selenium/wiki/ChromeDriver>`_
+`wiki page <https://github.com/SeleniumHQ/selenium/wiki/ChromeDriver>`_
 
 .. _SeleniumRCEmulation:
 
 Opera Driver
 ~~~~~~~~~~~~~
 
-See the `Opera Driver wiki article <http://code.google.com/p/selenium/wiki/OperaDriver>`_ in the
+See the `Opera Driver wiki article <https://github.com/SeleniumHQ/selenium/wiki/OperaDriver>`_ in the
 Selenium Wiki for information on using the Opera Driver.
 
 iOS Driver
@@ -1564,7 +1545,7 @@ sandbox.
 Running Standalone Selenium Server for use with RemoteDrivers
 -------------------------------------------------------------
 
-From `Selenium's Download page <https://code.google.com/p/selenium/downloads/list>`_ download selenium-server-standalone-<version>.jar and optionally IEDriverServer. If you plan to work with Chrome, download it from `Google Code <http://chromedriver.googlecode.com/>`_. 
+From `Selenium's Download page <http://selenium-release.storage.googleapis.com/index.html>`_ download selenium-server-standalone-<version>.jar and optionally IEDriverServer. If you plan to work with Chrome, download it from `Google Code <http://chromedriver.googlecode.com/>`_. 
 
 Unpack IEDriverServer and/or chromedriver and put them in a directory which is on the $PATH / %PATH% - the Selenium Server should then be able to handle requests for IE / Chrome without additional modifications. 
 
@@ -1595,7 +1576,7 @@ Additional Resources
 --------------------
 
 You can find further resources for WebDriver
-in `WebDriver's wiki <http://code.google.com/p/selenium/wiki/FurtherResources>`_
+in `WebDriver's wiki <https://github.com/SeleniumHQ/selenium/wiki/FurtherResources>`_
 
 Of course, don't hesitate to do an internet search on any Selenium topic, including 
 Selenium-WebDriver's drivers.  There are quite a few blogs on Selenium along with numerous posts

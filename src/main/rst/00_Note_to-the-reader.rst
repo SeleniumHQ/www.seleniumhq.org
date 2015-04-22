@@ -12,8 +12,7 @@ Rather than withholding information until it's finally complete, we are frequent
 new writing and revisions as we go.  Still, we do check our facts first
 and are confident the info we've submitted is accurate and useful.  Still, if you find an error, particularly
 in one of our code examples, please let us know.  
-You can create a new issue (http://code.google.com/p/selenium/issues/entry)
-with "Docs Error" in the subject line.
+You can create a new issue (https://github.com/SeleniumHQ/www.seleniumhq.org/issues).
 
 We have worked very, very hard on this document.  And, as just mentioned, we are once again working hard, 
 on the new revision.  Why?  We absolutely believe 

@@ -1,11 +1,7 @@
-The canonical repo lives in google code:
-http://code.google.com/p/selenium/source/checkout?repo=site
-
 Things you need to have installed to run the docs:
 
 * Maven           http://maven.apache.org
 * Python          http://python.org
-* Make            (gnu-gcc)
 * Sphinx-build    http://sphinx.pocoo.org
 
 To build the docs and run locally (command line):

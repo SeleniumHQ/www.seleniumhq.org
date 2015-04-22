@@ -443,7 +443,7 @@
         "Image"><a href="http://www.pubbitch.org/blog">Stewart, Simon</a>
       </h3>
       <ul>
-        <li>Original developer of <a href="http://code.google.com/p/selenium/">
+        <li>Original developer of <a href="https://github.com/SeleniumHQ/selenium/">
           WebDriver</a>. Current project lead and maintainer of the
           Java bindings.
         </li>

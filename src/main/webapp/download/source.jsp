@@ -30,9 +30,7 @@
         <td>Selenium (IDE, Selenium Server, Selenium WebDriver)</td>
 
         <td><a href=
-        "http://selenium.googlecode.com/git/">Git</a>
-        | <a href=
-        "http://code.google.com/p/selenium/source/browse/">Browse Git</a>
+        "https://github.com/SeleniumHQ/selenium">Git</a>
         </td>
       </tr>
 

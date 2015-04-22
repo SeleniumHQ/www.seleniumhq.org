@@ -152,19 +152,17 @@
 {%- block extrahead %}
 <script src="_static/code-snipplets.js" type="text/javascript"></script>
 <script src="_static/jquery.scrollTo-1.4.2-min.js" type="text/javascript"></script>
-<script src="_static/jquery.localscroll-1.2.7-min.js" type="text/javascript"></script>
 <script src="_static/jquery.treeview.pack.js" type="text/javascript"></script>
 <script type="text/javascript">
-        $(document).ready(function() {
-          //This is completely temporary. We're using js to fix the coding issue
-          $(".headerlink").html("&para;");
-          //Small tests for adding some javascript improvements
-          $(".sphinxsidebarwrapper > ul").localScroll({hash:true});
-          $(".sphinxsidebarwrapper > ul ul").treeview({
-				collapsed: true,
-				animated: "true",
-		  });
-        });
+  $(document).ready(function() {
+    //This is completely temporary. We're using js to fix the coding issue
+    $(".headerlink").html("&para;");
+    //Small tests for adding some javascript improvements
+    $(".sphinxsidebarwrapper > ul ul").treeview({
+      collapsed: true,
+      animated: "true"
+    });
+  });
 </script>
  {% endblock %}
   </head>
@@ -176,10 +174,10 @@
 {%- block relbar1 %}{{ relbar() }}{% endblock %}
 
 {%- block sidebar1 %} {{ sidebar() }} {% endblock %}
-	<%@include file="/jsp/donate.jspf"%>
+  <%@include file="/jsp/donate.jspf"%>
 </div>
   <div id="mainContent">
-	{%- block languagePref %} {{ languagebar() }} {%- endblock %}
+  {%- block languagePref %} {{ languagebar() }} {%- endblock %}
     <div class="document">
 {%- block document %}
       <div class="documentwrapper">

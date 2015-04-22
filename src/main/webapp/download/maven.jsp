@@ -21,7 +21,7 @@
     &lt;dependency&gt;
         &lt;groupId&gt;org.seleniumhq.selenium&lt;/groupId&gt;
         &lt;artifactId&gt;selenium-java&lt;/artifactId&gt;
-        &lt;version&gt;2.44.0&lt;/version&gt;
+        &lt;version&gt;2.45.0&lt;/version&gt;
     &lt;/dependency&gt;  
 </pre></p>
   
@@ -60,20 +60,20 @@
     &lt;dependency&gt;
         &lt;groupId&gt;org.seleniumhq.selenium&lt;/groupId&gt;
         &lt;artifactId&gt;selenium-firefox-driver&lt;/artifactId&gt;
-        &lt;version&gt;2.44.0&lt;/version&gt;
+        &lt;version&gt;2.45.0&lt;/version&gt;
     &lt;/dependency&gt;  
 </pre></p>
 
   <p>If you are using <tt>DefaultSelenium</tt> (or the <tt>RemoteWebDriver</tt>
   implementation), you still need to start a Selenium server. The best way is
   to download the <tt>selenium-server-standalone.jar</tt> from the
-  <a href="http://code.google.com/p/selenium/downloads/list">Selenium Downloads
+  <a href="http://selenium-release.storage.googleapis.com/index.html">Selenium Downloads
   page</a> and just use it. Furthermore you can also embed the Selenium server
   into your own project, if you add the following dependency to your <tt>pom.xml</tt>:<pre>  
     &lt;dependency&gt;
         &lt;groupId&gt;org.seleniumhq.selenium&lt;/groupId&gt;
         &lt;artifactId&gt;selenium-server&lt;/artifactId&gt;
-        &lt;version&gt;2.44.0&lt;/version&gt;
+        &lt;version&gt;2.45.0&lt;/version&gt;
     &lt;/dependency&gt;  
 </pre> Now you can create a <tt>SeleniumServer</tt> instance yourself and start it.</p>
 
@@ -83,15 +83,6 @@
 
 
   <h3>Third Party Browser Drivers NOT SUPPORTED/DEVELOPED by seleniumhq</h3>
-
-  <p>Opera Driver</p>
-  <pre>
-    &lt;dependency&gt;
-        &lt;groupId&gt;com.opera&lt;/groupId&gt;
-        &lt;artifactId&gt;operadriver&lt;/artifactId&gt;
-        &lt;version&gt;1.5&lt;/version&gt;
-    &lt;/dependency&gt;  
-  </pre>
   
   <p>PhantomJSDriver (GhostDriver)</p>
   <pre>

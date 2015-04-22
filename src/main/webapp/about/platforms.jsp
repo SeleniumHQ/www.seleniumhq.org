@@ -33,17 +33,17 @@
   <div class="browser">
     <h4>Internet Explorer</h4>
     <p>Versions 6, 7, 8, 9, 10 and 11 are supported. Version 11 requires 
-      <a href="https://code.google.com/p/selenium/wiki/InternetExplorerDriver#Required_Configuration">additional configuration</a>.</p>
+      <a href="https://github.com/SeleniumHQ/selenium/wiki/InternetExplorerDriver#Required_Configuration">additional configuration</a>.</p>
     <p>The selenium project tests each release on Windows XP, 7 and 8.</p>
   </div>
 
   <div class="browser">
     <h4>Safari</h4>
-    <p><a href="https://code.google.com/p/selenium/wiki/SafariDriver">Safari Driver</a> requires Safari 5.1+ and only runs on OS X</p>
+    <p><a href="https://github.com/SeleniumHQ/selenium/wiki/SafariDriver">SafariDriver</a> requires Safari 5.1+ and only runs on OS X</p>
   </div>
   <div class="browser">
     <h4>Opera</h4>
-    <p><a href="https://code.google.com/p/selenium/wiki/OperaDriver">Opera Driver</a> requires Opera 12.x and older versions</p>
+    <p><a href="https://github.com/SeleniumHQ/selenium/wiki/OperaDriver">OperaDriver</a> requires Opera 12.x and older versions</p>
   </div>
   <div class="browser">
     <h4>Chrome</h4>
