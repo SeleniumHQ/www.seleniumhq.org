@@ -1372,9 +1372,8 @@ JavaScript Usage with Non-Script Parameters
 
 JavaScript can also be used to help generate values for parameters, even
 when the parameter is not specified to be of type **script**.  
-However, in this case, special syntax is required--the JavaScript
-snippet must be enclosed inside curly braces and preceded by the
-label ``javascript``, as in ``javascript {*yourCodeHere*}``.
+However, in this case, special syntax is required--the *entire* parameter value must be prefixed by ``javascript{`` with a trailing ``}``, which encloses the JavaScript
+snippet, as in ``javascript{*yourCodeHere*}``.
 Below is an example in which the ``type`` command's second parameter 
 ``value`` is generated via JavaScript code using this special syntax:
 
