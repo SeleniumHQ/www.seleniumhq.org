@@ -110,10 +110,10 @@ automation under one roof.  Perhaps the best explanation for why WebDriver and
 Selenium are merging was detailed by Simon Stewart, the creator of WebDriver,
 in a joint email to the WebDriver and Selenium community on August 6, 2009.
 
-    "Why are the projects merging?  Partly because webdriver addresses some
+    "Why are the projects merging?  Partly because WebDriver addresses some
     shortcomings in selenium (by being able to bypass the JS sandbox, for
     example. And we've got a gorgeous API), partly because selenium addresses
-    some shortcomings in webdriver (such as supporting a broader range of
+    some shortcomings in WebDriver (such as supporting a broader range of
     browsers) and partly because the main selenium contributors and I felt that
     it was the best way to offer users the best possible framework."
 

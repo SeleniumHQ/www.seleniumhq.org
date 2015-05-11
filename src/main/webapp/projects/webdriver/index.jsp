@@ -16,7 +16,7 @@
 <li>WebDriver is designed in a simpler and more concise programming interface along with addressing some limitations in the Selenium-RC API.</li>
 <li>WebDriver is a compact Object Oriented API when compared to Selenium1.0</li>
 <li>It drives the browser much more effectively and overcomes the limitations of Selenium 1.x which affected our functional test coverage, like the file upload or download, pop-ups and dialogs barrier</li>
-<li>WebDriver overcomes the limitation of Selenium Rc's <a href="http://en.wikipedia.org/wiki/Same_origin_policy">Single Host origin policy</a></li>
+<li>WebDriver overcomes the limitation of Selenium RC's <a href="http://en.wikipedia.org/wiki/Same_origin_policy">Single Host origin policy</a></li>
 </ul>
 <p>WebDriver is the name of the key interface against which tests should be written in Java, the implementing classes one should use are listed as below:</p>
 <p>
