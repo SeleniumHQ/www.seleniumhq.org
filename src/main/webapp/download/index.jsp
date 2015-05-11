@@ -41,7 +41,7 @@
   tool).</p>
 
   <h3>Selenium Server (formerly the Selenium RC Server)</h3>
-  <p>The Selenium Server is needed in order to run either Selenium RC style scripts or Remote Selenium Webdriver ones. The 2.x server is a drop-in replacement for the old Selenium RC server and is designed to be backwards compatible with your existing infrastructure.</p>
+  <p>The Selenium Server is needed in order to run either Selenium RC style scripts or Remote Selenium WebDriver ones. The 2.x server is a drop-in replacement for the old Selenium RC server and is designed to be backwards compatible with your existing infrastructure.</p>
   <p>Download version <a
     href="http://selenium-release.storage.googleapis.com/2.45/selenium-server-standalone-2.45.0.jar">2.45.0</a> </p>
   <p>To use the Selenium Server in a Grid configuration <a href="https://github.com/SeleniumHQ/selenium/wiki/Grid2">see the wiki page</a>.</p>
@@ -59,7 +59,7 @@
 
   <a name="client-drivers"/>
   <h3>Selenium Client & WebDriver Language Bindings</h3>
-  <p>In order to create scripts that interact with the Selenium Server (Selenium RC, Selenium Remote Webdriver) or create local Selenium WebDriver script you need to make use of language-specific client drivers. These languages include both 1.x and 2.x style clients.</p>
+  <p>In order to create scripts that interact with the Selenium Server (Selenium RC, Selenium Remote WebDriver) or create local Selenium WebDriver script you need to make use of language-specific client drivers. These languages include both 1.x and 2.x style clients.</p>
   <p>While language bindings for <a href="#thirdPartyLanguageBindings">other languages exist</a>, these are the core ones that are supported by the main project hosted on google code.</p>
 
   <table>

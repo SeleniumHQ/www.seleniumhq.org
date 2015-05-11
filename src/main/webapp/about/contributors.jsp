@@ -213,7 +213,7 @@
         "http://www.google.com/search?q=Julian%20Harty">Harty,Julian</a>
       </h3>
       <ul>
-        <li>Selenium/Webdriver Committer
+        <li>Selenium/WebDriver Committer
         </li>
         <li>Involved since 2007, on WebDriver related work
         </li>

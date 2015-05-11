@@ -117,7 +117,7 @@
         </li>
         <li>
             <a rel="nofollow" href="http://www.360logica.com/expertise/selenium-automation-testing/">360logica</a> -
-            Excellent lab for Selenium and Webdriver automation including continous integration services.
+            Excellent lab for Selenium and WebDriver automation including continous integration services.
         </li>
         <li>
             <a rel="nofollow" href="http://www.nobleprog.co.uk/web-application-testing/consultancy">NobleProg</a> -

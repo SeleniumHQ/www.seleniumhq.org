@@ -122,7 +122,7 @@ Selenium's Tool Suite
 ---------------------
 Selenium is composed of multiple software tools. Each has a specific role. 
 
-Selenium 2 (aka. Selenium Webdriver)
+Selenium 2 (aka. Selenium WebDriver)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Selenium 2 is the future direction of the project and the newest addition
 to the Selenium toolkit.  This brand new automation tool provides all sorts of
