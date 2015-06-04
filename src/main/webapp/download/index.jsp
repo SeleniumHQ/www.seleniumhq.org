@@ -43,7 +43,7 @@
   <h3>Selenium Server (formerly the Selenium RC Server)</h3>
   <p>The Selenium Server is needed in order to run either Selenium RC style scripts or Remote Selenium WebDriver ones. The 2.x server is a drop-in replacement for the old Selenium RC server and is designed to be backwards compatible with your existing infrastructure.</p>
   <p>Download version <a
-    href="http://selenium-release.storage.googleapis.com/2.45/selenium-server-standalone-2.45.0.jar">2.45.0</a> </p>
+    href="http://selenium-release.storage.googleapis.com/2.46/selenium-server-standalone-2.46.0.jar">2.46.0</a> </p>
   <p>To use the Selenium Server in a Grid configuration <a href="https://github.com/SeleniumHQ/selenium/wiki/Grid2">see the wiki page</a>.</p>
 
   <h3>The Internet Explorer Driver Server</h3>
@@ -51,10 +51,10 @@
   features of the WebDriver InternetExplorerDriver. Please make sure that this
   is available on your $PATH (or %PATH% on Windows) in order for the IE Driver
   to work as expected.</p>
-  <p>Download version 2.45.0 for (recommended) <a
-    href="http://selenium-release.storage.googleapis.com/2.45/IEDriverServer_Win32_2.45.0.zip">32
+  <p>Download version 2.46.0 for (recommended) <a
+    href="http://selenium-release.storage.googleapis.com/2.46/IEDriverServer_Win32_2.46.0.zip">32
     bit Windows IE</a> or <a
-    href="http://selenium-release.storage.googleapis.com/2.45/IEDriverServer_x64_2.45.0.zip">64 bit Windows IE</a><br/>
+    href="http://selenium-release.storage.googleapis.com/2.46/IEDriverServer_x64_2.46.0.zip">64 bit Windows IE</a><br/>
     <a href="http://goo.gl/LJ07LL">CHANGELOG</a></p>
 
   <a name="client-drivers"/>
@@ -76,17 +76,17 @@
     <tbody>
       <tr>
         <td>Java</td>
-        <td>2.45.0</td>
-        <td>2015-02-26</td>
-        <td><a href="http://selenium-release.storage.googleapis.com/2.45/selenium-java-2.45.0.zip">Download</a>&nbsp;&nbsp;</td>
+        <td>2.46.0</td>
+        <td>2015-06-04</td>
+        <td><a href="http://selenium-release.storage.googleapis.com/2.46/selenium-java-2.46.0.zip">Download</a>&nbsp;&nbsp;</td>
         <td><a href="http://goo.gl/5IVvjZ">Change log</a>&nbsp;&nbsp;</td>
         <td><a href="http://goo.gl/Grc6tm" alt="Javadoc">Javadoc</a></td>
       </tr>
       <tr>
         <td>C#</td>
-        <td>2.45.0</td>
-        <td>2015-02-27</td>
-        <td><a href="http://selenium-release.storage.googleapis.com/2.45/selenium-dotnet-2.45.0.zip">Download</a></td>
+        <td>2.46.0</td>
+        <td>2015-06-04</td>
+        <td><a href="http://selenium-release.storage.googleapis.com/2.46/selenium-dotnet-2.46.0.zip">Download</a></td>
         <td><a href="http://goo.gl/t3faSQ">Change log</a></td>
         <td><a href="http://goo.gl/uutZjZ">API docs</a></td>
       </tr>
@@ -100,8 +100,8 @@
       </tr>
       <tr>
         <td>Python</td>
-        <td>2.45.0</td>
-        <td>2015-02-26</td>
+        <td>2.46.0</td>
+        <td>2015-06-04</td>
         <td><a href="http://pypi.python.org/pypi/selenium">Download</a></td>
         <td><a href="http://goo.gl/rHRdgk">Change log</a></td>
         <td><a href="http://goo.gl/sG1GfQ">API docs</a></td>
@@ -117,7 +117,7 @@
     </tbody>
   </table>
   <h4>C# NuGet</h4>
-  <p>NuGet latest release is 2.45.0, Released on 2015-02-27</p>
+  <p>NuGet latest release is 2.46.0, Released on 2015-06-04</p>
   <ul>
     <li><a href="http://www.nuget.org/List/Packages/Selenium.RC">RC</a></li>
     <li><a href="http://www.nuget.org/List/Packages/Selenium.WebDriver">WebDriver</a></li>
@@ -128,7 +128,7 @@
   <h3>SafariDriver</h3>
   <p>SafariDriver now requires manual installation of the extension prior to automation</p>
   <ul>
-    <li>Latest release <a href="http://selenium-release.storage.googleapis.com/2.45/SafariDriver.safariextz">2.45.0</a></li>
+    <li>Latest release <a href="http://selenium-release.storage.googleapis.com/2.46/SafariDriver.safariextz">2.45.0</a></li>
     <li><a href="https://github.com/SeleniumHQ/selenium/wiki/SafariDriver">Wiki Page</a></li>
   </ul>
 
