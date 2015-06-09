@@ -193,7 +193,7 @@ it is entirely self-contained, and you usually don't need to remember to start a
 additional processes or run any installers before using it, as opposed to the proxy server
 with Selenium-RC.
 
-Note: additional steps are required to use `Chrome Driver`_, `Opera Driver`_, `Android Driver`_
+Note: additional steps are required to use `ChromeDriver`_, `Opera Driver`_, `Android Driver`_
 and `iOS Driver`_
 
 You're now ready to write some code. An easy way to get started is this
@@ -1387,10 +1387,10 @@ See the `Internet Explorer section of the wiki page <https://github.com/Selenium
 Please take special note of the Required Configuration section.
 
 
-Chrome Driver
-~~~~~~~~~~~~~
+ChromeDriver
+~~~~~~~~~~~~
 
-Chrome Driver is maintained / supported by the `Chromium <http://code.google.com/p/chromium/>`_ 
+ChromeDriver is maintained / supported by the `Chromium <http://code.google.com/p/chromium/>`_
 project iteslf. WebDriver works with Chrome through the chromedriver binary (found on the chromium
 project's download page). You need to have both chromedriver and a version of chrome browser installed.
 chromedriver needs to be placed somewhere on your system's path in order for WebDriver to automatically
@@ -1420,7 +1420,7 @@ Pros
 ++++
 
 * Runs in a real browser and supports JavaScript
-* Because Chrome is a Webkit-based browser, the `Chrome Driver`_ may allow you to
+* Because Chrome is a Webkit-based browser, the `ChromeDriver`_ may allow you to
   verify that your site works in Safari. Note that since Chrome uses its own V8
   JavaScript engine rather than Safari's Nitro engine, JavaScript execution may
   differ.
@@ -1436,23 +1436,23 @@ Info
 `See our wiki <https://github.com/SeleniumHQ/selenium/wiki/ChromeDriver>`_ for the most up to date info.
 More info can also be found on the `downloads page </download/>`_
 
-Getting running with Chrome Driver
-++++++++++++++++++++++++++++++++++
+Getting running with ChromeDriver
++++++++++++++++++++++++++++++++++
 
-Download the `Chrome Driver executable <http://code.google.com/p/chromium/downloads/list>`_
+Download the `ChromeDriver executable <http://code.google.com/p/chromium/downloads/list>`_
 and follow the other instructions on the 
 `wiki page <https://github.com/SeleniumHQ/selenium/wiki/ChromeDriver>`_
 
 .. _SeleniumRCEmulation:
 
 Opera Driver
-~~~~~~~~~~~~~
+~~~~~~~~~~~~
 
 See the `Opera Driver wiki article <https://github.com/SeleniumHQ/selenium/wiki/OperaDriver>`_ in the
 Selenium Wiki for information on using the Opera Driver.
 
 iOS Driver
-~~~~~~~~~~~~~~
+~~~~~~~~~~
 
 See either the `ios-driver <http://ios-driver.github.io/ios-driver/>`_ or `appium <http://appium.io>`_ projects.
 

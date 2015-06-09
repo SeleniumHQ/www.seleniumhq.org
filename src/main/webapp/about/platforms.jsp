@@ -47,7 +47,7 @@
   </div>
   <div class="browser">
     <h4>Chrome</h4>
-    <p><a href="https://sites.google.com/a/chromium.org/chromedriver/">Chrome Driver</a> is supported by the Chromium project, please refer to their documentation for any compatibility information</p>
+    <p><a href="https://sites.google.com/a/chromium.org/chromedriver/">ChromeDriver</a> is supported by the Chromium project, please refer to their documentation for any compatibility information</p>
   </div>
 
   <h3><a name="operating-systems" id=

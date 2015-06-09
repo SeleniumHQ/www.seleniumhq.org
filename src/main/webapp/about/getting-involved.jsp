@@ -126,7 +126,7 @@ Drawbacks
         languages.</p>
 
     <p>We encourage code patches and other contributions - get involved by following
-        the instructions on <a class="reference external" href="https://github.com/SeleniumHQ/selenium/tree/master/CONTRIBUTING.md">our Contributing file</a>. You can also track the activity of the development team by checking out the read-only <a class="reference external" href="http://groups.google.com/group/selenium-developer-activity">Selenium Developer Activity Group</a>.</p>
+        the <a class="reference external" href="https://github.com/SeleniumHQ/selenium/tree/master/CONTRIBUTING.md">contribution guidelines</a>. You can also track the activity of the development team by checking out the read-only <a class="reference external" href="http://groups.google.com/group/selenium-developer-activity">Selenium Developer Activity Group</a>.</p>
     <p>If you do supply a patch, we will need you to <a href="https://spreadsheets.google.com/spreadsheet/viewform?hl=en_US&formkey=dFFjXzBzM1VwekFlOWFWMjFFRjJMRFE6MQ#gid=0">sign the CLA</a>. We are a part of <a href="http://www.sfconservancy.org/">SFC</a></p>
 </div>
 
