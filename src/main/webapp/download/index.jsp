@@ -40,7 +40,7 @@
   "/download/maven.html">Maven users</a> (Maven is a popular Java build
   tool).</p>
 
-  <h3>Selenium Server (formerly the Selenium RC Server)</h3>
+  <h3>Selenium Standalone Server</h3>
   <p>The Selenium Server is needed in order to run either Selenium RC style scripts or Remote Selenium WebDriver ones. The 2.x server is a drop-in replacement for the old Selenium RC server and is designed to be backwards compatible with your existing infrastructure.</p>
   <p>Download version <a href="http://goo.gl/cvntq5">2.46.0</a>
   <!-- minified link maintained by lukeis to try to track download counts. please talk to him for updating this link or to get the current download count. -->
