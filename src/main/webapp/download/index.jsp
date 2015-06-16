@@ -129,7 +129,7 @@
   <h3>SafariDriver</h3>
   <p>SafariDriver now requires manual installation of the extension prior to automation</p>
   <ul>
-    <li>Latest release <a href="http://selenium-release.storage.googleapis.com/2.46/SafariDriver.safariextz">2.45.0</a></li>
+    <li>Latest release <a href="http://selenium-release.storage.googleapis.com/2.45/SafariDriver.safariextz">2.45.0</a></li>
     <li><a href="https://github.com/SeleniumHQ/selenium/wiki/SafariDriver">Wiki Page</a></li>
   </ul>
 
