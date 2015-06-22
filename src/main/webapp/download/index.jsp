@@ -237,11 +237,11 @@
       </tr>
       <tr>
         <td><a href="https://github.com/cisco-open-source/qtwebdriver">QtWebDriver</a></td>
-        <td><a href="https://github.com/cisco-open-source/qtwebdriver/releases/tag/WebDriver-cisco-cmt-1.2.3">1.2.3</a>&nbsp;&nbsp;</td>
+        <td><a href="https://github.com/cisco-open-source/qtwebdriver/releases/tag/WebDriver-cisco-cmt-1.3.1">1.3.1</a>&nbsp;&nbsp;</td>
         <td><a href="https://github.com/cisco-open-source/qtwebdriver/releases">change log</a>&nbsp;&nbsp;</td>
         <td><a href="https://github.com/cisco-open-source/qtwebdriver/issues">issue tracker</a>&nbsp;&nbsp;</td>
         <td><a href="https://github.com/cisco-open-source/qtwebdriver/wiki">wiki page</a>&nbsp;&nbsp;</td>
-        <td>Released 2014-04-23</td>
+        <td>Released 2015-06-17</td>
       </tr>
       <tr>
         <td><a href="https://github.com/MachinePublishers/jBrowserDriver">jBrowserDriver</a></td>
