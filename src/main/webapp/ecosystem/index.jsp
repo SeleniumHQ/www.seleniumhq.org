@@ -38,8 +38,8 @@
 
     <ul>
         <li>
-            <a rel="nofollow" href="http://www.neustar.biz/enterprise/web-performance">Neustar</a> -
-            provides Selenium-based load testing and website monitoring services.
+            <a rel="nofollow" href="http://webperformance.com/permlink/selenium-webdriver-integration">Web Performance Load Tester</a> -
+            The no-coding real-browser load testing software that knows how many users your website can handle.
         </li>
     </ul>
 
@@ -51,20 +51,8 @@
             A Model-Based test automation tool leveraging the power of Selenium.
         </li>
         <li>
-            <a rel="nofollow" href="http://www.xqual.com/">XStudio</a> -
-            Test Management tool with Selenium integration capabilities.
-        </li>
-        <li>
-            <a rel="nofollow" href="http://www.maestrodev.com/">MaestroDev</a> -
-            Provides automated, cross-browser execution of Selenium tests on both private and public cloud.
-        </li>
-        <li>
             <a rel="nofollow" href="http://www.qualitiasoft.com">Qualitia</a> -
             Scriptless test automation builder for Selenium.
-        </li>
-        <li>
-            <a rel="nofollow" href="http://webperformance.com/permlink/selenium-webdriver-integration">Web Performance Load Tester</a> -
-            The no-coding real-browser load testing software that knows how many users your website can handle.
         </li>
         <li>
             <a rel="nofollow" href="http://www.redwoodhq.com">RedwoodHQ</a> -
@@ -96,36 +84,8 @@
             Continuous Delivery software development consulting, including both Selenium and Sauce Labs.
         </li>
         <li>
-            <a rel="nofollow" href="http://www.wedoqa.com">WeDoQA</a> -
-            Selenium Automation, Custom Selenium Frameworks, Load testing using Selenium to simulate real usage.
-        </li>
-        <li>
-            <a rel="nofollow" href="http://www.wakaleo.com/">Wakaleo</a> -
-            Training and Consulting services around automated acceptance and regression testing with Selenium.
-        </li>
-        <li>
-            <a rel="nofollow" href="http://www.tftus.com/qa-testing.html">Think Future Technologies</a> -
-            provides various QA and testing services, including Selenium
-        </li>
-        <li>
-            <a rel="nofollow" href="http://www.wexte.com/">Wexte</a> -
-            Selenium-based regression testing, performance analysis, load testing and monitoring
-        </li>
-        <li>
-            <a rel="nofollow" href="http://selenium2.ru/trainings.html">Selenium2.Ru</a> -
-            Selenium consulting, training and coaching in Russian
-        </li>
-        <li>
             <a rel="nofollow" href="http://www.360logica.com/expertise/selenium-automation-testing/">360logica</a> -
             Excellent lab for Selenium and WebDriver automation including continous integration services.
-        </li>
-        <li>
-            <a rel="nofollow" href="http://www.nobleprog.co.uk/web-application-testing/consultancy">NobleProg</a> -
-            Selenium training and consulting. Instructor led training in the US, UK, Canada, Germany, Dubai and Poland and also remote courses.
-        </li>
-        <li>
-            <a rel="nofollow" href="http://qasource.com">QASource</a> -
-            NEW QA EXTENSION model to help you build and support robust and maintainable Selenium automation.
         </li>
     </ul>
 
@@ -133,12 +93,12 @@
 
     <ul>
         <li>
-            <a rel="nofollow" href="http://pluralsight.com/training/courses/TableOfContents?courseName=selenium">Pluralsight</a> -
-            Beginner training course on using Selenium and creating an automated test framework.
+            <a rel="nofollow" href="http://selenium2.ru/trainings.html">Selenium2.Ru</a> -
+            Selenium consulting, training and coaching in Russian
         </li>
         <li>
-            <a rel="nofollow" href="http://lmnsolutions.com/training.html">LMN Solutions</a> -
-            Commercial support and training
+            <a rel="nofollow" href="http://pluralsight.com/training/courses/TableOfContents?courseName=selenium">Pluralsight</a> -
+            Beginner training course on using Selenium and creating an automated test framework.
         </li>
         <li>
             <a rel="nofollow" href="http://www.w3qa.eu">W3QA</a> -
@@ -147,17 +107,6 @@
         <li>
             <a rel="nofollow" href="http://www.seleniumsimplified.com/hq">SeleniumSimplified.com</a> -
             Online Training Courses, and consultancy, for Selenium WebDriver with Java.
-        </li>
-         <li>
-            <a rel="nofollow" href="http://www.nobleprog.us/selenium-training-courses">NobleProg</a> -
-            Selenium training and consulting. Instructor led training in the
-            <a rel="nofollow" href="http://www.nobleprog.us/selenium-training-courses">USA</a>,
-            <a rel="nofollow" href="http://www.nobleprog.co.uk/selenium/training">UK</a>,
-            <a rel="nofollow" href="http://www.nobleprog.ca/selenium-training-courses">Canada</a>,
-            <a rel="nofollow" href="http://www.nobleprog.de/selenium-schulungen">Germany</a>,
-            <a rel="nofollow" href="http://www.nobleprog.ae/selenium/training"> Dubai</a>,
-            <a rel="nofollow" href="http://www.nobleprog.pl/szkolenia/selenium">Poland</a>,
-            <a rel="nofollow" href="http://www.nobleprog.com/selenium/training-courses">and Ohter Locations</a>
         </li>
         <li>
             <a rel="nofollow" href="http://www.seleniummaster.com">Selenium Master</a> -
