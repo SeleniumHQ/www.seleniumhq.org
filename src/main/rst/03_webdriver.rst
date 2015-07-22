@@ -509,8 +509,7 @@ By CSS
 ++++++
 
 Like the name implies it is a locator strategy by css. Native browser support
-is used by default, so please refer to `w3c css selectors <http://www.w3.org/TR/CSS/#selectors>`
-for a list of generally available css selectors. If a browser does not have
+is used by default, so please refer to `w3c css selectors <http://www.w3.org/TR/CSS/#selectors>`_ for a list of generally available css selectors. If a browser does not have
 native support for css queries, then `Sizzle <http://sizzlejs.com/>`_ is used. IE 6,7 and FF3.0 
 currently use Sizzle as the css query engine.
 
@@ -1373,7 +1372,7 @@ Cons
 ++++
 
 * Obviously the `Internet Explorer Driver`_ will only work on Windows!
-* Comparatively slow (though still pretty snappy :)
+* Comparatively slow (though still pretty snappy)
 * XPath is not natively supported in most versions. Sizzle is injected automatically
   which is significantly slower than other browsers and slower when comparing to CSS
   selectors in the same browser.
