@@ -167,7 +167,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a href="https://sites.google.com/a/chromium.org/chromedriver/">Chrome</a></td>
+        <td><a href="https://sites.google.com/a/chromium.org/chromedriver/">Google Chrome Driver</a></td>
         <td><a href="http://chromedriver.storage.googleapis.com/index.html?path=2.16/">2.16</a>&nbsp;&nbsp;</td>
         <td><a href="http://chromedriver.storage.googleapis.com/2.16/notes.txt">change log</a>&nbsp;&nbsp;</td>
         <td><a href="http://code.google.com/p/chromedriver/issues/list">issue tracker</a>&nbsp;&nbsp;</td>
@@ -188,6 +188,10 @@
         <td>&nbsp;</td>
         <td><a href="https://github.com/detro/ghostdriver/issues">issue tracker</a></td>
         <td><a href="http://www.youtube.com/watch?v=wqxkKIC2HDY">SeConf talk</a></td>
+      </tr>
+      <tr>
+        <td><a href="https://www.microsoft.com/en-us/download/details.aspx?id=48212">Microsoft Edge Driver</a></td>
+        <td><a href="http://dev.modern.ie/platform/status/webdriver/details/">Implementation Status</a></td>
       </tr>
       <tr>
         <td><a href="https://github.com/forcedotcom/windowsphonedriver/">Windows Phone</a></td>
