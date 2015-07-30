@@ -191,7 +191,9 @@
       </tr>
       <tr>
         <td><a href="https://www.microsoft.com/en-us/download/details.aspx?id=48212">Microsoft Edge Driver</a></td>
-        <td><a href="http://dev.modern.ie/platform/status/webdriver/details/">Implementation Status</a></td>
+        <td>1.0</td>
+        <td colspan=3><a href="http://dev.modern.ie/platform/status/webdriver/details/">Implementation Status</a></td>
+        <td>Released 2015-07-24</td>
       </tr>
       <tr>
         <td><a href="https://github.com/forcedotcom/windowsphonedriver/">Windows Phone</a></td>
@@ -224,6 +226,7 @@
         <td>&nbsp;</td>
         <td>&nbsp;</td>
         <td><a href="https://www.blackberry.com/jira/">issue tracker</a></td>
+        <td>&nbsp;</td>
         <td>Released 2014-01-28</td>
       </tr>
       <tr>
@@ -237,6 +240,7 @@
         <td>&nbsp;</td>
         <td>&nbsp;</td>
         <td><a href="https://crosswalk-project.org/jira">issue tracker</a></td>
+        <td>&nbsp;</td>
         <td>Released 2014-05-05</td>
       </tr>
       <tr>
