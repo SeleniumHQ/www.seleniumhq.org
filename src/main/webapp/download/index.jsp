@@ -190,6 +190,13 @@
         <td><a href="http://www.youtube.com/watch?v=wqxkKIC2HDY">SeConf talk</a></td>
       </tr>
       <tr>
+        <td><a href="https://developer.mozilla.org/en-US/docs/Mozilla/QA/Marionette/WebDriver">Firefox Marionette</a></td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td><a href="https://bugzilla.mozilla.org/enter_bug.cgi?product=Testing&component=Marionette&cc=dburns@mozilla.com">issue tracker</a></td>
+        <td colspan=2><a href="https://developer.mozilla.org/en-US/docs/Mozilla/QA/Marionette/WebDriver/status">Implementation Status</a></td>
+      </tr>
+      <tr>
         <td><a href="https://www.microsoft.com/en-us/download/details.aspx?id=48212">Microsoft Edge Driver</a></td>
         <td>1.0</td>
         <td colspan=3><a href="http://dev.modern.ie/platform/status/webdriver/details/">Implementation Status</a></td>
