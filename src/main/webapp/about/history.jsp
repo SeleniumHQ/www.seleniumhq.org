@@ -35,9 +35,9 @@
   started discussions about the open sourcing of Selenium, as well
   as defining a 'driven' mode of Selenium where you'd get to use
   Selenium over the wire from a language of your choice, that would
-  get around the 'same origin policy'. &nbsp; Another (then)
-  colleague, <a href="http://aslakhellesoy.com/">Aslak
-  Hellesoy</a>, experimented with different ideas for the 'server'
+  get around the 'same origin policy'. &nbsp; Other (then)
+  colleagues, <a href="http://aslakhellesoy.com/">Aslak
+  Hellesoy</a> and Mike Melia, experimented with different ideas for the 'server'
   piece, including page rewriting to get around the same origin
   policy. Paul wrote the original server piece in Java, and Aslak
   and <a href="http://obiefernandez.com/">Obie Fernandez</a> ported
@@ -136,7 +136,7 @@
     <li>Paul's driven code and names "Selenium A and B" for core
     and driven. Driven as a name too, for RC.</li>
 
-    <li>Aslak's page rewriter to get around the same origin
+    <li>Aslak and Mike's page rewriter to get around the same origin
     policy</li>
 
     <li>Jason's twisted capabilty for giving Selenium core more
