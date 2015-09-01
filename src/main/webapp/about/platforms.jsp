@@ -29,17 +29,17 @@
     <p>Selenium with Firefox can be run on any platform that Firefox supports for those versions,
     that also allow users to install a custom Firefox extension.</p>
   </div>
-  
+
   <div class="browser">
     <h4>Internet Explorer</h4>
-    <p>Versions 6, 7, 8, 9, 10 and 11 are supported. Version 11 requires 
+    <p>Versions 6, 7, 8, 9, 10 and 11 are supported. Version 11 requires
       <a href="https://github.com/SeleniumHQ/selenium/wiki/InternetExplorerDriver#Required_Configuration">additional configuration</a>.</p>
     <p>The selenium project tests each release on Windows XP, 7 and 8.</p>
   </div>
 
   <div class="browser">
     <h4>Safari</h4>
-    <p><a href="https://github.com/SeleniumHQ/selenium/wiki/SafariDriver">SafariDriver</a> requires Safari 5.1+ and only runs on OS X</p>
+    <p><a href="https://github.com/SeleniumHQ/selenium/wiki/SafariDriver">SafariDriver</a> requires Safari 5.1+ (<strong>Note</strong>, due to Apple potentially <a href="http://appleinsider.com/articles/12/07/25/apple_kills_windows_pc_support_in_safari_60">dropping support</a> > Safari 6.X for Windows, new developments in the bindings may not work in the Windows platform)</p>
   </div>
   <div class="browser">
     <h4>Opera</h4>
@@ -66,9 +66,9 @@
     </p>
   </div>
 
-  <div class"OS">
+  <div class="OS">
     <h4>Apple OS X</h4>
-    <p>We currently do not use any version of OS X in our automated tests against the selenium project. However most developers on the project are using a recent version of OS X 
+    <p>We currently do not use any version of OS X in our automated tests against the selenium project. However most developers on the project are using a recent version of OS X
     and we'll continue to support the current stable release and often the previous release.</p>
   </div>
 
