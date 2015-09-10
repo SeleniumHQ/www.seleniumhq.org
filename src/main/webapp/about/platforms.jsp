@@ -32,9 +32,9 @@
 
   <div class="browser">
     <h4>Internet Explorer</h4>
-    <p>Versions 6, 7, 8, 9, 10 and 11 are supported. Version 11 requires
-      <a href="https://github.com/SeleniumHQ/selenium/wiki/InternetExplorerDriver#Required_Configuration">additional configuration</a>.</p>
-    <p>The selenium project tests each release on Windows XP, 7 and 8.</p>
+    <p>Versions 7, 8, 9, 10 and 11 are supported. Version 11 requires
+      <a href="https://github.com/SeleniumHQ/selenium/wiki/InternetExplorerDriver#required-configuration">additional configuration</a>.</p>
+    <p>The selenium project tests each release on Windows 7.</p>
   </div>
 
   <div class="browser">
@@ -43,7 +43,7 @@
   </div>
   <div class="browser">
     <h4>Opera</h4>
-    <p><a href="https://github.com/SeleniumHQ/selenium/wiki/OperaDriver">OperaDriver</a> requires Opera 12.x and older versions</p>
+    <p><a href="https://github.com/operasoftware/operachromiumdriver/">OperaDriver</a> is supported by Opera Software, refer to their documentation for supported versions.</p>
   </div>
   <div class="browser">
     <h4>Chrome</h4>
@@ -55,14 +55,8 @@
 
   <div class="OS">
     <h4>Microsoft Windows</h4>
-    <p>Most versions of MS Windows that are currently still supported by Microsoft should work with Selenium. Altough here's the list of OS's we currently run tests against before each release:
-    <ul>
-      <li>Windows XP (supported ended April 8, 2014)</li>
-      <li>Windows 7</li>
-      <li>Windows 8</li>
-      <li>Windows 8.1</li>
-    </ul>
-    If your version of windows is not listed, it does not mean Selenium won't attempt to support it. That only means we don't continually run tests on that particular version of Windows.
+    <p>Most versions of MS Windows that are currently still supported by Microsoft should work with Selenium. Altough we currently run tests before each release against Windows 7.
+    This does not mean Selenium won't attempt to support different versions of Windows. This only means we don't continually run tests on other particular version of Windows.
     </p>
   </div>
 
