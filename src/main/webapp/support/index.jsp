@@ -33,7 +33,8 @@ discussion!</p>
 <p>The best place to ask for help is the user group (because they also keep the
 information accessible for others to read in the future). However, if you have a very
 important (or too simple) issue that needs a solution ASAP, you can always enter
-the IRC chat room. You might just find someone ready to help on <em>#selenium at
+the IRC <a href="http://webchat.freenode.net/?randomnick=1&channels=%23selenium">
+chat room</a>. You might just find someone ready to help on <em>#selenium at
 Freenode</em> (irc.freenode.net). There is more info about 
 <a href="http://en.wikipedia.org/wiki/Irc">IRC on wikipedia</a><br/>
 The <em>#selenium</em> IRC log archive is available at <a href="https://botbot.me/freenode/selenium/">botbot</a>.
