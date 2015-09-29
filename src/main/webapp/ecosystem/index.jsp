@@ -58,6 +58,10 @@
             <a rel="nofollow" href="http://www.redwoodhq.com">RedwoodHQ</a> -
             Open Source framework that allows users to develop automation code, create readable keyword driven test cases and execute them across multiple machines all under a single Web interface.
         </li>
+        <li>
+            <a rel="nofollow" href="http://www.browseemall.com">BrowseEmAll</a> -
+            Commercial cross browser testing software which can execute Selenium tests in different browsers directly on the local machine.
+        </li>        
     </ul>
 
     <h2>Commercial Support, Services &amp; Training</h2>
