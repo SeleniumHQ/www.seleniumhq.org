@@ -264,31 +264,34 @@
         <td>&nbsp;</td>
         <td><a href="https://github.com/MachinePublishers/jBrowserDriver/issues">issue tracker</a></td>
       </tr>
-	  <tr>
+      <tr>
         <td><a href="https://github.com/2gis/Winium.Desktop" title="Selenium Remote WebDriver implementation for automated testing of Windows desktop apps">Winium.Desktop</a></td>
         <td><a href="https://github.com/2gis/Winium.Desktop/releases/latest">latest</a></td>
         <td><a href="https://github.com/2gis/Winium.Desktop/releases">change log</a></td>
         <td><a href="https://github.com/2gis/Winium.Desktop/issues">issue tracker</a></td>
-		<td>
-			<a href="https://github.com/2gis/Winium.Desktop/wiki">wiki</a>, 
-			<a href="https://youtu.be/5zhDyxVDSeQ">CodeFest talk in Russian</a>
-		</td>
+        <td>
+          <a href="https://github.com/2gis/Winium.Desktop/wiki">wiki</a>,<br>
+          <a href="https://github.com/2gis/Winium/wiki/Presentations">talks &amp; demos</a>
+        </td>
       </tr>
-	  <tr>
+      <tr>
         <td><a href="https://github.com/2gis/Winium.StoreApps" title="Selenium Remote WebDriver implementation for automated testing of native Windows Store apps, tested on Windows Phone emulators">Winium.StoreApps</a></td>
         <td><a href="https://github.com/2gis/Winium.StoreApps/releases/latest">latest</a></td>
         <td><a href="https://github.com/2gis/Winium.StoreApps/releases">change log</a></td>
         <td><a href="https://github.com/2gis/Winium.StoreApps/issues">issue tracker</a></td>
-		<td>
-			<a href="https://github.com/2gis/Winium.StoreApps/wiki">wiki</a>, 
-			<a href="https://youtu.be/5zhDyxVDSeQ">CodeFest talk in Russian</a>
-		</td>
+        <td>
+          <a href="https://github.com/2gis/Winium.StoreApps/wiki">wiki</a>,<br>
+          <a href="https://github.com/2gis/Winium/wiki/Presentations">talks &amp; demos</a>
+        </td>
       </tr>
-	  <tr>
+      <tr>
         <td><a href="https://github.com/2gis/Winium.StoreApps.CodedUi" title="Selenium Remote WebDriver implementation for automated testing of native and hybrid apps, tested on Windows Phone emulators and devices">Winium.StoreApps.CodedUi</a> (Early stage WIP)</td>
-        <td></td>
+        <td><a href="https://github.com/2gis/Winium.StoreApps.CodedUi/releases">latest</a></td>
         <td></td>
         <td><a href="https://github.com/2gis/Winium.StoreApps.CodedUi/issues">issue tracker</a></td>
+        <td>
+          <a href="https://github.com/2gis/Winium/wiki/Presentations">talks &amp; demos</a>
+        </td>
       </tr>
     </tbody>
   </table>
