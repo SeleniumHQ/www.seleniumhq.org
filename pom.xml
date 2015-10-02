@@ -204,7 +204,7 @@
 			version pointed to by ${gae.home} property (Typically, one used by
 			your Eclipse plug-in)
 		-->
-		<gae.version>1.7.3</gae.version>
+		<gae.version>1.9.27</gae.version>
 
 		<!--
 			Upload to http://test.latest.<applicationName>.appspot.com by default
