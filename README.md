@@ -6,7 +6,7 @@ Things you need to have installed to run the docs:
 
 To build the docs and run locally (command line):
 
-    mvn clean jetty:run
+    mvn appengine:devserver
 
 You will then be able to access them at:
 
@@ -14,10 +14,7 @@ http://localhost:8080
 
 deploying to google appengine run: 
 
-    mvn -Dgae.home=<absolute path to>/appengine-java-sdk clean gae:deploy
+    mvn appengine:update
 
-Specify your username/password to the appengine account by specifying
-it in your ~/.m2/settings.xml file, as described here:
-http://www.kindleit.net/maven_gae_plugin/examples/passwordPrompt.html
-
-Sphinx may be installed using easy_install or pip
+You will need to authenticate with google and this will only
+work if you have a @seleniumhq.org account.
