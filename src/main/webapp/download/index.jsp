@@ -83,7 +83,7 @@
         <td><a href="http://goo.gl/5IVvjZ">Change log</a>&nbsp;&nbsp;</td>
         <td><a href="http://goo.gl/Grc6tm" alt="Javadoc">Javadoc</a></td>
       </tr>
-      <tr>
+      <tr>ru
         <td>C#</td>
         <td>2.47.0</td>
         <td>2015-07-29</td>
@@ -93,8 +93,8 @@
       </tr>
       <tr>
         <td>Ruby</td>
-        <td>2.47.0</td>
-        <td>2015-07-29</td>
+        <td>2.48.0</td>
+        <td>2015-10-07</td>
         <td><a href="http://rubygems.org/gems/selenium-webdriver">Download</a></td>
         <td><a href="http://goo.gl/zNfSLK">Change log</a></td>
         <td><a href="http://goo.gl/jzh4RU">API docs</a></td>
