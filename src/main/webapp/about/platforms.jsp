@@ -97,7 +97,7 @@
 
   <div class="language">
     <h4>JavaScript</h4>
-    <p></p>
+    <p>Frameworks available: <a href="https://github.com/SeleniumHQ/selenium/wiki/WebDriverJs">WebdriverJS</a>, <a href="http://webdriver.io/">WebdriverIO</a>, <a href="http://nightwatchjs.org/">NightwatchJS</a></p>
   </div>
 
   <div class="language">
