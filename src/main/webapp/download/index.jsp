@@ -198,9 +198,8 @@
       </tr>
       <tr>
         <td><a href="https://www.microsoft.com/en-us/download/details.aspx?id=48212">Microsoft Edge Driver</a></td>
-        <td>1.0</td>
+        <td colspan=2><a href="http://www.microsoft.com/en-us/download/details.aspx?id=48740">MS EdgeDriver - Insiders</a></td>
         <td colspan=3><a href="http://dev.modern.ie/platform/status/webdriver/details/">Implementation Status</a></td>
-        <td>Released 2015-07-24</td>
       </tr>
       <tr>
         <td><a href="https://github.com/forcedotcom/windowsphonedriver/">Windows Phone</a></td>
