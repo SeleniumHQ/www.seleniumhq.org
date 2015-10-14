@@ -55,7 +55,7 @@
 
   <div class="OS">
     <h4>Microsoft Windows</h4>
-    <p>Most versions of MS Windows that are currently still supported by Microsoft should work with Selenium. Altough we currently run tests before each release against Windows 7.
+    <p>Most versions of MS Windows that are currently still supported by Microsoft should work with Selenium. Although we currently run tests before each release against Windows 7.
     This does not mean Selenium won't attempt to support different versions of Windows. This only means we don't continually run tests on other particular version of Windows.
     </p>
   </div>
