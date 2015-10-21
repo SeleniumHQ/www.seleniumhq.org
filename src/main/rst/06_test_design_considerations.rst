@@ -96,9 +96,9 @@ Ajax Tests
 Ajax is a technology which supports dynamically changing user interface
 elements which can dynamically change without the browser having to reload
 the page, such as animation, RSS feeds, and real-time data updates among others.
-There's a countless ways Ajax can be used to update elements on a web page.
+There are countless ways Ajax can be used to update elements on a web page.
 But, the easy way to think of this is that in Ajax-driven applications, data can
-retrieved from the application server and then displayed on the page without 
+be retrieved from the application server and then displayed on the page without
 reloading the entire page.  Only a portion of the page, or strictly the element
 itself is reloaded.
 
@@ -109,30 +109,30 @@ Assert vs. Verify
 ~~~~~~~~~~~~~~~~~
 
 When should you use an assert command and when should you use a verify command?
-This is up to you.  The difference is in what you want to happen when the check
-fails.  Do you want your test to terminate, or to continue and simply record that the check
+This is up to you. The difference is in what you want to happen when the check
+fails. Do you want your test to terminate, or to continue and simply record that the check
 failed?
 
 Here's the trade-off. If you use an assert, the test will stop at that point and
-not run any subsequent checks.  Sometimes, perhaps often, that is what you want.
-If the test fails you will immediately know the test did not pass.  Test engines
+not run any subsequent checks. Sometimes, perhaps often, that is what you want.
+If the test fails you will immediately know the test did not pass. Test engines
 such as TestNG and JUnit have plugins for commonly used development environments
-(Chap 5) which conveniently flag these tests as failed tests.  The advantage:
+(Chap 5) which conveniently flag these tests as failed tests. The advantage:
 you have an immediate visual of whether the checks
-passed.  The disadvantage:  when a check does fail, there are other checks
+passed. The disadvantage: when a check does fail, there are other checks
 which were never performed, so you have no information on their status.
 
-In contrast, verify commands will not terminate the test.  If your test uses
+In contrast, verify commands will not terminate the test. If your test uses
 only verify commands you are guaranteed (assuming no unexpected exceptions)
 the test will run to completion whether the checks find defects
-or not.  The disadvantage:  you have to do more work to examine your test
-results.  That is, you won't get feedback from TestNG or JUnit.
+or not. The disadvantage: you have to do more work to examine your test
+results. That is, you won't get feedback from TestNG or JUnit.
 You will need to look at the results of a console printout or a log output.
 And you will need to take the time to look through
-this output every time you run your test.  If you are
+this output every time you run your test. If you are
 running hundreds of tests, each with its own log, this will be time-consuming,
-and the immediate feedback of asserts will be more appropriate.  Asserts are more
-commonly used than verifys due to their immediate feedback.
+and the immediate feedback of asserts will be more appropriate. Asserts are more
+commonly used than verifiers due to their immediate feedback.
 
 Location Strategies
 -------------------
@@ -147,7 +147,7 @@ we can locate an object using
 - the element's ID
 - the element's name attribute
 - an XPath statement
-- by a links text
+- by a link's text
 - document object model (DOM)
 
 Using an element ID or name locator is the most efficient in terms of test performance,
@@ -155,7 +155,7 @@ and also makes your test code more readable, assuming the ID or name within the 
 XPath statements take longer to process since the browser must run its XPath processor.  XPath has 
 been known to be especially slow in Internet Explorer version 7.  Locating via a link's text is often
 convenient and performs well.  This technique is specific to links though.  Also,
-if the link text is likely to change frequently, locating by the <a> element
+if the link's text is likely to change frequently, locating by the <a> element
 would be the better choice.
   
 Sometimes though, you must use an XPath locator.  If the page source does not
@@ -170,13 +170,13 @@ that must occur within the second paragraph within a <div> section,
 you can use XPath to specify this.  With ID and name locators,
 you can only specify that they occur on the page that is, somewhere on the page.
 If you must test that an image displaying the company logo appears at 
-the top of the page within a header section XPath may be the better locator. 
+the top of the page within a header section, XPath may be the better locator. 
 
 
 Locating Dynamic Elements
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
-As was described earlier in the section on types of tests, a dynamic element is a page element whose identifer varies with each instance of the page.  For example,
+As was described earlier in the Types of Tests section, a dynamic element is a page element whose identifer varies with each instance of the page.  For example,
            
 .. code-block:: html
 
@@ -189,7 +189,7 @@ a static tag.  The HTML will be the same each time this page is loaded in the
 browser.  Its ID remains constant with all instances of this page. That is,
 when this page is displayed, this UI element will always have this Identifier.
 So, for your test script to click this button you simply need to use the following
-selenium command.
+Selenium command.
 
 .. code-block:: html
 
@@ -237,7 +237,7 @@ trying to use an ID locator.  So, for the checkbox you can simply use
 
     click 	//input
 
-Or, if it is not the first input element on the page (which it likely is not)
+Or, if it is not the first input element on the page (which it is likely not)
 try a more detailed XPath statement.
 
 .. code-block:: html
@@ -270,14 +270,14 @@ This approach will work if there is only one check box whose ID contains the tex
 
 Locating Ajax Elements
 ~~~~~~~~~~~~~~~~~~~~~~
-As was presented in the Test Types subsection above, a page element implemented with Ajax
+As was presented in the Types of Tests subsection above, a page element implemented with Ajax
 is an element that
 can be dynamically refreshed without having to refresh the entire page.  
 The best way to locate and verify an Ajax element is to use the Selenium 2.0 WebDriver API.
 It was specifically designed to address testing of Ajax elements where Selenium 1 has some
 limitations.
 
-In Selenim 2.0 you use the waitFor() method to wait for a page element to become available.
+In Selenium 2.0 you use the waitFor() method to wait for a page element to become available.
 The parameter is a By object which is how WebDriver implements locators.  This is explained in detail in the WebDriver chapters.
 
 To do this with Selenium 1.0 (Selenium-RC) a bit more coding is involved, but it 
@@ -285,7 +285,7 @@ isn't difficult.  The approach is to check for the element, if it's not availabl
 wait for a predefined period and then again recheck it.  This is then executed with a loop with a predetermined time-out terminating the loop if the element isn't found.
 
 Let's consider a page which brings a link (link=ajaxLink) on click
-of a button on page (without refreshing the page)  This could be handled
+of a button on page (without refreshing the page). This could be handled
 by Selenium using a *for* loop. 
 
 .. code-block:: java
@@ -293,7 +293,7 @@ by Selenium using a *for* loop.
    // Loop initialization.
    for (int second = 0;; second++) {
 	
-	// If loop is reached 60 seconds then break the loop.
+	// If loop reached 60 seconds then break the loop.
 	if (second >= 60) break;
 	
 	// Search for element "link=ajaxLink" and if available then break loop.
@@ -342,14 +342,14 @@ both functions.
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Another common usage of wrapping Selenium methods is to check for presence of 
-an element on page before carrying out some operation. This is sometimes called 
+an element on a page before carrying out some operation. This is sometimes called 
 a 'safe operation'.  For instance, the following method could be used to implement
 a safe operation that depends on an expected element being present.
 
 .. code-block:: java
 
 	/**
-	 * Selenum-RC -- Clicks on element only if it is available on page.
+	 * Selenum-RC -- Clicks on an element only if it is available on a page.
 	 * 
 	 * param elementLocator
 	 */
@@ -358,7 +358,7 @@ a safe operation that depends on an expected element being present.
 			selenium.click(elementLocator);
 		} else {
 			// Using the TestNG API for logging			
-			Reporter.log("Element: " +elementLocator+ ", is not available on page - "
+			Reporter.log("Element: " + elementLocator + ", is not available on a page - "
 					+selenium.getLocation());
 		}
 	}
@@ -368,17 +368,17 @@ This example uses the Selenium 1 API but Selenium 2 also supports this.
 .. code-block:: java
 
 	/**
-	 * Selenium-WebDriver -- Clicks on element only if it is available on page.
+	 * Selenium-WebDriver -- Clicks on an element only if it is available on a page.
 	 * 
 	 * param elementLocator
 	 */
 	public void safeClick(String elementLocator) {
 		WebElement webElement = getDriver().findElement(By.XXXX(elementLocator));
 		if(webElement != null) {
-			selenium.click(elementLocator);
+			selenium.click(webElement);
 		} else {
 			// Using the TestNG API for logging			
-			Reporter.log("Element: " +elementLocator+ ", is not available on page - "
+			Reporter.log("Element: " + elementLocator + ", is not available on a page - "
 					+ getDriver().getUrl());
 		}
 	}
@@ -390,7 +390,7 @@ Using safe methods is up to the test developer's discretion.
 Hence, if test execution is to be continued, even in the wake of missing elements 
 on the page, then safe methods could be used, while posting a message to a log about
 the missing element. This, essentially, implements a 'verify' with a reporting 
-mechanism as opposed to an abortive assert.  But if element must be available on page in order 
+mechanism as opposed to an abortive assert.  But if an element must be available on a page in order 
 to be able to carry out further operations (i.e. login button on home page 
 of a portal) then this safe method technique should not be used.
 
@@ -398,7 +398,7 @@ of a portal) then this safe method technique should not be used.
 UI Mapping
 ----------
 
-A UI map is a mechanism that stores all the locators for a test suite in one place
+A UI Map is a mechanism that stores all the locators for a test suite in one place
 for easy modification when identifiers or paths to UI elements change in
 the AUT.  The test script then uses the UI Map for locating
 the elements to be tested.  Basically, a UI map is a repository of test script objects
@@ -410,14 +410,14 @@ finding that object, rather than having to search through test script code.  Als
 changing the Identifier in a single place, rather than having to make the change in multiple
 places within a test script, or for that matter, in multiple test scripts.
 
-To summarize, a UI map has two significant advantages.
+To summarize, a UI Map has two significant advantages
 
 - Using a centralized location for UI objects instead of having them scattered 
   throughout the script.  This makes script maintenance more efficient.
 - Cryptic HTML Identifiers and names can be given more human-readable names improving the 
   readability of test scripts.
 
-Consider the following, difficult to understand, example (in java). 
+Consider the following, difficult to understand, example (in Java). 
 
 .. code-block:: java
 
@@ -435,7 +435,7 @@ Consider the following, difficult to understand, example (in java).
    
 This script would be hard to follow for anyone not familiar 
 with the AUT's page source. Even regular users of the application 
-might have difficulty understanding what thus script does. A better 
+might have difficulties in understanding what this script does. A better 
 script could be:
    
 .. code-block:: java
@@ -483,9 +483,9 @@ a very readable script.
    
 There are various ways a UI Map can be implemented.  One could create a class 
 or struct which only stores public String variables each storing a locator.  
-Alternatively, a text file storing key value pairs could be used.  In Java, a properties file containing key/value pairs is probably best method.
+Alternatively, a text file storing key value pairs could be used.  In Java, a properties file containing key/value pairs is probably the best method.
    
-Consider a property file *prop.properties* which assigns as 'aliases' 
+Consider a properties file *prop.properties* which assigns as 'aliases' 
 reader-friendly identifiers for UI elements from the previous example. 
    
 .. code-block:: text
@@ -496,13 +496,13 @@ reader-friendly identifiers for UI elements from the previous example.
    admin.events.cancel = addEditEventForm:_IDcancel
    admin.events.viewoldevents = adminHomeForm:_activityold
    
-The locators will still refer to html objects, but we have introduced a layer 
+The locators will still refer to HTML objects, but we have introduced a layer 
 of abstraction between the test script and the UI elements.
 Values are read from the properties file and used in the Test Class to 
 implement the UI 
 Map. For more on Java properties files refer to the following `link`_.
 
-.. _link: http://java.sun.com/docs/books/tutorial/essential/environment/properties.html
+.. _link: http://docs.oracle.com/javase/tutorial/essential/environment/properties.html
 
 
 Page Object Design Pattern
@@ -512,18 +512,18 @@ Page Object is a Design Pattern which has become popular in test automation
 for enhancing test maintenance and reducing code duplication.  A page object 
 is an object-oriented class that serves as an interface to a page of your AUT.  
 The tests then use the methods of this page object class whenever they need to 
-interact with that page of the UI.  The benefit is that if the UI changes for 
+interact with the UI of that page.  The benefit is that if the UI changes for 
 the page, the tests themselves don't need to change, only the code within the page 
 object needs to change.  Subsequently all changes to support that new UI are located in one place.
 
 The Page Object Design Pattern provides the following 
-advantages.
+advantages
 
-1. There is clean separation between test code and page specific code such 
-as locators (or their use if you're using a UI map) and layout.
+1. There is a clean separation between test code and page specific code such 
+as locators (or their use if you're using a UI Map) and layout.
 
-2. There is single repository for the services or operations offered by the 
-page rather than having these services scattered through out the tests. 
+2. There is a single repository for the services or operations offered by the 
+page rather than having these services scattered throughout the tests. 
 
 In both cases this allows any modifications required due to UI changes to all 
 be made in one place.  Useful information on this technique can be found on 
@@ -553,11 +553,11 @@ First, consider an example, typical of test automation, that does not use a page
 	
 There are two problems with this approach.
 
-1. There is no separation between the test method and the AUTs locators (IDs in this example); both are intertwined in a single method.  If the AUT's UI changes its identifiers, layout, or how a login is input and processed, the test itself must change.
+1. There is no separation between the test method and the AUT's locators (IDs in this example); both are intertwined in a single method.  If the AUT's UI changes its identifiers, layout, or how a login is input and processed, the test itself must change.
 
-2. The id-locators would be spread in multiple tests, all tests that had to use this login page.	
+2. The ID-locators would be spread in multiple tests, in all tests that had to use this login page.	
 
-Applying the page object techniques this example could be rewritten like this in the following example of a page object for a Sign-in page.
+Applying the page object techniques, this example could be rewritten like this in the following example of a page object for a Sign-in page.
 
 .. code-block:: java
 
@@ -639,19 +639,20 @@ So now, the login test would use these two page objects as follows.
 		}
 	}
 
-There is a lot of flexibility in how the page objects may be designed, but there are a few basic rules for getting the desired maintainability of your test code.	
-Page objects themselves should never be make verifications or assertions. This is part of your test and should always be within the test's code, never in an page object. The page object will contain the representation of the page, and the services the page provides via methods but no code related to what is being tested should be within the page object.
+There is a lot of flexibility in how the page objects may be designed, but there are a few basic rules for getting the desired maintainability of your test code.
+
+Page objects themselves should never make verifications or assertions. This is part of your test and should always be within the test's code, never in an page object. The page object will contain the representation of the page, and the services the page provides via methods but no code related to what is being tested should be within the page object.
 
 There is one, single, verification which can, and should, be within the page object and that is to verify that the page, and possibly critical elements on the page, were loaded correctly.  This verification should be done while instantiating the page object. In the examples above, both the SignInPage and HomePage constructors check that the expected page is available and ready for requests from the test.
 
-A page object does not necessarily need to represent an entire page. The Page Object design pattern could be used to represent components on a page.  If a page in the AUT has multiple components, it may improved maintainability if there was a separate page object for each component.
+A page object does not necessarily need to represent an entire page. The Page Object design pattern could be used to represent components on a page.  If a page in the AUT has multiple components, it may improve maintainability if there is a separate page object for each component.
 
 There are other design patterns that also may be used in testing.  Some use a Page Factory for instantiating their page objects.  Discussing all of these is beyond the scope of this user guide.  Here, we merely want to introduce the concepts to make the reader aware of some of the things that can be done.  As was mentioned earlier, many have blogged on this topic and we encourage the reader to search for blogs on these topics.
 
 
 Data Driven Testing
 --------------------
-Data Driven Testing refers to using the same test (or tests) multiple times with varying data.  These data sets are often from external files i.e. .csv file, text file, or perhaps loaded from a database. Data driven testing is a commonly used test automation technique used to validate an application against many varying input.  When the test is designed for varying data, the input data can expand, essentially creating additional tests, without requiring changes to the test code.
+Data Driven Testing refers to using the same test (or tests) multiple times with varying data.  These data sets are often from external files i.e. .csv file, text file, or perhaps loaded from a database. Data driven testing is a commonly used test automation technique used to validate an application against many varying inputs.  When the test is designed for varying data, the input data can expand, essentially creating additional tests, without requiring changes to the test code.
 
 **In Python:**
 
