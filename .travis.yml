@@ -1,0 +1,6 @@
+language: java
+
+script:
+  - mvn compile
+  - mvn jspc:jspc
+  # TODO: eventually add RST ?
