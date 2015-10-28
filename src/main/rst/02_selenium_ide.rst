@@ -1749,6 +1749,11 @@ bottom of the Selenium Reference_ document.
 .. TODO:  mam-p: need info on how to install user extensions, especially on the diff
    between "Selenium Core Extensions" and "Selenium IDE" extensions on the
    Options=>Options=>General page.
+   
+Sometimes it can prove very useful to debug step by step Selenium IDE and your 
+User Extension. The only debugger that appears able to debug 
+XUL/Chrome based extensions is Venkman which is supported in Firefox until version 32 included. 
+The step by step debug has been verified to work with Firefox 32 and Selenium IDE 2.9.0.   
 
 Format 
 ------
