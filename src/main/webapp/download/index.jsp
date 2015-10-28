@@ -298,6 +298,7 @@
   <h4>Third Party Language Bindings <span class="unsupported">NOT DEVELOPED</span> by seleniumhq</h4>
   <ul class="thirdPartyBinding">
     <li><a href="https://github.com/aivaturi/Selenium-Remote-Driver">Perl</a> <a href="https://metacpan.org/module/Selenium::Remote::Driver">download and docs</a> by Gordon Child</li>
+    <li><a href="https://github.com/azawawi/perl6-selenium-webdriver">Perl 6</a> by Ahmad M. Zawawi</li>
     <li><a href="https://github.com/chibimagic/WebDriver-PHP/">PHP</a> by Chibimagic (real name unknown?)</li>
     <li><a href="http://code.google.com/p/php-webdriver-bindings/">PHP</a> by Lukasz Kolczynski <!-- appologies for not being able to do the UTF-8 proper encoding of your name --></li>
     <li><a href="https://github.com/facebook/php-webdriver">PHP</a> by facebook</li>
