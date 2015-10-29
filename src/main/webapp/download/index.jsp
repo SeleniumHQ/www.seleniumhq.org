@@ -31,7 +31,7 @@
 </head>
 
 <body class="sectionDownload">
-<%@include file="/jsp/header.jspfx"%><div id="mainContent">
+<%@include file="/jsp/header.jspf"%><div id="mainContent">
   <h2>Downloads</h2>
   <p>Below is where you can find the latest releases of all the
   Selenium components. You can also find a list of <a href=
