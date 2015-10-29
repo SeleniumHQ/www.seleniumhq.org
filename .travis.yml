@@ -9,8 +9,6 @@ install:
   - pip install sphinx
 
 script:
-  - mvn package
-  - mvn ant:ant
-  - mvn compile
-  - mvn jspc:jspc
+  - mvn package # compile / package the war
+  - mvn jspc:jspc # compile jsp files
   # TODO: eventually add RST ?
