@@ -1,4 +1,12 @@
-language: java
+language:
+  - python
+  - java
+
+python:
+  - "2.7"
+
+install:
+  - pip install sphinx
 
 script:
   - mvn package
