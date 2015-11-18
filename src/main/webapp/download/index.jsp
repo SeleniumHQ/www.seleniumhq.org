@@ -199,7 +199,8 @@
       <tr>
         <td><a href="https://www.microsoft.com/en-us/download/details.aspx?id=48212">Microsoft Edge Driver</a></td>
         <td colspan=2><a href="http://www.microsoft.com/en-us/download/details.aspx?id=48740">MS EdgeDriver - Insiders</a></td>
-        <td colspan=3><a href="http://dev.modern.ie/platform/status/webdriver/details/">Implementation Status</a></td>
+        <td><a href="http://connect.microsoft.com/">issue tracker</a></td>
+        <td colspan=2><a href="http://dev.modern.ie/platform/status/webdriver/details/">Implementation Status</a></td>
       </tr>
       <tr>
         <td><a href="https://github.com/forcedotcom/windowsphonedriver/">Windows Phone</a></td>
