@@ -13,11 +13,12 @@
   <h2>Selenium Events</h2>
 
   <h2>Upcoming events</h2>
-  <div id="future-events"><img src="/images/loading.gif" alt="loading events"/></div>
-  <p>Interested in learning what’s in store for Se Conf 2016? Then be sure to read <a href="http://year-2015.seleniumconf.org/next-year/">this write-up from the Conference Organizers.</a></p>
+  <div id="future-events">
+  <p>Interested in learning what&#39;s in store for Selenium Conf 2016? Then be sure to read <a href="http://year-2015.seleniumconf.org/next-year/">this write-up from the Conference Organizers.</a></p>
+  </div>
 
   <h2>Past events</h2>
-  <div id="past-events"><img src="/images/loading.gif" alt="loading events"/></div>
+  <div id="past-events">
       <table border="1" cellpadding="1" cellspacing="1" id="official-conference" style="width:500px;">
 	<caption>The Annual Selenium Conference</caption>
 	<tbody>
@@ -27,32 +28,33 @@
 			<td>Videos</td>
 		</tr>
 		<tr>
-			<td>SeConf&#39;11</td>
+			<td>Selenium Conf&#39;11</td>
 			<td>San Francisco, USA</td>
 			<td>&nbsp;</td>
 		</tr>
 		<tr>
-			<td>SeConf&#39;12</td>
+			<td>Selenium Conf&#39;12</td>
 			<td>London, UK</td>
 			<td><a href="https://www.youtube.com/playlist?list=PLCieebVYUBeOdqTjaHtqrtF5Ld7_cVDQl">link</a></td>
 		</tr>
 		<tr>
-			<td>SeConf&#39;13</td>
+			<td>Selenium Conf&#39;13</td>
 			<td>Boston, USA</td>
 			<td><a href="https://www.youtube.com/playlist?list=PLCieebVYUBeP1vNIcXKSQcIGHZwGhYg6p">link</a></td>
 		</tr>
 		<tr>
-			<td>SeConf&#39;14</td>
+			<td>Selenium Conf&#39;14</td>
 			<td>Bangalore, INDIA</td>
 			<td><a href="https://www.youtube.com/watch?v=jjY0eBQFZJI&amp;list=PL9Z-JgiTsOYQjHFwf5maIjFXahl-d0gvU">link</a></td>
 		</tr>
 		<tr>
-			<td>SeConf&#39;15</td>
+			<td>Selenium Conf&#39;15</td>
 			<td>Portland, USA</td>
 			<td><a href="https://www.youtube.com/playlist?list=PLRdSclUtJDYXehIM7SyQyIghLDmE015Gc">link</a></td>
 		</tr>
 	</tbody>
 </table>
+  </div>
   <script src="/js/events.js" type="text/javascript"></script>
 
 <%@include file="/jsp/footer.jspf"%>
