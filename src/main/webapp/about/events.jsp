@@ -14,7 +14,7 @@
 
   <h2>Upcoming events</h2>
   <div id="future-events">
-  <p>Interested in learning what’s in store for Se Conf 2016? Then be sure to read <a href="http://year-2015.seleniumconf.org/next-year/">this write-up from the Conference Organizers.</a></p>
+  <p>Interested in learning what&#39;s in store for Selenium Conf 2016? Then be sure to read <a href="http://year-2015.seleniumconf.org/next-year/">this write-up from the Conference Organizers.</a></p>
   </div>
 
   <h2>Past events</h2>
