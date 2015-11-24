@@ -12,49 +12,20 @@
 <%@include file="/jsp/header.jspf"%><div id="mainContent">
   <h2>Selenium Events</h2>
 
-  <h2>Upcoming events</h2>
-  <div id="future-events"><img src="/images/loading.gif" alt="loading events"/></div>
-  <p>Interested in learning what’s in store for Se Conf 2016? Then be sure to read <a href="http://year-2015.seleniumconf.org/next-year/">this write-up from the Conference Organizers.</a></p>
+  <p>Interested in learning what&apos;s in store for Se Conf 2016? Then be sure to read <a href="http://year-2015.seleniumconf.org/next-year/">this write-up from the Conference Organizers.</a></p>
 
-  <h2>Past events</h2>
-  <div id="past-events"><img src="/images/loading.gif" alt="loading events"/></div>
-      <table border="1" cellpadding="1" cellspacing="1" id="official-conference" style="width:500px;">
-	<caption>The Annual Selenium Conference</caption>
-	<tbody>
-		<tr>
-			<td>Event</td>
-			<td>Location</td>
-			<td>Videos</td>
-		</tr>
-		<tr>
-			<td>SeConf&#39;11</td>
-			<td>San Francisco, USA</td>
-			<td>&nbsp;</td>
-		</tr>
-		<tr>
-			<td>SeConf&#39;12</td>
-			<td>London, UK</td>
-			<td><a href="https://www.youtube.com/playlist?list=PLCieebVYUBeOdqTjaHtqrtF5Ld7_cVDQl">link</a></td>
-		</tr>
-		<tr>
-			<td>SeConf&#39;13</td>
-			<td>Boston, USA</td>
-			<td><a href="https://www.youtube.com/playlist?list=PLCieebVYUBeP1vNIcXKSQcIGHZwGhYg6p">link</a></td>
-		</tr>
-		<tr>
-			<td>SeConf&#39;14</td>
-			<td>Bangalore, INDIA</td>
-			<td><a href="https://www.youtube.com/watch?v=jjY0eBQFZJI&amp;list=PL9Z-JgiTsOYQjHFwf5maIjFXahl-d0gvU">link</a></td>
-		</tr>
-		<tr>
-			<td>SeConf&#39;15</td>
-			<td>Portland, USA</td>
-			<td><a href="https://www.youtube.com/playlist?list=PLRdSclUtJDYXehIM7SyQyIghLDmE015Gc">link</a></td>
-		</tr>
-	</tbody>
-</table>
-  <script src="/js/events.js" type="text/javascript"></script>
+  <iframe src="https://calendar.google.com/calendar/embed?src=hhjif43nv6va9d8lecpkifdjlc%40group.calendar.google.com&ctz=America/Los_Angeles" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+  <span style="font-size:8px">For access to this calendar, please request by <a href="https://github.com/SeleniumHQ/www.seleniumhq.org/issues/new?title=Requesting%20access%20to%20events%20calendar">creating a github issue</a></span>
 
-<%@include file="/jsp/footer.jspf"%>
+
+  <h2>Past Selenium Conferences</h2>
+  <ul>
+   <li>2011 San Francisco</li>
+   <li>2012 London <a href="https://www.youtube.com/playlist?list=PLCieebVYUBeOdqTjaHtqrtF5Ld7_cVDQl">talk recordings</a></li>
+   <li>2013 Boston <a href="https://www.youtube.com/playlist?list=PLCieebVYUBeP1vNIcXKSQcIGHZwGhYg6p">talk recordings</a></li>
+   <li>2014 Bangalore <a href="https://www.youtube.com/watch?v=jjY0eBQFZJI&list=PL9Z-JgiTsOYQjHFwf5maIjFXahl-d0gvU">talk recordings</a></li>
+   <li>2015 Portland <a href="https://www.youtube.com/playlist?list=PLRdSclUtJDYXehIM7SyQyIghLDmE015Gc">talk recordings</a></li>
+  </ul>
+
 </body>
 </html>
