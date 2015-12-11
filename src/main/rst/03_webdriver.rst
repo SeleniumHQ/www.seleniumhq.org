@@ -1340,9 +1340,9 @@ See the `Firefox section in the wiki page <https://github.com/SeleniumHQ/seleniu
 Internet Explorer Driver
 ~~~~~~~~~~~~~~~~~~~~~~~~
 
-This driver is controlled by a .dll and is thus only available on Windows OS.
-Each Selenium release has its core functionality tested against versions
-6, 7 and 8 on XP, and 9 on Windows7.
+The InternetExplorerDriver is a standalone server which implements WebDriver's wire protocol. This driver has been tested with IE 7, 8, 9, 10, and 11 on appropriate combinations of Vista, Windows 7, Windows 8, and Windows 8.1. As of 15 April 2014, IE 6 is no longer supported.
+
+The driver supports running 32-bit and 64-bit versions of the browser. The choice of how to determine which "bit-ness" to use in launching the browser depends on which version of the IEDriverServer.exe is launched. If the 32-bit version of IEDriverServer.exe is launched, the 32-bit version of IE will be launched. Similarly, if the 64-bit version of IEDriverServer.exe is launched, the 64-bit version of IE will be launched.
 
 Usage
 +++++
@@ -1365,19 +1365,13 @@ Usage
 Pros
 ++++
 
-* Runs in a real browser and supports JavaScript with all the quirks
-  your end users see.
+* Runs in a real browser and supports Javascript
 
 Cons
 ++++
 
-* Obviously the `Internet Explorer Driver`_ will only work on Windows!
-* Comparatively slow (though still pretty snappy)
-* XPath is not natively supported in most versions. Sizzle is injected automatically
-  which is significantly slower than other browsers and slower when comparing to CSS
-  selectors in the same browser.
-* CSS is not natively supported in versions 6 and 7. Sizzle is injected instead.
-* CSS selectors in IE 8 and 9 are native, but those browsers don't fully support CSS3
+* Obviously the InternetExplorerDriver will only work on Windows!
+* Comparatively slow (though still pretty snappy!)
 
 Info
 ++++
