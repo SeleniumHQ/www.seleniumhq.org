@@ -83,7 +83,7 @@
         <td><a href="http://goo.gl/5IVvjZ">Change log</a>&nbsp;&nbsp;</td>
         <td><a href="http://goo.gl/Grc6tm" alt="Javadoc">Javadoc</a></td>
       </tr>
-      <tr>ru
+      <tr>
         <td>C#</td>
         <td>2.48.0</td>
         <td>2015-10-07</td>
