@@ -52,10 +52,10 @@
   features of the WebDriver InternetExplorerDriver. Please make sure that this
   is available on your $PATH (or %PATH% on Windows) in order for the IE Driver
   to work as expected.</p>
-  <p>Download version 2.48.0 for (recommended) <a
-    href="http://selenium-release.storage.googleapis.com/2.48/IEDriverServer_Win32_2.48.0.zip">32
+  <p>Download version 2.49.0 for (recommended) <a
+    href="http://selenium-release.storage.googleapis.com/2.49/IEDriverServer_Win32_2.49.0.zip">32
     bit Windows IE</a> or <a
-    href="http://selenium-release.storage.googleapis.com/2.48/IEDriverServer_x64_2.48.0.zip">64 bit Windows IE</a><br/>
+    href="http://selenium-release.storage.googleapis.com/2.49/IEDriverServer_x64_2.49.0.zip">64 bit Windows IE</a><br/>
     <a href="http://goo.gl/LJ07LL">CHANGELOG</a></p>
 
   <a name="client-drivers"/>
@@ -86,8 +86,8 @@
       <tr>
         <td>C#</td>
         <td>2.48.0</td>
-        <td>2015-10-07</td>
-        <td><a href="http://selenium-release.storage.googleapis.com/2.48/selenium-dotnet-2.48.0.zip">Download</a></td>
+        <td>2016-01-19</td>
+        <td><a href="http://selenium-release.storage.googleapis.com/2.49/selenium-dotnet-2.49.0.zip">Download</a></td>
         <td><a href="http://goo.gl/t3faSQ">Change log</a></td>
         <td><a href="http://goo.gl/uutZjZ">API docs</a></td>
       </tr>
@@ -101,8 +101,8 @@
       </tr>
       <tr>
         <td>Python</td>
-        <td>2.49.0</td>
-        <td>2016-01-13</td>
+        <td>2.49.2</td>
+        <td>2016-01-19</td>
         <td><a href="http://pypi.python.org/pypi/selenium">Download</a></td>
         <td><a href="http://goo.gl/rHRdgk">Change log</a></td>
         <td><a href="http://goo.gl/sG1GfQ">API docs</a></td>
@@ -118,7 +118,7 @@
     </tbody>
   </table>
   <h4>C# NuGet</h4>
-  <p>NuGet latest release is 2.48.0, Released on 2015-10-07</p>
+  <p>NuGet latest release is 2.49.0, Released on 2016-01-19</p>
   <ul>
     <li><a href="http://www.nuget.org/List/Packages/Selenium.RC">RC</a></li>
     <li><a href="http://www.nuget.org/List/Packages/Selenium.WebDriver">WebDriver</a></li>
