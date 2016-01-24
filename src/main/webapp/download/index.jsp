@@ -85,7 +85,7 @@
       </tr>
       <tr>
         <td>C#</td>
-        <td>2.48.0</td>
+        <td>2.49.0</td>
         <td>2016-01-19</td>
         <td><a href="http://selenium-release.storage.googleapis.com/2.49/selenium-dotnet-2.49.0.zip">Download</a></td>
         <td><a href="http://goo.gl/t3faSQ">Change log</a></td>
@@ -109,8 +109,8 @@
       </tr>
       <tr>
         <td>Javascript (Node)</td>
-        <td>2.47.0</td>
-        <td>2015-09-15</td>
+        <td>2.48.2</td>
+        <td>2015-10-15</td>
         <td><a href="https://npmjs.org/package/selenium-webdriver">Download</a></td>
         <td><a href="http://goo.gl/e6smYw">Change log</a></td>
         <td><a href="http://goo.gl/hohAut">API docs</a></td>
