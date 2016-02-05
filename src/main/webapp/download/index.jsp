@@ -200,7 +200,7 @@
         <td><a href="https://www.microsoft.com/en-us/download/details.aspx?id=48212">Microsoft Edge Driver</a></td>
         <td colspan=2><a href="https://www.microsoft.com/en-us/download/details.aspx?id=49962">MS EdgeDriver - 2.0</a></td>
         <td><a href="http://connect.microsoft.com/">issue tracker</a></td>
-        <td colspan=2><a href="http://dev.modern.ie/platform/status/webdriver/details/">Implementation Status</a></td>
+        <td><a href="http://dev.modern.ie/platform/status/webdriver/details/">Implementation Status</a></td>
         <td>Released 2015-11-18</td>
       </tr>
       <tr>
