@@ -93,8 +93,8 @@
       </tr>
       <tr>
         <td>Ruby</td>
-        <td>2.51.0</td>
-        <td>2016-02-11</td>
+        <td>2.52.0</td>
+        <td>2016-02-12</td>
         <td><a href="http://rubygems.org/gems/selenium-webdriver">Download</a></td>
         <td><a href="http://goo.gl/zNfSLK">Change log</a></td>
         <td><a href="http://goo.gl/jzh4RU">API docs</a></td>
@@ -102,7 +102,7 @@
       <tr>
         <td>Python</td>
         <td>2.52.0</td>
-        <td>2016-02-05</td>
+        <td>2016-02-11</td>
         <td><a href="http://pypi.python.org/pypi/selenium">Download</a></td>
         <td><a href="http://goo.gl/rHRdgk">Change log</a></td>
         <td><a href="http://goo.gl/sG1GfQ">API docs</a></td>
