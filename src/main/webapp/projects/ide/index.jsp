@@ -50,6 +50,13 @@
 </tr>
 </table>
 
+<script>
+var downloadLinks = document.querySelectorAll("a[href='/download/']");
+for (var i=0; i< downloadLinks.length; i++) {
+  downloadLinks[i].href = '/download/#selenium_ide';
+}
+</script>
+
 <%@include file="/jsp/footer.jspf"%>
 </body>
 </html>
