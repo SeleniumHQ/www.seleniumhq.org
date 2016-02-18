@@ -848,7 +848,11 @@
         <tr><th>Since:</th><td>February 2015</td></tr>
       </table>
     </div>
-    <p class="description">It enables 'in place' editing of commands/comments in Selenium IDE. It adds key shortcuts.
+    <p class="description">
+        It enables 'in place' editing of commands/comments in Selenium IDE. It adds key shortcuts.<br/><br/>
+        <b>Urgent note</b><br/>
+        This productivity add-on is affected by Firefox defect <a href='https://bugzilla.mozilla.org/show_bug.cgi?id=1247476'>"tree.inputField's type as autocomplete fails"</a>. Vote for that bug, please.<br/><br/>
+        Your vote is essential. Otherwise Mozilla may take years to fix it. Please, also vote for other <a href="http://selite.github.io/ThirdPartyIssues">third party issues</a>.
     </p>
   </div>
 
