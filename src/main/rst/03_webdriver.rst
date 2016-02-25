@@ -1432,7 +1432,7 @@ More info can also be found on the `downloads page </download/>`_
 Getting running with ChromeDriver
 +++++++++++++++++++++++++++++++++
 
-Download the `ChromeDriver executable <http://code.google.com/p/chromium/downloads/list>`_
+Download the `ChromeDriver executable <https://sites.google.com/a/chromium.org/chromedriver/>`_
 and follow the other instructions on the 
 `wiki page <https://github.com/SeleniumHQ/selenium/wiki/ChromeDriver>`_
 
