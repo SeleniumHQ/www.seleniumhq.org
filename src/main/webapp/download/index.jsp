@@ -1040,6 +1040,26 @@
   </div>
 
   <div class="plugin">
+    <div class="name">Selenium Dot Formatter</div>
+    <div class="column">
+      <table>
+          <tr><th>Links:</th><td><a href="https://addons.mozilla.org/en-US/firefox/addon/selenium-dot-formatter">Download</a> - <a href="https://github.com/EmidioStani/selenium-dot-formatter">Docs</a> - <a href="https://github.com/EmidioStani/selenium-dot-formatter/issues">Support</a></td></tr>
+        <tr><th>Author:</th><td>Emidio STANI</td></tr>
+        <tr><th>License:</th><td>BSD License</td></tr>
+      </table>
+    </div>
+    <div class="column">
+      <table>
+        <tr><th>Released:</th><td>December 20, 2011</td></tr>
+        <tr><th>Version:</th><td>1.0.1</td></tr>
+      </table>
+    </div>
+    <p class="description">The Selenium Dot Formatter allows to convert Selenium test into a dot format to be easily used in Graphviz, it could be useful to explain the structure of a test case.
+
+The tests are direct graphs with forks when the gotoIf command is used. Basic commands have their own color which can be modified, optionally the arrows can have a number as label.</p>
+  </div>
+  
+  <div class="plugin">
     <div class="name">Selenium XML Formatter</div>
     <div class="column">
       <table>
@@ -1057,7 +1077,26 @@
     <p class="description">Selenium XML Formatter is a custom XML Formatter for Selenium-IDE.
 Compliant with Selenium command &amp; comment syntax, this formatter output data in a very common language. This way, you can easily parse the test case in your favorite programming language. </p>
   </div>
-
+  
+  <div class="plugin">
+    <div class="name">Selenium Wiki Formatter</div>
+    <div class="column">
+      <table>
+          <tr><th>Links:</th><td><a href="https://addons.mozilla.org/en-US/firefox/addon/selenium-wiki-formatter">Download</a> - <a href="https://github.com/EmidioStani/selenium-wiki-formatter">Docs</a> - <a href="https://github.com/EmidioStani/selenium-wiki-formatter/issues">Support</a></td></tr>
+        <tr><th>Author:</th><td>Emidio STANI</td></tr>
+        <tr><th>License:</th><td>BSD License</td></tr>
+      </table>
+    </div>
+    <div class="column">
+      <table>
+        <tr><th>Released:</th><td>March 12, 2011</td></tr>
+        <tr><th>Version:</th><td>1.0.1</td></tr>
+      </table>
+    </div>
+    <p class="description">Selenium Wiki Formatter is an extension which allows to format a test case recorded with Selenium IDE in a wiki table.
+Supported wiki syntax: Confluence, Dokuwiki, MediaWiki, MoinMoin, Textile, Trac, Twiki, Xwiki</p>
+  </div>
+  
   <div class="plugin">
     <div class="name">Selenium2Excel Converter</div>
     <div class="column">
