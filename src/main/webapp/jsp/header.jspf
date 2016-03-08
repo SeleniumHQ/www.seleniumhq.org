@@ -101,7 +101,7 @@
             </li>
         </ul>
 
-        <div class="downloadBox"><a href="/download/">Download Selenium</a></div>
+        <div class="downloadBox" onclick="window.location='/download/'"><a href="/download/">Download Selenium</a></div>
 
 	<%@include file="/jsp/donate.jspf"%>
     </div>

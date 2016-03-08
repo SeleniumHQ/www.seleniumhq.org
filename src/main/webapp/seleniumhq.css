@@ -77,6 +77,7 @@ div.downloadBox
 	margin-top: 0.5em;
 	margin-bottom: 1em;
 	font-size: 10px;
+    cursor:pointer;
 }
 div.downloadBox a
 {
