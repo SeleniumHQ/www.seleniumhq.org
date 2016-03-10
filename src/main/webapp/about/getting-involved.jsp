@@ -59,8 +59,8 @@
         <h3>Submitting Documentation &#8220;Bugs&#8221;</h3>
 
         <p>If you find an error in our documentation, either a &#8220;typo&#8221; or innaccurate information. Please let
-        us know. You can submit these in our <a href="https://github.com/SeleniumHQ/selenium/issues" class="reference external">
-           bug tracker</a>, please start the subject with "DOCS".</p>
+        us know. You can submit these in our <a href="https://github.com/SeleniumHQ/www.seleniumhq.org/issues" class="reference external">
+           bug tracker</a>.</p>
 
     </div>
 </div>
@@ -75,38 +75,7 @@
 
     <p>Also, we would love help going through the bug reports and adding comments (which
     automatically get sent to the reporter) for cases where advice is all that is needed.
-    When reporting bugs, the following templates should be used:</p>
 
-    <p>Bug template:</p>
-
-    <div class="highlight-python"><pre>Description
-===========
-...
-Steps to reproduce
-==================
-...
-Expected
-========
-...
-Actual
-======
-...</pre>
-    </div>
-    <p>Feature / change request template:</p>
-
-    <div class="highlight-python"><pre>Description
-===========
-...
-Reason
-======
-...
-Benefits
-========
-...
-Drawbacks
-=========
-...</pre>
-    </div>
     <div class="admonition note">
         <p class="first admonition-title">Note</p>
 
@@ -126,8 +95,8 @@ Drawbacks
         languages.</p>
 
     <p>We encourage code patches and other contributions - get involved by following
-        the <a class="reference external" href="https://github.com/SeleniumHQ/selenium/tree/master/CONTRIBUTING.md">contribution guidelines</a>. You can also track the activity of the development team by checking out the read-only <a class="reference external" href="http://groups.google.com/group/selenium-developer-activity">Selenium Developer Activity Group</a>.</p>
-    <p>If you do supply a patch, we will need you to <a href="https://spreadsheets.google.com/spreadsheet/viewform?hl=en_US&formkey=dFFjXzBzM1VwekFlOWFWMjFFRjJMRFE6MQ#gid=0">sign the CLA</a>. We are a part of <a href="http://www.sfconservancy.org/">SFC</a></p>
+        the <a class="reference external" href="https://github.com/SeleniumHQ/selenium/tree/master/CONTRIBUTING.md">contribution guidelines</a>. The Selenium project's source can be found at <a href="https://github.com/SeleniumHQ/selenium">https://github.com/SeleniumHQ/selenium</a>.</p>
+    <p>If you do supply a patch, we will need you to <a href="https://spreadsheets.google.com/spreadsheet/viewform?hl=en_US&formkey=dFFjXzBzM1VwekFlOWFWMjFFRjJMRFE6MQ#gid=0">sign the CLA</a>. We are a part of <a href="http://www.sfconservancy.org/">Software Freedom Conservancy (SFC)</a></p>
 </div>
 
 
