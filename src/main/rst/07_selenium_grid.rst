@@ -72,14 +72,6 @@ Selenium-RC server.  Now, you only need to download a single .jar file to get th
 Selenium-RC-Server and Selenium-Grid all in one package.
 
 
-Selenium-Grid 1.0
------------------
-Version 1 was the first general release of Selenium-Grid.  If you are new to Selenium-Grid you should
-use version 2.  It's been updated and has new features, and supports Selenium-WebDriver.  Legacy
-test systems may still be using version 1 however.  Information on Selenium-Grid version 1 may be 
-found at the `Selenium-Grid website <http://selenium-grid.seleniumhq.org/>`_.
-
-
 How Selenium-Grid Works--With a Hub and Nodes
 ---------------------------------------------
 A grid consists of a single hub, and one or more nodes.  Both are started using the 
@@ -93,13 +85,6 @@ selects an available node that has the requested browser-platform combination.  
 been selected, Selenium commands initiated by the test are sent to the hub, which passes them to
 the node assigned to that test.  The node runs the browser, and executes the Selenium commands
 within that browser against the application under test.
-
-A `diagram <http://selenium-grid.seleniumhq.org/how_it_works.html>`_ illustrates this.  Refer to the
-second diagram on this page (the first one is illustrating Selenium-RC).  The second diagram was for 
-Selenium-Grid 1, however it still applies and is a good illustration of what we're describing here.
-The only difference is one of terminology.
-Replace the term 'Selenium Remote Control' with 'Selenium-Grid node' the diagram will match our
-description for Selenium-Grid 2.
 
 
 Installation
