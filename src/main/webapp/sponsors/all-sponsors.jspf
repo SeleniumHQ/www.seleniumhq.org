@@ -1,5 +1,12 @@
 <%@include file="top-sponsors.jspf"%>
 
+<h3>Gold-Level Sponsors</h3>
+
+<!-- Sponsorship start date: March 14, 2016 -->
+<p>
+    <a href="http://www.mumosystems.com/portfolio-item/charlotte-bamboo-selenium-runner/"><img src="charlotte.png" border="0" width="468" height="80"/></a>
+</p>
+
 <h3>Silver-Level Sponsors</h3>
 
 <!-- Sponsorship start date: May 17, 2015; upgraded to Silver on September 4 -->
