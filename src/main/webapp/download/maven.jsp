@@ -21,7 +21,7 @@
     &lt;dependency&gt;
         &lt;groupId&gt;org.seleniumhq.selenium&lt;/groupId&gt;
         &lt;artifactId&gt;selenium-java&lt;/artifactId&gt;
-        &lt;version&gt;2.52.0&lt;/version&gt;
+        &lt;version&gt;2.53.0&lt;/version&gt;
     &lt;/dependency&gt;  
 </pre></p>
   
@@ -60,9 +60,19 @@
     &lt;dependency&gt;
         &lt;groupId&gt;org.seleniumhq.selenium&lt;/groupId&gt;
         &lt;artifactId&gt;selenium-firefox-driver&lt;/artifactId&gt;
-        &lt;version&gt;2.52.0&lt;/version&gt;
+        &lt;version&gt;2.53.0&lt;/version&gt;
     &lt;/dependency&gt;  
 </pre></p>
+
+  <p>Starting with 2.53.0 you need to explicitly include HtmlUnitDriver as a dependency to include it.
+  <pre>
+    &lt;dependency&gt;
+        &lt;groupId&gt;org.seleniumhq.selenium&lt;/groupId&gt;
+        &lt;artifactId&gt;selenium-htmlunit-driver&lt;/artifactId&gt;
+        &lt;version&gt;2.20&lt;/version&gt;
+    &lt;/dependency&gt;  
+  </pre></p>
+    
 
   <p>If you are using <tt>DefaultSelenium</tt> (or the <tt>RemoteWebDriver</tt>
   implementation), you still need to start a Selenium server. The best way is
@@ -73,7 +83,7 @@
     &lt;dependency&gt;
         &lt;groupId&gt;org.seleniumhq.selenium&lt;/groupId&gt;
         &lt;artifactId&gt;selenium-server&lt;/artifactId&gt;
-        &lt;version&gt;2.52.0&lt;/version&gt;
+        &lt;version&gt;2.53.0&lt;/version&gt;
     &lt;/dependency&gt;  
 </pre> Now you can create a <tt>SeleniumServer</tt> instance yourself and start it.</p>
 

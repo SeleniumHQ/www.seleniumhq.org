@@ -83,7 +83,12 @@ your project.
                     <dependency>
                         <groupId>org.seleniumhq.selenium</groupId>
                         <artifactId>selenium-java</artifactId>
-                        <version>2.52.0</version>
+                        <version>2.53.0</version>
+                    </dependency>
+                    <dependency>
+                        <groupId>org.seleniumhq.selenium</groupId>
+                        <artifactId>selenium-htmlunit-driver</artifactId>
+                        <version>2.20</version>
                     </dependency>
                 </dependencies>
         </project>
