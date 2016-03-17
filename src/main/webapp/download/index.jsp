@@ -52,10 +52,10 @@
   features of the WebDriver InternetExplorerDriver. Please make sure that this
   is available on your $PATH (or %PATH% on Windows) in order for the IE Driver
   to work as expected.</p>
-  <p>Download version 2.52.2 for (recommended) <a
-    href="http://selenium-release.storage.googleapis.com/2.52/IEDriverServer_Win32_2.52.2.zip">32
+  <p>Download version 2.53.0 for (recommended) <a
+    href="http://selenium-release.storage.googleapis.com/2.53/IEDriverServer_Win32_2.53.0.zip">32
     bit Windows IE</a> or <a
-    href="http://selenium-release.storage.googleapis.com/2.52/IEDriverServer_x64_2.52.2.zip">64 bit Windows IE</a><br/>
+    href="http://selenium-release.storage.googleapis.com/2.53/IEDriverServer_x64_2.53.0.zip">64 bit Windows IE</a><br/>
     <a href="http://goo.gl/LJ07LL">CHANGELOG</a></p>
 
   <a name="client-drivers"/>
@@ -85,9 +85,9 @@
       </tr>
       <tr>
         <td>C#</td>
-        <td>2.52.0</td>
-        <td>2016-02-12</td>
-        <td><a href="http://selenium-release.storage.googleapis.com/2.52/selenium-dotnet-2.52.0.zip">Download</a></td>
+        <td>2.53.0</td>
+        <td>2016-03-16</td>
+        <td><a href="http://selenium-release.storage.googleapis.com/2.53/selenium-dotnet-2.53.0.zip">Download</a></td>
         <td><a href="http://goo.gl/t3faSQ">Change log</a></td>
         <td><a href="http://goo.gl/uutZjZ">API docs</a></td>
       </tr>
@@ -118,7 +118,7 @@
     </tbody>
   </table>
   <h4>C# NuGet</h4>
-  <p>NuGet latest release is 2.52.0, Released on 2016-02-12</p>
+  <p>NuGet latest release is 2.53.0, Released on 2016-03-16</p>
   <ul>
     <li><a href="http://www.nuget.org/List/Packages/Selenium.RC">RC</a></li>
     <li><a href="http://www.nuget.org/List/Packages/Selenium.WebDriver">WebDriver</a></li>
