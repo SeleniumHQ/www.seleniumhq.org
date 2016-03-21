@@ -64,11 +64,11 @@
     &lt;/dependency&gt;  
 </pre></p>
 
-  <p>Starting with 2.53.0 you need to explicitly include HtmlUnitDriver as a dependency to include it.
+  <p>Starting with 2.53.0 you need to explicitly include HtmlUnitDriver as a dependency to include it. Version number of the driver is now tracking HtmlUnit itself.
   <pre>
     &lt;dependency&gt;
         &lt;groupId&gt;org.seleniumhq.selenium&lt;/groupId&gt;
-        &lt;artifactId&gt;selenium-htmlunit-driver&lt;/artifactId&gt;
+        &lt;artifactId&gt;htmlunit-driver&lt;/artifactId&gt;
         &lt;version&gt;2.20&lt;/version&gt;
     &lt;/dependency&gt;  
   </pre></p>
