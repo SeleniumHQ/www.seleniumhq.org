@@ -701,7 +701,7 @@
         <li>facilitates team work.</li>
     </ul>
     See <a href="http://selite.github.io/#benefits">benefits in detail</a> and <a href="http://selite.github.io/SeleniumIDE">productivity tips</a>. It also enables database-driven navigation with <a href="http://www.sqlite.org/">SQLite</a> (the <a href="http://www.sqlite.org/mostdeployed.html">most widely deployed</a> SQL database). Its
-<a href="https://github.com/SeLite/SeLite">code</a> and that of its part <a href="https://github.com/SeLite/SelBlocksGlobal">SelBlocks Global</a> are managed on GitHub.
+code and that of its part <a href="#selite-selblocks-global">SelBlocks Global</a> are managed on GitHub: <a href="https://github.com/SeLite/SeLite">https://github.com/SeLite/SeLite</a> and <a href="https://github.com/SeLite/SelBlocksGlobal">SelBlocks Global</a>.
   </p>
   <p>
     For the easiest download get all add-ons of <a href="https://addons.mozilla.org/en-US/firefox/collections/peter-kehl/selite/?sort=name">SeLite collection</a>. The following lists them briefly; see also <a href="http://selite.github.io/AddOns">add-ons in detail</a>.
@@ -730,7 +730,7 @@
     <div class="name">SeLite Bootstrap</div>
     <div class="column">
       <table>
-          <tr><th>Links:</th><td><a href="https://addons.mozilla.org/en-US/firefox/addon/selite-bootstrap/">Info</a> - <a href="https://addons.mozilla.org/en-US/firefox/addon/SeLite-Bootstrap/versions/">Download</a> - <a href="http://selite.github.io/BootstrapLoader">Docs</a> - <a href="http://selite.github.io/TroubleShooting">Support</a></td></tr>
+          <tr><th>Links:</th><td><a href="https://addons.mozilla.org/en-US/firefox/addon/selite-bootstrap/">Info</a> - <a href="https://addons.mozilla.org/en-US/firefox/addon/SeLite-Bootstrap/versions/">Download</a> - <a href="http://selite.github.io/Bootstrap">Docs</a> - <a href="http://selite.github.io/TroubleShooting">Support</a></td></tr>
         <tr><th>Author:</th><td>Peter Kehl</td></tr>
         <tr><th>License:</th><td>LGPL 3</td></tr>
       </table>
@@ -874,6 +874,23 @@
   </div>
 
   <div class="plugin">
+    <div class="name">SeLite  Preview</div>
+    <div class="column">
+      <table>
+          <tr><th>Links:</th><td><a href="https://addons.mozilla.org/en-US/firefox/addon/selite-preview/">Info</a> - <a href="https://addons.mozilla.org/en-US/firefox/addon/selite-preview/versions/">Download</a> - <a href="https://selite.github.io/Preview">Docs</a> - <a href="https://selite.github.io/TroubleShooting">Support</a></td></tr>
+        <tr><th>Author:</th><td>Peter Kehl</td></tr>
+        <tr><th>License:</th><td>LGPL 3</td></tr>
+      </table>
+    </div>
+    <div class="column">
+      <table>
+        <tr><th>Since:</th><td>2016</td></tr>
+      </table>
+    </div>
+    <p class="description">It enables user scripts to present data for reporting, confirmation, selection or data entry. Presentation layer is in HTML, optionally benefiting from client-side templating, such as <a href="https://github.com/pure/pure">PURE</a>. Together with <a href="#selite-selblocks-global">SelBlocks Global</a> it allows user scripts to run interactively. </p>
+  </div>
+
+  <div class="plugin">
     <a name="selite-run-all-favorites"/>
     <div class="name">SeLite  Run All Favorites</div>
     <div class="column">
@@ -960,7 +977,7 @@
         <tr><th>Since:</th><td>2013</td></tr>
       </table>
     </div>
-    <p class="description">It's needed by SelBlocks Global.</p>
+    <p class="description">It's needed by <a href="#selite-selblocks-global">SelBlocks Global</a>.</p>
   </div>
   <!-- End of SeLite add-ons -->
 
