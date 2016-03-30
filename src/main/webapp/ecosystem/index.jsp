@@ -87,6 +87,10 @@
             <a rel="nofollow" href="http://www.360logica.com/expertise/selenium-automation-testing/">360logica</a> -
             Excellent lab for Selenium and WebDriver automation including continous integration services.
         </li>
+        <li>
+            <a rel="nofollow" href="http://www.wedoqa.com/#selenium">WeDoQA</a> - 
+            Selenium Automation, Custom Selenium Frameworks, Load testing using Selenium to simulate real usage.
+        </li>
     </ul>
 
     <h2>Commercial Training</h2>
