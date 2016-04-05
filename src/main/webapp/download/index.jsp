@@ -197,11 +197,13 @@
         <td colspan=2><a href="https://developer.mozilla.org/en-US/docs/Mozilla/QA/Marionette/WebDriver/status">Implementation Status</a></td>
       </tr>
       <tr>
-        <td><a href="https://www.microsoft.com/en-us/download/details.aspx?id=48740">Microsoft Edge Driver</a></td>
-        <td colspan=2><a href="https://www.microsoft.com/en-us/download/details.aspx?id=48740">2.1</a></td>
-        <td><a href="http://connect.microsoft.com/">issue tracker</a></td>
+        <td><a href="https://developer.microsoft.com/en-us/microsoft-edge/platform/status/webdriver">Microsoft Edge Driver</a></td>
+        <td colspan=2>
+          <a href="https://www.microsoft.com/en-us/download/details.aspx?id=49962">2.0&nbsp;(10586)</a><br/>
+          <a href="https://www.microsoft.com/en-us/download/details.aspx?id=48740">2.1&nbsp;(insiders)</a>
+        </td>
+        <td><a href="https://developer.microsoft.com/en-us/microsoft-edge/platform/issues/">issue tracker</a></td>
         <td><a href="http://dev.modern.ie/platform/status/webdriver/details/">Implementation Status</a></td>
-        <td>Released 2016-02-19</td>
       </tr>
       <tr>
         <td><a href="https://github.com/forcedotcom/windowsphonedriver/">Windows Phone</a></td>
