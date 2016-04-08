@@ -87,7 +87,7 @@ your project.
                     </dependency>
                     <dependency>
                         <groupId>org.seleniumhq.selenium</groupId>
-                        <artifactId>selenium-htmlunit-driver</artifactId>
+                        <artifactId>htmlunit-driver</artifactId>
                         <version>2.20</version>
                     </dependency>
                 </dependencies>
