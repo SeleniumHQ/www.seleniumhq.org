@@ -176,7 +176,7 @@
       </tr>
       <tr>
         <td><a href="http://choice.opera.com/developer/tools/operadriver/">Opera</td>
-        <td><a href="https://github.com/operasoftware/operachromiumdriver/releases">0.1.0</a></td>
+        <td><a href="https://github.com/operasoftware/operachromiumdriver/releases">0.2.2</a></td>
         <td>&nbsp;</td>
         <td><a href="https://github.com/operasoftware/operachromiumdriver/issues">issue tracker</a></td>
         <td><a href="https://github.com/SeleniumHQ/selenium/wiki/OperaDriver">selenium wiki page</a></td>
