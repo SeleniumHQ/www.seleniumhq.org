@@ -684,7 +684,7 @@ Finding all the input elements to the every label on a page:
 
 Getting text values
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-People often wis to retrieve the innerText value contained within an element.  This returns a single string value.
+People often wish to retrieve the innerText value contained within an element.  This returns a single string value.
 
 .. code-block:: java
 
