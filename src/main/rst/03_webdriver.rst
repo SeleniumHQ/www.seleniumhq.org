@@ -682,6 +682,30 @@ Finding all the input elements to the every label on a page:
     my $inputs = $driver->execute_script("var labels = arguments, inputs = []; for (var i=0; i < labels.length; i++){ inputs.push(document.getElementById(labels[i].getAttribute('for'))); } return inputs;", @labels);
 
 
+Getting text values
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+People often wis to retrieve the innerText value contained within an element.  This returns a single string value.
+
+.. code-block:: java
+
+    WebElement element = driver.findElement(By.name("elementName"));
+    element.getText();
+    
+.. code-block:: csharp
+
+    IWebElement element = driver.findElement(By.name("elementName"));
+    element.getText(); 
+
+.. code-block:: ruby
+
+    element = driver.find_element :name => "element_name"
+    element.text
+
+.. code-block:: python
+
+    element = driver.find_element_by_name("element_name")
+    element.text
+    
 User Input - Filling In Forms
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
