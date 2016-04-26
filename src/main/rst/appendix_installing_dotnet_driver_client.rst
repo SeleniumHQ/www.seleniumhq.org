@@ -1,6 +1,8 @@
 .NET client driver configuration
 --------------------------------
 
+Note: the instructions below are outdated. NuGet is now the preferred method of integrating the Selenium WebDriver into .NET clients. Simply create a new Unit Test project and add the Selenium WebDriver NuGet package: https://www.nuget.org/packages/Selenium.WebDriver.
+
 .. _configuring-selenium-RC-NET-reference:
 
 .NET client Driver can be used with Microsoft Visual Studio. 
