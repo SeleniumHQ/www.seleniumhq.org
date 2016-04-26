@@ -11,11 +11,11 @@ Waiting is having the automated task execution elapse a certain amount of time b
 You should choose to use Explicit Waits or Implicit Waits.
 
 WARNING: Do not mix implicit and explicit waits. Doing so can cause unpredictable wait times. For example setting an
-implicit wait of 10s and an explicit wait of 15 seconds, could cause a timeout to occur after 20 seconds.
+implicit wait of 10 seconds and an explicit wait of 15 seconds, could cause a timeout to occur after 20 seconds.
 
 Explicit Waits
 ~~~~~~~~~~~~~~
-An explicit waits is code you define to wait for a certain condition to occur before proceeding further in the code.
+An explicit wait is code you define to wait for a certain condition to occur before proceeding further in the code.
 The worst case of this is Thread.sleep(), which sets the condition to an exact time period to wait. 
 There are some convenience methods provided that help you write code that will wait only as long as required.
 WebDriverWait in combination with ExpectedCondition is one way this can be accomplished.
@@ -33,16 +33,15 @@ WebDriverWait in combination with ExpectedCondition is one way this can be accom
    :language: ruby
 
 This waits up to 10 seconds before throwing a TimeoutException or if it finds the element will return it in 0 - 10 seconds.
-WebDriverWait by default calls the ExpectedCondition every 500 milliseconds until it returns successfully. A successful return is
-for ExpectedCondition type is Boolean return true or not null return value for all other ExpectedCondition types.
+WebDriverWait by default calls the ExpectedCondition every 500 milliseconds until it returns successfully. A successful return value for the ExpectedCondition function type is a Boolean value of true, or a non-null object.
 
 This example is also functionally equivalent to the first `Implicit Waits`_ example.
 
 Expected Conditions
 +++++++++++++++++++
-There are some common conditions that are frequently come across when automating web browsers. Listed below are 
-Implementations of each. Java happens to have convienence methods so you don't have to code an ExpectedCondition
-class yourself or create your own utility package for them.
+There are some common conditions that are frequently encountered when automating web browsers. Listed below are 
+a few examples for the usage of such conditions. The Java, C#, and Python bindings include convienence methods 
+so you don't have to code an ExpectedCondition class yourself or create your own utility package for them.
 
 * Element is Clickable - it is Displayed and Enabled.
 
@@ -50,6 +49,11 @@ class yourself or create your own utility package for them.
 
     WebDriverWait wait = new WebDriverWait(driver, 10);
     WebElement element = wait.until(ExpectedConditions.elementToBeClickable(By.id("someid")));
+
+.. code-block:: csharp
+
+   WebDriverWait wait = new WebDriverWait(driver, TimeSpan.FromSeconds(10));
+   IWebElement element = wait.Until(ExpectedConditions.ElementToBeClickable(By.Id("someid")));
 
 .. code-block:: python
 
@@ -104,6 +108,14 @@ Using a FirefoxProfile
     DesiredCapabilities dc = DesiredCapabilities.firefox();
     dc.setCapability(FirefoxDriver.PROFILE, fp);
     WebDriver driver = new RemoteWebDriver(dc);
+    
+.. code-block:: csharp
+
+   FirefoxProfile fp = new FirefoxProfile();
+   // set something on the profile...
+   DesiredCapabilities dc = DesiredCapabilities.Firefox();
+   dc.SetCapability(FirefoxDriver.ProfileCapabilityName, fp);
+   IWebDriver driver = new RemoteWebDriver(dc);
 
 .. code-block:: python
     
@@ -122,6 +134,14 @@ Using ChromeOptions
     DesiredCapabilities dc = DesiredCapabilities.chrome();
     dc.setCapability(ChromeOptions.CAPABILITY, options);
     WebDriver driver = new RemoteWebDriver(dc);
+    
+.. code-block:: csharp
+
+   var options = new ChromeOptions();
+   // set some options
+   DesiredCapabilities dc = DesiredCapabilities.Chrome();
+   dc.SetCapability(ChromeOptions.Capability, options);
+   IWebDriver driver = new RemoteWebDriver(dc);
 
 .. code-block:: python
     

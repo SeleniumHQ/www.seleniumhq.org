@@ -35,10 +35,9 @@ built in support for automation.
 WebDriver and the Selenium-Server
 ---------------------------------
 
-You may, or may not, need the Selenium Server, depending on how you intend to use Selenium-WebDriver.
-If you will be only using the WebDriver API you do not need the Selenium-Server.  If your browser
-and tests will all run on the same machine, and your tests only use the WebDriver API, then you 
-do not need to run the Selenium-Server; WebDriver will run the browser directly.
+You may, or may not, need the Selenium Server, depending on how you intend to use Selenium-WebDriver. 
+If your browser and tests will all run on the same machine, and your tests only use the WebDriver API, 
+then you do not need to run the Selenium-Server; WebDriver will run the browser directly.
 
 There are some reasons though to use the Selenium-Server with Selenium-WebDriver.  
 
@@ -188,7 +187,7 @@ to verify that they work as expected. It aims to provide a friendly API that's
 easy to explore and understand, easier to use than the Selenium-RC (1.0) API,
 which will help to make your tests easier to
 read and maintain. It's not tied to any particular test framework, so it can
-be used equally well in a unit testing or from a plain old "main" method.
+be used equally well in a unit testing project or from a plain old "main" method.
 This section introduces WebDriver's API and helps get you started becoming
 familiar with it.  Start by setting up a WebDriver project if you haven't already.
 This was described in the previous section, :ref:`setting-up-webdriver-project`.
@@ -270,9 +269,9 @@ Locating UI Elements (WebElements)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Locating elements in WebDriver can be done on the WebDriver instance itself or on a WebElement.
-Each of the language bindings expose a "Find Element" and "Find Elements" method. The first returns
-a WebElement object otherwise it throws an exception. The latter returns a list of WebElements, it can
-return an empty list if no DOM elements match the query.
+Each of the language bindings exposes a "Find Element" and "Find Elements" method. The former returns
+a WebElement object matching the query, and throws an exception if such an element cannot be found. 
+The latter returns a list of WebElements, possibly empty if no DOM elements match the query.
 
 The "Find" methods take a locator or query object called "By". "By" strategies are listed below.
 
@@ -320,7 +319,6 @@ By Class Name
 "Class" in this case refers to the attribute on the DOM element. Often in practical use there are
 many DOM elements with the same class name, thus finding multiple elements becomes the more practical
 option over finding the first element.
-
 
 Example of how to find an element that looks like this:
 
@@ -553,13 +551,13 @@ Example of to find the cheese below:
     $cheese = $driver->find_element('#food span.dairy.aged', 'css');
 
 
-By XPATH
+By XPath
 ++++++++
 
 At a high level, WebDriver uses a browser's native XPath capabilities wherever
 possible. On those browsers that don't have native XPath support, we have
 provided our own implementation. This can lead to some unexpected behaviour
-unless you are aware of the differences in the various xpath engines.
+unless you are aware of the differences in the various XPath engines.
 
 ===========================  =======================  ==========================  ====================
 Driver                       Tag and Attribute Name   Attribute Values            Native XPath Support
@@ -646,7 +644,7 @@ Simple example on a page that has jQuery loaded:
 
     element = $driver->execute_script("return $('.cheese')[0]");
 
-Finding all the input elements to the every label on a page:
+Finding all the input elements for every label on a page:
 
 .. code-block:: java
 
@@ -694,7 +692,7 @@ People often wish to retrieve the innerText value contained within an element.  
 .. code-block:: csharp
 
     IWebElement element = driver.findElement(By.id("elementID"));
-    element.getText(); 
+    element.Text; 
 
 .. code-block:: ruby
 
@@ -729,7 +727,7 @@ with SELECT tags isn't too bad:
     IList<IWebElement> allOptions = select.FindElements(By.TagName("option"));
     foreach (IWebElement option in allOptions)
     {
-        System.Console.WriteLine("Value is: " + option.GetAttribute("value"));
+        Console.WriteLine("Value is: " + option.GetAttribute("value"));
         option.Click();
     }
 
@@ -802,6 +800,10 @@ way to do this would be to find the "submit" button and click it:
 .. code-block:: java
 
     driver.findElement(By.id("submit")).click();
+    
+.. code-block:: csharp
+
+    driver.FindElement(By.Id("submit")).Click();
 
 .. code-block:: ruby
 
@@ -823,6 +825,10 @@ element isn't in a form, then the ``NoSuchElementException`` will be thrown:
 .. code-block:: java
 
     element.submit();
+    
+.. code-block:: csharp
+
+    element.Submit();
 
 .. code-block:: ruby
 
@@ -846,6 +852,10 @@ moving between named windows using the "switchTo" method:
 .. code-block:: java
 
     driver.switchTo().window("windowName");
+    
+.. code-block:: csharp
+
+    driver.SwitchTo().Window("windowName");
 
 .. code-block:: ruby
 
@@ -876,6 +886,12 @@ method. Knowing this, it's possible to iterate over every open window like so:
         driver.switchTo().window(handle);
     }
 
+.. code-block:: csharp    
+    
+    foreach (string handle in driver.WindowHandles) {
+        driver.SwitchTo().Window(handle);
+    }
+
 .. code-block:: ruby
 
     driver.window_handles.each do |handle|
@@ -899,6 +915,10 @@ You can also switch from frame to frame (or into iframes):
 .. code-block:: java
 
     driver.switchTo().frame("frameName");
+    
+.. code-block:: csharp
+    
+    driver.SwitchTo().Frame("frameName");
 
 .. code-block:: ruby
 
@@ -953,14 +973,18 @@ Navigation: History and Location
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Earlier, we covered navigating to a page using the "get" command (
-``driver.get("http://www.example.com")``) As you've seen, WebDriver has a
-number of smaller, task-focused interfaces, and navigation is a useful task.
+``driver.get("http://www.example.com")`` or ``driver.Url="http://www.example.com"`` in C#). 
+As you've seen, WebDriver has a number of smaller, task-focused interfaces, and navigation is a useful task.
 Because loading a page is such a fundamental requirement, the method to do this
 lives on the main WebDriver interface, but it's simply a synonym to:
 
 .. code-block:: java
 
     driver.navigate().to("http://www.example.com");
+
+.. code-block:: csharp    
+    
+    driver.Navigate().GoToUrl("http://www.example.com");
 
 .. code-block:: ruby
 
@@ -984,6 +1008,11 @@ The "navigate" interface also exposes the ability to move backwards and forwards
 
     driver.navigate().forward();
     driver.navigate().back();
+
+.. code-block:: csharp    
+    
+    driver.Navigate().Forward();
+    driver.Navigate().Back();
 
 .. code-block:: ruby
 
@@ -1011,8 +1040,8 @@ Before we leave these next steps, you may be interested in understanding how to
 use cookies. First of all, you need to be on the domain that the cookie will be
 valid for. If you are trying to preset cookies before
 you start interacting with a site and your homepage is large / takes a while to load
-an alternative is to find a smaller page on the site, typically the 404 page is small
-(http://example.com/some404page)
+an alternative is to find a smaller page on the site (typically the 404 page is small, 
+e.g. http://example.com/some404page).
 
 .. code-block:: java
 
@@ -1036,6 +1065,29 @@ an alternative is to find a smaller page on the site, typically the 404 page is 
     driver.manage().deleteCookie(loadedCookie);
     // Or all of them
     driver.manage().deleteAllCookies();
+    
+.. code-block csharp
+
+	// Go to the correct domain
+    driver.Url ="http://www.example.com";
+
+    // Now set the cookie. This one's valid for the entire domain
+    var cookie = new Cookie("key", "value");
+    driver.Manage().Cookies.AddCookie(cookie);
+
+    // And now output all the available cookies for the current URL
+    IReadOnlyCollection<Cookie> allCookies = driver.Manage().Cookies.AllCookies;
+    foreach (Cookie loadedCookie in allCookies) {
+        Console.WriteLine("{0} -> {1}", loadedCookie.Name, loadedCookie.Value);
+    }
+
+    // You can delete cookies in 3 ways
+    // By name
+    driver.Manage().Cookies.DeleteCookieNamed("CookieName");
+    // By Cookie
+    driver.Manage().Cookies.DeleteCookie(cookie);
+    // Or all of them
+    driver.Manage().Cookies.DeleteAllCookies();
 
 .. code-block:: python
 
@@ -1117,6 +1169,12 @@ This is easy with the `Firefox Driver`_:
     FirefoxProfile profile = new FirefoxProfile();
     profile.addAdditionalPreference("general.useragent.override", "some UA string");
     WebDriver driver = new FirefoxDriver(profile);
+    
+.. code-block:: csharp
+
+    var profile = new FirefoxProfile();
+    profile.SetPreference("general.useragent.override", "some UA string");
+    IWebDriver driver = new FirefoxDriver(profile);
 
 .. code-block:: ruby
 
@@ -1149,6 +1207,12 @@ Native events are required to be enabled.
     WebElement target = driver.findElement(By.name("target"));
 
     (new Actions(driver)).dragAndDrop(element, target).perform();
+    
+.. code-block:: csharp
+
+        IWebElement element = driver.FindElement(By.Name("source"));
+        IWebElement target = driver.FindElement(By.Name("target"));
+        (new Actions(driver)).DragAndDrop(element, target).Perform();
 
 .. code-block:: ruby
 
@@ -1327,6 +1391,13 @@ created using Firefox's profile manager (``firefox -ProfileManager``):
     FirefoxProfile profile = allProfiles.getProfile("WebDriver");
     profile.setPreferences("foo.bar", 23);
     WebDriver driver = new FirefoxDriver(profile);
+    
+.. code-block:: csharp
+
+    var profileManager = new FirefoxProfileManager();
+    FirefoxProfile profile = profileManager.GetProfile("WebDriver");
+    profile.SetPreference("foo.bar", 23);
+    IWebDriver driver = new FirefoxDriver(profile);
 
 Alternatively, if the profile isn't already registered with Firefox:
 
@@ -1336,6 +1407,12 @@ Alternatively, if the profile isn't already registered with Firefox:
     FirefoxProfile profile = new FirefoxProfile(profileDir);
     profile.addAdditionalPreferences(extraPrefs);
     WebDriver driver = new FirefoxDriver(profile);
+    
+.. code-block:: csharp
+
+    FirefoxProfile profile = new FirefoxProfile("path/to/top/level/of/profile");
+    profile.SetPreference("extra", "pref");
+    IWebDriver driver = new FirefoxDriver(profile);
 
 As we develop features in the `Firefox Driver`_, we expose the ability to use them.
 For example, until we feel native events are stable on Firefox for Linux, they
@@ -1346,6 +1423,11 @@ are disabled by default. To enable them:
     FirefoxProfile profile = new FirefoxProfile();
     profile.setEnableNativeEvents(true);
     WebDriver driver = new FirefoxDriver(profile);
+    
+.. code-block:: csharp
+
+    var profile = new FirefoxProfile {EnableNativeEvents = true};
+    IWebDriver driver = new FirefoxDriver(profile);
 
 .. code-block:: python
 

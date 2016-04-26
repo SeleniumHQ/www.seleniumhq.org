@@ -87,7 +87,7 @@ While Selenium was a tremendous tool, it wasn't without its drawbacks.
 Because of its Javascript based automation engine and the security limitations
 browsers apply to Javascript, different things became impossible to do.  To
 make things worse, webapps became more and more powerful over time, using all
-sorts of special features new browsers provide and making this restrictions
+sorts of special features new browsers provide and making these restrictions
 more and more painful.
 
 In 2006 a plucky engineer at Google named Simon Stewart started work on
@@ -220,7 +220,7 @@ Selenium-WebDriver supports the following browsers along with the operating syst
 are compatible with.
 
 * Google Chrome
-* Internet Explorer 6, 7, 8, 9, 10 - 32 and 64-bit where applicable
+* Internet Explorer 7, 8, 9, 10, and 11 on appropriate combinations of Vista, Windows 7, Windows 8, and Windows 8.1. As of April 15 2014, IE 6 is no longer supported. The driver supports running 32-bit and 64-bit versions of the browser where applicable
 * Firefox: latest ESR, previous ESR, current release, one previous release
 * Safari
 * Opera
