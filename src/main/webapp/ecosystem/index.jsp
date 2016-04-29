@@ -116,6 +116,10 @@
             <a rel="nofollow" href="http://www.seleniummaster.com">Selenium Master</a> -
             Selenium Test Automation Training, Selenium Test Framework Design, QA Project Assistance.
         </li>
+        <li>
+            <a rel="nofollow" href="http://itelearn.com/course/selenium-training-video-tutorials/">iTeLearn Selenium Training</a> -
+            Selenium Browser Automation Online Training, Selenium Framework, Webdriver, Grid, RC.
+        </li>
     </ul>
 
     <p>
