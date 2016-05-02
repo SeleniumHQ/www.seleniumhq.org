@@ -875,7 +875,8 @@ way to do this would be to find the "submit" button and click it:
 
 .. code-block:: perl
 
-    $driver->find_element('submit','id')->click()
+    $driver->find_element('submit','id')->click()code-block:: javascript
+
 
 Alternatively, WebDriver has the convenience method "submit" on every element.
 If you call this on an element within a form, WebDriver will walk up the DOM
