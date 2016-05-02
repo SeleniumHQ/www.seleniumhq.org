@@ -267,6 +267,10 @@ The normal way to do this is by calling "get":
 .. code-block:: perl
 
     $driver->get('http://www.google.com')
+    
+.. code-block:: javascript
+
+    driver.get('http://www.google.com');
 
 Dependent on several factors, including the OS/Browser combination, 
 WebDriver may or may not wait for the page to load. In some circumstances, 
@@ -323,6 +327,10 @@ Example of how to find an element that looks like this:
 
     $element = $driver->find_element('coolestWidgetEvah','id')
 
+.. code-block:: javascript
+
+    var element = driver.findElement(By.id('coolestWidgetEvah'));
+
 By Class Name
 +++++++++++++
 
@@ -366,6 +374,13 @@ Example of how to find an element that looks like this:
     @cheeses = $driver->find_elements('cheese', 'class');
 
 
+.. code-block:: javascript
+	
+	findElements(By.className("cheese")).then(function(cheeses){
+	console.log(cheeses.length);
+	});
+
+
 By Tag Name
 +++++++++++
 
@@ -403,6 +418,12 @@ Example of how to find an element that looks like this:
 
     $frame = $driver->find_element('iframe', 'tag_name');
 
+
+.. code-block:: javascript
+	
+	var frame = driver.findElement(By.tagName('iframe'));
+	
+
 By Name
 +++++++
 
@@ -438,6 +459,10 @@ Example of how to find an element that looks like this:
 .. code-block:: perl
 
     $cheese = $driver->find_element('cheese', 'name');
+
+.. code-block:: javascript
+	
+	var cheese = driver.findElement(By.name('cheese'));
 
 
 By Link Text
@@ -480,6 +505,10 @@ Example of how to find an element that looks like this:
 
     $cheese = $driver->find_element('cheese', 'link_text');
 
+.. code-block:: javascript
+	
+	var cheese = driver.findElement(By.linkText('cheese'));
+
 
 By Partial Link Text
 ++++++++++++++++++++
@@ -516,6 +545,10 @@ Example of how to find an element that looks like this:
 .. code-block:: perl
 
     $cheese = $driver->find_element('cheese', 'partial_link_text');
+
+.. code-block:: javascript
+	
+	var cheese = driver.findElement(By.partialLinkText('cheese'));
 
 
 By CSS
@@ -559,6 +592,10 @@ Example of to find the cheese below:
 .. code-block:: perl
 
     $cheese = $driver->find_element('#food span.dairy.aged', 'css');
+
+.. code-block:: javascript
+	
+	var cheese = driver.findElement(By.css('#food span.dairy.aged'));
 
 
 By XPath
@@ -608,6 +645,12 @@ This is a little abstract, so for the following piece of HTML:
 .. code-block:: perl
 
     @inputs = $driver->find_elements('//input')
+
+.. code-block:: javascript
+
+	findElements(By.xpath('//input')).then(function(cheeses){
+	console.log(cheeses.length);
+	});
 
 
 The following number of matches will be found
@@ -713,6 +756,13 @@ People often wish to retrieve the innerText value contained within an element.  
 
     element = driver.find_element_by_id("element_id")
     element.text
+
+.. code-block:: javascript
+	
+	var element = driver.findElement(By.id('elementID'));
+	element.getText().then(function(text) {
+	console.log('Text is: ' + text);
+	});
     
 User Input - Filling In Forms
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -878,6 +928,10 @@ moving between named windows using the "switchTo" method:
 .. code-block:: perl
 
     $driver->switch_to_window("windowName");
+
+.. code-block:: javascript
+	
+	driver.switchTo().window('windowName');
 
 All calls to ``driver`` will now be interpreted as being directed to the
 particular window. But how do you know the window's name? Take a look at the
