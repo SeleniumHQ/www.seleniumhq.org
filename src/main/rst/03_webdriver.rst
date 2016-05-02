@@ -875,7 +875,11 @@ way to do this would be to find the "submit" button and click it:
 
 .. code-block:: perl
 
-    $driver->find_element('submit','id')->click()code-block:: javascript
+    $driver->find_element('submit','id')->click()
+
+.. code-block:: javascript
+
+	driver.findElement(By.id('submit').click();
 
 
 Alternatively, WebDriver has the convenience method "submit" on every element.
@@ -902,6 +906,10 @@ element isn't in a form, then the ``NoSuchElementException`` will be thrown:
 .. code-block:: perl
 
     $element->submit()
+
+.. code-block:: javascript
+
+	element.submit();
 
 
 Moving Between Windows and Frames
@@ -997,6 +1005,10 @@ You can also switch from frame to frame (or into iframes):
 
     $driver->switch_to_frame('frameName');
 
+.. code-block:: javascript
+
+	driver.switchTo().frame('frameName');
+
 Popup Dialogs
 ~~~~~~~~~~~~~~
 
@@ -1025,6 +1037,11 @@ popup, you can access the alert with the following:
 
     $driver->get_alert_text();
     $driver->accept_alert();
+    
+.. code-block:: javascript
+
+	var alert = new new driver.switchTo().alert();
+	alert.accept();
 
 
 This will return the currently open alert object. With this object you can now accept,
@@ -1061,7 +1078,11 @@ lives on the main WebDriver interface, but it's simply a synonym to:
 
 .. code-block:: perl
 
-    $driver->navigate('http://www.example.com');  
+    $driver->navigate('http://www.example.com');
+
+.. code-block:: javascript
+	
+	driver.navigate().to('http://www.example.com');
 
 
 To reiterate: "``navigate().to()``" and "``get()``" do exactly the same thing.
@@ -1093,6 +1114,10 @@ The "navigate" interface also exposes the ability to move backwards and forwards
     $driver->go_forward();
     $driver->go_back();
 
+.. code-block:: javascript
+
+	driver.navigate().forward();
+	driver.navigate().back();
 
 Please be aware that this functionality depends entirely on the underlying
 browser. It's just possible that something unexpected may happen when you call
