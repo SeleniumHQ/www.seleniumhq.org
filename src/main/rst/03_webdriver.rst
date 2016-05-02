@@ -171,6 +171,16 @@ PHP bindings are provided by a third party, please refer to any of their documen
 install / get started. There are three known bindings at this time: `By Chibimagic <https://github.com/chibimagic/WebDriver-PHP/>`_
 `By Lukasz Kolczynski <http://code.google.com/p/php-webdriver-bindings/>`_ and `By the Facebook <https://github.com/facebook/php-webdriver>`_
 
+JavaScript
+~~~~
+If you are using node.js to develop your application then you are better off using the `Javascript bindings <https://www.npmjs.com/package/selenium-webdriver>`_ of the selenium project. 
+
+It can be easily installed via npm with 
+
+.. code-block:: bash
+
+    npm install selenium-webdriver
+
 Migrating from Selenium 1.0
 ---------------------------
 For those who already have test suites written using Selenium 1.0, we have provided tips on how to
