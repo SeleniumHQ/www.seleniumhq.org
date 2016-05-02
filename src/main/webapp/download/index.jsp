@@ -109,8 +109,8 @@
       </tr>
       <tr>
         <td>Javascript (Node)</td>
-        <td>2.53.1</td>
-        <td>2016-03-15</td>
+        <td>2.53.2</td>
+        <td>2016-03-16</td>
         <td><a href="https://npmjs.org/package/selenium-webdriver">Download</a></td>
         <td><a href="http://goo.gl/e6smYw">Change log</a></td>
         <td><a href="http://goo.gl/hohAut">API docs</a></td>
