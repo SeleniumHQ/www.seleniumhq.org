@@ -173,13 +173,15 @@ install / get started. There are three known bindings at this time: `By Chibimag
 
 JavaScript
 ~~~~
-If you are using node.js to develop your application then you are better off using the `Javascript bindings <https://www.npmjs.com/package/selenium-webdriver>`_ of the selenium project. 
+If you are using node.js to develop your application, the selenium project provides `Javascript bindings on npm <https://www.npmjs.com/package/selenium-webdriver>`_.
 
-It can be easily installed via npm with 
+Install the Javascript bindings with npm: 
 
 .. code-block:: bash
 
     npm install selenium-webdriver
+
+You can find the `API docs <http://seleniumhq.github.io/selenium/docs/api/javascript/index.html>`_ here.
 
 Migrating from Selenium 1.0
 ---------------------------
@@ -375,10 +377,9 @@ Example of how to find an element that looks like this:
 
 
 .. code-block:: javascript
-	
-	findElements(By.className("cheese")).then(function(cheeses){
-	console.log(cheeses.length);
-	});
+
+	driver.findElements(By.className("cheese"))
+	.then(cheeses => console.log(cheeses.length));
 
 
 By Tag Name
@@ -648,9 +649,8 @@ This is a little abstract, so for the following piece of HTML:
 
 .. code-block:: javascript
 
-	findElements(By.xpath('//input')).then(function(cheeses){
-	console.log(cheeses.length);
-	});
+	driver.findElements(By.xpath("//input"))
+	.then(cheeses => console.log(cheeses.length));
 
 
 The following number of matches will be found
@@ -1040,7 +1040,7 @@ popup, you can access the alert with the following:
     
 .. code-block:: javascript
 
-	var alert = new new driver.switchTo().alert();
+	var alert = driver.switchTo().alert();
 	alert.accept();
 
 
