@@ -171,6 +171,18 @@ PHP bindings are provided by a third party, please refer to any of their documen
 install / get started. There are three known bindings at this time: `By Chibimagic <https://github.com/chibimagic/WebDriver-PHP/>`_
 `By Lukasz Kolczynski <http://code.google.com/p/php-webdriver-bindings/>`_ and `By the Facebook <https://github.com/facebook/php-webdriver>`_
 
+JavaScript
+~~~~
+If you are using node.js to develop your application, the selenium project provides `Javascript bindings on npm <https://www.npmjs.com/package/selenium-webdriver>`_.
+
+Install the Javascript bindings with npm: 
+
+.. code-block:: bash
+
+    npm install selenium-webdriver
+
+You can find the `API docs <http://seleniumhq.github.io/selenium/docs/api/javascript/index.html>`_ here.
+
 Migrating from Selenium 1.0
 ---------------------------
 For those who already have test suites written using Selenium 1.0, we have provided tips on how to
@@ -257,6 +269,10 @@ The normal way to do this is by calling "get":
 .. code-block:: perl
 
     $driver->get('http://www.google.com')
+    
+.. code-block:: javascript
+
+    driver.get('http://www.google.com');
 
 Dependent on several factors, including the OS/Browser combination, 
 WebDriver may or may not wait for the page to load. In some circumstances, 
@@ -313,6 +329,10 @@ Example of how to find an element that looks like this:
 
     $element = $driver->find_element('coolestWidgetEvah','id')
 
+.. code-block:: javascript
+
+    var element = driver.findElement(By.id('coolestWidgetEvah'));
+
 By Class Name
 +++++++++++++
 
@@ -356,6 +376,12 @@ Example of how to find an element that looks like this:
     @cheeses = $driver->find_elements('cheese', 'class');
 
 
+.. code-block:: javascript
+
+	driver.findElements(By.className("cheese"))
+	.then(cheeses => console.log(cheeses.length));
+
+
 By Tag Name
 +++++++++++
 
@@ -393,6 +419,12 @@ Example of how to find an element that looks like this:
 
     $frame = $driver->find_element('iframe', 'tag_name');
 
+
+.. code-block:: javascript
+	
+	var frame = driver.findElement(By.tagName('iframe'));
+	
+
 By Name
 +++++++
 
@@ -428,6 +460,10 @@ Example of how to find an element that looks like this:
 .. code-block:: perl
 
     $cheese = $driver->find_element('cheese', 'name');
+
+.. code-block:: javascript
+	
+	var cheese = driver.findElement(By.name('cheese'));
 
 
 By Link Text
@@ -470,6 +506,10 @@ Example of how to find an element that looks like this:
 
     $cheese = $driver->find_element('cheese', 'link_text');
 
+.. code-block:: javascript
+	
+	var cheese = driver.findElement(By.linkText('cheese'));
+
 
 By Partial Link Text
 ++++++++++++++++++++
@@ -506,6 +546,10 @@ Example of how to find an element that looks like this:
 .. code-block:: perl
 
     $cheese = $driver->find_element('cheese', 'partial_link_text');
+
+.. code-block:: javascript
+	
+	var cheese = driver.findElement(By.partialLinkText('cheese'));
 
 
 By CSS
@@ -549,6 +593,10 @@ Example of to find the cheese below:
 .. code-block:: perl
 
     $cheese = $driver->find_element('#food span.dairy.aged', 'css');
+
+.. code-block:: javascript
+	
+	var cheese = driver.findElement(By.css('#food span.dairy.aged'));
 
 
 By XPath
@@ -598,6 +646,11 @@ This is a little abstract, so for the following piece of HTML:
 .. code-block:: perl
 
     @inputs = $driver->find_elements('//input')
+
+.. code-block:: javascript
+
+	driver.findElements(By.xpath("//input"))
+	.then(cheeses => console.log(cheeses.length));
 
 
 The following number of matches will be found
@@ -703,6 +756,11 @@ People often wish to retrieve the innerText value contained within an element.  
 
     element = driver.find_element_by_id("element_id")
     element.text
+
+.. code-block:: javascript
+
+	var element = driver.findElement(By.id('elementID'));
+	element.getText().then(text => console.log(`Text is ${text}`));
     
 User Input - Filling In Forms
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -817,6 +875,11 @@ way to do this would be to find the "submit" button and click it:
 
     $driver->find_element('submit','id')->click()
 
+.. code-block:: javascript
+
+	driver.findElement(By.id('submit').click();
+
+
 Alternatively, WebDriver has the convenience method "submit" on every element.
 If you call this on an element within a form, WebDriver will walk up the DOM
 until it finds the enclosing form and then calls submit on that. If the
@@ -841,6 +904,10 @@ element isn't in a form, then the ``NoSuchElementException`` will be thrown:
 .. code-block:: perl
 
     $element->submit()
+
+.. code-block:: javascript
+
+	element.submit();
 
 
 Moving Between Windows and Frames
@@ -868,6 +935,10 @@ moving between named windows using the "switchTo" method:
 .. code-block:: perl
 
     $driver->switch_to_window("windowName");
+
+.. code-block:: javascript
+	
+	driver.switchTo().window('windowName');
 
 All calls to ``driver`` will now be interpreted as being directed to the
 particular window. But how do you know the window's name? Take a look at the
@@ -932,6 +1003,10 @@ You can also switch from frame to frame (or into iframes):
 
     $driver->switch_to_frame('frameName');
 
+.. code-block:: javascript
+
+	driver.switchTo().frame('frameName');
+
 Popup Dialogs
 ~~~~~~~~~~~~~~
 
@@ -960,6 +1035,11 @@ popup, you can access the alert with the following:
 
     $driver->get_alert_text();
     $driver->accept_alert();
+    
+.. code-block:: javascript
+
+	var alert = driver.switchTo().alert();
+	alert.accept();
 
 
 This will return the currently open alert object. With this object you can now accept,
@@ -996,7 +1076,11 @@ lives on the main WebDriver interface, but it's simply a synonym to:
 
 .. code-block:: perl
 
-    $driver->navigate('http://www.example.com');  
+    $driver->navigate('http://www.example.com');
+
+.. code-block:: javascript
+	
+	driver.navigate().to('http://www.example.com');
 
 
 To reiterate: "``navigate().to()``" and "``get()``" do exactly the same thing.
@@ -1028,6 +1112,10 @@ The "navigate" interface also exposes the ability to move backwards and forwards
     $driver->go_forward();
     $driver->go_back();
 
+.. code-block:: javascript
+
+	driver.navigate().forward();
+	driver.navigate().back();
 
 Please be aware that this functionality depends entirely on the underlying
 browser. It's just possible that something unexpected may happen when you call

@@ -306,7 +306,7 @@
     <li><a href="https://github.com/chibimagic/WebDriver-PHP/">PHP</a> by Chibimagic (real name unknown?)</li>
     <li><a href="http://code.google.com/p/php-webdriver-bindings/">PHP</a> by Lukasz Kolczynski <!-- appologies for not being able to do the UTF-8 proper encoding of your name --></li>
     <li><a href="https://github.com/facebook/php-webdriver">PHP</a> by facebook</li>
-    <li><a href="https://github.com/Element-34/php-webdriver">PHP</a> by Adam Goucher (SeHQ recommended php client)</li>
+    <li><a href="https://github.com/Element-34/php-webdriver">PHP</a> by Adam Goucher</li>
     <li><a href="https://github.com/Nearsoft/PHP-SeleniumClient">PHP</a> by Nearsoft</li>
     <li><a href="http://hackage.haskell.org/package/webdriver">Haskell</a> by Adam Curtis</li>
     <li><a href="https://github.com/appium/selenium-objective-c">Objective-C</a> by Dan Cuellar</li>
