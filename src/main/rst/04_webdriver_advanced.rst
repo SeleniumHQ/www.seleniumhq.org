@@ -61,7 +61,7 @@ so you don't have to code an ExpectedCondition class yourself or create your own
     wait = WebDriverWait(driver, 10)
     element = wait.until(EC.element_to_be_clickable((By.ID,'someid')))
 
-The ExpectedConditions package (`Java <https://seleniumhq.github.io/selenium/docs/api/java/org/openqa/selenium/support/ui/ExpectedConditions.html>`_)  (`Python <https://seleniumhq.github.io/selenium/docs/api/py/webdriver_support/selenium.webdriver.support.expected_conditions.html>`_) (`.NET <https://seleniumhq.github.io/selenium/docs/api/dotnet/html/AllMembers_T_OpenQA_Selenium_Support_UI_ExpectedConditions.htm>`_) contains a set of predefined conditions to use with WebDriverWait.
+The ExpectedConditions package (`Java <https://seleniumhq.github.io/selenium/docs/api/java/org/openqa/selenium/support/ui/ExpectedConditions.html>`_)  (`Python <https://seleniumhq.github.io/selenium/docs/api/py/webdriver_support/selenium.webdriver.support.expected_conditions.html>`_) (`.NET <https://seleniumhq.github.io/selenium/docs/api/dotnet/html/T_OpenQA_Selenium_Support_UI_ExpectedConditions.htm>`_) contains a set of predefined conditions to use with WebDriverWait.
 
 Implicit Waits
 ~~~~~~~~~~~~~~
@@ -157,7 +157,7 @@ The Actions class(es) allow you to build a Chain of Actions and perform them.
 There are too many possible combinations to count. Below are a few of the common
 interactions that you may want to use. For a full list of actions please refer to
 the API docs `Java <https://seleniumhq.github.io/selenium/docs/api/java/index.html?org/openqa/selenium/interactions/Actions.html>`_ 
-`C# <https://seleniumhq.github.io/selenium/docs/api/dotnet/html/AllMembers_T_OpenQA_Selenium_Interactions_Actions.htm>`_ 
+`C# <https://seleniumhq.github.io/selenium/docs/api/dotnet/html/T_OpenQA_Selenium_Interactions_Actions.htm>`_ 
 `Ruby <https://seleniumhq.github.io/selenium/docs/api/rb/Selenium/WebDriver/ActionBuilder.html>`_ 
 `Python <https://seleniumhq.github.io/selenium/docs/api/py/webdriver/selenium.webdriver.common.action_chains.html>`_
 
