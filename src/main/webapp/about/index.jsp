@@ -39,11 +39,6 @@
 
   <p>Look back on <a href="history.html">Selenium's past</a> and check out the <a href="/ecosystem">large ecosystem</a> of Selenium-related companies today.</p>
 
-  <h3><a href="roadmap.html">Roadmap</a></h3>
-
-  <p>Read our <a href="roadmap.html">plans for Selenium's
-  future</a>.</p>
-
   <h3><a href="getting-involved.html">Get involved</a></h3>
 
   <p>Find out how you can <a href=
