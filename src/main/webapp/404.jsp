@@ -101,7 +101,6 @@
                 <li><a href="/about/news.jsp">News/Blogs</a></li>
                 <li><a href="/about/events.html">Events</a></li>
                 <li><a href="/about/contributors.html">Who made Selenium</a>
-                <li><a href="https://github.com/SeleniumHQ/selenium/wiki/RoadMap">Roadmap</a></li>
                 <li><a href="/about/getting-involved.html">Getting Involved</a></li>
                 <li><a href="/docs">Documentation</a></li>
             </ul>
