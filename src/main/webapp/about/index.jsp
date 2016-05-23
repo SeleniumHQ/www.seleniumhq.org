@@ -27,7 +27,7 @@
     <h3><a href="/sponsors">Sponsors</a> &amp; <a href="/sponsor">Sponsorship</a></h3>
 
     <p>
-        We couldn't do this on our own. Learn how to <a href="/sponsor">sponsor</a> the project and see how the <a href="/sponsors">active sponsors</a> are.
+        We couldn't do this on our own. Learn how to <a href="/sponsor">sponsor</a> the project and see who the <a href="/sponsors">active sponsors</a> are.
     </p>
 
   <h3><a href="contributors.html">Who made Selenium</a></h3>
