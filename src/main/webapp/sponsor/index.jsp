@@ -83,7 +83,8 @@
         <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
     </form>
 
-    <p>For larger donations (Gold and higher), we request that payment is
+    <p style="padding-top: 15px">
+        For larger donations (Gold and higher), we request that payment is
         remitted by check or wire transfer. This ensures 100% of the donation
         goes to the project and that we don't pay unnecessarily large
         transaction fees. To pay by check, make it payable to "Software Freedom
@@ -95,8 +96,7 @@
     <pre>
         Software Freedom Conservancy, Inc.
         137 MONTAGUE ST STE 380
-        Brooklyn, NY 11201-3548
-    </pre>
+        Brooklyn, NY 11201-3548</pre>
 
     <p>
         We can also email you wire transfer instructions and/or provide an
