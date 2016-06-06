@@ -24,11 +24,6 @@
     <a href="http://www.gallop.net/"><img src="Gallop-logo.png" border="0" width="437" height="80"/></a>
 </p>
 
-<!-- Sponsorship start date: April 15, 2015 -->
-<p>
-    <a href="http://xenon.jadeglobal.com/?utm_source=seleniumhq&utm_campaign=sele_sponsership&utm_medium=bannerad"><img src="xenon-banner-jadeglobal.png" border="0" width="468" height="80"/></a>
-</p>
-
 <!-- Sponsorship start date: January 26, 2015 -->
 <p>
     <a href="http://www.jetbrains.com/idea/" style="display:block; background:#0d3a9e url(http://www.jetbrains.com/idea/opensource/img/all/banners/idea468x60_blue.gif) no-repeat 10px 50%; border:solid 1px #0d3a9e; margin:0;padding:0;text-decoration:none;text-indent:0;letter-spacing:-0.001em; width:466px; height:58px" alt="Java IDE with advanced HTML/CSS/JavaScript editor for hardcore web-developers" title="Java IDE with advanced HTML/CSS/JavaScript editor for hardcore web-developers"><span style="margin: 5px 0 0 52px;padding: 0;float: left;font-size: 12px;cursor:pointer;  background-image:none;border:0;color: #acc4f9; font-family: trebuchet ms,arial,sans-serif;font-weight: normal;text-align:left;">Crazy about</span><span style="margin:0 0 0 205px;padding:18px 0 2px 0; line-height:13px;font-size:12px;cursor:pointer;  background-image:none;border:0;display:block; width:255px; color: #acc4f9; font-family: trebuchet ms,arial,sans-serif;font-weight: normal;text-align:left;">Java IDE with advanced HTML/CSS/JavaScript <br/>editor for hardcore web-developers</span></a>
@@ -59,4 +54,9 @@
 <!-- Sponsorship start date: September 4, 2015 -->
 <p>
     <a href="https://www.gridlastic.com/?utm_source=seleniumhq&utm_campaign=seleniumhq-sponsorship&utm_medium=bannerad" style="display:block; background:#ffffff url(https://www.gridlastic.com/images/gridlastic-selenium-grid-in-the-cloud.png) no-repeat 50%; margin:0;padding:0;text-decoration:none;text-indent:0;letter-spacing:-0.001em; width:234px; height:80px" alt="Selenium Grid in the cloud" title="Selenium Grid in the cloud"><span style="margin:0 0 0 255px;padding:20px 0 2px 0; line-height:16px;font-size:15px;cursor:pointer;  background-image:none;border:0;display:block; width:213px; color: #0000ff; font-family: trebuchet ms,arial,sans-serif;font-weight: normal;text-align:left;">Selenium Grid in the cloud - get your own private Selenium Grid in the cloud with just 1 click</span></a>
+</p>
+
+<!-- Sponsorship start date: April 15, 2015; was Silver-level but a year has lapsed to dropping to Bronze until 10/15/2016  -->
+<p>
+    <a href="http://xenon.jadeglobal.com/?utm_source=seleniumhq&utm_campaign=sele_sponsership&utm_medium=bannerad"><img src="xenon-banner-jadeglobal.png" border="0" width="468" height="80"/></a>
 </p>
