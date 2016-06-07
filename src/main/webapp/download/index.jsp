@@ -313,6 +313,7 @@
     <li><a href="https://github.com/admc/wd">Javascript</a> by Adam Christian</li>
     <li><a href="https://github.com/jlipps/yiewd">Javascript</a> by Jonathan Lipps</li>
     <li><a href="http://webdriver.io">Javascript</a> by Camilo Tapia, Vincent Voyer and Christian Bromann</li>
+    <li><a href="https://theintern.github.io/leadfoot/">Leadfoot</a> by SitePen</li>
     <li><a href="https://github.com/johndharrison/RSelenium">R</a> by John Harrison</li>
     <li><a href="https://github.com/google/webdriver.dart">Dart</a> by Marc Fisher</li>
     <li><a href="http://caiusproject.com/">Tcl</a> by Tobias Koch</li>
