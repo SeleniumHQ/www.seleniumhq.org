@@ -15,8 +15,7 @@
   <p>We take compatibility seriously - that's why Selenium works
   with many <a href="#browsers">browsers</a>, <a href=
   "#operating-systems">operating systems</a>, <a href=
-  "#programming-languages">programming languages</a>, and <a href=
-  "#testing-frameworks">testing frameworks</a>. From Firefox to
+  "#programming-languages">programming languages and testing frameworks</a>. From Firefox to
   JUnit, we've got you covered.</p>
 
   <h3><a name="browsers" id="browsers"></a>Browsers</h3>
