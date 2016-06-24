@@ -700,19 +700,26 @@
         <li>enhances development environment</li>
         <li>facilitates team work.</li>
     </ul>
-    See <a href="http://selite.github.io/#benefits">benefits in detail</a> and <a href="http://selite.github.io/SeleniumIDE">productivity tips</a>. It also enables database-driven navigation with <a href="http://www.sqlite.org/">SQLite</a> (the <a href="http://www.sqlite.org/mostdeployed.html">most widely deployed</a> SQL database). Its
-code and that of its part <a href="#selite-selblocks-global">SelBlocks Global</a> are managed on GitHub: <a href="https://github.com/SeLite/SeLite">https://github.com/SeLite/SeLite</a> and <a href="https://github.com/SeLite/SelBlocksGlobal">SelBlocks Global</a>.
+    See <a href="http://selite.github.io/#benefits">benefits in detail</a> and <a href="http://selite.github.io/SeleniumIDE">productivity tips</a>. It also enables database-driven navigation with <a href="http://www.sqlite.org/">SQLite</a> (the <a href="http://www.sqlite.org/mostdeployed.html">most widely deployed</a> SQL database).
   </p>
   <p>
-    For the easiest download get all add-ons of <a href="https://addons.mozilla.org/en-US/firefox/collections/peter-kehl/selite/?sort=name">SeLite collection</a>. The following lists them briefly; see also <a href="http://selite.github.io/AddOns">add-ons in detail</a>.
+    Its code is managed on GitHub: <a href="https://github.com/SeLite/SeLite">github.com/SeLite/SeLite</a> and <a href="https://github.com/SeLite/SelBlocksGlobal">github.com/SeLite/SelBlocksGlobal</a>.
   </p>
+  <strong>Download</strong>
+  <p>
+    For the easiest download get all components in <a href="https://addons.mozilla.org/en-US/firefox/addon/selite/">one package</a> and <a href="#Favorites">Favorites (Selenium IDE)</a>.
+  </p>
+  <p>
+    For alternative downloads and source code choose <a href="http://selite.github.io/Components">the components</a>.
+  </p>
+
 
   <div class="plugin">
     <a name="selite-autocheck"/>
     <div class="name">SeLite AutoCheck</div>
     <div class="column">
       <table>
-          <tr><th>Links:</th><td><a href="https://addons.mozilla.org/en-US/firefox/addon/selite-auto-check/">Info</a> - <a href="https://addons.mozilla.org/en-US/firefox/addon/selite-auto-check/versions/">Download</a> - <a href="http://selite.github.io/AutoCheck">Docs</a> - <a href="http://selite.github.io/TroubleShooting">Support</a></td></tr>
+          <tr><th>Links:</th><td><a href="https://addons.mozilla.org/en-US/firefox/addon/selite-auto-check/">Info</a> - <a href="http://selite.github.io/Components">Download</a> - <a href="http://selite.github.io/AutoCheck">Docs</a> - <a href="http://selite.github.io/TroubleShooting">Support</a></td></tr>
         <tr><th>Author:</th><td>Peter Kehl</td></tr>
         <tr><th>License:</th><td>LGPL 3</td></tr>
       </table>
@@ -730,7 +737,7 @@ code and that of its part <a href="#selite-selblocks-global">SelBlocks Global</a
     <div class="name">SeLite Bootstrap</div>
     <div class="column">
       <table>
-          <tr><th>Links:</th><td><a href="https://addons.mozilla.org/en-US/firefox/addon/selite-bootstrap/">Info</a> - <a href="https://addons.mozilla.org/en-US/firefox/addon/SeLite-Bootstrap/versions/">Download</a> - <a href="http://selite.github.io/Bootstrap">Docs</a> - <a href="http://selite.github.io/TroubleShooting">Support</a></td></tr>
+          <tr><th>Links:</th><td><a href="https://addons.mozilla.org/en-US/firefox/addon/selite-bootstrap/">Info</a> - <a href="http://selite.github.io/Components">Download</a> - <a href="http://selite.github.io/Bootstrap">Docs</a> - <a href="http://selite.github.io/TroubleShooting">Support</a></td></tr>
         <tr><th>Author:</th><td>Peter Kehl</td></tr>
         <tr><th>License:</th><td>LGPL 3</td></tr>
       </table>
@@ -748,7 +755,7 @@ code and that of its part <a href="#selite-selblocks-global">SelBlocks Global</a
     <div class="name">SeLite Clipboard And Indent</div>
     <div class="column">
       <table>
-          <tr><th>Links:</th><td><a href="https://addons.mozilla.org/en-US/firefox/addon/selite-clipboard-and-indent/">Info</a> - <a href="https://addons.mozilla.org/en-US/firefox/addon/selite-clipboard-and-indent/versions/">Download</a> - <a href="http://selite.github.io/SeleniumIDE#clipboard-and-indent">Docs</a> - <a href="http://selite.github.io/TroubleShooting">Support</a></td></tr>
+          <tr><th>Links:</th><td><a href="https://addons.mozilla.org/en-US/firefox/addon/selite-clipboard-and-indent/">Info</a> - <a href="http://selite.github.io/Components">Download</a> - <a href="http://selite.github.io/SeleniumIDE#clipboard-and-indent">Docs</a> - <a href="http://selite.github.io/TroubleShooting">Support</a></td></tr>
         <tr><th>Author:</th><td>Peter Kehl</td></tr>
         <tr><th>License:</th><td>Apache License 2</td></tr>
       </table>
@@ -766,7 +773,7 @@ code and that of its part <a href="#selite-selblocks-global">SelBlocks Global</a
     <div class="name">SeLite Commands</div>
     <div class="column">
       <table>
-          <tr><th>Links:</th><td><a href="https://addons.mozilla.org/en-US/firefox/addon/selite-commands/">Info</a> - <a href="https://addons.mozilla.org/en-US/firefox/addon/selite-commands/versions/">Download</a> - <a href="https://selite.github.io/ExtraCommands">Docs</a> - <a href="https://selite.github.io/TroubleShooting">Support</a></td></tr>
+          <tr><th>Links:</th><td><a href="https://addons.mozilla.org/en-US/firefox/addon/selite-commands/">Info</a> - <a href="http://selite.github.io/Components">Download</a> - <a href="https://selite.github.io/ExtraCommands">Docs</a> - <a href="https://selite.github.io/TroubleShooting">Support</a></td></tr>
         <tr><th>Author:</th><td>Peter Kehl</td></tr>
         <tr><th>License:</th><td>LGPL 3</td></tr>
       </table>
@@ -784,7 +791,7 @@ code and that of its part <a href="#selite-selblocks-global">SelBlocks Global</a
     <div class="name">SeLite DB Objects</div>
     <div class="column">
       <table>
-          <tr><th>Links:</th><td><a href="https://addons.mozilla.org/en-US/firefox/addon/selite-db-objects/">Info</a> - <a href="https://addons.mozilla.org/en-US/firefox/addon/selite-db-objects/versions/">Download</a> - <a href="https://selite.github.io/TroubleShooting">Support</a></td></tr>
+          <tr><th>Links:</th><td><a href="https://addons.mozilla.org/en-US/firefox/addon/selite-db-objects/">Info</a> - <a href="http://selite.github.io/Components">Download</a> - <a href="https://selite.github.io/TroubleShooting">Support</a></td></tr>
         <tr><th>Author:</th><td>Peter Kehl</td></tr>
         <tr><th>License:</th><td>LGPL 3</td></tr>
       </table>
@@ -802,7 +809,7 @@ code and that of its part <a href="#selite-selblocks-global">SelBlocks Global</a
     <div class="name">SeLite Exit Confirmation Checker</div>
     <div class="column">
       <table>
-          <tr><th>Links:</th><td><a href="https://addons.mozilla.org/en-US/firefox/addon/selite-exit-confirmation-check/">Info</a> - <a href="https://addons.mozilla.org/en-US/firefox/addon/selite-exit-confirmation-check/versions/">Download</a> - <a href="https://selite.github.io/ExitConfirmationChecker">Docs</a> - <a href="https://selite.github.io/TroubleShooting">Support</a></td></tr>
+          <tr><th>Links:</th><td><a href="https://addons.mozilla.org/en-US/firefox/addon/selite-exit-confirmation-check/">Info</a> - <a href="http://selite.github.io/Components">Download</a> - <a href="https://selite.github.io/ExitConfirmationChecker">Docs</a> - <a href="https://selite.github.io/TroubleShooting">Support</a></td></tr>
         <tr><th>Author:</th><td>Peter Kehl</td></tr>
         <tr><th>License:</th><td>LGPL 3</td></tr>
       </table>
@@ -820,7 +827,7 @@ code and that of its part <a href="#selite-selblocks-global">SelBlocks Global</a
     <div class="name">SeLite Extension Sequencer</div>
     <div class="column">
       <table>
-          <tr><th>Links:</th><td><a href="https://addons.mozilla.org/en-US/firefox/addon/selite-extension-sequencer/">Info</a> - <a href="https://addons.mozilla.org/en-US/firefox/addon/selite-extension-sequencer/versions/">Download</a> - <a href="https://selite.github.io/ExtensionSequencer">Docs</a> - <a href="https://selite.github.io/TroubleShooting">Support</a></td></tr>
+          <tr><th>Links:</th><td><a href="https://addons.mozilla.org/en-US/firefox/addon/selite-extension-sequencer/">Info</a> - <a href="http://selite.github.io/Components">Download</a> - <a href="https://selite.github.io/ExtensionSequencer">Docs</a> - <a href="https://selite.github.io/TroubleShooting">Support</a></td></tr>
         <tr><th>Author:</th><td>Peter Kehl</td></tr>
         <tr><th>License:</th><td>Apache License 2</td></tr>
       </table>
@@ -838,7 +845,7 @@ code and that of its part <a href="#selite-selblocks-global">SelBlocks Global</a
     <div class="name">SeLite Hands-on GUI</div>
     <div class="column">
       <table>
-          <tr><th>Links:</th><td><a href="https://addons.mozilla.org/en-US/firefox/addon/selite-hands-on-gui/">Info</a> - <a href="https://addons.mozilla.org/en-US/firefox/addon/selite-hands-on-gui/versions/">Download</a> - <a href="https://selite.github.io/SeleniumIDE#hands-on-gui">Docs</a> - <a href="https://selite.github.io/TroubleShooting">Support</a></td></tr>
+          <tr><th>Links:</th><td><a href="https://addons.mozilla.org/en-US/firefox/addon/selite-hands-on-gui/">Info</a> - <a href="http://selite.github.io/Components">Download</a> - <a href="https://selite.github.io/SeleniumIDE#hands-on-gui">Docs</a> - <a href="https://selite.github.io/TroubleShooting">Support</a></td></tr>
         <tr><th>Author:</th><td>Peter Kehl</td></tr>
         <tr><th>License:</th><td>Apache License 2</td></tr>
       </table>
@@ -860,7 +867,7 @@ code and that of its part <a href="#selite-selblocks-global">SelBlocks Global</a
     <div class="name">SeLite  Miscellaneous</div>
     <div class="column">
       <table>
-          <tr><th>Links:</th><td><a href="https://addons.mozilla.org/en-US/firefox/addon/selite-miscellaneous/">Info</a> - <a href="https://addons.mozilla.org/en-US/firefox/addon/selite-miscellaneous/versions/">Download</a> - <a href="https://selite.github.io/TroubleShooting">Support</a></td></tr>
+          <tr><th>Links:</th><td><a href="https://addons.mozilla.org/en-US/firefox/addon/selite-miscellaneous/">Info</a> - <a href="http://selite.github.io/Components">Download</a> - <a href="https://selite.github.io/TroubleShooting">Support</a></td></tr>
         <tr><th>Author:</th><td>Peter Kehl</td></tr>
         <tr><th>License:</th><td>LGPL 3</td></tr>
       </table>
@@ -877,7 +884,7 @@ code and that of its part <a href="#selite-selblocks-global">SelBlocks Global</a
     <div class="name">SeLite  Preview</div>
     <div class="column">
       <table>
-          <tr><th>Links:</th><td><a href="https://addons.mozilla.org/en-US/firefox/addon/selite-preview/">Info</a> - <a href="https://addons.mozilla.org/en-US/firefox/addon/selite-preview/versions/">Download</a> - <a href="https://selite.github.io/Preview">Docs</a> - <a href="https://selite.github.io/TroubleShooting">Support</a></td></tr>
+          <tr><th>Links:</th><td><a href="https://addons.mozilla.org/en-US/firefox/addon/selite-preview/">Info</a> - <a href="http://selite.github.io/Components">Download</a> - <a href="https://selite.github.io/Preview">Docs</a> - <a href="https://selite.github.io/TroubleShooting">Support</a></td></tr>
         <tr><th>Author:</th><td>Peter Kehl</td></tr>
         <tr><th>License:</th><td>LGPL 3</td></tr>
       </table>
@@ -895,7 +902,7 @@ code and that of its part <a href="#selite-selblocks-global">SelBlocks Global</a
     <div class="name">SeLite  Run All Favorites</div>
     <div class="column">
       <table>
-          <tr><th>Links:</th><td><a href="https://addons.mozilla.org/en-US/firefox/addon/selite-run-all-favorites/">Info</a> - <a href="https://addons.mozilla.org/en-US/firefox/addon/selite-run-all-favorites/versions/">Download</a> - <a href="https://selite.github.io/TroubleShooting">Support</a></td></tr>
+          <tr><th>Links:</th><td><a href="https://addons.mozilla.org/en-US/firefox/addon/selite-run-all-favorites/">Info</a> - <a href="http://selite.github.io/Components">Download</a> - <a href="https://selite.github.io/TroubleShooting">Support</a></td></tr>
         <tr><th>Author:</th><td>Peter Kehl</td></tr>
         <tr><th>License:</th><td>Mozilla Public License 1.1</td></tr>
       </table>
@@ -905,7 +912,7 @@ code and that of its part <a href="#selite-selblocks-global">SelBlocks Global</a
         <tr><th>Since:</th><td>September 2014</td></tr>
       </table>
     </div>
-    <p class="description">It runs a sequence of all test suites marked as favorites in <a href="https://addons.mozilla.org/en-US/firefox/addon/favorites-selenium-ide/">Favorites (Selenium IDE)</a>. It supports team work: it facilitates export/import of favorites by representing them relative to user's home folder.</p>
+    <p class="description">It runs a sequence of all test suites marked as favorites in <a href="#Favorites">Favorites (Selenium IDE)</a>. It supports team work: it facilitates export/import of favorites by representing them relative to user's home folder.</p>
   </div>
   
   <div class="plugin">
@@ -913,7 +920,7 @@ code and that of its part <a href="#selite-selblocks-global">SelBlocks Global</a
     <div class="name">SeLite  SelBlocks Global</div>
     <div class="column">
       <table>
-          <tr><th>Links:</th><td><a href="https://addons.mozilla.org/en-US/firefox/addon/selite-selblocks-global/">Info</a> - <a href="https://addons.mozilla.org/en-US/firefox/addon/SeLite-SelBlocks-Global/versions/">Download</a> - <a href="https://selite.github.io/SelBlocksGlobal">Docs</a> - <a href="https://selite.github.io/TroubleShooting">Support</a></td></tr>
+          <tr><th>Links:</th><td><a href="https://addons.mozilla.org/en-US/firefox/addon/selite-selblocks-global/">Info</a> - <a href="http://selite.github.io/Components">Download</a> - <a href="https://selite.github.io/SelBlocksGlobal">Docs</a> - <a href="https://selite.github.io/TroubleShooting">Support</a></td></tr>
         <tr><th>Author:</th><td><a href="http://refactoror.net/">Chris Noe</a>, Peter Kehl</td></tr>
         <tr><th>License:</th><td>Mozilla Public License 1.1</td></tr>
       </table>
@@ -931,7 +938,7 @@ code and that of its part <a href="#selite-selblocks-global">SelBlocks Global</a
     <div class="name">SeLite Settings</div>
     <div class="column">
       <table>
-          <tr><th>Links:</th><td><a href="https://addons.mozilla.org/en-US/firefox/addon/selite-settings/">Info</a> - <a href="https://addons.mozilla.org/en-US/firefox/addon/selite-settings/versions/">Download</a> - <a href="https://selite.github.io/Settings">Docs</a> - <a href="https://selite.github.io/TroubleShooting">Support</a></td></tr>
+          <tr><th>Links:</th><td><a href="https://addons.mozilla.org/en-US/firefox/addon/selite-settings/">Info</a> - <a href="http://selite.github.io/Components">Download</a> - <a href="https://selite.github.io/Settings">Docs</a> - <a href="https://selite.github.io/TroubleShooting">Support</a></td></tr>
         <tr><th>Author:</th><td>Peter Kehl</td></tr>
         <tr><th>License:</th><td>GNU LGPL 3 for API; GNU GPL 3 for GUI</td></tr>
       </table>
@@ -950,7 +957,7 @@ code and that of its part <a href="#selite-selblocks-global">SelBlocks Global</a
     <div class="name">SeLite SQLite Connection Manager</div>
     <div class="column">
       <table>
-          <tr><th>Links:</th><td><a href="https://addons.mozilla.org/en-US/firefox/addon/selite-sqlite-connection-mg/">Info</a> - <a href="https://addons.mozilla.org/en-US/firefox/addon/SeLite-SQLite-Connection-Mg/versions/">Download</a> - <a href="https://selite.github.io/TroubleShooting">Support</a></td></tr>
+          <tr><th>Links:</th><td><a href="https://addons.mozilla.org/en-US/firefox/addon/selite-sqlite-connection-mg/">Info</a> - <a href="http://selite.github.io/Components">Download</a> - <a href="https://selite.github.io/TroubleShooting">Support</a></td></tr>
         <tr><th>Author:</th><td>Peter Kehl</td></tr>
         <tr><th>License:</th><td>LGPL 3</td></tr>
       </table>
@@ -967,7 +974,7 @@ code and that of its part <a href="#selite-selblocks-global">SelBlocks Global</a
     <div class="name">SeLite TestCase Debug Context</div>
     <div class="column">
       <table>
-          <tr><th>Links:</th><td><a href="https://addons.mozilla.org/en-US/firefox/addon/selite-testcase-debug-conte/">Info</a> - <a href="https://addons.mozilla.org/en-US/firefox/addon/SeLite-TestCase-Debug-Conte/versions/">Download</a> - <a href="https://selite.github.io/TroubleShooting">Support</a></td></tr>
+          <tr><th>Links:</th><td><a href="https://addons.mozilla.org/en-US/firefox/addon/selite-testcase-debug-conte/">Info</a> - <a href="http://selite.github.io/Components">Download</a> - <a href="https://selite.github.io/TroubleShooting">Support</a></td></tr>
         <tr><th>Author:</th><td>Peter Kehl</td></tr>
         <tr><th>License:</th><td>Apache License 2</td></tr>
       </table>
