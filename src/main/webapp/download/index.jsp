@@ -42,7 +42,7 @@
 
   <h3>Selenium Standalone Server</h3>
   <p>The Selenium Server is needed in order to run either Selenium RC style scripts or Remote Selenium WebDriver ones. The 2.x server is a drop-in replacement for the old Selenium RC server and is designed to be backwards compatible with your existing infrastructure.</p>
-  <p>Download version <a href="http://goo.gl/IHP6Qw">2.53.0</a>
+  <p>Download version <a href="http://goo.gl/EoH85x">2.53.1</a>
   <!-- minified link maintained by lukeis to try to track download counts. please talk to him for updating this link or to get the current download count. -->
   </p>
   <p>To use the Selenium Server in a Grid configuration <a href="https://github.com/SeleniumHQ/selenium/wiki/Grid2">see the wiki page</a>.</p>
@@ -77,40 +77,40 @@
     <tbody>
       <tr>
         <td>Java</td>
-        <td>2.53.0</td>
-        <td>2016-03-15</td>
-        <td><a href="http://selenium-release.storage.googleapis.com/2.53/selenium-java-2.53.0.zip">Download</a>&nbsp;&nbsp;</td>
+        <td>2.53.1</td>
+        <td>2016-06-30</td>
+        <td><a href="http://selenium-release.storage.googleapis.com/2.53/selenium-java-2.53.1.zip">Download</a>&nbsp;&nbsp;</td>
         <td><a href="http://goo.gl/5IVvjZ">Change log</a>&nbsp;&nbsp;</td>
         <td><a href="http://goo.gl/Grc6tm" alt="Javadoc">Javadoc</a></td>
       </tr>
       <tr>
         <td>C#</td>
-        <td>2.53.0</td>
-        <td>2016-03-16</td>
-        <td><a href="http://selenium-release.storage.googleapis.com/2.53/selenium-dotnet-2.53.0.zip">Download</a></td>
+        <td>2.53.1</td>
+        <td>2016-06-28</td>
+        <td><a href="http://selenium-release.storage.googleapis.com/2.53/selenium-dotnet-2.53.1.zip">Download</a></td>
         <td><a href="http://goo.gl/t3faSQ">Change log</a></td>
         <td><a href="http://goo.gl/uutZjZ">API docs</a></td>
       </tr>
       <tr>
         <td>Ruby</td>
-        <td>2.53.0</td>
-        <td>2016-03-15</td>
+        <td>2.53.4</td>
+        <td>2016-06-28</td>
         <td><a href="http://rubygems.org/gems/selenium-webdriver">Download</a></td>
         <td><a href="http://goo.gl/zNfSLK">Change log</a></td>
         <td><a href="http://goo.gl/jzh4RU">API docs</a></td>
       </tr>
       <tr>
         <td>Python</td>
-        <td>2.53.0</td>
-        <td>2016-03-15</td>
+        <td>2.53.6</td>
+        <td>2016-06-28</td>
         <td><a href="http://pypi.python.org/pypi/selenium">Download</a></td>
         <td><a href="http://goo.gl/rHRdgk">Change log</a></td>
         <td><a href="http://goo.gl/sG1GfQ">API docs</a></td>
       </tr>
       <tr>
         <td>Javascript (Node)</td>
-        <td>2.53.2</td>
-        <td>2016-03-16</td>
+        <td>2.53.3</td>
+        <td>2016-06-28</td>
         <td><a href="https://npmjs.org/package/selenium-webdriver">Download</a></td>
         <td><a href="http://goo.gl/e6smYw">Change log</a></td>
         <td><a href="http://goo.gl/hohAut">API docs</a></td>
@@ -118,7 +118,7 @@
     </tbody>
   </table>
   <h4>C# NuGet</h4>
-  <p>NuGet latest release is 2.53.0, Released on 2016-03-16</p>
+  <p>NuGet latest release is 2.53.1, Released on 2016-06-29</p>
   <ul>
     <li><a href="http://www.nuget.org/List/Packages/Selenium.RC">RC</a></li>
     <li><a href="http://www.nuget.org/List/Packages/Selenium.WebDriver">WebDriver</a></li>
@@ -126,7 +126,7 @@
     <li><a href="http://www.nuget.org/List/Packages/Selenium.Support">Support</a></li>
   </ul>
 
-  <h3>SafariDriver</h3>
+  <h3>SafariDriver - DEPRECATED</h3>
   <p>SafariDriver now requires manual installation of the extension prior to automation</p>
   <ul>
     <li>Latest release <a href="http://selenium-release.storage.googleapis.com/2.48/SafariDriver.safariextz">2.48.0</a></li>
@@ -168,11 +168,11 @@
     <tbody>
       <tr>
         <td><a href="https://sites.google.com/a/chromium.org/chromedriver/">Google Chrome Driver</a></td>
-        <td><a href="http://chromedriver.storage.googleapis.com/index.html?path=2.21/">2.21</a>&nbsp;&nbsp;</td>
-        <td><a href="http://chromedriver.storage.googleapis.com/2.21/notes.txt">change log</a>&nbsp;&nbsp;</td>
+        <td><a href="http://chromedriver.storage.googleapis.com/index.html?path=2.22/">2.22</a>&nbsp;&nbsp;</td>
+        <td><a href="http://chromedriver.storage.googleapis.com/2.22/notes.txt">change log</a>&nbsp;&nbsp;</td>
         <td><a href="https://bugs.chromium.org/p/chromedriver/issues/list">issue tracker</a>&nbsp;&nbsp;</td>
         <td><a href="https://github.com/SeleniumHQ/selenium/wiki/ChromeDriver">selenium wiki page</a>&nbsp;&nbsp;</td>
-        <td>Released 2016-01-28</td>
+        <td>Released 2016-06-04</td>
       </tr>
       <tr>
         <td><a href="http://choice.opera.com/developer/tools/operadriver/">Opera</td>
