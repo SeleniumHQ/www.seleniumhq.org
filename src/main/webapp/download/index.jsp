@@ -200,7 +200,7 @@
         <td><a href="https://developer.microsoft.com/en-us/microsoft-edge/tools/webdriver/">Microsoft Edge Driver</a></td>
         <td colspan=2>&nbsp;</td>
         <td><a href="https://developer.microsoft.com/en-us/microsoft-edge/platform/issues/">issue tracker</a></td>
-        <td><a href="http://dev.modern.ie/platform/status/webdriver/details/">Implementation Status</a></td>
+        <td><a href="https://developer.microsoft.com/en-us/microsoft-edge/platform/documentation/webdriver-commands/">Implementation Status</a></td>
       </tr>
       <tr>
         <td><a href="https://github.com/forcedotcom/windowsphonedriver/">Windows Phone</a></td>
