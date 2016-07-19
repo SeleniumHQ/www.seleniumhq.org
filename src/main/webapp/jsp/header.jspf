@@ -1,3 +1,4 @@
+<%@include file="/jsp/tophatpromo.jspf"%>
 <div id="container">
 <div id="header">
     <h1><a href="/" title="Return to Selenium home page">Browser Automation</a></h1>

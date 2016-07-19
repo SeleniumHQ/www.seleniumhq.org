@@ -1,0 +1,7 @@
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<script src="/tophatpromo.js" type="text/javascript"></script>
+<link rel="stylesheet" type="text/css" href="/tophatpromo.css"/>
+<div id="promo">
+  <b>Selenium Conf is coming to London this November!</b> Learn more <b><a target="_blank" href=http://seleniumconf.co.uk/>HERE</a></b>.
+  <a id="close">x</a>
+</div>

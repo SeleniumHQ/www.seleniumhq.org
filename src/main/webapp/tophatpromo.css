@@ -1,0 +1,31 @@
+#promo {
+  display: none;
+  position: fixed;
+  z-index: 101;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: yellow;
+  color: black;
+  text-align: center;
+  line-height: 2.5;
+  overflow: hidden;
+  -webkit-box-shadow: 0 0 5px black;
+  -moz-box-shadow:    0 0 5px black;
+  box-shadow:         0 0 5px black;
+}
+
+#close {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  text-indent: -9999px;
+  background: url(/images/tophatpromo-close.png);
+  height: 16px;
+  width: 16px;
+  cursor: pointer;
+}
+
+.push {
+    padding-top: 20px !important;
+}
