@@ -109,3 +109,4 @@
     <%
         }
     %>
+<script src="/analytics.js" type="text/javascript"></script>
