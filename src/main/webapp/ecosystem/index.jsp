@@ -109,6 +109,10 @@
             On-demand test automation services dedicated to Selenium.
         </li>
         <li>
+            <a rel="nofollow" href="http://letztest.blogspot.in/">Letz Test</a> -
+            Selenium Test Automation articles, Selenium Test Framework Design, Selenium Consultant, Selenium Tips.
+        </li>
+        <li>
             <a rel="nofollow" href="http://www.seleniumsimplified.com/hq">SeleniumSimplified.com</a> -
             Online Training Courses, and consultancy, for Selenium WebDriver with Java.
         </li>
