@@ -42,7 +42,7 @@
 
   <h3>Selenium Standalone Server</h3>
   <p>The Selenium Server is needed in order to run Remote Selenium WebDriver. Selenium 3.X is no longer capable of running Selenium RC directly, rather it does it through emulation and the WebDriverBackedSelenium interface.</p>
-  <p>Download version <a href="http://goo.gl/bXL0Fu">3.0.0-beta1</a>
+  <p>Download version <a href="http://goo.gl/2lZ46z">3.0.0-beta2</a>
   <!-- minified link maintained by lukeis to try to track download counts. please talk to him for updating this link or to get the current download count. -->
   </p>
   <p>To use the Selenium Server in a Grid configuration <a href="https://github.com/SeleniumHQ/selenium/wiki/Grid2">see the wiki page</a>.</p>
@@ -77,17 +77,17 @@
     <tbody>
       <tr>
         <td>Java</td>
-        <td>3.0.0-beta1</td>
-        <td>2016-07-28</td>
-        <td><a href="http://selenium-release.storage.googleapis.com/3.0-beta1/selenium-java-3.0.0-beta1.zip">Download</a>&nbsp;&nbsp;</td>
+        <td>3.0.0-beta2</td>
+        <td>2016-08-02</td>
+        <td><a href="http://selenium-release.storage.googleapis.com/3.0-beta2/selenium-java-3.0.0-beta2.zip">Download</a>&nbsp;&nbsp;</td>
         <td><a href="http://goo.gl/5IVvjZ">Change log</a>&nbsp;&nbsp;</td>
         <td><a href="http://goo.gl/Grc6tm" alt="Javadoc">Javadoc</a></td>
       </tr>
       <tr>
         <td>C#</td>
-        <td>2.53.1</td>
-        <td>2016-06-28</td>
-        <td><a href="http://selenium-release.storage.googleapis.com/2.53/selenium-dotnet-2.53.1.zip">Download</a></td>
+        <td>3.0.0-beta1</td>
+        <td>2016-07-29</td>
+        <td><a href="http://selenium-release.storage.googleapis.com/3.0-beta1/selenium-dotnet-3.0.0-beta1.zip">Download</a></td>
         <td><a href="http://goo.gl/t3faSQ">Change log</a></td>
         <td><a href="http://goo.gl/uutZjZ">API docs</a></td>
       </tr>
