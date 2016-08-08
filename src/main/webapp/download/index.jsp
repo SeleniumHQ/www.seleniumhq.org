@@ -110,7 +110,7 @@
       <tr>
         <td>Javascript (Node)</td>
         <td>3.0.0-beta-1</td>
-        <td>2016-06-28</td>
+        <td>2016-08-07</td>
         <td><a href="https://npmjs.org/package/selenium-webdriver">Download</a></td>
         <td><a href="http://goo.gl/e6smYw">Change log</a></td>
         <td><a href="http://goo.gl/hohAut">API docs</a></td>
