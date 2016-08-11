@@ -166,6 +166,13 @@
       <th>&nbsp;</th>
     </thead>
     <tbody>
+	  <tr>
+		<td><a href="https://github.com/mozilla/geckodriver/releases">Mozilla GeckoDriver (Needed for FF48+)</a></td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td><a href="https://github.com/mozilla/geckodriver/issues">issue tracker</a></td>
+		<td>&nbsp;</td>
+	  </tr>
       <tr>
         <td><a href="https://sites.google.com/a/chromium.org/chromedriver/">Google Chrome Driver</a></td>
         <td><a href="http://chromedriver.storage.googleapis.com/index.html?path=2.22/">2.22</a>&nbsp;&nbsp;</td>
