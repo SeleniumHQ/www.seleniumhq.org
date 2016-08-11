@@ -166,6 +166,13 @@
       <th>&nbsp;</th>
     </thead>
     <tbody>
+	  <tr>
+		<td><a href="https://github.com/mozilla/geckodriver/releases">Mozilla GeckoDriver</a></td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td><a href="https://github.com/mozilla/geckodriver/issues">issue tracker</a></td>
+		<td colspan=2><a href="https://developer.mozilla.org/en-US/docs/Mozilla/QA/Marionette/WebDriver/status">Implementation Status</a></td>
+	  </tr>
       <tr>
         <td><a href="https://sites.google.com/a/chromium.org/chromedriver/">Google Chrome Driver</a></td>
         <td><a href="http://chromedriver.storage.googleapis.com/index.html?path=2.22/">2.22</a>&nbsp;&nbsp;</td>
@@ -188,13 +195,6 @@
         <td>&nbsp;</td>
         <td><a href="https://github.com/detro/ghostdriver/issues">issue tracker</a></td>
         <td><a href="http://www.youtube.com/watch?v=wqxkKIC2HDY">SeConf talk</a></td>
-      </tr>
-      <tr>
-        <td><a href="https://developer.mozilla.org/en-US/docs/Mozilla/QA/Marionette/WebDriver">Firefox Marionette</a></td>
-        <td>&nbsp;</td>
-        <td>&nbsp;</td>
-        <td><a href="https://bugzilla.mozilla.org/enter_bug.cgi?product=Testing&component=Marionette&cc=dburns@mozilla.com">issue tracker</a></td>
-        <td colspan=2><a href="https://developer.mozilla.org/en-US/docs/Mozilla/QA/Marionette/WebDriver/status">Implementation Status</a></td>
       </tr>
       <tr>
         <td><a href="https://developer.microsoft.com/en-us/microsoft-edge/tools/webdriver/">Microsoft Edge Driver</a></td>
