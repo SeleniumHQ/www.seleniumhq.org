@@ -167,12 +167,11 @@
     </thead>
     <tbody>
 	  <tr>
-		<td><a href="https://github.com/mozilla/geckodriver/releases">Mozilla GeckoDriver (Needed for FF48+)</a></td>
+		<td><a href="https://github.com/mozilla/geckodriver/releases">Mozilla GeckoDriver</a></td>
 		<td>&nbsp;</td>
 		<td>&nbsp;</td>
 		<td><a href="https://github.com/mozilla/geckodriver/issues">issue tracker</a></td>
-		<td>&nbsp;</td>
-		<td>&nbsp;</td>
+		<td colspan=2><a href="https://developer.mozilla.org/en-US/docs/Mozilla/QA/Marionette/WebDriver/status">Implementation Status</a></td>
 	  </tr>
       <tr>
         <td><a href="https://sites.google.com/a/chromium.org/chromedriver/">Google Chrome Driver</a></td>
