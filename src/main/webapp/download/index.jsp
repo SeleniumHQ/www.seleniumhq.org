@@ -172,6 +172,7 @@
 		<td>&nbsp;</td>
 		<td><a href="https://github.com/mozilla/geckodriver/issues">issue tracker</a></td>
 		<td>&nbsp;</td>
+		<td>&nbsp;</td>
 	  </tr>
       <tr>
         <td><a href="https://sites.google.com/a/chromium.org/chromedriver/">Google Chrome Driver</a></td>
