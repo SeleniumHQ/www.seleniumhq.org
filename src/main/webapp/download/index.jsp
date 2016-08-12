@@ -87,7 +87,7 @@
         <td>C#</td>
         <td>3.0.0-beta2</td>
         <td>2016-08-04</td>
-        <td><a href="http://selenium-release.storage.googleapis.com/3.0-beta1/selenium-dotnet-3.0.0-beta1.zip">Download</a></td>
+        <td><a href="http://selenium-release.storage.googleapis.com/3.0-beta2/selenium-dotnet-3.0.0-beta2.zip">Download</a></td>
         <td><a href="http://goo.gl/t3faSQ">Change log</a></td>
         <td><a href="http://goo.gl/uutZjZ">API docs</a></td>
       </tr>
@@ -109,7 +109,7 @@
       </tr>
       <tr>
         <td>Javascript (Node)</td>
-        <td>3.0.0-beta-2</td>
+        <td>3.0.0-beta-1</td>
         <td>2016-08-07</td>
         <td><a href="https://npmjs.org/package/selenium-webdriver">Download</a></td>
         <td><a href="http://goo.gl/e6smYw">Change log</a></td>
