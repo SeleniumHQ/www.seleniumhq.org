@@ -85,24 +85,24 @@
       </tr>
       <tr>
         <td>C#</td>
-        <td>3.0.0-beta1</td>
-        <td>2016-07-29</td>
-        <td><a href="http://selenium-release.storage.googleapis.com/3.0-beta1/selenium-dotnet-3.0.0-beta1.zip">Download</a></td>
+        <td>3.0.0-beta2</td>
+        <td>2016-08-04</td>
+        <td><a href="http://selenium-release.storage.googleapis.com/3.0-beta2/selenium-dotnet-3.0.0-beta2.zip">Download</a></td>
         <td><a href="http://goo.gl/t3faSQ">Change log</a></td>
         <td><a href="http://goo.gl/uutZjZ">API docs</a></td>
       </tr>
       <tr>
         <td>Ruby</td>
-        <td>3.0.0.beta1</td>
-        <td>2016-07-28</td>
+        <td>3.0.0.beta2.1</td>
+        <td>2016-08-03</td>
         <td><a href="http://rubygems.org/gems/selenium-webdriver">Download</a></td>
         <td><a href="http://goo.gl/zNfSLK">Change log</a></td>
         <td><a href="http://goo.gl/jzh4RU">API docs</a></td>
       </tr>
       <tr>
         <td>Python</td>
-        <td>2.53.6</td>
-        <td>2016-06-28</td>
+        <td>Selenium 3.0.0.b2</td>
+        <td>2016-08-03</td>
         <td><a href="http://pypi.python.org/pypi/selenium">Download</a></td>
         <td><a href="http://goo.gl/rHRdgk">Change log</a></td>
         <td><a href="http://goo.gl/sG1GfQ">API docs</a></td>
