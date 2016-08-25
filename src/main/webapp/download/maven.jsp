@@ -69,7 +69,7 @@
     &lt;dependency&gt;
         &lt;groupId&gt;org.seleniumhq.selenium&lt;/groupId&gt;
         &lt;artifactId&gt;htmlunit-driver&lt;/artifactId&gt;
-        &lt;version&gt;2.21&lt;/version&gt;
+        &lt;version&gt;2.23&lt;/version&gt;
     &lt;/dependency&gt;  
   </pre></p>
     
