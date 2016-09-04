@@ -42,9 +42,10 @@
 
   <h3>Selenium Standalone Server</h3>
   <p>The Selenium Server is needed in order to run Remote Selenium WebDriver. Selenium 3.X is no longer capable of running Selenium RC directly, rather it does it through emulation and the WebDriverBackedSelenium interface.</p>
-  <p>Download version <a href="http://goo.gl/2lZ46z">3.0.0-beta2</a>
+  <p>Download version <a href="http://goo.gl/EUxR76">3.0.0-beta2</a>
   <!-- minified link maintained by lukeis to try to track download counts. please talk to him for updating this link or to get the current download count. -->
   </p>
+  <p>To run Selenium tests exported from IDE, use the <a href="http://goo.gl/NKlnRC">Selenium Html Runner</a>.</p>
   <p>To use the Selenium Server in a Grid configuration <a href="https://github.com/SeleniumHQ/selenium/wiki/Grid2">see the wiki page</a>.</p>
 
   <h3>The Internet Explorer Driver Server</h3>
@@ -77,24 +78,24 @@
     <tbody>
       <tr>
         <td>Java</td>
-        <td>3.0.0-beta2</td>
-        <td>2016-08-02</td>
-        <td><a href="http://selenium-release.storage.googleapis.com/3.0-beta2/selenium-java-3.0.0-beta2.zip">Download</a>&nbsp;&nbsp;</td>
+        <td>3.0.0-beta3</td>
+        <td>2016-09-01</td>
+        <td><a href="http://selenium-release.storage.googleapis.com/3.0-beta3/selenium-java-3.0.0-beta3.zip">Download</a>&nbsp;&nbsp;</td>
         <td><a href="http://goo.gl/5IVvjZ">Change log</a>&nbsp;&nbsp;</td>
         <td><a href="http://goo.gl/Grc6tm" alt="Javadoc">Javadoc</a></td>
       </tr>
       <tr>
         <td>C#</td>
-        <td>3.0.0-beta2</td>
-        <td>2016-08-04</td>
-        <td><a href="http://selenium-release.storage.googleapis.com/3.0-beta2/selenium-dotnet-3.0.0-beta2.zip">Download</a></td>
+        <td>3.0.0-beta3</td>
+        <td>2016-09-02</td>
+        <td><a href="http://selenium-release.storage.googleapis.com/3.0-beta3/selenium-dotnet-3.0.0-beta3.zip">Download</a></td>
         <td><a href="http://goo.gl/t3faSQ">Change log</a></td>
         <td><a href="http://goo.gl/uutZjZ">API docs</a></td>
       </tr>
       <tr>
         <td>Ruby</td>
-        <td>3.0.0.beta2.1</td>
-        <td>2016-08-03</td>
+        <td>3.0.0.beta3.1</td>
+        <td>2016-09-03</td>
         <td><a href="http://rubygems.org/gems/selenium-webdriver">Download</a></td>
         <td><a href="http://goo.gl/zNfSLK">Change log</a></td>
         <td><a href="http://goo.gl/jzh4RU">API docs</a></td>
@@ -109,7 +110,7 @@
       </tr>
       <tr>
         <td>Javascript (Node)</td>
-        <td>3.0.0-beta-1</td>
+        <td>3.0.0-beta-2</td>
         <td>2016-08-07</td>
         <td><a href="https://npmjs.org/package/selenium-webdriver">Download</a></td>
         <td><a href="http://goo.gl/e6smYw">Change log</a></td>
@@ -118,7 +119,7 @@
     </tbody>
   </table>
   <h4>C# NuGet</h4>
-  <p>NuGet latest release is 2.53.1, Released on 2016-06-29</p>
+  <p>NuGet latest release is 3.0.0-beta3, Released on 2016-09-02</p>
   <ul>
     <li><a href="http://www.nuget.org/List/Packages/Selenium.RC">RC</a></li>
     <li><a href="http://www.nuget.org/List/Packages/Selenium.WebDriver">WebDriver</a></li>
@@ -126,7 +127,7 @@
     <li><a href="http://www.nuget.org/List/Packages/Selenium.Support">Support</a></li>
   </ul>
 
-  <h3>SafariDriver - DEPRECATED</h3>
+  <h3>SafariDriver - DEPRECATED - use Apple's SafariDriver with Safari 10+</h3>
   <p>SafariDriver now requires manual installation of the extension prior to automation</p>
   <ul>
     <li>Latest release <a href="http://selenium-release.storage.googleapis.com/2.48/SafariDriver.safariextz">2.48.0</a></li>
@@ -201,6 +202,11 @@
         <td colspan=2>&nbsp;</td>
         <td><a href="https://developer.microsoft.com/en-us/microsoft-edge/platform/issues/">issue tracker</a></td>
         <td><a href="https://developer.microsoft.com/en-us/microsoft-edge/platform/documentation/webdriver-commands/">Implementation Status</a></td>
+      </tr>
+      <tr>
+        <td><a href="https://webkit.org/blog/6900/webdriver-support-in-safari-10/">SafariDriver</a></td>
+        <td colspan=2>&nbsp;</td>
+        <td><a href="https://bugreport.apple.com/">issue tracker</a></td>
       </tr>
       <tr>
         <td><a href="https://github.com/forcedotcom/windowsphonedriver/">Windows Phone</a></td>
