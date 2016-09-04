@@ -81,8 +81,8 @@ your project.
                 <dependencies>
                     <dependency>
                         <groupId>org.seleniumhq.selenium</groupId>
-                        <artifactId>selenium-java</artifactId>
-                        <version>3.0.0-beta2</version>
+                        <artifactId>selenium-server</artifactId>
+                        <version>3.0.0-beta3</version>
                     </dependency>
                 </dependencies>
         </project>
