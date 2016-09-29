@@ -45,7 +45,7 @@
   <p>Download version <a href="https://goo.gl/AmXokZ">3.0.0-beta4</a>
   <!-- minified link maintained by lukeis to try to track download counts. please talk to him for updating this link or to get the current download count. -->
   </p>
-  <p>To run Selenium tests exported from IDE, use the <a href="http://goo.gl/NKlnRC">Selenium Html Runner</a>.</p>
+  <p>To run Selenium tests exported from IDE, use the <a href="https://goo.gl/tjfHAJ">Selenium Html Runner</a>.</p>
   <p>To use the Selenium Server in a Grid configuration <a href="https://github.com/SeleniumHQ/selenium/wiki/Grid2">see the wiki page</a>.</p>
 
   <h3>The Internet Explorer Driver Server</h3>
