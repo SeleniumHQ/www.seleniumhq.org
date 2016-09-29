@@ -42,7 +42,7 @@
 
   <h3>Selenium Standalone Server</h3>
   <p>The Selenium Server is needed in order to run Remote Selenium WebDriver. Selenium 3.X is no longer capable of running Selenium RC directly, rather it does it through emulation and the WebDriverBackedSelenium interface.</p>
-  <p>Download version <a href="http://goo.gl/EUxR76">3.0.0-beta3</a>
+  <p>Download version <a href="https://goo.gl/AmXokZ">3.0.0-beta4</a>
   <!-- minified link maintained by lukeis to try to track download counts. please talk to him for updating this link or to get the current download count. -->
   </p>
   <p>To run Selenium tests exported from IDE, use the <a href="http://goo.gl/NKlnRC">Selenium Html Runner</a>.</p>
@@ -78,9 +78,9 @@
     <tbody>
       <tr>
         <td>Java</td>
-        <td>3.0.0-beta3</td>
-        <td>2016-09-01</td>
-        <td><a href="http://selenium-release.storage.googleapis.com/3.0-beta3/selenium-java-3.0.0-beta3.zip">Download</a>&nbsp;&nbsp;</td>
+        <td>3.0.0-beta4</td>
+        <td>2016-09-29</td>
+        <td><a href="http://selenium-release.storage.googleapis.com/3.0-beta4/selenium-java-3.0.0-beta4.zip">Download</a>&nbsp;&nbsp;</td>
         <td><a href="http://goo.gl/5IVvjZ">Change log</a>&nbsp;&nbsp;</td>
         <td><a href="http://goo.gl/Grc6tm" alt="Javadoc">Javadoc</a></td>
       </tr>
