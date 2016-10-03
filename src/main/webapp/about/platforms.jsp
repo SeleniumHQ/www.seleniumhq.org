@@ -91,7 +91,7 @@
 
   <div class="language">
     <h4>Java</h4>
-    <p>Frameworks available: <a href="https://github.com/junit-team/junit">JUnit</a>, <a href="http://testng.org/doc/index.html">TestNG</a></p>
+    <p>Frameworks available: <a href="https://github.com/junit-team/junit">JUnit</a>, <a href="http://testng.org/doc/index.html">TestNG</a>, <a href="https://qmetry.github.io/qaf/">QAF</a></p>
   </div>
 
   <div class="language">
