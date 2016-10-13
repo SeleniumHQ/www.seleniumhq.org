@@ -82,7 +82,7 @@ your project.
                     <dependency>
                         <groupId>org.seleniumhq.selenium</groupId>
                         <artifactId>selenium-server</artifactId>
-                        <version>3.0.0-beta4</version>
+                        <version>3.0.0</version>
                     </dependency>
                 </dependencies>
         </project>
