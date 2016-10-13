@@ -86,9 +86,9 @@
       </tr>
       <tr>
         <td>C#</td>
-        <td>3.0.0-beta3</td>
-        <td>2016-09-02</td>
-        <td><a href="http://selenium-release.storage.googleapis.com/3.0-beta3/selenium-dotnet-3.0.0-beta3.zip">Download</a></td>
+        <td>3.0.0</td>
+        <td>2016-10-13</td>
+        <td><a href="http://selenium-release.storage.googleapis.com/3.0/selenium-dotnet-3.0.0.zip">Download</a></td>
         <td><a href="http://goo.gl/t3faSQ">Change log</a></td>
         <td><a href="http://goo.gl/uutZjZ">API docs</a></td>
       </tr>
@@ -119,7 +119,7 @@
     </tbody>
   </table>
   <h4>C# NuGet</h4>
-  <p>NuGet latest release is 3.0.0-beta3, Released on 2016-09-02</p>
+  <p>NuGet latest release is 3.0.0, Released on 2016-10-13</p>
   <ul>
     <li><a href="http://www.nuget.org/List/Packages/Selenium.RC">RC</a></li>
     <li><a href="http://www.nuget.org/List/Packages/Selenium.WebDriver">WebDriver</a></li>
