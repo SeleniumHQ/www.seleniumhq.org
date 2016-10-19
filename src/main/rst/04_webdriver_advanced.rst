@@ -326,4 +326,4 @@ Todo
 
 Parallelizing Your Test Runs
 ----------------------------
-Todo
+An open source project supporting parallelization of TestNG/Selenium tests is available: **Concurrent Selenium TestNG (COSENG)**. COSENG is a Java implementation supporting concurrent (parallel) TestNG and Selenium UI testing. Supports TestNG parallel modes *tests*, *classes* and *methods*. *In addition COSENG can create a single web driver instance that persists across all TestNG suites* allowing for complex end to end testing with composable suites. COSENG supports Selenium GRID, local execution on Linux and Win10 and browsers Google Chrome, Mozilla Firefox, Windows Edge and Internet Explorer. Standalone jar executable, source and JavaDoc available at: https://github.com/siostechcorp/coseng/releases For a quick demo, documentation and details visit: https://github.com/siostechcorp/coseng/wiki
