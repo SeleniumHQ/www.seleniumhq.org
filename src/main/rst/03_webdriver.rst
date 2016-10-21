@@ -81,8 +81,8 @@ your project.
                 <dependencies>
                     <dependency>
                         <groupId>org.seleniumhq.selenium</groupId>
-                        <artifactId>selenium-java</artifactId>
-                        <version>3.0.0-beta2</version>
+                        <artifactId>selenium-server</artifactId>
+                        <version>3.0.1</version>
                     </dependency>
                 </dependencies>
         </project>
@@ -1240,6 +1240,28 @@ e.g. http://example.com/some404page).
     $driver->delete_cookie_named("key");
     # Or all of them
     $driver->delete_all_cookies();
+    
+
+.. code-block:: javascript
+
+    # Go to the correct domain
+    driver.get('http://www.example.com');
+    
+    # Now set the basic cookie. Here's one for the entire domain
+    # the cookie name here is 'key' and its value is 'value'
+    driver.manage().addCookie({name: 'cookie-1', value: 'cookieValue'});
+    
+    # And now output all the available cookies for the current URL
+    driver.manage().getCookies().then( (loadedCookies) =>{
+    	for (let cookie in loadedCookies) {
+    	console.log('printing Cookies loaded : '+cookie);
+      	}
+	});
+    # You can delete cookies in 2 ways
+    # By name
+    driver.manage().deleteCookie('cookie-1');
+    # Or all of them
+    driver.manage().deleteAllCookies();
 
 
 Changing the User Agent

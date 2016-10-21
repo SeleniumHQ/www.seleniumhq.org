@@ -61,7 +61,7 @@ so you don't have to code an ExpectedCondition class yourself or create your own
     wait = WebDriverWait(driver, 10)
     element = wait.until(EC.element_to_be_clickable((By.ID,'someid')))
 
-The ExpectedConditions package (`Java <https://seleniumhq.github.io/selenium/docs/api/java/org/openqa/selenium/support/ui/ExpectedConditions.html>`_)  (`Python <https://seleniumhq.github.io/selenium/docs/api/py/webdriver_support/selenium.webdriver.support.expected_conditions.html>`_) (`.NET <https://seleniumhq.github.io/selenium/docs/api/dotnet/html/AllMembers_T_OpenQA_Selenium_Support_UI_ExpectedConditions.htm>`_) contains a set of predefined conditions to use with WebDriverWait.
+The ExpectedConditions package (`Java <https://seleniumhq.github.io/selenium/docs/api/java/org/openqa/selenium/support/ui/ExpectedConditions.html>`_)  (`Python <https://seleniumhq.github.io/selenium/docs/api/py/webdriver_support/selenium.webdriver.support.expected_conditions.html>`_) (`.NET <https://seleniumhq.github.io/selenium/docs/api/dotnet/html/T_OpenQA_Selenium_Support_UI_ExpectedConditions.htm>`_) contains a set of predefined conditions to use with WebDriverWait.
 
 Implicit Waits
 ~~~~~~~~~~~~~~
