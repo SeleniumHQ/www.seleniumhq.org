@@ -32,6 +32,10 @@
             <a rel="nofollow" href="http://spoon.net/selenium">Spoonium</a> -
             unlimited Selenium testing on all major browsers.
         </li>
+        <li>
+            <a rel="nofollow" href="https://crossbrowsertesting.com/">CrossBrowserTesting</a> -
+            test Selenium on 1000+ browsers and devices in the cloud.
+        </li>
     </ul>
 
     <h2>Monitoring &amp; Load Testing Services</h2>
