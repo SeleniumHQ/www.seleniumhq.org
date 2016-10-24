@@ -1117,7 +1117,7 @@ Selenium-RC 1.0和以后的版本会自动运行在单独的配置下，因此�
 
 .. _Mozilla's KNowledge Base: http://support.mozilla.com/zh-CN/kb/Managing+profiles
 
-.. _html-suite:
+.. _html-suite-cn:
 
 用-htmlSuite直接在服务器里运行Selenese
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
