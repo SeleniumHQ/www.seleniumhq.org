@@ -396,7 +396,7 @@ of a portal) then this safe method technique should not be used.
 
 
 User Interface Mapping
-----------
+----------------------
 
 A User Interface (UI) Map is a mechanism that stores all the locators for a test suite in one place
 for easy modification when identifiers or paths to UI elements change in
