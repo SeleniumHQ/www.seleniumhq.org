@@ -395,12 +395,12 @@ to be able to carry out further operations (i.e. login button on home page
 of a portal) then this safe method technique should not be used.
 
 
-UI Mapping
+User Interface Mapping
 ----------
 
-A UI Map is a mechanism that stores all the locators for a test suite in one place
+A User Interface (UI) Map is a mechanism that stores all the locators for a test suite in one place
 for easy modification when identifiers or paths to UI elements change in
-the AUT.  The test script then uses the UI Map for locating
+the application under test (AUT).  The test script then uses the UI Map for locating
 the elements to be tested.  Basically, a UI map is a repository of test script objects
 that correspond to UI elements of the application being tested.  
 
