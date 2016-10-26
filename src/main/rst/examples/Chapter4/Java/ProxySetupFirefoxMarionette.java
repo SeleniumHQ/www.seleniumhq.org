@@ -8,8 +8,15 @@ json.addProperty("httpProxyPort", PORT);
 json.addProperty("sslProxy", PROXY);
 json.addProperty("sslProxyPort", PORT);
 
-DesiredCapabilities desired = DesiredCapabilities.firefox();
-DesiredCapabilities required = new DesiredCapabilities();
-required.setCapability("proxy", json);
+DesiredCapabilities cap = new DesiredCapabilities();
+cap.setCapability("proxy", json);
 
-driver = new FirefoxDriver(desired, required);
+GeckoDriverService service =new GeckoDriverService.Builder(firefoxBinary)
+  .usingDriverExecutable(new File("path to geckodriver"))
+  .usingAnyFreePort()
+  .usingAnyFreePort()
+  .build();
+service.start();
+
+// GeckoDriver currently needs the Proxy set in RequiredCapabilities
+driver = new FirefoxDriver(service, cap, cap);

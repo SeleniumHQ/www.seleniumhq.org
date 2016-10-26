@@ -286,12 +286,12 @@ As of this writing it is unknown how to set the proxy programmatically.
 .. #literalinclude:: /examples/Chapter4/ruby/ProxySetupChrome.rb
 ..    :language: ruby
 
-Firefox up to version 46
-+++++++
+Firefox up to version 47.0.1
+++++++++++++++++++++++++++++
 Firefox maintains its proxy configuration in a profile. You can preset the
 proxy in a profile and use that Firefox Profile or you can set it on profile
 that is created on the fly as is shown in the following example -
-deprecated, no longer working with Marionette driver.
+deprecated, no longer working with GeckoDriver.
 
 .. literalinclude:: /examples/Chapter4/Java/ProxySetupFirefox.java
     :language: java
@@ -305,12 +305,12 @@ deprecated, no longer working with Marionette driver.
 .. literalinclude:: /examples/Chapter4/ruby/ProxySetupFirefox.rb
     :language: ruby
 
-Firefox version 47 and newer - Marionette driver
-+++++++
+Firefox version 48 and newer - GeckoDriver
+++++++++++++++++++++++++++++++++++++++++++
 Firefox maintains its proxy configuration in a profile. You can preset the
 proxy in a profile and use that Firefox Profile or you can set it on profile
 that is created on the fly as is shown in the following example. With
-Marionette driver the proxy has to be passed through the required capabilities.
+GeckoDriver the proxy has to be passed through the required capabilities.
 
 .. literalinclude:: /examples/Chapter4/Java/ProxySetupFirefoxMarionette.java
     :language: java
