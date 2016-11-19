@@ -4,7 +4,8 @@
 .LSOverride
 
 # Icon must end with two \r
-Icon
+Icon
+
 
 # Thumbnails
 ._*
@@ -42,3 +43,5 @@ hs_err_pid*
 # JetBrains
 .idea/
 *.iml
+*.ipr
+*.iws
