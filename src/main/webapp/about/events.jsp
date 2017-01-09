@@ -12,7 +12,7 @@
 <%@include file="/jsp/header.jspf"%><div id="mainContent">
   <h2>Selenium Events</h2>
 
-  <p>Would you like to be informed about Selenium Conf updates ? Then be sure to subscribe <a href="http://sfconservancy.us12.list-manage.com/subscribe?u=3a6910351d8076c15fe2b0b70&id=3d411f0d80">here.</a></p>
+  <p>Would you like to be informed about Selenium Conference ? Then be sure to subscribe <a href="http://sfconservancy.us12.list-manage.com/subscribe?u=3a6910351d8076c15fe2b0b70&id=3d411f0d80">here.</a></p>
 
   <iframe src="https://calendar.google.com/calendar/embed?src=hhjif43nv6va9d8lecpkifdjlc%40group.calendar.google.com&ctz=America/Los_Angeles" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
   <span style="font-size:8px">For access to this calendar, please request by <a href="https://github.com/SeleniumHQ/www.seleniumhq.org/issues/new?title=Requesting%20access%20to%20events%20calendar">creating a github issue</a></span>
