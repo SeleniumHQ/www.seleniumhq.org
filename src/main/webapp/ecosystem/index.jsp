@@ -35,6 +35,10 @@
         <li>
             <a rel="nofollow" href="https://crossbrowsertesting.com/">CrossBrowserTesting</a> -
             test Selenium on 1000+ browsers and devices in the cloud.
+        </li>       
+        <li>
+            <a rel="nofollow" href="https://www.testbirds.com/test-automation/?utm_source=docs.seleniumhq&utm_campaign=int-cloud-free-sponsorship&utm_medium=free-sponsorship">Testbirds</a> -
+            highly customisable desktop and mobile systems in the cloud on servers in Germany - can also run Selenium tests.
         </li>
     </ul>
 
