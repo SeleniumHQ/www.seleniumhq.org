@@ -157,7 +157,7 @@ The Actions class(es) allow you to build a Chain of Actions and perform them.
 There are too many possible combinations to count. Below are a few of the common
 interactions that you may want to use. For a full list of actions please refer to
 the API docs `Java <https://seleniumhq.github.io/selenium/docs/api/java/index.html?org/openqa/selenium/interactions/Actions.html>`_ 
-`C# <https://seleniumhq.github.io/selenium/docs/api/dotnet/html/AllMembers_T_OpenQA_Selenium_Interactions_Actions.htm>`_ 
+`C# <https://seleniumhq.github.io/selenium/docs/api/dotnet/html/T_OpenQA_Selenium_Interactions_Actions.htm>`_ 
 `Ruby <https://seleniumhq.github.io/selenium/docs/api/rb/Selenium/WebDriver/ActionBuilder.html>`_ 
 `Python <https://seleniumhq.github.io/selenium/docs/api/py/webdriver/selenium.webdriver.common.action_chains.html>`_
 

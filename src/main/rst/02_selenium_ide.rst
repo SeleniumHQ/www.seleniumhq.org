@@ -894,8 +894,9 @@ the ``xpath=`` label when specifying an XPath locator.
 These examples cover some basics, but in order to learn more, the 
 following references are recommended:
 
-* `W3Schools XPath Tutorial <http://www.w3schools.com/Xpath/>`_ 
+* `W3Schools XPath Tutorial <http://www.w3schools.com/xsl/xpath_intro.asp>`_ 
 * `W3C XPath Recommendation <http://www.w3.org/TR/xpath>`_
+* `An interactive XPath exercises <http://learn.onion.net/language=en/35426/w3c-xpath>`_
 
 There are also a couple of very useful Firefox Add-ons that can assist in 
 discovering the XPath of an element:
