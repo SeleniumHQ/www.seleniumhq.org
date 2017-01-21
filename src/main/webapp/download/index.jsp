@@ -102,7 +102,7 @@
       </tr>
       <tr>
         <td>Python</td>
-        <td>Selenium 3.0.2</td>
+        <td>3.0.2</td>
         <td>2016-11-29</td>
         <td><a href="http://pypi.python.org/pypi/selenium">Download</a></td>
         <td><a href="http://goo.gl/rHRdgk">Change log</a></td>
