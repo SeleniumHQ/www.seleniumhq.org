@@ -1,6 +1,6 @@
 <script src="/tophatpromo.js" type="text/javascript"></script>
 <link rel="stylesheet" type="text/css" href="/tophatpromo.css"/>
 <div id="promo">
-  <b>The CFP for Selenium Conf 2017 is now OPEN!</b> Learn more about the conference and how to submit your talk <b><a target="_blank" href=http://bit.ly/2hdnFwN>HERE</a></b>.
+  <b>The SeleniumConf Austin CFP closes this Friday at 5PM Eastern!</b> Learn more about the conference and how to submit your talk <b><a target="_blank" href=http://bit.ly/2hdnFwN>HERE</a></b>.
   <a id="close">x</a>
 </div>
