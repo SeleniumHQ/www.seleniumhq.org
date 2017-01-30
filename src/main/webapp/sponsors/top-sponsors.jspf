@@ -2,11 +2,8 @@
 
 <%@include file="selenium-sponsors.jspf"%>
 
-<h3>Platinum-Level Sponsors</h3>
+<!--<h3>Platinum-Level Sponsors</h3>-->
 
-<div class="selenium-sponsors">
-    <!-- Sponsorship start date: April 26, 2015 -->
-    <a href="https://crossbrowsertesting.com/selenium-testing?utm_source=seleniumhq&utm_campaign=sshp"><img src="/sponsors/CBT-Logo.png" border="0" width="200"/></a>
-    
+
 </div>
 
