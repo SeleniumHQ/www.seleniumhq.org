@@ -210,6 +210,12 @@
         <td><a href="https://developer.microsoft.com/en-us/microsoft-edge/platform/documentation/webdriver-commands/">Implementation Status</a></td>
       </tr>
       <tr>
+        <td><a href="https://github.com/seleniumhq/htmlunit-driver">HtmlUnitDriver</a></td>
+        <td><a href="https://github.com/SeleniumHQ/htmlunit-driver/releases">2.23.2</a>&nbsp;&nbsp;</td>
+        <td>&nbsp;</td>
+        <td><a href="https://github.com/seleniumhq/htmlunit-driver/issues">issue tracker</a></td>
+      </tr>
+      <tr>
         <td><a href="https://webkit.org/blog/6900/webdriver-support-in-safari-10/">SafariDriver</a></td>
         <td colspan=2>&nbsp;</td>
         <td><a href="https://bugreport.apple.com/">issue tracker</a></td>
