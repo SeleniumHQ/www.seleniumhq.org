@@ -47,7 +47,6 @@
   </p>
   <p>To run Selenium tests exported from IDE, use the <a href="https://goo.gl/Br1P0Z">Selenium Html Runner</a>.</p>
   <p>To use the Selenium Server in a Grid configuration <a href="https://github.com/SeleniumHQ/selenium/wiki/Grid2">see the wiki page</a>.</p>
-  <p>Selenium-Grid 3.0.1 <a href="https://launchpad.net/~siostechcorp/+archive/ubuntu/selenium-grid">Ubuntu PPA</a> includes Hub, Node, Headless Node; Nodes bundled with Chromedriver and Geckodriver.</p>
 
   <h3>The Internet Explorer Driver Server</h3>
   <p>This is required if you want to make use of the latest and greatest
@@ -335,6 +334,9 @@
     <li><a href="http://caiusproject.com/">Tcl</a> by Tobias Koch</li>
   </ul>
 
+  <h3>Selenium GRID Packaging</h3>
+  <p><a href="https://launchpad.net/~siostechcorp/+archive/ubuntu/selenium-grid">Ubuntu PPA</a> for Hub, Node, Headless Node; Nodes bundled with Chromedriver and Geckodriver.</p>
+	
   <h3>Selenium GRID Plugins</h3>
   <p>Selenium grid can be extended by extending Java classes.</p>
 
