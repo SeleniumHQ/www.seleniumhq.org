@@ -42,7 +42,7 @@
 
   <h3>Selenium Standalone Server</h3>
   <p>The Selenium Server is needed in order to run Remote Selenium WebDriver. Selenium 3.X is no longer capable of running Selenium RC directly, rather it does it through emulation and the WebDriverBackedSelenium interface.</p>
-  <p>Download version <a href="https://goo.gl/Lyo36k">3.0.1</a>
+  <p>Download version <a href="https://goo.gl/Lyo36k">3.1.0</a>
   <!-- minified link maintained by lukeis to try to track download counts. please talk to him for updating this link or to get the current download count. -->
   </p>
   <p>To run Selenium tests exported from IDE, use the <a href="https://goo.gl/Br1P0Z">Selenium Html Runner</a>.</p>
@@ -53,10 +53,10 @@
   features of the WebDriver InternetExplorerDriver. Please make sure that this
   is available on your $PATH (or %PATH% on Windows) in order for the IE Driver
   to work as expected.</p>
-  <p>Download version 3.0 for (recommended) <a
-    href="http://selenium-release.storage.googleapis.com/3.0/IEDriverServer_Win32_3.0.0.zip">32
+  <p>Download version 3.1 for (recommended) <a
+    href="http://selenium-release.storage.googleapis.com/3.1/IEDriverServer_Win32_3.1.0.zip">32
     bit Windows IE</a> or <a
-    href="http://selenium-release.storage.googleapis.com/3.0/IEDriverServer_x64_3.0.0.zip">64 bit Windows IE</a><br/>
+    href="http://selenium-release.storage.googleapis.com/3.1/IEDriverServer_x64_3.1.0.zip">64 bit Windows IE</a><br/>
     <a href="http://goo.gl/LJ07LL">CHANGELOG</a></p>
 
   <a name="client-drivers"/>
@@ -78,24 +78,24 @@
     <tbody>
       <tr>
         <td>Java</td>
-        <td>3.0.1</td>
-        <td>2016-10-18</td>
-        <td><a href="http://selenium-release.storage.googleapis.com/3.0/selenium-java-3.0.1.zip">Download</a>&nbsp;&nbsp;</td>
+        <td>3.1.0</td>
+        <td>2017-02-16</td>
+        <td><a href="http://selenium-release.storage.googleapis.com/3.1/selenium-java-3.1.0.zip">Download</a>&nbsp;&nbsp;</td>
         <td><a href="http://goo.gl/5IVvjZ">Change log</a>&nbsp;&nbsp;</td>
         <td><a href="http://goo.gl/Grc6tm" alt="Javadoc">Javadoc</a></td>
       </tr>
       <tr>
         <td>C#</td>
-        <td>3.0.0</td>
-        <td>2016-10-13</td>
-        <td><a href="http://selenium-release.storage.googleapis.com/3.0/selenium-dotnet-3.0.0.zip">Download</a></td>
+        <td>3.1.0</td>
+        <td>2017-02-16</td>
+        <td><a href="http://selenium-release.storage.googleapis.com/3.1/selenium-dotnet-3.1.0.zip">Download</a></td>
         <td><a href="http://goo.gl/t3faSQ">Change log</a></td>
         <td><a href="http://goo.gl/uutZjZ">API docs</a></td>
       </tr>
       <tr>
         <td>Ruby</td>
-        <td>3.0.0</td>
-        <td>2016-10-13</td>
+        <td>3.1.0</td>
+        <td>2017-02-14</td>
         <td><a href="http://rubygems.org/gems/selenium-webdriver">Download</a></td>
         <td><a href="http://goo.gl/zNfSLK">Change log</a></td>
         <td><a href="http://goo.gl/jzh4RU">API docs</a></td>
@@ -110,8 +110,8 @@
       </tr>
       <tr>
         <td>Javascript (Node)</td>
-        <td>3.0.0-beta-2</td>
-        <td>2016-08-07</td>
+        <td>3.1.0</td>
+        <td>2017-02-15</td>
         <td><a href="https://npmjs.org/package/selenium-webdriver">Download</a></td>
         <td><a href="http://goo.gl/e6smYw">Change log</a></td>
         <td><a href="http://goo.gl/hohAut">API docs</a></td>
@@ -119,7 +119,7 @@
     </tbody>
   </table>
   <h4>C# NuGet</h4>
-  <p>NuGet latest release is 3.0.0, Released on 2016-10-13</p>
+  <p>NuGet latest release is 3.1.0, Released on 2017-02-16</p>
   <ul>
     <li><a href="http://www.nuget.org/List/Packages/Selenium.RC">RC</a></li>
     <li><a href="http://www.nuget.org/List/Packages/Selenium.WebDriver">WebDriver</a></li>
