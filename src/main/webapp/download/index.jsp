@@ -211,11 +211,11 @@
       </tr>
       <tr>
         <td><a href="https://github.com/seleniumhq/htmlunit-driver">HtmlUnitDriver</a></td>
-        <td><a href="https://github.com/SeleniumHQ/htmlunit-driver/releases">2.24</a></td>
+        <td><a href="https://github.com/SeleniumHQ/htmlunit-driver/releases">2.25</a></td>
         <td>&nbsp;</td>
         <td><a href="https://github.com/seleniumhq/htmlunit-driver/issues">issue tracker</a></td>
 	<td>&nbsp;&nbsp;</td>
-	<td>Released 2017-02-14</td>
+	<td>Released 2017-02-23</td>
       </tr>
       <tr>
         <td><a href="https://webkit.org/blog/6900/webdriver-support-in-safari-10/">SafariDriver</a></td>
