@@ -1,6 +1,6 @@
 <script src="/tophatpromo.js" type="text/javascript"></script>
 <link rel="stylesheet" type="text/css" href="/tophatpromo.css"/>
 <div id="promo">
-  <!--<b>The last batch of tickets for SeleniumConf Austin are on sale NOW!</b> Get yours <b><a target="_blank" href=https://www.eventbrite.com/e/seconf-austin-2017-tickets-30824361495?aff=seleniumhq>HERE</a></b> (while supplies last)</b>.
-  <a id="close">x</a>-->
+  <b><a target='_blank' href=http://seleniumconf.com/>SeleniumConf Austin</a></b> is happening now! Watch the live stream <b><a target="_blank" href=http://seleniumconf.com/stream/>HERE</a></b>.
+  <a id="close">x</a>
 </div>
