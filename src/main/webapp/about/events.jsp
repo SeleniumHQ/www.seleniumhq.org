@@ -27,6 +27,7 @@
    <li>2015 Portland <a href="https://www.youtube.com/playlist?list=PLRdSclUtJDYXehIM7SyQyIghLDmE015Gc">talk recordings</a></li>
    <li>2016 Bangalore <a href="https://www.youtube.com/playlist?list=PL9Z-JgiTsOYTd-lsY6fC4zCMLXk1bFzxo">talk recordings</a></li>
    <li>2016 London <a href="https://www.youtube.com/playlist?list=PLPJWVzLeEy93T9EBvfn9KAmrYYez3oGcD">talk recordings</a></li>
+   <li>2017 Austin <a href="https://www.youtube.com/playlist?list=PLRdSclUtJDYXFVU37NEqh4KkT78BLqjcG">talk recordings</a></li>
   </ul>
 
 </body>
