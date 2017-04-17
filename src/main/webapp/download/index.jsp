@@ -263,6 +263,12 @@
         <td><a href="https://github.com/appium/appium/issues">issue tracker</a></td>
       </tr>
       <tr>
+        <td><a href="https://github.com/paul-hammant/ngWebDriver">ngWebDriver</a></td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td><a href="https://github.com/paul-hammant/ngWebDriver/issues">issue tracker</a></td>
+      </tr>
+      <tr>
         <td><a href="https://github.com/crosswalk-project/crosswalk-web-driver">CrossWalk</a></td>
         <td>&nbsp;</td>
         <td>&nbsp;</td>
