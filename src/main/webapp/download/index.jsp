@@ -80,7 +80,7 @@
         <td>Java</td>
         <td>3.4.0</td>
         <td>2017-04-21</td>
-        <td><a href="http//selenium-release.storage.googleapis.com/3.4/selenium-java-3.4.0.zip">Download</a>&nbsp;&nbsp;</td>
+        <td><a href="http://selenium-release.storage.googleapis.com/3.4/selenium-java-3.4.0.zip">Download</a>&nbsp;&nbsp;</td>
         <td><a href="http://goo.gl/5IVvjZ">Change log</a>&nbsp;&nbsp;</td>
         <td><a href="http://goo.gl/Grc6tm" alt="Javadoc">Javadoc</a></td>
       </tr>
