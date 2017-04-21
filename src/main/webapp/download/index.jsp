@@ -53,10 +53,10 @@
   features of the WebDriver InternetExplorerDriver. Please make sure that this
   is available on your $PATH (or %PATH% on Windows) in order for the IE Driver
   to work as expected.</p>
-  <p>Download version 3.3 for (recommended) <a
-    href="http://selenium-release.storage.googleapis.com/3.3/IEDriverServer_Win32_3.3.0.zip">32
+  <p>Download version 3.4 for (recommended) <a
+    href="http://selenium-release.storage.googleapis.com/3.4/IEDriverServer_Win32_3.4.0.zip">32
     bit Windows IE</a> or <a
-    href="http://selenium-release.storage.googleapis.com/3.3/IEDriverServer_x64_3.3.0.zip">64 bit Windows IE</a><br/>
+    href="http://selenium-release.storage.googleapis.com/3.4/IEDriverServer_x64_3.4.0.zip">64 bit Windows IE</a><br/>
     <a href="http://goo.gl/LJ07LL">CHANGELOG</a></p>
 
   <a name="client-drivers"/>
@@ -86,24 +86,24 @@
       </tr>
       <tr>
         <td>C#</td>
-        <td>3.3.0</td>
-        <td>2017-03-07</td>
+        <td>3.4.0</td>
+        <td>2017-04-21</td>
         <td><a href="http://selenium-release.storage.googleapis.com/3.3/selenium-dotnet-3.3.0.zip">Download</a></td>
         <td><a href="http://goo.gl/t3faSQ">Change log</a></td>
         <td><a href="http://goo.gl/uutZjZ">API docs</a></td>
       </tr>
       <tr>
         <td>Ruby</td>
-        <td>3.3.0</td>
-        <td>2017-03-07</td>
+        <td>3.4.0</td>
+        <td>2017-04-21</td>
         <td><a href="http://rubygems.org/gems/selenium-webdriver">Download</a></td>
         <td><a href="http://goo.gl/zNfSLK">Change log</a></td>
         <td><a href="http://goo.gl/jzh4RU">API docs</a></td>
       </tr>
       <tr>
         <td>Python</td>
-        <td>3.3.3</td>
-        <td>2017-04-04</td>
+        <td>3.4.0</td>
+        <td>2017-04-21</td>
         <td><a href="http://pypi.python.org/pypi/selenium">Download</a></td>
         <td><a href="http://goo.gl/rHRdgk">Change log</a></td>
         <td><a href="http://goo.gl/sG1GfQ">API docs</a></td>
