@@ -119,7 +119,7 @@
     </tbody>
   </table>
   <h4>C# NuGet</h4>
-  <p>NuGet latest release is 3.3.0, Released on 2017-03-07</p>
+  <p>NuGet latest release is 3.4.0, Released on 2017-04-21</p>
   <ul>
     <li><a href="http://www.nuget.org/List/Packages/Selenium.WebDriver">WebDriver</a></li>
     <li><a href="http://www.nuget.org/List/Packages/Selenium.WebDriverBackedSelenium">WebDriverBackedSelenium</a></li>
