@@ -173,13 +173,14 @@
       <th>&nbsp;</th>
     </thead>
     <tbody>
-	  <tr>
-		<td><a href="https://github.com/mozilla/geckodriver/releases">Mozilla GeckoDriver</a></td>
-		<td>&nbsp;</td>
-		<td>&nbsp;</td>
-		<td><a href="https://github.com/mozilla/geckodriver/issues">issue tracker</a></td>
-		<td colspan=2><a href="https://developer.mozilla.org/en-US/docs/Mozilla/QA/Marionette/WebDriver/status">Implementation Status</a></td>
-	  </tr>
+      <tr>
+	<td><a href="https://github.com/mozilla/geckodriver/">Mozilla GeckoDriver</a></td>
+	<td><a href="https://github.com/mozilla/geckodriver/releases">0.16.0</a>&nbsp;&nbsp;</td>
+	<td><a href="https://github.com/mozilla/geckodriver/blob/master/CHANGES.md">change log</a>&nbsp;&nbsp;</td>
+	<td><a href="https://github.com/mozilla/geckodriver/issues">issue tracker</a>&nbsp;&nbsp;</td>
+	<td><a href="https://developer.mozilla.org/en-US/docs/Mozilla/QA/Marionette/WebDriver/status">Implementation Status</a></td>
+	<td>Released 2017-04-21</td>
+      </tr>
       <tr>
         <td><a href="https://sites.google.com/a/chromium.org/chromedriver/">Google Chrome Driver</a></td>
         <td><a href="http://chromedriver.storage.googleapis.com/index.html?path=2.29/">2.29</a>&nbsp;&nbsp;</td>
@@ -190,18 +191,11 @@
       </tr>
       <tr>
         <td><a href="http://choice.opera.com/developer/tools/operadriver/">Opera</a></td>
-        <td><a href="https://github.com/operasoftware/operachromiumdriver/releases">0.2.2</a></td>
+        <td><a href="https://github.com/operasoftware/operachromiumdriver/releases">2.27</a></td>
         <td>&nbsp;</td>
         <td><a href="https://github.com/operasoftware/operachromiumdriver/issues">issue tracker</a></td>
         <td><a href="https://github.com/SeleniumHQ/selenium/wiki/OperaDriver">selenium wiki page</a></td>
-        <td>Released 2014-11-06</td>
-      </tr>
-      <tr>
-        <td><a href="https://github.com/detro/ghostdriver">GhostDriver</a></td>
-        <td>(PhantomJS)</td>
-        <td>&nbsp;</td>
-        <td><a href="https://github.com/detro/ghostdriver/issues">issue tracker</a></td>
-        <td><a href="http://www.youtube.com/watch?v=wqxkKIC2HDY">SeConf talk</a></td>
+        <td>Released 2017-04-04</td>
       </tr>
       <tr>
         <td><a href="https://developer.microsoft.com/en-us/microsoft-edge/tools/webdriver/">Microsoft Edge Driver</a></td>
@@ -209,6 +203,13 @@
         <td><a href="https://developer.microsoft.com/en-us/microsoft-edge/platform/issues/">issue tracker</a></td>
         <td><a href="https://developer.microsoft.com/en-us/microsoft-edge/platform/documentation/webdriver-commands/">Implementation Status</a></td>
       </tr>
+      <tr>
+        <td><a href="https://github.com/detro/ghostdriver">GhostDriver</a></td>
+        <td>(PhantomJS)</td>
+        <td>&nbsp;</td>
+        <td><a href="https://github.com/detro/ghostdriver/issues">issue tracker</a></td>
+        <td><a href="http://www.youtube.com/watch?v=wqxkKIC2HDY">SeConf talk</a></td>
+      </tr>	    
       <tr>
         <td><a href="https://github.com/seleniumhq/htmlunit-driver">HtmlUnitDriver</a></td>
         <td><a href="https://github.com/SeleniumHQ/htmlunit-driver/releases">2.26</a></td>
