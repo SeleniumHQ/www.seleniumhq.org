@@ -88,7 +88,7 @@
         <td>C#</td>
         <td>3.4.0</td>
         <td>2017-04-21</td>
-        <td><a href="http://selenium-release.storage.googleapis.com/3.3/selenium-dotnet-3.3.0.zip">Download</a></td>
+        <td><a href="http://selenium-release.storage.googleapis.com/3.4/selenium-dotnet-3.4.0">Download</a></td>
         <td><a href="http://goo.gl/t3faSQ">Change log</a></td>
         <td><a href="http://goo.gl/uutZjZ">API docs</a></td>
       </tr>
