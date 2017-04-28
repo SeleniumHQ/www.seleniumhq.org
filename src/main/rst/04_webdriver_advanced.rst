@@ -346,4 +346,4 @@ Todo
 
 Parallelizing Your Test Runs
 ----------------------------
-Todo
+While TestNG supports concurrent test execution, management of web driver lifecycle for Selenium testing can be challenging. The open source project Concurrent Selenium TestNG (`COSENG <https://github.com/siostechcorp/coseng>`_) aims to alleviate this burden. It supports TestNG's parallelization for methods, tests and classes. Additionally it can provide a single web driver instance that persists across all tests in a suite.
