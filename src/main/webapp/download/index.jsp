@@ -102,8 +102,8 @@
       </tr>
       <tr>
         <td>Python</td>
-        <td>3.4.0</td>
-        <td>2017-04-21</td>
+        <td>3.4.1</td>
+        <td>2017-04-27</td>
         <td><a href="http://pypi.python.org/pypi/selenium">Download</a></td>
         <td><a href="http://goo.gl/rHRdgk">Change log</a></td>
         <td><a href="http://goo.gl/sG1GfQ">API docs</a></td>
@@ -175,11 +175,11 @@
     <tbody>
       <tr>
 	<td><a href="https://github.com/mozilla/geckodriver/">Mozilla GeckoDriver</a></td>
-	<td><a href="https://github.com/mozilla/geckodriver/releases">0.16.0</a>&nbsp;&nbsp;</td>
+	<td><a href="https://github.com/mozilla/geckodriver/releases">0.16.1</a>&nbsp;&nbsp;</td>
 	<td><a href="https://github.com/mozilla/geckodriver/blob/master/CHANGES.md">change log</a>&nbsp;&nbsp;</td>
 	<td><a href="https://github.com/mozilla/geckodriver/issues">issue tracker</a>&nbsp;&nbsp;</td>
 	<td><a href="https://developer.mozilla.org/en-US/docs/Mozilla/QA/Marionette/WebDriver/status">Implementation Status</a></td>
-	<td>Released 2017-04-21</td>
+	<td>Released 2017-04-26</td>
       </tr>
       <tr>
         <td><a href="https://sites.google.com/a/chromium.org/chromedriver/">Google Chrome Driver</a></td>
