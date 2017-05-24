@@ -49,6 +49,11 @@
             <a rel="nofollow" href="http://webperformance.com/permlink/selenium-webdriver-integration">Web Performance Load Tester</a> -
             The no-coding real-browser load testing software that knows how many users your website can handle.
         </li>
+        <li>
+            <a rel="nofollow" href="https://butlerthing.io/products">TurboSelenium by ButlerThing</a> -
+            Load test using Selenium WebDriver. Manage thousands of concurrent virtual users running fully-headed browsers.
+        </li>
+
     </ul>
 
     <h2>Tools with Selenium Support</h2>
