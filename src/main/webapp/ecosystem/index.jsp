@@ -66,6 +66,10 @@
             <a rel="nofollow" href="http://www.redwoodhq.com">RedwoodHQ</a> -
             Open Source framework that allows users to develop automation code, create readable keyword driven test cases and execute them across multiple machines all under a single Web interface.
         </li>
+        <li>
+            <a rel="nofollow" href="https://www.agiletestware.com/bumblebee">Bumblebee</a> -
+            Commercial platform that allows you to map selenium tests to requirements in HP ALM, run tests in IDE or CI and automatically report the test results into HP ALM, and much more.
+        </li>
     </ul>
 
     <h2>Commercial Support, Services &amp; Training</h2>
