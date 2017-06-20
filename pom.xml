@@ -3,18 +3,18 @@
   <modelVersion>4.0.0</modelVersion>
 
   <!-- The Basics -->
-    <groupId>org.openqa.selenium</groupId>
-    <artifactId>selenium-website</artifactId>
-    <version>1.0-SNAPSHOT</version>
-    <name>Selenium Website</name>
-    <packaging>war</packaging>
-    <url>http://selenium.openqa.org</url>
+	<groupId>org.openqa.selenium</groupId>
+	<artifactId>selenium-website</artifactId>
+	<version>1.0-SNAPSHOT</version>
+	<name>Selenium Website</name>
+	<packaging>war</packaging>
+	<url>http://selenium.openqa.org</url>
 
     <prerequisites>
       <maven>3.1.0</maven>
     </prerequisites>
 
-    <dependencies>
+	<dependencies>
         
         <dependency>
             <groupId>com.google.appengine</groupId>
@@ -22,59 +22,59 @@
             <version>${appengine.version}</version>
         </dependency>
 
-        <dependency>
-            <groupId>javax.transaction</groupId>
-            <artifactId>jta</artifactId>
-            <version>1.1</version>
-        </dependency>
+		<dependency>
+			<groupId>javax.transaction</groupId>
+			<artifactId>jta</artifactId>
+			<version>1.1</version>
+		</dependency>
 
-        <dependency>
-            <groupId>org.apache.geronimo.specs</groupId>
-            <artifactId>geronimo-servlet_2.5_spec</artifactId>
-            <version>1.2</version>
-            <scope>provided</scope>
-        </dependency>
+		<dependency>
+			<groupId>org.apache.geronimo.specs</groupId>
+			<artifactId>geronimo-servlet_2.5_spec</artifactId>
+			<version>1.2</version>
+			<scope>provided</scope>
+		</dependency>
         <dependency>
             <groupId>javax.servlet</groupId>
             <artifactId>javax.servlet-api</artifactId>
             <version>3.0.1</version>
             <scope>provided</scope>
         </dependency>
-        <!--
-            Make use of JSP tags. Remove, if you don't use JSPs
-        -->
-        <dependency>
-            <artifactId>standard</artifactId>
-            <groupId>taglibs</groupId>
-            <version>1.1.2</version>
-            <type>jar</type>
-            <scope>runtime</scope>
-        </dependency>
+		<!--
+			Make use of JSP tags. Remove, if you don't use JSPs
+		-->
+		<dependency>
+			<artifactId>standard</artifactId>
+			<groupId>taglibs</groupId>
+			<version>1.1.2</version>
+			<type>jar</type>
+			<scope>runtime</scope>
+		</dependency>
 
-        <!-- These dependencies are here just for enabling logging -->
-        <dependency>
-            <groupId>org.slf4j</groupId>
-            <artifactId>slf4j-api</artifactId>
-            <version>1.7.18</version>
-        </dependency>
+		<!-- These dependencies are here just for enabling logging -->
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-api</artifactId>
+			<version>1.7.18</version>
+		</dependency>
 
-        <dependency>
-            <groupId>ch.qos.logback</groupId>
-            <artifactId>logback-classic</artifactId>
-            <version>1.1.6</version>
-        </dependency>
+		<dependency>
+			<groupId>ch.qos.logback</groupId>
+			<artifactId>logback-classic</artifactId>
+			<version>1.1.6</version>
+		</dependency>
 
-        <!-- Test scope -->
-        <dependency>
-            <groupId>junit</groupId>
-            <artifactId>junit</artifactId>
-            <version>4.12</version>
-            <scope>test</scope>
-        </dependency>
+		<!-- Test scope -->
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>4.12</version>
+			<scope>test</scope>
+		</dependency>
 
-    </dependencies>
+	</dependencies>
 
-    <build>
+	<build>
         <plugins>
             <plugin>
                 <groupId>org.codehaus.mojo</groupId>
@@ -157,41 +157,41 @@
                 <set_default>true</set_default>
               </configuration>
             </plugin>
-            <plugin>
-                <groupId>org.mortbay.jetty</groupId>
-                <artifactId>maven-jetty-plugin</artifactId>
+			<plugin>
+				<groupId>org.mortbay.jetty</groupId>
+				<artifactId>maven-jetty-plugin</artifactId>
                 <version>6.1.26</version>
-                <configuration>
-                    <scanIntervalSeconds>5</scanIntervalSeconds>
-                    <connectors>
-                        <connector implementation="org.mortbay.jetty.nio.SelectChannelConnector">
-                            <port>8080</port>
-                            <maxIdleTime>60000</maxIdleTime>
-                        </connector>
-                    </connectors>
+				<configuration>
+					<scanIntervalSeconds>5</scanIntervalSeconds>
+					<connectors>
+						<connector implementation="org.mortbay.jetty.nio.SelectChannelConnector">
+							<port>8080</port>
+							<maxIdleTime>60000</maxIdleTime>
+						</connector>
+					</connectors>
                     <webAppConfig>
                         <contextPath>/</contextPath>
                         <baseResource implementation="org.mortbay.resource.ResourceCollection">
                             <resourcesAsCSV>src/main/webapp,target/${project.artifactId}-${project.version}</resourcesAsCSV>
                         </baseResource>
                     </webAppConfig>
-                </configuration>
-            </plugin>
-        </plugins>
-    </build>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
 
-    <!-- Specify hard-coded project properties here -->
-    <properties>
+	<!-- Specify hard-coded project properties here -->
+	<properties>
 
-      <!-- Sets the project's default encoding.
+	  <!-- Sets the project's default encoding.
          http://docs.codehaus.org/display/MAVENUSER/POM+Element+for+Source+File+Encoding -->
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 
-        <!--
-            This is just for "eclipse:eclipse" goal to always attempt downloading
-            sources
-        -->
-        <downloadSources>true</downloadSources>
+		<!--
+			This is just for "eclipse:eclipse" goal to always attempt downloading
+			sources
+		-->
+		<downloadSources>true</downloadSources>
 
         <app.id>sehq-docs</app.id>
         <app.version>1</app.version>
@@ -199,43 +199,43 @@
         <gcloud.plugin.version>2.0.9.133.v201611104</gcloud.plugin.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.compiler.showDeprecation>true</maven.compiler.showDeprecation>
-    </properties>
+	</properties>
 
-    <profiles>
-        <profile>
-            <id>docs</id>
+	<profiles>
+		<profile>
+			<id>docs</id>
             <activation>
               <activeByDefault>true</activeByDefault>
             </activation>
-            <build>
-                <plugins>
-                    <plugin>
-                        <artifactId>maven-antrun-plugin</artifactId>
+			<build>
+				<plugins>
+        			<plugin>
+        				<artifactId>maven-antrun-plugin</artifactId>
                         <version>1.8</version>
-                        <executions>
-                            <execution>
-                                <id>build-docs</id>
-                                <phase>generate-sources</phase>
-                                <goals>
-                                    <goal>run</goal>
-                                </goals>
-                                <configuration>
-                                    <tasks>
-                                        <mkdir dir="target/${project.artifactId}-${project.version}/docs"/>
-                                        <exec executable="sphinx-build">
-                                            <arg value="-b"/>
-                                            <arg value="html"/>
-                                            <arg value="src/main/rst"/>
-                                            <arg value="target/${project.artifactId}-${project.version}/docs/"/>
-                                        </exec>
-                                    </tasks>
-                                </configuration>
-                            </execution>
-                        </executions>
-                    </plugin>
-                </plugins>
-            </build>
-        </profile>
-    </profiles>
+        				<executions>
+        					<execution>
+        						<id>build-docs</id>
+        						<phase>generate-sources</phase>
+        						<goals>
+        							<goal>run</goal>
+        						</goals>
+        						<configuration>
+        							<tasks>
+        								<mkdir dir="target/${project.artifactId}-${project.version}/docs"/>
+        								<exec executable="sphinx-build">
+        									<arg value="-b"/>
+        									<arg value="html"/>
+        									<arg value="src/main/rst"/>
+        									<arg value="target/${project.artifactId}-${project.version}/docs/"/>
+        								</exec>
+        							</tasks>
+        						</configuration>
+        					</execution>
+        				</executions>
+        			</plugin>
+				</plugins>
+			</build>
+		</profile>
+	</profiles>
 
 </project>
