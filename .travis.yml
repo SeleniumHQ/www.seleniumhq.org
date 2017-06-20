@@ -1,6 +1,8 @@
 language:
   - python
-  - java
+
+before_install:
+  - jdk_switcher use oraclejdk8
 
 python:
   - "2.7"
