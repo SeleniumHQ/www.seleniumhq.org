@@ -10,10 +10,6 @@
 	<packaging>war</packaging>
 	<url>http://selenium.openqa.org</url>
 
-    <prerequisites>
-      <maven>3.1.0</maven>
-    </prerequisites>
-
 	<dependencies>
         
         <dependency>
@@ -79,7 +75,7 @@
             <plugin>
                 <groupId>org.codehaus.mojo</groupId>
                 <artifactId>versions-maven-plugin</artifactId>
-                <version>2.4</version>
+                <version>2.1</version>
                 <executions>
                     <execution>
                         <phase>compile</phase>
@@ -93,10 +89,10 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
-                <version>3.6.1</version>
+                <version>3.1</version>
                 <configuration>
-                    <source>1.8</source>
-                    <target>1.8</target>
+                    <source>1.7</source>
+                    <target>1.7</target>
                 </configuration>
             </plugin>
             <plugin>
@@ -118,7 +114,7 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-war-plugin</artifactId>
-                <version>3.1.0</version>
+                <version>2.4</version>
                 <configuration>
                     <archiveClasses>true</archiveClasses>
                     <webResources>
@@ -195,8 +191,8 @@
 
         <app.id>sehq-docs</app.id>
         <app.version>1</app.version>
-        <appengine.version>1.9.54</appengine.version>
-        <gcloud.plugin.version>2.0.9.133.v201611104</gcloud.plugin.version>
+        <appengine.version>1.9.32</appengine.version>
+        <gcloud.plugin.version>2.0.9.74.v20150814</gcloud.plugin.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.compiler.showDeprecation>true</maven.compiler.showDeprecation>
 	</properties>
@@ -211,7 +207,6 @@
 				<plugins>
         			<plugin>
         				<artifactId>maven-antrun-plugin</artifactId>
-                        <version>1.8</version>
         				<executions>
         					<execution>
         						<id>build-docs</id>
