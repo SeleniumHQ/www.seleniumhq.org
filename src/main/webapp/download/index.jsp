@@ -175,11 +175,11 @@
     <tbody>
       <tr>
 	<td><a href="https://github.com/mozilla/geckodriver/">Mozilla GeckoDriver</a></td>
-	<td><a href="https://github.com/mozilla/geckodriver/releases">0.16.1</a>&nbsp;&nbsp;</td>
-	<td><a href="https://github.com/mozilla/geckodriver/blob/master/CHANGES.md">change log</a>&nbsp;&nbsp;</td>
+	<td><a href="https://github.com/mozilla/geckodriver/releases">0.17.0</a>&nbsp;&nbsp;</td>
+	<td><a href="https://github.com/mozilla/geckodriver/blob/release/CHANGES.md">change log</a>&nbsp;&nbsp;</td>
 	<td><a href="https://github.com/mozilla/geckodriver/issues">issue tracker</a>&nbsp;&nbsp;</td>
 	<td><a href="https://developer.mozilla.org/en-US/docs/Mozilla/QA/Marionette/WebDriver/status">Implementation Status</a></td>
-	<td>Released 2017-04-26</td>
+	<td>Released 2017-06-09</td>
       </tr>
       <tr>
         <td><a href="https://sites.google.com/a/chromium.org/chromedriver/">Google Chrome Driver</a></td>
