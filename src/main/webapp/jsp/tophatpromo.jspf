@@ -1,6 +1,6 @@
 <script src="/tophatpromo.js" type="text/javascript"></script>
 <link rel="stylesheet" type="text/css" href="/tophatpromo.css"/>
 <div id="promo">
-  <b>Tickets for SeleniumConf Berlin are on sale NOW (while supplies last)!</b> For details <b><a target='_blank' href=http://seleniumconf.de/>GO HERE</a></b>
+  <b>Workshop Tickets for SeleniumConf Berlin are on sale NOW (while supplies last)!</b> For details <b><a target='_blank' href=http://seleniumconf.de/>GO HERE</a></b>
   <a id="close">x</a>
 </div>
