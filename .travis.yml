@@ -15,7 +15,7 @@ script:
 
 before_install:
   - openssl aes-256-cbc -K $encrypted_06a621a919cf_key -iv $encrypted_06a621a919cf_iv
-    -in sehq-docs-4c40bc85ed8f.json.enc -out ~\/sehq-docs-4c40bc85ed8f.json -d
+    -in sehq-docs-4c40bc85ed8f.json.enc -out sehq-docs-4c40bc85ed8f.json -d
 
 deploy:
   - provider: gae
