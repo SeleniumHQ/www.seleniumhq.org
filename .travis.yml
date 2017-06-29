@@ -5,6 +5,10 @@ language:
 python:
   - "2.7"
 
+before_install:
+  - openssl aes-256-cbc -K $encrypted_06a621a919cf_key -iv $encrypted_06a621a919cf_iv
+    -in gae-service-account.json.enc -out gae-service-account.json -d
+
 install:
   - pip install sphinx
 
@@ -12,3 +16,5 @@ script:
   - mvn package # compile / package the war
   - mvn jspc:jspc # compile jsp files
   # TODO: eventually add RST ?
+
+after_success: mvn appengine:update -Dappengine.additionalParams="--service_account_json_key_file=gae-service-account.json"
