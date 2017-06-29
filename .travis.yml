@@ -19,5 +19,5 @@ before_install:
 
 deploy:
   - provider: gae
-  - keyfile: "sehq-docs-4c40bc85ed8f.json"
-  - project: "sehq-docs"
+  - keyfile: sehq-docs-4c40bc85ed8f.json
+  - project: sehq-docs
