@@ -1,6 +1,4 @@
-language:
-  - python
-  - java
+language: python
 
 python:
   - "2.7"
