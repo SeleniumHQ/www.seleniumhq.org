@@ -20,5 +20,6 @@ script:
 deploy:
   - provider: script
     script: 'mvn appengine:update -Dappengine.additionalParams="--service_account_json_key_file=gae-service-account.json"'
+    skip_cleanup: true
     on:
       branch: master
