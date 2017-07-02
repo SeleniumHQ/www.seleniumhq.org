@@ -40,6 +40,10 @@
             <a rel="nofollow" href="http://www.ranorex.com/selenium-webdriver-integration.html">Ranorex</a> -
             test automation framework with Selenium WebDriver plug-in to easily create and manage tests and run them on Selenium-supported platforms and browsers.
         </li>
+        <li>
+            <a rel="nofollow" href="http://www.functionize.com/">Functionize</a> -
+            AI-powered UX and testing automation framework built on top of Selenium.
+        </li>
     </ul>
 
     <h2>Monitoring &amp; Load Testing Services</h2>
