@@ -42,10 +42,10 @@
 
   <h3>Selenium Standalone Server</h3>
   <p>The Selenium Server is needed in order to run Remote Selenium WebDriver. Selenium 3.X is no longer capable of running Selenium RC directly, rather it does it through emulation and the WebDriverBackedSelenium interface.</p>
-  <p>Download version <a href="https://goo.gl/s4o9Vx">3.4.0</a>
+  <p>Download version <a href="https://goo.gl/mFtw7n">3.5.0</a>
   <!-- use goo.gl to make the minified link, this allows anyone to view the statistics at: https://goo.gl/#analytics/goo.gl/<hash>/all_time -->
   </p>
-  <p>To run Selenium tests exported from IDE, use the <a href="https://goo.gl/8mbqu4">Selenium Html Runner</a>.</p>
+  <p>To run Selenium tests exported from IDE, use the <a href="https://goo.gl/RW5NRJ">Selenium Html Runner</a>.</p>
   <p>To use the Selenium Server in a Grid configuration <a href="https://github.com/SeleniumHQ/selenium/wiki/Grid2">see the wiki page</a>.</p>
 
   <h3>The Internet Explorer Driver Server</h3>
@@ -53,10 +53,10 @@
   features of the WebDriver InternetExplorerDriver. Please make sure that this
   is available on your $PATH (or %PATH% on Windows) in order for the IE Driver
   to work as expected.</p>
-  <p>Download version 3.4 for (recommended) <a
-    href="http://selenium-release.storage.googleapis.com/3.4/IEDriverServer_Win32_3.4.0.zip">32
+  <p>Download version 3.5 for (recommended) <a
+    href="https://goo.gl/pxbQ4Y">32
     bit Windows IE</a> or <a
-    href="http://selenium-release.storage.googleapis.com/3.4/IEDriverServer_x64_3.4.0.zip">64 bit Windows IE</a><br/>
+    href="https://goo.gl/GwYYmg">64 bit Windows IE</a><br/>
     <a href="http://goo.gl/LJ07LL">CHANGELOG</a></p>
 
   <a name="client-drivers"/>
@@ -78,32 +78,32 @@
     <tbody>
       <tr>
         <td>Java</td>
-        <td>3.4.0</td>
-        <td>2017-04-21</td>
-        <td><a href="http://selenium-release.storage.googleapis.com/3.4/selenium-java-3.4.0.zip">Download</a>&nbsp;&nbsp;</td>
+        <td>3.5.0</td>
+        <td>2017-08-10</td>
+        <td><a href="http://selenium-release.storage.googleapis.com/3.5/selenium-java-3.5.0.zip">Download</a>&nbsp;&nbsp;</td>
         <td><a href="http://goo.gl/5IVvjZ">Change log</a>&nbsp;&nbsp;</td>
         <td><a href="http://goo.gl/Grc6tm" alt="Javadoc">Javadoc</a></td>
       </tr>
       <tr>
         <td>C#</td>
-        <td>3.4.0</td>
-        <td>2017-04-21</td>
-        <td><a href="http://selenium-release.storage.googleapis.com/3.4/selenium-dotnet-3.4.0.zip">Download</a></td>
+        <td>3.5.0</td>
+        <td>2017-08-10</td>
+        <td><a href="http://selenium-release.storage.googleapis.com/3.5/selenium-dotnet-3.5.0.zip">Download</a></td>
         <td><a href="http://goo.gl/t3faSQ">Change log</a></td>
         <td><a href="http://goo.gl/uutZjZ">API docs</a></td>
       </tr>
       <tr>
         <td>Ruby</td>
-        <td>3.4.3</td>
-        <td>2017-06-15</td>
+        <td>3.5.0</td>
+        <td>2017-08-10</td>
         <td><a href="http://rubygems.org/gems/selenium-webdriver">Download</a></td>
         <td><a href="http://goo.gl/zNfSLK">Change log</a></td>
         <td><a href="http://goo.gl/jzh4RU">API docs</a></td>
       </tr>
       <tr>
         <td>Python</td>
-        <td>3.4.3</td>
-        <td>2017-05-30</td>
+        <td>3.5.0</td>
+        <td>2017-08-10</td>
         <td><a href="http://pypi.python.org/pypi/selenium">Download</a></td>
         <td><a href="http://goo.gl/rHRdgk">Change log</a></td>
         <td><a href="http://goo.gl/sG1GfQ">API docs</a></td>
@@ -111,7 +111,7 @@
       <tr>
         <td>Javascript (Node)</td>
         <td>3.4.0</td>
-        <td>2017-04-21</td>
+        <td>2017-07-24</td>
         <td><a href="https://npmjs.org/package/selenium-webdriver">Download</a></td>
         <td><a href="http://goo.gl/e6smYw">Change log</a></td>
         <td><a href="http://goo.gl/hohAut">API docs</a></td>
@@ -119,7 +119,7 @@
     </tbody>
   </table>
   <h4>C# NuGet</h4>
-  <p>NuGet latest release is 3.4.0, Released on 2017-04-21</p>
+  <p>NuGet latest release is 3.5.0, Released on 2017-08-10</p>
   <ul>
     <li><a href="http://www.nuget.org/List/Packages/Selenium.WebDriver">WebDriver</a></li>
     <li><a href="http://www.nuget.org/List/Packages/Selenium.WebDriverBackedSelenium">WebDriverBackedSelenium</a></li>
@@ -183,19 +183,19 @@
       </tr>
       <tr>
         <td><a href="https://sites.google.com/a/chromium.org/chromedriver/">Google Chrome Driver</a></td>
-        <td><a href="http://chromedriver.storage.googleapis.com/index.html?path=2.30/">2.30</a>&nbsp;&nbsp;</td>
-        <td><a href="http://chromedriver.storage.googleapis.com/2.30/notes.txt">change log</a>&nbsp;&nbsp;</td>
+        <td><a href="http://chromedriver.storage.googleapis.com/index.html?path=2.31/">2.31</a>&nbsp;&nbsp;</td>
+        <td><a href="http://chromedriver.storage.googleapis.com/2.31/notes.txt">change log</a>&nbsp;&nbsp;</td>
         <td><a href="https://bugs.chromium.org/p/chromedriver/issues/list">issue tracker</a>&nbsp;&nbsp;</td>
         <td><a href="https://github.com/SeleniumHQ/selenium/wiki/ChromeDriver">selenium wiki page</a>&nbsp;&nbsp;</td>
-        <td>Released 2017-06-08</td>
+        <td>Released 2017-07-22</td>
       </tr>
       <tr>
         <td><a href="http://choice.opera.com/developer/tools/operadriver/">Opera</a></td>
-        <td><a href="https://github.com/operasoftware/operachromiumdriver/releases">2.27</a></td>
+        <td><a href="https://github.com/operasoftware/operachromiumdriver/releases">2.29</a></td>
         <td>&nbsp;</td>
         <td><a href="https://github.com/operasoftware/operachromiumdriver/issues">issue tracker</a></td>
         <td><a href="https://github.com/SeleniumHQ/selenium/wiki/OperaDriver">selenium wiki page</a></td>
-        <td>Released 2017-04-04</td>
+        <td>Released 2017-06-27</td>
       </tr>
       <tr>
         <td><a href="https://developer.microsoft.com/en-us/microsoft-edge/tools/webdriver/">Microsoft Edge Driver</a></td>
@@ -209,14 +209,14 @@
         <td>&nbsp;</td>
         <td><a href="https://github.com/detro/ghostdriver/issues">issue tracker</a></td>
         <td><a href="http://www.youtube.com/watch?v=wqxkKIC2HDY">SeConf talk</a></td>
-      </tr>	    
+      </tr>
       <tr>
         <td><a href="https://github.com/seleniumhq/htmlunit-driver">HtmlUnitDriver</a></td>
-        <td><a href="https://github.com/SeleniumHQ/htmlunit-driver/releases">2.26</a></td>
+        <td><a href="https://github.com/SeleniumHQ/htmlunit-driver/releases">2.27</a></td>
         <td>&nbsp;</td>
         <td><a href="https://github.com/seleniumhq/htmlunit-driver/issues">issue tracker</a></td>
-	<td>&nbsp;&nbsp;</td>
-	<td>Released 2017-04-04</td>
+	    <td>&nbsp;&nbsp;</td>
+	    <td>Released 2017-06-04</td>
       </tr>
       <tr>
         <td><a href="https://webkit.org/blog/6900/webdriver-support-in-safari-10/">SafariDriver</a></td>
