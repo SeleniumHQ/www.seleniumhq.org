@@ -361,7 +361,7 @@
     <div class="name">VisGrid-UI for Selenium Grid 2.0</div>
     <div class="column">
       <table>
-        <tr><th>Links:</th><td><a href="http://www.codoid.com/products/view/2/30">VisGrid-UI for Selenium Grid 2.0</a></td></tr>
+        <tr><th>Links:</th><td><a href="https://codoid.com/visgrid/">VisGrid-UI for Selenium Grid 2.0</a></td></tr>
         <tr><th>Author:</th><td><a href="http://www.codoid.com">Codoid</a></td></tr>
         <tr><th>License:</th><td>Apache License/Free</td></tr>
       </table>
