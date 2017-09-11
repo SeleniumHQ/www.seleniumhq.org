@@ -419,24 +419,6 @@
   </div>
   
   <div class="plugin">
-    <div class="name">FlexMonkium</div>
-    <div class="column">
-      <table>
-        <tr><th>Links:</th><td><a href="http://www.gorillalogic.com/flexmonkium">Download</a> - <a href="http://www.gorillalogic.com/forums/flexmonkium">Support</a></td></tr>
-        <tr><th>Author:</th><td><a href="http://www.gorillalogic.com">Gorrila Logic</a></td></tr>
-        <tr><th>License:</th><td>GPL</td></tr>
-      </table>
-    </div>
-    <div class="column">
-      <table>
-        <tr><th>Released:</th><td>January 6, 2011</td></tr>
-        <tr><th>Version:</th><td>4.1.5</td></tr>
-      </table>
-    </div>
-    <p class="description">A plugin that adds Adobe Flex recording and playback to Selenium via the popular <a href="http://www.gorillalogic.com/flexmonkey">FlexMonkey</a> open source testing framework. With FlexMonkium, Flex recording and playback is seamlessly interleaved with native Selenium recording and playback so you can easily automate the testing of hybrid web applications that mix html and Javascript with Flex. In addition to creating and running Flex tests inside the Selenium IDE, you can export your hybrid testing scripts as JUnit 4 tests that run with Selenium-RC to easily enable automated testing and continuous integration.</p>
-  </div>
-  
-  <div class="plugin">
     <div class="name">File Logging</div>
     <div class="column">
       <table>
