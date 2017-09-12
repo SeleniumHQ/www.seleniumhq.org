@@ -334,6 +334,7 @@
     <li><a href="https://github.com/johndharrison/RSelenium">R</a> by John Harrison</li>
     <li><a href="https://github.com/google/webdriver.dart">Dart</a> by Marc Fisher</li>
     <li><a href="http://caiusproject.com/">Tcl</a> by Tobias Koch</li>
+    <li><a href="https://github.com/nathanjohnson320/exselenium">Elixir</a> by Nathan Johnson</li>
   </ul>
 
   <h3>Selenium GRID Plugins</h3>
