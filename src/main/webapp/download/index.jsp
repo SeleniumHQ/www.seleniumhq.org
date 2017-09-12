@@ -173,20 +173,20 @@
     </thead>
     <tbody>
       <tr>
-	<td><a href="https://github.com/mozilla/geckodriver/">Mozilla GeckoDriver</a></td>
-	<td><a href="https://github.com/mozilla/geckodriver/releases">0.18.0</a>&nbsp;&nbsp;</td>
-	<td><a href="https://github.com/mozilla/geckodriver/blob/release/CHANGES.md">change log</a>&nbsp;&nbsp;</td>
-	<td><a href="https://github.com/mozilla/geckodriver/issues">issue tracker</a>&nbsp;&nbsp;</td>
-	<td><a href="https://developer.mozilla.org/en-US/docs/Mozilla/QA/Marionette/WebDriver/status">Implementation Status</a></td>
-	<td>Released 2017-07-11</td>
+	    <td><a href="https://github.com/mozilla/geckodriver/">Mozilla GeckoDriver</a></td>
+	    <td><a href="https://github.com/mozilla/geckodriver/releases">0.18.0</a>&nbsp;&nbsp;</td>
+	    <td><a href="https://github.com/mozilla/geckodriver/blob/release/CHANGES.md">change log</a>&nbsp;&nbsp;</td>
+	    <td><a href="https://github.com/mozilla/geckodriver/issues">issue tracker</a>&nbsp;&nbsp;</td>
+	    <td><a href="https://developer.mozilla.org/en-US/docs/Mozilla/QA/Marionette/WebDriver/status">Implementation Status</a></td>
+	    <td>Released 2017-07-11</td>
       </tr>
       <tr>
         <td><a href="https://sites.google.com/a/chromium.org/chromedriver/">Google Chrome Driver</a></td>
-        <td><a href="http://chromedriver.storage.googleapis.com/index.html?path=2.31/">2.31</a>&nbsp;&nbsp;</td>
-        <td><a href="http://chromedriver.storage.googleapis.com/2.31/notes.txt">change log</a>&nbsp;&nbsp;</td>
+        <td><a href="http://chromedriver.storage.googleapis.com/index.html?path=2.32/">2.32</a>&nbsp;&nbsp;</td>
+        <td><a href="http://chromedriver.storage.googleapis.com/2.32/notes.txt">change log</a>&nbsp;&nbsp;</td>
         <td><a href="https://bugs.chromium.org/p/chromedriver/issues/list">issue tracker</a>&nbsp;&nbsp;</td>
         <td><a href="https://github.com/SeleniumHQ/selenium/wiki/ChromeDriver">selenium wiki page</a>&nbsp;&nbsp;</td>
-        <td>Released 2017-07-22</td>
+        <td>Released 2017-08-31</td>
       </tr>
       <tr>
         <td><a href="http://choice.opera.com/developer/tools/operadriver/">Opera</a></td>
