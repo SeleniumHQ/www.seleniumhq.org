@@ -125,7 +125,15 @@
             Selenium Test Automation Training, Selenium Test Framework Design, QA Project Assistance.
         </li>
     </ul>
-
+    
+    <h2>Question and Answer site</h2>
+    
+    <ul>
+        <li>
+            <a rel="nofollow" href="https://softwaretestingboard.com/qna/tag/selenium">Software Testing Board | Selenium Questions</a> -
+            Question and Answer site for Selenium.
+       </li>
+    </ul>
     <p>
         If you think you or your company should be listed here, just let us know by submitting a patch to this file (click the "edit this page" link at the top). Please add your link to the bottom of the appropriate list and in the same format as the others, otherwise your patch will be rejected.
     </p>
