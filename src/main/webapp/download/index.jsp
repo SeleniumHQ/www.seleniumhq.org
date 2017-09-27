@@ -42,10 +42,10 @@
 
   <h3>Selenium Standalone Server</h3>
   <p>The Selenium Server is needed in order to run Remote Selenium WebDriver. Selenium 3.X is no longer capable of running Selenium RC directly, rather it does it through emulation and the WebDriverBackedSelenium interface.</p>
-  <p>Download version <a href="https://goo.gl/hWYjHR">3.5.3</>
+  <p>Download version <a href="https://goo.gl/21wWg8">3.6.0</>
   <!-- use goo.gl to make the minified link, this allows anyone to view the statistics at: https://goo.gl/#analytics/goo.gl/<hash>/all_time -->
   </p>
-  <p>To run Selenium tests exported from IDE, use the <a href="https://goo.gl/gF9g7G">Selenium Html Runner</a>.</p>
+  <p>To run Selenium tests exported from IDE, use the <a href="https://goo.gl/Vd7Bf4">Selenium Html Runner</a>.</p>
   <p>To use the Selenium Server in a Grid configuration <a href="https://github.com/SeleniumHQ/selenium/wiki/Grid2">see the wiki page</a>.</p>
 
   <h3>The Internet Explorer Driver Server</h3>
@@ -53,9 +53,9 @@
   features of the WebDriver InternetExplorerDriver. Please make sure that this
   is available on your $PATH (or %PATH% on Windows) in order for the IE Driver
   to work as expected.</p>
-  <p>Download version 3.5.1 for (recommended) <a
-    href="https://goo.gl/BbeFgE">32 bit Windows IE</a> or <a
-    href="https://goo.gl/QDTbrU">64 bit Windows IE</a><br/>
+  <p>Download version 3.6.0 for (recommended) <a
+    href="https://goo.gl/rjZrvz">32 bit Windows IE</a> or <a
+    href="https://goo.gl/S2dFK4">64 bit Windows IE</a><br/>
     <a href="http://goo.gl/LJ07LL">CHANGELOG</a></p>
 
   <a name="client-drivers"/>
@@ -77,9 +77,9 @@
     <tbody>
       <tr>
         <td>Java</td>
-        <td>3.5.3</td>
-        <td>2017-08-29</td>
-        <td><a href="http://selenium-release.storage.googleapis.com/3.5/selenium-java-3.5.3.zip">Download</a>&nbsp;&nbsp;</td>
+        <td>3.6.0</td>
+        <td>2017-09-27</td>
+        <td><a href="http://selenium-release.storage.googleapis.com/3.6/selenium-java-3.6.0.zip">Download</a>&nbsp;&nbsp;</td>
         <td><a href="http://goo.gl/5IVvjZ">Change log</a>&nbsp;&nbsp;</td>
         <td><a href="http://goo.gl/Grc6tm" alt="Javadoc">Javadoc</a></td>
       </tr>
