@@ -1,6 +1,6 @@
 <script src="/tophatpromo.js" type="text/javascript"></script>
 <link rel="stylesheet" type="text/css" href="/tophatpromo.css"/>
 <div id="promo">
-  <b>Last Chance tickets for SeleniumConf Berlin are on sale NOW (while supplies last)!</b> For details <b><a target='_blank' href=https://ti.to/whiteoctober/seleniumconf-berlin-2017?source=seleniumhq>GO HERE</a></b>
+  <b>SeleniumConf Berlin is happening NOW!</b> Watch the live stream <b><a target='_blank' href=https://www.seleniumconf.de/live-stream?source=seleniumhq>HERE</a></b>
   <a id="close">x</a>
 </div>
