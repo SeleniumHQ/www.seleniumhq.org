@@ -1,6 +1,6 @@
 <script src="/tophatpromo.js" type="text/javascript"></script>
 <link rel="stylesheet" type="text/css" href="/tophatpromo.css"/>
-<!--<div id="promo">
-  <b>SeleniumConf Berlin is happening NOW!</b> Watch the talks as they're published <b><a target='_blank' href=https://www.youtube.com/user/seleniumconf/videos>HERE</a></b>
+<div id="promo">
+  <b>[SeleniumConf Berlin]</b> Watch the talks as they're published <b><a target='_blank' href=https://www.youtube.com/user/seleniumconf/videos>HERE</a></b>
   <a id="close">x</a>
-</div>-->
+</div>
