@@ -41,7 +41,7 @@
             test automation framework with Selenium WebDriver plug-in to easily create and manage tests and run them on Selenium-supported platforms and browsers.
         </li>
         <li>
-            <a rel="nofollow" href="http://www.ranorex.com/selocity.html">Ranorex Selocity</a> -
+            <a rel="nofollow" href="https://www.ranorex.com/selocity/browser-extension.html">Ranorex Selocity</a> -
             free Chrome browser extension to auto-generate robust CSS, XPath, link text, and RanoreXPath selectors. 
         </li>
     </ul>
