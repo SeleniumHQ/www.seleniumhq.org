@@ -16,7 +16,7 @@ implicit wait of 10 seconds and an explicit wait of 15 seconds, could cause a ti
 Explicit Waits
 ~~~~~~~~~~~~~~
 An explicit wait is code you define to wait for a certain condition to occur before proceeding further in the code.
-The worst case of this is Thread.sleep(), which sets the condition to an exact time period to wait. 
+The worst case of this is Thread.sleep(), which sets the condition to an exact time period to wait.
 There are some convenience methods provided that help you write code that will wait only as long as required.
 WebDriverWait in combination with ExpectedCondition is one way this can be accomplished.
 
@@ -32,6 +32,9 @@ WebDriverWait in combination with ExpectedCondition is one way this can be accom
 .. literalinclude:: /examples/Chapter4/ruby/ExplicitWaitExample01.rb
    :language: ruby
 
+.. literalinclude:: /examples/Chapter4/Javascript/ExplicitWaitExample01.js
+   :language: javascript
+
 This waits up to 10 seconds before throwing a TimeoutException or if it finds the element will return it in 0 - 10 seconds.
 WebDriverWait by default calls the ExpectedCondition every 500 milliseconds until it returns successfully. A successful return value for the ExpectedCondition function type is a Boolean value of true, or a non-null object.
 
@@ -39,8 +42,8 @@ This example is also functionally equivalent to the first `Implicit Waits`_ exam
 
 Expected Conditions
 +++++++++++++++++++
-There are some common conditions that are frequently encountered when automating web browsers. Listed below are 
-a few examples for the usage of such conditions. The Java, C#, and Python bindings include convienence methods 
+There are some common conditions that are frequently encountered when automating web browsers. Listed below are
+a few examples for the usage of such conditions. The Java, C#, and Python bindings include convienence methods
 so you don't have to code an ExpectedCondition class yourself or create your own utility package for them.
 
 * Element is Clickable - it is Displayed and Enabled.
@@ -80,6 +83,9 @@ The default setting is 0. Once set, the implicit wait is set for the life of the
 .. literalinclude:: /examples/Chapter4/ruby/ImplicitWaitExample01.rb
    :language: ruby
 
+.. literalinclude:: /examples/Chapter4/Javascript/ExplicitWaitExample01.js
+   :language: javascript
+
 RemoteWebDriver
 ---------------
 
@@ -98,17 +104,20 @@ Taking a Screenshot
 .. literalinclude:: /examples/Chapter4/ruby/RemoteScreenShot.rb
    :language: ruby
 
+.. literalinclude:: /examples/Chapter4/Javascript/RemoteScreenShot.js
+   :language: javascript
+
 Using a FirefoxProfile
 ~~~~~~~~~~~~~~~~~~~~~~
 
 .. code-block:: java
-    
+
     FirefoxProfile fp = new FirefoxProfile();
     // set something on the profile...
     DesiredCapabilities dc = DesiredCapabilities.firefox();
     dc.setCapability(FirefoxDriver.PROFILE, fp);
     WebDriver driver = new RemoteWebDriver(dc);
-    
+
 .. code-block:: csharp
 
    FirefoxProfile fp = new FirefoxProfile();
@@ -118,7 +127,7 @@ Using a FirefoxProfile
    IWebDriver driver = new RemoteWebDriver(dc);
 
 .. code-block:: python
-    
+
     from selenium import webdriver
     fp = webdriver.FirefoxProfile()
     # set something on the profile...
@@ -134,7 +143,7 @@ Using ChromeOptions
     DesiredCapabilities dc = DesiredCapabilities.chrome();
     dc.setCapability(ChromeOptions.CAPABILITY, options);
     WebDriver driver = new RemoteWebDriver(dc);
-    
+
 .. code-block:: csharp
 
    var options = new ChromeOptions();
@@ -144,7 +153,7 @@ Using ChromeOptions
    IWebDriver driver = new RemoteWebDriver(dc);
 
 .. code-block:: python
-    
+
     from selenium import webdriver
     options = webdriver.ChromeOptions()
     # set some options
@@ -156,22 +165,22 @@ AdvancedUserInteractions
 The Actions class(es) allow you to build a Chain of Actions and perform them.
 There are too many possible combinations to count. Below are a few of the common
 interactions that you may want to use. For a full list of actions please refer to
-the API docs `Java <https://seleniumhq.github.io/selenium/docs/api/java/index.html?org/openqa/selenium/interactions/Actions.html>`_ 
-`C# <https://seleniumhq.github.io/selenium/docs/api/dotnet/html/AllMembers_T_OpenQA_Selenium_Interactions_Actions.htm>`_ 
-`Ruby <https://seleniumhq.github.io/selenium/docs/api/rb/Selenium/WebDriver/ActionBuilder.html>`_ 
+the API docs `Java <https://seleniumhq.github.io/selenium/docs/api/java/index.html?org/openqa/selenium/interactions/Actions.html>`_
+`C# <https://seleniumhq.github.io/selenium/docs/api/dotnet/html/AllMembers_T_OpenQA_Selenium_Interactions_Actions.htm>`_
+`Ruby <https://seleniumhq.github.io/selenium/docs/api/rb/Selenium/WebDriver/ActionBuilder.html>`_
 `Python <https://seleniumhq.github.io/selenium/docs/api/py/webdriver/selenium.webdriver.common.action_chains.html>`_
 
 The Advanced User Interactions require native events to be enabled. Here's a table
 of the current support Matrix for native events:
 
 =================  ===  ===  ===  ===  ======  ======  =============  ===========  ==========  ===== ======= ===
-platform           IE6  IE7  IE8  IE9  FF3.6   FF10+   Chrome stable  Chrome beta  Chrome dev  Opera Android iOS  
+platform           IE6  IE7  IE8  IE9  FF3.6   FF10+   Chrome stable  Chrome beta  Chrome dev  Opera Android iOS
 =================  ===  ===  ===  ===  ======  ======  =============  ===========  ==========  ===== ======= ===
 Windows XP         Y    Y    Y    n/a  Y       Y       Y              Y            Y           ?     Y [1]_  n/a
 Windows 7          n/a  n/a  Y    Y    Y       Y       Y              Y            Y           ?     Y [1]_  n/a
 Linux (Ubuntu)     n/a  n/a  n/a  n/a  Y [2]_  Y [2]_  Y              Y            Y           ?     Y [1]_  n/a
 Mac OSX            n/a  n/a  n/a  n/a  N       N       Y              Y            Y           ?     Y [1]_  N
-Mobile Device      n/a  n/a  n/a  n/a  n/a     ?       n/a            n/a          n/a         ?     Y       N 
+Mobile Device      n/a  n/a  n/a  n/a  n/a     ?       n/a            n/a          n/a         ?     Y       N
 =================  ===  ===  ===  ===  ======  ======  =============  ===========  ==========  ===== ======= ===
 
 .. [1] Using the emulator
@@ -179,7 +188,7 @@ Mobile Device      n/a  n/a  n/a  n/a  n/a     ?       n/a            n/a       
 .. [2] With explicitly enabling native events
 
 
-.. 
+..
     #Mouse Movement
     #~~~~~~~~~~~~~~
     #
@@ -267,9 +276,9 @@ proxy settings and changes them back to the original state when done.
 Chrome
 ++++++
 Is basically the same as internet explorer. It uses the same configuration on the machine as IE does (on windows).
-On Mac it uses the System Preference -> Network settings. On Linux it uses (on Ubuntu) System > Preferences > 
+On Mac it uses the System Preference -> Network settings. On Linux it uses (on Ubuntu) System > Preferences >
 Network Proxy Preferences (Alternatively in "/etc/environment" set http_proxy).
-As of this writing it is unknown how to set the proxy programmatically. 
+As of this writing it is unknown how to set the proxy programmatically.
 
 .. TODO (lukeis), this does not work! So the method of chrome switches is commented out.
 .. Here's how to set a proxy with Chrome Switches.
