@@ -42,10 +42,10 @@
 
   <h3>Selenium Standalone Server</h3>
   <p>The Selenium Server is needed in order to run Remote Selenium WebDriver. Selenium 3.X is no longer capable of running Selenium RC directly, rather it does it through emulation and the WebDriverBackedSelenium interface.</p>
-  <p>Download version <a href="https://goo.gl/tw8WDX">3.7.0</>
+  <p>Download version <a href="https://goo.gl/3aWDMc">3.7.1</>
   <!-- use goo.gl to make the minified link, this allows anyone to view the statistics at: https://goo.gl/#analytics/goo.gl/<hash>/all_time -->
   </p>
-  <p>To run Selenium tests exported from IDE, use the <a href="https://goo.gl/hmykz2">Selenium Html Runner</a>.</p>
+  <p>To run Selenium tests exported from IDE, use the <a href="https://goo.gl/K5pGhq">Selenium Html Runner</a>.</p>
   <p>To use the Selenium Server in a Grid configuration <a href="https://github.com/SeleniumHQ/selenium/wiki/Grid2">see the wiki page</a>.</p>
 
   <h3>The Internet Explorer Driver Server</h3>
@@ -77,9 +77,9 @@
     <tbody>
       <tr>
         <td>Java</td>
-        <td>3.7.0</td>
-        <td>2017-11-02</td>
-        <td><a href="http://selenium-release.storage.googleapis.com/3.7/selenium-java-3.7.0.zip">Download</a>&nbsp;&nbsp;</td>
+        <td>3.7.1</td>
+        <td>2017-11-06</td>
+        <td><a href="http://selenium-release.storage.googleapis.com/3.7/selenium-java-3.7.1.zip">Download</a>&nbsp;&nbsp;</td>
         <td><a href="http://goo.gl/5IVvjZ">Change log</a>&nbsp;&nbsp;</td>
         <td><a href="http://goo.gl/Grc6tm" alt="Javadoc">Javadoc</a></td>
       </tr>
