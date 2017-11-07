@@ -53,9 +53,9 @@
   features of the WebDriver InternetExplorerDriver. Please make sure that this
   is available on your $PATH (or %PATH% on Windows) in order for the IE Driver
   to work as expected.</p>
-  <p>Download version 3.6.0 for (recommended) <a
-    href="https://goo.gl/rjZrvz">32 bit Windows IE</a> or <a
-    href="https://goo.gl/S2dFK4">64 bit Windows IE</a><br/>
+  <p>Download version 3.7.0 for (recommended) <a
+    href="https://goo.gl/bn443g">32 bit Windows IE</a> or <a
+    href="https://goo.gl/GCe5WC">64 bit Windows IE</a><br/>
     <a href="http://goo.gl/LJ07LL">CHANGELOG</a></p>
 
   <a name="client-drivers"/>
@@ -85,24 +85,24 @@
       </tr>
       <tr>
         <td>C#</td>
-        <td>3.6.0</td>
-        <td>2017-09-25</td>
-        <td><a href="http://selenium-release.storage.googleapis.com/3.6/selenium-dotnet-3.6.0.zip">Download</a></td>
+        <td>3.7.0</td>
+        <td>2017-11-03</td>
+        <td><a href="http://selenium-release.storage.googleapis.com/3.7/selenium-dotnet-3.7.0.zip">Download</a></td>
         <td><a href="http://goo.gl/t3faSQ">Change log</a></td>
         <td><a href="http://goo.gl/uutZjZ">API docs</a></td>
       </tr>
       <tr>
         <td>Ruby</td>
-        <td>3.6.0</td>
-        <td>2017-09-24</td>
+        <td>3.7.0</td>
+        <td>2017-11-02</td>
         <td><a href="http://rubygems.org/gems/selenium-webdriver">Download</a></td>
         <td><a href="http://goo.gl/zNfSLK">Change log</a></td>
         <td><a href="http://goo.gl/jzh4RU">API docs</a></td>
       </tr>
       <tr>
         <td>Python</td>
-        <td>3.6.0</td>
-        <td>2017-09-25</td>
+        <td>3.7.0</td>
+        <td>2017-11-02</td>
         <td><a href="http://pypi.python.org/pypi/selenium">Download</a></td>
         <td><a href="http://goo.gl/rHRdgk">Change log</a></td>
         <td><a href="http://goo.gl/sG1GfQ">API docs</a></td>
@@ -118,7 +118,7 @@
     </tbody>
   </table>
   <h4>C# NuGet</h4>
-  <p>NuGet latest release is 3.6.0, Released on 2017-09-25</p>
+  <p>NuGet latest release is 3.7.0, Released on 2017-11-03</p>
   <ul>
     <li><a href="http://www.nuget.org/List/Packages/Selenium.WebDriver">WebDriver</a></li>
     <li><a href="http://www.nuget.org/List/Packages/Selenium.WebDriverBackedSelenium">WebDriverBackedSelenium</a></li>
