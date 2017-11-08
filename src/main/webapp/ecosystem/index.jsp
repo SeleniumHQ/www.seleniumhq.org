@@ -128,6 +128,10 @@
             <a rel="nofollow" href="http://www.seleniummaster.com">Selenium Master</a> -
             Selenium Test Automation Training, Selenium Test Framework Design, QA Project Assistance.
         </li>
+        <li>
+            <a rel="nofollow" href="http://iaaa.pro/">IAAA</a> -
+            International Assessment and Accreditation Alliance, Selenium Professional and Expert Certifications with the help of IAAA National Chapters.
+        </li>
     </ul>
 
     <p>
