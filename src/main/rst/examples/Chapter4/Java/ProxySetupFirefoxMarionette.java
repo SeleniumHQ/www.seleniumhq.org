@@ -1,22 +1,21 @@
 String PROXY = "localhost";
 int PORT = 8080;
+String PROXYANDPORT = PROXY + ":" + PORT;
 
 com.google.gson.JsonObject json = new com.google.gson.JsonObject();
 json.addProperty("proxyType", "MANUAL");
-json.addProperty("httpProxy", PROXY);
-json.addProperty("httpProxyPort", PORT);
-json.addProperty("sslProxy", PROXY);
-json.addProperty("sslProxyPort", PORT);
+json.addProperty("httpProxy", PROXYANDPORT);
+json.addProperty("sslProxy", PROXYANDPORT);
 
 DesiredCapabilities cap = new DesiredCapabilities();
 cap.setCapability("proxy", json);
 
-GeckoDriverService service =new GeckoDriverService.Builder(firefoxBinary)
-  .usingDriverExecutable(new File("path to geckodriver"))
+FirefoxOptions options = new FirefoxOptions(cap);
+
+GeckoDriverService service =new GeckoDriverService.Builder()
   .usingAnyFreePort()
   .usingAnyFreePort()
   .build();
 service.start();
 
-// GeckoDriver currently needs the Proxy set in RequiredCapabilities
-driver = new FirefoxDriver(service, cap, cap);
+WebDriver driver = new FirefoxDriver(service, options);
