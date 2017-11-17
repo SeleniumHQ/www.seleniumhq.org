@@ -755,7 +755,7 @@ People often wish to retrieve the innerText value contained within an element.  
 .. code-block:: javascript
 
 	var element = driver.findElement(By.id('elementID'));
-	element.getText().then(text => console.log(`Text is ${text}`));
+	element.getText().then(text => console.log(`Text is \${text}`));
     
 User Input - Filling In Forms
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

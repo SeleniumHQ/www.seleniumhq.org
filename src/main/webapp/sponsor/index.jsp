@@ -22,7 +22,7 @@
 <ul>
     <li>You (or your company) are contributing to an extraordinary open source project.</li>
     <li>For corporate donations that equal or are more than the Platinum level, your logo will be placed on our site for one year, as well as on the sponsor wiki pages.</li>
-    <li>For each six months of non-sponsorship, your logo will be moved to the next lowest sponsorship level on the sponsor wiki page. If your logo is in the Aluminium level when this happens it will be removed from the sponsor wiki page.</li>
+    <li>For each six months of non-sponsorship, your logo will be moved to the next lowest sponsorship level on the sponsor wiki page. If your logo is in the Bronze level when this happens it will be removed from the sponsor wiki page.</li>
     <li>Community consciousness of your company (and its use of Selenium) will be increased in the minds of the wider Selenium community.</li>
     <li>People find out about Selenium first from our website; having a link from our website therefore will associate you and/or your company as a supporter of the Selenium project that our users love.</li>
     <li>Contributions are tax-deductible.</li>

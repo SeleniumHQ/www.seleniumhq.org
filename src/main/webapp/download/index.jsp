@@ -42,10 +42,10 @@
 
   <h3>Selenium Standalone Server</h3>
   <p>The Selenium Server is needed in order to run Remote Selenium WebDriver. Selenium 3.X is no longer capable of running Selenium RC directly, rather it does it through emulation and the WebDriverBackedSelenium interface.</p>
-  <p>Download version <a href="https://goo.gl/Lyo36k">3.0.1</a>
-  <!-- minified link maintained by lukeis to try to track download counts. please talk to him for updating this link or to get the current download count. -->
+  <p>Download version <a href="https://goo.gl/3aWDMc">3.7.1</>
+  <!-- use goo.gl to make the minified link, this allows anyone to view the statistics at: https://goo.gl/#analytics/goo.gl/<hash>/all_time -->
   </p>
-  <p>To run Selenium tests exported from IDE, use the <a href="https://goo.gl/Br1P0Z">Selenium Html Runner</a>.</p>
+  <p>To run Selenium tests exported from IDE, use the <a href="https://goo.gl/K5pGhq">Selenium Html Runner</a>.</p>
   <p>To use the Selenium Server in a Grid configuration <a href="https://github.com/SeleniumHQ/selenium/wiki/Grid2">see the wiki page</a>.</p>
 
   <h3>The Internet Explorer Driver Server</h3>
@@ -53,10 +53,9 @@
   features of the WebDriver InternetExplorerDriver. Please make sure that this
   is available on your $PATH (or %PATH% on Windows) in order for the IE Driver
   to work as expected.</p>
-  <p>Download version 2.53.1 for (recommended) <a
-    href="http://selenium-release.storage.googleapis.com/2.53/IEDriverServer_Win32_2.53.1.zip">32
-    bit Windows IE</a> or <a
-    href="http://selenium-release.storage.googleapis.com/2.53/IEDriverServer_x64_2.53.1.zip">64 bit Windows IE</a><br/>
+  <p>Download version 3.7.0 for (recommended) <a
+    href="https://goo.gl/bn443g">32 bit Windows IE</a> or <a
+    href="https://goo.gl/GCe5WC">64 bit Windows IE</a><br/>
     <a href="http://goo.gl/LJ07LL">CHANGELOG</a></p>
 
   <a name="client-drivers"/>
@@ -78,40 +77,40 @@
     <tbody>
       <tr>
         <td>Java</td>
-        <td>3.0.1</td>
-        <td>2016-10-18</td>
-        <td><a href="http://selenium-release.storage.googleapis.com/3.0/selenium-java-3.0.1.zip">Download</a>&nbsp;&nbsp;</td>
+        <td>3.7.1</td>
+        <td>2017-11-06</td>
+        <td><a href="http://selenium-release.storage.googleapis.com/3.7/selenium-java-3.7.1.zip">Download</a>&nbsp;&nbsp;</td>
         <td><a href="http://goo.gl/5IVvjZ">Change log</a>&nbsp;&nbsp;</td>
         <td><a href="http://goo.gl/Grc6tm" alt="Javadoc">Javadoc</a></td>
       </tr>
       <tr>
         <td>C#</td>
-        <td>3.0.0</td>
-        <td>2016-10-13</td>
-        <td><a href="http://selenium-release.storage.googleapis.com/3.0/selenium-dotnet-3.0.0.zip">Download</a></td>
+        <td>3.7.0</td>
+        <td>2017-11-03</td>
+        <td><a href="http://selenium-release.storage.googleapis.com/3.7/selenium-dotnet-3.7.0.zip">Download</a></td>
         <td><a href="http://goo.gl/t3faSQ">Change log</a></td>
         <td><a href="http://goo.gl/uutZjZ">API docs</a></td>
       </tr>
       <tr>
         <td>Ruby</td>
-        <td>3.0.0</td>
-        <td>2016-10-13</td>
+        <td>3.7.0</td>
+        <td>2017-11-02</td>
         <td><a href="http://rubygems.org/gems/selenium-webdriver">Download</a></td>
         <td><a href="http://goo.gl/zNfSLK">Change log</a></td>
         <td><a href="http://goo.gl/jzh4RU">API docs</a></td>
       </tr>
       <tr>
         <td>Python</td>
-        <td>Selenium 3.0.0.b2</td>
-        <td>2016-08-03</td>
+        <td>3.7.0</td>
+        <td>2017-11-02</td>
         <td><a href="http://pypi.python.org/pypi/selenium">Download</a></td>
         <td><a href="http://goo.gl/rHRdgk">Change log</a></td>
         <td><a href="http://goo.gl/sG1GfQ">API docs</a></td>
       </tr>
       <tr>
         <td>Javascript (Node)</td>
-        <td>3.0.0-beta-2</td>
-        <td>2016-08-07</td>
+        <td>3.6.0</td>
+        <td>2017-10-06</td>
         <td><a href="https://npmjs.org/package/selenium-webdriver">Download</a></td>
         <td><a href="http://goo.gl/e6smYw">Change log</a></td>
         <td><a href="http://goo.gl/hohAut">API docs</a></td>
@@ -119,12 +118,12 @@
     </tbody>
   </table>
   <h4>C# NuGet</h4>
-  <p>NuGet latest release is 3.0.0, Released on 2016-10-13</p>
+  <p>NuGet latest release is 3.7.0, Released on 2017-11-03</p>
   <ul>
-    <li><a href="http://www.nuget.org/List/Packages/Selenium.RC">RC</a></li>
     <li><a href="http://www.nuget.org/List/Packages/Selenium.WebDriver">WebDriver</a></li>
     <li><a href="http://www.nuget.org/List/Packages/Selenium.WebDriverBackedSelenium">WebDriverBackedSelenium</a></li>
     <li><a href="http://www.nuget.org/List/Packages/Selenium.Support">Support</a></li>
+    <li><a href="http://www.nuget.org/List/Packages/Selenium.RC">RC</a> (Final version 3.1.0 Released 2017-02-16)</li>
   </ul>
 
   <h3>SafariDriver - DEPRECATED - use Apple's SafariDriver with Safari 10+</h3>
@@ -133,6 +132,12 @@
     <li>Latest release <a href="http://selenium-release.storage.googleapis.com/2.48/SafariDriver.safariextz">2.48.0</a></li>
     <li><a href="https://github.com/SeleniumHQ/selenium/wiki/SafariDriver">Wiki Page</a></li>
   </ul>
+
+  <a name="selenium_ide"/>
+  <h3>Selenium IDE</h3>
+  <p>Selenium IDE is a Firefox plugin which records and plays back user interactions with the browser. Use this to either create simple scripts or assist in exploratory testing. It can also export Remote Control or WebDriver scripts, though they tend to be somewhat brittle and should be overhauled into some sort of Page Object-y structure for any kind of resiliency.</p>
+  <p>Download latest released version <a href="https://addons.mozilla.org/en-US/firefox/addon/selenium-ide/">from addons.mozilla.org</a> or view the <a href="https://github.com/SeleniumHQ/selenium/wiki/SeIDE-Release-Notes">Release Notes</a> and then <a href="#side_plugins">install some plugins</a>.</p>
+  <p>Download <a href="http://release.seleniumhq.org/selenium-ide/">previous versions here</a>.</p>
 
   <hr/>
 
@@ -167,28 +172,35 @@
       <th>&nbsp;</th>
     </thead>
     <tbody>
-	  <tr>
-		<td><a href="https://github.com/mozilla/geckodriver/releases">Mozilla GeckoDriver</a></td>
-		<td>&nbsp;</td>
-		<td>&nbsp;</td>
-		<td><a href="https://github.com/mozilla/geckodriver/issues">issue tracker</a></td>
-		<td colspan=2><a href="https://developer.mozilla.org/en-US/docs/Mozilla/QA/Marionette/WebDriver/status">Implementation Status</a></td>
-	  </tr>
       <tr>
-        <td><a href="https://sites.google.com/a/chromium.org/chromedriver/">Google Chrome Driver</a></td>
-        <td><a href="http://chromedriver.storage.googleapis.com/index.html?path=2.24/">2.24</a>&nbsp;&nbsp;</td>
-        <td><a href="http://chromedriver.storage.googleapis.com/2.24/notes.txt">change log</a>&nbsp;&nbsp;</td>
-        <td><a href="https://bugs.chromium.org/p/chromedriver/issues/list">issue tracker</a>&nbsp;&nbsp;</td>
-        <td><a href="https://github.com/SeleniumHQ/selenium/wiki/ChromeDriver">selenium wiki page</a>&nbsp;&nbsp;</td>
-        <td>Released 2016-09-09</td>
+	    <td><a href="https://github.com/mozilla/geckodriver/">Mozilla GeckoDriver</a></td>
+	    <td><a href="https://github.com/mozilla/geckodriver/releases">0.19.0</a>&nbsp;&nbsp;</td>
+	    <td><a href="https://github.com/mozilla/geckodriver/blob/release/CHANGES.md">change log</a>&nbsp;&nbsp;</td>
+	    <td><a href="https://github.com/mozilla/geckodriver/issues">issue tracker</a>&nbsp;&nbsp;</td>
+	    <td><a href="https://developer.mozilla.org/en-US/docs/Mozilla/QA/Marionette/WebDriver/status">Implementation Status</a></td>
+	    <td>Released 2017-09-16</td>
       </tr>
       <tr>
-        <td><a href="http://choice.opera.com/developer/tools/operadriver/">Opera</td>
-        <td><a href="https://github.com/operasoftware/operachromiumdriver/releases">0.2.2</a></td>
+        <td><a href="https://sites.google.com/a/chromium.org/chromedriver/">Google Chrome Driver</a></td>
+        <td><a href="http://chromedriver.storage.googleapis.com/index.html?path=2.33/">2.33</a>&nbsp;&nbsp;</td>
+        <td><a href="http://chromedriver.storage.googleapis.com/2.33/notes.txt">change log</a>&nbsp;&nbsp;</td>
+        <td><a href="https://bugs.chromium.org/p/chromedriver/issues/list">issue tracker</a>&nbsp;&nbsp;</td>
+        <td><a href="https://github.com/SeleniumHQ/selenium/wiki/ChromeDriver">selenium wiki page</a>&nbsp;&nbsp;</td>
+        <td>Released 2017-10-03</td>
+      </tr>
+      <tr>
+        <td><a href="http://choice.opera.com/developer/tools/operadriver/">Opera</a></td>
+        <td><a href="https://github.com/operasoftware/operachromiumdriver/releases">2.29</a></td>
         <td>&nbsp;</td>
         <td><a href="https://github.com/operasoftware/operachromiumdriver/issues">issue tracker</a></td>
         <td><a href="https://github.com/SeleniumHQ/selenium/wiki/OperaDriver">selenium wiki page</a></td>
-        <td>Released 2014-11-06</td>
+        <td>Released 2017-06-27</td>
+      </tr>
+      <tr>
+        <td><a href="https://developer.microsoft.com/en-us/microsoft-edge/tools/webdriver/">Microsoft Edge Driver</a></td>
+        <td colspan=2>&nbsp;</td>
+        <td><a href="https://developer.microsoft.com/en-us/microsoft-edge/platform/issues/">issue tracker</a></td>
+        <td><a href="https://developer.microsoft.com/en-us/microsoft-edge/platform/documentation/webdriver-commands/">Implementation Status</a></td>
       </tr>
       <tr>
         <td><a href="https://github.com/detro/ghostdriver">GhostDriver</a></td>
@@ -198,10 +210,12 @@
         <td><a href="http://www.youtube.com/watch?v=wqxkKIC2HDY">SeConf talk</a></td>
       </tr>
       <tr>
-        <td><a href="https://developer.microsoft.com/en-us/microsoft-edge/tools/webdriver/">Microsoft Edge Driver</a></td>
-        <td colspan=2>&nbsp;</td>
-        <td><a href="https://developer.microsoft.com/en-us/microsoft-edge/platform/issues/">issue tracker</a></td>
-        <td><a href="https://developer.microsoft.com/en-us/microsoft-edge/platform/documentation/webdriver-commands/">Implementation Status</a></td>
+        <td><a href="https://github.com/seleniumhq/htmlunit-driver">HtmlUnitDriver</a></td>
+        <td><a href="https://github.com/SeleniumHQ/htmlunit-driver/releases">2.28</a></td>
+        <td>&nbsp;</td>
+        <td><a href="https://github.com/seleniumhq/htmlunit-driver/issues">issue tracker</a></td>
+	    <td>&nbsp;&nbsp;</td>
+	    <td>Released 2017-11-11</td>
       </tr>
       <tr>
         <td><a href="https://webkit.org/blog/6900/webdriver-support-in-safari-10/">SafariDriver</a></td>
@@ -320,6 +334,7 @@
     <li><a href="https://github.com/johndharrison/RSelenium">R</a> by John Harrison</li>
     <li><a href="https://github.com/google/webdriver.dart">Dart</a> by Marc Fisher</li>
     <li><a href="http://caiusproject.com/">Tcl</a> by Tobias Koch</li>
+    <li><a href="https://github.com/nathanjohnson320/exselenium">Elixir</a> by Nathan Johnson</li>
   </ul>
 
   <h3>Selenium GRID Plugins</h3>
@@ -347,7 +362,7 @@
     <div class="name">VisGrid-UI for Selenium Grid 2.0</div>
     <div class="column">
       <table>
-        <tr><th>Links:</th><td><a href="http://www.codoid.com/products/view/2/30">VisGrid-UI for Selenium Grid 2.0</a></td></tr>
+        <tr><th>Links:</th><td><a href="https://codoid.com/visgrid/">VisGrid-UI for Selenium Grid 2.0</a></td></tr>
         <tr><th>Author:</th><td><a href="http://www.codoid.com">Codoid</a></td></tr>
         <tr><th>License:</th><td>Apache License/Free</td></tr>
       </table>
@@ -361,12 +376,6 @@
     <p class="description">VisGrid is a GUI for Selenium Grid. You can start hub, create and attach a Selenium node very easily and quickly.</p>
   </div>
 
-  <a name="selenium_ide"/>
-  <h3>Selenium IDE</h3>
-  <p>Selenium IDE is a Firefox plugin which records and plays back user interactions with the browser. Use this to either create simple scripts or assist in exploratory testing. It can also export Remote Control or WebDriver scripts, though they tend to be somewhat brittle and should be overhauled into some sort of Page Object-y structure for any kind of resiliency.</p>
-  <p>Download latest released version <a href="https://addons.mozilla.org/en-US/firefox/addon/selenium-ide/">from addons.mozilla.org</a> or view the <a href="https://github.com/SeleniumHQ/selenium/wiki/SeIDE-Release-Notes">Release Notes</a> and then <a href="#side_plugins">install some plugins</a>.</p>
-  <p>Download <a href="http://release.seleniumhq.org/selenium-ide/">previous versions here</a>.</p>
-  
   <a name="side_plugins"/>
   <h3>Selenium IDE Plugins</h3>
   <p>Selenium IDE can be extended through its own plugin system. Here are a number of plugins that have been created using it. For more information on how to create your own plugin or have it listed, see the <a href="http://seleniumhq.org/projects/ide/plugins.html">plugin tutorial page</a>.</p>
@@ -408,24 +417,6 @@
       </table>
     </div>
     <p class="description">A Selenium IDE plugin for integrating with Flex-Pilot, for Flex automation. <a href="http://github.com/admc/flex-pilot-x">More info</a>.</p>
-  </div>
-  
-  <div class="plugin">
-    <div class="name">FlexMonkium</div>
-    <div class="column">
-      <table>
-        <tr><th>Links:</th><td><a href="http://www.gorillalogic.com/flexmonkium">Download</a> - <a href="http://www.gorillalogic.com/forums/flexmonkium">Support</a></td></tr>
-        <tr><th>Author:</th><td><a href="http://www.gorillalogic.com">Gorrila Logic</a></td></tr>
-        <tr><th>License:</th><td>GPL</td></tr>
-      </table>
-    </div>
-    <div class="column">
-      <table>
-        <tr><th>Released:</th><td>January 6, 2011</td></tr>
-        <tr><th>Version:</th><td>4.1.5</td></tr>
-      </table>
-    </div>
-    <p class="description">A plugin that adds Adobe Flex recording and playback to Selenium via the popular <a href="http://www.gorillalogic.com/flexmonkey">FlexMonkey</a> open source testing framework. With FlexMonkium, Flex recording and playback is seamlessly interleaved with native Selenium recording and playback so you can easily automate the testing of hybrid web applications that mix html and Javascript with Flex. In addition to creating and running Flex tests inside the Selenium IDE, you can export your hybrid testing scripts as JUnit 4 tests that run with Selenium-RC to easily enable automated testing and continuous integration.</p>
   </div>
   
   <div class="plugin">

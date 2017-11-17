@@ -36,6 +36,14 @@
             <a rel="nofollow" href="https://crossbrowsertesting.com/">CrossBrowserTesting</a> -
             test Selenium on 1000+ browsers and devices in the cloud.
         </li>
+        <li>
+            <a rel="nofollow" href="http://www.ranorex.com/selenium-webdriver-integration.html">Ranorex</a> -
+            test automation framework with Selenium WebDriver plug-in to easily create and manage tests and run them on Selenium-supported platforms and browsers.
+        </li>
+        <li>
+            <a rel="nofollow" href="https://www.ranorex.com/selocity/browser-extension.html">Selocity</a> -
+            Free Chrome browser extension to auto-generate robust CSS, XPath, link text, and RanoreXPath selectors.
+        </li>
     </ul>
 
     <h2>Monitoring &amp; Load Testing Services</h2>

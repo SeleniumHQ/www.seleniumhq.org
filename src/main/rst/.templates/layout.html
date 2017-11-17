@@ -1,5 +1,5 @@
 {%- block doctype -%}
-<!DOCTYPE html>
+<%@ page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %><!DOCTYPE html>
 {%- endblock %}
 {%- set reldelim1 = reldelim1 is not defined and ' &raquo;' or reldelim1 %}
 {%- set reldelim2 = reldelim2 is not defined and ' |' or reldelim2 %}
@@ -89,8 +89,9 @@
       {%- endif %}{% endif %}
 {%- endmacro %}
 
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html>
   <head>
+    <meta charset="utf-8" />
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     {{ metatags }}
     {%- if not embedded %}

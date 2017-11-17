@@ -548,7 +548,7 @@ Selenium-IDE不支持向测试套件加载预先存在的测试用例。
 --------------------------------------------------
 虽然Seleniu-IDE只能在FireFox上运行测试，但是通过使用命令行接口调用Selenium-RC服务器，
 用Selenium-IDE开发的测试可以在其他的浏览器中运行。
-这个话题包含在Selenium-RC章的 :ref:`运行Selenese测试<html-suite-cn>` 节。
+这个话题包含在Selenium-RC章的 :ref:`运行Selenese测试<cn-html-suite-cn>` 节。
 
 疑难解答
 ---------------

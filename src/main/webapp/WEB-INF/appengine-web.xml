@@ -5,11 +5,16 @@ xsi:schemaLocation="http://appengine.google.com/ns/1.0 http://googleappengine.go
     <version>1</version>
 
     <system-properties>
+        <property name="file.encoding" value="UTF-8" />
         <property name="java.util.logging.config.file" value="WEB-INF/classes/logging.properties"/>
     </system-properties>
 
     <sessions-enabled>true</sessions-enabled>
 	
-	<threadsafe>true</threadsafe>
+    <threadsafe>true</threadsafe>
+
+    <env-variables>
+        <env-var name="DEFAULT_ENCODING" value="UTF-8" />
+    </env-variables>
 
 </appengine-web-app>
