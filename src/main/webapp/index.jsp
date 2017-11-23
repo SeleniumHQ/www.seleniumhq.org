@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <meta name="google-site-verification" content="YZdTHYHShDiMXFspDDyijcN1P5ghqT8DUdO5FIxmofg" />
   <title>Selenium - Web Browser Automation</title>
 <%@include file="/jsp/head.jspf"%>
   <link rel="alternate" type="application/rss+xml" title="Selenium Blog Posts Feed" href="http://feeds.feedburner.com/Selenium" />
