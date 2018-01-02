@@ -58,6 +58,10 @@
     <h2>Tools with Selenium Support</h2>
 
     <ul>
+       <li>
+            <a rel="nofollow" href="http://testcraft.io">TestCraft</a> -
+            Codeless Test Automation platform for web applications that makes Selenium accessible to business testers with no coding skills. 
+        </li>
         <li>
             <a rel="nofollow" href="http://TestOptimal.com">TestOptimal</a> -
             A Model-Based test automation tool leveraging the power of Selenium.
