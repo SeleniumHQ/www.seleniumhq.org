@@ -58,10 +58,7 @@
     <h2>Tools with Selenium Support</h2>
 
     <ul>
-       <li>
-            <a rel="nofollow" href="http://testcraft.io">TestCraft</a> -
-            Codeless Test Automation platform for web applications that makes Selenium accessible to business testers with no coding skills. 
-        </li>
+      
         <li>
             <a rel="nofollow" href="http://TestOptimal.com">TestOptimal</a> -
             A Model-Based test automation tool leveraging the power of Selenium.
@@ -75,7 +72,7 @@
             Open Source framework that allows users to develop automation code, create readable keyword driven test cases and execute them across multiple machines all under a single Web interface.
         </li>
         <li>
-            <a rel="nofollow" href="http://testcraft.io">TestCraft</a> -
+            <a rel="nofollow" href="https://www.testcraft.io/?utm_campaign=Selenium%20website&utm_source=Referrals">TestCraft</a> -
             Codeless Test Automation platform for web applications that makes Selenium accessible to business testers with no coding skills. 
         </li>
     </ul>
