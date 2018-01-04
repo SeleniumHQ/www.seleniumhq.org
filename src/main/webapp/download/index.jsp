@@ -101,8 +101,8 @@
       </tr>
       <tr>
         <td>Python</td>
-        <td>3.8.0</td>
-        <td>2017-11-30</td>
+        <td>3.8.1</td>
+        <td>2018-01-04</td>
         <td><a href="http://pypi.python.org/pypi/selenium">Download</a></td>
         <td><a href="http://goo.gl/rHRdgk">Change log</a></td>
         <td><a href="http://goo.gl/sG1GfQ">API docs</a></td>
