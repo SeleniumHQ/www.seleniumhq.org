@@ -76,6 +76,10 @@
 
     <ul>
         <li>
+            <a rel="nofollow" href="https://objectcomputing.com">Object Computing, Inc. (OCI)</a> -
+            Selenium consulting, services, implementation, and training.
+        </li>
+        <li>
             <a rel="nofollow" href="http://element34.ca">Element 34</a> -
             Selenium consulting, training and coaching.
         </li>
