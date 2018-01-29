@@ -42,11 +42,11 @@
 
   <h3>Selenium Standalone Server</h3>
   <p>The Selenium Server is needed in order to run Remote Selenium WebDriver. Selenium 3.X is no longer capable of running Selenium RC directly, rather it does it through emulation and the WebDriverBackedSelenium interface.</p>
-  <p>Download version <a href="https://goo.gl/hvDPsK">3.8.1</>
+  <p>Download version <a href="https://goo.gl/hvDPsK">3.8.1</a>.
   <!-- use goo.gl to make the minified link, this allows anyone to view the statistics at: https://goo.gl/#analytics/goo.gl/<hash>/all_time -->
   </p>
-  <p>To run Selenium tests exported from IDE, use the <a href="https://goo.gl/864Q7m">Selenium Html Runner</a>.</p>
-  <p>To use the Selenium Server in a Grid configuration <a href="https://github.com/SeleniumHQ/selenium/wiki/Grid2">see the wiki page</a>.</p>
+  <p>To run Selenium tests exported from IDE, use the <a href="https://goo.gl/864Q7m">Selenium HTML Runner</a>.</p>
+  <p>To use the Selenium Server in a Grid configuration, <a href="https://github.com/SeleniumHQ/selenium/wiki/Grid2">see the wiki page</a>.</p>
 
   <h3>The Internet Explorer Driver Server</h3>
   <p>This is required if you want to make use of the latest and greatest
@@ -55,13 +55,13 @@
   to work as expected.</p>
   <p>Download version 3.8.0 for (recommended) <a
     href="https://goo.gl/PsZBFs">32 bit Windows IE</a> or <a
-    href="https://goo.gl/afA7P4">64 bit Windows IE</a><br/>
+    href="https://goo.gl/afA7P4">64 bit Windows IE</a>.<br/>
     <a href="http://goo.gl/LJ07LL">CHANGELOG</a></p>
 
   <a name="client-drivers"/>
   <h3>Selenium Client & WebDriver Language Bindings</h3>
   <p>In order to create scripts that interact with the Selenium Server (Selenium RC, Selenium Remote WebDriver) or create local Selenium WebDriver scripts, you need to make use of language-specific client drivers. These languages include both 1.x and 2.x style clients.</p>
-  <p>While language bindings for <a href="#thirdPartyLanguageBindings">other languages exist</a>, these are the core ones that are supported by the main project hosted on google code.</p>
+  <p>While language bindings for <a href="#thirdPartyLanguageBindings">other languages exist</a>, these are the core ones that are supported by the main project hosted on Google Code:</p>
 
   <table>
     <thead>
@@ -108,7 +108,7 @@
         <td><a href="http://goo.gl/sG1GfQ">API docs</a></td>
       </tr>
       <tr>
-        <td>Javascript (Node)</td>
+        <td>JavaScript (Node)</td>
         <td>3.6.0</td>
         <td>2017-10-06</td>
         <td><a href="https://npmjs.org/package/selenium-webdriver">Download</a></td>
@@ -118,16 +118,16 @@
     </tbody>
   </table>
   <h4>C# NuGet</h4>
-  <p>NuGet latest release is 3.8.0, Released on 2017-12-01</p>
+  <p>NuGet latest release is 3.8.0, released on 2017-12-01.</p>
   <ul>
     <li><a href="http://www.nuget.org/List/Packages/Selenium.WebDriver">WebDriver</a></li>
     <li><a href="http://www.nuget.org/List/Packages/Selenium.WebDriverBackedSelenium">WebDriverBackedSelenium</a></li>
     <li><a href="http://www.nuget.org/List/Packages/Selenium.Support">Support</a></li>
-    <li><a href="http://www.nuget.org/List/Packages/Selenium.RC">RC</a> (Final version 3.1.0 Released 2017-02-16)</li>
+    <li><a href="http://www.nuget.org/List/Packages/Selenium.RC">RC</a> (Final version 3.1.0 released on 2017-02-16)</li>
   </ul>
 
   <h3>SafariDriver - DEPRECATED - use Apple's SafariDriver with Safari 10+</h3>
-  <p>SafariDriver now requires manual installation of the extension prior to automation</p>
+  <p>SafariDriver now requires manual installation of the extension prior to automation.</p>
   <ul>
     <li>Latest release <a href="http://selenium-release.storage.googleapis.com/2.48/SafariDriver.safariextz">2.48.0</a></li>
     <li><a href="https://github.com/SeleniumHQ/selenium/wiki/SafariDriver">Wiki Page</a></li>
@@ -136,7 +136,7 @@
   <a name="selenium_ide"/>
   <h3>Selenium IDE</h3>
   <p>Selenium IDE is a Firefox plugin which records and plays back user interactions with the browser. Use this to either create simple scripts or assist in exploratory testing. It can also export Remote Control or WebDriver scripts, though they tend to be somewhat brittle and should be overhauled into some sort of Page Object-y structure for any kind of resiliency.</p>
-  <p>Download latest released version <a href="https://addons.mozilla.org/en-US/firefox/addon/selenium-ide/">from addons.mozilla.org</a> or view the <a href="https://github.com/SeleniumHQ/selenium/wiki/SeIDE-Release-Notes">Release Notes</a> and then <a href="#side_plugins">install some plugins</a>.</p>
+  <p>Download the latest released version <a href="https://addons.mozilla.org/en-US/firefox/addon/selenium-ide/">from addons.mozilla.org</a> or view the <a href="https://github.com/SeleniumHQ/selenium/wiki/SeIDE-Release-Notes">Release Notes</a> and then <a href="#side_plugins">install some plugins</a>.</p>
   <p>Download <a href="http://release.seleniumhq.org/selenium-ide/">previous versions here</a>.</p>
 
   <hr/>
@@ -337,8 +337,8 @@
     <li><a href="https://github.com/nathanjohnson320/exselenium">Elixir</a> by Nathan Johnson</li>
   </ul>
 
-  <h3>Selenium GRID Plugins</h3>
-  <p>Selenium grid can be extended by extending Java classes.</p>
+  <h3>Selenium Grid Plugins</h3>
+  <p>Selenium Grid can be extended by extending Java classes.</p>
 
   <div class="plugin">
     <div class="name">Move mouse away from screen</div>
@@ -381,7 +381,7 @@
   <p>Selenium IDE can be extended through its own plugin system. Here are a number of plugins that have been created using it. For more information on how to create your own plugin or have it listed, see the <a href="http://seleniumhq.org/projects/ide/plugins.html">plugin tutorial page</a>.</p>
   <p>Please note that these are not supported by the Selenium project and all issues need to be raised with the relevant developers.</p>
   
-  <h3>Selenium IDE Plugins (that provide new / improved features)</h3>
+  <h3>Selenium IDE Plugins (that provide new/improved features)</h3>
 
   <div class="plugin">
     <div class="name">Favorites</div>
@@ -398,7 +398,7 @@
         <tr><th>Version:</th><td>1.14</td></tr>
       </table>
     </div>
-    <p class="description">This plugin for Selenium-IDE gives you a way to mark your favorite test suites and open and execute them with a SINGLE click. <a href="http://blog.reallysimplethoughts.com/2011/04/07/favorites-for-selenium-ide/">More info</a>.</p>
+    <p class="description">This plugin for Selenium IDE gives you a way to mark your favorite test suites and open and execute them with a SINGLE click. <a href="http://blog.reallysimplethoughts.com/2011/04/07/favorites-for-selenium-ide/">More info</a>.</p>
   </div>
 
   <div class="plugin">
@@ -434,7 +434,7 @@
         <tr><th>Version:</th><td>1.7</td></tr>
       </table>
     </div>
-    <p class="description">This plugin for Selenium-IDE saves log messages to a file in real time at a user selectable log level. Once this plugin is installed, a FileLogging tab will be added to the options dialog and a FileLogging menu will be added to the log pane. <a href="http://blog.reallysimplethoughts.com/2010/08/16/file-logging-extension-for-selenium-ide-v1-6-released/">More info</a>.</p>
+    <p class="description">This plugin for Selenium IDE saves log messages to a file in real time at a user selectable log level. Once this plugin is installed, a FileLogging tab will be added to the options dialog and a FileLogging menu will be added to the log pane. <a href="http://blog.reallysimplethoughts.com/2010/08/16/file-logging-extension-for-selenium-ide-v1-6-released/">More info</a>.</p>
   </div>
   
   <div class="plugin">
@@ -470,7 +470,7 @@
         <tr><th>Version:</th><td>1.2</td></tr>
       </table>
     </div>
-    <p class="description">This plugin for Selenium-IDE highlights elements specified in the Selenese commands on the web page as the test case is executed. Once this plugin is installed, a Highlight elements button will be available on the Selenium-IDE main window and Sidebar. <a href="http://blog.reallysimplethoughts.com/2011/07/27/highlight-elements-plugin-v1-2-for-selenium-ide">More info</a>.</p>
+    <p class="description">This plugin for Selenium IDE highlights elements specified in the Selenese commands on the web page as the test case is executed. Once this plugin is installed, a Highlight elements button will be available on the Selenium IDE main window and sidebar. <a href="http://blog.reallysimplethoughts.com/2011/07/27/highlight-elements-plugin-v1-2-for-selenium-ide">More info</a>.</p>
   </div>
 
   <div class="plugin">
@@ -506,7 +506,7 @@
         <tr><th>Version:</th><td>1.1</td></tr>
       </table>
     </div>
-    <p class="description">A plugin for Selenium-IDE to show a find toolbar in the log pane making it easy to search the displayed log messages. Once this plugin is installed, the log pane will be changed to contain the find toolbar similar to the one found in the Firefox browser. <a href="http://blog.reallysimplethoughts.com/2010/08/02/log-search-bar-plugin-for-selenium-ide/">More info</a>.</p>
+    <p class="description">A plugin for Selenium IDE to show a find toolbar in the log pane making it easy to search the displayed log messages. Once this plugin is installed, the log pane will be changed to contain the find toolbar similar to the one found in the Firefox browser. <a href="http://blog.reallysimplethoughts.com/2010/08/02/log-search-bar-plugin-for-selenium-ide/">More info</a>.</p>
   </div>
 
   <div class="plugin">
@@ -524,7 +524,7 @@
         <tr><th>Version:</th><td>1.7</td></tr>
       </table>
     </div>
-    <p class="description">This plugin for Selenium-IDE generates page coverage reports highlighting areas of a web page touched by the Selenese test cases / test suites. <a href="http://blog.reallysimplethoughts.com/2012/01/16/page-coverage-v1-0-for-selenium-ide-now-available/">More info</a>.</p>
+    <p class="description">This plugin for Selenium IDE generates page coverage reports highlighting areas of a web page touched by the Selenese test cases/suites. <a href="http://blog.reallysimplethoughts.com/2012/01/16/page-coverage-v1-0-for-selenium-ide-now-available/">More info</a>.</p>
   </div>
 
   <div class="plugin">
@@ -542,7 +542,7 @@
         <tr><th>Version:</th><td>1.0</td></tr>
       </table>
     </div>
-    <p class="description">This plugin for Selenium-IDE improves debugging and troubleshooting issues with scripts. This plugin adds the pause on fail tool to the Selenium IDE toolbar. When pause on fail is turned on, Selenium IDE would pause the execution of the test case when there is an error or a command failure, allowing you to troubleshoot the problem. <a href="http://blog.reallysimplethoughts.com/2010/11/15/the-power-debugger-plugin-v1-0-for-selenium-ide-released/">More info</a>.</p>
+    <p class="description">This plugin for Selenium IDE improves debugging and troubleshooting issues with scripts. This plugin adds the pause on fail tool to the Selenium IDE toolbar. When pause on fail is turned on, Selenium IDE would pause the execution of the test case when there is an error or a command failure, allowing you to troubleshoot the problem. <a href="http://blog.reallysimplethoughts.com/2010/11/15/the-power-debugger-plugin-v1-0-for-selenium-ide-released/">More info</a>.</p>
   </div>
 
   <div class="plugin">
@@ -560,7 +560,7 @@
         <tr><th>Version:</th><td>1.5</td></tr>
       </table>
     </div>
-    <p class="description">This plugin for Selenium-IDE automatically takes a screen-shot when a command fails while running the test suite. <a href="http://blog.reallysimplethoughts.com/2012/02/20/screenshot-on-fail-v1-0-for-selenium-ide-now-available/">More info</a>.</p>
+    <p class="description">This plugin for Selenium IDE automatically takes a screenshot when a command fails while running the test suite. <a href="http://blog.reallysimplethoughts.com/2012/02/20/screenshot-on-fail-v1-0-for-selenium-ide-now-available/">More info</a>.</p>
   </div>
 
   <div class="plugin">
@@ -578,7 +578,7 @@
         <tr><th>Version:</th><td>2.0</td></tr>
       </table>
     </div>
-    <p class="description">This plugin is a language extension for Selenium IDE that provides javascript-like conditionals, looping, callable functions, error catching, and JSON/XML driven parameterization.</p>
+    <p class="description">This plugin is a language extension for Selenium IDE that provides JavaScript-like conditionals, looping, callable functions, error catching, and JSON/XML driven parameterization.</p>
   </div>
 
   <div class="plugin">
@@ -614,7 +614,7 @@
         <tr><th>Version:</th><td>0.2</td></tr>
       </table>
     </div>
-    <p class="description">This plugin is my attempt to bring the wonderful world of inspections, tips, hints, fixes and refactoring to Selenese! The Selenium Expert goes through your selenium test cases suggesting improvements, giving tips and even lets you apply them with a single click. Recently, Selenium IDE has brought a some improvements that will break some test scripts. The good news is that most of the essential breaking changes introduced in Selenium IDE 1.0.10 have been incorporated into the Selenium Expert. This should make your migration task a few clicks affair. <a href="http://blog.reallysimplethoughts.com/2010/12/28/the-selenium-expert-is-here/">More info</a>.</p>
+    <p class="description">This plugin is my attempt to bring the wonderful world of inspections, tips, hints, fixes and refactoring to Selenese! The Selenium Expert goes through your Selenium test cases suggesting improvements, giving tips and even lets you apply them with a single click. Recently, Selenium IDE has brought some improvements that will break some test scripts. The good news is that most of the essential breaking changes introduced in Selenium IDE 1.0.10 have been incorporated into the Selenium Expert. This should make your migration task a few clicks affair. <a href="http://blog.reallysimplethoughts.com/2010/12/28/the-selenium-expert-is-here/">More info</a>.</p>
   </div>
   
   <div class="plugin">
@@ -632,7 +632,7 @@
         <tr><th>Version:</th><td>1.21</td></tr>
       </table>
     </div>
-    <p class="description">This plugin for Selenium-IDE to allows you to view and delete the stored variables within Selenium IDE using an easy to use user interface. Stored variables are created using the store, storeText, storeExpression and other similar store* commands. This plugin allows you to view these variables when the test is running. <a href="http://blog.reallysimplethoughts.com/2012/07/30/stored-variables-plugin-v1-21-for-selenium-ide-released/">More info</a>.</p>
+    <p class="description">This plugin for Selenium IDE allows you to view and delete the stored variables within Selenium IDE using an easy to use user interface. Stored variables are created using the store, storeText, storeExpression and other similar store* commands. This plugin allows you to view these variables when the test is running. <a href="http://blog.reallysimplethoughts.com/2012/07/30/stored-variables-plugin-v1-21-for-selenium-ide-released/">More info</a>.</p>
   </div>
 
   <div class="plugin">
@@ -650,7 +650,7 @@
         <tr><th>Version:</th><td>1.10</td></tr>
       </table>
     </div>
-    <p class="description">This plugin for Selenium-IDE saves the results of the test execution for the test suite and included test cases with a single click. It also allows you to export the test results for individual test cases. <a href="http://blog.reallysimplethoughts.com/2011/10/08/test-results-v1-0-for-selenium-ide-now-available/">More info</a>.</p>
+    <p class="description">This plugin for Selenium IDE saves the results of the test execution for the test suite and included test cases with a single click. It also allows you to export the test results for individual test cases. <a href="http://blog.reallysimplethoughts.com/2011/10/08/test-results-v1-0-for-selenium-ide-now-available/">More info</a>.</p>
   </div>
 
   <div class="plugin">
@@ -668,7 +668,7 @@
         <tr><th>Version:</th><td>1.5</td></tr>
       </table>
     </div>
-    <p class="description">A plugin for Selenium-IDE to convert one or more test suites, including their test cases, from the html format to any other format supported by the Selenium-IDE. <a href="http://blog.reallysimplethoughts.com/2011/01/11/test-suite-batch-converter-plugin-v1-5-released/">More info</a>.</p>
+    <p class="description">A plugin for Selenium IDE to convert one or more test suites, including their test cases, from the HTML format to any other format supported by Selenium IDE. <a href="http://blog.reallysimplethoughts.com/2011/01/11/test-suite-batch-converter-plugin-v1-5-released/">More info</a>.</p>
   </div>
   
   <!-- Add-on for reading a CSV File in Selenium IDE-->
@@ -704,10 +704,10 @@
   </p>
   <strong>Download</strong>
   <p>
-    For the easiest download get all components in <a href="https://addons.mozilla.org/en-US/firefox/addon/selite/">one package</a> and <a href="#Favorites">Favorites (Selenium IDE)</a>.
+    For the easiest download, get all components in <a href="https://addons.mozilla.org/en-US/firefox/addon/selite/">one package</a> and <a href="#Favorites">Favorites (Selenium IDE)</a>.
   </p>
   <p>
-    For alternative downloads and source code choose <a href="http://selite.github.io/Components">the components</a>.
+    For alternative downloads and source code, choose <a href="http://selite.github.io/Components">the components</a>.
   </p>
 
 
@@ -726,7 +726,7 @@
         <tr><th>Since:</th><td>July 2014</td></tr>
       </table>
     </div>
-    <p class="description">It runs template-based, customisable or fully custom validation of the tested website after every Selenese step. It records server errors etc.</p>
+    <p class="description">It runs template-based, customisable or fully custom validation of the tested website after every Selenese step. It records server errors, etc.</p>
   </div>
 
   <div class="plugin">
@@ -891,7 +891,7 @@
         <tr><th>Since:</th><td>2016</td></tr>
       </table>
     </div>
-    <p class="description">It enables user scripts to present data for reporting, confirmation, selection or data entry. Presentation layer is in HTML, optionally benefiting from client-side templating, such as <a href="https://github.com/pure/pure">PURE</a>. Together with <a href="#selite-selblocks-global">SelBlocks Global</a> it allows user scripts to run interactively. </p>
+    <p class="description">It enables user scripts to present data for reporting, confirmation, selection or data entry. Presentation layer is in HTML, optionally benefiting from client-side templating, such as <a href="https://github.com/pure/pure">PURE</a>. Together with <a href="#selite-selblocks-global">SelBlocks Global</a>, it allows user scripts to run interactively. </p>
   </div>
 
   <div class="plugin">
@@ -909,7 +909,7 @@
         <tr><th>Since:</th><td>September 2014</td></tr>
       </table>
     </div>
-    <p class="description">It runs a sequence of all test suites marked as favorites in <a href="#Favorites">Favorites (Selenium IDE)</a>. It supports team work: it facilitates export/import of favorites by representing them relative to user's home folder.</p>
+    <p class="description">It runs a sequence of all test suites marked as favorites in <a href="#Favorites">Favorites (Selenium IDE)</a>. It supports team work: it facilitates export/import of favorites by representing them relative to a user's home folder.</p>
   </div>
   
   <div class="plugin">
@@ -927,7 +927,7 @@
         <tr><th>Since:</th><td>2011</td></tr>
       </table>
     </div>
-    <p class="description">It's an enhanced version of SelBlocks. It allows to call functions (formerly: scripts) across the test cases (within the same test suite). It also provides <a href="https://selite.github.io/EnhancedSyntax">EnhancedSyntax</a>, which supports more expressive tests.</p>
+    <p class="description">It's an enhanced version of SelBlocks. It allows to call functions (formerly scripts) across the test cases (within the same test suite). It also provides <a href="https://selite.github.io/EnhancedSyntax">EnhancedSyntax</a>, which supports more expressive tests.</p>
   </div>
 
   <div class="plugin">
@@ -1020,7 +1020,7 @@
         <tr><th>Version:</th><td>1.0.3</td></tr>
       </table>
     </div>
-    <p class="description">A plugin for Selenium-IDE that bundles the Perl formatters that used to be included in Se-IDE.</p>
+    <p class="description">A plugin for Selenium IDE that bundles the Perl formatters that used to be included in Se-IDE.</p>
   </div>
 
   <div class="plugin">
@@ -1038,7 +1038,7 @@
         <tr><th>Version:</th><td>1.3.0</td></tr>
       </table>
     </div>
-    <p class="description">A plugin for Selenium-IDE that bundles the PHP formatters that used to be included in Se-IDE.</p>
+    <p class="description">A plugin for Selenium IDE that bundles the PHP formatters that used to be included in Se-IDE.</p>
   </div>
 
   <div class="plugin">
@@ -1056,7 +1056,7 @@
         <tr><th>Version:</th><td>1.3</td></tr>
       </table>
     </div>
-    <p class="description">A plugin for Selenium-IDE that adds support for the simplified markup
+    <p class="description">A plugin for Selenium IDE that adds support for the simplified markup
     used by the <a href="http://www.playframework.org">Play! framework</a>.</p>
   </div>
 
@@ -1075,7 +1075,7 @@
         <tr><th>Version:</th><td>1.0.1</td></tr>
       </table>
     </div>
-    <p class="description">The Selenium Dot Formatter allows to convert Selenium test into a dot format to be easily used in Graphviz, it could be useful to explain the structure of a test case.
+    <p class="description">The Selenium Dot Formatter allows to convert Selenium test into a dot format to be easily used in Graphviz. It could be useful to explain the structure of a test case.
 
 The tests are direct graphs with forks when the gotoIf command is used. Basic commands have their own color which can be modified, optionally the arrows can have a number as label.</p>
   </div>
@@ -1095,8 +1095,8 @@ The tests are direct graphs with forks when the gotoIf command is used. Basic co
         <tr><th>Version:</th><td>1.5</td></tr>
       </table>
     </div>
-    <p class="description">Selenium XML Formatter is a custom XML Formatter for Selenium-IDE.
-Compliant with Selenium command &amp; comment syntax, this formatter output data in a very common language. This way, you can easily parse the test case in your favorite programming language. </p>
+    <p class="description">Selenium XML Formatter is a custom XML Formatter for Selenium IDE.
+Compliant with Selenium command &amp; comment syntax, this formatter outputs data in a very common language. This way, you can easily parse the test case in your favorite programming language. </p>
   </div>
   
   <div class="plugin">
@@ -1134,9 +1134,9 @@ Supported wiki syntax: Confluence, Dokuwiki, MediaWiki, MoinMoin, Textile, Trac,
       </table>
     </div>
     <p class="description">Selenium2Excel Converter is a tool to convert your selenese scripts to Excel format.
-With the help of the this plug-in users can easily convert the recorded script into Excel file.
-Selenium2Excel Converter is very useful when automating the selenium scripts in Keyword driven or Hybrid driven framework.
-To use this plug-in users need to have Microsoft Excel installed and it only works on Windows.</p>
+With the help of this plug-in, users can easily convert the recorded script into an Excel file.
+Selenium2Excel Converter is very useful when automating Selenium scripts in keyword driven or hybrid driven frameworks.
+This plug-in can be used only on Windows and with Microsoft Excel installed.</p>
   </div>
     
   <div class="plugin">
