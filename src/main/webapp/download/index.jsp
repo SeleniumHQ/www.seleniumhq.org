@@ -79,7 +79,7 @@
         <td>Java</td>
         <td>3.9.0</td>
         <td>2018-02-05</td>
-        <td><a href="https://goo.gl/wz6ovx">Download</a>&nbsp;&nbsp;</td>
+        <td><a href="https://goo.gl/4p5PAb">Download</a>&nbsp;&nbsp;</td>
         <td><a href="http://goo.gl/5IVvjZ">Change log</a>&nbsp;&nbsp;</td>
         <td><a href="http://goo.gl/Grc6tm" alt="Javadoc">Javadoc</a></td>
       </tr>
