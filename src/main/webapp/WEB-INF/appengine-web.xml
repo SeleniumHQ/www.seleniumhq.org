@@ -9,6 +9,8 @@ xsi:schemaLocation="http://appengine.google.com/ns/1.0 http://googleappengine.go
         <property name="java.util.logging.config.file" value="WEB-INF/classes/logging.properties"/>
     </system-properties>
 
+    <runtime>java8</runtime>
+
     <sessions-enabled>true</sessions-enabled>
 	
     <threadsafe>true</threadsafe>
