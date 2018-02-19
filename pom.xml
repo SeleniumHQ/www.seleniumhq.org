@@ -146,28 +146,25 @@
                 </configuration>
             </plugin>
             <plugin>
-              <groupId>com.google.appengine</groupId>
-              <artifactId>gcloud-maven-plugin</artifactId>
+              <groupId>com.google.cloud.tools</groupId>
+              <artifactId>appengine-maven-plugin</artifactId>
               <version>${gcloud.plugin.version}</version>
               <configuration>
                 <set_default>true</set_default>
               </configuration>
             </plugin>
 			<plugin>
-				<groupId>org.mortbay.jetty</groupId>
-				<artifactId>maven-jetty-plugin</artifactId>
-                <version>6.1.26</version>
+				<groupId>org.eclipse.jetty</groupId>
+				<artifactId>jetty-maven-plugin</artifactId>
+                <version>9.2.24.v20180105</version>
 				<configuration>
 					<scanIntervalSeconds>5</scanIntervalSeconds>
-					<connectors>
-						<connector implementation="org.mortbay.jetty.nio.SelectChannelConnector">
-							<port>8080</port>
-							<maxIdleTime>60000</maxIdleTime>
-						</connector>
-					</connectors>
+					<httpConnector>
+                        <port>8080</port>
+					</httpConnector>
                     <webAppConfig>
                         <contextPath>/</contextPath>
-                        <baseResource implementation="org.mortbay.resource.ResourceCollection">
+                        <baseResource implementation="org.eclipse.jetty.util.resource.ResourceCollection">
                             <resourcesAsCSV>src/main/webapp,target/${project.artifactId}-${project.version}</resourcesAsCSV>
                         </baseResource>
                     </webAppConfig>
@@ -191,8 +188,8 @@
 
         <app.id>sehq-docs</app.id>
         <app.version>1</app.version>
-        <appengine.version>1.9.32</appengine.version>
-        <gcloud.plugin.version>2.0.9.74.v20150814</gcloud.plugin.version>
+        <appengine.version>1.9.62</appengine.version>
+        <gcloud.plugin.version>1.3.2</gcloud.plugin.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.compiler.showDeprecation>true</maven.compiler.showDeprecation>
 	</properties>
