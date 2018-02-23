@@ -53,9 +53,9 @@
   features of the WebDriver InternetExplorerDriver. Please make sure that this
   is available on your $PATH (or %PATH% on Windows) in order for the IE Driver
   to work as expected.</p>
-  <p>Download version 3.8.0 for (recommended) <a
-    href="https://goo.gl/PsZBFs">32 bit Windows IE</a> or <a
-    href="https://goo.gl/afA7P4">64 bit Windows IE</a><br/>
+  <p>Download version 3.9.0 for (recommended) <a
+    href="https://goo.gl/bWzJ8T">32 bit Windows IE</a> or <a
+    href="https://goo.gl/ns6MEj">64 bit Windows IE</a><br/>
     <a href="http://goo.gl/LJ07LL">CHANGELOG</a></p>
 
   <a name="client-drivers"/>
@@ -85,16 +85,16 @@
       </tr>
       <tr>
         <td>C#</td>
-        <td>3.8.0</td>
-        <td>2017-12-01</td>
-        <td><a href="https://goo.gl/1ux6yL">Download</a></td>
+        <td>3.9.1</td>
+        <td>2018-02-09</td>
+        <td><a href="https://goo.gl/aa746n">Download</a></td>
         <td><a href="http://goo.gl/t3faSQ">Change log</a></td>
         <td><a href="http://goo.gl/uutZjZ">API docs</a></td>
       </tr>
       <tr>
         <td>Ruby</td>
-        <td>3.8.0</td>
-        <td>2017-12-01</td>
+        <td>3.9.0</td>
+        <td>2018-02-06</td>
         <td><a href="http://rubygems.org/gems/selenium-webdriver">Download</a></td>
         <td><a href="http://goo.gl/zNfSLK">Change log</a></td>
         <td><a href="http://goo.gl/jzh4RU">API docs</a></td>
@@ -118,7 +118,7 @@
     </tbody>
   </table>
   <h4>C# NuGet</h4>
-  <p>NuGet latest release is 3.8.0, Released on 2017-12-01</p>
+  <p>NuGet latest release is 3.9.1, Released on 2018-02-09</p>
   <ul>
     <li><a href="http://www.nuget.org/List/Packages/Selenium.WebDriver">WebDriver</a></li>
     <li><a href="http://www.nuget.org/List/Packages/Selenium.WebDriverBackedSelenium">WebDriverBackedSelenium</a></li>
