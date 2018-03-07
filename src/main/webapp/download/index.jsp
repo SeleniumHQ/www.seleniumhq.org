@@ -174,27 +174,27 @@
     <tbody>
       <tr>
 	    <td><a href="https://github.com/mozilla/geckodriver/">Mozilla GeckoDriver</a></td>
-	    <td><a href="https://github.com/mozilla/geckodriver/releases">0.19.0</a>&nbsp;&nbsp;</td>
+	    <td><a href="https://github.com/mozilla/geckodriver/releases">0.19.1</a>&nbsp;&nbsp;</td>
 	    <td><a href="https://github.com/mozilla/geckodriver/blob/release/CHANGES.md">change log</a>&nbsp;&nbsp;</td>
 	    <td><a href="https://github.com/mozilla/geckodriver/issues">issue tracker</a>&nbsp;&nbsp;</td>
 	    <td><a href="https://developer.mozilla.org/en-US/docs/Mozilla/QA/Marionette/WebDriver/status">Implementation Status</a></td>
-	    <td>Released 2017-09-16</td>
+	    <td>Released 2017-10-31</td>
       </tr>
       <tr>
         <td><a href="https://sites.google.com/a/chromium.org/chromedriver/">Google Chrome Driver</a></td>
-        <td><a href="http://chromedriver.storage.googleapis.com/index.html?path=2.33/">2.33</a>&nbsp;&nbsp;</td>
-        <td><a href="http://chromedriver.storage.googleapis.com/2.33/notes.txt">change log</a>&nbsp;&nbsp;</td>
+        <td><a href="http://chromedriver.storage.googleapis.com/index.html?path=2.36/">2.36</a>&nbsp;&nbsp;</td>
+        <td><a href="http://chromedriver.storage.googleapis.com/2.36/notes.txt">change log</a>&nbsp;&nbsp;</td>
         <td><a href="https://bugs.chromium.org/p/chromedriver/issues/list">issue tracker</a>&nbsp;&nbsp;</td>
         <td><a href="https://github.com/SeleniumHQ/selenium/wiki/ChromeDriver">selenium wiki page</a>&nbsp;&nbsp;</td>
-        <td>Released 2017-10-03</td>
+        <td>Released 2018-03-06</td>
       </tr>
       <tr>
         <td><a href="http://choice.opera.com/developer/tools/operadriver/">Opera</a></td>
-        <td><a href="https://github.com/operasoftware/operachromiumdriver/releases">2.29</a></td>
+        <td><a href="https://github.com/operasoftware/operachromiumdriver/releases">2.33</a></td>
         <td>&nbsp;</td>
         <td><a href="https://github.com/operasoftware/operachromiumdriver/issues">issue tracker</a></td>
         <td><a href="https://github.com/SeleniumHQ/selenium/wiki/OperaDriver">selenium wiki page</a></td>
-        <td>Released 2017-06-27</td>
+        <td>Released 2018-01-17</td>
       </tr>
       <tr>
         <td><a href="https://developer.microsoft.com/en-us/microsoft-edge/tools/webdriver/">Microsoft Edge Driver</a></td>
@@ -211,11 +211,11 @@
       </tr>
       <tr>
         <td><a href="https://github.com/seleniumhq/htmlunit-driver">HtmlUnitDriver</a></td>
-        <td><a href="https://github.com/SeleniumHQ/htmlunit-driver/releases">2.28.1</a></td>
+        <td><a href="https://github.com/SeleniumHQ/htmlunit-driver/releases">2.29.2</a></td>
         <td>&nbsp;</td>
         <td><a href="https://github.com/seleniumhq/htmlunit-driver/issues">issue tracker</a></td>
 	    <td>&nbsp;&nbsp;</td>
-	    <td>Released 2017-11-19</td>
+	    <td>Released 2018-02-12</td>
       </tr>
       <tr>
         <td><a href="https://webkit.org/blog/6900/webdriver-support-in-safari-10/">SafariDriver</a></td>
@@ -272,11 +272,11 @@
       </tr>
       <tr>
         <td><a href="https://github.com/cisco-open-source/qtwebdriver">QtWebDriver</a></td>
-        <td><a href="https://github.com/cisco-open-source/qtwebdriver/releases/tag/WebDriver-cisco-cmt-1.3.1">1.3.1</a>&nbsp;&nbsp;</td>
+        <td><a href="https://github.com/cisco-open-source/qtwebdriver/releases/tag/WebDriver-cisco-cmt-1.3.3">1.3.3</a>&nbsp;&nbsp;</td>
         <td><a href="https://github.com/cisco-open-source/qtwebdriver/releases">change log</a>&nbsp;&nbsp;</td>
         <td><a href="https://github.com/cisco-open-source/qtwebdriver/issues">issue tracker</a>&nbsp;&nbsp;</td>
         <td><a href="https://github.com/cisco-open-source/qtwebdriver/wiki">wiki page</a>&nbsp;&nbsp;</td>
-        <td>Released 2015-06-17</td>
+        <td>Released 2017-01-29</td>
       </tr>
       <tr>
         <td><a href="https://github.com/MachinePublishers/jBrowserDriver">jBrowserDriver</a></td>
