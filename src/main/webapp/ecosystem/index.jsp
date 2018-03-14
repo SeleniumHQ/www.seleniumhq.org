@@ -103,6 +103,10 @@
             <a rel="nofollow" href="http://www.wedoqa.com/#selenium">WeDoQA</a> - 
             Selenium Automation, Custom Selenium Frameworks, Load testing using Selenium to simulate real usage.
         </li>
+        <li>
+            <a rel="nofollow" href="https://testsmith.io">WeDoQA</a> - 
+            Dutch company providing Selenium WebDriver consultancy, training and workshops.
+        </li>
     </ul>
 
     <h2>Commercial Training</h2>
