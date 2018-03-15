@@ -93,8 +93,8 @@
       </tr>
       <tr>
         <td>Ruby</td>
-        <td>3.9.0</td>
-        <td>2018-02-06</td>
+        <td>3.11.0</td>
+        <td>2018-03-11</td>
         <td><a href="http://rubygems.org/gems/selenium-webdriver">Download</a></td>
         <td><a href="http://goo.gl/zNfSLK">Change log</a></td>
         <td><a href="http://goo.gl/jzh4RU">API docs</a></td>
@@ -174,19 +174,19 @@
     <tbody>
       <tr>
 	    <td><a href="https://github.com/mozilla/geckodriver/">Mozilla GeckoDriver</a></td>
-	    <td><a href="https://github.com/mozilla/geckodriver/releases">0.19.0</a>&nbsp;&nbsp;</td>
+	    <td><a href="https://github.com/mozilla/geckodriver/releases">0.20.0</a>&nbsp;&nbsp;</td>
 	    <td><a href="https://github.com/mozilla/geckodriver/blob/release/CHANGES.md">change log</a>&nbsp;&nbsp;</td>
 	    <td><a href="https://github.com/mozilla/geckodriver/issues">issue tracker</a>&nbsp;&nbsp;</td>
 	    <td><a href="https://developer.mozilla.org/en-US/docs/Mozilla/QA/Marionette/WebDriver/status">Implementation Status</a></td>
-	    <td>Released 2017-09-16</td>
+	    <td>Released 2018-03-08</td>
       </tr>
       <tr>
         <td><a href="https://sites.google.com/a/chromium.org/chromedriver/">Google Chrome Driver</a></td>
-        <td><a href="http://chromedriver.storage.googleapis.com/index.html?path=2.33/">2.33</a>&nbsp;&nbsp;</td>
-        <td><a href="http://chromedriver.storage.googleapis.com/2.33/notes.txt">change log</a>&nbsp;&nbsp;</td>
+        <td><a href="http://chromedriver.storage.googleapis.com/index.html?path=2.36/">2.36</a>&nbsp;&nbsp;</td>
+        <td><a href="http://chromedriver.storage.googleapis.com/2.36/notes.txt">change log</a>&nbsp;&nbsp;</td>
         <td><a href="https://bugs.chromium.org/p/chromedriver/issues/list">issue tracker</a>&nbsp;&nbsp;</td>
         <td><a href="https://github.com/SeleniumHQ/selenium/wiki/ChromeDriver">selenium wiki page</a>&nbsp;&nbsp;</td>
-        <td>Released 2017-10-03</td>
+        <td>Released 2018-03-02</td>
       </tr>
       <tr>
         <td><a href="http://choice.opera.com/developer/tools/operadriver/">Opera</a></td>
