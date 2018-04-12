@@ -45,7 +45,7 @@
   <p>Download version <a href="https://goo.gl/UzaKCo">3.11.0</>
   <!-- use goo.gl to make the minified link, this allows anyone to view the statistics at: https://goo.gl/#analytics/goo.gl/<hash>/all_time -->
   </p>
-  <p>To run Selenium tests exported from IDE, use the <a href="https://goo.gl/suji5p">Selenium Html Runner</a>.</p>
+  <p>To run Selenium tests exported from the legacy IDE, use the <a href="https://goo.gl/suji5p">Selenium Html Runner</a>.</p>
   <p>To use the Selenium Server in a Grid configuration <a href="https://github.com/SeleniumHQ/selenium/wiki/Grid2">see the wiki page</a>.</p>
 
   <h3>The Internet Explorer Driver Server</h3>
@@ -135,9 +135,9 @@
 
   <a name="selenium_ide"/>
   <h3>Selenium IDE</h3>
-  <p>Selenium IDE is a Firefox plugin which records and plays back user interactions with the browser. Use this to either create simple scripts or assist in exploratory testing. It can also export Remote Control or WebDriver scripts, though they tend to be somewhat brittle and should be overhauled into some sort of Page Object-y structure for any kind of resiliency.</p>
-  <p>Download latest released version <a href="https://addons.mozilla.org/en-US/firefox/addon/selenium-ide/">from addons.mozilla.org</a> or view the <a href="https://github.com/SeleniumHQ/selenium/wiki/SeIDE-Release-Notes">Release Notes</a> and then <a href="#side_plugins">install some plugins</a>.</p>
-  <p>Download <a href="http://release.seleniumhq.org/selenium-ide/">previous versions here</a>.</p>
+  <p>Selenium IDE is a Chrome and Firefox plugin which records and plays back user interactions with the browser. Use this to either create simple scripts or assist in exploratory testing.</p>
+  <p>Download latest released version <a href="https://chrome.google.com/webstore/detail/selenium-ide/mooikfkahbdckldjjndioackbalphokd">for Chrome</a> or <a href="https://addons.mozilla.org/en-US/firefox/addon/selenium-ide/">for Firefox</a> or view the <a href="https://github.com/SeleniumHQ/selenium-ide/releases">Release Notes</a>.</p>
+  <p>Download <a href="https://addons.mozilla.org/en-GB/firefox/addon/selenium-ide/versions/">previous IDE versions here</a>.</p>
 
   <hr/>
 
@@ -377,7 +377,8 @@
   </div>
 
   <a name="side_plugins"/>
-  <h3>Selenium IDE Plugins</h3>
+  <h3>Legacy Selenium IDE Plugins</h3>
+  <p>The plugins below are not compatible with the new IDE, use the <a href="https://addons.mozilla.org/en-GB/firefox/addon/selenium-ide/versions/">legacy</a> version instead</p>
   <p>Selenium IDE can be extended through its own plugin system. Here are a number of plugins that have been created using it. For more information on how to create your own plugin or have it listed, see the <a href="http://seleniumhq.org/projects/ide/plugins.html">plugin tutorial page</a>.</p>
   <p>Please note that these are not supported by the Selenium project and all issues need to be raised with the relevant developers.</p>
   
