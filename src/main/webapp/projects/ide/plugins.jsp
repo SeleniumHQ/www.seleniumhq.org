@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Selenium IDE</title>
+<title>Legacy Selenium IDE Plugins</title>
 <%@include file="/jsp/head.jspf"%>
 </head>
 <body class="sectionProjects">
