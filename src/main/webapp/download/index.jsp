@@ -53,9 +53,9 @@
   features of the WebDriver InternetExplorerDriver. Please make sure that this
   is available on your $PATH (or %PATH% on Windows) in order for the IE Driver
   to work as expected.</p>
-  <p>Download version 3.9.0 for (recommended) <a
-    href="https://goo.gl/bWzJ8T">32 bit Windows IE</a> or <a
-    href="https://goo.gl/ns6MEj">64 bit Windows IE</a><br/>
+  <p>Download version 3.11.1 for (recommended) <a
+    href="https://goo.gl/CHVh8R">32 bit Windows IE</a> or <a
+    href="https://goo.gl/WMxNFq">64 bit Windows IE</a><br/>
     <a href="http://goo.gl/LJ07LL">CHANGELOG</a></p>
 
   <a name="client-drivers"/>
@@ -85,9 +85,9 @@
       </tr>
       <tr>
         <td>C#</td>
-        <td>3.9.1</td>
-        <td>2018-02-09</td>
-        <td><a href="https://goo.gl/aa746n">Download</a></td>
+        <td>3.11.1</td>
+        <td>2018-03-11</td>
+        <td><a href="https://goo.gl/TGEabG">Download</a></td>
         <td><a href="http://goo.gl/t3faSQ">Change log</a></td>
         <td><a href="http://goo.gl/uutZjZ">API docs</a></td>
       </tr>
@@ -101,16 +101,16 @@
       </tr>
       <tr>
         <td>Python</td>
-        <td>3.9.0</td>
-        <td>2018-02-05</td>
+        <td>3.11.0</td>
+        <td>2018-03-12</td>
         <td><a href="http://pypi.python.org/pypi/selenium">Download</a></td>
         <td><a href="http://goo.gl/rHRdgk">Change log</a></td>
         <td><a href="http://goo.gl/sG1GfQ">API docs</a></td>
       </tr>
       <tr>
         <td>Javascript (Node)</td>
-        <td>3.6.0</td>
-        <td>2017-10-06</td>
+        <td>4.0.0-alpha.1</td>
+        <td>2018-01-13</td>
         <td><a href="https://npmjs.org/package/selenium-webdriver">Download</a></td>
         <td><a href="http://goo.gl/e6smYw">Change log</a></td>
         <td><a href="http://goo.gl/hohAut">API docs</a></td>
@@ -118,7 +118,7 @@
     </tbody>
   </table>
   <h4>C# NuGet</h4>
-  <p>NuGet latest release is 3.9.1, Released on 2018-02-09</p>
+  <p>NuGet latest release is 3.11.1, Released on 2018-03-12</p>
   <ul>
     <li><a href="http://www.nuget.org/List/Packages/Selenium.WebDriver">WebDriver</a></li>
     <li><a href="http://www.nuget.org/List/Packages/Selenium.WebDriverBackedSelenium">WebDriverBackedSelenium</a></li>
