@@ -1,3 +1,6 @@
+seleniumhq.org [![Travis Status](https://travis-ci.org/SeleniumHQ/www.seleniumhq.org.svg?branch=master)](//travis-ci.org/SeleniumHQ/www.seleniumhq.org)
+========
+
 Things you need to have installed to run the docs:
 
 * Maven           http://maven.apache.org
