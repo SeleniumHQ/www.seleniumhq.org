@@ -53,9 +53,9 @@
   features of the WebDriver InternetExplorerDriver. Please make sure that this
   is available on your $PATH (or %PATH% on Windows) in order for the IE Driver
   to work as expected.</p>
-  <p>Download version 3.11.1 for (recommended) <a
-    href="https://goo.gl/CHVh8R">32 bit Windows IE</a> or <a
-    href="https://goo.gl/WMxNFq">64 bit Windows IE</a><br/>
+  <p>Download version 3.12.0 for (recommended) <a
+    href="https://goo.gl/UgXCrm">32 bit Windows IE</a> or <a
+    href="https://goo.gl/fzqqyZ">64 bit Windows IE</a><br/>
     <a href="http://goo.gl/LJ07LL">CHANGELOG</a></p>
 
   <a name="client-drivers"/>
@@ -85,24 +85,24 @@
       </tr>
       <tr>
         <td>C#</td>
-        <td>3.11.1</td>
-        <td>2018-03-11</td>
-        <td><a href="https://goo.gl/TGEabG">Download</a></td>
+        <td>3.12.0</td>
+        <td>2018-05-08</td>
+        <td><a href="https://goo.gl/qdNJ4h">Download</a></td>
         <td><a href="http://goo.gl/t3faSQ">Change log</a></td>
         <td><a href="http://goo.gl/uutZjZ">API docs</a></td>
       </tr>
       <tr>
         <td>Ruby</td>
-        <td>3.11.0</td>
-        <td>2018-03-11</td>
+        <td>3.12.0</td>
+        <td>2018-05-08</td>
         <td><a href="http://rubygems.org/gems/selenium-webdriver">Download</a></td>
         <td><a href="http://goo.gl/zNfSLK">Change log</a></td>
         <td><a href="http://goo.gl/jzh4RU">API docs</a></td>
       </tr>
       <tr>
         <td>Python</td>
-        <td>3.11.0</td>
-        <td>2018-03-12</td>
+        <td>3.12.0</td>
+        <td>2018-05-08</td>
         <td><a href="http://pypi.python.org/pypi/selenium">Download</a></td>
         <td><a href="http://goo.gl/rHRdgk">Change log</a></td>
         <td><a href="http://goo.gl/sG1GfQ">API docs</a></td>
@@ -118,7 +118,7 @@
     </tbody>
   </table>
   <h4>C# NuGet</h4>
-  <p>NuGet latest release is 3.11.1, Released on 2018-03-12</p>
+  <p>NuGet latest release is 3.12.0, Released on 2018-05-08</p>
   <ul>
     <li><a href="http://www.nuget.org/List/Packages/Selenium.WebDriver">WebDriver</a></li>
     <li><a href="http://www.nuget.org/List/Packages/Selenium.WebDriverBackedSelenium">WebDriverBackedSelenium</a></li>
@@ -174,19 +174,17 @@
     <tbody>
       <tr>
 	    <td><a href="https://github.com/mozilla/geckodriver/">Mozilla GeckoDriver</a></td>
-	    <td><a href="https://github.com/mozilla/geckodriver/releases">0.20.0</a>&nbsp;&nbsp;</td>
+	    <td><a href="https://github.com/mozilla/geckodriver/releases">latest</a>&nbsp;&nbsp;</td>
 	    <td><a href="https://github.com/mozilla/geckodriver/blob/release/CHANGES.md">change log</a>&nbsp;&nbsp;</td>
 	    <td><a href="https://github.com/mozilla/geckodriver/issues">issue tracker</a>&nbsp;&nbsp;</td>
 	    <td><a href="https://developer.mozilla.org/en-US/docs/Mozilla/QA/Marionette/WebDriver/status">Implementation Status</a></td>
-	    <td>Released 2018-03-08</td>
       </tr>
       <tr>
         <td><a href="https://sites.google.com/a/chromium.org/chromedriver/">Google Chrome Driver</a></td>
-        <td><a href="http://chromedriver.storage.googleapis.com/index.html?path=2.36/">2.36</a>&nbsp;&nbsp;</td>
-        <td><a href="http://chromedriver.storage.googleapis.com/2.36/notes.txt">change log</a>&nbsp;&nbsp;</td>
+        <td><a href="https://sites.google.com/a/chromium.org/chromedriver/downloads">latest</a>&nbsp;&nbsp;</td>
+        <td><a href="https://sites.google.com/a/chromium.org/chromedriver/downloads">change log</a>&nbsp;&nbsp;</td>
         <td><a href="https://bugs.chromium.org/p/chromedriver/issues/list">issue tracker</a>&nbsp;&nbsp;</td>
         <td><a href="https://github.com/SeleniumHQ/selenium/wiki/ChromeDriver">selenium wiki page</a>&nbsp;&nbsp;</td>
-        <td>Released 2018-03-02</td>
       </tr>
       <tr>
         <td><a href="http://choice.opera.com/developer/tools/operadriver/">Opera</a></td>
