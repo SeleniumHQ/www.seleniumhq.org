@@ -103,6 +103,10 @@
             <a rel="nofollow" href="http://www.wedoqa.com/#selenium">WeDoQA</a> - 
             Selenium Automation, Custom Selenium Frameworks, Load testing using Selenium to simulate real usage.
         </li>
+        <li>
+            <a rel="nofollow" href="http://www.alpi.com/training/index.cfm?fuseaction=ShowDescription&CourseID=184">ALPI</a> - 
+            Selenium implementation consulting services. Support for enterprise testing through customization, framework development, and integration.  
+        </li>    
     </ul>
 
     <h2>Commercial Training</h2>
@@ -128,6 +132,10 @@
             <a rel="nofollow" href="http://www.seleniummaster.com">Selenium Master</a> -
             Selenium Test Automation Training, Selenium Test Framework Design, QA Project Assistance.
         </li>
+        <li>
+            <a rel="nofollow" href="http://www.alpi.com/training/index.cfm?fuseaction=ShowDescription&CourseID=184">ALPI</a> -
+            Selenium Automation Workshop and Advanced Framework Development Workshop. Onsite group class delivery worldwide, or individual signup via public classes. All classes use live instructors. Fully hosted training delivery, no setup required.
+        </li>    
     </ul>
 
     <p>
