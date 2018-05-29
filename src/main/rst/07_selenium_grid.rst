@@ -4,7 +4,7 @@ Selenium-Grid
 .. _chapter07-reference:
 
 *Note:  We are currently working on this chapter.  Presently we have introductory info here for people
-completely new to Selnium-Grid.  Over the next few months we hope to provide useful examples and illustrations
+completely new to Selenium-Grid.  Over the next few months we hope to provide useful examples and illustrations
 to thoroughly explain how to use Selenium-Grid.*
 
 Quick Start
