@@ -42,10 +42,10 @@
 
   <h3>Selenium Standalone Server</h3>
   <p>The Selenium Server is needed in order to run Remote Selenium WebDriver. Selenium 3.X is no longer capable of running Selenium RC directly, rather it does it through emulation and the WebDriverBackedSelenium interface.</p>
-  <p>Download version <a href="https://goo.gl/UzaKCo">3.11.0</a>
+  <p>Download version <a href="https://goo.gl/tbd1NS">3.12.0</a>
   <!-- use goo.gl to make the minified link, this allows anyone to view the statistics at: https://goo.gl/#analytics/goo.gl/<hash>/all_time -->
   </p>
-  <p>To run Selenium tests exported from IDE, use the <a href="https://goo.gl/suji5p">Selenium Html Runner</a>.</p>
+  <p>To run Selenium tests exported from the legacy IDE, use the <a href="https://goo.gl/3KKRZo">Selenium Html Runner</a>.</p>
   <p>To use the Selenium Server in a Grid configuration <a href="https://github.com/SeleniumHQ/selenium/wiki/Grid2">see the wiki page</a>.</p>
 
   <h3>The Internet Explorer Driver Server</h3>
@@ -53,15 +53,15 @@
   features of the WebDriver InternetExplorerDriver. Please make sure that this
   is available on your $PATH (or %PATH% on Windows) in order for the IE Driver
   to work as expected.</p>
-  <p>Download version 3.9.0 for (recommended) <a
-    href="https://goo.gl/bWzJ8T">32 bit Windows IE</a> or <a
-    href="https://goo.gl/ns6MEj">64 bit Windows IE</a><br/>
+  <p>Download version 3.12.0 for (recommended) <a
+    href="https://goo.gl/UgXCrm">32 bit Windows IE</a> or <a
+    href="https://goo.gl/fzqqyZ">64 bit Windows IE</a><br/>
     <a href="http://goo.gl/LJ07LL">CHANGELOG</a></p>
 
   <a name="client-drivers"/>
   <h3>Selenium Client & WebDriver Language Bindings</h3>
   <p>In order to create scripts that interact with the Selenium Server (Selenium RC, Selenium Remote WebDriver) or create local Selenium WebDriver scripts, you need to make use of language-specific client drivers. These languages include both 1.x and 2.x style clients.</p>
-  <p>While language bindings for <a href="#thirdPartyLanguageBindings">other languages exist</a>, these are the core ones that are supported by the main project hosted on google code.</p>
+  <p>While language bindings for <a href="#thirdPartyLanguageBindings">other languages exist</a>, these are the core ones that are supported by the main project hosted on GitHub.</p>
 
   <table>
     <thead>
@@ -77,40 +77,40 @@
     <tbody>
       <tr>
         <td>Java</td>
-        <td>3.11.0</td>
-        <td>2018-03-11</td>
-        <td><a href="https://goo.gl/Us5DnZ">Download</a>&nbsp;&nbsp;</td>
+        <td>3.12.0</td>
+        <td>2018-05-08</td>
+        <td><a href="https://goo.gl/LtVMqu">Download</a>&nbsp;&nbsp;</td>
         <td><a href="http://goo.gl/5IVvjZ">Change log</a>&nbsp;&nbsp;</td>
         <td><a href="http://goo.gl/Grc6tm" alt="Javadoc">Javadoc</a></td>
       </tr>
       <tr>
         <td>C#</td>
-        <td>3.9.1</td>
-        <td>2018-02-09</td>
-        <td><a href="https://goo.gl/aa746n">Download</a></td>
+        <td>3.12.0</td>
+        <td>2018-05-08</td>
+        <td><a href="https://goo.gl/qdNJ4h">Download</a></td>
         <td><a href="http://goo.gl/t3faSQ">Change log</a></td>
         <td><a href="http://goo.gl/uutZjZ">API docs</a></td>
       </tr>
       <tr>
         <td>Ruby</td>
-        <td>3.11.0</td>
-        <td>2018-03-11</td>
+        <td>3.12.0</td>
+        <td>2018-05-08</td>
         <td><a href="http://rubygems.org/gems/selenium-webdriver">Download</a></td>
         <td><a href="http://goo.gl/zNfSLK">Change log</a></td>
         <td><a href="http://goo.gl/jzh4RU">API docs</a></td>
       </tr>
       <tr>
         <td>Python</td>
-        <td>3.9.0</td>
-        <td>2018-02-05</td>
+        <td>3.12.0</td>
+        <td>2018-05-08</td>
         <td><a href="http://pypi.python.org/pypi/selenium">Download</a></td>
         <td><a href="http://goo.gl/rHRdgk">Change log</a></td>
         <td><a href="http://goo.gl/sG1GfQ">API docs</a></td>
       </tr>
       <tr>
         <td>Javascript (Node)</td>
-        <td>3.6.0</td>
-        <td>2017-10-06</td>
+        <td>4.0.0-alpha.1</td>
+        <td>2018-01-13</td>
         <td><a href="https://npmjs.org/package/selenium-webdriver">Download</a></td>
         <td><a href="http://goo.gl/e6smYw">Change log</a></td>
         <td><a href="http://goo.gl/hohAut">API docs</a></td>
@@ -118,7 +118,7 @@
     </tbody>
   </table>
   <h4>C# NuGet</h4>
-  <p>NuGet latest release is 3.9.1, Released on 2018-02-09</p>
+  <p>NuGet latest release is 3.12.0, Released on 2018-05-08</p>
   <ul>
     <li><a href="http://www.nuget.org/List/Packages/Selenium.WebDriver">WebDriver</a></li>
     <li><a href="http://www.nuget.org/List/Packages/Selenium.WebDriverBackedSelenium">WebDriverBackedSelenium</a></li>
@@ -135,9 +135,9 @@
 
   <a name="selenium_ide"/>
   <h3>Selenium IDE</h3>
-  <p>Selenium IDE is a Firefox plugin which records and plays back user interactions with the browser. Use this to either create simple scripts or assist in exploratory testing. It can also export Remote Control or WebDriver scripts, though they tend to be somewhat brittle and should be overhauled into some sort of Page Object-y structure for any kind of resiliency.</p>
-  <p>Download latest released version <a href="https://addons.mozilla.org/en-US/firefox/addon/selenium-ide/">from addons.mozilla.org</a> or view the <a href="https://github.com/SeleniumHQ/selenium/wiki/SeIDE-Release-Notes">Release Notes</a> and then <a href="#side_plugins">install some plugins</a>.</p>
-  <p>Download <a href="http://release.seleniumhq.org/selenium-ide/">previous versions here</a>.</p>
+  <p>Selenium IDE is a Chrome and Firefox plugin which records and plays back user interactions with the browser. Use this to either create simple scripts or assist in exploratory testing.</p>
+  <p>Download latest released version <a href="https://chrome.google.com/webstore/detail/selenium-ide/mooikfkahbdckldjjndioackbalphokd">for Chrome</a> or <a href="https://addons.mozilla.org/en-US/firefox/addon/selenium-ide/">for Firefox</a> or view the <a href="https://github.com/SeleniumHQ/selenium-ide/releases">Release Notes</a>.</p>
+  <p>Download <a href="https://addons.mozilla.org/en-GB/firefox/addon/selenium-ide/versions/">previous IDE versions here</a>.</p>
 
   <hr/>
 
@@ -174,19 +174,17 @@
     <tbody>
       <tr>
 	    <td><a href="https://github.com/mozilla/geckodriver/">Mozilla GeckoDriver</a></td>
-	    <td><a href="https://github.com/mozilla/geckodriver/releases">0.20.0</a>&nbsp;&nbsp;</td>
+	    <td><a href="https://github.com/mozilla/geckodriver/releases">latest</a>&nbsp;&nbsp;</td>
 	    <td><a href="https://github.com/mozilla/geckodriver/blob/release/CHANGES.md">change log</a>&nbsp;&nbsp;</td>
 	    <td><a href="https://github.com/mozilla/geckodriver/issues">issue tracker</a>&nbsp;&nbsp;</td>
 	    <td><a href="https://developer.mozilla.org/en-US/docs/Mozilla/QA/Marionette/WebDriver/status">Implementation Status</a></td>
-	    <td>Released 2018-03-08</td>
       </tr>
       <tr>
         <td><a href="https://sites.google.com/a/chromium.org/chromedriver/">Google Chrome Driver</a></td>
-        <td><a href="http://chromedriver.storage.googleapis.com/index.html?path=2.36/">2.36</a>&nbsp;&nbsp;</td>
-        <td><a href="http://chromedriver.storage.googleapis.com/2.36/notes.txt">change log</a>&nbsp;&nbsp;</td>
+        <td><a href="https://sites.google.com/a/chromium.org/chromedriver/downloads">latest</a>&nbsp;&nbsp;</td>
+        <td><a href="https://sites.google.com/a/chromium.org/chromedriver/downloads">change log</a>&nbsp;&nbsp;</td>
         <td><a href="https://bugs.chromium.org/p/chromedriver/issues/list">issue tracker</a>&nbsp;&nbsp;</td>
         <td><a href="https://github.com/SeleniumHQ/selenium/wiki/ChromeDriver">selenium wiki page</a>&nbsp;&nbsp;</td>
-        <td>Released 2018-03-02</td>
       </tr>
       <tr>
         <td><a href="http://choice.opera.com/developer/tools/operadriver/">Opera</a></td>
@@ -377,7 +375,8 @@
   </div>
 
   <a name="side_plugins"/>
-  <h3>Selenium IDE Plugins</h3>
+  <h3>Legacy Selenium IDE Plugins</h3>
+  <p>The plugins below are not compatible with the new IDE, use the <a href="https://addons.mozilla.org/en-GB/firefox/addon/selenium-ide/versions/">legacy</a> version instead</p>
   <p>Selenium IDE can be extended through its own plugin system. Here are a number of plugins that have been created using it. For more information on how to create your own plugin or have it listed, see the <a href="http://seleniumhq.org/projects/ide/plugins.html">plugin tutorial page</a>.</p>
   <p>Please note that these are not supported by the Selenium project and all issues need to be raised with the relevant developers.</p>
   
