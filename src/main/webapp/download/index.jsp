@@ -35,17 +35,17 @@
   <h2>Downloads</h2>
   <p>Below is where you can find the latest releases of all the
   Selenium components. You can also find a list of <a href=
-  "http://selenium-release.storage.googleapis.com/index.html">previous releases</a>, <a href="https://github.com/SeleniumHQ/selenium">source
+  "https://selenium-release.storage.googleapis.com/index.html">previous releases</a>, <a href="https://github.com/SeleniumHQ/selenium">source
   code</a>, and additional information for <a href=
   "/download/maven.html">Maven users</a> (Maven is a popular Java build
   tool).</p>
 
   <h3>Selenium Standalone Server</h3>
   <p>The Selenium Server is needed in order to run Remote Selenium WebDriver. Selenium 3.X is no longer capable of running Selenium RC directly, rather it does it through emulation and the WebDriverBackedSelenium interface.</p>
-  <p>Download version <a href="https://goo.gl/tbd1NS">3.12.0</a>
+  <p>Download version <a href="https://goo.gl/4g538W">3.13.0</a>
   <!-- use goo.gl to make the minified link, this allows anyone to view the statistics at: https://goo.gl/#analytics/goo.gl/<hash>/all_time -->
   </p>
-  <p>To run Selenium tests exported from the legacy IDE, use the <a href="https://goo.gl/3KKRZo">Selenium Html Runner</a>.</p>
+  <p>To run Selenium tests exported from the legacy IDE, use the <a href="https://goo.gl/vvgARn">Selenium Html Runner</a>.</p>
   <p>To use the Selenium Server in a Grid configuration <a href="https://github.com/SeleniumHQ/selenium/wiki/Grid2">see the wiki page</a>.</p>
 
   <h3>The Internet Explorer Driver Server</h3>
@@ -77,9 +77,9 @@
     <tbody>
       <tr>
         <td>Java</td>
-        <td>3.12.0</td>
-        <td>2018-05-08</td>
-        <td><a href="https://goo.gl/LtVMqu">Download</a>&nbsp;&nbsp;</td>
+        <td>3.13.0</td>
+        <td>2018-06-25</td>
+        <td><a href="https://goo.gl/QaHpb8">Download</a>&nbsp;&nbsp;</td>
         <td><a href="http://goo.gl/5IVvjZ">Change log</a>&nbsp;&nbsp;</td>
         <td><a href="http://goo.gl/Grc6tm" alt="Javadoc">Javadoc</a></td>
       </tr>
