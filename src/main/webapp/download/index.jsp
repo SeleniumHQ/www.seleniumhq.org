@@ -53,9 +53,9 @@
   features of the WebDriver InternetExplorerDriver. Please make sure that this
   is available on your $PATH (or %PATH% on Windows) in order for the IE Driver
   to work as expected.</p>
-  <p>Download version 3.12.0 for (recommended) <a
-    href="https://goo.gl/UgXCrm">32 bit Windows IE</a> or <a
-    href="https://goo.gl/fzqqyZ">64 bit Windows IE</a><br/>
+  <p>Download version 3.13.0 for (recommended) <a
+    href="https://goo.gl/PdgGmZ">32 bit Windows IE</a> or <a
+    href="https://goo.gl/ofJsdT">64 bit Windows IE</a><br/>
     <a href="http://goo.gl/LJ07LL">CHANGELOG</a></p>
 
   <a name="client-drivers"/>
@@ -85,9 +85,9 @@
       </tr>
       <tr>
         <td>C#</td>
-        <td>3.12.0</td>
-        <td>2018-05-08</td>
-        <td><a href="https://goo.gl/qdNJ4h">Download</a></td>
+        <td>3.13.0</td>
+        <td>2018-06-25</td>
+        <td><a href="https://goo.gl/fmVE66">Download</a></td>
         <td><a href="http://goo.gl/t3faSQ">Change log</a></td>
         <td><a href="http://goo.gl/uutZjZ">API docs</a></td>
       </tr>
@@ -101,8 +101,8 @@
       </tr>
       <tr>
         <td>Python</td>
-        <td>3.12.0</td>
-        <td>2018-05-08</td>
+        <td>3.13.0</td>
+        <td>2018-06-25</td>
         <td><a href="http://pypi.python.org/pypi/selenium">Download</a></td>
         <td><a href="http://goo.gl/rHRdgk">Change log</a></td>
         <td><a href="http://goo.gl/sG1GfQ">API docs</a></td>
@@ -118,7 +118,7 @@
     </tbody>
   </table>
   <h4>C# NuGet</h4>
-  <p>NuGet latest release is 3.12.0, Released on 2018-05-08</p>
+  <p>NuGet latest release is 3.13.0, Released on 2018-06-25</p>
   <ul>
     <li><a href="http://www.nuget.org/List/Packages/Selenium.WebDriver">WebDriver</a></li>
     <li><a href="http://www.nuget.org/List/Packages/Selenium.WebDriverBackedSelenium">WebDriverBackedSelenium</a></li>
