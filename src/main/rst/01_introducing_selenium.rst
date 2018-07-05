@@ -150,7 +150,7 @@ Now Selenium 1 is deprecated and is not actively supported (mostly in maintenanc
 Selenium IDE
 ~~~~~~~~~~~~
 Selenium IDE (Integrated Development Environment) is a prototyping tool for
-building test scripts. It is a Firefox plugin and provides an easy-to-use
+building test scripts. It is a Firefox and Chrome plugin and provides an easy-to-use
 interface for developing automated tests. Selenium IDE has a recording feature,
 which records user actions as they are performed and then exports them as
 a reusable script in one of many programming languages that can be later
