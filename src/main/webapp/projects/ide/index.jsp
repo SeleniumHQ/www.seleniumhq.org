@@ -24,14 +24,11 @@
     <li>Autocomplete for all common Selenium commands</li>
     <li>Walk through tests</li>
     <li>Debug and set breakpoints</li>
-    <li>Option to automatically assert the title of every page</li>
     <li>All in one project file, containing all test cases and suites</li>
   </ul>
   </p>
   <p>
-  Selenium IDE doesn't support plugins as of yet.
-  <br />
-  For the legacy IDE plugins, see the <a href="/projects/ide/plugins.jsp">Legacy Selenium IDE Plugins</a> page.
+  Selenium IDE has plugin support. For details, see the <a href="https://github.com/SeleniumHQ/selenium-ide/wiki/Getting-Started-with-Plugins">Getting Started with Plugins</a> project wiki page.
   </p>
 </td>
 <td valign="top">
