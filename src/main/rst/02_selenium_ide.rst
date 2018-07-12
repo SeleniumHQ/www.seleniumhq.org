@@ -1048,7 +1048,7 @@ Find Button
 The Find button is used to see which UI element on the currently displayed 
 webpage (in the browser) is used in the currently selected Selenium command.  
 This is useful when building a locator for a command's first parameter (see the
-section on `Locating Elements`_.
+section on `Locating Elements`_).
 It can be used with any command that identifies a UI element on a webpage, 
 i.e. *click*, *clickAndWait*, *type*, and certain *assert* and *verify* commands, 
 among others. 
