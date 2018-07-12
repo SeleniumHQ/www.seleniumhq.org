@@ -350,10 +350,9 @@ on their HTML tags, test for specific content, test for broken links,
 input fields, selection list options, submitting forms, and table data among
 other things. In addition Selenium commands support testing of window size,
 mouse position, alerts, Ajax functionality, pop up windows, event handling,
-and many other web-application features. The `Command Reference`_ lists all 
-the available commands. 
-
-.. _`Command Reference`: http://release.seleniumhq.org/selenium-core/1.0.1/reference.html
+and many other web-application features. For details on available commands,
+what they're used for, and what parameters they take see the Reference tab
+when using the IDE.
 
 A *command* tells Selenium what to do. Selenium commands come in 
 three "flavors": **Actions**, **Accessors**, and **Assertions**. 
@@ -1049,7 +1048,7 @@ Find Button
 The Find button is used to see which UI element on the currently displayed 
 webpage (in the browser) is used in the currently selected Selenium command.  
 This is useful when building a locator for a command's first parameter (see the
-section on :ref:`locators <locators-section>` in the Selenium Commands chapter).
+section on :ref:`locating elements <locating-elements>`.
 It can be used with any command that identifies a UI element on a webpage, 
 i.e. *click*, *clickAndWait*, *type*, and certain *assert* and *verify* commands, 
 among others. 
