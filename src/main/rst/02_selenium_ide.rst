@@ -129,15 +129,22 @@ in this pane automatically, even if you do not first select the Log
 tab.  These messages are often useful for test case debugging.   Notice the Clear 
 button for clearing the Log.    
 
-.. image:: images/chapt2_img13_Bottom_Box.png
+.. image:: images/chapt2_img21_Console_Log.png
    :class: align-center
    :width: 500 px
 
 Reference
 ~~~~~~~~~
 
-The Reference tab is currently under development, and will be added shortly.
-     
+When adding, editing, or viewing test steps this pane displays
+information about the command that's currently in focus. Details like
+name, description, what arguments it accepts, and details about those
+arguments.
+
+.. image:: images/chapt2_img22_Console_Reference.png
+   :class: align-center
+   :width: 500 px
+
 Migrating From the Legacy IDE
 -----------------------------
 
@@ -162,8 +169,8 @@ AndWait and waitFor are gone?
 Selenium IDE will now automatically wait for you, at every command, 
 every command will wait for the page to load.  Commands which take a locator 
 will wait for the element to appear.  Hopefully this will eliminate the need 
-for explicit waiting.  In case that is not enough, the pause command can be used 
-instead.
+for explicit waiting.  In the rare case that it is not enough,
+the pause command can be used instead.
 
 
 Building Test Cases
@@ -351,8 +358,8 @@ input fields, selection list options, submitting forms, and table data among
 other things. In addition Selenium commands support testing of window size,
 mouse position, alerts, Ajax functionality, pop up windows, event handling,
 and many other web-application features. For details on available commands,
-what they're used for, and what parameters they take see the Reference tab
-when using the IDE.
+what they're used for, and what parameters they take see the `Reference`_
+tab when using the IDE.
 
 A *command* tells Selenium what to do. Selenium commands come in 
 three "flavors": **Actions**, **Accessors**, and **Assertions**. 
