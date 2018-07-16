@@ -188,11 +188,10 @@
       </tr>
       <tr>
         <td><a href="http://choice.opera.com/developer/tools/operadriver/">Opera</a></td>
-        <td><a href="https://github.com/operasoftware/operachromiumdriver/releases">2.29</a></td>
+        <td><a href="https://github.com/operasoftware/operachromiumdriver/releases">latest</a></td>
         <td>&nbsp;</td>
         <td><a href="https://github.com/operasoftware/operachromiumdriver/issues">issue tracker</a></td>
         <td><a href="https://github.com/SeleniumHQ/selenium/wiki/OperaDriver">selenium wiki page</a></td>
-        <td>Released 2017-06-27</td>
       </tr>
       <tr>
         <td><a href="https://developer.microsoft.com/en-us/microsoft-edge/tools/webdriver/">Microsoft Edge Driver</a></td>
@@ -209,11 +208,10 @@
       </tr>
       <tr>
         <td><a href="https://github.com/seleniumhq/htmlunit-driver">HtmlUnitDriver</a></td>
-        <td><a href="https://github.com/SeleniumHQ/htmlunit-driver/releases">2.28.1</a></td>
+        <td><a href="https://github.com/SeleniumHQ/htmlunit-driver/releases">latest</a></td>
         <td>&nbsp;</td>
         <td><a href="https://github.com/seleniumhq/htmlunit-driver/issues">issue tracker</a></td>
 	    <td>&nbsp;&nbsp;</td>
-	    <td>Released 2017-11-19</td>
       </tr>
       <tr>
         <td><a href="https://webkit.org/blog/6900/webdriver-support-in-safari-10/">SafariDriver</a></td>
