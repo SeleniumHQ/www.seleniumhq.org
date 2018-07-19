@@ -40,7 +40,7 @@ This example is also functionally equivalent to the first `Implicit Waits`_ exam
 Expected Conditions
 +++++++++++++++++++
 There are some common conditions that are frequently encountered when automating web browsers. Listed below are 
-a few examples for the usage of such conditions. The Java, C#, and Python bindings include convienence methods 
+a few examples for the usage of such conditions. The Java and Python bindings include convienence methods 
 so you don't have to code an ExpectedCondition class yourself or create your own utility package for them.
 
 * Element is Clickable - it is Displayed and Enabled.
@@ -157,7 +157,6 @@ The Actions class(es) allow you to build a Chain of Actions and perform them.
 There are too many possible combinations to count. Below are a few of the common
 interactions that you may want to use. For a full list of actions please refer to
 the API docs `Java <https://seleniumhq.github.io/selenium/docs/api/java/index.html?org/openqa/selenium/interactions/Actions.html>`_ 
-`C# <https://seleniumhq.github.io/selenium/docs/api/dotnet/html/AllMembers_T_OpenQA_Selenium_Interactions_Actions.htm>`_ 
 `Ruby <https://seleniumhq.github.io/selenium/docs/api/rb/Selenium/WebDriver/ActionBuilder.html>`_ 
 `Python <https://seleniumhq.github.io/selenium/docs/api/py/webdriver/selenium.webdriver.common.action_chains.html>`_
 
