@@ -40,7 +40,7 @@ This example is also functionally equivalent to the first `Implicit Waits`_ exam
 Expected Conditions
 +++++++++++++++++++
 There are some common conditions that are frequently encountered when automating web browsers. Listed below are 
-a few examples for the usage of such conditions. The Java, C#, and Python bindings include convienence methods 
+a few examples for the usage of such conditions. The Java, C#, and Python bindings include convenience methods 
 so you don't have to code an ExpectedCondition class yourself or create your own utility package for them.
 
 * Element is Clickable - it is Displayed and Enabled.
