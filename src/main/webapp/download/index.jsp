@@ -93,8 +93,8 @@
       </tr>
       <tr>
         <td>Ruby</td>
-        <td>3.12.0</td>
-        <td>2018-05-08</td>
+        <td>3.13.1</td>
+        <td>2018-07-20</td>
         <td><a href="http://rubygems.org/gems/selenium-webdriver">Download</a></td>
         <td><a href="http://goo.gl/zNfSLK">Change log</a></td>
         <td><a href="http://goo.gl/jzh4RU">API docs</a></td>
