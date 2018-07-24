@@ -72,7 +72,7 @@ element within the page.  Usually these are implemented using the html tag's
 'id' attribute or its 'name' attribute.  These names can be a static, i.e 
 unchanging, string constant.  They can also be dynamically generated values that
 vary each  instance of the page.  For example, some web servers might name a displayed
-document doc3861 one instance of a page, and 'doc6148' on a different instance of the 
+document doc3861 on one instance of a page, and 'doc6148' on a different instance of the 
 page depending on what 'document' the user was retrieving.  A test script verifying that 
 a document exists may not have a consistent identifier to use for locating that document.
 Often, dynamic elements with varying identifiers are on some type of result page 
