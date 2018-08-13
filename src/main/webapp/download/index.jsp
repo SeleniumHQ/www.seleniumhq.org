@@ -42,7 +42,7 @@
 
   <h3>Selenium Standalone Server</h3>
   <p>The Selenium Server is needed in order to run Remote Selenium WebDriver. Selenium 3.X is no longer capable of running Selenium RC directly, rather it does it through emulation and the WebDriverBackedSelenium interface.</p>
-  <p>Download version <a href="https://goo.gl/4g538W">3.13.0</a>
+  <p>Download version <a href="https://goo.gl/FCSwwD">3.14.0</a>
   <!-- use goo.gl to make the minified link, this allows anyone to view the statistics at: https://goo.gl/#analytics/goo.gl/<hash>/all_time -->
   </p>
   <p>To run Selenium tests exported from the legacy IDE, use the <a href="https://goo.gl/vvgARn">Selenium Html Runner</a>.</p>
@@ -53,9 +53,9 @@
   features of the WebDriver InternetExplorerDriver. Please make sure that this
   is available on your $PATH (or %PATH% on Windows) in order for the IE Driver
   to work as expected.</p>
-  <p>Download version 3.13.0 for (recommended) <a
-    href="https://goo.gl/PdgGmZ">32 bit Windows IE</a> or <a
-    href="https://goo.gl/ofJsdT">64 bit Windows IE</a><br/>
+  <p>Download version 3.14.0 for (recommended) <a
+    href="https://goo.gl/9Cqa4q">32 bit Windows IE</a> or <a
+    href="https://goo.gl/AtHQuv">64 bit Windows IE</a><br/>
     <a href="http://goo.gl/LJ07LL">CHANGELOG</a></p>
 
   <a name="client-drivers"/>
@@ -77,32 +77,32 @@
     <tbody>
       <tr>
         <td>Java</td>
-        <td>3.13.0</td>
-        <td>2018-06-25</td>
-        <td><a href="https://goo.gl/QaHpb8">Download</a>&nbsp;&nbsp;</td>
+        <td>3.14.0</td>
+        <td>2018-08-02</td>
+        <td><a href="https://goo.gl/9EV896">Download</a>&nbsp;&nbsp;</td>
         <td><a href="http://goo.gl/5IVvjZ">Change log</a>&nbsp;&nbsp;</td>
         <td><a href="http://goo.gl/Grc6tm" alt="Javadoc">Javadoc</a></td>
       </tr>
       <tr>
         <td>C#</td>
-        <td>3.13.0</td>
-        <td>2018-06-25</td>
-        <td><a href="https://goo.gl/fmVE66">Download</a></td>
+        <td>3.14.0</td>
+        <td>2018-08-02</td>
+        <td><a href="https://goo.gl/uJJ5Sc">Download</a></td>
         <td><a href="http://goo.gl/t3faSQ">Change log</a></td>
         <td><a href="http://goo.gl/uutZjZ">API docs</a></td>
       </tr>
       <tr>
         <td>Ruby</td>
-        <td>3.13.1</td>
-        <td>2018-07-20</td>
+        <td>3.14.0</td>
+        <td>2018-08-03</td>
         <td><a href="http://rubygems.org/gems/selenium-webdriver">Download</a></td>
         <td><a href="http://goo.gl/zNfSLK">Change log</a></td>
         <td><a href="http://goo.gl/jzh4RU">API docs</a></td>
       </tr>
       <tr>
         <td>Python</td>
-        <td>3.13.0</td>
-        <td>2018-06-25</td>
+        <td>3.14.0</td>
+        <td>2018-08-02</td>
         <td><a href="http://pypi.python.org/pypi/selenium">Download</a></td>
         <td><a href="http://goo.gl/rHRdgk">Change log</a></td>
         <td><a href="http://goo.gl/sG1GfQ">API docs</a></td>
@@ -118,7 +118,7 @@
     </tbody>
   </table>
   <h4>C# NuGet</h4>
-  <p>NuGet latest release is 3.13.0, Released on 2018-06-25</p>
+  <p>NuGet latest release is 3.14.0, Released on 2018-08-02</p>
   <ul>
     <li><a href="http://www.nuget.org/List/Packages/Selenium.WebDriver">WebDriver</a></li>
     <li><a href="http://www.nuget.org/List/Packages/Selenium.WebDriverBackedSelenium">WebDriverBackedSelenium</a></li>
