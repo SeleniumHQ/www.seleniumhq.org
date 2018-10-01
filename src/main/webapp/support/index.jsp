@@ -55,6 +55,19 @@ First please check out our <a href="/sponsors/" style="font-size:large">Sponsors
 You can also learn more about the <a href="/ecosystem">Selenium ecosystem</a> to see if there is a company that might be able to help you out.
 </p>
 
+<h2 id="Certification">Certification and Training</h2>
+
+<p>Learning how to use Selenium effectively can be a taxing
+task. There are various companies who offer Selenium training.
+
+<p>
+There is no officially recognised Selenium certification available,
+and the project developers strongly believe that certification is of
+no real benefit to individuals or the industry. Companies offering
+&quot;official&quot; Selenium certification are not to be trusted and
+are deliberately attempting to mislead you.
+
+
 <%@include file="/jsp/footer.jspf"%>
 </body>
 </html>
