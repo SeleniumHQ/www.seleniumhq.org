@@ -12,7 +12,8 @@ xsi:schemaLocation="http://appengine.google.com/ns/1.0 http://googleappengine.go
     <runtime>java8</runtime>
 
     <sessions-enabled>true</sessions-enabled>
-	
+    
+    <runtime>java8</runtime>
     <threadsafe>true</threadsafe>
 
     <env-variables>
