@@ -188,7 +188,7 @@
 
         <app.id>sehq-docs</app.id>
         <app.version>1</app.version>
-        <appengine.version>1.9.68</appengine.version>
+        <appengine.version>1.9.67</appengine.version>
         <gcloud.plugin.version>1.3.2</gcloud.plugin.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.compiler.showDeprecation>true</maven.compiler.showDeprecation>
