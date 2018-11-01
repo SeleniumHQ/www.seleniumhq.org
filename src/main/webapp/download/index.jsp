@@ -43,7 +43,7 @@
   <h3>Selenium Standalone Server</h3>
   <p>The Selenium Server is needed in order to run Remote Selenium WebDriver. Selenium 3.X is no longer capable of running Selenium RC directly, rather it does it through emulation and the WebDriverBackedSelenium interface.</p>
   <!-- The URL of the selenium-server-standalone.jar -->
-  <p>Download version <a href="https://bit.ly/2AGaYnL">3.14.0</a>
+  <p>Download version <a href="https://bit.ly/2AGaYnL">3.141.0</a>
   <!-- We used to use goo.gl for minified links, but now use bit.ly since that service has been turned down -->
   <!-- use goo.gl to make the minified link, this allows anyone to view the statistics at: https://goo.gl/#analytics/goo.gl/<hash>/all_time -->
   </p>
