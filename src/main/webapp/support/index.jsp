@@ -37,7 +37,7 @@ the IRC <a href="http://webchat.freenode.net/?channels=%23selenium">
 chat room</a>. You might just find someone ready to help on <em>#selenium at
 Freenode</em> (irc.freenode.net). There is more info about 
 <a href="http://en.wikipedia.org/wiki/Irc">IRC on wikipedia</a><br/>
-The <em>#selenium</em> IRC log archive is available at <a href="https://botbot.me/freenode/selenium/">botbot</a>.
+The <em>#selenium</em> IRC log archive is available at <a href="https://freenode.logbot.info/selenium">logbot</a>.
 </p>
 
 <h2 id="BugTracker">Bug Tracker</h2>
