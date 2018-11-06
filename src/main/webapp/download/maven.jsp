@@ -21,7 +21,7 @@
     &lt;dependency&gt;
         &lt;groupId&gt;org.seleniumhq.selenium&lt;/groupId&gt;
         &lt;artifactId&gt;selenium-java&lt;/artifactId&gt;
-        &lt;version&gt;3.141.0&lt;/version&gt;
+        &lt;version&gt;3.141.5&lt;/version&gt;
     &lt;/dependency&gt;  
 </pre></p>
   
@@ -60,7 +60,7 @@
     &lt;dependency&gt;
         &lt;groupId&gt;org.seleniumhq.selenium&lt;/groupId&gt;
         &lt;artifactId&gt;selenium-firefox-driver&lt;/artifactId&gt;
-        &lt;version&gt;3.141.0&lt;/version&gt;
+        &lt;version&gt;3.141.5&lt;/version&gt;
     &lt;/dependency&gt;  
 </pre></p>
 
@@ -69,7 +69,7 @@
     &lt;dependency&gt;
         &lt;groupId&gt;org.seleniumhq.selenium&lt;/groupId&gt;
         &lt;artifactId&gt;htmlunit-driver&lt;/artifactId&gt;
-        &lt;version&gt;2.29.0&lt;/version&gt;
+        &lt;version&gt;2.33.1&lt;/version&gt;
     &lt;/dependency&gt;  
   </pre></p>
     
@@ -83,7 +83,7 @@
     &lt;dependency&gt;
         &lt;groupId&gt;org.seleniumhq.selenium&lt;/groupId&gt;
         &lt;artifactId&gt;selenium-server&lt;/artifactId&gt;
-        &lt;version&gt;3.141.0&lt;/version&gt;
+        &lt;version&gt;3.141.5&lt;/version&gt;
     &lt;/dependency&gt;  
 </pre> Now you can create a <tt>SeleniumServer</tt> instance yourself and start it.</p>
 
