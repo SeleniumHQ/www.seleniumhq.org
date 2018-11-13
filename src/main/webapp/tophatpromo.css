@@ -1,5 +1,5 @@
 #promo {
-  display: none;
+  display: hide; /* hiding SeleniumConf Chicago promo banner from the website, it can be enabled by changing the property to 'none' */
   position: fixed;
   z-index: 101;
   top: 0;
