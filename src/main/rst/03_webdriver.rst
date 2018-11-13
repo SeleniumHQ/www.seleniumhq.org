@@ -90,7 +90,7 @@ your project.
 
 Be sure you specify the most current version.  At the time of writing, the version listed above was
 the most current, however there were frequent releases immediately after the release of Selenium 2.0.
-Check the `Maven download page <http://seleniumhq.org/download/maven.html>`_ for the current release and edit the above dependency accordingly.
+Check the `Maven download page <https://www.seleniumhq.org/download/maven.jsp>`_ for the current release and edit the above dependency accordingly.
 
 Now, from a command-line, CD into the project directory and run maven as follows.
 
