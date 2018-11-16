@@ -82,7 +82,7 @@
         <td>3.141.59</td>
         <td>2018-11-14</td>
         <!-- selenium-java.zip -->
-        <td><a href="http://bit.ly/2DIhey6">Download</a>&nbsp;&nbsp;</td>
+        <td><a href="https://bit.ly/2zm3ZzF">Download</a>&nbsp;&nbsp;</td>
         <td><a href="https://goo.gl/5IVvjZ">Change log</a>&nbsp;&nbsp;</td>
         <td><a href="https://goo.gl/Grc6tm" alt="Javadoc">Javadoc</a></td>
       </tr>
