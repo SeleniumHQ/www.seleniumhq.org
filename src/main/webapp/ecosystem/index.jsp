@@ -53,6 +53,10 @@
             <a rel="nofollow" href="http://webperformance.com/permlink/selenium-webdriver-integration">Web Performance Load Tester</a> -
             The no-coding real-browser load testing software that knows how many users your website can handle.
         </li>
+         <li>
+            <a rel="nofollow" href="https://flood.io/blog/load-testing-guide-selenium/">Flood</a> -
+            Scale your existing Selenium tests up to thousands of users in the cloud to load test your site with ease.
+        </li>
     </ul>
 
     <h2>Tools with Selenium Support</h2>
