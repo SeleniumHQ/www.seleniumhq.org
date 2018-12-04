@@ -63,11 +63,10 @@ task. There are various companies who offer Selenium training.
 <p>
 There is no officially recognised Selenium certification available,
 and the project developers strongly believe that certification is of
-no real benefit to individuals or the industry. Because of this,
-companies offering &quot;official&quot; Selenium certification are not
-being honest with you, and are misusing the Selenium project's
-trademark.
-
+no real benefit to individuals or the industry. We have not
+authorized anyone to offer &quot;official&quot; Selenium certification
+and anyone who claims to offer it is misusing the Selenium project's
+trademark.    
 
 <%@include file="/jsp/footer.jspf"%>
 </body>
