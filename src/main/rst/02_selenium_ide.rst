@@ -207,37 +207,32 @@ these commands here; that is in the chapter on `Selenium Commands -- "Selenese"`
 simply describe how to add them to your test case. 
   
 With Selenium IDE recording, go to the browser displaying your test application and 
-right click anywhere on the page.  You will see a context menu showing *verify* 
-and/or *assert* commands.  
+right click anywhere on the page.  You will see a context menu showing *verify*, *assert*, and *store* commands for *text* and *title* elements.  
 
 .. image:: images/chapt2_img14_Context_Menu.png
    :class: align-center
    :width: 300 px
 
-The first time you use Selenium, there may only be one Selenium command listed.
-As you use the IDE however, you will find additional commands will quickly be
-added to this menu.  Selenium-IDE will attempt to predict what command, along 
-with the parameters, you will need for a selected UI element on the current 
-web-page. 
-  
+You will also see a *Mouse Over* command at the very top of the context menu.
+Please keep in mind that these seven commands are only a small subset of all the 
+available commands. To use any other command, return to the Selenium IDE and in
+the *Command* field, either type the command you needor click the drop-down list 
+arrow to show the additional commands.
+
+.. image:: images/chapt2_img23_commands-scrolling-overflow.gif
+   :class: align-center
+   :width: 512 px
+   :height: 258 px
+   
 Let's see how this works. Open a web-page of your choosing and select a block 
 of text on the page. A paragraph or a heading will work fine.  Now, right-click
-the selected text.  The context menu should give you a *verifyTextPresent*
+the selected text.  The context menu should give you a *Verify Text*
 command and the suggested parameter should be the text itself. 
   
-Also, notice the Show All Available Commands menu option.  This shows many, 
-many more commands, again, along with suggested parameters, for testing your 
-currently selected UI element. 
-  
 Try a few more UI elements. Try right-clicking an image, or a user control 
-like a button or a checkbox.  You may need to use Show All Available Commands 
-to see options other than *verifyTextPresent*. Once you select these other 
-options, the more commonly used ones will show up on the primary context menu.
-For example, selecting *verifyElementPresent* for an image should later cause 
-that command to be available on the primary context menu the next time you 
-select an image and right-click. 
+like a button or a checkbox. 
   
-Again, these commands will be explained in detail in the chapter on Selenium 
+These and other commands will be explained in detail in the chapter on Selenium 
 commands.  For now though, feel free to use the IDE to record and select 
 commands into a test case and then run it.  You can learn a lot about 
 the Selenium commands simply by experimenting with the IDE. 
