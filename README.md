@@ -7,7 +7,7 @@ Things you need to have installed to run the docs:
 * Python          http://python.org
 * Sphinx-build    http://sphinx.pocoo.org
 
-To build the docs and run locally (command line):
+To build the docs and run locally(get to command line/terminal from the folder where project is downloaded into):
 
     mvn appengine:devserver
 
