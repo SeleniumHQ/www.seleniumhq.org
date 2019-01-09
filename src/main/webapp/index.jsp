@@ -38,14 +38,14 @@ If you want to
                 now also includes built-in grid capabilities.</p>
 
         </td>
-        <td><center><h3>Selenium IDE</h4><a href="/projects/ide/"><img alt="Selenium IDE Logo" class="icon" src="images/selenium-ide-logo.png" /></a></center><br />
+        <td><center><h3>Selenium IDE</h4><a href="/selenium-ide/"><img alt="Selenium IDE Logo" class="icon" src="images/selenium-ide-logo.png" /></a></center><br />
 If you want to
 <ul>
   <li>create quick bug reproduction scripts</li>
   <li>create scripts to aid in automation-aided exploratory testing</li>
 </ul>
 <br />
-<p>Then you want to use <a href="/projects/ide/">Selenium IDE</a>; a Firefox add-on that will do simple record-and-playback of interactions with the browser.</p>
+<p>Then you want to use <a href="/selenium-ide/">Selenium IDE</a>; a Chrome and Firefox add-on that will do simple record-and-playback of interactions with the browser.</p>
         </td>
       </tr>
     </tbody>
