@@ -104,7 +104,7 @@ command from the drop-down.
   
 Navigation Panel
 ++++++++++++++++
-Navigation between test cases and test suites is done through the right hand side 
+Navigation between test cases and test suites is done through the left hand side 
 of Selenium IDE.  Clicking on Tests with the small caret will open up a menu.  
 
 .. image:: images/chapt2_img20_Navigation.png
