@@ -10,15 +10,15 @@ Explicit and Implicit Waits
 Waiting is having the automated task execution elapse a certain amount of time before continuing with the next step.
 You should choose to use Explicit Waits or Implicit Waits.
 
-WARNING: Do not mix implicit and explicit waits. Doing so can cause unpredictable wait times. For example setting an
-implicit wait of 10 seconds and an explicit wait of 15 seconds, could cause a timeout to occur after 20 seconds.
+WARNING: Do not mix implicit and explicit waits! Doing so can cause unpredictable wait times. For example, setting an
+implicit wait of 10 seconds and an explicit wait of 15 seconds could cause a timeout to occur after 20 seconds.
 
 Explicit Waits
 ~~~~~~~~~~~~~~
 An explicit wait is code you define to wait for a certain condition to occur before proceeding further in the code.
-The worst case of this is Thread.sleep(), which sets the condition to an exact time period to wait. 
-There are some convenience methods provided that help you write code that will wait only as long as required.
-WebDriverWait in combination with ExpectedCondition is one way this can be accomplished.
+The worst case of this is ``Thread.sleep()``, which sets the condition to an exact time period to wait. 
+There are convenience methods available to help you write code that will only wait as long as required.
+``WebDriverWait`` in combination with ``ExpectedCondition`` is one way to do this.
 
 .. literalinclude:: /examples/Chapter4/Java/ExplicitWaitExample01.java
    :language: java
@@ -32,8 +32,8 @@ WebDriverWait in combination with ExpectedCondition is one way this can be accom
 .. literalinclude:: /examples/Chapter4/ruby/ExplicitWaitExample01.rb
    :language: ruby
 
-This waits up to 10 seconds before throwing a TimeoutException or if it finds the element will return it in 0 - 10 seconds.
-WebDriverWait by default calls the ExpectedCondition every 500 milliseconds until it returns successfully. A successful return value for the ExpectedCondition function type is a Boolean value of true, or a non-null object.
+This attempts to find and return the element within 10 seconds.  If nothing is found after that time, a``TimeoutException`` is thrown.
+By default, ``WebDriverWait`` calls the ``ExpectedCondition`` every 500 milliseconds until it returns successfully. A successful return value for the ``ExpectedCondition`` function type is a Boolean value of true, or a non-null object.
 
 This example is also functionally equivalent to the first `Implicit Waits`_ example.
 
@@ -41,7 +41,7 @@ Expected Conditions
 +++++++++++++++++++
 There are some common conditions that are frequently encountered when automating web browsers. Listed below are 
 a few examples for the usage of such conditions. The Java and Python bindings include convenience methods 
-so you don't have to code an ExpectedCondition class yourself or create your own utility package for them.
+so you don't have to code an ``ExpectedCondition`` class yourself or create your own utility package for them.
 
 * Element is Clickable - it is Displayed and Enabled.
 
@@ -66,7 +66,7 @@ The ExpectedConditions package (`Java <https://seleniumhq.github.io/selenium/doc
 Implicit Waits
 ~~~~~~~~~~~~~~
 An implicit wait is to tell WebDriver to poll the DOM for a certain amount of time when trying to find an element or elements if they are not immediately available.
-The default setting is 0. Once set, the implicit wait is set for the life of the WebDriver object instance.
+The default setting is ``0``. Once set, the implicit wait is set for the life of the WebDriver object instance.
 
 .. literalinclude:: /examples/Chapter4/Java/ImplicitWaitExample01.java
    :language: java
@@ -265,10 +265,11 @@ proxy settings and changes them back to the original state when done.
 
 Chrome
 ++++++
-Is basically the same as internet explorer. It uses the same configuration on the machine as IE does (on windows).
-On Mac it uses the System Preference -> Network settings. On Linux it uses (on Ubuntu) System > Preferences > 
-Network Proxy Preferences (Alternatively in "/etc/environment" set http_proxy).
-As of this writing it is unknown how to set the proxy programmatically. 
+Is basically the same as Internet Explorer. It uses the same configuration on the machine as IE does (on Windows).
+On Mac, it uses the System Preference ▶︎ Network settings. On Linux it uses (on Ubuntu) System ▶︎ Preferences ▶︎ 
+Network Proxy Preferences. (Alternatively, in ``/etc/environment`` set ``http_proxy``.)
+
+As of this writing, it is unknown how to set the proxy programmatically. 
 
 .. TODO (lukeis), this does not work! So the method of chrome switches is commented out.
 .. Here's how to set a proxy with Chrome Switches.
