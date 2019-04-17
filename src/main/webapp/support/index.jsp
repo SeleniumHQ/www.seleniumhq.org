@@ -28,7 +28,7 @@ question likely won't get answered if it was previously answered in another
 discussion!</p>
 </div>
 
-<h2 id="IRC">Chat Room</h2>
+<h2 id="IRC">Chat Room and Slack</h2>
 
 <p>The best place to ask for help is the user group (because they also keep the
 information accessible for others to read in the future). However, if you have a very
@@ -37,7 +37,11 @@ the IRC <a href="http://webchat.freenode.net/?channels=%23selenium">
 chat room</a>. You might just find someone ready to help on <em>#selenium at
 Freenode</em> (irc.freenode.net). There is more info about 
 <a href="http://en.wikipedia.org/wiki/Irc">IRC on wikipedia</a><br/>
-The <em>#selenium</em> IRC log archive is available at <a href="https://freenode.logbot.info/selenium">logbot</a>.
+The <em>#selenium</em> IRC log archive is available at <a href="https://freenode.logbot.info/selenium">logbot</a>.</p>
+<p>If you prefer to use <a href="https://slack.com">Slack</a> the IRC
+channel is mirrored to Slack too. You can sign up to
+the <a href="https://seleniumhq.slack.com/join/shared_invite/enQtNTE4MTc4MzYwMjkxLWEyNTZkMDgzNWIwZmY1ZTlmMzg4ZjM1YzZkNGUwZGFlMWE2OTYxMDYxODA1ZWJlMzZjYjc3MmE3ODA1OGZmZTk">Selenium
+Slack channel here</a>.
 </p>
 
 <h2 id="BugTracker">Bug Tracker</h2>
