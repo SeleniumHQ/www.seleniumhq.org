@@ -30,7 +30,7 @@
 <a title="class in org.openqa.selenium.safari" href="https://seleniumhq.github.io/selenium/docs/api/java/org/openqa/selenium/safari/SafariDriver.html">SafariDriver</a>
 </p>
 
-<p>For More information on Selenium WebDriver, please see <a href="http://seleniumhq.org/docs/03_webdriver.html">the documentation</a> and <a href="http://seleniumhq.org/docs/appendix_migrating_from_rc_to_webdriver.html">Remote Control to WebDriver Migration Notes</a>.</p>
+<p>For More information on Selenium WebDriver, please see <a href="https://www.seleniumhq.org/docs/03_webdriver.html">the documentation</a> and <a href="https://www.seleniumhq.org/docs/appendix_migrating_from_rc_to_webdriver.html">Remote Control to WebDriver Migration Notes</a>.</p>
  
 </body>
 <%@include file="/jsp/footer.jspf"%>
