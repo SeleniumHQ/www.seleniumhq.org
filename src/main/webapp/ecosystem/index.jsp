@@ -107,6 +107,10 @@
             <a rel="nofollow" href="https://testsmith.io">Testsmith</a> - 
             Dutch company providing Selenium WebDriver consultancy, training and workshops.
         </li>
+        <li>
+            <a rel="nofollow" href="https://www.coveros.com">Coveros</a> - 
+            Selenium test automation, custom Selenium frameworks, Selenium test integration into CI/CD and DevOps pipeline, and Selenium training.
+        </li>
     </ul>
 
     <h2>Commercial Training</h2>
