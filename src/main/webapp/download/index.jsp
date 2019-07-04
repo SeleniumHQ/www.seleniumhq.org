@@ -55,9 +55,9 @@
   features of the WebDriver InternetExplorerDriver. Please make sure that this
   is available on your $PATH (or %PATH% on Windows) in order for the IE Driver
   to work as expected.</p>
-  <p>Download version 3.14.0 for (recommended) <a
-    href="https://goo.gl/9Cqa4q">32 bit Windows IE</a> or <a
-    href="https://goo.gl/AtHQuv">64 bit Windows IE</a><br/>
+  <p>Download version 3.141.59 for (recommended) <a
+    href="https://selenium-release.storage.googleapis.com/3.141/IEDriverServer_Win32_3.141.59.zip">32 bit Windows IE</a> or <a
+    href="https://selenium-release.storage.googleapis.com/3.141/IEDriverServer_x64_3.141.59.zip">64 bit Windows IE</a><br/>
     <a href="http://goo.gl/LJ07LL">CHANGELOG</a></p>
 
   <a name="client-drivers"/>
