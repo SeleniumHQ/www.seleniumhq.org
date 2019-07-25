@@ -44,6 +44,10 @@
             <a rel="nofollow" href="https://www.ranorex.com/selocity/browser-extension.html">Selocity</a> -
             Free Chrome browser extension to auto-generate robust CSS, XPath, link text, and RanoreXPath selectors.
         </li>
+        <li>
+            <a rel="nofollow" href="https://www.katalon.com/">Katalon Studio</a> -
+            Easy-to-use test automation platform built on top of Selenium for web, API, mobile, and desktop testing. Powerful integration with CI/CD pipeline.
+        </li>
     </ul>
 
     <h2>Monitoring &amp; Load Testing Services</h2>
@@ -69,6 +73,10 @@
         <li>
             <a rel="nofollow" href="http://www.redwoodhq.com">RedwoodHQ</a> -
             Open Source framework that allows users to develop automation code, create readable keyword driven test cases and execute them across multiple machines all under a single Web interface.
+        </li>
+        <li>
+            <a rel="nofollow" href="https://www.katalon.com/">Katalon Studio</a> -
+            Open-source framework with record & playback, built-in templates, SDLC integration, auto-healing, and intelligent reports.
         </li>
     </ul>
 
