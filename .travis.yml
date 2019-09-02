@@ -1,7 +1,7 @@
-language: python
+language: java
 
-python:
-  - "2.7"
+jdk:
+  - oraclejdk8
 
 # To generate the encrypted credentials, follow instructions at
 # https://docs.travis-ci.com/user/deployment/google-app-engine/.
