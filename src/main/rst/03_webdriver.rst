@@ -1754,7 +1754,7 @@ sandbox.
 Running Standalone Selenium Server for use with RemoteDrivers
 -------------------------------------------------------------
 
-From `Selenium's Download page <http://selenium-release.storage.googleapis.com/index.html>`_ download selenium-server-standalone-<version>.jar and optionally IEDriverServer. If you plan to work with Chrome, download it from `Google Code <http://chromedriver.googlecode.com/>`_. 
+From `Selenium's Download page <http://selenium-release.storage.googleapis.com/index.html>`_ download selenium-server-standalone-<version>.jar and optionally IEDriverServer. If you plan to work with Chrome, download it from `Google Code <https://chromedriver.chromium.org/>`_. 
 
 Unpack IEDriverServer and/or chromedriver and put them in a directory which is on the $PATH / %PATH% - the Selenium Server should then be able to handle requests for IE / Chrome without additional modifications. 
 
