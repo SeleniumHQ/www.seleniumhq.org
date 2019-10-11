@@ -40,7 +40,7 @@ Freenode</em> (irc.freenode.net). There is more info about
 The <em>#selenium</em> IRC log archive is available at <a href="https://freenode.logbot.info/selenium">logbot</a>.</p>
 <p>If you prefer to use <a href="https://slack.com">Slack</a> the IRC
 channel is mirrored to Slack too. You can sign up to
-the <a href="https://seleniumhq.slack.com/join/shared_invite/enQtNTE4MTc4MzYwMjkxLWEyNTZkMDgzNWIwZmY1ZTlmMzg4ZjM1YzZkNGUwZGFlMWE2OTYxMDYxODA1ZWJlMzZjYjc3MmE3ODA1OGZmZTk">Selenium
+the <a href="https://join.slack.com/t/seleniumhq/shared_invite/enQtNTE4MTc4MzYwMjkxLTk3MWJlY2RhOGNjMTAwM2FkMDhlNDZiYzU5YjAzZDNkZDg4MWQxNzNiZDE0NDRiZjc1MjI2OTU4NzU5MWQyZDc">Selenium
 Slack channel here</a>.
 </p>
 
