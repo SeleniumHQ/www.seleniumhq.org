@@ -39,7 +39,8 @@
 <p>Add a selection to the set of options in a multi-select element.</p>
 <p><strong>arguments</strong></p>
 <ul>
-<li><a href="/selenium-ide/docs/en/api/arguments#locator">locator</a>: An element locator.</li>
+<li><p><a href="/selenium-ide/docs/en/api/arguments#locator">locator</a>: An element locator.</p></li>
+<li><p><a href="/selenium-ide/docs/en/api/arguments#value">value</a>: The value to input.</p></li>
 </ul>
 <hr>
 <h2><a class="anchor" aria-hidden="true" id="answer-on-next-prompt"></a><a href="#answer-on-next-prompt" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a><code>answer on next prompt</code></h2>
@@ -74,6 +75,10 @@ or some other value).</p></li>
 <hr>
 <h2><a class="anchor" aria-hidden="true" id="assert-confirmation"></a><a href="#assert-confirmation" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a><code>assert confirmation</code></h2>
 <p>Confirm that a confirmation has been rendered. The test will stop if the assert fails.</p>
+<p><strong>arguments</strong></p>
+<ul>
+<li><a href="/selenium-ide/docs/en/api/arguments#text">text</a>: The text to use.</li>
+</ul>
 <hr>
 <h2><a class="anchor" aria-hidden="true" id="assert-editable"></a><a href="#assert-editable" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a><code>assert editable</code></h2>
 <p>Confirm that the target element is editable. The test will stop if the assert fails.</p>
@@ -130,6 +135,10 @@ works. See <a href="https://github.com/SeleniumHQ/selenium-ide/issues/141">https
 <hr>
 <h2><a class="anchor" aria-hidden="true" id="assert-prompt"></a><a href="#assert-prompt" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a><code>assert prompt</code></h2>
 <p>Confirm that a JavaScript prompt has been rendered. The test will stop if the assert fails.</p>
+<p><strong>arguments</strong></p>
+<ul>
+<li><a href="/selenium-ide/docs/en/api/arguments#text">text</a>: The text to use.</li>
+</ul>
 <hr>
 <h2><a class="anchor" aria-hidden="true" id="assert-selected-value"></a><a href="#assert-selected-value" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a><code>assert selected value</code></h2>
 <p>Confirm that the value attribute of the selected option in a dropdown element contains the provided value. The test will stop if the assert fails.</p>
@@ -254,7 +263,7 @@ dropped.</p></li>
 <p><strong>arguments</strong></p>
 <ul>
 <li><p><a href="/selenium-ide/docs/en/api/arguments#locator">locator</a>: An element locator.</p></li>
-<li><p><a href="/selenium-ide/docs/en/api/arguments#value">value</a>: The value to type.</p></li>
+<li><p><a href="/selenium-ide/docs/en/api/arguments#value">value</a>: The value to input.</p></li>
 </ul>
 <hr>
 <h2><a class="anchor" aria-hidden="true" id="else"></a><a href="#else" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a><code>else</code></h2>
@@ -450,7 +459,7 @@ in control flow commands.</li>
 <p>Save a target string as a variable for easy re-use.</p>
 <p><strong>arguments</strong></p>
 <ul>
-<li><p><a href="/selenium-ide/docs/en/api/arguments#text">text</a>: The text to verify.</p></li>
+<li><p><a href="/selenium-ide/docs/en/api/arguments#text">text</a>: The text to use.</p></li>
 <li><p><a href="/selenium-ide/docs/en/api/arguments#variablename">variable name</a>: The name of a variable without brackets.</p></li>
 </ul>
 <hr>
@@ -481,6 +490,11 @@ the attribute, e.g. &quot;foo@bar&quot;.</p></li>
 <hr>
 <h2><a class="anchor" aria-hidden="true" id="store-title"></a><a href="#store-title" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a><code>store title</code></h2>
 <p>Gets the title of the current page.</p>
+<p><strong>arguments</strong></p>
+<ul>
+<li><p><a href="/selenium-ide/docs/en/api/arguments#text">text</a>: The text to use.</p></li>
+<li><p><a href="/selenium-ide/docs/en/api/arguments#variablename">variable name</a>: The name of a variable without brackets.</p></li>
+</ul>
 <hr>
 <h2><a class="anchor" aria-hidden="true" id="store-value"></a><a href="#store-value" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a><code>store value</code></h2>
 <p>Gets the value of element and stores it for later use. This works for any input type element.</p>
@@ -526,7 +540,7 @@ the commands within its block.</p></li>
 <p><strong>arguments</strong></p>
 <ul>
 <li><p><a href="/selenium-ide/docs/en/api/arguments#locator">locator</a>: An element locator.</p></li>
-<li><p><a href="/selenium-ide/docs/en/api/arguments#value">value</a>: The value to type.</p></li>
+<li><p><a href="/selenium-ide/docs/en/api/arguments#value">value</a>: The value to input.</p></li>
 </ul>
 <hr>
 <h2><a class="anchor" aria-hidden="true" id="uncheck"></a><a href="#uncheck" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a><code>uncheck</code></h2>
@@ -591,7 +605,8 @@ or some other value).</p></li>
 <p>Soft assert that the expected element has not been chosen in a select menu by its option attribute. The test will continue even if the verify fails.</p>
 <p><strong>arguments</strong></p>
 <ul>
-<li><a href="/selenium-ide/docs/en/api/arguments#selectlocator">select locator</a>: An element locator identifying a drop-down menu.</li>
+<li><p><a href="/selenium-ide/docs/en/api/arguments#selectlocator">select locator</a>: An element locator identifying a drop-down menu.</p></li>
+<li><p><a href="/selenium-ide/docs/en/api/arguments#option">option</a>: An option locator, typically just an option label (e.g. &quot;John Smith&quot;).</p></li>
 </ul>
 <hr>
 <h2><a class="anchor" aria-hidden="true" id="verify-not-text"></a><a href="#verify-not-text" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a><code>verify not text</code></h2>
@@ -599,7 +614,7 @@ or some other value).</p></li>
 <p><strong>arguments</strong></p>
 <ul>
 <li><p><a href="/selenium-ide/docs/en/api/arguments#locator">locator</a>: An element locator.</p></li>
-<li><p><a href="/selenium-ide/docs/en/api/arguments#text">text</a>: The text to verify.</p></li>
+<li><p><a href="/selenium-ide/docs/en/api/arguments#text">text</a>: The text to use.</p></li>
 </ul>
 <hr>
 <h2><a class="anchor" aria-hidden="true" id="verify-selected-label"></a><a href="#verify-selected-label" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a><code>verify selected label</code></h2>
@@ -615,7 +630,8 @@ works. See <a href="https://github.com/SeleniumHQ/selenium-ide/issues/141">https
 <p>Soft assert that the expected element has been chosen in a select menu by its option attribute. The test will continue even if the verify fails.</p>
 <p><strong>arguments</strong></p>
 <ul>
-<li><a href="/selenium-ide/docs/en/api/arguments#selectlocator">select locator</a>: An element locator identifying a drop-down menu.</li>
+<li><p><a href="/selenium-ide/docs/en/api/arguments#selectlocator">select locator</a>: An element locator identifying a drop-down menu.</p></li>
+<li><p><a href="/selenium-ide/docs/en/api/arguments#option">option</a>: An option locator, typically just an option label (e.g. &quot;John Smith&quot;).</p></li>
 </ul>
 <hr>
 <h2><a class="anchor" aria-hidden="true" id="verify-text"></a><a href="#verify-text" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a><code>verify text</code></h2>
@@ -623,14 +639,14 @@ works. See <a href="https://github.com/SeleniumHQ/selenium-ide/issues/141">https
 <p><strong>arguments</strong></p>
 <ul>
 <li><p><a href="/selenium-ide/docs/en/api/arguments#locator">locator</a>: An element locator.</p></li>
-<li><p><a href="/selenium-ide/docs/en/api/arguments#text">text</a>: The text to verify.</p></li>
+<li><p><a href="/selenium-ide/docs/en/api/arguments#text">text</a>: The text to use.</p></li>
 </ul>
 <hr>
 <h2><a class="anchor" aria-hidden="true" id="verify-title"></a><a href="#verify-title" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a><code>verify title</code></h2>
 <p>Soft assert the title of the current page contains the provided text. The test will continue even if the verify fails.</p>
 <p><strong>arguments</strong></p>
 <ul>
-<li><a href="/selenium-ide/docs/en/api/arguments#text">text</a>: The text to verify.</li>
+<li><a href="/selenium-ide/docs/en/api/arguments#text">text</a>: The text to use.</li>
 </ul>
 <hr>
 <h2><a class="anchor" aria-hidden="true" id="verify-value"></a><a href="#verify-value" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a><code>verify value</code></h2>
