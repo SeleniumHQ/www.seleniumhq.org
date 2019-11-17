@@ -1,3 +1,6 @@
+# This repository is deprecated
+# The new website and docs can be seen at https://github.com/SeleniumHQ/seleniumhq.github.io
+
 seleniumhq.org [![Travis Status](https://travis-ci.org/SeleniumHQ/www.seleniumhq.org.svg?branch=master)](//travis-ci.org/SeleniumHQ/www.seleniumhq.org)
 ========
 
