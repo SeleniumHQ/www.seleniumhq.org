@@ -12,7 +12,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 public class UrlAliasFilter implements Filter {
-    
+
     public void init(FilterConfig filterConfig) throws ServletException {
     }
 
@@ -22,16 +22,60 @@ public class UrlAliasFilter implements Filter {
 
         String path = req.getRequestURI();
 
-        if (path.startsWith("/documentation")) {
-            res.sendRedirect("/docs/");
+        if (path.startsWith("/download")) {
+            res.sendRedirect("http://selenium.dev/downloads");
             return;
         }
 
-        if (path.endsWith(".html")) {
-        	res.sendRedirect(path.replaceFirst(".html", ".jsp"));
-        } else {
-            chain.doFilter(request, response);
+        // Url path that gets printed for some errors/exceptions on the Java bindings
+        if (path.startsWith("/exceptions")) {
+            String newPath = path.replace("/exceptions/", "/exceptions/#").replace(".jsp", "");
+            res.sendRedirect("http://selenium.dev" + newPath);
+            return;
         }
+
+        if (path.startsWith("/projects")) {
+            res.sendRedirect("http://selenium.dev/projects");
+            return;
+        }
+
+        if (path.startsWith("/about/news")) {
+            res.sendRedirect("https://selenium.dev/blog/");
+            return;
+        }
+
+        if (path.startsWith("/about/events")) {
+            res.sendRedirect("https://selenium.dev/events/");
+            return;
+        }
+
+        if (path.startsWith("/about/contributors")) {
+            res.sendRedirect("https://selenium.dev/documentation/en/front_matter/copyright_and_attributions/");
+            return;
+        }
+
+        if (path.startsWith("/about/history")) {
+            res.sendRedirect("https://selenium.dev/history/");
+            return;
+        }
+
+        if (path.startsWith("/about/getting-involved")) {
+            res.sendRedirect("https://selenium.dev/getinvolved/");
+            return;
+        }
+
+        if (path.startsWith("/about/license")) {
+            res.sendRedirect("https://selenium.dev/documentation/en/front_matter/copyright_and_attributions/#license");
+            return;
+        }
+
+        if (path.startsWith("/documentation") || path.startsWith("/docs")) {
+            res.sendRedirect("http://selenium.dev/documentation");
+            return;
+        }
+
+        // Everything else should be fine
+        res.sendRedirect("http://selenium.dev" + path);
     }
 
     public void destroy() {
